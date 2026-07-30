@@ -1,0 +1,568 @@
+<title>Fila de QA — Brobot</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface-2: #eef0f4;
+    --ink: #1a2233;
+    --ink-muted: #5b6472;
+    --line: #e2e6ec;
+    --accent: #2f6fed;
+    --accent-ink: #ffffff;
+    --warn: #c1440e;
+    --warn-bg: #fbe9e2;
+    --rodrigo: #0f8b8d;
+    --rodrigo-bg: #e2f4f3;
+    --gustavo: #7b4fa0;
+    --gustavo-bg: #f1e8f7;
+    --shadow: 0 1px 2px rgba(26, 34, 51, 0.06), 0 8px 24px rgba(26, 34, 51, 0.05);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10141c;
+      --surface: #171c26;
+      --surface-2: #1e2530;
+      --ink: #edeff3;
+      --ink-muted: #94a0b2;
+      --line: #262c38;
+      --accent: #6e9cff;
+      --accent-ink: #0b1220;
+      --warn: #ff7a45;
+      --warn-bg: #3a1f14;
+      --rodrigo: #3fd0c9;
+      --rodrigo-bg: #123230;
+      --gustavo: #c79eea;
+      --gustavo-bg: #2a1f38;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10141c;
+    --surface: #171c26;
+    --surface-2: #1e2530;
+    --ink: #edeff3;
+    --ink-muted: #94a0b2;
+    --line: #262c38;
+    --accent: #6e9cff;
+    --accent-ink: #0b1220;
+    --warn: #ff7a45;
+    --warn-bg: #3a1f14;
+    --rodrigo: #3fd0c9;
+    --rodrigo-bg: #123230;
+    --gustavo: #c79eea;
+    --gustavo-bg: #2a1f38;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+  :root[data-theme="light"] {
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface-2: #eef0f4;
+    --ink: #1a2233;
+    --ink-muted: #5b6472;
+    --line: #e2e6ec;
+    --accent: #2f6fed;
+    --accent-ink: #ffffff;
+    --warn: #c1440e;
+    --warn-bg: #fbe9e2;
+    --rodrigo: #0f8b8d;
+    --rodrigo-bg: #e2f4f3;
+    --gustavo: #7b4fa0;
+    --gustavo-bg: #f1e8f7;
+    --shadow: 0 1px 2px rgba(26, 34, 51, 0.06), 0 8px 24px rgba(26, 34, 51, 0.05);
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  body { padding: 32px 20px 64px; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+
+  header.page { display: flex; flex-direction: column; gap: 4px; }
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .meta {
+    color: var(--ink-muted);
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .counters { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .counter {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 3px solid var(--line-accent, var(--line));
+  }
+  .counter .n {
+    font-size: 32px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .counter .label {
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    font-weight: 600;
+  }
+  .counter.rodrigo { --line-accent: var(--rodrigo); }
+  .counter.gustavo { --line-accent: var(--gustavo); }
+  .counter.livre { --line-accent: var(--ink-muted); }
+
+  .table-scroll {
+    overflow-x: auto;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 860px;
+    table-layout: fixed;
+  }
+  col.col-task { width: 18%; }
+  col.col-desc { width: 22%; }
+  col.col-cat { width: 12%; }
+  col.col-priority { width: 8%; }
+  col.col-dono { width: 10%; }
+  col.col-since { width: 12%; }
+  col.col-comment { width: 18%; }
+
+  thead th {
+    text-align: left;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    background: var(--surface-2);
+    position: sticky;
+    top: 0;
+  }
+  tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    font-size: 14px;
+    overflow: hidden;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: var(--surface-2); }
+
+  .task-id {
+    font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    color: var(--ink-muted);
+    font-size: 12.5px;
+  }
+  .task-title {
+    font-weight: 600;
+    margin-top: 2px;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+  }
+  .task-title a { color: inherit; text-decoration: none; }
+  .task-title a:hover { text-decoration: underline; }
+  .task-title a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  .descricao {
+    color: var(--ink-muted);
+    font-size: 13px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .priority-tag {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 2px 8px;
+    white-space: nowrap;
+    text-transform: capitalize;
+    color: var(--ink-muted);
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+  }
+  .priority-tag.high,
+  .priority-tag.urgent,
+  .priority-tag.immediate {
+    color: var(--warn);
+    background: var(--warn-bg);
+    border-color: transparent;
+  }
+  .category-tag {
+    display: inline-block;
+    font-size: 11.5px;
+    color: var(--ink-muted);
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 2px 8px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .no-category { color: var(--ink-muted); font-size: 12.5px; font-style: italic; opacity: 0.7; }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .chip.rodrigo { background: var(--rodrigo-bg); color: var(--rodrigo); }
+  .chip.gustavo { background: var(--gustavo-bg); color: var(--gustavo); }
+  .chip.ambos { background: linear-gradient(90deg, var(--rodrigo-bg) 50%, var(--gustavo-bg) 50%); color: var(--ink); }
+  .chip.sem_dono {
+    background: transparent;
+    border: 1.5px dashed var(--ink-muted);
+    color: var(--ink-muted);
+  }
+  .chip.em_branco {
+    background: transparent;
+    color: var(--ink-muted);
+    opacity: 0.6;
+    font-weight: 500;
+  }
+
+  .comment-block { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .comment-date {
+    font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-variant-numeric: tabular-nums;
+    font-size: 12.5px;
+    color: var(--ink-muted);
+  }
+  .comment-age {
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 1px 7px;
+    border-radius: 5px;
+    display: inline-block;
+    width: fit-content;
+  }
+  .comment-age.stale { background: var(--warn-bg); color: var(--warn); }
+  .comment-age.fresh { color: var(--ink-muted); background: var(--surface-2); }
+  .comment-author { font-size: 12.5px; font-weight: 600; overflow-wrap: anywhere; }
+  .comment-excerpt {
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  footer.note {
+    font-size: 12.5px;
+    color: var(--ink-muted);
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+    line-height: 1.6;
+  }
+  footer.note code {
+    font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    background: var(--surface-2);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+  .empty-state {
+    padding: 48px 16px;
+    text-align: center;
+    color: var(--ink-muted);
+    font-size: 14px;
+  }
+</style>
+
+<div class="wrap">
+  <header class="page">
+    <span class="eyebrow">Brobot · QA</span>
+    <h1>Fila de teste — Macros pendentes</h1>
+    <span class="meta" id="meta-gerado">Gerado em —</span>
+  </header>
+
+  <div class="counters" id="counters"></div>
+
+  <div class="table-scroll">
+    <table>
+      <colgroup>
+        <col class="col-task" />
+        <col class="col-desc" />
+        <col class="col-cat" />
+        <col class="col-priority" />
+        <col class="col-dono" />
+        <col class="col-since" />
+        <col class="col-comment" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Resumo</th>
+          <th>Category</th>
+          <th>Priority</th>
+          <th>QA Dono</th>
+          <th>Desde</th>
+          <th>Comentário</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <footer class="note">
+    Snapshot gerado por <code>QA/redmine/build-qa-dashboard.cjs</code> — lê o último comentário de cada Macro aberta
+    e sinaliza pendência real de teste (o campo status do Redmine não é confiável pra isso). Atualização é manual —
+    peça a atualização da tela numa conversa do Claude Code quando quiser dados frescos.
+  </footer>
+</div>
+
+<script>
+  const DATA = {
+  "gerado_em": "2026-07-30T14:20:59.572Z",
+  "total": 9,
+  "rows": [
+    {
+      "id": 52181,
+      "task": "Adequação da Spider ao login GOV.BR autos_prefeitura_sp  ",
+      "descricao": "Identifiquei que é necessário ajustar a spider do portal da Prefeitura de São Paulo para suportar uma nova...",
+      "category": "Portal - Mudança de layout",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-06-30T16:47:26Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/52181"
+    },
+    {
+      "id": 51186,
+      "task": "Gestão de Documentos de Veículos (CRLV)",
+      "descricao": "Objetivo Implementar funcionalidade completa de upload, visualização, download e exportação de documentos C...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-14T14:06:40Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo por gentileza, seguir com testes",
+      "link": "https://redmine.platform.brobot.com.br/issues/51186"
+    },
+    {
+      "id": 57089,
+      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
+      "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
+      "category": "Produtos - Novo produto",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-07-15T03:35:50Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
+      "link": "https://redmine.platform.brobot.com.br/issues/57089"
+    },
+    {
+      "id": 73585,
+      "task": "Configurar domínio consultas-api.com.br para a API White Label",
+      "descricao": "Realizar a configuração do domínio consultas-api.com.br para que ele seja utilizado como endereço oficial da API White Label da plataforma.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-23T19:14:43Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
+      "link": "https://redmine.platform.brobot.com.br/issues/73585"
+    },
+    {
+      "id": 64086,
+      "task": "Documentação de API Whitelabel",
+      "descricao": "Objetivo Criar uma nova versão da documentação da API V2 sem referências às marcas internas da plataforma (...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-23T19:15:59Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
+      "link": "https://redmine.platform.brobot.com.br/issues/64086"
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-24T11:44:39Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo bom dia, Itens 39, 40, 41, 43, 44, 45, 46 e 47 em staging para prosseguir com testes",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 77077,
+      "task": "Falha na comunicação com o Platform [code=500] | Unico Integration | unico - grupo Original Veiculos (ID: 991)",
+      "descricao": "Foi identificado que o usuário originalveiculos.brobot encontra-se desativado na tela de Unico Integration.",
+      "category": "",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-29T17:31:21Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "Problema Usuários da integração Unico estavam sendo desativados automaticamente, de forma aparentemente aleatória. Na tela de configuração da integração aparecia a mensagem \"Falha na comunicação com o",
+      "link": "https://redmine.platform.brobot.com.br/issues/77077"
+    },
+    {
+      "id": 76995,
+      "task": "BUG no exporte de relatório personalizado no novo front",
+      "descricao": "No exporte de relatório personalizado no novo front estamos com problemas, pode ocorrer com mais campos, po...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-29T17:34:04Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo em staging, poderia seguir com teste?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76995"
+    },
+    {
+      "id": 77084,
+      "task": "Retirar HRequest das Spiders",
+      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest.",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-29T17:34:31Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "@rodrigo, poderia testar o sefazsp, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77084"
+    }
+  ]
+};
+
+  const OWNER_LABEL = { rodrigo: "Rodrigo", gustavo: "Gustavo", ambos: "Rodrigo + Gustavo", sem_dono: "QA Owner" };
+  const STALE_DAYS = 3;
+
+  function daysSince(iso) {
+    const ms = Date.now() - new Date(iso).getTime();
+    return Math.floor(ms / 86400000);
+  }
+
+  function formatDate(iso) {
+    const d = new Date(iso);
+    return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric" });
+  }
+
+  function renderMeta() {
+    const el = document.getElementById("meta-gerado");
+    const gerado = new Date(DATA.gerado_em);
+    el.textContent = `Gerado em ${gerado.toLocaleDateString("pt-BR")} às ${gerado.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })} · ${DATA.rows.length} pendências`;
+  }
+
+  function renderCounters() {
+    const counts = { rodrigo: 0, gustavo: 0, sem_dono: 0 };
+    DATA.rows.forEach((r) => {
+      if (r.alocado_a === "ambos") { counts.rodrigo++; counts.gustavo++; }
+      else if (counts[r.alocado_a] !== undefined) counts[r.alocado_a]++;
+    });
+    const wrap = document.getElementById("counters");
+    wrap.innerHTML = `
+      <div class="counter rodrigo"><span class="n">${counts.rodrigo}</span><span class="label">Pra Rodrigo</span></div>
+      <div class="counter gustavo"><span class="n">${counts.gustavo}</span><span class="label">Pra Gustavo</span></div>
+      <div class="counter livre"><span class="n">${counts.sem_dono}</span><span class="label">QA Owner (sem dono)</span></div>
+    `;
+  }
+
+  function ownerChip(alocadoA) {
+    if (!alocadoA) return '<span class="chip em_branco">—</span>';
+    return `<span class="chip ${alocadoA}">${OWNER_LABEL[alocadoA] || "—"}</span>`;
+  }
+
+  function rowHtml(r) {
+    const age = daysSince(r.data_comentario);
+    const ageClass = age >= STALE_DAYS ? "stale" : "fresh";
+    const ageLabel = age === 0 ? "hoje" : age === 1 ? "1 dia" : `${age} dias`;
+    return `
+      <tr data-owner="${r.alocado_a || ""}">
+        <td>
+          <div class="task-id">#${r.id}</div>
+          <div class="task-title"><a href="${r.link}" target="_blank" rel="noopener">${escapeHtml(r.task)}</a></div>
+        </td>
+        <td><div class="descricao">${escapeHtml(r.descricao || "—")}</div></td>
+        <td>${r.category ? `<span class="category-tag">${escapeHtml(r.category)}</span>` : '<span class="no-category">sem categoria</span>'}</td>
+        <td>${r.priority ? `<span class="priority-tag ${r.priority.toLowerCase()}">${escapeHtml(r.priority)}</span>` : "—"}</td>
+        <td>${ownerChip(r.alocado_a)}</td>
+        <td>
+          <div class="comment-block">
+            <span class="comment-age ${ageClass}">${ageLabel} esperando</span>
+            <span class="comment-date">${formatDate(r.data_comentario)}</span>
+          </div>
+        </td>
+        <td>
+          <div class="comment-block">
+            <span class="comment-author">${escapeHtml(r.comentario_autor)}</span>
+            <span class="comment-excerpt">"${escapeHtml(r.comentario_trecho)}"</span>
+          </div>
+        </td>
+      </tr>
+    `;
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  }
+
+  function renderTable() {
+    const tbody = document.getElementById("tbody");
+    if (DATA.rows.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="5"><div class="empty-state">Nenhuma pendência encontrada.</div></td></tr>`;
+      return;
+    }
+    tbody.innerHTML = DATA.rows.map(rowHtml).join("");
+  }
+
+  renderMeta();
+  renderCounters();
+  renderTable();
+</script>
