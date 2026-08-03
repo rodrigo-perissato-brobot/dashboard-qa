@@ -447,7 +447,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-03T10:55:38.014Z",
+  "gerado_em": "2026-08-03T11:25:48.123Z",
   "total": 10,
   "rows": [
     {
@@ -583,9 +583,9 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-03T10:56:40.412Z",
+  "gerado_em": "2026-08-03T11:26:41.771Z",
   "sprint_id": 62,
-  "total": 45,
+  "total": 50,
   "rows": [
     {
       "id": 41623,
@@ -742,6 +742,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/37739"
     },
     {
+      "id": 75795,
+      "task": "Consultas semestrais automáticas para veículos com alto volume de multas (Prefeitura SP)",
+      "descricao": "Objetivo Automatizar a consulta de veículos que acumulam muitas multas na Prefeitura de São Paulo.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-27T19:25:47Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
+      "link": "https://redmine.platform.brobot.com.br/issues/75795"
+    },
+    {
       "id": 76863,
       "task": "Volumetria: rodada ancorada na data MARCADA do agendamento (não no burst detectado)",
       "descricao": "A rodada no painel/auditoria passa a ser definida como: da data MARCADA no agendamento até a próxima marcada.",
@@ -882,6 +896,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76755"
     },
     {
+      "id": 75786,
+      "task": "Permitir alteração de status em lote dos veículos (Ativar/Inativar)",
+      "descricao": "Atualmente, ao selecionar vários veículos utilizando a opção \"Selecionar todos\", não é possível alterar o status em lote.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-24T13:50:10Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Efetuei os testes em ambas versões do Platform e separo os resultados. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Aprovado Todos os testes executados funcionaram conforme esp",
+      "link": "https://redmine.platform.brobot.com.br/issues/75786"
+    },
+    {
       "id": 49662,
       "task": "Platform está permitindo repetir cadastro de CNPJ se cadastrado como matriz e filial",
       "descricao": "Durante os testes automatizados, identifiquei uma falha no Platform, que está permitindo cadastrar um CNPJ...",
@@ -938,6 +966,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/52120"
     },
     {
+      "id": 76008,
+      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
+      "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
+      "category": "Operação - Origem",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-16T13:52:14Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Planning realizada em 16/07/2026 na presença de @gabriella @rolf @delvin @felipe @rodrigo @jose-ricardo @miguel @thiago @joathan foi alinhado que a pontuação desta atividade é: 13 - 2 a 3 sprints. Foi",
+      "link": "https://redmine.platform.brobot.com.br/issues/76008"
+    },
+    {
       "id": 51852,
       "task": "FICI Preenchida Automaticamente - Davi",
       "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
@@ -950,6 +992,20 @@
       "comentario_autor": "Jose Ricardo",
       "comentario_trecho": "Segue relatório com informações solicitadas:",
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
+    },
+    {
+      "id": 75360,
+      "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
+      "descricao": "Alterar a regra de cálculo do card \"Média por Multa\" presente no dashboard do produto Caçamultas Embarcador...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-16T11:45:46Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rolf estava realizando os ajustes e claude apontou que seria necessário ajustar no maestro, poderia assumir a atividade de correção por gentileza? Correção item 75360 — \"Média por Multa\" (cm-embarcad",
+      "link": "https://redmine.platform.brobot.com.br/issues/75360"
     },
     {
       "id": 69679,
@@ -1006,6 +1062,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "User story criada e priorizada subatividades para a sprint 29 conforme alinhado com @rolf e @rodrigo",
       "link": "https://redmine.platform.brobot.com.br/issues/75755"
+    },
+    {
+      "id": 75193,
+      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
+      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-10T14:40:29Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Testei tentando processar as consultas nas spiders Detran SC e DNIT, com a placa QIT5D38 , porém somente o Detran SC passou, o DNIT continua com erro e existe a credencial gov.br cadastrada como",
+      "link": "https://redmine.platform.brobot.com.br/issues/75193"
     },
     {
       "id": 75084,
