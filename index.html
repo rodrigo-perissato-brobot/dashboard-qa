@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-03T17:56:41.204Z",
-  "total": 16,
+  "gerado_em": "2026-08-03T18:25:52.479Z",
+  "total": 14,
   "rows": [
     {
       "id": 52181,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/44623"
     },
     {
-      "id": 76844,
-      "task": "Implementação de Filtro por CNPJ e Migração da Funcionalidade de Visualização de Multas do Front Anterior",
-      "descricao": "Incluir um filtro por CNPJ no dashboard do Embarcador para que, ao selecionar um CNPJ, todos os indicadores...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "ambos",
-      "data_comentario": "2026-08-03T16:19:15Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@rodrigo @gustavo em staging, poderiam testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/76844"
-    },
-    {
       "id": 76998,
       "task": "BUG - CRIAÇÃO DE MARCADOR - EMBARCADOR - NOVO FRONT - MINERVA",
       "descricao": "Foi identificado um comportamento incorreto ao tentar criar um novo marcador no menu Campos Personalizados para o serviço Embarcador.",
@@ -644,27 +631,42 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo em staging. Quando existir uma credencial cadastrada como preferencial na conta, o sistema passa a utilizá-la automaticamente na execução da Indicação de Condutor, sem a necessidade de vincul",
       "link": "https://redmine.platform.brobot.com.br/issues/77125"
-    },
-    {
-      "id": 77434,
-      "task": "Exclusão de uma placa remove toda a frota no novo frontend",
-      "descricao": "Foi identificado um comportamento crítico no novo frontend da plataforma.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "ambos",
-      "data_comentario": "2026-08-03T17:54:33Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo @rodrigo corrigido em staging, poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77434"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-03T17:57:47.480Z",
+  "gerado_em": "2026-08-03T18:26:42.471Z",
   "sprint_id": 62,
-  "total": 47,
+  "total": 51,
   "rows": [
+    {
+      "id": 77434,
+      "task": "Exclusão de uma placa remove toda a frota no novo frontend",
+      "descricao": "Foi identificado um comportamento crítico no novo frontend da plataforma.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-03T18:08:33Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77434"
+    },
+    {
+      "id": 76844,
+      "task": "Implementação de Filtro por CNPJ e Migração da Funcionalidade de Visualização de Multas do Front Anterior",
+      "descricao": "Incluir um filtro por CNPJ no dashboard do Embarcador para que, ao selecionar um CNPJ, todos os indicadores...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-03T17:58:17Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@gabriella, Reprovado Efetuado os testes conforme abaixo: Ambiente: Staging | Conta: Testes Funcionais | Versão: New O botão \"Detalhes\" da divisão \"Top CNPJs\" está direcionando corretamente para a pág",
+      "link": "https://redmine.platform.brobot.com.br/issues/76844"
+    },
     {
       "id": 77103,
       "task": "Validação e correção do vínculo entre os serviços SNE e Indicação Condutor SNE",
@@ -1254,6 +1256,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/52015"
     },
     {
+      "id": 16564,
+      "task": "Funcionalidades de autorização de \"Membro\"",
+      "descricao": "Bom dia Nathan, tudo bem?",
+      "category": "",
+      "priority": "low",
+      "status": "on hold",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-03T12:10:14Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado em 07/04/2026 entre Emerson e Gabriella mudamos para on hold aguardar cliente solicitar o tema",
+      "link": "https://redmine.platform.brobot.com.br/issues/16564"
+    },
+    {
       "id": 44624,
       "task": "GERAR INSIGHTS PÓS CONSULTA E ENVIAR VIA E-MAIL/WHATSAPP",
       "descricao": "",
@@ -1280,6 +1296,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@ralph por gentileza, seguir com estimativa da atividade protótipo criado 70018",
       "link": "https://redmine.platform.brobot.com.br/issues/47471"
+    },
+    {
+      "id": 30232,
+      "task": "Conta mestre Cervejaria Imperial",
+      "descricao": "Boa tarde pessoal!",
+      "category": "anterior",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-04-28T14:45:00Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
+      "link": "https://redmine.platform.brobot.com.br/issues/30232"
     },
     {
       "id": 51016,
