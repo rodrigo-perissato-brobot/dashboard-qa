@@ -447,22 +447,9 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-03T15:55:51.847Z",
-  "total": 9,
+  "gerado_em": "2026-08-03T16:25:55.079Z",
+  "total": 13,
   "rows": [
-    {
-      "id": 52181,
-      "task": "Adequação da Spider ao login GOV.BR autos_prefeitura_sp  ",
-      "descricao": "Identifiquei que é necessário ajustar a spider do portal da Prefeitura de São Paulo para suportar uma nova...",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-06-30T16:47:26Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/52181"
-    },
     {
       "id": 51186,
       "task": "Gestão de Documentos de Veículos (CRLV)",
@@ -475,19 +462,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@rodrigo por gentileza, seguir com testes",
       "link": "https://redmine.platform.brobot.com.br/issues/51186"
-    },
-    {
-      "id": 57089,
-      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
-      "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
-      "category": "Produtos - Novo produto",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-07-15T03:35:50Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
-      "link": "https://redmine.platform.brobot.com.br/issues/57089"
     },
     {
       "id": 73585,
@@ -566,14 +540,106 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "@rodrigo — pacote completo do relatório financeiro entregue e DEPLOYADO em produção. Ponto a ponto do seu relato de 10/07: 1. REPORT EM BRANCO NO ZIP (o principal): RESOLVIDO. A causa era a rota do re",
       "link": "https://redmine.platform.brobot.com.br/issues/44623"
+    },
+    {
+      "id": 76844,
+      "task": "Implementação de Filtro por CNPJ e Migração da Funcionalidade de Visualização de Multas do Front Anterior",
+      "descricao": "Incluir um filtro por CNPJ no dashboard do Embarcador para que, ao selecionar um CNPJ, todos os indicadores...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-03T16:19:15Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo em staging, poderiam testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76844"
+    },
+    {
+      "id": 76998,
+      "task": "BUG - CRIAÇÃO DE MARCADOR - EMBARCADOR - NOVO FRONT - MINERVA",
+      "descricao": "Foi identificado um comportamento incorreto ao tentar criar um novo marcador no menu Campos Personalizados para o serviço Embarcador.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-03T16:19:36Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo em staging, poderiam testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76998"
+    },
+    {
+      "id": 76748,
+      "task": "Não é possível subir Certificado no front novo",
+      "descricao": "No novo front não está sendo possível subir o Certificado Digital na empresa, retorna o erro de que não foi...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-03T16:20:02Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo em staging, poderiam testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76748"
+    },
+    {
+      "id": 76573,
+      "task": "Não é possível executar consulta avulsa do Embarcador no novo front",
+      "descricao": "No novo front da plataforma, não é possível executar uma consulta avulsa do Embarcador .",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-03T16:20:24Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo em staging, poderiam testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76573"
+    },
+    {
+      "id": 76751,
+      "task": "Exporte de boletos está sendo limitado a 20 no novo front",
+      "descricao": "Identificamos que no novo front o exporte de boletos está sendo limitado a 20, mesmo selecionando mais do q...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-03T16:20:45Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo em staging, poderiam testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76751"
+    },
+    {
+      "id": 77206,
+      "task": "Pesquisa por placa não retorna resultados no produto Embarcador",
+      "descricao": "No produto Embarcador, o campo de pesquisa permite realizar buscas por CNPJ, AIT ou placa.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-03T16:21:06Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo em staging, poderiam testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77206"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-03T15:56:48.245Z",
+  "gerado_em": "2026-08-03T16:26:54.343Z",
   "sprint_id": 62,
-  "total": 50,
+  "total": 49,
   "rows": [
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-03T16:18:04Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo @rodrigo Informo que os itens 40, 41, 43, 44, 45, 46, 47, estão em produção. Sigo em correção dos itens 38, 39, 48",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
     {
       "id": 41623,
       "task": "Implementar Novas Colunas na Tabela de Contas (Admin/Accounts)",
@@ -671,34 +737,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@roberta @gustavo @felipe-godoy @leonardo.paganotti @julya.tochio @renata @maria.rozolem @Thais boa tarde, 71387 — Status Ativo/Inativo de Empresas em Definições Situação: entregue e disponível em pro",
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
-    },
-    {
-      "id": 76748,
-      "task": "Não é possível subir Certificado no front novo",
-      "descricao": "No novo front não está sendo possível subir o Certificado Digital na empresa, retorna o erro de que não foi...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-31T17:16:44Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Itens corrigidos, aberta uma nova PR bug/76748 para staging @rolf",
-      "link": "https://redmine.platform.brobot.com.br/issues/76748"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-31T15:00:45Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "item 48 : No Taxas , adicionar tooltip para coluna Valor a pagar , assim como já existente no Classic , onde é exibida a explicação da diferença entre as colunas Taxa calculada e Valor a pagar (descon",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 61539,
