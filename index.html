@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-04T11:56:11.770Z",
-  "total": 12,
+  "gerado_em": "2026-08-04T12:25:59.098Z",
+  "total": 11,
   "rows": [
     {
       "id": 52181,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/44623"
     },
     {
-      "id": 76573,
-      "task": "Não é possível executar consulta avulsa do Embarcador no novo front",
-      "descricao": "No novo front da plataforma, não é possível executar uma consulta avulsa do Embarcador .",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "ambos",
-      "data_comentario": "2026-08-03T16:20:24Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@rodrigo @gustavo em staging, poderiam testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/76573"
-    },
-    {
       "id": 76751,
       "task": "Exporte de boletos está sendo limitado a 20 no novo front",
       "descricao": "Identificamos que no novo front o exporte de boletos está sendo limitado a 20, mesmo selecionando mais do q...",
@@ -609,10 +596,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-04T11:57:26.904Z",
+  "gerado_em": "2026-08-04T12:27:03.982Z",
   "sprint_id": 62,
-  "total": 53,
+  "total": 51,
   "rows": [
+    {
+      "id": 76573,
+      "task": "Não é possível executar consulta avulsa do Embarcador no novo front",
+      "descricao": "No novo front da plataforma, não é possível executar uma consulta avulsa do Embarcador .",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-04T12:26:07Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf Marquardt favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76573"
+    },
     {
       "id": 76748,
       "task": "Não é possível subir Certificado no front novo",
@@ -668,20 +669,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@rolf favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/76998"
-    },
-    {
-      "id": 77434,
-      "task": "Exclusão de uma placa remove toda a frota no novo frontend",
-      "descricao": "Foi identificado um comportamento crítico no novo frontend da plataforma.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-03T18:08:33Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77434"
     },
     {
       "id": 76844,
@@ -850,34 +837,6 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Fechamento: em produção 26/07 (PRs 1325 maestro + 1326 platform mergeadas pelo Rolf, pipelines verdes). Rodada agora ancora na data marcada do agendamento.",
       "link": "https://redmine.platform.brobot.com.br/issues/76863"
-    },
-    {
-      "id": 76862,
-      "task": "Volumetria: entrega vs eficiência no bloco Por spider + filtro de status na grid Por conta",
-      "descricao": "Ajustes de clareza no painel Volumetria (76850) para a operação não confundir régua de entrega com régua de custo.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Rolf Marquardt",
-      "data_comentario": "2026-07-26T14:38:20Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Em produção completa 26/07: front (Vercel) + maestro (PR 1323 mergeada pelo Rolf). Chips com contadores de todas as páginas ativos e bloco Por spider com Entrega/Eficiência.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76862"
-    },
-    {
-      "id": 76857,
-      "task": "Auditoria da rodada (XLSX): selo de rodada fechada + download do extrato placa a placa na Volumetria",
-      "descricao": "Prova auditável de que a rodada de uma conta foi entregue, direto do painel de Volumetria.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Rolf Marquardt",
-      "data_comentario": "2026-07-26T14:38:20Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Fechamento: em produção desde 26/07 — primeiro uso real gerou as auditorias com reconciliação batendo (ex.: PARVI 1.768 = 1.537 + 231 ✓). Coluna Tentativas incluída no extrato placa a placa.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76857"
     },
     {
       "id": 76855,
