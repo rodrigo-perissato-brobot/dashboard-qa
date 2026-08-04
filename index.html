@@ -447,22 +447,9 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-04T12:25:59.098Z",
-  "total": 11,
+  "gerado_em": "2026-08-04T12:55:56.170Z",
+  "total": 9,
   "rows": [
-    {
-      "id": 52181,
-      "task": "Adequação da Spider ao login GOV.BR autos_prefeitura_sp  ",
-      "descricao": "Identifiquei que é necessário ajustar a spider do portal da Prefeitura de São Paulo para suportar uma nova...",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-06-30T16:47:26Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/52181"
-    },
     {
       "id": 51186,
       "task": "Gestão de Documentos de Veículos (CRLV)",
@@ -475,19 +462,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@rodrigo por gentileza, seguir com testes",
       "link": "https://redmine.platform.brobot.com.br/issues/51186"
-    },
-    {
-      "id": 57089,
-      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
-      "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
-      "category": "Produtos - Novo produto",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-07-15T03:35:50Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
-      "link": "https://redmine.platform.brobot.com.br/issues/57089"
     },
     {
       "id": 73585,
@@ -527,19 +501,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gabriella subi pra staging a \"simulação\" dos clique para os recursos solicitados. Nem todos os dados estão disponíveis ainda. Eu e o @felipe precisamos de algumas permissões na AWS para cons",
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
-    },
-    {
-      "id": 77232,
-      "task": "spiders autos_antt e autos_antt_processos: Inconsistência na disponibilidade de boleto entre as spiders no produto Embarcador - CONLOG ID: 2360",
-      "descricao": "Foi identificada uma inconsistência durante a execução da rodada do produto Embarcador, que utiliza as spid...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-07-31T17:58:05Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo subi correção para staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77232"
     },
     {
       "id": 44623,
@@ -592,21 +553,48 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo em staging. Quando existir uma credencial cadastrada como preferencial na conta, o sistema passa a utilizá-la automaticamente na execução da Indicação de Condutor, sem a necessidade de vincul",
       "link": "https://redmine.platform.brobot.com.br/issues/77125"
+    },
+    {
+      "id": 77512,
+      "task": "autos_sne_denatran_indicacao_condutor - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossnedenatranin...",
+      "category": "",
+      "priority": "immediate",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-04T12:36:27Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@rodrigo, as alterações foram realizadas. Poderia testar, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77512"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-04T12:27:03.982Z",
+  "gerado_em": "2026-08-04T12:56:50.112Z",
   "sprint_id": 62,
-  "total": 51,
+  "total": 54,
   "rows": [
+    {
+      "id": 77232,
+      "task": "spiders autos_antt e autos_antt_processos: Inconsistência na disponibilidade de boleto entre as spiders no produto Embarcador - CONLOG ID: 2360",
+      "descricao": "Foi identificada uma inconsistência durante a execução da rodada do produto Embarcador, que utiliza as spid...",
+      "category": "Backend - Consumo",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-04T12:45:55Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77232"
+    },
     {
       "id": 76573,
       "task": "Não é possível executar consulta avulsa do Embarcador no novo front",
       "descricao": "No novo front da plataforma, não é possível executar uma consulta avulsa do Embarcador .",
       "category": "Frontend - Novo frontend",
       "priority": "high",
-      "status": "staging",
+      "status": "awaiting deploy",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-04T12:26:07Z",
@@ -837,6 +825,34 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Fechamento: em produção 26/07 (PRs 1325 maestro + 1326 platform mergeadas pelo Rolf, pipelines verdes). Rodada agora ancora na data marcada do agendamento.",
       "link": "https://redmine.platform.brobot.com.br/issues/76863"
+    },
+    {
+      "id": 76862,
+      "task": "Volumetria: entrega vs eficiência no bloco Por spider + filtro de status na grid Por conta",
+      "descricao": "Ajustes de clareza no painel Volumetria (76850) para a operação não confundir régua de entrega com régua de custo.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-26T14:38:20Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Em produção completa 26/07: front (Vercel) + maestro (PR 1323 mergeada pelo Rolf). Chips com contadores de todas as páginas ativos e bloco Por spider com Entrega/Eficiência.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76862"
+    },
+    {
+      "id": 76857,
+      "task": "Auditoria da rodada (XLSX): selo de rodada fechada + download do extrato placa a placa na Volumetria",
+      "descricao": "Prova auditável de que a rodada de uma conta foi entregue, direto do painel de Volumetria.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-26T14:38:20Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Fechamento: em produção desde 26/07 — primeiro uso real gerou as auditorias com reconciliação batendo (ex.: PARVI 1.768 = 1.537 + 231 ✓). Coluna Tentativas incluída no extrato placa a placa.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76857"
     },
     {
       "id": 76855,
