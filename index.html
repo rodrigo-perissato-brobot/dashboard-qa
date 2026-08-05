@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-05T17:55:52.411Z",
-  "total": 9,
+  "gerado_em": "2026-08-05T18:56:06.348Z",
+  "total": 11,
   "rows": [
     {
       "id": 52181,
@@ -566,14 +566,54 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo @rodrigo em staging, poderiam testar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/76844"
+    },
+    {
+      "id": 77075,
+      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
+      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-05T18:03:29Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Realizei algumas alterações para tentar corrigir esse erro. @rodrigo, poderia testar, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77075"
+    },
+    {
+      "id": 76748,
+      "task": "Não é possível subir Certificado no front novo",
+      "descricao": "No novo front não está sendo possível subir o Certificado Digital na empresa, retorna o erro de que não foi...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-05T18:20:39Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo @rodrigo em staging, poderiam testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76748"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-05T17:56:39.619Z",
+  "gerado_em": "2026-08-05T18:57:08.158Z",
   "sprint_id": 62,
-  "total": 55,
+  "total": 51,
   "rows": [
+    {
+      "id": 77206,
+      "task": "Pesquisa por placa não retorna resultados no produto Embarcador",
+      "descricao": "No produto Embarcador, o campo de pesquisa permite realizar buscas por CNPJ, AIT ou placa.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-05T18:23:14Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rolf PR criada para Main bug/77206",
+      "link": "https://redmine.platform.brobot.com.br/issues/77206"
+    },
     {
       "id": 76751,
       "task": "Exporte de boletos está sendo limitado a 20 no novo front",
@@ -687,48 +727,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77125"
     },
     {
-      "id": 77206,
-      "task": "Pesquisa por placa não retorna resultados no produto Embarcador",
-      "descricao": "No produto Embarcador, o campo de pesquisa permite realizar buscas por CNPJ, AIT ou placa.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-04T14:17:33Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77206"
-    },
-    {
-      "id": 76748,
-      "task": "Não é possível subir Certificado no front novo",
-      "descricao": "No novo front não está sendo possível subir o Certificado Digital na empresa, retorna o erro de que não foi...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-04T11:54:58Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Corrigido, @rolf poderia subir a branch bug/76748-certificado para staging?",
-      "link": "https://redmine.platform.brobot.com.br/issues/76748"
-    },
-    {
-      "id": 69272,
-      "task": "Criação de serviço próprio para resolução do cookie TSPD no login Gov",
-      "descricao": "Desenvolver um serviço interno responsável pela resolução e gerenciamento do cookie TSPD utilizado no fluxo de autenticação via Gov.",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-03T12:05:56Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "Foi substituido o hrequest no login com gov. Com isso, esta task perde sua funcionalidade",
-      "link": "https://redmine.platform.brobot.com.br/issues/69272"
-    },
-    {
       "id": 76717,
       "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
       "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
@@ -769,20 +767,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@roberta @gustavo @felipe-godoy @leonardo.paganotti @julya.tochio @renata @maria.rozolem @Thais boa tarde, 71387 — Status Ativo/Inativo de Empresas em Definições Situação: entregue e disponível em pro",
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
-    },
-    {
-      "id": 61539,
-      "task": "Implementação do Módulo CaçaCondutores > Integração",
-      "descricao": "",
-      "category": "Produtos - Novo produto",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-28T15:04:30Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Reprovado. Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o ge",
-      "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
       "id": 41092,
@@ -1315,20 +1299,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo boa tarde, Informo que foi realizada a criação do projeto para desenvolvimento, os desenvolvedores seguirão com análise de estimativa da atividade e posteriormente seguiremos com planejamento",
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
-    },
-    {
-      "id": 60381,
-      "task": "Estruturação do processo e documentação do fluxo de Indicação de Condutor",
-      "descricao": "Realizar a estruturação macro do tema de Indicação de Condutor, contemplando tanto a documentação interna p...",
-      "category": "Produtos - Documentação",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-14T18:58:38Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
-      "link": "https://redmine.platform.brobot.com.br/issues/60381"
     },
     {
       "id": 39504,
