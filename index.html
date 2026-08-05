@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-05T11:56:21.194Z",
-  "total": 10,
+  "gerado_em": "2026-08-05T12:26:03.775Z",
+  "total": 9,
   "rows": [
     {
       "id": 52181,
@@ -566,7 +566,14 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi pra staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/77530"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-08-05T12:26:51.925Z",
+  "sprint_id": 62,
+  "total": 56,
+  "rows": [
     {
       "id": 77084,
       "task": "Retirar HRequest das Spiders",
@@ -574,19 +581,13 @@
       "category": "Spider - Outros",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-04T20:16:41Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Estava analisando as spiders que ainda utilizam hrequest no login do Gov.br e percebi que o autosdetranrs não teve a remoção completa na tarefa do @miguel: Também observei que vários processos em prod",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-05T12:06:16Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Aprovado Efetuado os testes do Detran MG, Detran RN e Detran RS e comento abaixo: Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic - Detran MG : Todas as consultas processaram co",
       "link": "https://redmine.platform.brobot.com.br/issues/77084"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-05T11:57:19.934Z",
-  "sprint_id": 62,
-  "total": 56,
-  "rows": [
+    },
     {
       "id": 77125,
       "task": "Indicação de Condutor não utiliza credencial preferencial cadastrada na conta - JUPEL - SNE ID: 2252",
@@ -670,20 +671,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Corrigido, @rolf poderia subir a PR bug/76844-valor-quantidade para staging?",
       "link": "https://redmine.platform.brobot.com.br/issues/76844"
-    },
-    {
-      "id": 77232,
-      "task": "spiders autos_antt e autos_antt_processos: Inconsistência na disponibilidade de boleto entre as spiders no produto Embarcador - CONLOG ID: 2360",
-      "descricao": "Foi identificada uma inconsistência durante a execução da rodada do produto Embarcador, que utiliza as spid...",
-      "category": "Backend - Consumo",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-04T12:45:55Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77232"
     },
     {
       "id": 76573,
