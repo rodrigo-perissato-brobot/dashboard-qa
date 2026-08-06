@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-06T13:55:56.656Z",
-  "total": 13,
+  "gerado_em": "2026-08-06T14:26:42.830Z",
+  "total": 10,
   "rows": [
     {
       "id": 52181,
@@ -529,32 +529,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
-      "id": 77524,
-      "task": "Erro: \"undefined method `status' for nil\"",
-      "descricao": "Link: admin/events",
-      "category": "",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-04T15:29:42Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo não tem como reproduzir de forma muito fácil em staging. Vamos subir pra produção e acompanhar.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77524"
-    },
-    {
-      "id": 77600,
-      "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
-      "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
-      "category": "Spider - Outros",
-      "priority": "immediate",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-08-05T15:07:49Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@gustavo poderia testar este ajuste do novo cenário por favor?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77600"
-    },
-    {
       "id": 70018,
       "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
       "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
@@ -594,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77348"
     },
     {
-      "id": 77418,
-      "task": "autos_der_sp — respostas não-200 sendo ignoradas silenciosamente (0 sucessos em 724)",
-      "descricao": "h2.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-06T13:00:02Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Analisei os logs no Datadog e identifiquei que a spider estava retornando os status codes 502 e 431 em alguns casos. Realizei algumas alterações para tentar mitigar esses erros. @rodrigo, poderia test",
-      "link": "https://redmine.platform.brobot.com.br/issues/77418"
-    },
-    {
       "id": 77075,
       "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
       "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
@@ -622,10 +583,52 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-06T13:56:50.113Z",
+  "gerado_em": "2026-08-06T14:27:51.280Z",
   "sprint_id": 62,
-  "total": 55,
+  "total": 54,
   "rows": [
+    {
+      "id": 52120,
+      "task": "Captura / Upload dos documentos NFCom (Mod 62), NF3e (Mod 66) e GTV-e (Mod 64) - Unico - KADAN (ID: 515)",
+      "descricao": "Solicita-se orientação e/ou atualização sobre o andamento relacionado à captura automática dos documentos N...",
+      "category": "",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T14:23:49Z",
+      "comentario_autor": "Roberta Espacachere",
+      "comentario_trecho": "Bom dia, @Gabriella Mendes Temos alguma atualização sobre o tema?",
+      "link": "https://redmine.platform.brobot.com.br/issues/52120"
+    },
+    {
+      "id": 74682,
+      "task": "Incluir NFSe do Portal Nacional no relatório de DFe para faturamento",
+      "descricao": "Atualmente, o relatório de DFe utilizado pelo Time Financeiro para faturamento das contas que consomem o se...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T14:00:27Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "Segue o relatório incluindo NFSe Nacional.",
+      "link": "https://redmine.platform.brobot.com.br/issues/74682"
+    },
+    {
+      "id": 39504,
+      "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
+      "descricao": "Gabriella, boa tarde!",
+      "category": "anterior",
+      "priority": "medium",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T13:56:50Z",
+      "comentario_autor": "Roberta Espacachere",
+      "comentario_trecho": "Bom dia pessoal! Alguma novidade sobre o tema da chore?",
+      "link": "https://redmine.platform.brobot.com.br/issues/39504"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
@@ -639,20 +642,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 65 : No Platform New , não existe o dropdown nos gráficos para selecionar se o gráfico deve trazer Quantidade ou Valor Classic (Correto): New (Errado): Item 66 : No Dashboard , os valores totais ",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 74682,
-      "task": "Incluir NFSe do Portal Nacional no relatório de DFe para faturamento",
-      "descricao": "Atualmente, o relatório de DFe utilizado pelo Time Financeiro para faturamento das contas que consomem o se...",
-      "category": "",
-      "priority": "high",
-      "status": "to do",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-06T12:48:00Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado em call com @joathan o mesmo seguirá com a extração do relatório de julho e posteriormente incluir as notas na tela admin/reports/dfe Exemplo, conta ID 454 Falcão - AVISO: Relatório ",
-      "link": "https://redmine.platform.brobot.com.br/issues/74682"
     },
     {
       "id": 76748,
@@ -681,20 +670,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@rolf PR feature/76844 criada para Main",
       "link": "https://redmine.platform.brobot.com.br/issues/76844"
-    },
-    {
-      "id": 52139,
-      "task": "autos_detran_df - Ajuste de login GOVBR",
-      "descricao": "",
-      "category": "Portal - Mudança de fluxo",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-05T19:06:12Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@thiago Link da PR 1398",
-      "link": "https://redmine.platform.brobot.com.br/issues/52139"
     },
     {
       "id": 77206,
@@ -1089,20 +1064,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/43063"
     },
     {
-      "id": 52120,
-      "task": "Captura / Upload dos documentos NFCom (Mod 62), NF3e (Mod 66) e GTV-e (Mod 64) - Unico - KADAN (ID: 515)",
-      "descricao": "Solicita-se orientação e/ou atualização sobre o andamento relacionado à captura automática dos documentos N...",
-      "category": "",
-      "priority": "high",
-      "status": "to do",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-17T16:08:59Z",
-      "comentario_autor": "Roberta Espacachere",
-      "comentario_trecho": "Bom dia, @gabriella Temos alguma atualização sobre o tema?",
-      "link": "https://redmine.platform.brobot.com.br/issues/52120"
-    },
-    {
       "id": 76008,
       "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
       "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
@@ -1381,20 +1342,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
       "link": "https://redmine.platform.brobot.com.br/issues/60381"
-    },
-    {
-      "id": 39504,
-      "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
-      "descricao": "Gabriella, boa tarde!",
-      "category": "anterior",
-      "priority": "medium",
-      "status": "to do",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-02-10T11:34:37Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Bom dia, A atividade encontra-se na fila para análise da equipe de desenvolvimento. Assim que houver avanços ou necessidade de informações adicionais, retornamos com atualizações.",
-      "link": "https://redmine.platform.brobot.com.br/issues/39504"
     }
   ]
 };
