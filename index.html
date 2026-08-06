@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-06T14:26:42.830Z",
-  "total": 10,
+  "gerado_em": "2026-08-06T14:55:59.561Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -529,6 +529,32 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
+      "id": 77524,
+      "task": "Erro: \"undefined method `status' for nil\"",
+      "descricao": "Link: admin/events",
+      "category": "",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-04T15:29:42Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo não tem como reproduzir de forma muito fácil em staging. Vamos subir pra produção e acompanhar.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77524"
+    },
+    {
+      "id": 77600,
+      "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
+      "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
+      "category": "Spider - Outros",
+      "priority": "immediate",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-08-05T15:07:49Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@gustavo poderia testar este ajuste do novo cenário por favor?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77600"
+    },
+    {
       "id": 70018,
       "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
       "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
@@ -568,25 +594,67 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77348"
     },
     {
+      "id": 77418,
+      "task": "autos_der_sp — respostas não-200 sendo ignoradas silenciosamente (0 sucessos em 724)",
+      "descricao": "h2.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-06T13:00:02Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Analisei os logs no Datadog e identifiquei que a spider estava retornando os status codes 502 e 431 em alguns casos. Realizei algumas alterações para tentar mitigar esses erros. @rodrigo, poderia test",
+      "link": "https://redmine.platform.brobot.com.br/issues/77418"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-08-06T14:56:47.547Z",
+  "sprint_id": 62,
+  "total": 54,
+  "rows": [
+    {
       "id": 77075,
       "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
       "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
       "category": "Spider - Falha de sincronização ou timeout",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-06T13:02:04Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo, fiz uma nova alteração. Poderia testar novamente, por gentileza?",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T14:48:55Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado . Processei a consulta na spider e continua capturando menos multas do que o portal disponibiliza. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Foram cap",
       "link": "https://redmine.platform.brobot.com.br/issues/77075"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-06T14:27:51.280Z",
-  "sprint_id": 62,
-  "total": 54,
-  "rows": [
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T14:46:27Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "Item 67 : Não existe o filtro de Status do veículo no Platform New: Classic : New :",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 51852,
+      "task": "FICI Preenchida Automaticamente - Davi",
+      "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T14:43:04Z",
+      "comentario_autor": "Roberta Espacachere",
+      "comentario_trecho": "Bom dia, Temos alguma atualização sobre o tema?",
+      "link": "https://redmine.platform.brobot.com.br/issues/51852"
+    },
     {
       "id": 52120,
       "task": "Captura / Upload dos documentos NFCom (Mod 62), NF3e (Mod 66) e GTV-e (Mod 64) - Unico - KADAN (ID: 515)",
@@ -628,20 +696,6 @@
       "comentario_autor": "Roberta Espacachere",
       "comentario_trecho": "Bom dia pessoal! Alguma novidade sobre o tema da chore?",
       "link": "https://redmine.platform.brobot.com.br/issues/39504"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-06T12:54:15Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "Item 65 : No Platform New , não existe o dropdown nos gráficos para selecionar se o gráfico deve trazer Quantidade ou Valor Classic (Correto): New (Errado): Item 66 : No Dashboard , os valores totais ",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 76748,
@@ -740,20 +794,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@rolf Reprovado. Tentei exportar o relatório, porém o sistema só processa e não finaliza, também não gera erro. Ambiente: Produção | Versão: New O arquivo oficial que exportou já foi aceito pelo finan",
       "link": "https://redmine.platform.brobot.com.br/issues/44623"
-    },
-    {
-      "id": 77125,
-      "task": "Indicação de Condutor não utiliza credencial preferencial cadastrada na conta - JUPEL - SNE ID: 2252",
-      "descricao": "Ao realizar o processo de Indicação de Condutor, o sistema não está utilizando a credencial configurada como preferencial na conta.",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-05T11:54:36Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77125"
     },
     {
       "id": 69272,
@@ -1076,20 +1116,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Planning realizada em 16/07/2026 na presença de @gabriella @rolf @delvin @felipe @rodrigo @jose-ricardo @miguel @thiago @joathan foi alinhado que a pontuação desta atividade é: 13 - 2 a 3 sprints. Foi",
       "link": "https://redmine.platform.brobot.com.br/issues/76008"
-    },
-    {
-      "id": 51852,
-      "task": "FICI Preenchida Automaticamente - Davi",
-      "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "to do",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-16T13:07:54Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "Segue relatório com informações solicitadas:",
-      "link": "https://redmine.platform.brobot.com.br/issues/51852"
     },
     {
       "id": 75360,
