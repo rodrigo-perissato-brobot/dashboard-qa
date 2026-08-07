@@ -447,7 +447,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-07T11:56:30.910Z",
+  "gerado_em": "2026-08-07T12:26:38.391Z",
   "total": 9,
   "rows": [
     {
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/70018"
     },
     {
-      "id": 74682,
-      "task": "Incluir NFSe do Portal Nacional no relatório de DFe para faturamento",
-      "descricao": "Atualmente, o relatório de DFe utilizado pelo Time Financeiro para faturamento das contas que consomem o se...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-06T19:47:58Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo subi pra produção. A geração desse relatório utiliza um worker diferente e em staging não funciona. Como é em área administrativa ja subi para testarmos la.",
-      "link": "https://redmine.platform.brobot.com.br/issues/74682"
-    },
-    {
       "id": 77145,
       "task": "autos_dnit Retorna boletos desatualizados para multas do DNIT - TLG GAZIN ID: 2206",
       "descricao": "A spider autosdnit está capturando multas do portal do DNIT com boletos desatualizados na plataforma.",
@@ -566,27 +553,54 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo Foi corrigido um bug que evitava que fosse gravada a informação do boleto dentro da informação da multa. @rodrigo Pode fazer testes, por favor? Lembrando que é na spider da v2, não v3.",
       "link": "https://redmine.platform.brobot.com.br/issues/77145"
+    },
+    {
+      "id": 74682,
+      "task": "Incluir NFSe do Portal Nacional no relatório de DFe para faturamento",
+      "descricao": "Atualmente, o relatório de DFe utilizado pelo Time Financeiro para faturamento das contas que consomem o se...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-07T12:13:15Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo por gentileza, solicito o teste do tema",
+      "link": "https://redmine.platform.brobot.com.br/issues/74682"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-07T11:57:30.770Z",
+  "gerado_em": "2026-08-07T12:28:06.825Z",
   "sprint_id": 62,
-  "total": 54,
+  "total": 51,
   "rows": [
     {
-      "id": 76008,
-      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
-      "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
-      "category": "Operação - Origem",
+      "id": 76633,
+      "task": "Captura de NFSe via API - IKKI (ID: 580)",
+      "descricao": "Poderiam por gentileza com o caso abaixo?",
+      "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "staging",
+      "status": "in progress",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-07T11:32:56Z",
+      "data_comentario": "2026-08-07T12:15:47Z",
       "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@rolf validei o tema, solicito a inclusão da mesma checkbox para o DNIT, por gentileza",
-      "link": "https://redmine.platform.brobot.com.br/issues/76008"
+      "comentario_trecho": "@leonardo.paganotti bom dia, Conforme alinhado com os presentes Emerson, Roberta, Gabriella em 29/07/2026: seguiremos com desenvolvimento do tema. @joathan conforme alinhado via discord, por gentileza",
+      "link": "https://redmine.platform.brobot.com.br/issues/76633"
+    },
+    {
+      "id": 77770,
+      "task": "Platform New | Erro ao cadastrar veículo",
+      "descricao": "Foi identificado um erro no Platform New ao tentar realizar o cadastro de um novo veículo.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-07T12:05:07Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo bom dia, Informo que estou em correção do tema.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77770"
     },
     {
       "id": 77348,
@@ -743,20 +757,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76751"
     },
     {
-      "id": 76573,
-      "task": "Não é possível executar consulta avulsa do Embarcador no novo front",
-      "descricao": "No novo front da plataforma, não é possível executar uma consulta avulsa do Embarcador .",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-05T17:33:15Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@rolf PR bug/76573 aberto para Main",
-      "link": "https://redmine.platform.brobot.com.br/issues/76573"
-    },
-    {
       "id": 44623,
       "task": "Implementar módulo de Financeiro na Platform para visualização e extração de relatórios de faturamento",
       "descricao": "O quê?",
@@ -783,20 +783,6 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "Foi substituido o hrequest no login com gov. Com isso, esta task perde sua funcionalidade",
       "link": "https://redmine.platform.brobot.com.br/issues/69272"
-    },
-    {
-      "id": 76717,
-      "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
-      "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-31T19:28:30Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo a Confirmação da Operação foi executada e as 3 notas serão disponibilizadas em breve.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76717"
     },
     {
       "id": 71817,
@@ -867,20 +853,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
       "link": "https://redmine.platform.brobot.com.br/issues/37739"
-    },
-    {
-      "id": 75795,
-      "task": "Consultas semestrais automáticas para veículos com alto volume de multas (Prefeitura SP)",
-      "descricao": "Objetivo Automatizar a consulta de veículos que acumulam muitas multas na Prefeitura de São Paulo.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "to do",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-27T19:25:47Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
-      "link": "https://redmine.platform.brobot.com.br/issues/75795"
     },
     {
       "id": 76863,
@@ -1021,20 +993,6 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Entregue em produção 24-25/07 (retry com groupid preservado, correção da dupla cadeia de agendamento, amountretry reduzido, payload de bloqueio em coleta pela equipe). @rodrigo @gabi — ciência: esta e",
       "link": "https://redmine.platform.brobot.com.br/issues/76755"
-    },
-    {
-      "id": 75786,
-      "task": "Permitir alteração de status em lote dos veículos (Ativar/Inativar)",
-      "descricao": "Atualmente, ao selecionar vários veículos utilizando a opção \"Selecionar todos\", não é possível alterar o status em lote.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-24T13:50:10Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf Efetuei os testes em ambas versões do Platform e separo os resultados. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Aprovado Todos os testes executados funcionaram conforme esp",
-      "link": "https://redmine.platform.brobot.com.br/issues/75786"
     },
     {
       "id": 49662,
