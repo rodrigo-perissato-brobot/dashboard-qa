@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-07T12:56:56.948Z",
-  "total": 6,
+  "gerado_em": "2026-08-07T13:26:18.637Z",
+  "total": 9,
   "rows": [
     {
       "id": 52181,
@@ -462,6 +462,32 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/52181"
+    },
+    {
+      "id": 57089,
+      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
+      "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
+      "category": "Produtos - Novo produto",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-07-15T03:35:50Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
+      "link": "https://redmine.platform.brobot.com.br/issues/57089"
+    },
+    {
+      "id": 73585,
+      "task": "Configurar domínio consultas-api.com.br para a API White Label",
+      "descricao": "Realizar a configuração do domínio consultas-api.com.br para que ele seja utilizado como endereço oficial da API White Label da plataforma.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-23T19:14:43Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
+      "link": "https://redmine.platform.brobot.com.br/issues/73585"
     },
     {
       "id": 64086,
@@ -527,14 +553,41 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo Foi corrigido um bug que evitava que fosse gravada a informação do boleto dentro da informação da multa. @rodrigo Pode fazer testes, por favor? Lembrando que é na spider da v2, não v3.",
       "link": "https://redmine.platform.brobot.com.br/issues/77145"
+    },
+    {
+      "id": 74682,
+      "task": "Incluir NFSe do Portal Nacional no relatório de DFe para faturamento",
+      "descricao": "Atualmente, o relatório de DFe utilizado pelo Time Financeiro para faturamento das contas que consomem o se...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-07T12:13:15Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo por gentileza, solicito o teste do tema",
+      "link": "https://redmine.platform.brobot.com.br/issues/74682"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-07T12:58:18.411Z",
+  "gerado_em": "2026-08-07T13:27:24.341Z",
   "sprint_id": 62,
   "total": 56,
   "rows": [
+    {
+      "id": 76008,
+      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
+      "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
+      "category": "Operação - Origem",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-07T13:09:44Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Ajuste feito por ordem do Rolf: o DNIT ganhou checkbox proprio, em vez de herdar a marcacao da ANTT. Agora as tres spiders do grupo gov.br — ANTT, ANTT Processos e DNIT — sao intercambiaveis: a creden",
+      "link": "https://redmine.platform.brobot.com.br/issues/76008"
+    },
     {
       "id": 76633,
       "task": "Captura de NFSe via API - IKKI (ID: 580)",
@@ -562,20 +615,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo bom dia, Informo que estou em correção do tema.",
       "link": "https://redmine.platform.brobot.com.br/issues/77770"
-    },
-    {
-      "id": 76008,
-      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
-      "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
-      "category": "Operação - Origem",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-07T11:32:56Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@rolf validei o tema, solicito a inclusão da mesma checkbox para o DNIT, por gentileza",
-      "link": "https://redmine.platform.brobot.com.br/issues/76008"
     },
     {
       "id": 77348,
