@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-06T19:56:10.663Z",
-  "total": 9,
+  "gerado_em": "2026-08-07T10:55:49.157Z",
+  "total": 10,
   "rows": [
     {
       "id": 52181,
@@ -566,14 +566,41 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi pra produção. A geração desse relatório utiliza um worker diferente e em staging não funciona. Como é em área administrativa ja subi para testarmos la.",
       "link": "https://redmine.platform.brobot.com.br/issues/74682"
+    },
+    {
+      "id": 77145,
+      "task": "autos_dnit Retorna boletos desatualizados para multas do DNIT - TLG GAZIN ID: 2206",
+      "descricao": "A spider autosdnit está capturando multas do portal do DNIT com boletos desatualizados na plataforma.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-06T21:03:36Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@jose-ricardo Foi corrigido um bug que evitava que fosse gravada a informação do boleto dentro da informação da multa. @rodrigo Pode fazer testes, por favor? Lembrando que é na spider da v2, não v3.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77145"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-06T19:57:05.726Z",
+  "gerado_em": "2026-08-07T10:56:35.733Z",
   "sprint_id": 62,
   "total": 53,
   "rows": [
+    {
+      "id": 76008,
+      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
+      "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
+      "category": "Operação - Origem",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T20:58:12Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Implementada e pronta para testes em staging. h3. O que foi feito Nova flag govbrlogin na credencial (migration + schema). Checkbox Login GOV.BR nos dois fronts, visivel somente quando o servico selec",
+      "link": "https://redmine.platform.brobot.com.br/issues/76008"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
@@ -1049,20 +1076,6 @@
       "comentario_autor": "Felipe Godoy",
       "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
       "link": "https://redmine.platform.brobot.com.br/issues/43063"
-    },
-    {
-      "id": 76008,
-      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
-      "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
-      "category": "Operação - Origem",
-      "priority": "high",
-      "status": "to do",
-      "tipo": "conhecimento",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-16T13:52:14Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Planning realizada em 16/07/2026 na presença de @gabriella @rolf @delvin @felipe @rodrigo @jose-ricardo @miguel @thiago @joathan foi alinhado que a pontuação desta atividade é: 13 - 2 a 3 sprints. Foi",
-      "link": "https://redmine.platform.brobot.com.br/issues/76008"
     },
     {
       "id": 75360,
