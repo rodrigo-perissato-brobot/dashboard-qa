@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-10T16:26:24.932Z",
-  "total": 10,
+  "gerado_em": "2026-08-10T17:26:17.061Z",
+  "total": 11,
   "rows": [
     {
       "id": 52181,
@@ -542,6 +542,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/70018"
     },
     {
+      "id": 77417,
+      "task": "autos_detran_divida_ativa_pr — ValueError: Missing scheme in request url (correção trivial)",
+      "descricao": "h2.",
+      "category": "",
+      "priority": "medium",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-07T13:50:03Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@jose-ricardo Correção aplicada. @rodrigo Pode, por favor, fazer os testes?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77417"
+    },
+    {
       "id": 77774,
       "task": "autos_detran_go - SCRAPY_ERROR",
       "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetrango...",
@@ -555,6 +568,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77774"
     },
     {
+      "id": 77415,
+      "task": "autos_sefaz_sp — 522 exceções não tratadas (Failed to get necessary cookies) + rate limit sem backoff",
+      "descricao": "h2.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-07T19:03:19Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Testei os parametros dos erros mencionados e os erros mencionados ja foram tratados na atividade 77135. Adicionei nesta atividade linhas para identificar quando atingir o limite diário do portal e sal",
+      "link": "https://redmine.platform.brobot.com.br/issues/77415"
+    },
+    {
       "id": 77737,
       "task": "Erro de verificação de segurança impede acesso aos XMLs de entrada de NFS no início da manhã -   TOYOTA TSUSHO",
       "descricao": "O cliente relata que diariamente, no início da manhã, ao tentar acessar os XMLs das notas fiscais de entrad...",
@@ -566,7 +592,14 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi uma grande refatoração para staging. Precisamos fazer um teste pesado no dfe. Retirei o recaptcha do dfe (está somente no login), mas alterei algumas query sql para melhorar as consultas",
       "link": "https://redmine.platform.brobot.com.br/issues/77737"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-08-10T17:27:30.445Z",
+  "sprint_id": 63,
+  "total": 50,
+  "rows": [
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
@@ -574,19 +607,13 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "ambos",
-      "data_comentario": "2026-08-10T14:09:26Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@rodrigo @gustavo segue itens abaixo em staging para serem testados: 49, 50, 52, 59, 60, 61 --- PR para DEV que Rolf subiu (controle de Gabi) item/59-60-61 item/52-filtro-cpf-cnpj item/50-colunas-veic",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-10T17:02:55Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "Item 49 - Reprovado Cidade não está tendo preenchimento obrigatório para cadastro e os campos \"UF\" e \"Cidade\" não estão com o asterisco indicando obrigatoriedade. Item 51 - Aprovado . Coluna \"Criado e",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-10T16:27:23.599Z",
-  "sprint_id": 63,
-  "total": 52,
-  "rows": [
+    },
     {
       "id": 77084,
       "task": "Retirar HRequest das Spiders",
@@ -756,20 +783,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/44623"
     },
     {
-      "id": 69272,
-      "task": "Criação de serviço próprio para resolução do cookie TSPD no login Gov",
-      "descricao": "Desenvolver um serviço interno responsável pela resolução e gerenciamento do cookie TSPD utilizado no fluxo de autenticação via Gov.",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-03T12:05:56Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "Foi substituido o hrequest no login com gov. Com isso, esta task perde sua funcionalidade",
-      "link": "https://redmine.platform.brobot.com.br/issues/69272"
-    },
-    {
       "id": 76717,
       "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
       "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
@@ -810,20 +823,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@roberta @gustavo @felipe-godoy @leonardo.paganotti @julya.tochio @renata @maria.rozolem @Thais boa tarde, 71387 — Status Ativo/Inativo de Empresas em Definições Situação: entregue e disponível em pro",
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
-    },
-    {
-      "id": 61539,
-      "task": "Implementação do Módulo CaçaCondutores > Integração",
-      "descricao": "",
-      "category": "Produtos - Novo produto",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-28T15:04:30Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Reprovado. Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o ge",
-      "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
       "id": 41092,
@@ -1300,20 +1299,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo boa tarde, Informo que foi realizada a criação do projeto para desenvolvimento, os desenvolvedores seguirão com análise de estimativa da atividade e posteriormente seguiremos com planejamento",
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
-    },
-    {
-      "id": 60381,
-      "task": "Estruturação do processo e documentação do fluxo de Indicação de Condutor",
-      "descricao": "Realizar a estruturação macro do tema de Indicação de Condutor, contemplando tanto a documentação interna p...",
-      "category": "Produtos - Documentação",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-14T18:58:38Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
-      "link": "https://redmine.platform.brobot.com.br/issues/60381"
     }
   ]
 };
