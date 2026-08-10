@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-10T14:26:28.092Z",
-  "total": 15,
+  "gerado_em": "2026-08-10T14:56:32.797Z",
+  "total": 13,
   "rows": [
     {
       "id": 52181,
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/70018"
     },
     {
-      "id": 77145,
-      "task": "autos_dnit Retorna boletos desatualizados para multas do DNIT - TLG GAZIN ID: 2206",
-      "descricao": "A spider autosdnit está capturando multas do portal do DNIT com boletos desatualizados na plataforma.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-06T21:03:36Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@jose-ricardo Foi corrigido um bug que evitava que fosse gravada a informação do boleto dentro da informação da multa. @rodrigo Pode fazer testes, por favor? Lembrando que é na spider da v2, não v3.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77145"
-    },
-    {
       "id": 77417,
       "task": "autos_detran_divida_ativa_pr — ValueError: Missing scheme in request url (correção trivial)",
       "descricao": "h2.",
@@ -620,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77737"
     },
     {
-      "id": 77754,
-      "task": "Coluna \"Razão Social\" na listagem e nos relatórios do CaçaMultas Embarcador",
-      "descricao": "Objetivo Hoje a listagem de multas identifica a empresa apenas pelo CNPJ.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "ambos",
-      "data_comentario": "2026-08-10T11:40:50Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77754"
-    },
-    {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
       "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
@@ -648,10 +622,52 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-10T14:27:31.262Z",
+  "gerado_em": "2026-08-10T14:57:35.551Z",
   "sprint_id": 63,
-  "total": 49,
+  "total": 51,
   "rows": [
+    {
+      "id": 77075,
+      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
+      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-10T14:51:33Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado . Processei as consultas dividindo o start/end date em 2026, 2025, 2024 e anterior, e processou com sucesso porém não gravou todas as multas. Ambiente: Staging | Conta: Testes Funcio",
+      "link": "https://redmine.platform.brobot.com.br/issues/77075"
+    },
+    {
+      "id": 77754,
+      "task": "Coluna \"Razão Social\" na listagem e nos relatórios do CaçaMultas Embarcador",
+      "descricao": "Objetivo Hoje a listagem de multas identifica a empresa apenas pelo CNPJ.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-10T14:48:56Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção. @rolf e @gabriella favor replicar para o Platform New.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77754"
+    },
+    {
+      "id": 77145,
+      "task": "autos_dnit Retorna boletos desatualizados para multas do DNIT - TLG GAZIN ID: 2206",
+      "descricao": "A spider autosdnit está capturando multas do portal do DNIT com boletos desatualizados na plataforma.",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-10T14:38:58Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77145"
+    },
     {
       "id": 76008,
       "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
@@ -693,20 +709,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@leonardo.paganotti bom dia, Conforme alinhado com os presentes Emerson, Roberta, Gabriella em 29/07/2026: seguiremos com desenvolvimento do tema. @joathan conforme alinhado via discord, por gentileza",
       "link": "https://redmine.platform.brobot.com.br/issues/76633"
-    },
-    {
-      "id": 77075,
-      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
-      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-06T14:48:55Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado . Processei a consulta na spider e continua capturando menos multas do que o portal disponibiliza. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Foram cap",
-      "link": "https://redmine.platform.brobot.com.br/issues/77075"
     },
     {
       "id": 51852,
