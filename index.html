@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-10T18:26:25.454Z",
-  "total": 11,
+  "gerado_em": "2026-08-10T19:56:15.238Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77774"
     },
     {
-      "id": 77415,
-      "task": "autos_sefaz_sp — 522 exceções não tratadas (Failed to get necessary cookies) + rate limit sem backoff",
-      "descricao": "h2.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-07T19:03:19Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Testei os parametros dos erros mencionados e os erros mencionados ja foram tratados na atividade 77135. Adicionei nesta atividade linhas para identificar quando atingir o limite diário do portal e sal",
-      "link": "https://redmine.platform.brobot.com.br/issues/77415"
-    },
-    {
       "id": 77737,
       "task": "Erro de verificação de segurança impede acesso aos XMLs de entrada de NFS no início da manhã -   TOYOTA TSUSHO",
       "descricao": "O cliente relata que diariamente, no início da manhã, ao tentar acessar os XMLs das notas fiscais de entrad...",
@@ -592,14 +579,68 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi uma grande refatoração para staging. Precisamos fazer um teste pesado no dfe. Retirei o recaptcha do dfe (está somente no login), mas alterei algumas query sql para melhorar as consultas",
       "link": "https://redmine.platform.brobot.com.br/issues/77737"
+    },
+    {
+      "id": 75985,
+      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "════════════════════════════════════════════════════════════��═══════════════ 🕷️ SPIDER: autosdetranms 📅...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-10T18:47:40Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Realizadas mudanças, @jose-ricardo encontrou uma credencial com um veiculo vinculado, o que possibilitou criar parte da spider. Porém, como este veiculo não possui multas ou taxas, não foi possível cr",
+      "link": "https://redmine.platform.brobot.com.br/issues/75985"
+    },
+    {
+      "id": 77945,
+      "task": "Extração relatório de boletos Votorantim Ref 07.2026",
+      "descricao": "URGENTE O Guilherme, da Votorantim, solicitou a extração de um relatório de boletos do módulo Embarcador co...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-10T19:17:55Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo atualizado o financeiro para incluir o campo. Está em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77945"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-10T18:27:29.880Z",
+  "gerado_em": "2026-08-10T19:57:20.048Z",
   "sprint_id": 63,
   "total": 53,
   "rows": [
+    {
+      "id": 77084,
+      "task": "Retirar HRequest das Spiders",
+      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest.",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-10T19:42:46Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Falta apenas remover o hrequest do autosdetranms e das spiders da V3. Após isso, podemos encerrar essa tarefa.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77084"
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-10T19:11:34Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "Item 70 : No Dashboard do Cronotacógrafo, o campo de \"Situação dos Cronotacógrafos\" e \"Total no Período\" está limitado a 50, não condizendo com os valores reais das contas Item 71 : No Dashboard do Cr",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
     {
       "id": 41092,
       "task": "Atividade quinzenal - quinta-feira- gerar arquivo ZMRC ID 1477 ENGEMIX S/A",
@@ -613,34 +654,6 @@
       "comentario_autor": "Jose Ricardo",
       "comentario_trecho": "Segue arquivo ZRMC do dia 10-08-2026 attachment:ENGMIX10-08-2026.csv",
       "link": "https://redmine.platform.brobot.com.br/issues/41092"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-10T17:02:55Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "Item 49 - Reprovado Cidade não está tendo preenchimento obrigatório para cadastro e os campos \"UF\" e \"Cidade\" não estão com o asterisco indicando obrigatoriedade. Item 51 - Aprovado . Coluna \"Criado e",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 77084,
-      "task": "Retirar HRequest das Spiders",
-      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest.",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-10T16:11:50Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77084"
     },
     {
       "id": 77075,
