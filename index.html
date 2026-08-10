@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-10T15:56:18.347Z",
-  "total": 13,
+  "gerado_em": "2026-08-10T16:26:24.932Z",
+  "total": 10,
   "rows": [
     {
       "id": 52181,
@@ -542,32 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/70018"
     },
     {
-      "id": 77417,
-      "task": "autos_detran_divida_ativa_pr — ValueError: Missing scheme in request url (correção trivial)",
-      "descricao": "h2.",
-      "category": "",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-07T13:50:03Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@jose-ricardo Correção aplicada. @rodrigo Pode, por favor, fazer os testes?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77417"
-    },
-    {
-      "id": 77084,
-      "task": "Retirar HRequest das Spiders",
-      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest.",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-07T16:10:18Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Tentei realizar login no portal diretamente com certificado e ocorreu o erro acima. O fallback e com login do gov, porem ao fazer a consulta os cookies nao estavam sendo validados devido a replicação ",
-      "link": "https://redmine.platform.brobot.com.br/issues/77084"
-    },
-    {
       "id": 77774,
       "task": "autos_detran_go - SCRAPY_ERROR",
       "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetrango...",
@@ -579,19 +553,6 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Conforme alinhado com @jose-ricardo via Discord, o cenario sera retornando com sucesso, com a mensagem de Boleto Indisponível. @rodrigo poderia testar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/77774"
-    },
-    {
-      "id": 77415,
-      "task": "autos_sefaz_sp — 522 exceções não tratadas (Failed to get necessary cookies) + rate limit sem backoff",
-      "descricao": "h2.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-07T19:03:19Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Testei os parametros dos erros mencionados e os erros mencionados ja foram tratados na atividade 77135. Adicionei nesta atividade linhas para identificar quando atingir o limite diário do portal e sal",
-      "link": "https://redmine.platform.brobot.com.br/issues/77415"
     },
     {
       "id": 77737,
@@ -622,10 +583,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-10T15:57:22.171Z",
+  "gerado_em": "2026-08-10T16:27:23.599Z",
   "sprint_id": 63,
-  "total": 46,
+  "total": 52,
   "rows": [
+    {
+      "id": 77084,
+      "task": "Retirar HRequest das Spiders",
+      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest.",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-10T16:11:50Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77084"
+    },
     {
       "id": 77075,
       "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
@@ -851,6 +826,34 @@
       "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
+      "id": 41092,
+      "task": "Atividade quinzenal - quinta-feira- gerar arquivo ZMRC ID 1477 ENGEMIX S/A",
+      "descricao": "Descrição: Executar a automação existente para gerar o arquivo ZMRC conforme o padrão estabelecido.",
+      "category": "anterior",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-28T12:28:56Z",
+      "comentario_autor": "Jose Ricardo",
+      "comentario_trecho": "Segue arquivo ZRMC do dia 28-07-2026 attachment:ENGMIX28-07-2026.csv",
+      "link": "https://redmine.platform.brobot.com.br/issues/41092"
+    },
+    {
+      "id": 37739,
+      "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
+      "descricao": "Boa tarde pessoal, tudo bem ?",
+      "category": "Spider - Outros",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-27T19:26:40Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
+      "link": "https://redmine.platform.brobot.com.br/issues/37739"
+    },
+    {
       "id": 75795,
       "task": "Consultas semestrais automáticas para veículos com alto volume de multas (Prefeitura SP)",
       "descricao": "Objetivo Automatizar a consulta de veículos que acumulam muitas multas na Prefeitura de São Paulo.",
@@ -1047,6 +1050,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/74648"
     },
     {
+      "id": 43063,
+      "task": "Novas Funcionalidades Cronotacógrafo",
+      "descricao": "Realizar um estudo de novas funcionalidades para tornar o módulo de cronotacógrafo mais completo, incluindo...",
+      "category": "anterior",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-17T19:52:20Z",
+      "comentario_autor": "Felipe Godoy",
+      "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
+      "link": "https://redmine.platform.brobot.com.br/issues/43063"
+    },
+    {
       "id": 75360,
       "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
       "descricao": "Alterar a regra de cálculo do card \"Média por Multa\" presente no dashboard do produto Caçamultas Embarcador...",
@@ -1215,6 +1232,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/52015"
     },
     {
+      "id": 16564,
+      "task": "Funcionalidades de autorização de \"Membro\"",
+      "descricao": "Bom dia Nathan, tudo bem?",
+      "category": "",
+      "priority": "low",
+      "status": "on hold",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-03T12:10:14Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado em 07/04/2026 entre Emerson e Gabriella mudamos para on hold aguardar cliente solicitar o tema",
+      "link": "https://redmine.platform.brobot.com.br/issues/16564"
+    },
+    {
       "id": 44624,
       "task": "GERAR INSIGHTS PÓS CONSULTA E ENVIAR VIA E-MAIL/WHATSAPP",
       "descricao": "",
@@ -1241,6 +1272,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@ralph por gentileza, seguir com estimativa da atividade protótipo criado 70018",
       "link": "https://redmine.platform.brobot.com.br/issues/47471"
+    },
+    {
+      "id": 30232,
+      "task": "Conta mestre Cervejaria Imperial",
+      "descricao": "Boa tarde pessoal!",
+      "category": "anterior",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-04-28T14:45:00Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
+      "link": "https://redmine.platform.brobot.com.br/issues/30232"
     },
     {
       "id": 51016,
