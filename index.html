@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-11T19:26:51.344Z",
-  "total": 11,
+  "gerado_em": "2026-08-11T19:56:24.802Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -516,19 +516,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
-      "id": 77600,
-      "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
-      "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
-      "category": "Spider - Outros",
-      "priority": "immediate",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-08-05T15:07:49Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@gustavo poderia testar este ajuste do novo cenário por favor?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77600"
-    },
-    {
       "id": 70018,
       "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
       "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
@@ -568,6 +555,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77649"
     },
     {
+      "id": 77075,
+      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
+      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-10T23:11:16Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@rodrigo poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77075"
+    },
+    {
       "id": 77939,
       "task": "autos_sefaz_mt - Ajuste de Retorno",
       "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossefazmt \ud83d...",
@@ -592,14 +592,55 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Alterações realizadas para corrigir os erros. @rodrigo, poderia testar, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/78233"
+    },
+    {
+      "id": 77825,
+      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
+      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-11T19:40:33Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Ajustada spider para capturar do novo endpoint. @rodrigo poderia testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77825"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-11T19:28:16.590Z",
+  "gerado_em": "2026-08-11T19:57:41.205Z",
   "sprint_id": 63,
-  "total": 47,
+  "total": 56,
   "rows": [
+    {
+      "id": 77600,
+      "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
+      "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
+      "category": "Spider - Outros",
+      "priority": "immediate",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-11T19:49:33Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "No momento não temos um cenário definido para realizar a validação desse novo ajuste. Vou aguardar o surgimento de um novo cenário para que eu possa prosseguir com os testes.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77600"
+    },
+    {
+      "id": 77770,
+      "task": "Platform New | Erro ao cadastrar veículo",
+      "descricao": "Foi identificado um erro no Platform New ao tentar realizar o cadastro de um novo veículo.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-11T19:33:11Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@gabriella, Aguardo correção do caso relatado para prosseguir com teste da Feature 51186",
+      "link": "https://redmine.platform.brobot.com.br/issues/77770"
+    },
     {
       "id": 77417,
       "task": "autos_detran_divida_ativa_pr — ValueError: Missing scheme in request url (correção trivial)",
@@ -671,6 +712,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75985"
     },
     {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-11T16:23:01Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "Item 74 : No CaçaMultas Frotas o ícone de copiar placa pisca, e não se mantém estável Item 75 : Os serviços Crono/Taxas/Indicação de Condutores/Motoristas/Controle de CNH/Exame Toxicológico não possue",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
       "id": 77084,
       "task": "Retirar HRequest das Spiders",
       "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest.",
@@ -713,18 +768,18 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76008"
     },
     {
-      "id": 77770,
-      "task": "Platform New | Erro ao cadastrar veículo",
-      "descricao": "Foi identificado um erro no Platform New ao tentar realizar o cadastro de um novo veículo.",
-      "category": "Frontend - Novo frontend",
+      "id": 76633,
+      "task": "Captura de NFSe via API - IKKI (ID: 580)",
+      "descricao": "Poderiam por gentileza com o caso abaixo?",
+      "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "staging",
+      "status": "in progress",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-07T17:15:15Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@gabriella, efetuado os testes conforme abaixo: Ambiente: Produção | Conta: Apresentação Comercial | Versão: New O cadastro de veículos voltou a funcionar corretamente. Porém, identifiquei um comporta",
-      "link": "https://redmine.platform.brobot.com.br/issues/77770"
+      "data_comentario": "2026-08-07T12:15:47Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@leonardo.paganotti bom dia, Conforme alinhado com os presentes Emerson, Roberta, Gabriella em 29/07/2026: seguiremos com desenvolvimento do tema. @joathan conforme alinhado via discord, por gentileza",
+      "link": "https://redmine.platform.brobot.com.br/issues/76633"
     },
     {
       "id": 51852,
@@ -755,6 +810,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/52120"
     },
     {
+      "id": 39504,
+      "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
+      "descricao": "Gabriella, boa tarde!",
+      "category": "anterior",
+      "priority": "medium",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T13:56:50Z",
+      "comentario_autor": "Roberta Espacachere",
+      "comentario_trecho": "Bom dia pessoal! Alguma novidade sobre o tema da chore?",
+      "link": "https://redmine.platform.brobot.com.br/issues/39504"
+    },
+    {
       "id": 76748,
       "task": "Não é possível subir Certificado no front novo",
       "descricao": "No novo front não está sendo possível subir o Certificado Digital na empresa, retorna o erro de que não foi...",
@@ -767,6 +836,20 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Rolf favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/76748"
+    },
+    {
+      "id": 44623,
+      "task": "Implementar módulo de Financeiro na Platform para visualização e extração de relatórios de faturamento",
+      "descricao": "O quê?",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-05T13:08:38Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Reprovado. Tentei exportar o relatório, porém o sistema só processa e não finaliza, também não gera erro. Ambiente: Produção | Versão: New O arquivo oficial que exportou já foi aceito pelo finan",
+      "link": "https://redmine.platform.brobot.com.br/issues/44623"
     },
     {
       "id": 69272,
@@ -1021,6 +1104,34 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75786"
     },
     {
+      "id": 49662,
+      "task": "Platform está permitindo repetir cadastro de CNPJ se cadastrado como matriz e filial",
+      "descricao": "Durante os testes automatizados, identifiquei uma falha no Platform, que está permitindo cadastrar um CNPJ...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-22T18:20:22Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella segue uma análise do problema em questão. O que podemos fazer por ora? Análise: mesmo CNPJ cadastrado como Matriz e Filial O problema O Platform permite cadastrar o mesmo CNPJ (14 dígitos) ",
+      "link": "https://redmine.platform.brobot.com.br/issues/49662"
+    },
+    {
+      "id": 74648,
+      "task": "Cadastro de Veículos | Permitir atualização em lote da frota sem perda de histórico",
+      "descricao": "Atualmente, quando um cliente solicita a atualização de sua frota, o processo consiste em excluir os veícul...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-22T12:09:20Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo bom dia, Conforme alinhado em 08/07/2026 com os presentes: Renata, Guilherme, Rolf, Diego, Gabriella, Meira, informo que a demanda foi aprovada na reunião The Voice e seguirá para a próxima e",
+      "link": "https://redmine.platform.brobot.com.br/issues/74648"
+    },
+    {
       "id": 43063,
       "task": "Novas Funcionalidades Cronotacógrafo",
       "descricao": "Realizar um estudo de novas funcionalidades para tornar o módulo de cronotacógrafo mais completo, incluindo...",
@@ -1075,6 +1186,34 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
       "link": "https://redmine.platform.brobot.com.br/issues/57089"
+    },
+    {
+      "id": 59523,
+      "task": "Criação do Dashboard",
+      "descricao": "",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-14T19:28:13Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Dashboard redesenhado nos 2 fronts — em staging Front antigo (deployado em staging): visão geral em 3 clusters semânticos (Motoristas e Indicações em azul; CNH e Toxicológico com verde/âmbar/vermelho ",
+      "link": "https://redmine.platform.brobot.com.br/issues/59523"
+    },
+    {
+      "id": 75755,
+      "task": "Automatizar fluxo de período de consulta (Start Date e End Date) para a spider autos_prefeitura_sp",
+      "descricao": "Criar um fluxo automático para definição do período de consulta (Start Date e End Date) utilizado pela spid...",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-14T11:52:28Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "User story criada e priorizada subatividades para a sprint 29 conforme alinhado com @rolf e @rodrigo",
+      "link": "https://redmine.platform.brobot.com.br/issues/75755"
     },
     {
       "id": 75193,
