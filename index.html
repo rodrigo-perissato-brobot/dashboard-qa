@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-11T16:26:07.712Z",
-  "total": 13,
+  "gerado_em": "2026-08-11T16:56:25.785Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77737"
     },
     {
-      "id": 75985,
-      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-10T18:47:40Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Realizadas mudanças, @jose-ricardo encontrou uma credencial com um veiculo vinculado, o que possibilitou criar parte da spider. Porém, como este veiculo não possui multas ou taxas, não foi possível cr",
-      "link": "https://redmine.platform.brobot.com.br/issues/75985"
-    },
-    {
       "id": 77649,
       "task": "autos_antt - Ajuste de retorno da spider para o erro correto",
       "descricao": "A consulta de um cliente na ANTT está retornando com o erro de consulta de \"many attempts\" e quando tentei...",
@@ -622,10 +609,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-11T16:27:05.513Z",
+  "gerado_em": "2026-08-11T16:57:14.392Z",
   "sprint_id": 63,
-  "total": 53,
+  "total": 54,
   "rows": [
+    {
+      "id": 75985,
+      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
+      "category": "Portal - Mudança de layout",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-11T16:35:19Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan esta spider passou a utilizar gov.br, com isso poderia tratar para quando a conta possuir uma credencial gov.br cadastrada, a mesma seja utilizada na consulta? Este tratamento foi efetuado em",
+      "link": "https://redmine.platform.brobot.com.br/issues/75985"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
