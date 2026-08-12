@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-12T16:26:14.055Z",
-  "total": 14,
+  "gerado_em": "2026-08-12T16:56:00.529Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77649"
     },
     {
-      "id": 77075,
-      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
-      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-10T23:11:16Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77075"
-    },
-    {
       "id": 77939,
       "task": "autos_sefaz_mt - Ajuste de Retorno",
       "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossefazmt \ud83d...",
@@ -607,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77825"
     },
     {
-      "id": 77732,
-      "task": "Mostrar cruzamentos anteriores na área de Cruzamento x SPED",
-      "descricao": "Na área de cruzamento de SPED do DFe não mostra os cruzamentos anteriores, a cliente informou que gostaria...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-12T11:14:29Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo ou @gustavo. Poderia testar?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77732"
-    },
-    {
       "id": 77806,
       "task": "autos_bradesco_detran_rj_taxas - KNOWN_WEBSITE_BUG",
       "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosbradescod...",
@@ -635,10 +609,66 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-12T16:27:24.051Z",
+  "gerado_em": "2026-08-12T16:57:04.357Z",
   "sprint_id": 63,
-  "total": 55,
+  "total": 58,
   "rows": [
+    {
+      "id": 77649,
+      "task": "autos_antt - Ajuste de retorno da spider para o erro correto",
+      "descricao": "A consulta de um cliente na ANTT está retornando com o erro de consulta de \"many attempts\" e quando tentei...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-12T16:55:17Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@delvin Aprovado. Processei a consulta do CNPJ 05.020.208/0001-96 e ambas as spiders (autosantt e autosanttprocessos) agora retornam corretamente o erro de verificação em duas etapas ativada, em vez d",
+      "link": "https://redmine.platform.brobot.com.br/issues/77649"
+    },
+    {
+      "id": 75985,
+      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
+      "category": "Portal - Mudança de layout",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-12T16:50:53Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider, após configurar a utilização do agora gov.br e retornou somente erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Tod",
+      "link": "https://redmine.platform.brobot.com.br/issues/75985"
+    },
+    {
+      "id": 77075,
+      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
+      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-12T16:46:07Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado . Processei as consultas 2x e continua não gravando todas as multas do portal. Ambiente: Staging | Conta: [TESTE] Pref SP | Versão: Classic Evidência: Foram gravadas 44 multas, das 2",
+      "link": "https://redmine.platform.brobot.com.br/issues/77075"
+    },
+    {
+      "id": 77732,
+      "task": "Mostrar cruzamentos anteriores na área de Cruzamento x SPED",
+      "descricao": "Na área de cruzamento de SPED do DFe não mostra os cruzamentos anteriores, a cliente informou que gostaria...",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-12T16:40:28Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77732"
+    },
     {
       "id": 77600,
       "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
@@ -708,20 +738,6 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Finalizada a tarefa 77775 e realizada PR.",
       "link": "https://redmine.platform.brobot.com.br/issues/77774"
-    },
-    {
-      "id": 75985,
-      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-11T16:35:19Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan esta spider passou a utilizar gov.br, com isso poderia tratar para quando a conta possuir uma credencial gov.br cadastrada, a mesma seja utilizada na consulta? Este tratamento foi efetuado em",
-      "link": "https://redmine.platform.brobot.com.br/issues/75985"
     },
     {
       "id": 63612,
