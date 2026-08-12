@@ -447,7 +447,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-12T19:26:06.178Z",
+  "gerado_em": "2026-08-12T19:55:52.958Z",
   "total": 9,
   "rows": [
     {
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77737"
     },
     {
-      "id": 77825,
-      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
-      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-11T19:40:33Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ajustada spider para capturar do novo endpoint. @rodrigo poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77825"
-    },
-    {
       "id": 77796,
       "task": "API pública para consumo de NFSe Nacional (DF-e)",
       "descricao": "Objetivo Permitir que o cliente consuma, por API, as mesmas notas de NFSe Nacional que hoje ele só consegue...",
@@ -566,13 +553,26 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo subi pra staging. Documentação está em /api-docs no frontend e configuração do webhook em Definições API e Integrações. Dei uma melhorada nessa tela.",
       "link": "https://redmine.platform.brobot.com.br/issues/77796"
+    },
+    {
+      "id": 77819,
+      "task": "autos_pge_rn - CAPTCHA_INCORRECTLY_SOLVED",
+      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autospgern 📅...",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "medium",
+      "status": "to do",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-12T19:46:32Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Captcha do portal mudou. Basicamente o funcionamento do captcha anteriormente era da seguinte forma: Realizava a request com o url da imagem. Capturava a imagem e enviava para o solve do captcha retor",
+      "link": "https://redmine.platform.brobot.com.br/issues/77819"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-12T19:27:00.600Z",
+  "gerado_em": "2026-08-12T19:56:45.950Z",
   "sprint_id": 63,
-  "total": 59,
+  "total": 60,
   "rows": [
     {
       "id": 77806,
@@ -583,10 +583,24 @@
       "status": "awaiting deploy",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-12T18:23:21Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
+      "data_comentario": "2026-08-12T19:53:37Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Finalizada a tarefa 77807 e realizada PR.",
       "link": "https://redmine.platform.brobot.com.br/issues/77806"
+    },
+    {
+      "id": 77825,
+      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
+      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
+      "category": "Portal - Mudança de fluxo",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-12T19:51:54Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Não pude concluir ainda, devido ao erro no consumo ocorrido. @felipe Processei as consultas na spider e retornou erro no consumo. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic",
+      "link": "https://redmine.platform.brobot.com.br/issues/77825"
     },
     {
       "id": 63612,
