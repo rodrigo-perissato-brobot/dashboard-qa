@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-12T16:56:00.529Z",
-  "total": 12,
+  "gerado_em": "2026-08-12T17:25:50.244Z",
+  "total": 9,
   "rows": [
     {
       "id": 52181,
@@ -542,45 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77737"
     },
     {
-      "id": 77649,
-      "task": "autos_antt - Ajuste de retorno da spider para o erro correto",
-      "descricao": "A consulta de um cliente na ANTT está retornando com o erro de consulta de \"many attempts\" e quando tentei...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-10T21:03:06Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@jose-ricardo Foi corrigido o problema com a mensagem de 2FA. Também foi atualizado o login com gov pra não usar hrequests, mas usar http puro. @rodrigo Pode, por favor, fazer testes?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77649"
-    },
-    {
-      "id": 77939,
-      "task": "autos_sefaz_mt - Ajuste de Retorno",
-      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossefazmt \ud83d...",
-      "category": "",
-      "priority": "medium",
-      "status": "to do",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-11T12:04:07Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ajustado para retornar sucesso com a mensagem do portal. @rodrigo poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77939"
-    },
-    {
-      "id": 78233,
-      "task": "autos_detran_pe - PAGE_MALFUNCTION",
-      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranpe...",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "low",
-      "status": "to do",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-11T14:32:48Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Alterações realizadas para corrigir os erros. @rodrigo, poderia testar, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/78233"
-    },
-    {
       "id": 77825,
       "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
       "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
@@ -609,22 +570,50 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-12T16:57:04.357Z",
+  "gerado_em": "2026-08-12T17:26:40.421Z",
   "sprint_id": 63,
-  "total": 58,
+  "total": 59,
   "rows": [
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-12T17:11:30Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "Item 78 : No CaçaMultas Taxas não existe o filtro de \"Status de Veículo\" Item 79 : No CaçaMultas Taxas , é possível realizar uma exportação de relatório sem selecionar nenhuma taxa. Item 80 : Nos serv",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 77939,
+      "task": "autos_sefaz_mt - Ajuste de Retorno",
+      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossefazmt \ud83d...",
+      "category": "",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-12T17:10:04Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider e todas retornaram com erro ao tentar resolver o captcha, não sendo possível validar o ajuste de retorno. Ambiente: Staging | Conta: Testes Funciona",
+      "link": "https://redmine.platform.brobot.com.br/issues/77939"
+    },
     {
       "id": 77649,
       "task": "autos_antt - Ajuste de retorno da spider para o erro correto",
       "descricao": "A consulta de um cliente na ANTT está retornando com o erro de consulta de \"many attempts\" e quando tentei...",
-      "category": "",
+      "category": "Credencial - Outros",
       "priority": "high",
-      "status": "in progress",
+      "status": "awaiting deploy",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-12T16:55:17Z",
+      "data_comentario": "2026-08-12T16:56:31Z",
       "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@delvin Aprovado. Processei a consulta do CNPJ 05.020.208/0001-96 e ambas as spiders (autosantt e autosanttprocessos) agora retornam corretamente o erro de verificação em duas etapas ativada, em vez d",
+      "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/77649"
     },
     {
@@ -738,20 +727,6 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Finalizada a tarefa 77775 e realizada PR.",
       "link": "https://redmine.platform.brobot.com.br/issues/77774"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-11T16:23:01Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "Item 74 : No CaçaMultas Frotas o ícone de copiar placa pisca, e não se mantém estável Item 75 : Os serviços Crono/Taxas/Indicação de Condutores/Motoristas/Controle de CNH/Exame Toxicológico não possue",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 77084,
