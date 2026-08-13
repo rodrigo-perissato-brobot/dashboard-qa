@@ -447,7 +447,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-13T13:26:17.792Z",
+  "gerado_em": "2026-08-13T14:26:35.936Z",
   "total": 11,
   "rows": [
     {
@@ -501,19 +501,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
-    },
-    {
-      "id": 76680,
-      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
-      "descricao": "Objetivo Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com...",
-      "category": "Produtos - Customização fora do padrão",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-07-31T15:48:55Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gabriella subi pra staging a \"simulação\" dos clique para os recursos solicitados. Nem todos os dados estão disponíveis ainda. Eu e o @felipe precisamos de algumas permissões na AWS para cons",
-      "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
       "id": 70018,
@@ -592,14 +579,7 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Analisei os cenários e encontrei uma falha no código, que causava retorno vazio da Spider. @rodrigo, poderia testar novamente por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/75985"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-13T13:27:25.545Z",
-  "sprint_id": 63,
-  "total": 60,
-  "rows": [
+    },
     {
       "id": 77939,
       "task": "autos_sefaz_mt - Ajuste de Retorno",
@@ -607,12 +587,32 @@
       "category": "",
       "priority": "medium",
       "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-13T12:28:09Z",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-13T13:55:17Z",
       "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Identifiquei o erro, esta relacionado ao SITEKEY que esta HARDCODE no código, alterei para voltar a captura-lo de forma DINAMICA , porem o portal esta indisponível e apresentando muita instabilidade q",
+      "comentario_trecho": "Resolvido questão do CAPTCHA incorreto, porém infelizmente o portal segue instavel. @rodrigo poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/77939"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-08-13T14:27:49.929Z",
+  "sprint_id": 63,
+  "total": 58,
+  "rows": [
+    {
+      "id": 77770,
+      "task": "Platform New | Erro ao cadastrar veículo",
+      "descricao": "Foi identificado um erro no Platform New ao tentar realizar o cadastro de um novo veículo.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-13T14:20:45Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Comportamento do RENAVAM corrigido — @gustavo.vitor, pode validar? 🙏 Ambiente: Produção | New (deploy disparado agora — aguarde ~5 min e faça um Ctrl+Shift+R antes de testar) Causa: o campo nasce pre",
+      "link": "https://redmine.platform.brobot.com.br/issues/77770"
     },
     {
       "id": 77649,
@@ -713,20 +713,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77600"
     },
     {
-      "id": 77770,
-      "task": "Platform New | Erro ao cadastrar veículo",
-      "descricao": "Foi identificado um erro no Platform New ao tentar realizar o cadastro de um novo veículo.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-11T19:33:11Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@gabriella, Aguardo correção do caso relatado para prosseguir com teste da Feature 51186",
-      "link": "https://redmine.platform.brobot.com.br/issues/77770"
-    },
-    {
       "id": 77417,
       "task": "autos_detran_divida_ativa_pr — ValueError: Missing scheme in request url (correção trivial)",
       "descricao": "h2.",
@@ -739,20 +725,6 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@thiago PR:",
       "link": "https://redmine.platform.brobot.com.br/issues/77417"
-    },
-    {
-      "id": 77778,
-      "task": "Cadastro de veículos em lote com tela de revisão",
-      "descricao": "Objetivo Hoje, ao subir a planilha de veículos, o arquivo vai inteiro para o servidor: se uma única linha e...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "conhecimento",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-11T17:44:18Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme planning realizada em 06/08/2026 com os participantes @Joathan Fontan @Gustavo Vitor @Felipe Silva @Rolf Marquardt @jose @Rodrigo Perissato foi alinhado que a atividade será desenvolvida na s",
-      "link": "https://redmine.platform.brobot.com.br/issues/77778"
     },
     {
       "id": 77774,
