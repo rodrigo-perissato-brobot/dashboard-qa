@@ -447,7 +447,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-13T11:56:35.591Z",
+  "gerado_em": "2026-08-13T12:26:18.804Z",
   "total": 11,
   "rows": [
     {
@@ -596,10 +596,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-13T11:58:14.595Z",
+  "gerado_em": "2026-08-13T12:27:34.616Z",
   "sprint_id": 63,
-  "total": 58,
+  "total": 60,
   "rows": [
+    {
+      "id": 77649,
+      "task": "autos_antt - Ajuste de retorno da spider para o erro correto",
+      "descricao": "A consulta de um cliente na ANTT está retornando com o erro de consulta de \"many attempts\" e quando tentei...",
+      "category": "Credencial - Outros",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-13T12:21:51Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@thiago PR:",
+      "link": "https://redmine.platform.brobot.com.br/issues/77649"
+    },
+    {
+      "id": 78396,
+      "task": "Análise carregamento plataforma do cliente LATAM",
+      "descricao": "O cliente LATAM questionou a demora no carregamento das notas quando o mesmo tenta acessar o aplicativo e d...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-13T12:14:07Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "DFe — melhoria no tempo de carregamento Cliente reclamou que as notas demoravam muito para abrir. Mexemos em dois lugares: o painel do dashboard (\"Notas de entrada\") e a tela do aplicativo (botão \"Ace",
+      "link": "https://redmine.platform.brobot.com.br/issues/78396"
+    },
     {
       "id": 77806,
       "task": "autos_bradesco_detran_rj_taxas - KNOWN_WEBSITE_BUG",
@@ -655,20 +683,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider e todas retornaram com erro ao tentar resolver o captcha, não sendo possível validar o ajuste de retorno. Ambiente: Staging | Conta: Testes Funciona",
       "link": "https://redmine.platform.brobot.com.br/issues/77939"
-    },
-    {
-      "id": 77649,
-      "task": "autos_antt - Ajuste de retorno da spider para o erro correto",
-      "descricao": "A consulta de um cliente na ANTT está retornando com o erro de consulta de \"many attempts\" e quando tentei...",
-      "category": "Credencial - Outros",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-12T16:56:31Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77649"
     },
     {
       "id": 77075,
@@ -893,6 +907,20 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "Foi substituido o hrequest no login com gov. Com isso, esta task perde sua funcionalidade",
       "link": "https://redmine.platform.brobot.com.br/issues/69272"
+    },
+    {
+      "id": 76717,
+      "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
+      "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-31T19:28:30Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo a Confirmação da Operação foi executada e as 3 notas serão disponibilizadas em breve.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76717"
     },
     {
       "id": 71817,
