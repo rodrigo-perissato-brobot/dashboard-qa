@@ -447,35 +447,9 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-13T17:26:19.630Z",
-  "total": 12,
+  "gerado_em": "2026-08-13T17:56:25.534Z",
+  "total": 9,
   "rows": [
-    {
-      "id": 52181,
-      "task": "Adequação da Spider ao login GOV.BR autos_prefeitura_sp  ",
-      "descricao": "Identifiquei que é necessário ajustar a spider do portal da Prefeitura de São Paulo para suportar uma nova...",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-06-30T16:47:26Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/52181"
-    },
-    {
-      "id": 57089,
-      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
-      "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
-      "category": "Produtos - Novo produto",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-07-15T03:35:50Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
-      "link": "https://redmine.platform.brobot.com.br/issues/57089"
-    },
     {
       "id": 73585,
       "task": "Configurar domínio consultas-api.com.br para a API White Label",
@@ -504,7 +478,7 @@
     },
     {
       "id": 76680,
-      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
+      "task": "Conta de demonstraç��o: dados fictícios, documentos anônimos e ações simuladas",
       "descricao": "Objetivo Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com...",
       "category": "Produtos - Customização fora do padrão",
       "priority": "high",
@@ -568,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77814"
     },
     {
-      "id": 75985,
-      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-13T11:47:40Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Analisei os cenários e encontrei uma falha no código, que causava retorno vazio da Spider. @rodrigo, poderia testar novamente por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/75985"
-    },
-    {
       "id": 77939,
       "task": "autos_sefaz_mt - Ajuste de Retorno",
       "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossefazmt \ud83d...",
@@ -609,10 +570,66 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-13T17:27:27.741Z",
+  "gerado_em": "2026-08-13T17:57:20.908Z",
   "sprint_id": 63,
-  "total": 59,
+  "total": 62,
   "rows": [
+    {
+      "id": 77770,
+      "task": "Platform New | Erro ao cadastrar veículo",
+      "descricao": "Foi identificado um erro no Platform New ao tentar realizar o cadastro de um novo veículo.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-13T17:54:12Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf, Aprovado Ambiente: Produção | Conta: Apresentação Comercial | Versão: New Realizei o teste cadastrando um novo veículo na conta Apresentação Comercial e o cadastro foi realizado com sucesso. To",
+      "link": "https://redmine.platform.brobot.com.br/issues/77770"
+    },
+    {
+      "id": 78409,
+      "task": "Erro na geração de consultas da spider autos_sefaz_dat_rs_taxas",
+      "descricao": "As consultas para a spider autossefazdatrstaxas não estão sendo geradas corretamente, mesmo com as informaç...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-13T17:43:28Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@jose-ricardo @rodrigo @gustavo correção em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/78409"
+    },
+    {
+      "id": 78406,
+      "task": "Triplicidade de consultas nas spiders autos_detran_rs_taxas e autos_sefaz_rs_taxas",
+      "descricao": "As consultas das spiders autosdetranrstaxas e autossefazrstaxas estão sendo realizadas de forma triplicada,...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-13T17:43:18Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@jose-ricardo @rodrigo @gustavo correção em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/78406"
+    },
+    {
+      "id": 75985,
+      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
+      "category": "Portal - Mudança de layout",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-13T17:32:28Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "@jose-ricardo gentileza fornecer para o @rodrigo as credenciais que me enviou para desenvolvimento da spider.",
+      "link": "https://redmine.platform.brobot.com.br/issues/75985"
+    },
     {
       "id": 77737,
       "task": "Erro de verificação de segurança impede acesso aos XMLs de entrada de NFS no início da manhã -   TOYOTA TSUSHO",
@@ -626,20 +643,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan Testes 1 e 2 Aprovados. Teste 1: validação do comportamento da paginação do endpoint, com retorno correto dos metadados (totalcount, totalpages, currentpage, prevpage e nextpage). Teste 2: ex",
       "link": "https://redmine.platform.brobot.com.br/issues/77737"
-    },
-    {
-      "id": 77770,
-      "task": "Platform New | Erro ao cadastrar veículo",
-      "descricao": "Foi identificado um erro no Platform New ao tentar realizar o cadastro de um novo veículo.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-13T14:20:45Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Comportamento do RENAVAM corrigido — @gustavo.vitor, pode validar? 🙏 Ambiente: Produção | New (deploy disparado agora — aguarde ~5 min e faça um Ctrl+Shift+R antes de testar) Causa: o campo nasce pre",
-      "link": "https://redmine.platform.brobot.com.br/issues/77770"
     },
     {
       "id": 77649,
