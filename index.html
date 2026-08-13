@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-13T11:25:53.919Z",
-  "total": 10,
+  "gerado_em": "2026-08-13T11:56:35.591Z",
+  "total": 11,
   "rows": [
     {
       "id": 52181,
@@ -579,13 +579,26 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo Causa identificada. A automação estava tentando emitir o DAE também para parcelas que já estavam pagas. Nesses casos o valor da guia fica zero, e o site da SEFAZ recusa a emissão porque ",
       "link": "https://redmine.platform.brobot.com.br/issues/77814"
+    },
+    {
+      "id": 75985,
+      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
+      "category": "Portal - Mudança de layout",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-13T11:47:40Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Analisei os cenários e encontrei uma falha no código, que causava retorno vazio da Spider. @rodrigo, poderia testar novamente por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/75985"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-13T11:26:46.423Z",
+  "gerado_em": "2026-08-13T11:58:14.595Z",
   "sprint_id": 63,
-  "total": 60,
+  "total": 58,
   "rows": [
     {
       "id": 77806,
@@ -656,20 +669,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/77649"
-    },
-    {
-      "id": 75985,
-      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-12T16:50:53Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider, após configurar a utilização do agora gov.br e retornou somente erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Tod",
-      "link": "https://redmine.platform.brobot.com.br/issues/75985"
     },
     {
       "id": 77075,
@@ -894,20 +893,6 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "Foi substituido o hrequest no login com gov. Com isso, esta task perde sua funcionalidade",
       "link": "https://redmine.platform.brobot.com.br/issues/69272"
-    },
-    {
-      "id": 76717,
-      "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
-      "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-31T19:28:30Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo a Confirmação da Operação foi executada e as 3 notas serão disponibilizadas em breve.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76717"
     },
     {
       "id": 71817,
