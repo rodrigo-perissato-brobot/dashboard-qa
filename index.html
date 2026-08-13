@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-13T18:56:23.925Z",
-  "total": 12,
+  "gerado_em": "2026-08-13T19:26:18.150Z",
+  "total": 13,
   "rows": [
     {
       "id": 52181,
@@ -605,14 +605,55 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@rodrigo @gustavo: Itens 59, 39 em staging para testar novamente. Item 48, 60 e 61 em produção . Texto de auxilio para todas as telas a serem testadas sobre o item 39 : Checklist de Testes — Seletor d",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 77083,
+      "task": "Registro de histórico de documentos de Notificação no módulo Frotas",
+      "descricao": "Alterar o comportamento de armazenamento dos documentos de Notificação no módulo Frotas, para que novos doc...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-08-13T19:03:55Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo em staging, por gentileza solicito o teste do tema",
+      "link": "https://redmine.platform.brobot.com.br/issues/77083"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-13T18:57:45.013Z",
+  "gerado_em": "2026-08-13T19:27:27.154Z",
   "sprint_id": 63,
-  "total": 58,
+  "total": 61,
   "rows": [
+    {
+      "id": 52120,
+      "task": "Captura / Upload dos documentos NFCom (Mod 62), NF3e (Mod 66) e GTV-e (Mod 64) - Unico - KADAN (ID: 515)",
+      "descricao": "Solicita-se orientação e/ou atualização sobre o andamento relacionado à captura automática dos documentos N...",
+      "category": "",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-13T19:14:54Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@jose por gentileza, prosseguir com mapeamento destes tipos de notas",
+      "link": "https://redmine.platform.brobot.com.br/issues/52120"
+    },
+    {
+      "id": 51186,
+      "task": "Gestão de Documentos de Veículos (CRLV)",
+      "descricao": "Objetivo Implementar funcionalidade completa de upload, visualização, download e exportação de documentos C...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-13T19:04:03Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@rolf Aprovado Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o reteste do último apontamento referente ao upload de imagens (JPG/PNG). O arquivo foi anexado corretamente e o ",
+      "link": "https://redmine.platform.brobot.com.br/issues/51186"
+    },
     {
       "id": 78409,
       "task": "Erro na geração de consultas da spider autos_sefaz_dat_rs_taxas",
@@ -852,20 +893,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
     },
     {
-      "id": 52120,
-      "task": "Captura / Upload dos documentos NFCom (Mod 62), NF3e (Mod 66) e GTV-e (Mod 64) - Unico - KADAN (ID: 515)",
-      "descricao": "Solicita-se orientação e/ou atualização sobre o andamento relacionado à captura automática dos documentos N...",
-      "category": "",
-      "priority": "high",
-      "status": "to do",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-06T14:23:49Z",
-      "comentario_autor": "Roberta Espacachere",
-      "comentario_trecho": "Bom dia, @Gabriella Mendes Temos alguma atualização sobre o tema?",
-      "link": "https://redmine.platform.brobot.com.br/issues/52120"
-    },
-    {
       "id": 39504,
       "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
       "descricao": "Gabriella, boa tarde!",
@@ -878,6 +905,20 @@
       "comentario_autor": "Roberta Espacachere",
       "comentario_trecho": "Bom dia pessoal! Alguma novidade sobre o tema da chore?",
       "link": "https://redmine.platform.brobot.com.br/issues/39504"
+    },
+    {
+      "id": 76748,
+      "task": "Não é possível subir Certificado no front novo",
+      "descricao": "No novo front não está sendo possível subir o Certificado Digital na empresa, retorna o erro de que não foi...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T11:51:08Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76748"
     },
     {
       "id": 44623,
@@ -906,6 +947,20 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "Foi substituido o hrequest no login com gov. Com isso, esta task perde sua funcionalidade",
       "link": "https://redmine.platform.brobot.com.br/issues/69272"
+    },
+    {
+      "id": 76717,
+      "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
+      "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-31T19:28:30Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo a Confirmação da Operação foi executada e as 3 notas serão disponibilizadas em breve.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76717"
     },
     {
       "id": 71817,
