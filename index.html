@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-13T18:26:29.482Z",
-  "total": 11,
+  "gerado_em": "2026-08-13T18:56:23.925Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -462,6 +462,19 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/52181"
+    },
+    {
+      "id": 57089,
+      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
+      "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
+      "category": "Produtos - Novo produto",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-07-15T03:35:50Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
+      "link": "https://redmine.platform.brobot.com.br/issues/57089"
     },
     {
       "id": 73585,
@@ -514,19 +527,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gabriella subi melhorias para staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/70018"
-    },
-    {
-      "id": 77796,
-      "task": "API pública para consumo de NFSe Nacional (DF-e)",
-      "descricao": "Objetivo Permitir que o cliente consuma, por API, as mesmas notas de NFSe Nacional que hoje ele só consegue...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "ambos",
-      "data_comentario": "2026-08-12T17:52:50Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gustavo subi pra staging. Documentação está em /api-docs no frontend e configuração do webhook em Definições API e Integrações. Dei uma melhorada nessa tela.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77796"
     },
     {
       "id": 77819,
@@ -592,13 +592,26 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo @rodrigo em staging, por gentileza, solicito que prossigam com teste",
       "link": "https://redmine.platform.brobot.com.br/issues/77718"
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-13T18:25:42Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo: Itens 59, 39 em staging para testar novamente. Item 48, 60 e 61 em produção . Texto de auxilio para todas as telas a serem testadas sobre o item 39 : Checklist de Testes — Seletor d",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-13T18:27:48.350Z",
+  "gerado_em": "2026-08-13T18:57:45.013Z",
   "sprint_id": 63,
-  "total": 51,
+  "total": 58,
   "rows": [
     {
       "id": 78409,
@@ -1005,6 +1018,104 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Fechamento: em produção desde 26/07 — primeiro uso real gerou as auditorias com reconciliação batendo (ex.: PARVI 1.768 = 1.537 + 231 ✓). Coluna Tentativas incluída no extrato placa a placa.",
       "link": "https://redmine.platform.brobot.com.br/issues/76857"
+    },
+    {
+      "id": 76855,
+      "task": "Análise: mecanismos que reenviam consultas do SNE sem auditoria (crons de auto-cura) + inventário de reprocessáveis",
+      "descricao": "Investigação em produção (25/07) motivada por contas que entravam em reprocesso sem clique humano.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:06Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76855"
+    },
+    {
+      "id": 76854,
+      "task": "Infra CI: gates de RSpec rodavam imagem congelada e timeout de 10 min derrubava pipelines",
+      "descricao": "Dois problemas nos CodeBuild dos gates de RSpec (maestro aws-pipelines-compose-rspec e platform aws-pipelines-v3-compose-rspec): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:05Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76854"
+    },
+    {
+      "id": 76853,
+      "task": "Fix: card Nas filas agora exibia traço (pods sem credencial AWS) — prod e staging",
+      "descricao": "O card de profundidade das filas do SNE no painel de Volumetria sempre exibiu traço: os pods do platform (p...",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:03Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76853"
+    },
+    {
+      "id": 76845,
+      "task": "Volumetria v4: taxa de sucesso, erros por tipo e ação sugerida (semáforo anti-desespero)",
+      "descricao": "Feedback de produção (contexto 76757): o % concluído (andamento) é lido como taxa de sucesso e induz erro (99% com 4 mil erros).",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:06:01Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76845"
+    },
+    {
+      "id": 76757,
+      "task": "Volumetria v3: leitura completa para tomada de decisão (tooltips, % de conclusão da rodada, placas consultadas, fila da conta)",
+      "descricao": "Melhorias de leitura na tela de Volumetria (contexto 76728, 76756): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:05:59Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Entregue e superseded: a leitura completa da volumetria evoluiu pelas versões v4 (76845) e v5 (76850), ambas em produção. Este escopo está 100% coberto pelo painel atual. @rodrigo @gabi — ciência: est",
+      "link": "https://redmine.platform.brobot.com.br/issues/76757"
+    },
+    {
+      "id": 76756,
+      "task": "SNE: filas por classe de serviço (express/padrão/pesada) com classificação configurável (F2 do plano de desafogo)",
+      "descricao": "Fase F2 do plano de desafogo do SNE (contexto na 76728): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:05:58Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Entregue em produção 24/07: 3 lanes por conta (express/padrão/pesada) com KEDA por fila, classificação manual+automática (SneLane), propagação da lane até o SQS, guincho de migração das mensagens sem ",
+      "link": "https://redmine.platform.brobot.com.br/issues/76756"
+    },
+    {
+      "id": 76755,
+      "task": "SNE: correções do fluxo de agendamento/retry + coleta do payload de bloqueio (F0 do plano de desafogo)",
+      "descricao": "Fase F0 do plano de desafogo do SNE (contexto na 76728): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:05:57Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Entregue em produção 24-25/07 (retry com groupid preservado, correção da dupla cadeia de agendamento, amountretry reduzido, payload de bloqueio em coleta pela equipe). @rodrigo @gabi — ciência: esta e",
+      "link": "https://redmine.platform.brobot.com.br/issues/76755"
     },
     {
       "id": 75786,
