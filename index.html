@@ -447,9 +447,22 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-14T16:56:34.486Z",
+  "gerado_em": "2026-08-14T17:56:18.487Z",
   "total": 12,
   "rows": [
+    {
+      "id": 52181,
+      "task": "Adequação da Spider ao login GOV.BR autos_prefeitura_sp  ",
+      "descricao": "Identifiquei que é necessário ajustar a spider do portal da Prefeitura de São Paulo para suportar uma nova...",
+      "category": "Portal - Mudança de layout",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-06-30T16:47:26Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/52181"
+    },
     {
       "id": 57089,
       "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
@@ -542,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77778"
     },
     {
-      "id": 77718,
-      "task": "Padronização da grafia da marca CaçaMultas",
-      "descricao": "Corrigir a escrita do nome CaçaMultas no caminho/tela, alterando de \"Caça Multas\" para \"CaçaMultas\", mantendo a grafia oficial da marca.",
-      "category": "Frontend - Novo frontend",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "ambos",
-      "data_comentario": "2026-08-13T18:20:59Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo @rodrigo em staging, por gentileza, solicito que prossigam com teste",
-      "link": "https://redmine.platform.brobot.com.br/issues/77718"
-    },
-    {
       "id": 77083,
       "task": "Registro de histórico de documentos de Notificação no módulo Frotas",
       "descricao": "Alterar o comportamento de armazenamento dos documentos de Notificação no módulo Frotas, para que novos doc...",
@@ -566,19 +566,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo em staging, por gentileza solicito o teste do tema",
       "link": "https://redmine.platform.brobot.com.br/issues/77083"
-    },
-    {
-      "id": 77825,
-      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
-      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
-      "category": "Portal - Mudança de fluxo",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-14T12:09:20Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77825"
     },
     {
       "id": 78624,
@@ -605,14 +592,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido em staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/78669"
+    },
+    {
+      "id": 78550,
+      "task": "Retirar HRequest das Spiders V3",
+      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest para as spiders da V3",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-14T17:10:33Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@rodrigo Já esta autosembarcadordersp em staging. Foi trocado o hrequest. Pode testar por favor?",
+      "link": "https://redmine.platform.brobot.com.br/issues/78550"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-14T16:57:29.505Z",
+  "gerado_em": "2026-08-14T17:57:28.106Z",
   "sprint_id": 63,
-  "total": 60,
+  "total": 53,
   "rows": [
+    {
+      "id": 77718,
+      "task": "Padronização da grafia da marca CaçaMultas",
+      "descricao": "Corrigir a escrita do nome CaçaMultas no caminho/tela, alterando de \"Caça Multas\" para \"CaçaMultas\", mantendo a grafia oficial da marca.",
+      "category": "Frontend - Novo frontend",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-14T17:04:42Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77718"
+    },
     {
       "id": 77825,
       "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
@@ -628,20 +642,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77825"
     },
     {
-      "id": 77814,
-      "task": "autos_sefaz_ce - UNDEFINED_ERROR",
-      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossefazce \ud83d...",
-      "category": "Spider - Outros",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-14T16:37:10Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77814"
-    },
-    {
       "id": 77939,
       "task": "autos_sefaz_mt - Ajuste de Retorno",
       "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossefazmt \ud83d...",
@@ -654,20 +654,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider e ocorreram vários erros, com apenas 1 sucesso. Verifiquei manualmente no portal um dos veículos que retornou erro (placa RAQ6F00) e a consulta func",
       "link": "https://redmine.platform.brobot.com.br/issues/77939"
-    },
-    {
-      "id": 78550,
-      "task": "Retirar HRequest das Spiders V3",
-      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest para as spiders da V3",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-14T16:01:32Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@thiago Pode subir pra prod autosdnit. PR: Ainda nesta task esta faltando autosembarcadordersp. Em breve estarei enviando pra staging",
-      "link": "https://redmine.platform.brobot.com.br/issues/78550"
     },
     {
       "id": 63612,
@@ -866,20 +852,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76633"
     },
     {
-      "id": 51852,
-      "task": "FICI Preenchida Automaticamente - Davi",
-      "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "to do",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-06T14:43:04Z",
-      "comentario_autor": "Roberta Espacachere",
-      "comentario_trecho": "Bom dia, Temos alguma atualização sobre o tema?",
-      "link": "https://redmine.platform.brobot.com.br/issues/51852"
-    },
-    {
       "id": 39504,
       "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
       "descricao": "Gabriella, boa tarde!",
@@ -962,20 +934,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@roberta @gustavo @felipe-godoy @leonardo.paganotti @julya.tochio @renata @maria.rozolem @Thais boa tarde, 71387 — Status Ativo/Inativo de Empresas em Definições Situação: entregue e disponível em pro",
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
-    },
-    {
-      "id": 61539,
-      "task": "Implementação do Módulo CaçaCondutores > Integração",
-      "descricao": "",
-      "category": "Produtos - Novo produto",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-28T15:04:30Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Reprovado. Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o ge",
-      "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
       "id": 37739,
@@ -1230,20 +1188,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/69679"
     },
     {
-      "id": 57089,
-      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
-      "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
-      "category": "Produtos - Novo produto",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-15T03:35:50Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
-      "link": "https://redmine.platform.brobot.com.br/issues/57089"
-    },
-    {
       "id": 59523,
       "task": "Criação do Dashboard",
       "descricao": "",
@@ -1328,20 +1272,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
-      "id": 53155,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
-      "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
-      "category": "anterior",
-      "priority": "high",
-      "status": "to do",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-06-23T17:52:13Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@renata boa tarde, Conforme alinhamento em reunião 09/03/2026 com os presentes Henrique, Emerson, Gabriella, Guilherme, Roberta, Renata, Davi, Jose: foi alinhado que somente seguiremos com o desenvolv",
-      "link": "https://redmine.platform.brobot.com.br/issues/53155"
-    },
-    {
       "id": 43159,
       "task": "Filtro por Centro de Custo - Supermix ",
       "descricao": "Adicionar a opção de filtrar multas, relatórios e dashboards por Centro de Custo, permitindo que o usuário...",
@@ -1354,20 +1284,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo Bom dia, Realizei uma análise mais aprofundada da solicitação acordada na reunião de 15/12/2025, referente à alteração do campo \"Utilização\" para \"Utilização / Centro de custo\" e sua disponib",
       "link": "https://redmine.platform.brobot.com.br/issues/43159"
-    },
-    {
-      "id": 52015,
-      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
-      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-06-08T18:53:43Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@delvin tentei efetuar os testes na conta Testes Funcionais , em Staging , conforme abaixo: Agora a spider está retornando que Não há representados disponíveis no portal. @jose nesse caso, como poderm",
-      "link": "https://redmine.platform.brobot.com.br/issues/52015"
     },
     {
       "id": 16564,
@@ -1438,20 +1354,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo boa tarde, Informo que foi realizada a criação do projeto para desenvolvimento, os desenvolvedores seguirão com análise de estimativa da atividade e posteriormente seguiremos com planejamento",
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
-    },
-    {
-      "id": 60381,
-      "task": "Estruturação do processo e documentação do fluxo de Indicação de Condutor",
-      "descricao": "Realizar a estruturação macro do tema de Indicação de Condutor, contemplando tanto a documentação interna p...",
-      "category": "Produtos - Documentação",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-14T18:58:38Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
-      "link": "https://redmine.platform.brobot.com.br/issues/60381"
     }
   ]
 };
