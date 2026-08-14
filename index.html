@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-14T18:26:18.318Z",
-  "total": 11,
+  "gerado_em": "2026-08-14T18:56:18.526Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -592,13 +592,26 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Já esta autosembarcadordersp em staging. Foi trocado o hrequest. Pode testar por favor?",
       "link": "https://redmine.platform.brobot.com.br/issues/78550"
+    },
+    {
+      "id": 78623,
+      "task": "autos_sne_denatran_indicacao_condutor - Spider não consegue indicar quando o veículo é de um CPF",
+      "descricao": "Uma infração do cliente foi indicada porém, o parâmetro \"cnpj\" da spider foi com o CPF que está vinculado a...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-14T18:41:00Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Implementado na spider. Agora, quando for realizada uma consulta do tipo PJ e o retorno indicar que o CNPJ não está vinculado ao gov.br, a spider fará automaticamente uma nova pesquisa como PF. @rodri",
+      "link": "https://redmine.platform.brobot.com.br/issues/78623"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-14T18:27:19.159Z",
+  "gerado_em": "2026-08-14T18:57:18.804Z",
   "sprint_id": 63,
-  "total": 59,
+  "total": 58,
   "rows": [
     {
       "id": 77083,
@@ -781,20 +794,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "No momento não temos um cenário definido para realizar a validação desse novo ajuste. Vou aguardar o surgimento de um novo cenário para que eu possa prosseguir com os testes.",
       "link": "https://redmine.platform.brobot.com.br/issues/77600"
-    },
-    {
-      "id": 77084,
-      "task": "Retirar HRequest das Spiders",
-      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest.",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-10T19:42:46Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Falta apenas remover o hrequest do autosdetranms e das spiders da V3. Após isso, podemos encerrar essa tarefa.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77084"
     },
     {
       "id": 41092,
