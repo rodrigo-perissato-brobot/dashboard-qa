@@ -447,22 +447,9 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-17T16:26:10.675Z",
-  "total": 13,
+  "gerado_em": "2026-08-17T16:56:08.988Z",
+  "total": 12,
   "rows": [
-    {
-      "id": 52181,
-      "task": "Adequação da Spider ao login GOV.BR autos_prefeitura_sp  ",
-      "descricao": "Identifiquei que é necessário ajustar a spider do portal da Prefeitura de São Paulo para suportar uma nova...",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-06-30T16:47:26Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/52181"
-    },
     {
       "id": 57089,
       "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
@@ -527,19 +514,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gabriella subi melhorias para staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/70018"
-    },
-    {
-      "id": 77819,
-      "task": "autos_pge_rn - CAPTCHA_INCORRECTLY_SOLVED",
-      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autospgern 📅...",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "medium",
-      "status": "to do",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-12T19:46:32Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Captcha do portal mudou. Basicamente o funcionamento do captcha anteriormente era da seguinte forma: Realizava a request com o url da imagem. Capturava a imagem e enviava para o solve do captcha retor",
-      "link": "https://redmine.platform.brobot.com.br/issues/77819"
     },
     {
       "id": 77778,
@@ -618,14 +592,41 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@Rodrigo poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/77075"
+    },
+    {
+      "id": 77825,
+      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
+      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
+      "category": "Portal - Mudança de fluxo",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-17T16:49:19Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77825"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-17T16:27:18.338Z",
+  "gerado_em": "2026-08-17T16:57:28.718Z",
   "sprint_id": 64,
-  "total": 56,
+  "total": 57,
   "rows": [
+    {
+      "id": 77819,
+      "task": "autos_pge_rn - CAPTCHA_INCORRECTLY_SOLVED",
+      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autospgern 📅...",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-17T16:49:19Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider e a maioria foi processada com sucesso, gravando as taxas corretamente. Porém, a placa MZF9338 retornou o erro private method 'select' called for ni",
+      "link": "https://redmine.platform.brobot.com.br/issues/77819"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
@@ -737,20 +738,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@gabriella, efetuado os testes conforme abaixo. Ambiente: Staging | Conta: Testes Funcionais | Versão: New Realizei o teste do cenário de captura de documentos em momentos diferentes. Fiz uma consulta",
       "link": "https://redmine.platform.brobot.com.br/issues/77083"
-    },
-    {
-      "id": 77825,
-      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
-      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
-      "category": "Portal - Mudança de fluxo",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-14T16:55:41Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Aprovado . @Felipe Reprovado . Processei as consultas novamente e na questão da spider está tudo correto, somente para o consumo relato mais alguns ajustes. Ambiente: Staging | Conta: Testes F",
-      "link": "https://redmine.platform.brobot.com.br/issues/77825"
     },
     {
       "id": 78255,
@@ -1021,7 +1008,7 @@
     {
       "id": 76857,
       "task": "Auditoria da rodada (XLSX): selo de rodada fechada + download do extrato placa a placa na Volumetria",
-      "descricao": "Prova auditável de que a rodada de uma conta foi entregue, direto do painel de Volumetria.",
+      "descricao": "Prova audit��vel de que a rodada de uma conta foi entregue, direto do painel de Volumetria.",
       "category": "",
       "priority": "low",
       "status": "staging",
@@ -1269,6 +1256,20 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@rolf Testei tentando processar as consultas nas spiders Detran SC e DNIT, com a placa QIT5D38 , porém somente o Detran SC passou, o DNIT continua com erro e existe a credencial gov.br cadastrada como",
       "link": "https://redmine.platform.brobot.com.br/issues/75193"
+    },
+    {
+      "id": 75084,
+      "task": "Consumo incorreto da plataforma do embarcador",
+      "descricao": "A plataforma não tem consumido corretamente todas as informações trazidas pelos robôs embarcador.",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-10T14:23:22Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf efetuei os testes conforme reunião que tivemos junto da Gabi e do José, com o CNPJ 08.693.795/0001-72 e AIT FRMEP00259292024 . Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evid",
+      "link": "https://redmine.platform.brobot.com.br/issues/75084"
     },
     {
       "id": 74637,
