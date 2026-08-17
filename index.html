@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-17T11:56:18.465Z",
-  "total": 14,
+  "gerado_em": "2026-08-17T12:27:00.113Z",
+  "total": 13,
   "rows": [
     {
       "id": 52181,
@@ -618,6 +618,27 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "Correções dos itens 64, 65, 66, 67, 68 (fiz um ajuste no frontend antigo referente ao item 66) Já está em staging para testes Correções dos itens 71, 72, 73, 74, sendo o item 70 um ajuste no plaftorm ",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-08-17T12:28:29.111Z",
+  "sprint_id": 64,
+  "total": 59,
+  "rows": [
+    {
+      "id": 51186,
+      "task": "Gestão de Documentos de Veículos (CRLV)",
+      "descricao": "Objetivo Implementar funcionalidade completa de upload, visualização, download e exportação de documentos C...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-17T12:06:29Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@rolf, referente a captura de CRLV automática : Ambiente: Staging | Conta: Teste CRLV | Versão: Classic Realizei um teste de captura para a placa BCO5810 no dia 14/08/2026. A consulta retornou erro, m",
+      "link": "https://redmine.platform.brobot.com.br/issues/51186"
     },
     {
       "id": 75985,
@@ -626,19 +647,13 @@
       "category": "Portal - Mudança de layout",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-14T19:45:30Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ajustado conforme solicitado. @rodrigo poderia testar novamente?",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-17T11:58:30Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan Reprovado Reprocessei as consultas na spider e passou a utilizar a credencial gov.br, porém, falta ajustar a ordenação para utilizar o certificado quando existente. Ambiente: Staging | Conta:",
       "link": "https://redmine.platform.brobot.com.br/issues/75985"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-17T11:57:27.556Z",
-  "sprint_id": 64,
-  "total": 58,
-  "rows": [
+    },
     {
       "id": 78669,
       "task": "Maestro > Indicação de Condutores - Filtro de Período \" Prazo de Indicação\" está consultando 1 dia após a data selecionada",
@@ -722,20 +737,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider e ocorreram vários erros, com apenas 1 sucesso. Verifiquei manualmente no portal um dos veículos que retornou erro (placa RAQ6F00) e a consulta func",
       "link": "https://redmine.platform.brobot.com.br/issues/77939"
-    },
-    {
-      "id": 51186,
-      "task": "Gestão de Documentos de Veículos (CRLV)",
-      "descricao": "Objetivo Implementar funcionalidade completa de upload, visualização, download e exportação de documentos C...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-13T19:04:03Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@rolf Aprovado Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o reteste do último apontamento referente ao upload de imagens (JPG/PNG). O arquivo foi anexado corretamente e o ",
-      "link": "https://redmine.platform.brobot.com.br/issues/51186"
     },
     {
       "id": 78409,
