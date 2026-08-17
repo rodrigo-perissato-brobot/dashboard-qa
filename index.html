@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-17T13:26:45.333Z",
-  "total": 10,
+  "gerado_em": "2026-08-17T13:56:21.926Z",
+  "total": 14,
   "rows": [
     {
       "id": 52181,
@@ -490,6 +490,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/73585"
     },
     {
+      "id": 64086,
+      "task": "Documentação de API Whitelabel",
+      "descricao": "Objetivo Criar uma nova versão da documentação da API V2 sem referências às marcas internas da plataforma (...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-23T19:15:59Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
+      "link": "https://redmine.platform.brobot.com.br/issues/64086"
+    },
+    {
       "id": 76680,
       "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
       "descricao": "Objetivo Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com...",
@@ -501,6 +514,19 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gabriella subi pra staging a \"simulação\" dos clique para os recursos solicitados. Nem todos os dados estão disponíveis ainda. Eu e o @felipe precisamos de algumas permissões na AWS para cons",
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
+    },
+    {
+      "id": 70018,
+      "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
+      "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-05T20:03:47Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo @gabriella subi melhorias para staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/70018"
     },
     {
       "id": 77819,
@@ -568,6 +594,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/78630"
     },
     {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-08-14T19:05:27Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "Correções dos itens 64, 65, 66, 67, 68 (fiz um ajuste no frontend antigo referente ao item 66) Já está em staging para testes Correções dos itens 71, 72, 73, 74, sendo o item 70 um ajuste no plaftorm ",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
       "id": 78406,
       "task": "Triplicidade de consultas nas spiders autos_detran_rs_taxas e autos_sefaz_rs_taxas",
       "descricao": "As consultas das spiders autosdetranrstaxas e autossefazrstaxas estão sendo realizadas de forma triplicada,...",
@@ -579,13 +618,26 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/78406"
+    },
+    {
+      "id": 77939,
+      "task": "autos_sefaz_mt - Ajuste de Retorno",
+      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossefazmt \ud83d...",
+      "category": "",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-17T13:41:27Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Adicionei um delay entre as requests. Devido a velocidade das requests de forma sequencial, ocorria os erros mencionados. @rodrigo poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77939"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-17T13:28:21.379Z",
+  "gerado_em": "2026-08-17T13:57:22.800Z",
   "sprint_id": 64,
-  "total": 40,
+  "total": 57,
   "rows": [
     {
       "id": 78550,
@@ -596,9 +648,9 @@
       "status": "in progress",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-17T12:48:36Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@Delvin DER SP Aprovado . Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Processei as consultas do DER SP com sucesso e gravou suas multas e anexos corretamente. Pode seguir",
+      "data_comentario": "2026-08-17T13:48:43Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@thiago PR",
       "link": "https://redmine.platform.brobot.com.br/issues/78550"
     },
     {
@@ -614,6 +666,20 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@rolf, referente a captura de CRLV automática : Ambiente: Staging | Conta: Teste CRLV | Versão: Classic Realizei um teste de captura para a placa BCO5810 no dia 14/08/2026. A consulta retornou erro, m",
       "link": "https://redmine.platform.brobot.com.br/issues/51186"
+    },
+    {
+      "id": 75985,
+      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
+      "category": "Portal - Mudança de layout",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-17T11:58:30Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan Reprovado Reprocessei as consultas na spider e passou a utilizar a credencial gov.br, porém, falta ajustar a ordenação para utilizar o certificado quando existente. Ambiente: Staging | Conta:",
+      "link": "https://redmine.platform.brobot.com.br/issues/75985"
     },
     {
       "id": 77718,
@@ -656,20 +722,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel Aprovado . @Felipe Reprovado . Processei as consultas novamente e na questão da spider está tudo correto, somente para o consumo relato mais alguns ajustes. Ambiente: Staging | Conta: Testes F",
       "link": "https://redmine.platform.brobot.com.br/issues/77825"
-    },
-    {
-      "id": 77939,
-      "task": "autos_sefaz_mt - Ajuste de Retorno",
-      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autossefazmt \ud83d...",
-      "category": "",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-14T16:29:35Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider e ocorreram vários erros, com apenas 1 sucesso. Verifiquei manualmente no portal um dos veículos que retornou erro (placa RAQ6F00) e a consulta func",
-      "link": "https://redmine.platform.brobot.com.br/issues/77939"
     },
     {
       "id": 78409,
@@ -770,6 +822,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/41092"
     },
     {
+      "id": 76008,
+      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
+      "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
+      "category": "Operação - Origem",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-07T18:16:55Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf, efetuado os testes conforme abaixo: Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Ao ativar a checkbox na edição de uma credencial já existente e salvar, ao retornar para a tel",
+      "link": "https://redmine.platform.brobot.com.br/issues/76008"
+    },
+    {
       "id": 76633,
       "task": "Captura de NFSe via API - IKKI (ID: 580)",
       "descricao": "Poderiam por gentileza com o caso abaixo?",
@@ -840,6 +906,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/69272"
     },
     {
+      "id": 76717,
+      "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
+      "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-31T19:28:30Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo a Confirmação da Operação foi executada e as 3 notas serão disponibilizadas em breve.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76717"
+    },
+    {
       "id": 71817,
       "task": "Adição de tags às contas",
       "descricao": "Seria interessante que conseguíssemos adicionar tags às contas para que pudéssemos colocar informações inte...",
@@ -896,6 +976,174 @@
       "link": "https://redmine.platform.brobot.com.br/issues/37739"
     },
     {
+      "id": 75795,
+      "task": "Consultas semestrais automáticas para veículos com alto volume de multas (Prefeitura SP)",
+      "descricao": "Objetivo Automatizar a consulta de veículos que acumulam muitas multas na Prefeitura de São Paulo.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-27T19:25:47Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
+      "link": "https://redmine.platform.brobot.com.br/issues/75795"
+    },
+    {
+      "id": 76863,
+      "task": "Volumetria: rodada ancorada na data MARCADA do agendamento (não no burst detectado)",
+      "descricao": "A rodada no painel/auditoria passa a ser definida como: da data MARCADA no agendamento até a próxima marcada.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-26T19:05:22Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Fechamento: em produção 26/07 (PRs 1325 maestro + 1326 platform mergeadas pelo Rolf, pipelines verdes). Rodada agora ancora na data marcada do agendamento.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76863"
+    },
+    {
+      "id": 76862,
+      "task": "Volumetria: entrega vs eficiência no bloco Por spider + filtro de status na grid Por conta",
+      "descricao": "Ajustes de clareza no painel Volumetria (76850) para a operação não confundir régua de entrega com régua de custo.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-26T14:38:20Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Em produção completa 26/07: front (Vercel) + maestro (PR 1323 mergeada pelo Rolf). Chips com contadores de todas as páginas ativos e bloco Por spider com Entrega/Eficiência.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76862"
+    },
+    {
+      "id": 76857,
+      "task": "Auditoria da rodada (XLSX): selo de rodada fechada + download do extrato placa a placa na Volumetria",
+      "descricao": "Prova auditável de que a rodada de uma conta foi entregue, direto do painel de Volumetria.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-26T14:38:20Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Fechamento: em produção desde 26/07 — primeiro uso real gerou as auditorias com reconciliação batendo (ex.: PARVI 1.768 = 1.537 + 231 ✓). Coluna Tentativas incluída no extrato placa a placa.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76857"
+    },
+    {
+      "id": 76855,
+      "task": "Análise: mecanismos que reenviam consultas do SNE sem auditoria (crons de auto-cura) + inventário de reprocessáveis",
+      "descricao": "Investigação em produção (25/07) motivada por contas que entravam em reprocesso sem clique humano.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:06Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76855"
+    },
+    {
+      "id": 76854,
+      "task": "Infra CI: gates de RSpec rodavam imagem congelada e timeout de 10 min derrubava pipelines",
+      "descricao": "Dois problemas nos CodeBuild dos gates de RSpec (maestro aws-pipelines-compose-rspec e platform aws-pipelines-v3-compose-rspec): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:05Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76854"
+    },
+    {
+      "id": 76853,
+      "task": "Fix: card Nas filas agora exibia traço (pods sem credencial AWS) — prod e staging",
+      "descricao": "O card de profundidade das filas do SNE no painel de Volumetria sempre exibiu traço: os pods do platform (p...",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:03Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76853"
+    },
+    {
+      "id": 76845,
+      "task": "Volumetria v4: taxa de sucesso, erros por tipo e ação sugerida (semáforo anti-desespero)",
+      "descricao": "Feedback de produção (contexto 76757): o % concluído (andamento) é lido como taxa de sucesso e induz erro (99% com 4 mil erros).",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:06:01Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76845"
+    },
+    {
+      "id": 76757,
+      "task": "Volumetria v3: leitura completa para tomada de decisão (tooltips, % de conclusão da rodada, placas consultadas, fila da conta)",
+      "descricao": "Melhorias de leitura na tela de Volumetria (contexto 76728, 76756): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:05:59Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Entregue e superseded: a leitura completa da volumetria evoluiu pelas versões v4 (76845) e v5 (76850), ambas em produção. Este escopo está 100% coberto pelo painel atual. @rodrigo @gabi — ciência: est",
+      "link": "https://redmine.platform.brobot.com.br/issues/76757"
+    },
+    {
+      "id": 76756,
+      "task": "SNE: filas por classe de serviço (express/padrão/pesada) com classificação configurável (F2 do plano de desafogo)",
+      "descricao": "Fase F2 do plano de desafogo do SNE (contexto na 76728): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:05:58Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Entregue em produção 24/07: 3 lanes por conta (express/padrão/pesada) com KEDA por fila, classificação manual+automática (SneLane), propagação da lane até o SQS, guincho de migração das mensagens sem ",
+      "link": "https://redmine.platform.brobot.com.br/issues/76756"
+    },
+    {
+      "id": 76755,
+      "task": "SNE: correções do fluxo de agendamento/retry + coleta do payload de bloqueio (F0 do plano de desafogo)",
+      "descricao": "Fase F0 do plano de desafogo do SNE (contexto na 76728): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:05:57Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Entregue em produção 24-25/07 (retry com groupid preservado, correção da dupla cadeia de agendamento, amountretry reduzido, payload de bloqueio em coleta pela equipe). @rodrigo @gabi — ciência: esta e",
+      "link": "https://redmine.platform.brobot.com.br/issues/76755"
+    },
+    {
+      "id": 75786,
+      "task": "Permitir alteração de status em lote dos veículos (Ativar/Inativar)",
+      "descricao": "Atualmente, ao selecionar vários veículos utilizando a opção \"Selecionar todos\", não é possível alterar o status em lote.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-24T13:50:10Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Efetuei os testes em ambas versões do Platform e separo os resultados. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Aprovado Todos os testes executados funcionaram conforme esp",
+      "link": "https://redmine.platform.brobot.com.br/issues/75786"
+    },
+    {
       "id": 49662,
       "task": "Platform está permitindo repetir cadastro de CNPJ se cadastrado como matriz e filial",
       "descricao": "Durante os testes automatizados, identifiquei uma falha no Platform, que está permitindo cadastrar um CNPJ...",
@@ -936,6 +1184,20 @@
       "comentario_autor": "Felipe Godoy",
       "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
       "link": "https://redmine.platform.brobot.com.br/issues/43063"
+    },
+    {
+      "id": 75360,
+      "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
+      "descricao": "Alterar a regra de cálculo do card \"Média por Multa\" presente no dashboard do produto Caçamultas Embarcador...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-16T11:45:46Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rolf estava realizando os ajustes e claude apontou que seria necessário ajustar no maestro, poderia assumir a atividade de correção por gentileza? Correção item 75360 — \"Média por Multa\" (cm-embarcad",
+      "link": "https://redmine.platform.brobot.com.br/issues/75360"
     },
     {
       "id": 69679,
@@ -992,6 +1254,34 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "User story criada e priorizada subatividades para a sprint 29 conforme alinhado com @rolf e @rodrigo",
       "link": "https://redmine.platform.brobot.com.br/issues/75755"
+    },
+    {
+      "id": 75193,
+      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
+      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-10T14:40:29Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Testei tentando processar as consultas nas spiders Detran SC e DNIT, com a placa QIT5D38 , porém somente o Detran SC passou, o DNIT continua com erro e existe a credencial gov.br cadastrada como",
+      "link": "https://redmine.platform.brobot.com.br/issues/75193"
+    },
+    {
+      "id": 75084,
+      "task": "Consumo incorreto da plataforma do embarcador",
+      "descricao": "A plataforma não tem consumido corretamente todas as informações trazidas pelos robôs embarcador.",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-10T14:23:22Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf efetuei os testes conforme reunião que tivemos junto da Gabi e do José, com o CNPJ 08.693.795/0001-72 e AIT FRMEP00259292024 . Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evid",
+      "link": "https://redmine.platform.brobot.com.br/issues/75084"
     },
     {
       "id": 74637,
