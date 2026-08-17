@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-17T15:56:04.222Z",
-  "total": 12,
+  "gerado_em": "2026-08-17T16:26:10.675Z",
+  "total": 13,
   "rows": [
     {
       "id": 52181,
@@ -605,13 +605,26 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Adicionei um delay entre as requests. Devido a velocidade das requests de forma sequencial, ocorria os erros mencionados. @rodrigo poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/77939"
+    },
+    {
+      "id": 77075,
+      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
+      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-17T16:05:35Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@Rodrigo poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77075"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-17T15:57:01.820Z",
+  "gerado_em": "2026-08-17T16:27:18.338Z",
   "sprint_id": 64,
-  "total": 58,
+  "total": 56,
   "rows": [
     {
       "id": 63612,
@@ -780,20 +793,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "DFe — melhoria no tempo de carregamento Cliente reclamou que as notas demoravam muito para abrir. Mexemos em dois lugares: o painel do dashboard (\"Notas de entrada\") e a tela do aplicativo (botão \"Ace",
       "link": "https://redmine.platform.brobot.com.br/issues/78396"
-    },
-    {
-      "id": 77075,
-      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
-      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-12T16:46:07Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado . Processei as consultas 2x e continua não gravando todas as multas do portal. Ambiente: Staging | Conta: [TESTE] Pref SP | Versão: Classic Evidência: Foram gravadas 44 multas, das 2",
-      "link": "https://redmine.platform.brobot.com.br/issues/77075"
     },
     {
       "id": 77600,
@@ -1270,20 +1269,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@rolf Testei tentando processar as consultas nas spiders Detran SC e DNIT, com a placa QIT5D38 , porém somente o Detran SC passou, o DNIT continua com erro e existe a credencial gov.br cadastrada como",
       "link": "https://redmine.platform.brobot.com.br/issues/75193"
-    },
-    {
-      "id": 75084,
-      "task": "Consumo incorreto da plataforma do embarcador",
-      "descricao": "A plataforma não tem consumido corretamente todas as informações trazidas pelos robôs embarcador.",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-10T14:23:22Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf efetuei os testes conforme reunião que tivemos junto da Gabi e do José, com o CNPJ 08.693.795/0001-72 e AIT FRMEP00259292024 . Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evid",
-      "link": "https://redmine.platform.brobot.com.br/issues/75084"
     },
     {
       "id": 74637,
