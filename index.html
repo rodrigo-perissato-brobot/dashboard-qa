@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-18T18:56:05.605Z",
-  "total": 12,
+  "gerado_em": "2026-08-18T19:26:23.669Z",
+  "total": 11,
   "rows": [
     {
       "id": 52181,
@@ -475,19 +475,6 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
       "link": "https://redmine.platform.brobot.com.br/issues/57089"
-    },
-    {
-      "id": 73585,
-      "task": "Configurar domínio consultas-api.com.br para a API White Label",
-      "descricao": "Realizar a configuração do domínio consultas-api.com.br para que ele seja utilizado como endereço oficial da API White Label da plataforma.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-07-23T19:14:43Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
-      "link": "https://redmine.platform.brobot.com.br/issues/73585"
     },
     {
       "id": 64086,
@@ -609,10 +596,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-18T18:57:11.782Z",
+  "gerado_em": "2026-08-18T19:27:32.959Z",
   "sprint_id": 64,
-  "total": 51,
+  "total": 59,
   "rows": [
+    {
+      "id": 52015,
+      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
+      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-18T19:05:00Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@delvin Reprovado. Processei a consulta na spider e não retornou erro no login. Entre as tentativas, chegou a capturar 50 multas, porém não foram gravadas também. Ambiente: Staging | Conta: Testes Fun",
+      "link": "https://redmine.platform.brobot.com.br/issues/52015"
+    },
     {
       "id": 77939,
       "task": "autos_sefaz_mt - Ajuste de Retorno",
@@ -684,18 +685,18 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77075"
     },
     {
-      "id": 52015,
-      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
-      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
-      "category": "Spider - Erro na lógica de extração",
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
       "priority": "high",
-      "status": "in progress",
+      "status": "staging",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-17T14:08:15Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "Realizei uma análise nos clientes que aderiram à Notificação Eletrônica da ANTT e identifiquei novos cenários que podemos utilizar para testes. O cliente Minerva está representado pelas credenciais do",
-      "link": "https://redmine.platform.brobot.com.br/issues/52015"
+      "data_comentario": "2026-08-18T12:57:41Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "Item 75 - Ajustes necessários Os serviços - Crono, Taxas e Indicação de Condutores estão corretos. Segue ajustes para os demais serviços: Condutores Motoristas: Os campos Nome e Categoria também devem",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 78550,
@@ -710,6 +711,20 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@thiago PR",
       "link": "https://redmine.platform.brobot.com.br/issues/78550"
+    },
+    {
+      "id": 51186,
+      "task": "Gestão de Documentos de Veículos (CRLV)",
+      "descricao": "Objetivo Implementar funcionalidade completa de upload, visualização, download e exportação de documentos C...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-17T12:06:29Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@rolf, referente a captura de CRLV automática : Ambiente: Staging | Conta: Teste CRLV | Versão: Classic Realizei um teste de captura para a placa BCO5810 no dia 14/08/2026. A consulta retornou erro, m",
+      "link": "https://redmine.platform.brobot.com.br/issues/51186"
     },
     {
       "id": 75985,
@@ -838,6 +853,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76008"
     },
     {
+      "id": 76633,
+      "task": "Captura de NFSe via API - IKKI (ID: 580)",
+      "descricao": "Poderiam por gentileza com o caso abaixo?",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-07T12:15:47Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@leonardo.paganotti bom dia, Conforme alinhado com os presentes Emerson, Roberta, Gabriella em 29/07/2026: seguiremos com desenvolvimento do tema. @joathan conforme alinhado via discord, por gentileza",
+      "link": "https://redmine.platform.brobot.com.br/issues/76633"
+    },
+    {
       "id": 51852,
       "task": "FICI Preenchida Automaticamente - Davi",
       "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
@@ -850,6 +879,34 @@
       "comentario_autor": "Roberta Espacachere",
       "comentario_trecho": "Bom dia, Temos alguma atualização sobre o tema?",
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
+    },
+    {
+      "id": 39504,
+      "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
+      "descricao": "Gabriella, boa tarde!",
+      "category": "anterior",
+      "priority": "medium",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T13:56:50Z",
+      "comentario_autor": "Roberta Espacachere",
+      "comentario_trecho": "Bom dia pessoal! Alguma novidade sobre o tema da chore?",
+      "link": "https://redmine.platform.brobot.com.br/issues/39504"
+    },
+    {
+      "id": 44623,
+      "task": "Implementar módulo de Financeiro na Platform para visualização e extração de relatórios de faturamento",
+      "descricao": "O quê?",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-05T13:08:38Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Reprovado. Tentei exportar o relatório, porém o sistema só processa e não finaliza, também não gera erro. Ambiente: Produção | Versão: New O arquivo oficial que exportou já foi aceito pelo finan",
+      "link": "https://redmine.platform.brobot.com.br/issues/44623"
     },
     {
       "id": 69272,
@@ -1104,6 +1161,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75786"
     },
     {
+      "id": 49662,
+      "task": "Platform está permitindo repetir cadastro de CNPJ se cadastrado como matriz e filial",
+      "descricao": "Durante os testes automatizados, identifiquei uma falha no Platform, que está permitindo cadastrar um CNPJ...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-22T18:20:22Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella segue uma análise do problema em questão. O que podemos fazer por ora? Análise: mesmo CNPJ cadastrado como Matriz e Filial O problema O Platform permite cadastrar o mesmo CNPJ (14 dígitos) ",
+      "link": "https://redmine.platform.brobot.com.br/issues/49662"
+    },
+    {
       "id": 43063,
       "task": "Novas Funcionalidades Cronotacógrafo",
       "descricao": "Realizar um estudo de novas funcionalidades para tornar o módulo de cronotacógrafo mais completo, incluindo...",
@@ -1132,6 +1203,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75360"
     },
     {
+      "id": 69679,
+      "task": "Cadastro de CNPJs em lote",
+      "descricao": "É interessante abrir a possibilidade de subida de CNPJs em lote na plataforma.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-15T16:39:24Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Reprovado. Preparei os arquivos para testes em anexo, porém o arquivo de importação das matrizes retorna erro e não é possível prosseguir apenas com o das filiais.Processei as consultas na spide",
+      "link": "https://redmine.platform.brobot.com.br/issues/69679"
+    },
+    {
       "id": 57089,
       "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
       "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
@@ -1144,6 +1229,20 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
       "link": "https://redmine.platform.brobot.com.br/issues/57089"
+    },
+    {
+      "id": 59523,
+      "task": "Criação do Dashboard",
+      "descricao": "",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-14T19:28:13Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Dashboard redesenhado nos 2 fronts — em staging Front antigo (deployado em staging): visão geral em 3 clusters semânticos (Motoristas e Indicações em azul; CNH e Toxicológico com verde/âmbar/vermelho ",
+      "link": "https://redmine.platform.brobot.com.br/issues/59523"
     },
     {
       "id": 75755,
