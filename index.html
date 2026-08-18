@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-18T13:26:04.828Z",
-  "total": 13,
+  "gerado_em": "2026-08-18T13:56:03.841Z",
+  "total": 16,
   "rows": [
     {
       "id": 52181,
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77939"
     },
     {
-      "id": 77075,
-      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
-      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-17T16:05:35Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@Rodrigo poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77075"
-    },
-    {
       "id": 79466,
       "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
       "descricao": "A tela /admin/veiculos do front novo foi entregue incompleta: tem 3 dos 9 filtros, 7 das 15 colunas e nenhu...",
@@ -618,14 +605,80 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido em staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/78434"
+    },
+    {
+      "id": 77825,
+      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
+      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
+      "category": "Portal - Mudança de fluxo",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-18T13:35:27Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77825"
+    },
+    {
+      "id": 77819,
+      "task": "autos_pge_rn - CAPTCHA_INCORRECTLY_SOLVED",
+      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autospgern 📅...",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-18T13:35:43Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77819"
+    },
+    {
+      "id": 77778,
+      "task": "Cadastro de veículos em lote com tela de revisão",
+      "descricao": "Objetivo Hoje, ao subir a planilha de veículos, o arquivo vai inteiro para o servidor: se uma única linha e...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-08-18T13:35:57Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77778"
+    },
+    {
+      "id": 79475,
+      "task": "autos_dnit - Ajuste de retorno e verificação de credencial passada para consulta",
+      "descricao": "Notei na rodada de um dos clientes que estavam em onboarding que ao consultar no DNIT com uma credencial do...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-18T13:45:42Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Ajustado a spider para realizar o aceite automatico dos termos de uso. @rodrigo, poderia testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/79475"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-18T13:27:06.674Z",
+  "gerado_em": "2026-08-18T13:57:09.322Z",
   "sprint_id": 64,
-  "total": 57,
+  "total": 55,
   "rows": [
+    {
+      "id": 77075,
+      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
+      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-18T13:41:04Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas e desta vez processaram com sucesso, porém ainda não estão gravando todas as multas existentes no portal — foram gravadas apenas 93 das 269 multas. Ambiente",
+      "link": "https://redmine.platform.brobot.com.br/issues/77075"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
@@ -639,48 +692,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 75 - Ajustes necessários Os serviços - Crono, Taxas e Indicação de Condutores estão corretos. Segue ajustes para os demais serviços: Condutores Motoristas: Os campos Nome e Categoria também devem",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 77825,
-      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
-      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
-      "category": "Portal - Mudança de fluxo",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-17T17:45:36Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@Felipe Reprovado . Reprocessei a consulta da placa GDJ8I51 novamente e agora o status está correto. Quanto ao código da multa, está gravando, porém deve conter 5 dígitos, favor efetuar o mesmo tratam",
-      "link": "https://redmine.platform.brobot.com.br/issues/77825"
-    },
-    {
-      "id": 77819,
-      "task": "autos_pge_rn - CAPTCHA_INCORRECTLY_SOLVED",
-      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autospgern 📅...",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-17T17:32:44Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@rodrigo, o erro mencionado esta relacionado a consumo. @felipe poderia verificar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/77819"
-    },
-    {
-      "id": 77778,
-      "task": "Cadastro de veículos em lote com tela de revisão",
-      "descricao": "Objetivo Hoje, ao subir a planilha de veículos, o arquivo vai inteiro para o servidor: se uma única linha e...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-17T17:06:23Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe, Teste efetuado e ajustes relatado: Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Ao realizar o cadastro de 3 veículos com Renavam duplicado, o sistema informou apenas que 2 v",
-      "link": "https://redmine.platform.brobot.com.br/issues/77778"
     },
     {
       "id": 52015,
