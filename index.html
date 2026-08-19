@@ -447,7 +447,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-19T13:25:51.261Z",
+  "gerado_em": "2026-08-19T14:25:53.409Z",
   "total": 14,
   "rows": [
     {
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77825"
     },
     {
-      "id": 79475,
-      "task": "autos_dnit - Ajuste de retorno e verificação de credencial passada para consulta",
-      "descricao": "Notei na rodada de um dos clientes que estavam em onboarding que ao consultar no DNIT com uma credencial do...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-18T13:45:42Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ajustado a spider para realizar o aceite automatico dos termos de uso. @rodrigo, poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/79475"
-    },
-    {
       "id": 77813,
       "task": "Exportação de Relatórios Personalizados não apresenta coluna de Marcadores",
       "descricao": "Identificamos que a exportação de relatórios personalizados não está retornando a informação da coluna Marc...",
@@ -631,14 +618,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/77778"
+    },
+    {
+      "id": 77721,
+      "task": "autos_prf - XHR_ERROR",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosprf 📅 DATA:...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-19T13:55:13Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "O suporte do CapSolver fez uma nova configuração específica para o captcha que estava apresentando problemas. Realizei as devidas alterações no código para utilizar essa configuração. @rodrigo, poderi",
+      "link": "https://redmine.platform.brobot.com.br/issues/77721"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-19T13:26:43.033Z",
+  "gerado_em": "2026-08-19T14:26:45.008Z",
   "sprint_id": 64,
-  "total": 56,
+  "total": 57,
   "rows": [
+    {
+      "id": 79475,
+      "task": "autos_dnit - Ajuste de retorno e verificação de credencial passada para consulta",
+      "descricao": "Notei na rodada de um dos clientes que estavam em onboarding que ao consultar no DNIT com uma credencial do...",
+      "category": "Portal - Mudança de fluxo",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-19T14:20:26Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/79475"
+    },
     {
       "id": 74637,
       "task": "DFe | Permitir personalização da prioridade dos participantes exibidos na coluna \"Participantes\" - HIGHSTIL (ID: 41)",
