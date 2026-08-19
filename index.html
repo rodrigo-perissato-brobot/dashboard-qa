@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-19T18:56:01.811Z",
-  "total": 13,
+  "gerado_em": "2026-08-19T19:26:12.028Z",
+  "total": 14,
   "rows": [
     {
       "id": 52181,
@@ -618,14 +618,41 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi o ajuste para staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/75985"
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-08-19T19:06:24Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "Correções dos itens 65 e 66 Já está em staging para testes @gustavo",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-19T18:57:34.040Z",
+  "gerado_em": "2026-08-19T19:27:19.729Z",
   "sprint_id": 64,
-  "total": 40,
+  "total": 58,
   "rows": [
+    {
+      "id": 78396,
+      "task": "Análise carregamento plataforma do cliente LATAM",
+      "descricao": "O cliente LATAM questionou a demora no carregamento das notas quando o mesmo tenta acessar o aplicativo e d...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-19T19:08:12Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan, seguem resultados dos testes: Ambiente: Staging | Conta: Conta Default | Versão: Classic 1. Dashboard — \"Notas de entrada\" — Aprovado Todos os pontos previstos foram validados e estão funcio",
+      "link": "https://redmine.platform.brobot.com.br/issues/78396"
+    },
     {
       "id": 77825,
       "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
@@ -669,6 +696,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77083"
     },
     {
+      "id": 76649,
+      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
+      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-19T15:22:09Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@jose-ricardo @delvin @rodrigo novo target adicionado.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76649"
+    },
+    {
       "id": 70018,
       "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
       "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
@@ -681,20 +722,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan, seguem resultados dos testes 1. Seção Boletos Vencendo — Ajustes necessários O card está sendo exibido como “Multas vencendo”, porém o correto, conforme o critério, é “Boletos vencendo”. O v",
       "link": "https://redmine.platform.brobot.com.br/issues/70018"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-19T14:34:14Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo @rodrigo itens 50 e 59 em produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 74637,
@@ -823,20 +850,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77737"
     },
     {
-      "id": 78396,
-      "task": "Análise carregamento plataforma do cliente LATAM",
-      "descricao": "O cliente LATAM questionou a demora no carregamento das notas quando o mesmo tenta acessar o aplicativo e d...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-13T12:14:07Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "DFe — melhoria no tempo de carregamento Cliente reclamou que as notas demoravam muito para abrir. Mexemos em dois lugares: o painel do dashboard (\"Notas de entrada\") e a tela do aplicativo (botão \"Ace",
-      "link": "https://redmine.platform.brobot.com.br/issues/78396"
-    },
-    {
       "id": 77600,
       "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
       "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
@@ -865,6 +878,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/41092"
     },
     {
+      "id": 76008,
+      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
+      "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
+      "category": "Operação - Origem",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-07T18:16:55Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf, efetuado os testes conforme abaixo: Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Ao ativar a checkbox na edição de uma credencial já existente e salvar, ao retornar para a tel",
+      "link": "https://redmine.platform.brobot.com.br/issues/76008"
+    },
+    {
       "id": 76633,
       "task": "Captura de NFSe via API - IKKI (ID: 580)",
       "descricao": "Poderiam por gentileza com o caso abaixo?",
@@ -877,6 +904,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@leonardo.paganotti bom dia, Conforme alinhado com os presentes Emerson, Roberta, Gabriella em 29/07/2026: seguiremos com desenvolvimento do tema. @joathan conforme alinhado via discord, por gentileza",
       "link": "https://redmine.platform.brobot.com.br/issues/76633"
+    },
+    {
+      "id": 51852,
+      "task": "FICI Preenchida Automaticamente - Davi",
+      "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-06T14:43:04Z",
+      "comentario_autor": "Roberta Espacachere",
+      "comentario_trecho": "Bom dia, Temos alguma atualização sobre o tema?",
+      "link": "https://redmine.platform.brobot.com.br/issues/51852"
     },
     {
       "id": 39504,
@@ -921,6 +962,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/69272"
     },
     {
+      "id": 76717,
+      "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
+      "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-31T19:28:30Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo a Confirmação da Operação foi executada e as 3 notas serão disponibilizadas em breve.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76717"
+    },
+    {
       "id": 71817,
       "task": "Adição de tags às contas",
       "descricao": "Seria interessante que conseguíssemos adicionar tags às contas para que pudéssemos colocar informações inte...",
@@ -947,6 +1002,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@roberta @gustavo @felipe-godoy @leonardo.paganotti @julya.tochio @renata @maria.rozolem @Thais boa tarde, 71387 — Status Ativo/Inativo de Empresas em Definições Situação: entregue e disponível em pro",
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
+    },
+    {
+      "id": 61539,
+      "task": "Implementação do Módulo CaçaCondutores > Integração",
+      "descricao": "",
+      "category": "Produtos - Novo produto",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-28T15:04:30Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf Reprovado. Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o ge",
+      "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
       "id": 37739,
@@ -1003,6 +1072,118 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Em produção completa 26/07: front (Vercel) + maestro (PR 1323 mergeada pelo Rolf). Chips com contadores de todas as páginas ativos e bloco Por spider com Entrega/Eficiência.",
       "link": "https://redmine.platform.brobot.com.br/issues/76862"
+    },
+    {
+      "id": 76857,
+      "task": "Auditoria da rodada (XLSX): selo de rodada fechada + download do extrato placa a placa na Volumetria",
+      "descricao": "Prova auditável de que a rodada de uma conta foi entregue, direto do painel de Volumetria.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-26T14:38:20Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Fechamento: em produção desde 26/07 — primeiro uso real gerou as auditorias com reconciliação batendo (ex.: PARVI 1.768 = 1.537 + 231 ✓). Coluna Tentativas incluída no extrato placa a placa.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76857"
+    },
+    {
+      "id": 76855,
+      "task": "Análise: mecanismos que reenviam consultas do SNE sem auditoria (crons de auto-cura) + inventário de reprocessáveis",
+      "descricao": "Investigação em produção (25/07) motivada por contas que entravam em reprocesso sem clique humano.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:06Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76855"
+    },
+    {
+      "id": 76854,
+      "task": "Infra CI: gates de RSpec rodavam imagem congelada e timeout de 10 min derrubava pipelines",
+      "descricao": "Dois problemas nos CodeBuild dos gates de RSpec (maestro aws-pipelines-compose-rspec e platform aws-pipelines-v3-compose-rspec): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:05Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76854"
+    },
+    {
+      "id": 76853,
+      "task": "Fix: card Nas filas agora exibia traço (pods sem credencial AWS) — prod e staging",
+      "descricao": "O card de profundidade das filas do SNE no painel de Volumetria sempre exibiu traço: os pods do platform (p...",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:03Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76853"
+    },
+    {
+      "id": 76845,
+      "task": "Volumetria v4: taxa de sucesso, erros por tipo e ação sugerida (semáforo anti-desespero)",
+      "descricao": "Feedback de produção (contexto 76757): o % concluído (andamento) é lido como taxa de sucesso e induz erro (99% com 4 mil erros).",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:06:01Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76845"
+    },
+    {
+      "id": 76757,
+      "task": "Volumetria v3: leitura completa para tomada de decisão (tooltips, % de conclusão da rodada, placas consultadas, fila da conta)",
+      "descricao": "Melhorias de leitura na tela de Volumetria (contexto 76728, 76756): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:05:59Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Entregue e superseded: a leitura completa da volumetria evoluiu pelas versões v4 (76845) e v5 (76850), ambas em produção. Este escopo está 100% coberto pelo painel atual. @rodrigo @gabi — ciência: est",
+      "link": "https://redmine.platform.brobot.com.br/issues/76757"
+    },
+    {
+      "id": 76756,
+      "task": "SNE: filas por classe de serviço (express/padrão/pesada) com classificação configurável (F2 do plano de desafogo)",
+      "descricao": "Fase F2 do plano de desafogo do SNE (contexto na 76728): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:05:58Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Entregue em produção 24/07: 3 lanes por conta (express/padrão/pesada) com KEDA por fila, classificação manual+automática (SneLane), propagação da lane até o SQS, guincho de migração das mensagens sem ",
+      "link": "https://redmine.platform.brobot.com.br/issues/76756"
+    },
+    {
+      "id": 76755,
+      "task": "SNE: correções do fluxo de agendamento/retry + coleta do payload de bloqueio (F0 do plano de desafogo)",
+      "descricao": "Fase F0 do plano de desafogo do SNE (contexto na 76728): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:05:57Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Entregue em produção 24-25/07 (retry com groupid preservado, correção da dupla cadeia de agendamento, amountretry reduzido, payload de bloqueio em coleta pela equipe). @rodrigo @gabi — ciência: esta e",
+      "link": "https://redmine.platform.brobot.com.br/issues/76755"
     },
     {
       "id": 75786,
@@ -1075,6 +1256,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/69679"
     },
     {
+      "id": 57089,
+      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
+      "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
+      "category": "Produtos - Novo produto",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-15T03:35:50Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
+      "link": "https://redmine.platform.brobot.com.br/issues/57089"
+    },
+    {
       "id": 59523,
       "task": "Criação do Dashboard",
       "descricao": "",
@@ -1145,6 +1340,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
+      "id": 53155,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
+      "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
+      "category": "anterior",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-23T17:52:13Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@renata boa tarde, Conforme alinhamento em reunião 09/03/2026 com os presentes Henrique, Emerson, Gabriella, Guilherme, Roberta, Renata, Davi, Jose: foi alinhado que somente seguiremos com o desenvolv",
+      "link": "https://redmine.platform.brobot.com.br/issues/53155"
+    },
+    {
       "id": 43159,
       "task": "Filtro por Centro de Custo - Supermix ",
       "descricao": "Adicionar a opção de filtrar multas, relatórios e dashboards por Centro de Custo, permitindo que o usuário...",
@@ -1173,6 +1382,34 @@
       "link": "https://redmine.platform.brobot.com.br/issues/16564"
     },
     {
+      "id": 44624,
+      "task": "GERAR INSIGHTS PÓS CONSULTA E ENVIAR VIA E-MAIL/WHATSAPP",
+      "descricao": "",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "planning: to plan",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-01T12:01:27Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@Roberta bom dia, Informo que o projeto de desenvolvimento foi relizado, o tema será estimado pelos desenvolvedores e posteriormente planejado para desenvolvimento em uma sprint",
+      "link": "https://redmine.platform.brobot.com.br/issues/44624"
+    },
+    {
+      "id": 47471,
+      "task": "Melhoria do dashboard do cm-frotas Platform",
+      "descricao": "",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-05-14T19:30:41Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@ralph por gentileza, seguir com estimativa da atividade protótipo criado 70018",
+      "link": "https://redmine.platform.brobot.com.br/issues/47471"
+    },
+    {
       "id": 30232,
       "task": "Conta mestre Cervejaria Imperial",
       "descricao": "Boa tarde pessoal!",
@@ -1185,6 +1422,34 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
       "link": "https://redmine.platform.brobot.com.br/issues/30232"
+    },
+    {
+      "id": 51016,
+      "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
+      "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "planning: to plan",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-04-23T16:51:09Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo boa tarde, Informo que foi realizada a criação do projeto para desenvolvimento, os desenvolvedores seguirão com análise de estimativa da atividade e posteriormente seguiremos com planejamento",
+      "link": "https://redmine.platform.brobot.com.br/issues/51016"
+    },
+    {
+      "id": 60381,
+      "task": "Estruturação do processo e documentação do fluxo de Indicação de Condutor",
+      "descricao": "Realizar a estruturação macro do tema de Indicação de Condutor, contemplando tanto a documentação interna p...",
+      "category": "Produtos - Documentação",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-04-14T18:58:38Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
+      "link": "https://redmine.platform.brobot.com.br/issues/60381"
     }
   ]
 };
