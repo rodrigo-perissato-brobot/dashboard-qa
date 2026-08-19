@@ -447,7 +447,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-19T14:25:53.409Z",
+  "gerado_em": "2026-08-19T15:25:54.899Z",
   "total": 14,
   "rows": [
     {
@@ -581,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71405"
     },
     {
-      "id": 70018,
-      "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
-      "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "ambos",
-      "data_comentario": "2026-08-19T11:51:57Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@rodrigo @gustavo por gentileza, testar",
-      "link": "https://redmine.platform.brobot.com.br/issues/70018"
-    },
-    {
       "id": 46135,
       "task": "CERVEJARIA IMPERIAL -  NOVOS CAMPOS BUSCAR NO ANTT PROCESSOS (LER DOCUMENTO)",
       "descricao": "Realizar a leitura do documento do vistas dos processos para buscar as informações relevantes do AUTO DE IN...",
@@ -620,38 +607,79 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77778"
     },
     {
-      "id": 77721,
-      "task": "autos_prf - XHR_ERROR",
-      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosprf 📅 DATA:...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "low",
+      "id": 77906,
+      "task": "Filtro \"Todos\" do campo \"Status do Veículo\" não funciona na listagem do Caça Multas Frotas",
+      "descricao": "Identificamos um comportamento incorreto no filtro \"Status do Veículo\" da tela Início Caça Multas Frotas List.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-19T13:55:13Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "O suporte do CapSolver fez uma nova configuração específica para o captcha que estava apresentando problemas. Realizei as devidas alterações no código para utilizar essa configuração. @rodrigo, poderi",
-      "link": "https://redmine.platform.brobot.com.br/issues/77721"
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-19T14:38:10Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo @rodrigo por gentileza, seguir com testes. Nesta atividade corrigi o problema do frotas e também já contempla a correção dos itens 53,54 e 55 da atividade 63612 Problema O filtro Status do Ve",
+      "link": "https://redmine.platform.brobot.com.br/issues/77906"
+    },
+    {
+      "id": 77734,
+      "task": "Inclusão da coluna \"Link do Boleto\" nos relatórios de Piso Mínimo de Frete e Excesso de Peso",
+      "descricao": "Disponibilizar uma nova opção de coluna \"Link do Boleto\" na configuração dos relatórios de Piso Mínimo de F...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "ambos",
+      "data_comentario": "2026-08-19T14:39:56Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@rodrigo @gustavo em staging, por gentileza, seguir com testes",
+      "link": "https://redmine.platform.brobot.com.br/issues/77734"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-19T14:26:45.008Z",
+  "gerado_em": "2026-08-19T15:26:48.590Z",
   "sprint_id": 64,
-  "total": 57,
+  "total": 58,
   "rows": [
     {
-      "id": 79475,
-      "task": "autos_dnit - Ajuste de retorno e verificação de credencial passada para consulta",
-      "descricao": "Notei na rodada de um dos clientes que estavam em onboarding que ao consultar no DNIT com uma credencial do...",
-      "category": "Portal - Mudança de fluxo",
+      "id": 76649,
+      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
+      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
+      "category": "",
       "priority": "high",
-      "status": "awaiting deploy",
+      "status": "in progress",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-19T15:22:09Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@jose-ricardo @delvin @rodrigo novo target adicionado.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76649"
+    },
+    {
+      "id": 70018,
+      "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
+      "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-19T14:20:26Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/79475"
+      "data_comentario": "2026-08-19T14:53:05Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan, seguem resultados dos testes 1. Seção Boletos Vencendo — Ajustes necessários O card está sendo exibido como “Multas vencendo”, porém o correto, conforme o critério, é “Boletos vencendo”. O v",
+      "link": "https://redmine.platform.brobot.com.br/issues/70018"
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-19T14:34:14Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo @rodrigo itens 50 e 59 em produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 74637,
@@ -708,20 +736,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas e desta vez processaram com sucesso, porém ainda não estão gravando todas as multas existentes no portal — foram gravadas apenas 93 das 269 multas. Ambiente",
       "link": "https://redmine.platform.brobot.com.br/issues/77075"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-18T12:57:41Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "Item 75 - Ajustes necessários Os serviços - Crono, Taxas e Indicação de Condutores estão corretos. Segue ajustes para os demais serviços: Condutores Motoristas: Os campos Nome e Categoria também devem",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 78550,
