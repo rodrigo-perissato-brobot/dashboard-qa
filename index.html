@@ -447,7 +447,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-20T14:25:55.657Z",
+  "gerado_em": "2026-08-20T14:55:53.087Z",
   "total": 15,
   "rows": [
     {
@@ -620,19 +620,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/52015"
     },
     {
-      "id": 77083,
-      "task": "Registro de histórico de documentos de Notificação no módulo Frotas",
-      "descricao": "Alterar o comportamento de armazenamento dos documentos de Notificação no módulo Frotas, para que novos doc...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-08-20T12:59:58Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo por gentileza, prosseguir com testes com prioridade, conforme The voice de ontem foi passado prazo ao cliente que implementação estará em produção em 21/08",
-      "link": "https://redmine.platform.brobot.com.br/issues/77083"
-    },
-    {
       "id": 78386,
       "task": "autos_sne_denatran_indicacao_condutor - Gerado consultas em conjunto com a rodada do frotas do cliente sem que o mesmo tivesse realmente realizado indicações",
       "descricao": "No agendamento do cliente as consultas geradas foram tanto dos robôs do frotas quanto do robô de indicação,...",
@@ -644,14 +631,55 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/78386"
+    },
+    {
+      "id": 70018,
+      "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
+      "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-08-20T14:29:06Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo ajustes feitos. Subi para staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/70018"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-20T14:26:57.058Z",
+  "gerado_em": "2026-08-20T14:57:00.647Z",
   "sprint_id": 64,
   "total": 58,
   "rows": [
+    {
+      "id": 77083,
+      "task": "Registro de histórico de documentos de Notificação no módulo Frotas",
+      "descricao": "Alterar o comportamento de armazenamento dos documentos de Notificação no módulo Frotas, para que novos doc...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-20T14:53:23Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan Aprovado Ambiente: Staging | Conta: Testes Funcionais | Versão: New A correção foi validada em staging e o comportamento está funcionando conforme esperado. Ao realizar uma nova consulta da m",
+      "link": "https://redmine.platform.brobot.com.br/issues/77083"
+    },
+    {
+      "id": 77075,
+      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
+      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-20T14:50:23Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77075"
+    },
     {
       "id": 75985,
       "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
@@ -737,20 +765,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
-      "id": 70018,
-      "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
-      "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-19T14:53:05Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan, seguem resultados dos testes 1. Seção Boletos Vencendo — Ajustes necessários O card está sendo exibido como “Multas vencendo”, porém o correto, conforme o critério, é “Boletos vencendo”. O v",
-      "link": "https://redmine.platform.brobot.com.br/issues/70018"
-    },
-    {
       "id": 74637,
       "task": "DFe | Permitir personalização da prioridade dos participantes exibidos na coluna \"Participantes\" - HIGHSTIL (ID: 41)",
       "descricao": "Atualmente, na listagem de documentos fiscais (NFe), a coluna \"Participantes\" exibe apenas 2 participantes...",
@@ -777,20 +791,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@gabriella seguem ajustes: Ambiente: Staging | Conta: Testes Funcionais | Versão: New No Platform Classic, os filtros de UF, Cidade, Serviço e Conta permitem a seleção de múltiplas opções simultaneame",
       "link": "https://redmine.platform.brobot.com.br/issues/79466"
-    },
-    {
-      "id": 77075,
-      "task": "autos_prefeitura_sao_paulo_sp - Divergência na quantidade de multas capturadas da Prefeitura de São Paulo - ENGEMIX ID: 1477",
-      "descricao": "A plataforma está apresentando divergência na quantidade de multas retornadas para a placa APX7F02 em relaç...",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-18T13:41:04Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas e desta vez processaram com sucesso, porém ainda não estão gravando todas as multas existentes no portal — foram gravadas apenas 93 das 269 multas. Ambiente",
-      "link": "https://redmine.platform.brobot.com.br/issues/77075"
     },
     {
       "id": 78550,
