@@ -447,8 +447,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-20T17:27:15.335Z",
-  "total": 15,
+  "gerado_em": "2026-08-20T17:56:04.931Z",
+  "total": 14,
   "rows": [
     {
       "id": 52181,
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77778"
     },
     {
-      "id": 77906,
-      "task": "Filtro \"Todos\" do campo \"Status do Veículo\" não funciona na listagem do Caça Multas Frotas",
-      "descricao": "Identificamos um comportamento incorreto no filtro \"Status do Veículo\" da tela Início Caça Multas Frotas List.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "ambos",
-      "data_comentario": "2026-08-19T14:38:10Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo @rodrigo por gentileza, seguir com testes. Nesta atividade corrigi o problema do frotas e também já contempla a correção dos itens 53,54 e 55 da atividade 63612 Problema O filtro Status do Ve",
-      "link": "https://redmine.platform.brobot.com.br/issues/77906"
-    },
-    {
       "id": 77734,
       "task": "Inclusão da coluna \"Link do Boleto\" nos relatórios de Piso Mínimo de Frete e Excesso de Peso",
       "descricao": "Disponibilizar uma nova opção de coluna \"Link do Boleto\" na configuração dos relatórios de Piso Mínimo de F...",
@@ -648,9 +635,9 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-20T17:28:58.137Z",
+  "gerado_em": "2026-08-20T17:57:09.591Z",
   "sprint_id": 64,
-  "total": 49,
+  "total": 58,
   "rows": [
     {
       "id": 77906,
@@ -661,9 +648,9 @@
       "status": "staging",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-20T17:27:48Z",
-      "comentario_autor": "Leonardo Paganotti",
-      "comentario_trecho": "Novo cenário identificado relacionado ao ticket em análise Durante uma nova validação, identificamos outro comportamento relacionado ao mesmo problema do filtro Status do Veículo, já reportado neste t",
+      "data_comentario": "2026-08-20T17:42:34Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@joathan por gentileza, seguir com análise e correção",
       "link": "https://redmine.platform.brobot.com.br/issues/77906"
     },
     {
@@ -679,6 +666,20 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella agora com as permissões, pude rodar os scripts de input dos dados em staging para a conta de demonstração (id 265). Poderia verificar se está tudo certo?",
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
+    },
+    {
+      "id": 77083,
+      "task": "Registro de histórico de documentos de Notificação no módulo Frotas",
+      "descricao": "Alterar o comportamento de armazenamento dos documentos de Notificação no módulo Frotas, para que novos doc...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-20T14:57:53Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77083"
     },
     {
       "id": 63612,
@@ -826,7 +827,7 @@
       "descricao": "Objetivo Permitir que o time administrativo extraia em planilha os registros de indicação de condutores dir...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "to do",
+      "status": "in progress",
       "tipo": "conhecimento",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-13T17:09:17Z",
@@ -847,6 +848,20 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan Testes 1 e 2 Aprovados. Teste 1: validação do comportamento da paginação do endpoint, com retorno correto dos metadados (totalcount, totalpages, currentpage, prevpage e nextpage). Teste 2: ex",
       "link": "https://redmine.platform.brobot.com.br/issues/77737"
+    },
+    {
+      "id": 77600,
+      "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
+      "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
+      "category": "Spider - Outros",
+      "priority": "immediate",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-11T19:49:33Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "No momento não temos um cenário definido para realizar a validação desse novo ajuste. Vou aguardar o surgimento de um novo cenário para que eu possa prosseguir com os testes.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77600"
     },
     {
       "id": 41092,
@@ -1029,6 +1044,104 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
       "link": "https://redmine.platform.brobot.com.br/issues/75795"
+    },
+    {
+      "id": 76863,
+      "task": "Volumetria: rodada ancorada na data MARCADA do agendamento (não no burst detectado)",
+      "descricao": "A rodada no painel/auditoria passa a ser definida como: da data MARCADA no agendamento até a próxima marcada.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-26T19:05:22Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Fechamento: em produção 26/07 (PRs 1325 maestro + 1326 platform mergeadas pelo Rolf, pipelines verdes). Rodada agora ancora na data marcada do agendamento.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76863"
+    },
+    {
+      "id": 76862,
+      "task": "Volumetria: entrega vs eficiência no bloco Por spider + filtro de status na grid Por conta",
+      "descricao": "Ajustes de clareza no painel Volumetria (76850) para a operação não confundir régua de entrega com régua de custo.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-26T14:38:20Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Em produção completa 26/07: front (Vercel) + maestro (PR 1323 mergeada pelo Rolf). Chips com contadores de todas as páginas ativos e bloco Por spider com Entrega/Eficiência.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76862"
+    },
+    {
+      "id": 76857,
+      "task": "Auditoria da rodada (XLSX): selo de rodada fechada + download do extrato placa a placa na Volumetria",
+      "descricao": "Prova auditável de que a rodada de uma conta foi entregue, direto do painel de Volumetria.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-26T14:38:20Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Fechamento: em produção desde 26/07 — primeiro uso real gerou as auditorias com reconciliação batendo (ex.: PARVI 1.768 = 1.537 + 231 ✓). Coluna Tentativas incluída no extrato placa a placa.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76857"
+    },
+    {
+      "id": 76855,
+      "task": "Análise: mecanismos que reenviam consultas do SNE sem auditoria (crons de auto-cura) + inventário de reprocessáveis",
+      "descricao": "Investigação em produção (25/07) motivada por contas que entravam em reprocesso sem clique humano.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:06Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76855"
+    },
+    {
+      "id": 76854,
+      "task": "Infra CI: gates de RSpec rodavam imagem congelada e timeout de 10 min derrubava pipelines",
+      "descricao": "Dois problemas nos CodeBuild dos gates de RSpec (maestro aws-pipelines-compose-rspec e platform aws-pipelines-v3-compose-rspec): 1.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:05Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76854"
+    },
+    {
+      "id": 76853,
+      "task": "Fix: card Nas filas agora exibia traço (pods sem credencial AWS) — prod e staging",
+      "descricao": "O card de profundidade das filas do SNE no painel de Volumetria sempre exibiu traço: os pods do platform (p...",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-25T23:06:03Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76853"
+    },
+    {
+      "id": 76845,
+      "task": "Volumetria v4: taxa de sucesso, erros por tipo e ação sugerida (semáforo anti-desespero)",
+      "descricao": "Feedback de produção (contexto 76757): o % concluído (andamento) é lido como taxa de sucesso e induz erro (99% com 4 mil erros).",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Rolf Marquardt",
+      "data_comentario": "2026-07-25T23:06:01Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
+      "link": "https://redmine.platform.brobot.com.br/issues/76845"
     },
     {
       "id": 76757,
