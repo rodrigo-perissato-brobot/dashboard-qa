@@ -122,7 +122,20 @@
     flex-direction: column;
     gap: 6px;
     border-top: 3px solid var(--line-accent, var(--line));
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+    font: inherit;
   }
+  .counter:hover { background: var(--surface-2); }
+  .counter:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .counter.active-filter { box-shadow: 0 0 0 2px var(--line-accent, var(--accent)) inset, var(--shadow); }
+  .counter .hint {
+    font-size: 11px;
+    color: var(--ink-muted);
+    opacity: 0;
+  }
+  .counter.active-filter .hint { opacity: 0.85; }
   .counter .n {
     font-size: 32px;
     font-weight: 700;
@@ -256,7 +269,6 @@
   }
   .chip.rodrigo { background: var(--rodrigo-bg); color: var(--rodrigo); }
   .chip.gustavo { background: var(--gustavo-bg); color: var(--gustavo); }
-  .chip.ambos { background: linear-gradient(90deg, var(--rodrigo-bg) 50%, var(--gustavo-bg) 50%); color: var(--ink); }
   .chip.sem_dono {
     background: transparent;
     border: 1.5px dashed var(--ink-muted);
@@ -447,8 +459,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-21T19:25:59.477Z",
-  "total": 15,
+  "gerado_em": "2026-08-21T19:44:01.896Z",
+  "total": 14,
   "rows": [
     {
       "id": 52181,
@@ -457,7 +469,7 @@
       "category": "Portal - Mudança de layout",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-06-30T16:47:26Z",
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
@@ -509,7 +521,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "rodrigo",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-08-14T18:41:00Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Implementado na spider. Agora, quando for realizada uma consulta do tipo PJ e o retorno indicar que o CNPJ não está vinculado ao gov.br, a spider fará automaticamente uma nova pesquisa como PF. @rodri",
@@ -522,7 +534,7 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-08-18T14:21:53Z",
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@gabriella, teste realizado, segue validação: Ambiente: Staging | Conta: Testes Funcionais | Versão: New Frotas – Aprovado: a coluna Marcadores está disponível no Relatório Personalizado e os marcador",
@@ -535,24 +547,11 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "ambos",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-08-19T11:29:33Z",
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@rodrigo @gustavo por gentileza, testar",
       "link": "https://redmine.platform.brobot.com.br/issues/71405"
-    },
-    {
-      "id": 52015,
-      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
-      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-20T12:01:06Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo Alterei pra tratar o erro que estava gerando. Pode testar novamente por favor?",
-      "link": "https://redmine.platform.brobot.com.br/issues/52015"
     },
     {
       "id": 70018,
@@ -574,7 +573,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "ambos",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-08-21T13:53:47Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo subi para staging. Verifiquem se é possível testar em staging. Senão, vou revisar tudo e subiremos para produção semana que vem.",
@@ -587,7 +586,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "ambos",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-08-21T14:19:53Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo em staging.",
@@ -600,7 +599,7 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "ambos",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-08-21T14:53:30Z",
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@leonardo.paganotti conforme alinhado em reunião entre eu, você e @joathan o tema não se trata de um bug, mas sim, veículos que foram excluídos e não se classificam como ativos ou inativos. Para esse ",
@@ -648,15 +647,20 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-21T19:26:04.565Z",
+  "gerado_em": "2026-08-21T19:44:06.494Z",
   "sprint_id": 64,
   "total": 0,
   "rows": []
 };
 
-  const OWNER_LABEL = { rodrigo: "Rodrigo", gustavo: "Gustavo", ambos: "Rodrigo + Gustavo", sem_dono: "QA Owner" };
+  const OWNER_LABEL = { rodrigo: "Rodrigo", gustavo: "Gustavo", sem_dono: "QA Owner" };
   const TIPO_LABEL = { reprovado: "Reprovado", conhecimento: "Conhecimento", outro: "Outro" };
   const STALE_DAYS = 3;
+
+  // Estado do filtro clicável nos cards de contagem — null = mostra tudo. Clicar de novo
+  // no card ativo limpa o filtro (toggle).
+  let pendentesFilter = null;
+  let followupFilter = null;
 
   function daysSince(iso) {
     const ms = Date.now() - new Date(iso).getTime();
@@ -676,16 +680,21 @@
 
   function renderCounters() {
     const counts = { rodrigo: 0, gustavo: 0, sem_dono: 0 };
-    DATA.rows.forEach((r) => {
-      if (r.alocado_a === "ambos") { counts.rodrigo++; counts.gustavo++; }
-      else if (counts[r.alocado_a] !== undefined) counts[r.alocado_a]++;
-    });
+    DATA.rows.forEach((r) => { if (counts[r.alocado_a] !== undefined) counts[r.alocado_a]++; });
     const wrap = document.getElementById("counters");
-    wrap.innerHTML = `
-      <div class="counter rodrigo"><span class="n">${counts.rodrigo}</span><span class="label">Pra Rodrigo</span></div>
-      <div class="counter gustavo"><span class="n">${counts.gustavo}</span><span class="label">Pra Gustavo</span></div>
-      <div class="counter livre"><span class="n">${counts.sem_dono}</span><span class="label">QA Owner (sem dono)</span></div>
-    `;
+    const defs = [
+      { key: "rodrigo", cls: "rodrigo", label: "Pra Rodrigo", n: counts.rodrigo },
+      { key: "gustavo", cls: "gustavo", label: "Pra Gustavo", n: counts.gustavo },
+      { key: "sem_dono", cls: "livre", label: "QA Owner (sem dono)", n: counts.sem_dono },
+    ];
+    wrap.innerHTML = defs
+      .map(
+        (d) => `
+      <button type="button" class="counter ${d.cls}${pendentesFilter === d.key ? " active-filter" : ""}" data-filter="${d.key}">
+        <span class="n">${d.n}</span><span class="label">${d.label}</span><span class="hint">clique pra filtrar</span>
+      </button>`
+      )
+      .join("");
   }
 
   function ownerChip(alocadoA) {
@@ -729,22 +738,32 @@
 
   function renderTable() {
     const tbody = document.getElementById("tbody");
-    if (DATA.rows.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="7"><div class="empty-state">Nenhuma pendência encontrada.</div></td></tr>`;
+    const rows = pendentesFilter ? DATA.rows.filter((r) => r.alocado_a === pendentesFilter) : DATA.rows;
+    if (rows.length === 0) {
+      const msg = pendentesFilter ? "Nenhuma pendência pra esse filtro." : "Nenhuma pendência encontrada.";
+      tbody.innerHTML = `<tr><td colspan="7"><div class="empty-state">${msg}</div></td></tr>`;
       return;
     }
-    tbody.innerHTML = DATA.rows.map(rowHtml).join("");
+    tbody.innerHTML = rows.map(rowHtml).join("");
   }
 
   function renderFollowupCounters() {
     const counts = { reprovado: 0, conhecimento: 0, outro: 0 };
     FOLLOWUP_DATA.rows.forEach((r) => { if (counts[r.tipo] !== undefined) counts[r.tipo]++; });
     const wrap = document.getElementById("counters-followup");
-    wrap.innerHTML = `
-      <div class="counter rodrigo"><span class="n">${counts.reprovado}</span><span class="label">Reprovado — com dev</span></div>
-      <div class="counter gustavo"><span class="n">${counts.conhecimento}</span><span class="label">Para conhecimento</span></div>
-      <div class="counter livre"><span class="n">${counts.outro}</span><span class="label">Outro motivo</span></div>
-    `;
+    const defs = [
+      { key: "reprovado", cls: "rodrigo", label: "Reprovado — com dev", n: counts.reprovado },
+      { key: "conhecimento", cls: "gustavo", label: "Para conhecimento", n: counts.conhecimento },
+      { key: "outro", cls: "livre", label: "Outro motivo", n: counts.outro },
+    ];
+    wrap.innerHTML = defs
+      .map(
+        (d) => `
+      <button type="button" class="counter ${d.cls}${followupFilter === d.key ? " active-filter" : ""}" data-filter="${d.key}">
+        <span class="n">${d.n}</span><span class="label">${d.label}</span><span class="hint">clique pra filtrar</span>
+      </button>`
+      )
+      .join("");
   }
 
   function followupRowHtml(r) {
@@ -780,11 +799,13 @@
 
   function renderFollowupTable() {
     const tbody = document.getElementById("tbody-followup");
-    if (FOLLOWUP_DATA.rows.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="8"><div class="empty-state">Nenhuma task de acompanhamento encontrada.</div></td></tr>`;
+    const rows = followupFilter ? FOLLOWUP_DATA.rows.filter((r) => r.tipo === followupFilter) : FOLLOWUP_DATA.rows;
+    if (rows.length === 0) {
+      const msg = followupFilter ? "Nenhuma task pra esse filtro." : "Nenhuma task de acompanhamento encontrada.";
+      tbody.innerHTML = `<tr><td colspan="8"><div class="empty-state">${msg}</div></td></tr>`;
       return;
     }
-    tbody.innerHTML = FOLLOWUP_DATA.rows.map(followupRowHtml).join("");
+    tbody.innerHTML = rows.map(followupRowHtml).join("");
     document.getElementById("sprint-id").textContent = "#" + FOLLOWUP_DATA.sprint_id;
   }
 
@@ -799,12 +820,34 @@
     });
   }
 
+  // Clicar num card filtra a tabela pra só aquele valor; clicar de novo no mesmo card
+  // (já ativo) limpa o filtro e volta a mostrar tudo.
+  function setupCounterFilters() {
+    document.getElementById("counters").addEventListener("click", (e) => {
+      const btn = e.target.closest(".counter");
+      if (!btn) return;
+      const key = btn.dataset.filter;
+      pendentesFilter = pendentesFilter === key ? null : key;
+      renderCounters();
+      renderTable();
+    });
+    document.getElementById("counters-followup").addEventListener("click", (e) => {
+      const btn = e.target.closest(".counter");
+      if (!btn) return;
+      const key = btn.dataset.filter;
+      followupFilter = followupFilter === key ? null : key;
+      renderFollowupCounters();
+      renderFollowupTable();
+    });
+  }
+
   renderMeta();
   renderCounters();
   renderTable();
   renderFollowupCounters();
   renderFollowupTable();
   setupTabs();
+  setupCounterFilters();
 </script>
 </body>
 </html>
