@@ -126,6 +126,7 @@
     user-select: none;
     text-align: left;
     font: inherit;
+    color: var(--ink);
   }
   .counter:hover { background: var(--surface-2); }
   .counter:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -133,9 +134,10 @@
   .counter .hint {
     font-size: 11px;
     color: var(--ink-muted);
-    opacity: 0;
+    opacity: 0.65;
   }
-  .counter.active-filter .hint { opacity: 0.85; }
+  .counter:hover .hint,
+  .counter.active-filter .hint { opacity: 1; }
   .counter .n {
     font-size: 32px;
     font-weight: 700;
@@ -459,7 +461,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-21T19:56:05.569Z",
+  "gerado_em": "2026-08-21T19:59:35.270Z",
   "total": 16,
   "rows": [
     {
@@ -673,7 +675,7 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-21T19:56:09.655Z",
+  "gerado_em": "2026-08-21T19:59:39.280Z",
   "sprint_id": 64,
   "total": 0,
   "rows": []
