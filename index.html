@@ -461,8 +461,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-24T17:56:06.517Z",
-  "total": 11,
+  "gerado_em": "2026-08-24T18:26:07.452Z",
+  "total": 10,
   "rows": [
     {
       "id": 52181,
@@ -530,22 +530,9 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71405"
     },
     {
-      "id": 78419,
-      "task": "NF-e emitida pela Sefaz não capturada na rodada das 15h - EUROVALE - GRUPO BETIOLO - ID: 2390",
-      "descricao": "Identificamos uma NF-e que já consta como emitida/autorizada no portal da Sefaz desde 11/08/2026 às 14:35h,...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-08-21T13:53:47Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gustavo subi para staging. Verifiquem se é possível testar em staging. Senão, vou revisar tudo e subiremos para produção semana que vem.",
-      "link": "https://redmine.platform.brobot.com.br/issues/78419"
-    },
-    {
       "id": 75985,
       "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "════════���═══════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅...",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
       "category": "Portal - Mudança de layout",
       "priority": "high",
       "status": "staging",
@@ -610,10 +597,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-24T17:57:04.241Z",
+  "gerado_em": "2026-08-24T18:27:09.550Z",
   "sprint_id": 65,
-  "total": 52,
+  "total": 53,
   "rows": [
+    {
+      "id": 78419,
+      "task": "NF-e emitida pela Sefaz não capturada na rodada das 15h - EUROVALE - GRUPO BETIOLO - ID: 2390",
+      "descricao": "Identificamos uma NF-e que já consta como emitida/autorizada no portal da Sefaz desde 11/08/2026 às 14:35h,...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-24T18:06:20Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan realmente é melhor diretamente em produção, devido que se configurarmos o mesmo certificado do cliente em staging, para download de NFs, geraremos erros de consumo indevido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/78419"
+    },
     {
       "id": 79466,
       "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
