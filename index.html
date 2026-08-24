@@ -461,8 +461,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-24T11:26:29.101Z",
-  "total": 15,
+  "gerado_em": "2026-08-24T11:55:59.802Z",
+  "total": 16,
   "rows": [
     {
       "id": 52181,
@@ -510,7 +510,7 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-07-23T19:15:59Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
@@ -647,6 +647,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77796"
     },
     {
+      "id": 52015,
+      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
+      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-21T19:48:20Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@rodrigo @felipe Identifiquei um problema com o consumer/maestro com esta spider. Vá pela tentativa 17, sendo que a spider retornou corretamente na segunda tentativa. O request 13221 com uuid 01a01f5d",
+      "link": "https://redmine.platform.brobot.com.br/issues/52015"
+    },
+    {
       "id": 79852,
       "task": "autos_dnit_embarcador - BUG na captura de boletos",
       "descricao": "Há infrações do cliente H&R em que a spider não está capturando corretamente os boletos disponíveis no órgão.",
@@ -662,9 +675,9 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-24T11:27:39.769Z",
+  "gerado_em": "2026-08-24T11:56:53.960Z",
   "sprint_id": 65,
-  "total": 59,
+  "total": 49,
   "rows": [
     {
       "id": 77737,
@@ -1099,146 +1112,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
       "link": "https://redmine.platform.brobot.com.br/issues/75795"
-    },
-    {
-      "id": 76863,
-      "task": "Volumetria: rodada ancorada na data MARCADA do agendamento (não no burst detectado)",
-      "descricao": "A rodada no painel/auditoria passa a ser definida como: da data MARCADA no agendamento até a próxima marcada.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Rolf Marquardt",
-      "data_comentario": "2026-07-26T19:05:22Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Fechamento: em produção 26/07 (PRs 1325 maestro + 1326 platform mergeadas pelo Rolf, pipelines verdes). Rodada agora ancora na data marcada do agendamento.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76863"
-    },
-    {
-      "id": 76862,
-      "task": "Volumetria: entrega vs eficiência no bloco Por spider + filtro de status na grid Por conta",
-      "descricao": "Ajustes de clareza no painel Volumetria (76850) para a operação não confundir régua de entrega com régua de custo.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Rolf Marquardt",
-      "data_comentario": "2026-07-26T14:38:20Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Em produção completa 26/07: front (Vercel) + maestro (PR 1323 mergeada pelo Rolf). Chips com contadores de todas as páginas ativos e bloco Por spider com Entrega/Eficiência.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76862"
-    },
-    {
-      "id": 76857,
-      "task": "Auditoria da rodada (XLSX): selo de rodada fechada + download do extrato placa a placa na Volumetria",
-      "descricao": "Prova auditável de que a rodada de uma conta foi entregue, direto do painel de Volumetria.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Rolf Marquardt",
-      "data_comentario": "2026-07-26T14:38:20Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Fechamento: em produção desde 26/07 — primeiro uso real gerou as auditorias com reconciliação batendo (ex.: PARVI 1.768 = 1.537 + 231 ✓). Coluna Tentativas incluída no extrato placa a placa.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76857"
-    },
-    {
-      "id": 76855,
-      "task": "Análise: mecanismos que reenviam consultas do SNE sem auditoria (crons de auto-cura) + inventário de reprocessáveis",
-      "descricao": "Investigação em produção (25/07) motivada por contas que entravam em reprocesso sem clique humano.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "conhecimento",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-25T23:06:06Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
-      "link": "https://redmine.platform.brobot.com.br/issues/76855"
-    },
-    {
-      "id": 76854,
-      "task": "Infra CI: gates de RSpec rodavam imagem congelada e timeout de 10 min derrubava pipelines",
-      "descricao": "Dois problemas nos CodeBuild dos gates de RSpec (maestro aws-pipelines-compose-rspec e platform aws-pipelines-v3-compose-rspec): 1.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "conhecimento",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-25T23:06:05Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
-      "link": "https://redmine.platform.brobot.com.br/issues/76854"
-    },
-    {
-      "id": 76853,
-      "task": "Fix: card Nas filas agora exibia traço (pods sem credencial AWS) — prod e staging",
-      "descricao": "O card de profundidade das filas do SNE no painel de Volumetria sempre exibiu traço: os pods do platform (p...",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "conhecimento",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-25T23:06:03Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
-      "link": "https://redmine.platform.brobot.com.br/issues/76853"
-    },
-    {
-      "id": 76845,
-      "task": "Volumetria v4: taxa de sucesso, erros por tipo e ação sugerida (semáforo anti-desespero)",
-      "descricao": "Feedback de produção (contexto 76757): o % concluído (andamento) é lido como taxa de sucesso e induz erro (99% com 4 mil erros).",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "conhecimento",
-      "responsavel_atual": "Rolf Marquardt",
-      "data_comentario": "2026-07-25T23:06:01Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "@rodrigo @gabi — ciência: esta entrega foi validada e promovida DIRETO para produção, sem janela de teste de vocês em staging. Motivo: urgência dos temas (crise das filas do SNE afetando clientes em p",
-      "link": "https://redmine.platform.brobot.com.br/issues/76845"
-    },
-    {
-      "id": 76757,
-      "task": "Volumetria v3: leitura completa para tomada de decisão (tooltips, % de conclusão da rodada, placas consultadas, fila da conta)",
-      "descricao": "Melhorias de leitura na tela de Volumetria (contexto 76728, 76756): 1.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "conhecimento",
-      "responsavel_atual": "Rolf Marquardt",
-      "data_comentario": "2026-07-25T23:05:59Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Entregue e superseded: a leitura completa da volumetria evoluiu pelas versões v4 (76845) e v5 (76850), ambas em produção. Este escopo está 100% coberto pelo painel atual. @rodrigo @gabi — ciência: est",
-      "link": "https://redmine.platform.brobot.com.br/issues/76757"
-    },
-    {
-      "id": 76756,
-      "task": "SNE: filas por classe de serviço (express/padrão/pesada) com classificação configurável (F2 do plano de desafogo)",
-      "descricao": "Fase F2 do plano de desafogo do SNE (contexto na 76728): 1.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "conhecimento",
-      "responsavel_atual": "Rolf Marquardt",
-      "data_comentario": "2026-07-25T23:05:58Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Entregue em produção 24/07: 3 lanes por conta (express/padrão/pesada) com KEDA por fila, classificação manual+automática (SneLane), propagação da lane até o SQS, guincho de migração das mensagens sem ",
-      "link": "https://redmine.platform.brobot.com.br/issues/76756"
-    },
-    {
-      "id": 76755,
-      "task": "SNE: correções do fluxo de agendamento/retry + coleta do payload de bloqueio (F0 do plano de desafogo)",
-      "descricao": "Fase F0 do plano de desafogo do SNE (contexto na 76728): 1.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "conhecimento",
-      "responsavel_atual": "Rolf Marquardt",
-      "data_comentario": "2026-07-25T23:05:57Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Entregue em produção 24-25/07 (retry com groupid preservado, correção da dupla cadeia de agendamento, amountretry reduzido, payload de bloqueio em coleta pela equipe). @rodrigo @gabi — ciência: esta e",
-      "link": "https://redmine.platform.brobot.com.br/issues/76755"
     },
     {
       "id": 75786,
