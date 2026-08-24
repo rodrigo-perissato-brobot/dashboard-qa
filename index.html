@@ -461,7 +461,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-24T11:55:59.802Z",
+  "gerado_em": "2026-08-24T12:26:04.354Z",
   "total": 16,
   "rows": [
     {
@@ -647,19 +647,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77796"
     },
     {
-      "id": 52015,
-      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
-      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-21T19:48:20Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo @felipe Identifiquei um problema com o consumer/maestro com esta spider. Vá pela tentativa 17, sendo que a spider retornou corretamente na segunda tentativa. O request 13221 com uuid 01a01f5d",
-      "link": "https://redmine.platform.brobot.com.br/issues/52015"
-    },
-    {
       "id": 79852,
       "task": "autos_dnit_embarcador - BUG na captura de boletos",
       "descricao": "Há infrações do cliente H&R em que a spider não está capturando corretamente os boletos disponíveis no órgão.",
@@ -671,14 +658,41 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Realizado merge e enviado para STAGING. @rodrigo, poderia testar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/79852"
+    },
+    {
+      "id": 52015,
+      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
+      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-24T12:24:23Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@rodrigo O erro de target é por que essa versão de da spider não esta mais em staging. Foi substituida por outro teste. O outro problema é no lado do maestro/consumer",
+      "link": "https://redmine.platform.brobot.com.br/issues/52015"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-24T11:56:53.960Z",
+  "gerado_em": "2026-08-24T12:27:38.103Z",
   "sprint_id": 65,
-  "total": 49,
+  "total": 47,
   "rows": [
+    {
+      "id": 70018,
+      "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
+      "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-24T12:26:27Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Joathan, Aprovado. Realizei os testes dos dois ajustes apontados anteriormente e ambos foram corrigidos com sucesso. Os itens estão funcionando conforme esperado.",
+      "link": "https://redmine.platform.brobot.com.br/issues/70018"
+    },
     {
       "id": 77737,
       "task": "Erro de verificação de segurança impede acesso aos XMLs de entrada de NFS no início da manhã -   TOYOTA TSUSHO",
@@ -1086,20 +1100,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
-      "id": 37739,
-      "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
-      "descricao": "Boa tarde pessoal, tudo bem ?",
-      "category": "Spider - Outros",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-27T19:26:40Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
-      "link": "https://redmine.platform.brobot.com.br/issues/37739"
-    },
-    {
       "id": 75795,
       "task": "Consultas semestrais automáticas para veículos com alto volume de multas (Prefeitura SP)",
       "descricao": "Objetivo Automatizar a consulta de veículos que acumulam muitas multas na Prefeitura de São Paulo.",
@@ -1282,20 +1282,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/43159"
     },
     {
-      "id": 16564,
-      "task": "Funcionalidades de autorização de \"Membro\"",
-      "descricao": "Bom dia Nathan, tudo bem?",
-      "category": "",
-      "priority": "low",
-      "status": "on hold",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-06-03T12:10:14Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado em 07/04/2026 entre Emerson e Gabriella mudamos para on hold aguardar cliente solicitar o tema",
-      "link": "https://redmine.platform.brobot.com.br/issues/16564"
-    },
-    {
       "id": 44624,
       "task": "GERAR INSIGHTS PÓS CONSULTA E ENVIAR VIA E-MAIL/WHATSAPP",
       "descricao": "",
@@ -1322,20 +1308,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@ralph por gentileza, seguir com estimativa da atividade protótipo criado 70018",
       "link": "https://redmine.platform.brobot.com.br/issues/47471"
-    },
-    {
-      "id": 30232,
-      "task": "Conta mestre Cervejaria Imperial",
-      "descricao": "Boa tarde pessoal!",
-      "category": "anterior",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-28T14:45:00Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
-      "link": "https://redmine.platform.brobot.com.br/issues/30232"
     },
     {
       "id": 51016,
