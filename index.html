@@ -461,8 +461,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-24T16:26:31.704Z",
-  "total": 13,
+  "gerado_em": "2026-08-24T16:55:58.150Z",
+  "total": 14,
   "rows": [
     {
       "id": 52181,
@@ -632,13 +632,26 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo O erro de target é por que essa versão de da spider não esta mais em staging. Foi substituida por outro teste. O outro problema é no lado do maestro/consumer",
       "link": "https://redmine.platform.brobot.com.br/issues/52015"
+    },
+    {
+      "id": 79466,
+      "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
+      "descricao": "A tela /admin/veiculos do front novo foi entregue incompleta: tem 3 dos 9 filtros, 7 das 15 colunas e nenhu...",
+      "category": "Frontend - Novo frontend",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-08-24T16:35:29Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo em staging, por gentileza testar novamente",
+      "link": "https://redmine.platform.brobot.com.br/issues/79466"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-24T16:27:47.298Z",
+  "gerado_em": "2026-08-24T16:56:56.455Z",
   "sprint_id": 65,
-  "total": 48,
+  "total": 50,
   "rows": [
     {
       "id": 78255,
@@ -753,20 +766,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/78396"
     },
     {
-      "id": 79466,
-      "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
-      "descricao": "A tela /admin/veiculos do front novo foi entregue incompleta: tem 3 dos 9 filtros, 7 das 15 colunas e nenhu...",
-      "category": "Frontend - Novo frontend",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-21T16:57:09Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "PR bug/79466-multi 172 opened 2 hours ago by gabriellamendes-cpu aberta para staging com nova correção",
-      "link": "https://redmine.platform.brobot.com.br/issues/79466"
-    },
-    {
       "id": 77778,
       "task": "Cadastro de veículos em lote com tela de revisão",
       "descricao": "Objetivo Hoje, ao subir a planilha de veículos, o arquivo vai inteiro para o servidor: se uma única linha e...",
@@ -793,6 +792,20 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@rolf, Segue análise do teste de Excesso de Peso realizado: Ambiente: Produção | Conta: Minerva Foods | Versão: New Foi realizada a exportação do relatório de Excesso de Peso pelo caminho Ver Multas →",
       "link": "https://redmine.platform.brobot.com.br/issues/46135"
+    },
+    {
+      "id": 76680,
+      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
+      "descricao": "Objetivo Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com...",
+      "category": "Produtos - Customização fora do padrão",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-20T16:08:28Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella agora com as permissões, pude rodar os scripts de input dos dados em staging para a conta de demonstração (id 265). Poderia verificar se está tudo certo?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
       "id": 79535,
@@ -835,6 +848,20 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan conforme falamos, ocorreram ainda alguns casos de consultas triplicadas: Analisei os agendamentos e aparentemente está ok. Poderia verificar?",
       "link": "https://redmine.platform.brobot.com.br/issues/78406"
+    },
+    {
+      "id": 76649,
+      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
+      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "conhecimento",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-19T15:22:09Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@jose-ricardo @delvin @rodrigo novo target adicionado.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
       "id": 74637,
@@ -989,6 +1016,20 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "Foi substituido o hrequest no login com gov. Com isso, esta task perde sua funcionalidade",
       "link": "https://redmine.platform.brobot.com.br/issues/69272"
+    },
+    {
+      "id": 76717,
+      "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
+      "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-31T19:28:30Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo a Confirmação da Operação foi executada e as 3 notas serão disponibilizadas em breve.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76717"
     },
     {
       "id": 71817,
