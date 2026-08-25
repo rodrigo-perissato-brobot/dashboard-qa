@@ -17,6 +17,8 @@
     --accent-ink: #ffffff;
     --warn: #c1440e;
     --warn-bg: #fbe9e2;
+    --ok: #1a8a4a;
+    --ok-bg: #e3f5ea;
     --rodrigo: #0f8b8d;
     --rodrigo-bg: #e2f4f3;
     --gustavo: #7b4fa0;
@@ -36,6 +38,8 @@
       --accent-ink: #0b1220;
       --warn: #ff7a45;
       --warn-bg: #3a1f14;
+      --ok: #3ecf7e;
+      --ok-bg: #123625;
       --rodrigo: #3fd0c9;
       --rodrigo-bg: #123230;
       --gustavo: #c79eea;
@@ -54,6 +58,8 @@
     --accent-ink: #0b1220;
     --warn: #ff7a45;
     --warn-bg: #3a1f14;
+    --ok: #3ecf7e;
+    --ok-bg: #123625;
     --rodrigo: #3fd0c9;
     --rodrigo-bg: #123230;
     --gustavo: #c79eea;
@@ -71,6 +77,8 @@
     --accent-ink: #ffffff;
     --warn: #c1440e;
     --warn-bg: #fbe9e2;
+    --ok: #1a8a4a;
+    --ok-bg: #e3f5ea;
     --rodrigo: #0f8b8d;
     --rodrigo-bg: #e2f4f3;
     --gustavo: #7b4fa0;
@@ -152,6 +160,8 @@
   .counter.rodrigo { --line-accent: var(--rodrigo); }
   .counter.gustavo { --line-accent: var(--gustavo); }
   .counter.livre { --line-accent: var(--ink-muted); }
+  .counter.ok { --line-accent: var(--ok); }
+  .counter.warn { --line-accent: var(--warn); }
 
   .table-scroll {
     overflow-x: auto;
@@ -362,8 +372,9 @@
     padding: 2px 8px;
     white-space: nowrap;
   }
+  .tipo-tag.aprovado { color: var(--ok); background: var(--ok-bg); }
   .tipo-tag.reprovado { color: var(--warn); background: var(--warn-bg); }
-  .tipo-tag.conhecimento { color: var(--ink-muted); background: var(--surface-2); border: 1px solid var(--line); }
+  .tipo-tag.sem_acao { color: var(--ink-muted); background: var(--surface-2); border: 1px solid var(--line); }
   .tipo-tag.outro { color: var(--ink-muted); background: var(--surface-2); border: 1px dashed var(--line); }
 
   .responsavel { font-size: 13px; overflow-wrap: anywhere; }
@@ -452,16 +463,17 @@
 
     <footer class="note">
       Sprint atual (<span id="sprint-id">—</span>), tasks ainda abertas onde o QA participou em algum momento do
-      histórico mas que não dependem do QA agora — reprovadas aguardando o dev corrigir, menções só pra conhecimento,
-      ou qualquer outro motivo. Classificação de "Reprovado" é melhor esforço (procura a palavra no comentário do QA),
-      pode não pegar 100% dos casos.
+      histórico mas que não dependem do QA agora — <strong>Aprovados</strong> (inclui já aguardando deploy),
+      <strong>Reprovados</strong> (com o dev pra corrigir), <strong>Sem ação</strong> (ninguém pediu teste ainda) ou
+      <strong>Outros</strong>. Classificação é melhor esforço (procura "Aprovado"/"Reprovado" no comentário do QA e o
+      status da issue), pode não pegar 100% dos casos.
     </footer>
   </div>
 </div>
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-25T17:56:13.048Z",
+  "gerado_em": "2026-08-25T18:06:49.024Z",
   "total": 9,
   "rows": [
     {
@@ -584,7 +596,7 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-25T17:57:11.943Z",
+  "gerado_em": "2026-08-25T18:07:52.608Z",
   "sprint_id": 65,
   "total": 52,
   "rows": [
@@ -595,7 +607,7 @@
       "category": "Backend - Outros",
       "priority": "immediate",
       "status": "staging",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-25T17:46:12Z",
       "comentario_autor": "Rodrigo Perissato",
@@ -609,7 +621,7 @@
       "category": "Portal - Mudança de layout",
       "priority": "high",
       "status": "staging",
-      "tipo": "outro",
+      "tipo": "aprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-25T17:34:27Z",
       "comentario_autor": "Rodrigo Perissato",
@@ -623,7 +635,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "awaiting deploy",
-      "tipo": "outro",
+      "tipo": "aprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-25T17:21:34Z",
       "comentario_autor": "Gustavo Vitor",
@@ -637,7 +649,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-25T16:39:37Z",
       "comentario_autor": "Felipe Godoy",
@@ -665,7 +677,7 @@
       "category": "anterior",
       "priority": "high",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-25T15:06:28Z",
       "comentario_autor": "Jose Ricardo",
@@ -679,7 +691,7 @@
       "category": "Credencial - Sessão ou token expirado",
       "priority": "high",
       "status": "awaiting deploy",
-      "tipo": "outro",
+      "tipo": "aprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-25T15:06:26Z",
       "comentario_autor": "Rodrigo Perissato",
@@ -693,7 +705,7 @@
       "category": "Spider - Erro na lógica de extração",
       "priority": "high",
       "status": "awaiting deploy",
-      "tipo": "outro",
+      "tipo": "aprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-25T14:35:15Z",
       "comentario_autor": "Rodrigo Perissato",
@@ -707,7 +719,7 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "tipo": "outro",
+      "tipo": "aprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-25T12:20:01Z",
       "comentario_autor": "Joathan Fontan",
@@ -777,7 +789,7 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "awaiting deploy",
-      "tipo": "outro",
+      "tipo": "aprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-24T17:31:58Z",
       "comentario_autor": "Gustavo Vitor",
@@ -791,7 +803,7 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "awaiting deploy",
-      "tipo": "outro",
+      "tipo": "aprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-24T13:09:45Z",
       "comentario_autor": "Joathan Fontan",
@@ -805,7 +817,7 @@
       "category": "anterior",
       "priority": "high",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "aprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-20T19:29:42Z",
       "comentario_autor": "Gustavo Vitor",
@@ -833,7 +845,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "to do",
-      "tipo": "conhecimento",
+      "tipo": "sem_acao",
       "responsavel_atual": "(sem responsável)",
       "data_comentario": "2026-08-20T13:43:28Z",
       "comentario_autor": "Gabriella Mendes",
@@ -861,7 +873,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "tipo": "conhecimento",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-19T15:22:09Z",
       "comentario_autor": "Felipe Silva",
@@ -875,7 +887,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "planning: projecting",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-19T12:50:49Z",
       "comentario_autor": "Gabriella Mendes",
@@ -889,7 +901,7 @@
       "category": "Spider - Outros",
       "priority": "high",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "aprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-17T13:48:43Z",
       "comentario_autor": "Delvin Williams Perez",
@@ -945,7 +957,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "to do",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-06T14:43:04Z",
       "comentario_autor": "Roberta Espacachere",
@@ -959,7 +971,7 @@
       "category": "anterior",
       "priority": "medium",
       "status": "to do",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-06T13:56:50Z",
       "comentario_autor": "Roberta Espacachere",
@@ -1001,7 +1013,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-07-31T19:28:30Z",
       "comentario_autor": "Felipe Silva",
@@ -1015,7 +1027,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "staging",
-      "tipo": "conhecimento",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-07-31T18:43:31Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1029,7 +1041,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "in progress",
-      "tipo": "conhecimento",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-07-31T18:26:11Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1057,7 +1069,7 @@
       "category": "Spider - Outros",
       "priority": "medium",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-07-27T19:26:40Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1085,7 +1097,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-07-22T18:20:22Z",
       "comentario_autor": "Joathan Fontan",
@@ -1099,7 +1111,7 @@
       "category": "anterior",
       "priority": "medium",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-07-17T19:52:20Z",
       "comentario_autor": "Felipe Godoy",
@@ -1155,7 +1167,7 @@
       "category": "Spider - Outros",
       "priority": "high",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-07-14T11:52:28Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1211,7 +1223,7 @@
       "category": "anterior",
       "priority": "high",
       "status": "to do",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-06-23T17:52:13Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1225,7 +1237,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "on hold",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-06-09T13:43:32Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1239,7 +1251,7 @@
       "category": "",
       "priority": "low",
       "status": "on hold",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-06-03T12:10:14Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1253,7 +1265,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "planning: to plan",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-06-01T12:01:27Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1281,7 +1293,7 @@
       "category": "anterior",
       "priority": "medium",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-04-28T14:45:00Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1295,7 +1307,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "planning: to plan",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-04-23T16:51:09Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1309,7 +1321,7 @@
       "category": "Produtos - Documentação",
       "priority": "high",
       "status": "in progress",
-      "tipo": "outro",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-04-14T18:58:38Z",
       "comentario_autor": "Gabriella Mendes",
@@ -1320,7 +1332,7 @@
 };
 
   const OWNER_LABEL = { rodrigo: "Rodrigo", gustavo: "Gustavo", sem_dono: "QA Owner" };
-  const TIPO_LABEL = { reprovado: "Reprovado", conhecimento: "Conhecimento", outro: "Outro" };
+  const TIPO_LABEL = { aprovado: "Aprovado", reprovado: "Reprovado", sem_acao: "Sem ação", outro: "Outro" };
   const STALE_DAYS = 3;
 
   // Estado do filtro clicável nos cards de contagem — null = mostra tudo. Clicar de novo
@@ -1414,13 +1426,14 @@
   }
 
   function renderFollowupCounters() {
-    const counts = { reprovado: 0, conhecimento: 0, outro: 0 };
+    const counts = { aprovado: 0, reprovado: 0, sem_acao: 0, outro: 0 };
     FOLLOWUP_DATA.rows.forEach((r) => { if (counts[r.tipo] !== undefined) counts[r.tipo]++; });
     const wrap = document.getElementById("counters-followup");
     const defs = [
-      { key: "reprovado", cls: "rodrigo", label: "Reprovado — com dev", n: counts.reprovado },
-      { key: "conhecimento", cls: "gustavo", label: "Para conhecimento", n: counts.conhecimento },
-      { key: "outro", cls: "livre", label: "Outro motivo", n: counts.outro },
+      { key: "aprovado", cls: "ok", label: "Aprovados", n: counts.aprovado },
+      { key: "reprovado", cls: "warn", label: "Reprovados — com dev", n: counts.reprovado },
+      { key: "sem_acao", cls: "livre", label: "Sem ação", n: counts.sem_acao },
+      { key: "outro", cls: "gustavo", label: "Outros", n: counts.outro },
     ];
     wrap.innerHTML = defs
       .map(
