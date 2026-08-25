@@ -461,8 +461,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-25T13:25:56.385Z",
-  "total": 11,
+  "gerado_em": "2026-08-25T13:56:21.032Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -595,24 +595,37 @@
       "link": "https://redmine.platform.brobot.com.br/issues/78623"
     },
     {
-      "id": 80484,
-      "task": "autos_detran_mg - CAPTCHA_NOT_SOLVED",
-      "descricao": "════════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranmg...",
-      "category": "Portal - Bloqueio de automação ou captcha",
+      "id": 80136,
+      "task": "autos_dnit_embarcador - Volumetria de consultas bem abaixo e muitos erros parecidos",
+      "descricao": "Muitas consultas do DNIT têm retornado com o erro de \"many attempts\" para diversos clientes, a volumetria está bem abaixo do esperado.",
+      "category": "",
       "priority": "high",
-      "status": "to do",
+      "status": "in progress",
       "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-24T18:51:41Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Os CAPTCHANOTSOLVED ocorreram devido a erros do Power Sistemas ao tentar resolver o CAPTCHA, possivelmente relacionados a alguma manutenção no serviço. Fiz uma alteração na função que resolve o CAPTCH",
-      "link": "https://redmine.platform.brobot.com.br/issues/80484"
+      "data_comentario": "2026-08-25T13:40:49Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Estava ocorrendo um erro de redirect pos login do gov, ja corrigido. @rodrigo poderia testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/80136"
+    },
+    {
+      "id": 79852,
+      "task": "autos_dnit_embarcador - BUG na captura de boletos",
+      "descricao": "Há infrações do cliente H&R em que a spider não está capturando corretamente os boletos disponíveis no órgão.",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-25T13:46:29Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "havia ocorrido um erro no commit, poderia testar novamente @rodrigo?",
+      "link": "https://redmine.platform.brobot.com.br/issues/79852"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-25T13:26:54.242Z",
+  "gerado_em": "2026-08-25T13:57:17.237Z",
   "sprint_id": 65,
-  "total": 49,
+  "total": 48,
   "rows": [
     {
       "id": 77813,
@@ -669,20 +682,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel @felipe @jose-ricardo Reprovado. Acessei o portal manualmente hoje tanto pela manha quanto a tarde e o acesso está funcionando normalmente, porém reprocessei a consulta na spider só retorna er",
       "link": "https://redmine.platform.brobot.com.br/issues/77825"
-    },
-    {
-      "id": 79852,
-      "task": "autos_dnit_embarcador - BUG na captura de boletos",
-      "descricao": "Há infrações do cliente H&R em que a spider não está capturando corretamente os boletos disponíveis no órgão.",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-24T17:41:30Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Processei a mesma consulta do cliente no CNPJ 01.747.038/0001-95 e retornou erro no acesso do portal, porém manualmente está funcionando. Ambiente: Staging | Conta: Testes Funcionai",
-      "link": "https://redmine.platform.brobot.com.br/issues/79852"
     },
     {
       "id": 77906,
