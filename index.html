@@ -461,7 +461,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-25T15:25:50.908Z",
+  "gerado_em": "2026-08-25T15:55:57.622Z",
   "total": 11,
   "rows": [
     {
@@ -569,19 +569,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77796"
     },
     {
-      "id": 52015,
-      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
-      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-24T12:24:23Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo O erro de target é por que essa versão de da spider não esta mais em staging. Foi substituida por outro teste. O outro problema é no lado do maestro/consumer",
-      "link": "https://redmine.platform.brobot.com.br/issues/52015"
-    },
-    {
       "id": 78623,
       "task": "autos_sne_denatran_indicacao_condutor - Spider não consegue indicar quando o veículo é de um CPF",
       "descricao": "Uma infração do cliente foi indicada porém, o parâmetro \"cnpj\" da spider foi com o CPF que está vinculado a...",
@@ -606,14 +593,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/78255"
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-08-25T15:50:05Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella @gustavo itens 64 a 83 ja em produção. Rolf subiu hoje.",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-25T15:26:40.874Z",
+  "gerado_em": "2026-08-25T15:56:51.993Z",
   "sprint_id": 65,
-  "total": 50,
+  "total": 49,
   "rows": [
+    {
+      "id": 52015,
+      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
+      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-25T15:42:28Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@delvin Sobre o erro \"O campo target.0 é inválido\" na consulta 13219. Essa consulta foi enviada ao robô 18 vezes entre 20 e 21/08, sempre com exatamente o mesmo conteúdo e com o mesmo target (\"sne\"). ",
+      "link": "https://redmine.platform.brobot.com.br/issues/52015"
+    },
     {
       "id": 41092,
       "task": "Atividade quinzenal - quinta-feira- gerar arquivo ZMRC ID 1477 ENGEMIX S/A",
@@ -753,34 +767,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella Atualizado em produção. Subir o frontend novo.",
       "link": "https://redmine.platform.brobot.com.br/issues/77734"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-24T12:41:44Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@Rolf abri todos os PRs de correções para main",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 70018,
-      "task": "Padronização e Melhorias Dashboard CaçaMultas Frotas",
-      "descricao": "Objetivo Expandir o Dashboard CaçaMultas Frotas com novas visualizações de dados, filtros melhorados e novo...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-24T12:30:45Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/70018"
     },
     {
       "id": 46135,
