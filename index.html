@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-25T18:26:10.208Z",
-  "total": 9,
+  "gerado_em": "2026-08-25T18:56:00.320Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -592,13 +592,52 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella @gustavo itens 64 a 83 ja em produção. Rolf subiu hoje.",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 76649,
+      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
+      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-25T18:29:20Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@rodrigo Foi subida esta versão da spider pra staging. Pode testar por favor?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76649"
+    },
+    {
+      "id": 80277,
+      "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ Caso em especifico ═══════════...",
+      "category": "",
+      "priority": "low",
+      "status": "to do",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-25T18:30:13Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@rodrigo Atualizado em staging. Pode testar por favor?",
+      "link": "https://redmine.platform.brobot.com.br/issues/80277"
+    },
+    {
+      "id": 52015,
+      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
+      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-25T18:37:20Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@delvin desconsidere meu comentário anterior sobre o target, foi engano meu. @rodrigo corrigido, pode testar. O problema era no Maestro mesmo, no processamento das mensagens. O campo do AIT estava vin",
+      "link": "https://redmine.platform.brobot.com.br/issues/52015"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-25T18:27:11.990Z",
+  "gerado_em": "2026-08-25T18:56:56.400Z",
   "sprint_id": 65,
-  "total": 52,
+  "total": 50,
   "rows": [
     {
       "id": 77956,
@@ -655,20 +694,6 @@
       "comentario_autor": "Felipe Godoy",
       "comentario_trecho": "Boa tarde @gabriella, @joathan, tudo bem? Como está o andamento dessa tarefa? O cliente IKKI tem nos cobrado recorrentemente sobre o andamento dessa atividade, da última vez que falamos com eles havía",
       "link": "https://redmine.platform.brobot.com.br/issues/76633"
-    },
-    {
-      "id": 52015,
-      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
-      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-25T15:42:28Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@delvin Sobre o erro \"O campo target.0 é inválido\" na consulta 13219. Essa consulta foi enviada ao robô 18 vezes entre 20 e 21/08, sempre com exatamente o mesmo conteúdo e com o mesmo target (\"sne\"). ",
-      "link": "https://redmine.platform.brobot.com.br/issues/52015"
     },
     {
       "id": 41092,
@@ -865,20 +890,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan conforme falamos, ocorreram ainda alguns casos de consultas triplicadas: Analisei os agendamentos e aparentemente está ok. Poderia verificar?",
       "link": "https://redmine.platform.brobot.com.br/issues/78406"
-    },
-    {
-      "id": 76649,
-      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
-      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-19T15:22:09Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@jose-ricardo @delvin @rodrigo novo target adicionado.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
       "id": 74637,
