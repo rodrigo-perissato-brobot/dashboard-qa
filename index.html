@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-25T18:56:00.320Z",
-  "total": 12,
+  "gerado_em": "2026-08-25T19:26:03.986Z",
+  "total": 13,
   "rows": [
     {
       "id": 52181,
@@ -631,14 +631,55 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@delvin desconsidere meu comentário anterior sobre o target, foi engano meu. @rodrigo corrigido, pode testar. O problema era no Maestro mesmo, no processamento das mensagens. O campo do AIT estava vin",
       "link": "https://redmine.platform.brobot.com.br/issues/52015"
+    },
+    {
+      "id": 77825,
+      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
+      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
+      "category": "Portal - Mudança de fluxo",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-25T19:12:38Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Estava ocorrendo erro na cadeia de login, onde não obtínhamos os cookies necessários para realizar as consultas. Corrigido, poderia testar novamente @rodrigo?",
+      "link": "https://redmine.platform.brobot.com.br/issues/77825"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-25T18:56:56.400Z",
+  "gerado_em": "2026-08-25T19:27:02.877Z",
   "sprint_id": 65,
-  "total": 50,
+  "total": 49,
   "rows": [
+    {
+      "id": 79852,
+      "task": "autos_dnit_embarcador - BUG na captura de boletos",
+      "descricao": "Há infrações do cliente H&R em que a spider não está capturando corretamente os boletos disponíveis no órgão.",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-25T19:21:46Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "@thiago como as mudanças foram juntas com a da atividade 80136, foi feito apenas a PR da mencionada.desconsiderar a atual.",
+      "link": "https://redmine.platform.brobot.com.br/issues/79852"
+    },
+    {
+      "id": 80136,
+      "task": "autos_dnit_embarcador - Volumetria de consultas bem abaixo e muitos erros parecidos",
+      "descricao": "Muitas consultas do DNIT têm retornado com o erro de \"many attempts\" para diversos clientes, a volumetria está bem abaixo do esperado.",
+      "category": "Credencial - Sessão ou token expirado",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-25T19:20:23Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Finalizada a tarefa 80156 e realizada PR.",
+      "link": "https://redmine.platform.brobot.com.br/issues/80136"
+    },
     {
       "id": 77956,
       "task": "API Unico Integration é desativada automaticamente, interrompendo a captura de DF-e",
@@ -710,34 +751,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/41092"
     },
     {
-      "id": 80136,
-      "task": "autos_dnit_embarcador - Volumetria de consultas bem abaixo e muitos erros parecidos",
-      "descricao": "Muitas consultas do DNIT têm retornado com o erro de \"many attempts\" para diversos clientes, a volumetria está bem abaixo do esperado.",
-      "category": "Credencial - Sessão ou token expirado",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-25T15:06:26Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/80136"
-    },
-    {
-      "id": 79852,
-      "task": "autos_dnit_embarcador - BUG na captura de boletos",
-      "descricao": "Há infrações do cliente H&R em que a spider não está capturando corretamente os boletos disponíveis no órgão.",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-25T14:35:15Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/79852"
-    },
-    {
       "id": 77813,
       "task": "Exportação de Relatórios Personalizados não apresenta coluna de Marcadores",
       "descricao": "Identificamos que a exportação de relatórios personalizados não está retornando a informação da coluna Marc...",
@@ -792,20 +805,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Gabriella seguem ajustes: - No Platform New, os filtros que permitem seleções múltiplas, necessitam da opção já presente no Classic de \"Inverter seleção\" New: Classic: - O filtro \"Período\" está desal",
       "link": "https://redmine.platform.brobot.com.br/issues/79466"
-    },
-    {
-      "id": 77825,
-      "task": "autos_detran_sp - Encontrado outro lugar para consultar infrações no Detran SP",
-      "descricao": "Atualmente consultamos o Detran SP em uma aba que não traz todas as infrações que estão disponibilizadas no portal.",
-      "category": "Portal - Mudança de fluxo",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-24T17:47:00Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel @felipe @jose-ricardo Reprovado. Acessei o portal manualmente hoje tanto pela manha quanto a tarde e o acesso está funcionando normalmente, porém reprocessei a consulta na spider só retorna er",
-      "link": "https://redmine.platform.brobot.com.br/issues/77825"
     },
     {
       "id": 77906,
