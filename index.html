@@ -461,8 +461,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-25T17:25:55.410Z",
-  "total": 10,
+  "gerado_em": "2026-08-25T17:56:13.048Z",
+  "total": 9,
   "rows": [
     {
       "id": 52181,
@@ -530,19 +530,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71405"
     },
     {
-      "id": 75985,
-      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-21T17:08:37Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Analisei o cenario mencionado, ele não havia sido implementado anteriormente por falta de credenciais que houvesse licenciamento em aberto, que é o caso do problema em questão. Realizei toda implement",
-      "link": "https://redmine.platform.brobot.com.br/issues/75985"
-    },
-    {
       "id": 78408,
       "task": "autos_sne_denatran_indicacao_condutor - Encontrei um novo cenário em que é possível realizar a indicação com a infração paga",
       "descricao": "Encontramos um novo cenário em que é possível realizar a indicação de condutor de infrações pagas.",
@@ -597,10 +584,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-25T17:26:59.655Z",
+  "gerado_em": "2026-08-25T17:57:11.943Z",
   "sprint_id": 65,
-  "total": 49,
+  "total": 52,
   "rows": [
+    {
+      "id": 77956,
+      "task": "API Unico Integration é desativada automaticamente, interrompendo a captura de DF-e",
+      "descricao": "A API Unico Integration, utilizada exclusivamente pelo cliente Unico, está tendo sua configuração “Ativo” d...",
+      "category": "Backend - Outros",
+      "priority": "immediate",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-25T17:46:12Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan estive revisando as tasks e encontrei esse em teste porém sem a marcação do QA. Neste caso é complicado efetuar simulação em Staging, é realmente mais fácil liberar sua alteração em produção ",
+      "link": "https://redmine.platform.brobot.com.br/issues/77956"
+    },
+    {
+      "id": 75985,
+      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "════════════════════════════════════════════════════════════════════════════ 🕷️ SPIDER: autosdetranms 📅 D...",
+      "category": "Portal - Mudança de layout",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-25T17:34:27Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Aprovado parcialmente Tentei encontrar mais cenários de clientes com acesso via certificado e com multas e taxas porém não encontrei nenhum. O cenário anterior realmente está inativo e o teste",
+      "link": "https://redmine.platform.brobot.com.br/issues/75985"
+    },
     {
       "id": 78255,
       "task": "Botão \"Baixar relatório\" na tela de Indicação de Condutores",
@@ -852,6 +867,20 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@jose-ricardo @delvin @rodrigo novo target adicionado.",
       "link": "https://redmine.platform.brobot.com.br/issues/76649"
+    },
+    {
+      "id": 74637,
+      "task": "DFe | Permitir personalização da prioridade dos participantes exibidos na coluna \"Participantes\" - HIGHSTIL (ID: 41)",
+      "descricao": "Atualmente, na listagem de documentos fiscais (NFe), a coluna \"Participantes\" exibe apenas 2 participantes...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "planning: projecting",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-19T12:50:49Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@roberta bom dia, Conforme alinhado em 08/07/2026 com os presentes: Renata, Guilherme, Rolf, Diego, Gabriella, Meira: seguiremos com implementaç��o.",
+      "link": "https://redmine.platform.brobot.com.br/issues/74637"
     },
     {
       "id": 78550,
