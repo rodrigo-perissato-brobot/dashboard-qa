@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-26T12:26:13.506Z",
-  "total": 9,
+  "gerado_em": "2026-08-26T12:37:24.880Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -492,7 +492,7 @@
     {
       "id": 57089,
       "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
-      "descricao": "Objetivo Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de venciment...",
+      "descricao": "Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de vencimento de CNH,...",
       "category": "Produtos - Novo produto",
       "priority": "high",
       "status": "in progress",
@@ -518,7 +518,7 @@
     {
       "id": 64086,
       "task": "Documentação de API Whitelabel",
-      "descricao": "Objetivo Criar uma nova versão da documentação da API V2 sem referências às marcas internas da plataforma (...",
+      "descricao": "Criar uma nova versão da documentação da API V2 sem referências às marcas internas da plataforma (Brobot e...",
       "category": "",
       "priority": "high",
       "status": "staging",
@@ -542,6 +542,32 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71405"
     },
     {
+      "id": 78408,
+      "task": "autos_sne_denatran_indicacao_condutor - Encontrei um novo cenário em que é possível realizar a indicação com a infração paga",
+      "descricao": "Encontramos um novo cenário em que é possível realizar a indicação de condutor de infrações pagas.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-08-21T19:04:14Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "@felipe obrigado pelo retorno, Realizei mudanças na spider para permitir indicação de multas não somente de NAOPAGAS como era feito anteriormente, mas para qualquer outro status, dessa forma será feit",
+      "link": "https://redmine.platform.brobot.com.br/issues/78408"
+    },
+    {
+      "id": 77796,
+      "task": "API pública para consumo de NFSe Nacional (DF-e)",
+      "descricao": "Permitir que o cliente consuma, por API, as mesmas notas de NFSe Nacional que hoje ele só consegue ver e ba...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-21T19:18:10Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo subi alguns ajustes para staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77796"
+    },
+    {
       "id": 78623,
       "task": "autos_sne_denatran_indicacao_condutor - Spider não consegue indicar quando o veículo é de um CPF",
       "descricao": "Uma infração do cliente foi indicada porém, o parâmetro \"cnpj\" da spider foi com o CPF que está vinculado a...",
@@ -557,7 +583,7 @@
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Descrição: Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a no...",
+      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
@@ -583,7 +609,7 @@
     {
       "id": 80277,
       "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
-      "descricao": "════════════════════════════════════════════════════════════════════════════ Caso em especifico ═══════════...",
+      "descricao": "═════���══════════════════════════════════════════════════════════════════════ Caso em especifico ═════════...",
       "category": "",
       "priority": "low",
       "status": "to do",
@@ -592,11 +618,24 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Atualizado em staging. Pode testar por favor?",
       "link": "https://redmine.platform.brobot.com.br/issues/80277"
+    },
+    {
+      "id": 78475,
+      "task": "Erro: \"undefined method `unpack1' for nil:NilClass str.unpack1(\"m0\") ^^^^^^^^\"",
+      "descricao": "Link do erro: admin/events",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-08-25T20:41:42Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo subi para staging. Não será possível testar em staging. Vamos subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/78475"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-26T12:27:01.321Z",
+  "gerado_em": "2026-08-26T12:38:14.125Z",
   "sprint_id": 65,
   "total": 50,
   "rows": [
@@ -673,7 +712,7 @@
     {
       "id": 78255,
       "task": "Botão \"Baixar relatório\" na tela de Indicação de Condutores",
-      "descricao": "Objetivo Permitir que o time administrativo extraia em planilha os registros de indicação de condutores dir...",
+      "descricao": "Permitir que o time administrativo extraia em planilha os registros de indicação de condutores diretamente...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "awaiting deploy",
@@ -687,7 +726,7 @@
     {
       "id": 76633,
       "task": "Captura de NFSe via API - IKKI (ID: 580)",
-      "descricao": "Poderiam por gentileza com o caso abaixo?",
+      "descricao": "O cliente IKKI informou que não está conseguindo capturar as NFS-e através da API da Brobot.",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "in progress",
@@ -701,7 +740,7 @@
     {
       "id": 41092,
       "task": "Atividade quinzenal - quinta-feira- gerar arquivo ZMRC ID 1477 ENGEMIX S/A",
-      "descricao": "Descrição: Executar a automação existente para gerar o arquivo ZMRC conforme o padrão estabelecido.",
+      "descricao": "Executar a automação existente para gerar o arquivo ZMRC conforme o padrão estabelecido.",
       "category": "anterior",
       "priority": "high",
       "status": "in progress",
@@ -813,7 +852,7 @@
     {
       "id": 76680,
       "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
-      "descricao": "Objetivo Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com...",
+      "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
       "category": "Produtos - Customização fora do padrão",
       "priority": "high",
       "status": "staging",
@@ -827,7 +866,7 @@
     {
       "id": 79535,
       "task": "Edição de serviços e produtos de veículos em lote pela área administrativa",
-      "descricao": "Objetivo Permitir que o time de suporte altere os serviços (robôs) e os produtos de vários veículos de uma...",
+      "descricao": "Permitir que o time de suporte altere os serviços (robôs) e os produtos de vários veículos de uma conta de...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "to do",
@@ -863,7 +902,7 @@
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-08-19T12:50:49Z",
       "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@roberta bom dia, Conforme alinhado em 08/07/2026 com os presentes: Renata, Guilherme, Rolf, Diego, Gabriella, Meira: seguiremos com implementaç��o.",
+      "comentario_trecho": "@roberta bom dia, Conforme alinhado em 08/07/2026 com os presentes: Renata, Guilherme, Rolf, Diego, Gabriella, Meira: seguiremos com implementação.",
       "link": "https://redmine.platform.brobot.com.br/issues/74637"
     },
     {
@@ -883,7 +922,7 @@
     {
       "id": 51186,
       "task": "Gestão de Documentos de Veículos (CRLV)",
-      "descricao": "Objetivo Implementar funcionalidade completa de upload, visualização, download e exportação de documentos C...",
+      "descricao": "Implementar funcionalidade completa de upload, visualização, download e exportação de documentos CRLV (Cert...",
       "category": "",
       "priority": "high",
       "status": "staging",
@@ -911,7 +950,7 @@
     {
       "id": 76008,
       "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
-      "descricao": "Objetivo Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter...",
+      "descricao": "Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter priorida...",
       "category": "Operação - Origem",
       "priority": "high",
       "status": "staging",
@@ -1009,7 +1048,7 @@
     {
       "id": 43150,
       "task": "Filtro por veículos ativos e inativos - IBOR (ID: 1296)",
-      "descricao": "Bom dia!",
+      "descricao": "Produto: CaçaMultas Frotas O que está sendo solicitado?",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "in progress",
@@ -1037,7 +1076,7 @@
     {
       "id": 37739,
       "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
-      "descricao": "Boa tarde pessoal, tudo bem ?",
+      "descricao": "pessoal, tudo bem ?",
       "category": "Spider - Outros",
       "priority": "medium",
       "status": "in progress",
@@ -1219,7 +1258,7 @@
     {
       "id": 16564,
       "task": "Funcionalidades de autorização de \"Membro\"",
-      "descricao": "Bom dia Nathan, tudo bem?",
+      "descricao": "Nathan, tudo bem?",
       "category": "",
       "priority": "low",
       "status": "on hold",
@@ -1261,7 +1300,7 @@
     {
       "id": 30232,
       "task": "Conta mestre Cervejaria Imperial",
-      "descricao": "Boa tarde pessoal!",
+      "descricao": "pessoal!",
       "category": "anterior",
       "priority": "medium",
       "status": "in progress",
