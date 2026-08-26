@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-26T14:56:18.715Z",
+  "gerado_em": "2026-08-26T15:26:49.526Z",
   "total": 14,
   "rows": [
     {
@@ -551,7 +551,7 @@
       "alocado_a": "gustavo",
       "data_comentario": "2026-08-21T19:04:14Z",
       "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@felipe obrigado pelo retorno, Realizei mudanças na spider para permitir indicação de multas não somente de NAOPAGAS como era feito anteriormente, mas para qualquer outro status, dessa forma será feit",
+      "comentario_trecho": "@felipe obrigado pelo retorno, Realizei mudanças na spider para permitir indicação de multas não somente de NAO_PAGAS como era feito anteriormente, mas para qualquer outro status, dessa forma será fei",
       "link": "https://redmine.platform.brobot.com.br/issues/78408"
     },
     {
@@ -609,7 +609,7 @@
     {
       "id": 80277,
       "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
-      "descricao": "════════════════════════════════════════════════════════════════════════════ Caso em especifico ═══════════...",
+      "descricao": "Caso em especifico Realizei uma análise e identifiquei que a spider autos_antt_processos está apresentando instabilidade.",
       "category": "",
       "priority": "low",
       "status": "to do",
@@ -622,7 +622,7 @@
     {
       "id": 78475,
       "task": "Erro: \"undefined method `unpack1' for nil:NilClass str.unpack1(\"m0\") ^^^^^^^^\"",
-      "descricao": "Link do erro: admin/events",
+      "descricao": "admin/events",
       "category": "",
       "priority": "low",
       "status": "staging",
@@ -661,9 +661,9 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-26T14:57:09.588Z",
+  "gerado_em": "2026-08-26T15:28:33.819Z",
   "sprint_id": 65,
-  "total": 47,
+  "total": 34,
   "rows": [
     {
       "id": 79852,
@@ -694,20 +694,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75985"
     },
     {
-      "id": 78255,
-      "task": "Botão \"Baixar relatório\" na tela de Indicação de Condutores",
-      "descricao": "Permitir que o time administrativo extraia em planilha os registros de indicação de condutores diretamente...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-25T17:21:34Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/78255"
-    },
-    {
       "id": 76633,
       "task": "Captura de NFSe via API - IKKI (ID: 580)",
       "descricao": "O cliente IKKI informou que não está conseguindo capturar as NFS-e através da API da Brobot.",
@@ -720,34 +706,6 @@
       "comentario_autor": "Felipe Godoy",
       "comentario_trecho": "Boa tarde @gabriella, @joathan, tudo bem? Como está o andamento dessa tarefa? O cliente IKKI tem nos cobrado recorrentemente sobre o andamento dessa atividade, da última vez que falamos com eles havía",
       "link": "https://redmine.platform.brobot.com.br/issues/76633"
-    },
-    {
-      "id": 41092,
-      "task": "Atividade quinzenal - quinta-feira- gerar arquivo ZMRC ID 1477 ENGEMIX S/A",
-      "descricao": "Executar a automação existente para gerar o arquivo ZMRC conforme o padrão estabelecido.",
-      "category": "anterior",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-25T15:06:28Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "Segue arquivo ZRMC do dia 25-08-2026 attachment:ENGMIX25-08-2026.csv",
-      "link": "https://redmine.platform.brobot.com.br/issues/41092"
-    },
-    {
-      "id": 77813,
-      "task": "Exportação de Relatórios Personalizados não apresenta coluna de Marcadores",
-      "descricao": "Identificamos que a exportação de relatórios personalizados não está retornando a informação da coluna Marc...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-25T12:20:01Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella subi pra staging o backend.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77813"
     },
     {
       "id": 78396,
@@ -792,34 +750,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/79466"
     },
     {
-      "id": 77906,
-      "task": "Filtro \"Todos\" do campo \"Status do Veículo\" não funciona na listagem do Caça Multas Frotas",
-      "descricao": "Identificamos um comportamento incorreto no filtro \"Status do Veículo\" da tela Início Caça Multas Frotas List.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-24T17:31:58Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77906"
-    },
-    {
-      "id": 77734,
-      "task": "Inclusão da coluna \"Link do Boleto\" nos relatórios de Piso Mínimo de Frete e Excesso de Peso",
-      "descricao": "Disponibilizar uma nova opção de coluna \"Link do Boleto\" na configuração dos relatórios de Piso Mínimo de F...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-24T13:09:45Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella Atualizado em produção. Subir o frontend novo.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77734"
-    },
-    {
       "id": 46135,
       "task": "CERVEJARIA IMPERIAL -  NOVOS CAMPOS BUSCAR NO ANTT PROCESSOS (LER DOCUMENTO)",
       "descricao": "Realizar a leitura do documento do vistas dos processos para buscar as informações relevantes do AUTO DE IN...",
@@ -853,7 +783,7 @@
       "descricao": "Permitir que o time de suporte altere os serviços (robôs) e os produtos de vários veículos de uma conta de...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
-      "status": "to do",
+      "status": "in progress",
       "tipo": "sem_acao",
       "responsavel_atual": "(sem responsável)",
       "data_comentario": "2026-08-20T13:43:28Z",
@@ -864,7 +794,7 @@
     {
       "id": 78406,
       "task": "Triplicidade de consultas nas spiders autos_detran_rs_taxas e autos_sefaz_rs_taxas",
-      "descricao": "As consultas das spiders autosdetranrstaxas e autossefazrstaxas estão sendo realizadas de forma triplicada,...",
+      "descricao": "As consultas das spiders autos_detran_rs_taxas e autos_sefaz_rs_taxas estão sendo realizadas de forma tripl...",
       "category": "Backend - Outros",
       "priority": "high",
       "status": "staging",
@@ -918,20 +848,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/51186"
     },
     {
-      "id": 77600,
-      "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
-      "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
-      "category": "Spider - Outros",
-      "priority": "immediate",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-11T19:49:33Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "No momento não temos um cenário definido para realizar a validação desse novo ajuste. Vou aguardar o surgimento de um novo cenário para que eu possa prosseguir com os testes.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77600"
-    },
-    {
       "id": 76008,
       "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
       "descricao": "Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter priorida...",
@@ -962,7 +878,7 @@
     {
       "id": 39504,
       "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
-      "descricao": "Gabriella, boa tarde!",
+      "descricao": "O cliente Edgar da Kadan solicitou a seguinte verificação: Gostaríamos de confirmar se os documentos de Mic...",
       "category": "anterior",
       "priority": "medium",
       "status": "to do",
@@ -976,7 +892,7 @@
     {
       "id": 44623,
       "task": "Implementar módulo de Financeiro na Platform para visualização e extração de relatórios de faturamento",
-      "descricao": "O quê?",
+      "descricao": "Implementar um novo módulo de Financeiro na Platform para que o time financeiro possa visualizar, consultar e exportar os relatórios de fatu",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "staging",
@@ -1030,20 +946,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71817"
     },
     {
-      "id": 43150,
-      "task": "Filtro por veículos ativos e inativos - IBOR (ID: 1296)",
-      "descricao": "Produto: CaçaMultas Frotas O que está sendo solicitado?",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-31T18:26:11Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@roberta @gustavo @felipe-godoy @leonardo.paganotti @julya.tochio @renata @maria.rozolem @Thais boa tarde, 71387 — Status Ativo/Inativo de Empresas em Definições Situação: entregue e disponível em pro",
-      "link": "https://redmine.platform.brobot.com.br/issues/43150"
-    },
-    {
       "id": 61539,
       "task": "Implementação do Módulo CaçaCondutores > Integração",
       "descricao": "",
@@ -1056,20 +958,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Rolf Reprovado . Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o g",
       "link": "https://redmine.platform.brobot.com.br/issues/61539"
-    },
-    {
-      "id": 37739,
-      "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
-      "descricao": "pessoal, tudo bem ?",
-      "category": "Spider - Outros",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-27T19:26:40Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
-      "link": "https://redmine.platform.brobot.com.br/issues/37739"
     },
     {
       "id": 75786,
@@ -1098,20 +986,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella segue uma análise do problema em questão. O que podemos fazer por ora? Análise: mesmo CNPJ cadastrado como Matriz e Filial O problema O Platform permite cadastrar o mesmo CNPJ (14 dígitos) ",
       "link": "https://redmine.platform.brobot.com.br/issues/49662"
-    },
-    {
-      "id": 43063,
-      "task": "Novas Funcionalidades Cronotacógrafo",
-      "descricao": "Realizar um estudo de novas funcionalidades para tornar o módulo de cronotacógrafo mais completo, incluindo...",
-      "category": "anterior",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-17T19:52:20Z",
-      "comentario_autor": "Felipe Godoy",
-      "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
-      "link": "https://redmine.platform.brobot.com.br/issues/43063"
     },
     {
       "id": 75360,
@@ -1226,23 +1100,9 @@
       "link": "https://redmine.platform.brobot.com.br/issues/53155"
     },
     {
-      "id": 43159,
-      "task": "Filtro por Centro de Custo - Supermix ",
-      "descricao": "Adicionar a opção de filtrar multas, relatórios e dashboards por Centro de Custo, permitindo que o usuário...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "on hold",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-06-09T13:43:32Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo Bom dia, Realizei uma análise mais aprofundada da solicitação acordada na reunião de 15/12/2025, referente à alteração do campo \"Utilização\" para \"Utilização / Centro de custo\" e sua disponib",
-      "link": "https://redmine.platform.brobot.com.br/issues/43159"
-    },
-    {
       "id": 16564,
       "task": "Funcionalidades de autorização de \"Membro\"",
-      "descricao": "Nathan, tudo bem?",
+      "descricao": "Notamos que quando colocamos um usuário como membro de uma conta ele perde a funcionalidade de criar e atua...",
       "category": "",
       "priority": "low",
       "status": "on hold",
@@ -1254,37 +1114,9 @@
       "link": "https://redmine.platform.brobot.com.br/issues/16564"
     },
     {
-      "id": 44624,
-      "task": "GERAR INSIGHTS PÓS CONSULTA E ENVIAR VIA E-MAIL/WHATSAPP",
-      "descricao": "",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "planning: to plan",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-06-01T12:01:27Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@Roberta bom dia, Informo que o projeto de desenvolvimento foi relizado, o tema será estimado pelos desenvolvedores e posteriormente planejado para desenvolvimento em uma sprint",
-      "link": "https://redmine.platform.brobot.com.br/issues/44624"
-    },
-    {
-      "id": 47471,
-      "task": "Melhoria do dashboard do cm-frotas Platform",
-      "descricao": "",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-05-14T19:30:41Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@ralph por gentileza, seguir com estimativa da atividade protótipo criado 70018",
-      "link": "https://redmine.platform.brobot.com.br/issues/47471"
-    },
-    {
       "id": 30232,
       "task": "Conta mestre Cervejaria Imperial",
-      "descricao": "pessoal!",
+      "descricao": "O cliente Cervejaria Imperial (ID: 1807, 1574, 1573, 1572, 1568, 1513, 1512, 1511, 1510, 1509, 1416, 1414,...",
       "category": "anterior",
       "priority": "medium",
       "status": "in progress",
@@ -1294,20 +1126,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
       "link": "https://redmine.platform.brobot.com.br/issues/30232"
-    },
-    {
-      "id": 51016,
-      "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
-      "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "planning: to plan",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-23T16:51:09Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo boa tarde, Informo que foi realizada a criação do projeto para desenvolvimento, os desenvolvedores seguirão com análise de estimativa da atividade e posteriormente seguiremos com planejamento",
-      "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
       "id": 60381,
