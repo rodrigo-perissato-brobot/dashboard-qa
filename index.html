@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-27T12:56:17.936Z",
-  "total": 14,
+  "gerado_em": "2026-08-27T13:26:26.870Z",
+  "total": 12,
   "rows": [
     {
       "id": 52181,
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71405"
     },
     {
-      "id": 78408,
-      "task": "autos_sne_denatran_indicacao_condutor - Encontrei um novo cenário em que é possível realizar a indicação com a infração paga",
-      "descricao": "Encontramos um novo cenário em que é possível realizar a indicação de condutor de infrações pagas.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-08-21T19:04:14Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@felipe obrigado pelo retorno, Realizei mudanças na spider para permitir indicação de multas não somente de NAO_PAGAS como era feito anteriormente, mas para qualquer outro status, dessa forma será fei",
-      "link": "https://redmine.platform.brobot.com.br/issues/78408"
-    },
-    {
       "id": 77796,
       "task": "API pública para consumo de NFSe Nacional (DF-e)",
       "descricao": "Permitir que o cliente consuma, por API, as mesmas notas de NFSe Nacional que hoje ele só consegue ver e ba...",
@@ -566,19 +553,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi alguns ajustes para staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/77796"
-    },
-    {
-      "id": 78623,
-      "task": "autos_sne_denatran_indicacao_condutor - Spider não consegue indicar quando o veículo é de um CPF",
-      "descricao": "Uma infração do cliente foi indicada porém, o parâmetro \"cnpj\" da spider foi com o CPF que está vinculado a...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-08-24T17:48:38Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo solicito que o teste seja realizado com prioridade",
-      "link": "https://redmine.platform.brobot.com.br/issues/78623"
     },
     {
       "id": 76649,
@@ -661,10 +635,52 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-27T12:57:16.766Z",
+  "gerado_em": "2026-08-27T13:27:31.922Z",
   "sprint_id": 65,
-  "total": 50,
+  "total": 52,
   "rows": [
+    {
+      "id": 78408,
+      "task": "autos_sne_denatran_indicacao_condutor - Encontrei um novo cenário em que é possível realizar a indicação com a infração paga",
+      "descricao": "Encontramos um novo cenário em que é possível realizar a indicação de condutor de infrações pagas.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-27T13:19:25Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "No momento, não foi possível realizar os testes, pois os cenários dependem de consultas no SNE e o portal encontra-se instável, fazendo com que as consultas retornem erro. Assim que o SNE estiver está",
+      "link": "https://redmine.platform.brobot.com.br/issues/78408"
+    },
+    {
+      "id": 78623,
+      "task": "autos_sne_denatran_indicacao_condutor - Spider não consegue indicar quando o veículo é de um CPF",
+      "descricao": "Uma infração do cliente foi indicada porém, o parâmetro \"cnpj\" da spider foi com o CPF que está vinculado a...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-27T13:18:52Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "No momento, não foi possível realizar os testes, pois os cenários dependem de consultas no SNE e o portal encontra-se instável, fazendo com que as consultas retornem erro. Assim que o SNE estiver está",
+      "link": "https://redmine.platform.brobot.com.br/issues/78623"
+    },
+    {
+      "id": 52015,
+      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
+      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-27T13:09:14Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@thiago PR",
+      "link": "https://redmine.platform.brobot.com.br/issues/52015"
+    },
     {
       "id": 76633,
       "task": "Captura de NFSe via API - IKKI (ID: 580)",
@@ -762,20 +778,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 84 - Nas telas Admin Contas e Admin Empresas não é possível selecionar contas para exportar relatório Item 85 - na tela Admin Contas é necessário adicionar CaçaCondutores ao filtro de Apps Item 8",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 52015,
-      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
-      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-26T16:57:27Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan @thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/52015"
     },
     {
       "id": 79852,
@@ -892,7 +894,7 @@
     {
       "id": 77906,
       "task": "Filtro \"Todos\" do campo \"Status do Veículo\" não funciona na listagem do Caça Multas Frotas",
-      "descricao": "Identificamos um comportamento incorreto no filtro \"Status do Ve��culo\" da tela Início Caça Multas Frotas List.",
+      "descricao": "Identificamos um comportamento incorreto no filtro \"Status do Veículo\" da tela Início Caça Multas Frotas List.",
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "awaiting deploy",
