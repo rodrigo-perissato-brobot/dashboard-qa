@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-27T14:26:24.593Z",
-  "total": 14,
+  "gerado_em": "2026-08-27T14:56:11.001Z",
+  "total": 13,
   "rows": [
     {
       "id": 52181,
@@ -594,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/78475"
     },
     {
-      "id": 80479,
-      "task": "autos_detran_go - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_go, 100.0% de erro (principal: SCRAPY_ERROR, 95.72%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "to do",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-26T14:54:43Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@jose-ricardo O site estava retornando 503 Service Unavailable. Provavelmente alguma manutenção. Testei e atualmente esta funcionando normalmente. @Rodrigo, pode rodar alguns testes pra confirmar?",
-      "link": "https://redmine.platform.brobot.com.br/issues/80479"
-    },
-    {
       "id": 80908,
       "task": "autos_detran_df - UNHANDLED_SPIDER_EXCEPTION",
       "descricao": "Spider autos_detran_df (principal: UNHANDLED_SPIDER_EXCEPTION, 75%)",
@@ -661,10 +648,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-27T14:27:22.799Z",
+  "gerado_em": "2026-08-27T14:57:11.400Z",
   "sprint_id": 65,
   "total": 51,
   "rows": [
+    {
+      "id": 80479,
+      "task": "autos_detran_go - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_go, 100.0% de erro (principal: SCRAPY_ERROR, 95.72%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-27T14:42:07Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@delvin Reprovado. Processei as consultas na spider autos_detran_go e a maioria retornou erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Das 9 consultas processad",
+      "link": "https://redmine.platform.brobot.com.br/issues/80479"
+    },
     {
       "id": 79952,
       "task": "autos_detran_rr - FILE_NOT_SAVED",
@@ -674,9 +675,9 @@
       "status": "awaiting deploy",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-27T13:59:19Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
+      "data_comentario": "2026-08-27T14:27:47Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Finalizada a tarefa 79953 e realizada PR.",
       "link": "https://redmine.platform.brobot.com.br/issues/79952"
     },
     {
@@ -706,20 +707,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "No momento, não foi possível realizar os testes, pois os cenários dependem de consultas no SNE e o portal encontra-se instável, fazendo com que as consultas retornem erro. Assim que o SNE estiver está",
       "link": "https://redmine.platform.brobot.com.br/issues/78623"
-    },
-    {
-      "id": 52015,
-      "task": "autos_antt - implementação do SNE embarcador e ajustes do novo mapeamento",
-      "descricao": "O mapeamento da ANTT foi atualizado para o novo formato e agora está integralmente disponível na Wiki, cont...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-27T13:09:14Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@thiago PR",
-      "link": "https://redmine.platform.brobot.com.br/issues/52015"
     },
     {
       "id": 76633,
