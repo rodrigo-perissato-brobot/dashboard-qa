@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-28T14:56:04.481Z",
+  "gerado_em": "2026-08-28T15:25:56.819Z",
   "total": 8,
   "rows": [
     {
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
-      "id": 80277,
-      "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
-      "descricao": "Caso em especifico Realizei uma análise e identifiquei que a spider autos_antt_processos está apresentando instabilidade.",
-      "category": "",
-      "priority": "low",
-      "status": "to do",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-25T18:30:13Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo Atualizado em staging. Pode testar por favor?",
-      "link": "https://redmine.platform.brobot.com.br/issues/80277"
-    },
-    {
       "id": 80926,
       "task": "Melhoria | Volumetria – Ordenação e ranking de clientes por volume",
       "descricao": "Aprimorar a tela de Volumetria para permitir a ordenação dos clientes de acordo com o volume de placas/cons...",
@@ -579,13 +566,26 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Alteração realizada. @rodrigo, poderia testar, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/80473"
+    },
+    {
+      "id": 80479,
+      "task": "autos_detran_go - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_go, 100.0% de erro (principal: SCRAPY_ERROR, 95.72%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-28T14:58:14Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@rodrigo Fiz alterações pra aceitar certificado digital. Antes não aceitava. O login do Davi esta bloqueado nesse portal. Pode testar por favor?",
+      "link": "https://redmine.platform.brobot.com.br/issues/80479"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-28T14:57:06.786Z",
+  "gerado_em": "2026-08-28T15:26:51.146Z",
   "sprint_id": 65,
-  "total": 56,
+  "total": 55,
   "rows": [
     {
       "id": 80908,
@@ -684,20 +684,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@gabriella e @joathan, Seguem ajustes Ambiente: Staging | Conta: Testes Funcionais | Versão: New Ao selecionar 20 multas no CaçaMultas Frotas, sendo que 1 3 delas possuem boletos capturados, e marcar ",
       "link": "https://redmine.platform.brobot.com.br/issues/80498"
-    },
-    {
-      "id": 80479,
-      "task": "autos_detran_go - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_go, 100.0% de erro (principal: SCRAPY_ERROR, 95.72%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-27T14:42:07Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@delvin Reprovado. Processei as consultas na spider autos_detran_go e a maioria retornou erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Das 9 consultas processad",
-      "link": "https://redmine.platform.brobot.com.br/issues/80479"
     },
     {
       "id": 78408,
