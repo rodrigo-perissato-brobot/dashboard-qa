@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-31T12:57:01.150Z",
+  "gerado_em": "2026-08-31T13:26:05.164Z",
   "total": 4,
   "rows": [
     {
@@ -503,6 +503,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/57089"
     },
     {
+      "id": 73585,
+      "task": "Configurar domínio consultas-api.com.br para a API White Label",
+      "descricao": "Realizar a configuração do domínio consultas-api.com.br para que ele seja utilizado como endereço oficial da API White Label da plataforma.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-23T19:14:43Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
+      "link": "https://redmine.platform.brobot.com.br/issues/73585"
+    },
+    {
       "id": 64086,
       "task": "Documentação de API Whitelabel",
       "descricao": "Criar uma nova versão da documentação da API V2 sem referências às marcas internas da plataforma (Brobot e...",
@@ -514,27 +527,56 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-08-31T13:27:21.352Z",
+  "sprint_id": 66,
+  "total": 59,
+  "rows": [
     {
       "id": 81312,
       "task": "Novo Front — Erro na inclusão de veículos em lote | Transmaroni",
       "descricao": "O cliente Transmaroni informou que não está conseguindo realizar a inclusão de veículos em lote pelo novo Front.",
       "category": "Frontend - Novo frontend",
       "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-08-28T19:02:18Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@rodrigo @gustavo por gentileza, prosseguir com testes, peço que testem tanto o problema relatado nesta task como da 81309",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-31T13:11:05Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@rolf favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/81312"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-31T12:58:39.900Z",
-  "sprint_id": 66,
-  "total": 52,
-  "rows": [
+    },
+    {
+      "id": 39504,
+      "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
+      "descricao": "O cliente Edgar da Kadan solicitou a seguinte verificação: Gostaríamos de confirmar se os documentos de Mic...",
+      "category": "anterior",
+      "priority": "medium",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-31T13:01:54Z",
+      "comentario_autor": "Roberta Espacachere",
+      "comentario_trecho": "Bom dia pessoal! Alguma novidade sobre o tema da chore?",
+      "link": "https://redmine.platform.brobot.com.br/issues/39504"
+    },
+    {
+      "id": 80926,
+      "task": "Melhoria | Volumetria – Ordenação e ranking de clientes por volume",
+      "descricao": "Aprimorar a tela de Volumetria para permitir a ordenação dos clientes de acordo com o volume de placas/cons...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-31T12:49:19Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@rolf favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/80926"
+    },
     {
       "id": 77813,
       "task": "Exportação de Relatórios Personalizados não apresenta coluna de Marcadores",
@@ -550,6 +592,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77813"
     },
     {
+      "id": 80498,
+      "task": "Download em lote de todos os documentos, organizados por AIT",
+      "descricao": "Permitir que o cliente baixe de uma vez o histórico completo de documentos das multas selecionadas, organiz...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-28T19:49:47Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/80498"
+    },
+    {
       "id": 76649,
       "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
       "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
@@ -562,6 +618,20 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@delvin acredito que a tratativa do KNOWN_WEBSITE_BUG é a correta. Subi mais uma consulta do mesmo CNPJ para acompanhar e ver o resultado na segunda-feira.",
       "link": "https://redmine.platform.brobot.com.br/issues/76649"
+    },
+    {
+      "id": 80277,
+      "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
+      "descricao": "Caso em especifico Realizei uma análise e identifiquei que a spider autos_antt_processos está apresentando instabilidade.",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-28T19:12:02Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@delvin não faço ideia, até porque não configuro estes parâmetros, apenas configuro credencial/certificado, subo o CNPJ na spider e nada mais. Por via das dúvidas, subirei novo teste hoje para ver o c",
+      "link": "https://redmine.platform.brobot.com.br/issues/80277"
     },
     {
       "id": 43063,
@@ -590,6 +660,20 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 94 - ao selecionar uma nova coluna para aparecer na listagem de qualquer produto, o dropdown de colunas some, caso o usuário queira selecionar várias colunas ele deve clicar diversas vezes no bot",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 80473,
+      "task": "autos_detran_rn - migrar proxy para DataImpulse",
+      "descricao": "",
+      "category": "Proxy - Outros",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Spider owner",
+      "data_comentario": "2026-08-28T17:56:39Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/80473"
     },
     {
       "id": 81029,
@@ -646,6 +730,20 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@gabriella, Segue ajuste Ao utilizar a opção de selecionar todos os veículos, a seleção é mantida após alterar a ordenação da listagem, mesmo ao desmarcar os veículos seleconados. O comportamento ocor",
       "link": "https://redmine.platform.brobot.com.br/issues/79466"
+    },
+    {
+      "id": 80541,
+      "task": "Cruzamento por Locatário no CM-Frotas",
+      "descricao": "Permitir que o cliente que loca seus veículos para outro CNPJ atribua automaticamente as multas do período...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-27T18:20:14Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado na planning realizada em 27/08/2026 com os participantes @rodrigo @gabriella @felipe @joathan @miguel @delvin @gustavo @jose-ricardo foi alinhado que seguiremos com implementação na ",
+      "link": "https://redmine.platform.brobot.com.br/issues/80541"
     },
     {
       "id": 81067,
@@ -970,20 +1068,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
     },
     {
-      "id": 39504,
-      "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
-      "descricao": "O cliente Edgar da Kadan solicitou a seguinte verificação: Gostaríamos de confirmar se os documentos de Mic...",
-      "category": "anterior",
-      "priority": "medium",
-      "status": "to do",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-06T13:56:50Z",
-      "comentario_autor": "Roberta Espacachere",
-      "comentario_trecho": "Bom dia pessoal! Alguma novidade sobre o tema da chore?",
-      "link": "https://redmine.platform.brobot.com.br/issues/39504"
-    },
-    {
       "id": 44623,
       "task": "Implementar módulo de Financeiro na Platform para visualização e extração de relatórios de faturamento",
       "descricao": "Implementar um novo módulo de Financeiro na Platform para que o time financeiro possa visualizar, consultar e exportar os relatórios de fatu",
@@ -1192,6 +1276,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@rolf por gentileza, poderia prosseguir com atualização da mensagem do whatapp?",
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
+    },
+    {
+      "id": 53155,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
+      "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
+      "category": "anterior",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-23T17:52:13Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@renata boa tarde, Conforme alinhamento em reunião 09/03/2026 com os presentes Henrique, Emerson, Gabriella, Guilherme, Roberta, Renata, Davi, Jose: foi alinhado que somente seguiremos com o desenvolv",
+      "link": "https://redmine.platform.brobot.com.br/issues/53155"
     },
     {
       "id": 43159,
