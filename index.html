@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-08-31T16:26:13.447Z",
-  "total": 4,
+  "gerado_em": "2026-08-31T17:25:54.953Z",
+  "total": 5,
   "rows": [
     {
       "id": 52181,
@@ -527,14 +527,83 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
+    },
+    {
+      "id": 80277,
+      "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
+      "descricao": "Caso em especifico Realizei uma análise e identifiquei que a spider autos_antt_processos está apresentando instabilidade.",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-08-31T16:43:17Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/80277"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-08-31T16:27:21.458Z",
+  "gerado_em": "2026-08-31T17:27:00.025Z",
   "sprint_id": 66,
-  "total": 57,
+  "total": 56,
   "rows": [
+    {
+      "id": 77813,
+      "task": "Exportação de Relatórios Personalizados não apresenta coluna de Marcadores",
+      "descricao": "Identificamos que a exportação de relatórios personalizados não está retornando a informação da coluna Marc...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-31T16:50:56Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "bug/77813-dev 185 opened 3 days ago by gabriellamendes-cpu",
+      "link": "https://redmine.platform.brobot.com.br/issues/77813"
+    },
+    {
+      "id": 79466,
+      "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
+      "descricao": "A tela /admin/veiculos do front novo foi entregue incompleta: tem 3 dos 9 filtros, 7 das 15 colunas e nenhu...",
+      "category": "Frontend - Novo frontend",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-31T16:50:28Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "PR aberta bug/79466 186 opened 2 hours ago by gabriellamendes-cpu",
+      "link": "https://redmine.platform.brobot.com.br/issues/79466"
+    },
+    {
+      "id": 77906,
+      "task": "Filtro \"Todos\" do campo \"Status do Veículo\" não funciona na listagem do Caça Multas Frotas",
+      "descricao": "Identificamos um comportamento incorreto no filtro \"Status do Veículo\" da tela Início Caça Multas Frotas List.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-31T16:39:38Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "PR aberta bug/77906-main",
+      "link": "https://redmine.platform.brobot.com.br/issues/77906"
+    },
+    {
+      "id": 80498,
+      "task": "Download em lote de todos os documentos, organizados por AIT",
+      "descricao": "Permitir que o cliente baixe de uma vez o histórico completo de documentos das multas selecionadas, organiz...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-31T16:34:05Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "PR aberto feature/80498-main",
+      "link": "https://redmine.platform.brobot.com.br/issues/80498"
+    },
     {
       "id": 81312,
       "task": "Novo Front — Erro na inclusão de veículos em lote | Transmaroni",
@@ -548,20 +617,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "PR aberta bug/81312-base-main",
       "link": "https://redmine.platform.brobot.com.br/issues/81312"
-    },
-    {
-      "id": 80277,
-      "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
-      "descricao": "Caso em especifico Realizei uma análise e identifiquei que a spider autos_antt_processos está apresentando instabilidade.",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-31T14:36:49Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@felipe Estas consultas estão sendo enviadas com o target errado. relatorio_pdf no lugar de processos. Pode verificar por favor?",
-      "link": "https://redmine.platform.brobot.com.br/issues/80277"
     },
     {
       "id": 76649,
@@ -604,34 +659,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@rolf favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/80926"
-    },
-    {
-      "id": 77813,
-      "task": "Exportação de Relatórios Personalizados não apresenta coluna de Marcadores",
-      "descricao": "Identificamos que a exportação de relatórios personalizados não está retornando a informação da coluna Marc...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-31T12:25:20Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Corrigido frontend, aguardando subir para staging",
-      "link": "https://redmine.platform.brobot.com.br/issues/77813"
-    },
-    {
-      "id": 80498,
-      "task": "Download em lote de todos os documentos, organizados por AIT",
-      "descricao": "Permitir que o cliente baixe de uma vez o histórico completo de documentos das multas selecionadas, organiz...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-28T19:49:47Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/80498"
     },
     {
       "id": 43063,
@@ -702,20 +729,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Rolf Ajuste necessário — Geração de ordem de CNH e Toxicológico Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Ao realizar o upload de um arquivo de CNH no cadastro de um motorista e ",
       "link": "https://redmine.platform.brobot.com.br/issues/71405"
-    },
-    {
-      "id": 79466,
-      "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
-      "descricao": "A tela /admin/veiculos do front novo foi entregue incompleta: tem 3 dos 9 filtros, 7 das 15 colunas e nenhu...",
-      "category": "Frontend - Novo frontend",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-27T18:23:51Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@gabriella, Segue ajuste Ao utilizar a opção de selecionar todos os veículos, a seleção é mantida após alterar a ordenação da listagem, mesmo ao desmarcar os veículos seleconados. O comportamento ocor",
-      "link": "https://redmine.platform.brobot.com.br/issues/79466"
     },
     {
       "id": 80541,
@@ -898,20 +911,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan realmente é melhor diretamente em produção, devido que se configurarmos o mesmo certificado do cliente em staging, para download de NFs, geraremos erros de consumo indevido.",
       "link": "https://redmine.platform.brobot.com.br/issues/78419"
-    },
-    {
-      "id": 77906,
-      "task": "Filtro \"Todos\" do campo \"Status do Veículo\" não funciona na listagem do Caça Multas Frotas",
-      "descricao": "Identificamos um comportamento incorreto no filtro \"Status do Veículo\" da tela Início Caça Multas Frotas List.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-24T17:31:58Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77906"
     },
     {
       "id": 46135,
