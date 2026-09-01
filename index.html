@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-01T13:26:12.489Z",
-  "total": 7,
+  "gerado_em": "2026-09-01T13:56:30.529Z",
+  "total": 5,
   "rows": [
     {
       "id": 52181,
@@ -540,40 +540,28 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Pode testar novamente. A mudança não foi aplicada corretamente anteriormente.",
       "link": "https://redmine.platform.brobot.com.br/issues/76649"
-    },
-    {
-      "id": 81545,
-      "task": "autos_detran_pa_multas - NO_SITEKEY ",
-      "descricao": "Spider autos_detran_pa_multas",
-      "category": "",
-      "priority": "low",
-      "status": "to do",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-08-31T19:04:57Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@rodrigo realizou os testes confirmando que era apenas uma instabilidade no portal. @jose-ricardo caso a spider estiver desativada, gentileza reativar.",
-      "link": "https://redmine.platform.brobot.com.br/issues/81545"
-    },
-    {
-      "id": 81493,
-      "task": "autos_embarcador_der_sp - CAPTCHA_INCORRECTLY_SOLVED",
-      "descricao": "Spider autos_embarcador_der_sp (principal: CAPTCHA_INCORRECTLY_SOLVED, 85.8%)",
-      "category": "",
-      "priority": "high",
-      "status": "to do",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-01T12:53:14Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ocorreu uma instabilidade no portal, mas tambem encontrei uma falha que fazia que sempre mesmo o captcha correto estava sendo reportado como incorreto. @rodrigo, poderia testar?",
-      "link": "https://redmine.platform.brobot.com.br/issues/81493"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-01T13:27:26.941Z",
+  "gerado_em": "2026-09-01T13:57:44.560Z",
   "sprint_id": 66,
-  "total": 54,
+  "total": 55,
   "rows": [
+    {
+      "id": 81493,
+      "task": "autos_embarcador_der_sp - CAPTCHA_INCORRECTLY_SOLVED",
+      "descricao": "Spider autos_embarcador_der_sp (principal: CAPTCHA_INCORRECTLY_SOLVED, 85.8%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Spider owner",
+      "data_comentario": "2026-09-01T13:31:38Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/81493"
+    },
     {
       "id": 80277,
       "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
