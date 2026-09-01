@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-01T12:26:00.410Z",
+  "gerado_em": "2026-09-01T12:56:18.610Z",
   "total": 7,
   "rows": [
     {
@@ -529,19 +529,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
     },
     {
-      "id": 80277,
-      "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
-      "descricao": "Caso em especifico Realizei uma análise e identifiquei que a spider autos_antt_processos está apresentando instabilidade.",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-31T16:43:17Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/80277"
-    },
-    {
       "id": 76649,
       "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
       "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
@@ -566,14 +553,41 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "@rodrigo realizou os testes confirmando que era apenas uma instabilidade no portal. @jose-ricardo caso a spider estiver desativada, gentileza reativar.",
       "link": "https://redmine.platform.brobot.com.br/issues/81545"
+    },
+    {
+      "id": 81493,
+      "task": "autos_embarcador_der_sp - CAPTCHA_INCORRECTLY_SOLVED",
+      "descricao": "Spider autos_embarcador_der_sp (principal: CAPTCHA_INCORRECTLY_SOLVED, 85.8%)",
+      "category": "",
+      "priority": "high",
+      "status": "to do",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-01T12:53:14Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Ocorreu uma instabilidade no portal, mas tambem encontrei uma falha que fazia que sempre mesmo o captcha correto estava sendo reportado como incorreto. @rodrigo, poderia testar?",
+      "link": "https://redmine.platform.brobot.com.br/issues/81493"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-01T12:27:11.614Z",
+  "gerado_em": "2026-09-01T12:57:27.199Z",
   "sprint_id": 66,
   "total": 54,
   "rows": [
+    {
+      "id": 80277,
+      "task": "autos_antt_processos - Consulta em processo desde 21/08 sem atualização",
+      "descricao": "Caso em especifico Realizei uma análise e identifiquei que a spider autos_antt_processos está apresentando instabilidade.",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-01T12:27:29Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/80277"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
@@ -657,20 +671,6 @@
       "comentario_autor": "Roberta Espacachere",
       "comentario_trecho": "Bom dia pessoal! Alguma novidade sobre o tema da chore?",
       "link": "https://redmine.platform.brobot.com.br/issues/39504"
-    },
-    {
-      "id": 80926,
-      "task": "Melhoria | Volumetria – Ordenação e ranking de clientes por volume",
-      "descricao": "Aprimorar a tela de Volumetria para permitir a ordenação dos clientes de acordo com o volume de placas/cons...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-31T12:49:19Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@rolf favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/80926"
     },
     {
       "id": 43063,
