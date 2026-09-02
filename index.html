@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-02T18:26:14.966Z",
-  "total": 5,
+  "gerado_em": "2026-09-02T18:56:07.998Z",
+  "total": 4,
   "rows": [
     {
       "id": 52181,
@@ -527,7 +527,14 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-09-02T18:57:20.074Z",
+  "sprint_id": 66,
+  "total": 52,
+  "rows": [
     {
       "id": 76649,
       "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
@@ -535,19 +542,27 @@
       "category": "Spider - Outros",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-08-31T18:01:38Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo Pode testar novamente. A mudança não foi aplicada corretamente anteriormente.",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-02T18:41:15Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@delvin Antes de eu aprovar/reprovar, poderia verificar esta consulta? Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Esta consulta é do mesmo CNPJ anteriormente relatado e ",
       "link": "https://redmine.platform.brobot.com.br/issues/76649"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-02T18:27:21.189Z",
-  "sprint_id": 66,
-  "total": 51,
-  "rows": [
+    },
+    {
+      "id": 79466,
+      "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
+      "descricao": "A tela /admin/veiculos do front novo foi entregue incompleta: tem 3 dos 9 filtros, 7 das 15 colunas e nenhu...",
+      "category": "Frontend - Novo frontend",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-02T18:38:29Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella subi pra staging uma mudança relacionada ao \"Erro\" no export do relatório. Agora saberemos o motivo que impediu o relatório de ser exportado. Fiz alguns ajustes também no frontend novo (não",
+      "link": "https://redmine.platform.brobot.com.br/issues/79466"
+    },
     {
       "id": 81874,
       "task": "Ajustes configuração certificado BrightData",
@@ -589,20 +604,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella @rodrigo @gustavo subi correção para staging. O erro em questão era devido a falta da informação data_emissao em algumas notas. Por estar vazio (nulo) não aparecia nem na grid, nem no relat",
       "link": "https://redmine.platform.brobot.com.br/issues/81801"
-    },
-    {
-      "id": 79466,
-      "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
-      "descricao": "A tela /admin/veiculos do front novo foi entregue incompleta: tem 3 dos 9 filtros, 7 das 15 colunas e nenhu...",
-      "category": "Frontend - Novo frontend",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-02T14:45:09Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@joathan Retorno do QA no 79466: em Staging, conta Testes Funcionais, pediram um relatório de 50 veículos em Admin Veículos e a planilha não chegou por e-mail depois de ~2 horas. Eu reproduzi com o De",
-      "link": "https://redmine.platform.brobot.com.br/issues/79466"
     },
     {
       "id": 81493,
