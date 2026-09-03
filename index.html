@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-03T17:26:08.759Z",
-  "total": 6,
+  "gerado_em": "2026-09-03T17:56:06.909Z",
+  "total": 5,
   "rows": [
     {
       "id": 52181,
@@ -535,32 +535,33 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-09-03T11:54:30Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo implementado em staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/79965"
-    },
-    {
-      "id": 81372,
-      "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
-      "descricao": "Realizei uma análise e identifiquei que, atualmente, a spider autos_detran_es_taxas está retornando apenas...",
-      "category": "",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-03T12:45:09Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ficou alinhado com @jose-ricardo de realizarmos a captura apenas da taxa do Licenciamento de 2026 que ja entrega todas as taxas pendentes juntas. @rodrigo poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/81372"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-03T17:27:09.080Z",
+  "gerado_em": "2026-09-03T17:57:08.200Z",
   "sprint_id": 66,
-  "total": 48,
+  "total": 49,
   "rows": [
+    {
+      "id": 81372,
+      "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
+      "descricao": "Realizei uma análise e identifiquei que, atualmente, a spider autos_detran_es_taxas está retornando apenas...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-03T17:33:34Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel com relação ao tratamento efetuado na spider, está aprovado . @felipe com esta mudança, precisaremos ajustar o consumo, pois provalvelmente as chaves mudaram e precisa revisar/atualizar. Ambie",
+      "link": "https://redmine.platform.brobot.com.br/issues/81372"
+    },
     {
       "id": 81029,
       "task": "Filtros dos gráficos ultrapassam os limites do componente em diferentes resoluções e níveis de zoom | CaçaMultas Frotas | Platform Classic",
