@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-08T12:56:03.539Z",
-  "total": 6,
+  "gerado_em": "2026-09-08T13:26:04.158Z",
+  "total": 5,
   "rows": [
     {
       "id": 52181,
@@ -529,19 +529,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
     },
     {
-      "id": 76649,
-      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
-      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-04T15:03:53Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76649"
-    },
-    {
       "id": 81639,
       "task": "Veículos demorando a serem cadastrados",
       "descricao": "Sempre que subimos um arquivo para cadastro de placas em lote o mesmo está demorando muito tempo para ser e...",
@@ -557,10 +544,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-08T12:57:01.914Z",
+  "gerado_em": "2026-09-08T13:26:54.888Z",
   "sprint_id": 67,
-  "total": 49,
+  "total": 50,
   "rows": [
+    {
+      "id": 76649,
+      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
+      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-08T13:12:02Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@felipe @delvin Reprovado . Repeti o teste, agora não retornou mais os erros no consumer, aparentemente está executando o novo scraping, porém sem sucesso ainda. Ambiente: Staging | Conta: Testes Func",
+      "link": "https://redmine.platform.brobot.com.br/issues/76649"
+    },
     {
       "id": 79965,
       "task": "Refatorar tela admin/accounts/id ",
