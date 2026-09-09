@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-09T11:26:42.525Z",
-  "total": 6,
+  "gerado_em": "2026-09-09T11:56:23.198Z",
+  "total": 7,
   "rows": [
     {
       "id": 52181,
@@ -553,14 +553,41 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Separado a spider entre cm_frotas e cm_taxas, só enviar a flag para a mesma spider que irá realizar a captura correta. @rodrigo, poderia testar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/81061"
+    },
+    {
+      "id": 81372,
+      "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
+      "descricao": "Realizei uma análise e identifiquei que, atualmente, a spider autos_detran_es_taxas está retornando apenas...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-09T11:25:30Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "O erro foi devido a mudança do gov que ocorreu dia 04/09/2026. @rodrigo, poderia testar novamente por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/81372"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-09T11:28:09.725Z",
+  "gerado_em": "2026-09-09T11:57:27.908Z",
   "sprint_id": 67,
   "total": 49,
   "rows": [
+    {
+      "id": 71526,
+      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
+      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-09T11:38:33Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@joathan por gentileza, trocar incluir na mensagem do whatsapp as informações solicitadas",
+      "link": "https://redmine.platform.brobot.com.br/issues/71526"
+    },
     {
       "id": 76008,
       "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
@@ -647,7 +674,7 @@
     },
     {
       "id": 81814,
-      "task": "Histórico de Ações | Ação específica com valor anterior e novo por campo, filtros e exportação do relatório",
+      "task": "Histórico de Ações | Ação específica com valor anterior e novo por campo, filtros e exportaç��o do relatório",
       "descricao": "Tornar o Histórico de Ações uma evidência utilizável: cada registro passa a dizer qual ação foi executada e...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
@@ -1148,20 +1175,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@rolf efetuei os testes conforme reunião que tivemos junto da Gabi e do José, com o CNPJ 08.693.795/0001-72 e AIT FRMEP00259292024 . Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evid",
       "link": "https://redmine.platform.brobot.com.br/issues/75084"
-    },
-    {
-      "id": 71526,
-      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
-      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-03T19:25:42Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@rolf por gentileza, poderia prosseguir com atualização da mensagem do whatapp?",
-      "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
       "id": 53155,
