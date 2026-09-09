@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-09T12:56:18.166Z",
-  "total": 6,
+  "gerado_em": "2026-09-09T13:26:42.392Z",
+  "total": 5,
   "rows": [
     {
       "id": 52181,
@@ -488,19 +488,6 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Melhorado o login via gov e normal, esta separado da forma adequada agora, @rodrigo poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/52181"
-    },
-    {
-      "id": 57089,
-      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
-      "descricao": "Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de vencimento de CNH,...",
-      "category": "Produtos - Novo produto",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-07-15T03:35:50Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
-      "link": "https://redmine.platform.brobot.com.br/issues/57089"
     },
     {
       "id": 73585,
@@ -557,10 +544,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-09T12:57:34.271Z",
+  "gerado_em": "2026-09-09T13:27:46.897Z",
   "sprint_id": 67,
   "total": 51,
   "rows": [
+    {
+      "id": 82577,
+      "task": "Implementar Start Date e End Date para SNE",
+      "descricao": "Implementar os campos Start Date e End Date para o módulo SNE, permitindo definir o período de início e fim...",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-09T13:23:04Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Aprovado. Processei algumas consultas e o start/end date respeitaram os 90 dias ou a data da última infração. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Acompanhar",
+      "link": "https://redmine.platform.brobot.com.br/issues/82577"
+    },
     {
       "id": 79965,
       "task": "Refatorar tela admin/accounts/id ",
@@ -686,20 +687,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@felipe @delvin Reprovado . Repeti o teste, agora não retornou mais os erros no consumer, aparentemente está executando o novo scraping, porém sem sucesso ainda. Ambiente: Staging | Conta: Testes Func",
       "link": "https://redmine.platform.brobot.com.br/issues/76649"
-    },
-    {
-      "id": 81818,
-      "task": "Chore – Corrigir indisponibilidade de relatório na tela Admin >> Agendamentos",
-      "descricao": "Realizar análise e correção na funcionalidade de exportação de relatório da tela Admin Agendamentos.",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-04T19:25:50Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/81818"
     },
     {
       "id": 81814,
