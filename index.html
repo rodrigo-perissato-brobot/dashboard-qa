@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-10T17:26:13.113Z",
+  "gerado_em": "2026-09-10T17:56:36.591Z",
   "total": 9,
   "rows": [
     {
@@ -516,19 +516,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
     },
     {
-      "id": 81548,
-      "task": "autos_detran_rn - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_rn",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-09T16:50:33Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "As alterações foram realizadas conforme solicitado. A spider também está utilizando o login do Gov.br sem o uso do hrequest. @Rodrigo, poderia realizar os testes, por gentileza? Após a validação dos t",
-      "link": "https://redmine.platform.brobot.com.br/issues/81548"
-    },
-    {
       "id": 82860,
       "task": "Remover hrequests e restaurar o fluxo de login/redirects da versão anterior  Descrição",
       "descricao": "Na sexta-feira (05/09/2026) foi repassada uma lista de spiders que passaram a utilizar a biblioteca hreques...",
@@ -540,19 +527,6 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Realizei testes com o autos_detran_go e não necessitou mudanças no redirect. @rodrigo poderia testar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/82860"
-    },
-    {
-      "id": 82758,
-      "task": "autos_detran_ba - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "to do",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-10T15:24:29Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@gustavo o ambiente de staging estava com um bug que impedia a atualização do código da spider. Por isso, ela continuava utilizando a versão antiga. Já corrigi o problema. Poderia testar novamente, po",
-      "link": "https://redmine.platform.brobot.com.br/issues/82758"
     },
     {
       "id": 82886,
@@ -592,14 +566,68 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Login do Gov.br alterado. @gustavo e @rodrigo, poderiam testar, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/82883"
+    },
+    {
+      "id": 81297,
+      "task": "autos_sne_denatran_indicacao_condutor - Erro de usuário não deixa realizar nova consulta",
+      "descricao": "Quando temos um erro de usuário, não fica possível realizar a indicação novamente e nem reprocessar essa consulta.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-10T17:48:35Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo corrigido em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/81297"
+    },
+    {
+      "id": 81067,
+      "task": "Grupos de permissão: catálogo em três níveis, recorte de dado por grupo e fim da permissão individual",
+      "descricao": "Substituir a permissão individual por usuário por grupos de permissão, e separar o que hoje está misturado...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-10T17:50:37Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo @gustavo subi para staging frontend antigo e novo e backend e maestro. Conta migrada apenas a Conta Default (ID 1).",
+      "link": "https://redmine.platform.brobot.com.br/issues/81067"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-10T17:27:26.533Z",
+  "gerado_em": "2026-09-10T17:57:45.197Z",
   "sprint_id": 67,
   "total": 54,
   "rows": [
+    {
+      "id": 82758,
+      "task": "autos_detran_ba - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-10T17:47:04Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe Segue ajuste : Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: No portal, é entregue a situação das multas, mas o campo \"Situação\" não está sendo gravado corretamente",
+      "link": "https://redmine.platform.brobot.com.br/issues/82758"
+    },
+    {
+      "id": 81548,
+      "task": "autos_detran_rn - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_rn",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-10T17:42:39Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Aprovado. Processei as consultas na spider e não foram identificados mais os problemas reportados na task. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Todas as co",
+      "link": "https://redmine.platform.brobot.com.br/issues/81548"
+    },
     {
       "id": 81930,
       "task": "Melhoria em Queries | OPS / SUP",
@@ -669,20 +697,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 116 - Na tela Admin Maestro Multas deve possuir opções de filtro tanto para Órgão Autuador quanto Órgão Consultado, e as seleções desses 2 filtros devem ser dropdown. Item 117 - Na tela Admin Mae",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 81372,
-      "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
-      "descricao": "Realizei uma análise e identifiquei que, atualmente, a spider autos_detran_es_taxas está retornando apenas...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-09T19:10:50Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_detran_es_taxas e está ocorrendo o mesmo erro de antes. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: As consultas contin",
-      "link": "https://redmine.platform.brobot.com.br/issues/81372"
     },
     {
       "id": 51186,
@@ -921,20 +935,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Conforme alinhado na planning realizada em 27/08/2026 com os participantes @rodrigo @gabriella @felipe @joathan @miguel @delvin @gustavo @jose-ricardo foi alinhado que seguiremos com implementação na ",
       "link": "https://redmine.platform.brobot.com.br/issues/80541"
-    },
-    {
-      "id": 81067,
-      "task": "Grupos de permissão: catálogo em três níveis, recorte de dado por grupo e fim da permissão individual",
-      "descricao": "Substituir a permissão individual por usuário por grupos de permissão, e separar o que hoje está misturado...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-27T18:19:30Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 27/08/2026 com os participantes @rodrigo @gabriella @felipe @joathan @miguel @delvin @gustavo @jose-ricardo foi alinhado que seguiremos com implementação na ",
-      "link": "https://redmine.platform.brobot.com.br/issues/81067"
     },
     {
       "id": 78408,
