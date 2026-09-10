@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-10T18:26:27.749Z",
-  "total": 10,
+  "gerado_em": "2026-09-10T18:56:15.066Z",
+  "total": 11,
   "rows": [
     {
       "id": 57089,
@@ -605,13 +605,26 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "@rodrigo a pipeline de staging estava com problema, nao havia atualizado o codigo, poderia retestar agora por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/81372"
+    },
+    {
+      "id": 81061,
+      "task": "autos_detran_rr_taxas > Desenvolvimento",
+      "descricao": "@jose-ricardo @gabriella atualmente possuímos a spider do Detran RR capturando multas e taxas, porém não temos uma spider para taxas.",
+      "category": "Portal - Mudança de layout",
+      "priority": "low",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-10T18:39:58Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "@rodrigo as mudanças enviadas ontem, não foram atualizadas porque a pipeline de staging estava quebrada. Poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/81061"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-10T18:27:54.232Z",
+  "gerado_em": "2026-09-10T18:57:28.866Z",
   "sprint_id": 67,
-  "total": 51,
+  "total": 53,
   "rows": [
     {
       "id": 82758,
@@ -654,20 +667,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/81930"
-    },
-    {
-      "id": 81061,
-      "task": "autos_detran_rr_taxas > Desenvolvimento",
-      "descricao": "@jose-ricardo @gabriella atualmente possuímos a spider do Detran RR capturando multas e taxas, porém não temos uma spider para taxas.",
-      "category": "Portal - Mudança de layout",
-      "priority": "low",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-10T13:45:11Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Não foi possível concluir os testes, favor aguardar. Criei o novo ScrapingService pro Detran RR Taxas , porém executou as consultas sem retorno, provavelmente necessita de ajustes no consumer.",
-      "link": "https://redmine.platform.brobot.com.br/issues/81061"
     },
     {
       "id": 79965,
@@ -1160,6 +1159,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
+      "id": 37739,
+      "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
+      "descricao": "Tivemos um caso do cliente Engemix que questionou multas dos anos de 2021, 2022 e 2023 com status em aberto em nossa plataforma.",
+      "category": "Spider - Outros",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-27T19:26:40Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
+      "link": "https://redmine.platform.brobot.com.br/issues/37739"
+    },
+    {
       "id": 75786,
       "task": "Permitir alteração de status em lote dos veículos (Ativar/Inativar)",
       "descricao": "Atualmente, ao selecionar vários veículos utilizando a opção \"Selecionar todos\", não é possível alterar o status em lote.",
@@ -1300,6 +1313,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/43159"
     },
     {
+      "id": 16564,
+      "task": "Funcionalidades de autorização de \"Membro\"",
+      "descricao": "Notamos que quando colocamos um usuário como membro de uma conta ele perde a funcionalidade de criar e atua...",
+      "category": "",
+      "priority": "low",
+      "status": "on hold",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-03T12:10:14Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado em 07/04/2026 entre Emerson e Gabriella mudamos para on hold aguardar cliente solicitar o tema",
+      "link": "https://redmine.platform.brobot.com.br/issues/16564"
+    },
+    {
       "id": 44624,
       "task": "GERAR INSIGHTS PÓS CONSULTA E ENVIAR VIA E-MAIL/WHATSAPP",
       "descricao": "",
@@ -1312,6 +1339,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@Roberta bom dia, Informo que o projeto de desenvolvimento foi relizado, o tema será estimado pelos desenvolvedores e posteriormente planejado para desenvolvimento em uma sprint",
       "link": "https://redmine.platform.brobot.com.br/issues/44624"
+    },
+    {
+      "id": 30232,
+      "task": "Conta mestre Cervejaria Imperial",
+      "descricao": "O cliente Cervejaria Imperial (ID: 1807, 1574, 1573, 1572, 1568, 1513, 1512, 1511, 1510, 1509, 1416, 1414,...",
+      "category": "anterior",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-04-28T14:45:00Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
+      "link": "https://redmine.platform.brobot.com.br/issues/30232"
     },
     {
       "id": 60381,
