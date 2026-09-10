@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-10T16:56:17.485Z",
-  "total": 7,
+  "gerado_em": "2026-09-10T17:26:13.113Z",
+  "total": 9,
   "rows": [
     {
       "id": 57089,
@@ -522,7 +522,7 @@
       "category": "Spider - Erro na lógica de extração",
       "priority": "medium",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-09-09T16:50:33Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "As alterações foram realizadas conforme solicitado. A spider também está utilizando o login do Gov.br sem o uso do hrequest. @Rodrigo, poderia realizar os testes, por gentileza? Após a validação dos t",
@@ -535,7 +535,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-09-10T11:17:20Z",
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Realizei testes com o autos_detran_go e não necessitou mudanças no redirect. @rodrigo poderia testar por gentileza?",
@@ -566,11 +566,37 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Essa spider estava utilizando o login antigo do Gov.br, que não estava mais funcionando. Realizei a alteração para utilizar o novo fluxo de login do Gov.br. @Gustavo Souza, poderia testar novamente, p",
       "link": "https://redmine.platform.brobot.com.br/issues/82886"
+    },
+    {
+      "id": 82855,
+      "task": "autos_detran_rs - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran RS para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-10T16:57:22Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Spider alterada e o hrequest removido. @gustavo e @rodrigo, poderiam testar, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/82855"
+    },
+    {
+      "id": 82883,
+      "task": "autos_detran_sc - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran SC para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-10T16:58:20Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Login do Gov.br alterado. @gustavo e @rodrigo, poderiam testar, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/82883"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-10T16:57:33.394Z",
+  "gerado_em": "2026-09-10T17:27:26.533Z",
   "sprint_id": 67,
   "total": 54,
   "rows": [
