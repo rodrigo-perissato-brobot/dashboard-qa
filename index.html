@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-10T14:56:07.933Z",
-  "total": 5,
+  "gerado_em": "2026-09-10T15:26:10.246Z",
+  "total": 6,
   "rows": [
     {
       "id": 57089,
@@ -540,13 +540,26 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Realizei testes com o autos_detran_go e não necessitou mudanças no redirect. @rodrigo poderia testar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/82860"
+    },
+    {
+      "id": 82758,
+      "task": "autos_detran_ba - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "to do",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-10T15:24:29Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@gustavo-souza, o ambiente de staging estava com um bug que impedia a atualização do código da spider. Por isso, ela continuava utilizando a versão antiga. Já corrigi o problema. Poderia testar novame",
+      "link": "https://redmine.platform.brobot.com.br/issues/82758"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-10T14:57:14.259Z",
+  "gerado_em": "2026-09-10T15:27:13.966Z",
   "sprint_id": 67,
-  "total": 55,
+  "total": 54,
   "rows": [
     {
       "id": 81930,
@@ -575,20 +588,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel Não foi possível concluir os testes, favor aguardar. Criei o novo ScrapingService pro Detran RR Taxas , porém executou as consultas sem retorno, provavelmente necessita de ajustes no consumer.",
       "link": "https://redmine.platform.brobot.com.br/issues/81061"
-    },
-    {
-      "id": 82758,
-      "task": "autos_detran_ba - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "to do",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-10T13:33:46Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@thiago Reprovado. Processei as consultas na spider e retornou erros de \"The gov.br WAF blocked the login page on every proxy session attempted.\". Ambiente: Staging | Conta: Testes Funcionais | Versão",
-      "link": "https://redmine.platform.brobot.com.br/issues/82758"
     },
     {
       "id": 79965,
