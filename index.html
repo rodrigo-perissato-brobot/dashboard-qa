@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-10T17:56:36.591Z",
-  "total": 9,
+  "gerado_em": "2026-09-10T18:26:27.749Z",
+  "total": 10,
   "rows": [
     {
       "id": 57089,
@@ -514,19 +514,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
-    },
-    {
-      "id": 82860,
-      "task": "Remover hrequests e restaurar o fluxo de login/redirects da versão anterior  Descrição",
-      "descricao": "Na sexta-feira (05/09/2026) foi repassada uma lista de spiders que passaram a utilizar a biblioteca hreques...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-10T11:17:20Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Realizei testes com o autos_detran_go e não necessitou mudanças no redirect. @rodrigo poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/82860"
     },
     {
       "id": 82886,
@@ -592,13 +579,39 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo subi para staging frontend antigo e novo e backend e maestro. Conta migrada apenas a Conta Default (ID 1).",
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
+    },
+    {
+      "id": 82860,
+      "task": "Remover hrequests e restaurar o fluxo de login/redirects da versão anterior  Descrição",
+      "descricao": "Na sexta-feira (05/09/2026) foi repassada uma lista de spiders que passaram a utilizar a biblioteca hreques...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-10T17:55:05Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "autos_dnit e autos_sefaz_sp alterados, poderia testar @rodrigo?",
+      "link": "https://redmine.platform.brobot.com.br/issues/82860"
+    },
+    {
+      "id": 81372,
+      "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
+      "descricao": "Realizei uma análise e identifiquei que, atualmente, a spider autos_detran_es_taxas está retornando apenas...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-10T17:56:36Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "@rodrigo a pipeline de staging estava com problema, nao havia atualizado o codigo, poderia retestar agora por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/81372"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-10T17:57:45.197Z",
+  "gerado_em": "2026-09-10T18:27:54.232Z",
   "sprint_id": 67,
-  "total": 54,
+  "total": 51,
   "rows": [
     {
       "id": 82758,
@@ -1147,20 +1160,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
-      "id": 37739,
-      "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
-      "descricao": "Tivemos um caso do cliente Engemix que questionou multas dos anos de 2021, 2022 e 2023 com status em aberto em nossa plataforma.",
-      "category": "Spider - Outros",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-27T19:26:40Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
-      "link": "https://redmine.platform.brobot.com.br/issues/37739"
-    },
-    {
       "id": 75786,
       "task": "Permitir alteração de status em lote dos veículos (Ativar/Inativar)",
       "descricao": "Atualmente, ao selecionar vários veículos utilizando a opção \"Selecionar todos\", não é possível alterar o status em lote.",
@@ -1301,20 +1300,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/43159"
     },
     {
-      "id": 16564,
-      "task": "Funcionalidades de autorização de \"Membro\"",
-      "descricao": "Notamos que quando colocamos um usuário como membro de uma conta ele perde a funcionalidade de criar e atua...",
-      "category": "",
-      "priority": "low",
-      "status": "on hold",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-06-03T12:10:14Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado em 07/04/2026 entre Emerson e Gabriella mudamos para on hold aguardar cliente solicitar o tema",
-      "link": "https://redmine.platform.brobot.com.br/issues/16564"
-    },
-    {
       "id": 44624,
       "task": "GERAR INSIGHTS PÓS CONSULTA E ENVIAR VIA E-MAIL/WHATSAPP",
       "descricao": "",
@@ -1327,20 +1312,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@Roberta bom dia, Informo que o projeto de desenvolvimento foi relizado, o tema será estimado pelos desenvolvedores e posteriormente planejado para desenvolvimento em uma sprint",
       "link": "https://redmine.platform.brobot.com.br/issues/44624"
-    },
-    {
-      "id": 30232,
-      "task": "Conta mestre Cervejaria Imperial",
-      "descricao": "O cliente Cervejaria Imperial (ID: 1807, 1574, 1573, 1572, 1568, 1513, 1512, 1511, 1510, 1509, 1416, 1414,...",
-      "category": "anterior",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-28T14:45:00Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
-      "link": "https://redmine.platform.brobot.com.br/issues/30232"
     },
     {
       "id": 60381,
