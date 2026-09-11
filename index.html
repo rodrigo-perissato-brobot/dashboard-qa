@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-11T12:56:17.843Z",
+  "gerado_em": "2026-09-11T13:26:15.639Z",
   "total": 10,
   "rows": [
     {
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
     },
     {
-      "id": 81372,
-      "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
-      "descricao": "Realizei uma análise e identifiquei que, atualmente, a spider autos_detran_es_taxas está retornando apenas...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-10T17:56:36Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@rodrigo a pipeline de staging estava com problema, nao havia atualizado o codigo, poderia retestar agora por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/81372"
-    },
-    {
       "id": 81061,
       "task": "autos_detran_rr_taxas > Desenvolvimento",
       "descricao": "@jose-ricardo @gabriella atualmente possuímos a spider do Detran RR capturando multas e taxas, porém não temos uma spider para taxas.",
@@ -605,14 +592,41 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "autos_der_sp alterado, @rodrigo, poderia testar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/82860"
+    },
+    {
+      "id": 82390,
+      "task": "KOTHE - SNE - ID: 2328 - Divergência no valor pago do AIT J002523632",
+      "descricao": "Identificada divergência no valor de pagamento apresentado na grid para o AIT J002523632, vinculado à placa TQP9E53.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-11T13:10:48Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82390"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-11T12:57:26.651Z",
+  "gerado_em": "2026-09-11T13:27:21.557Z",
   "sprint_id": 67,
-  "total": 54,
+  "total": 55,
   "rows": [
+    {
+      "id": 81372,
+      "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
+      "descricao": "Realizei uma análise e identifiquei que, atualmente, a spider autos_detran_es_taxas está retornando apenas...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-11T12:58:19Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel com relação ao tratamento efetuado na spider, está Aprovado. @felipe porém identificado um problema na gravação das parcelas. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evi",
+      "link": "https://redmine.platform.brobot.com.br/issues/81372"
+    },
     {
       "id": 75360,
       "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
