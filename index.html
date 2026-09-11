@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-11T14:26:35.124Z",
-  "total": 8,
+  "gerado_em": "2026-09-11T14:56:19.990Z",
+  "total": 7,
   "rows": [
     {
       "id": 57089,
@@ -542,32 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
     },
     {
-      "id": 81061,
-      "task": "autos_detran_rr_taxas > Desenvolvimento",
-      "descricao": "@jose-ricardo @gabriella atualmente possuímos a spider do Detran RR capturando multas e taxas, porém não temos uma spider para taxas.",
-      "category": "Portal - Mudança de layout",
-      "priority": "low",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-10T18:39:58Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@rodrigo as mudanças enviadas ontem, não foram atualizadas porque a pipeline de staging estava quebrada. Poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/81061"
-    },
-    {
-      "id": 82860,
-      "task": "Remover hrequests e restaurar o fluxo de login/redirects da versão anterior  Descrição",
-      "descricao": "Na sexta-feira (05/09/2026) foi repassada uma lista de spiders que passaram a utilizar a biblioteca hreques...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-10T20:00:51Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "autos_der_sp alterado, @rodrigo, poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/82860"
-    },
-    {
       "id": 82390,
       "task": "KOTHE - SNE - ID: 2328 - Divergência no valor pago do AIT J002523632",
       "descricao": "Identificada divergência no valor de pagamento apresentado na grid para o AIT J002523632, vinculado à placa TQP9E53.",
@@ -579,14 +553,55 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/82390"
+    },
+    {
+      "id": 82863,
+      "task": "autos_sne_denatran_indicacao_condutor - Não está sendo utilizada a credencial preferencial se for govbr apenas se for SNE",
+      "descricao": "Essa tratativa foi realizada na tarefa 77125, porém, isso foi feito apenas se a credencial for SNE, se a cr...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-11T14:45:00Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82863"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-11T14:27:41.699Z",
+  "gerado_em": "2026-09-11T14:57:42.510Z",
   "sprint_id": 67,
   "total": 57,
   "rows": [
+    {
+      "id": 81061,
+      "task": "autos_detran_rr_taxas > Desenvolvimento",
+      "descricao": "@jose-ricardo @gabriella atualmente possuímos a spider do Detran RR capturando multas e taxas, porém não temos uma spider para taxas.",
+      "category": "Portal - Mudança de layout",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-11T14:44:49Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_detran_rr_taxas e não processou nenhuma consulta. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Nenhuma das consultas foi",
+      "link": "https://redmine.platform.brobot.com.br/issues/81061"
+    },
+    {
+      "id": 82860,
+      "task": "Remover hrequests e restaurar o fluxo de login/redirects da versão anterior  Descrição",
+      "descricao": "Na sexta-feira (05/09/2026) foi repassada uma lista de spiders que passaram a utilizar a biblioteca hreques...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-11T14:39:54Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82860"
+    },
     {
       "id": 78623,
       "task": "autos_sne_denatran_indicacao_condutor - Spider não consegue indicar quando o veículo é de um CPF",
@@ -614,34 +629,6 @@
       "comentario_autor": "Roberta Espacachere",
       "comentario_trecho": "Apenas para registro, segue:",
       "link": "https://redmine.platform.brobot.com.br/issues/78419"
-    },
-    {
-      "id": 82886,
-      "task": "autos_indicacao_sne - Alteração do login gov.br",
-      "descricao": "Alterar a spider do SNE Indicação para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-11T14:03:16Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82886"
-    },
-    {
-      "id": 82855,
-      "task": "autos_detran_rs - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran RS para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-11T13:46:36Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82855"
     },
     {
       "id": 81372,
