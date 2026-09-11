@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-11T13:57:05.166Z",
-  "total": 9,
+  "gerado_em": "2026-09-11T14:26:35.124Z",
+  "total": 8,
   "rows": [
     {
       "id": 57089,
@@ -514,19 +514,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
-    },
-    {
-      "id": 82886,
-      "task": "autos_indicacao_sne - Alteração do login gov.br",
-      "descricao": "Alterar a spider do SNE Indicação para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-10T15:26:58Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Essa spider estava utilizando o login antigo do Gov.br, que não estava mais funcionando. Realizei a alteração para utilizar o novo fluxo de login do Gov.br. @Gustavo Souza, poderia testar novamente, p",
-      "link": "https://redmine.platform.brobot.com.br/issues/82886"
     },
     {
       "id": 81297,
@@ -596,10 +583,52 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-11T13:58:22.820Z",
+  "gerado_em": "2026-09-11T14:27:41.699Z",
   "sprint_id": 67,
-  "total": 54,
+  "total": 57,
   "rows": [
+    {
+      "id": 78623,
+      "task": "autos_sne_denatran_indicacao_condutor - Spider não consegue indicar quando o veículo é de um CPF",
+      "descricao": "Uma infração do cliente foi indicada porém, o parâmetro \"cnpj\" da spider foi com o CPF que está vinculado a...",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-11T14:20:04Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/78623"
+    },
+    {
+      "id": 78419,
+      "task": "NF-e emitida pela Sefaz não capturada na rodada das 15h - EUROVALE - GRUPO BETIOLO - ID: 2390",
+      "descricao": "Identificamos uma NF-e que já consta como emitida/autorizada no portal da Sefaz desde 11/08/2026 às 14:35h,...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-11T14:12:08Z",
+      "comentario_autor": "Roberta Espacachere",
+      "comentario_trecho": "Apenas para registro, segue:",
+      "link": "https://redmine.platform.brobot.com.br/issues/78419"
+    },
+    {
+      "id": 82886,
+      "task": "autos_indicacao_sne - Alteração do login gov.br",
+      "descricao": "Alterar a spider do SNE Indicação para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-11T14:03:16Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82886"
+    },
     {
       "id": 82855,
       "task": "autos_detran_rs - Alteração do login gov.br",
@@ -627,6 +656,20 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel com relação ao tratamento efetuado na spider, está Aprovado. @felipe porém identificado um problema na gravação das parcelas. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evi",
       "link": "https://redmine.platform.brobot.com.br/issues/81372"
+    },
+    {
+      "id": 75360,
+      "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
+      "descricao": "Alterar a regra de cálculo do card \"Média por Multa\" presente no dashboard do produto Caçamultas Embarcador...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-10T20:13:45Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo correção aplicada. O card Média por Multa passa a considerar apenas as multas que possuem valor no campo selecionado no filtro de valor (Valor estimado, Valor da multa ou Valor do boleto). As",
+      "link": "https://redmine.platform.brobot.com.br/issues/75360"
     },
     {
       "id": 82883,
@@ -979,20 +1022,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/78408"
     },
     {
-      "id": 78623,
-      "task": "autos_sne_denatran_indicacao_condutor - Spider não consegue indicar quando o veículo é de um CPF",
-      "descricao": "Uma infração do cliente foi indicada porém, o parâmetro \"cnpj\" da spider foi com o CPF que está vinculado a...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-27T13:18:52Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "No momento, não foi possível realizar os testes, pois os cenários dependem de consultas no SNE e o portal encontra-se instável, fazendo com que as consultas retornem erro. Assim que o SNE estiver está",
-      "link": "https://redmine.platform.brobot.com.br/issues/78623"
-    },
-    {
       "id": 79535,
       "task": "Edição de serviços e produtos de veículos em lote pela área administrativa",
       "descricao": "Permitir que o time de suporte altere os serviços (robôs) e os produtos de vários veículos de uma conta de...",
@@ -1033,20 +1062,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel Aprovado parcialmente Tentei encontrar mais cenários de clientes com acesso via certificado e com multas e taxas porém não encontrei nenhum. O cenário anterior realmente está inativo e o teste",
       "link": "https://redmine.platform.brobot.com.br/issues/75985"
-    },
-    {
-      "id": 78419,
-      "task": "NF-e emitida pela Sefaz não capturada na rodada das 15h - EUROVALE - GRUPO BETIOLO - ID: 2390",
-      "descricao": "Identificamos uma NF-e que já consta como emitida/autorizada no portal da Sefaz desde 11/08/2026 às 14:35h,...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-24T18:06:20Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan realmente é melhor diretamente em produção, devido que se configurarmos o mesmo certificado do cliente em staging, para download de NFs, geraremos erros de consumo indevido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/78419"
     },
     {
       "id": 46135,
@@ -1257,6 +1272,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "User story criada e priorizada subatividades para a sprint 29 conforme alinhado com @rolf e @rodrigo",
       "link": "https://redmine.platform.brobot.com.br/issues/75755"
+    },
+    {
+      "id": 75193,
+      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
+      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-10T14:40:29Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Testei tentando processar as consultas nas spiders Detran SC e DNIT, com a placa QIT5D38 , porém somente o Detran SC passou, o DNIT continua com erro e existe a credencial gov.br cadastrada como",
+      "link": "https://redmine.platform.brobot.com.br/issues/75193"
     },
     {
       "id": 75084,
