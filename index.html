@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-11T13:26:15.639Z",
-  "total": 10,
+  "gerado_em": "2026-09-11T13:57:05.166Z",
+  "total": 9,
   "rows": [
     {
       "id": 57089,
@@ -527,19 +527,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Essa spider estava utilizando o login antigo do Gov.br, que não estava mais funcionando. Realizei a alteração para utilizar o novo fluxo de login do Gov.br. @Gustavo Souza, poderia testar novamente, p",
       "link": "https://redmine.platform.brobot.com.br/issues/82886"
-    },
-    {
-      "id": 82855,
-      "task": "autos_detran_rs - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran RS para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-10T16:57:22Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Spider alterada e o hrequest removido. @gustavo e @rodrigo, poderiam testar, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/82855"
     },
     {
       "id": 81297,
@@ -609,10 +596,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-11T13:27:21.557Z",
+  "gerado_em": "2026-09-11T13:58:22.820Z",
   "sprint_id": 67,
-  "total": 55,
+  "total": 54,
   "rows": [
+    {
+      "id": 82855,
+      "task": "autos_detran_rs - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran RS para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-11T13:46:36Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82855"
+    },
     {
       "id": 81372,
       "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
@@ -626,20 +627,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel com relação ao tratamento efetuado na spider, está Aprovado. @felipe porém identificado um problema na gravação das parcelas. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evi",
       "link": "https://redmine.platform.brobot.com.br/issues/81372"
-    },
-    {
-      "id": 75360,
-      "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
-      "descricao": "Alterar a regra de cálculo do card \"Média por Multa\" presente no dashboard do produto Caçamultas Embarcador...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-10T20:13:45Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo correção aplicada. O card Média por Multa passa a considerar apenas as multas que possuem valor no campo selecionado no filtro de valor (Valor estimado, Valor da multa ou Valor do boleto). As",
-      "link": "https://redmine.platform.brobot.com.br/issues/75360"
     },
     {
       "id": 82883,
@@ -1270,20 +1257,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "User story criada e priorizada subatividades para a sprint 29 conforme alinhado com @rolf e @rodrigo",
       "link": "https://redmine.platform.brobot.com.br/issues/75755"
-    },
-    {
-      "id": 75193,
-      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
-      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-10T14:40:29Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf Testei tentando processar as consultas nas spiders Detran SC e DNIT, com a placa QIT5D38 , porém somente o Detran SC passou, o DNIT continua com erro e existe a credencial gov.br cadastrada como",
-      "link": "https://redmine.platform.brobot.com.br/issues/75193"
     },
     {
       "id": 75084,
