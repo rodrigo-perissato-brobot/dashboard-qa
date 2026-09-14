@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-14T17:56:31.781Z",
-  "total": 14,
+  "gerado_em": "2026-09-14T18:26:19.774Z",
+  "total": 12,
   "rows": [
     {
       "id": 57089,
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
-      "id": 81548,
-      "task": "autos_detran_rn - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_rn",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-14T11:20:49Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo consumo atualizado.",
-      "link": "https://redmine.platform.brobot.com.br/issues/81548"
-    },
-    {
       "id": 79466,
       "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
       "descricao": "A tela /admin/veiculos do front novo foi entregue incompleta: tem 3 dos 9 filtros, 7 das 15 colunas e nenhu...",
@@ -605,19 +592,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Realizei as alterações necessárias para corrigir o erro. @rodrigo, poderia testar, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/83136"
-    },
-    {
-      "id": 83156,
-      "task": "autos_detran_sp - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_sp (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-14T13:33:10Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Esses erros eram causados pelo login do Gov.br. Alterei a spider para utilizar o novo método de login, e agora está funcionando conforme o esperado. @Rodrigo, poderia testar, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/83156"
     },
     {
       "id": 83004,
@@ -661,10 +635,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-14T17:57:38.600Z",
+  "gerado_em": "2026-09-14T18:27:30.091Z",
   "sprint_id": 68,
-  "total": 58,
+  "total": 60,
   "rows": [
+    {
+      "id": 81548,
+      "task": "autos_detran_rn - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_rn",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-14T18:20:01Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan @thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/81548"
+    },
+    {
+      "id": 83156,
+      "task": "autos_detran_sp - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_sp (principal: PAGE_MALFUNCTION, 100%)",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-14T18:03:09Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@thiago, Segue Ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Identifiquei que no portal do DETRAN SP existe a informação de valor, porém na captura da Spider, o camp",
+      "link": "https://redmine.platform.brobot.com.br/issues/83156"
+    },
     {
       "id": 75193,
       "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
