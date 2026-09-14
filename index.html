@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-14T13:56:15.010Z",
-  "total": 13,
+  "gerado_em": "2026-09-14T14:27:33.460Z",
+  "total": 14,
   "rows": [
     {
       "id": 57089,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83146"
     },
     {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-11T19:18:34Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo itens 84, 85, 86, 87, 88, 89, 90, 91, 92, 93 em staging, por gentileza seguir com testes branch de controle: itens/84-85-86-87-88-89-90-91-92-93",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
       "id": 82883,
       "task": "autos_detran_sc - Alteração do login gov.br",
       "descricao": "Alterar a spider do Detran SC para a nova solução do login gov.br",
@@ -636,7 +623,7 @@
       "id": 83156,
       "task": "autos_detran_sp - PAGE_MALFUNCTION",
       "descricao": "Spider autos_detran_sp (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
+      "category": "",
       "priority": "low",
       "status": "staging",
       "alocado_a": "sem_dono",
@@ -644,11 +631,37 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Esses erros eram causados pelo login do Gov.br. Alterei a spider para utilizar o novo método de login, e agora está funcionando conforme o esperado. @Rodrigo, poderia testar, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/83156"
+    },
+    {
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-14T13:58:55Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Reativada a spider, foi necessário realizar alguns ajustes, como adicionar proxy residencial do DATA IMPULSE para funcionamento, adicionar um display virtual, pois o portal esta com um detecção de aut",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
+    },
+    {
+      "id": 83113,
+      "task": "autos_sefaz_ms_ipva - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_sefaz_ms_ipva (principal: PAGE_MALFUNCTION, 97.5%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-14T14:11:36Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Esses erros eram causados pelo login do Gov.br. Alterei a spider para utilizar o novo método de login, e agora está funcionando conforme o esperado. @Rodrigo, poderia testar, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/83113"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-14T13:56:19.197Z",
+  "gerado_em": "2026-09-14T14:27:39.549Z",
   "sprint_id": 67,
   "total": 0,
   "rows": []
