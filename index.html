@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-14T18:56:23.952Z",
+  "gerado_em": "2026-09-14T19:26:33.145Z",
   "total": 12,
   "rows": [
     {
@@ -522,7 +522,7 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "gustavo",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-09-10T17:50:37Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo subi para staging frontend antigo e novo e backend e maestro. Conta migrada apenas a Conta Default (ID 1).",
@@ -553,19 +553,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Os erros de PAGE_MALFUNCTION estavam relacionados ao login do Gov.br, mas isso já foi corrigido em outra atividade. Em relação ao UNHANDLED_SPIDER_EXCEPTION, fiz uma alteração na spider para corrigir ",
       "link": "https://redmine.platform.brobot.com.br/issues/83146"
-    },
-    {
-      "id": 76649,
-      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
-      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-11T21:27:01Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo Vamos desconsiderar estes erros por que foram causado pelo login com gov.br. Foi corrigido o login. Pode testar novamente, por favor?",
-      "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
       "id": 79466,
@@ -631,14 +618,7 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Identifiquei que o portal utiliza duas requests para consultar os débitos. A spider já utilizava a seguinte URL para obter os dados: /api/x_mdpdd_deb_restr/v1/consulta_debitos_restricoes/veiculos/{ren",
       "link": "https://redmine.platform.brobot.com.br/issues/83156"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-14T18:57:39.332Z",
-  "sprint_id": 68,
-  "total": 60,
-  "rows": [
+    },
     {
       "id": 80487,
       "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
@@ -646,12 +626,32 @@
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "immediate",
       "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-14T18:44:53Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Processei algumas consultas na spider somente os casos sem multas retornaram sucesso, os casos com multas estão com erro, porém o problema é no portal. Ambiente: Staging | Conta: Te",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-14T19:18:22Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@rodrigo, vi que, em alguns boletos, o portal retorna esse erro, enquanto em outros permite realizar o download normalmente. Alterei a spider para retornar file_unavailable caso esse erro ocorra duran",
       "link": "https://redmine.platform.brobot.com.br/issues/80487"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-09-14T19:27:41.761Z",
+  "sprint_id": 68,
+  "total": 60,
+  "rows": [
+    {
+      "id": 76649,
+      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
+      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-14T19:16:56Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@delvin de sua parte está Aprovado. Processei mesma consulta da Unilever (CNPJ 61.068.276/0037-07) e processou com sucesso , gravou os AITs e os anexos. Ambiente: Staging | Conta: Testes Funcionais | ",
+      "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
       "id": 81548,
