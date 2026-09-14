@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-14T18:26:19.774Z",
+  "gerado_em": "2026-09-14T18:56:23.952Z",
   "total": 12,
   "rows": [
     {
@@ -522,7 +522,7 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-09-10T17:50:37Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo subi para staging frontend antigo e novo e backend e maestro. Conta migrada apenas a Conta Default (ID 1).",
@@ -620,25 +620,39 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83113"
     },
     {
+      "id": 83156,
+      "task": "autos_detran_sp - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_sp (principal: PAGE_MALFUNCTION, 100%)",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-14T18:50:03Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Identifiquei que o portal utiliza duas requests para consultar os débitos. A spider já utilizava a seguinte URL para obter os dados: /api/x_mdpdd_deb_restr/v1/consulta_debitos_restricoes/veiculos/{ren",
+      "link": "https://redmine.platform.brobot.com.br/issues/83156"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-09-14T18:57:39.332Z",
+  "sprint_id": 68,
+  "total": 60,
+  "rows": [
+    {
       "id": 80487,
       "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
       "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "immediate",
-      "status": "to do",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-14T17:12:21Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo, poderia testar a spider, por gentileza? Se possível, teste também cenários em que existam várias multas no segundo link: Seria importante realizar vários testes para verificarmos se, mesmo c",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-14T18:44:53Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado. Processei algumas consultas na spider somente os casos sem multas retornaram sucesso, os casos com multas estão com erro, porém o problema é no portal. Ambiente: Staging | Conta: Te",
       "link": "https://redmine.platform.brobot.com.br/issues/80487"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-14T18:27:30.091Z",
-  "sprint_id": 68,
-  "total": 60,
-  "rows": [
+    },
     {
       "id": 81548,
       "task": "autos_detran_rn - SCRAPY_ERROR",
@@ -652,20 +666,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan @thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/81548"
-    },
-    {
-      "id": 83156,
-      "task": "autos_detran_sp - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_sp (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-14T18:03:09Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@thiago, Segue Ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Identifiquei que no portal do DETRAN SP existe a informação de valor, porém na captura da Spider, o camp",
-      "link": "https://redmine.platform.brobot.com.br/issues/83156"
     },
     {
       "id": 75193,
