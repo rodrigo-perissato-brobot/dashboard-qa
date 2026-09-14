@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-14T16:26:19.806Z",
+  "gerado_em": "2026-09-14T16:56:33.181Z",
   "total": 13,
   "rows": [
     {
@@ -648,10 +648,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-14T16:27:26.290Z",
+  "gerado_em": "2026-09-14T16:57:40.593Z",
   "sprint_id": 68,
   "total": 58,
   "rows": [
+    {
+      "id": 75193,
+      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
+      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-14T16:45:52Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo Correção aplicada. A consulta do DNIT passa a usar a credencial gov.br cadastrada na conta, sem precisar vincular a credencial ao veículo. Funciona também quando a empresa do veículo não tem ",
+      "link": "https://redmine.platform.brobot.com.br/issues/75193"
+    },
     {
       "id": 83145,
       "task": "BUG no exporte de relatório do Embarcador",
@@ -1351,20 +1365,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "User story criada e priorizada subatividades para a sprint 29 conforme alinhado com @rolf e @rodrigo",
       "link": "https://redmine.platform.brobot.com.br/issues/75755"
-    },
-    {
-      "id": 75193,
-      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
-      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-10T14:40:29Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf Testei tentando processar as consultas nas spiders Detran SC e DNIT, com a placa QIT5D38 , porém somente o Detran SC passou, o DNIT continua com erro e existe a credencial gov.br cadastrada como",
-      "link": "https://redmine.platform.brobot.com.br/issues/75193"
     },
     {
       "id": 75084,
