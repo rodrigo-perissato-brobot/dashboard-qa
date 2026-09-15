@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-15T18:27:00.989Z",
-  "total": 11,
+  "gerado_em": "2026-09-15T18:56:31.111Z",
+  "total": 12,
   "rows": [
     {
       "id": 57089,
@@ -607,25 +607,52 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83510"
     },
     {
+      "id": 83145,
+      "task": "BUG no exporte de relatório do Embarcador",
+      "descricao": "Quando filtrado mais de uma AIT no campo de busca do aplicativo do Embarcador o relatório está vindo vazio.",
+      "category": "Backend - Outros",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-15T18:33:31Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo @gustavo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83145"
+    },
+    {
+      "id": 83519,
+      "task": "autos_git_cidadao_pr - Ajuste de retorno",
+      "descricao": "Spider autos_git_cidadao_pr (principal: WRONG_CREDENTIALS, 99.1%)",
+      "category": "Credencial - Inválida ou bloqueada",
+      "priority": "high",
+      "status": "to do",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-15T18:48:30Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Ajustado retorno, @rodrigo poderia testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/83519"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-09-15T18:57:33.976Z",
+  "sprint_id": 68,
+  "total": 58,
+  "rows": [
+    {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
       "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-15T17:08:30Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo itens 94, 95, 96, 97, 98, 99, 100, 101, 102, 103 em staging, por gentileza seguir com testes branch itens/94-95-96-97-98-99-100-101-102-103",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-15T18:32:56Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "Item 94 - Aprovado Ao adicionar ou remover colunas das listagens o dropdown continua aberto corretamente Item 95 - Reprovado Deve ser possível selecionar mais de 1 serviço no filtro de \"Serviços\" na t",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-15T18:28:03.574Z",
-  "sprint_id": 68,
-  "total": 58,
-  "rows": [
+    },
     {
       "id": 83004,
       "task": "autos_sefaz_pr - Reativação da spider",
@@ -709,20 +736,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo Correção aplicada. A consulta do DNIT passa a usar a credencial gov.br cadastrada na conta, sem precisar vincular a credencial ao veículo. Funciona também quando a empresa do veículo não tem ",
       "link": "https://redmine.platform.brobot.com.br/issues/75193"
-    },
-    {
-      "id": 83145,
-      "task": "BUG no exporte de relatório do Embarcador",
-      "descricao": "Quando filtrado mais de uma AIT no campo de busca do aplicativo do Embarcador o relatório está vindo vazio.",
-      "category": "Backend - Outros",
-      "priority": "low",
-      "status": "planning: to analyze",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-14T15:41:02Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "@gabriella Por gentileza seguir com priorizacao.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83145"
     },
     {
       "id": 83075,
