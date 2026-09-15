@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-15T19:26:26.991Z",
-  "total": 12,
+  "gerado_em": "2026-09-15T19:58:10.555Z",
+  "total": 13,
   "rows": [
     {
       "id": 57089,
@@ -522,7 +522,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "gustavo",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-09-11T14:45:00Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido.",
@@ -631,14 +631,41 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@joathan, no relatório de usuários (admin/users/report) a planilha sai com as colunas CPF e Telefone, que não existem no cadastro de usuário — vêm sempre vazias. O QA apontou na 63612, item 88. É no g",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 82757,
+      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
+      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-15T19:43:12Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo Indicação de condutores — o que mudou nas telas Guia de navegação das mudanças de front da entrega 82757. Duas telas novas no painel administrativo, uma nova no painel do cliente e quatro tel",
+      "link": "https://redmine.platform.brobot.com.br/issues/82757"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-15T19:27:36.089Z",
+  "gerado_em": "2026-09-15T19:59:51.676Z",
   "sprint_id": 68,
-  "total": 58,
+  "total": 57,
   "rows": [
+    {
+      "id": 51186,
+      "task": "Gestão de Documentos de Veículos (CRLV)",
+      "descricao": "Implementar funcionalidade completa de upload, visualização, download e exportação de documentos CRLV (Cert...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-15T19:44:16Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "PRs de produção abertas (15/09) — conteúdo idêntico ao aprovado em staging, com um acréscimo pedido pelo Rolf: tooltip \"Como funciona o CRLV\" nos dois fronts (formulário, detalhe/painel e cabeçalho da",
+      "link": "https://redmine.platform.brobot.com.br/issues/51186"
+    },
     {
       "id": 83510,
       "task": "autos_detran_ce_taxas - UNHANDLED_SPIDER_EXCEPTION",
@@ -652,34 +679,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago spider Aprovado e @felipe identifiquei ajuste necessário no consumo . Processei as consultas na spider e todas as consultas foram processadas com sucesso. Ambiente: Staging | Conta: Testes Fun",
       "link": "https://redmine.platform.brobot.com.br/issues/83510"
-    },
-    {
-      "id": 51186,
-      "task": "Gestão de Documentos de Veículos (CRLV)",
-      "descricao": "Implementar funcionalidade completa de upload, visualização, download e exportação de documentos CRLV (Cert...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-15T19:01:17Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf, Aprovado Ambiente: Staging | Conta: Teste CRLV (ID 255) | Versão: New Realizei o teste de captura de CRLV para a placa TBF2F17. Consulta foi processada com sucesso e o CRLV foi disponibilizado ",
-      "link": "https://redmine.platform.brobot.com.br/issues/51186"
-    },
-    {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-15T18:18:48Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider autos_sefaz_pr_taxas e a maioria retornou erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Das 10 consultas pro",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
       "id": 71405,
