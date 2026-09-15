@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-15T12:26:53.685Z",
-  "total": 11,
+  "gerado_em": "2026-09-15T12:56:29.975Z",
+  "total": 13,
   "rows": [
     {
       "id": 57089,
@@ -618,13 +618,39 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@rodrigo, vi que, em alguns boletos, o portal retorna esse erro, enquanto em outros permite realizar o download normalmente. Alterei a spider para retornar file_unavailable caso esse erro ocorra duran",
       "link": "https://redmine.platform.brobot.com.br/issues/80487"
+    },
+    {
+      "id": 76649,
+      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
+      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-15T12:33:45Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76649"
+    },
+    {
+      "id": 83546,
+      "task": "brobot-condutores: ambiente de homologação (hml) separado da produção + simulação de resposta no painel",
+      "descricao": "Criar um ambiente de homologação do brobot-condutores separado do deploy atual (que hoje atende a produção...",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-15T12:44:20Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Ambiente de homologação no ar Branch: homolog (ArgoCD brobot-condutores-hml, namespace brobot-condutores-hml, cluster staging). Imagem atual b238280. | O quê | Onde | |---|---| | API | | | Swagger | |",
+      "link": "https://redmine.platform.brobot.com.br/issues/83546"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-15T12:28:11.562Z",
+  "gerado_em": "2026-09-15T12:57:38.950Z",
   "sprint_id": 68,
-  "total": 61,
+  "total": 60,
   "rows": [
     {
       "id": 83113,
@@ -639,20 +665,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Verifiquei que o portal passou por algumas mudanças. Uma delas foi a alteração do tipo de CAPTCHA: agora é utilizado um CAPTCHA por imagem, em vez do reCAPTCHA v2. Aparentemente, as URLs que a spider ",
       "link": "https://redmine.platform.brobot.com.br/issues/83113"
-    },
-    {
-      "id": 76649,
-      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
-      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-15T11:52:05Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@thiago Esta é a PR:",
-      "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
       "id": 63612,
