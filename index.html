@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-15T12:56:29.975Z",
+  "gerado_em": "2026-09-15T13:26:40.062Z",
   "total": 13,
   "rows": [
     {
@@ -496,7 +496,7 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-07-23T19:14:43Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
@@ -594,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
-      "id": 83156,
-      "task": "autos_detran_sp - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_sp (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-14T18:50:03Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Identifiquei que o portal utiliza duas requests para consultar os débitos. A spider já utilizava a seguinte URL para obter os dados: /api/x_mdpdd_deb_restr/v1/consulta_debitos_restricoes/veiculos/{ren",
-      "link": "https://redmine.platform.brobot.com.br/issues/83156"
-    },
-    {
       "id": 80487,
       "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
       "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
@@ -644,14 +631,41 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Ambiente de homologação no ar Branch: homolog (ArgoCD brobot-condutores-hml, namespace brobot-condutores-hml, cluster staging). Imagem atual b238280. | O quê | Onde | |---|---| | API | | | Swagger | |",
       "link": "https://redmine.platform.brobot.com.br/issues/83546"
+    },
+    {
+      "id": 83547,
+      "task": "maestro: URL do brobot-condutores por ambiente (staging → hml, produção inalterada)",
+      "descricao": "k8s/maestro/templates/configmap.yaml tem a URL do brobot-condutores fixa no domínio de staging, para todos os ambientes.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-15T13:09:09Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Em staging k8s/maestro/templates/configmap.yaml agora é condicional por appEnv: produção mantém a URL e a chave de hoje (render do helm idêntico), staging aponta para com a chave do ambiente de homolo",
+      "link": "https://redmine.platform.brobot.com.br/issues/83547"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-15T12:57:38.950Z",
+  "gerado_em": "2026-09-15T13:27:50.964Z",
   "sprint_id": 68,
-  "total": 60,
+  "total": 61,
   "rows": [
+    {
+      "id": 83156,
+      "task": "autos_detran_sp - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_sp (principal: PAGE_MALFUNCTION, 100%)",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-15T13:01:23Z",
+      "comentario_autor": "Jose Ricardo",
+      "comentario_trecho": "@Thiago Xavier, verifiquei o mapeamento do que você implementou está de acordo. O debitos-milt resolve o caso do value_cents null para débito de multa estadual (que era o cenário do teste do Gustavo).",
+      "link": "https://redmine.platform.brobot.com.br/issues/83156"
+    },
     {
       "id": 83113,
       "task": "autos_sefaz_ms_ipva - PAGE_MALFUNCTION",
