@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-15T17:56:28.827Z",
-  "total": 12,
+  "gerado_em": "2026-09-15T18:27:00.989Z",
+  "total": 11,
   "rows": [
     {
       "id": 57089,
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83136"
     },
     {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-14T13:58:55Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Reativada a spider, foi necessário realizar alguns ajustes, como adicionar proxy residencial do DATA IMPULSE para funcionamento, adicionar um display virtual, pois o portal esta com um detecção de aut",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
-    },
-    {
       "id": 80487,
       "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
       "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
@@ -635,10 +622,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-15T17:57:37.538Z",
+  "gerado_em": "2026-09-15T18:28:03.574Z",
   "sprint_id": 68,
-  "total": 57,
+  "total": 58,
   "rows": [
+    {
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-15T18:18:48Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider autos_sefaz_pr_taxas e a maioria retornou erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Das 10 consultas pro",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
+    },
     {
       "id": 71405,
       "task": "Criação de Orders no novo padrão para CNH e Toxicológico",
