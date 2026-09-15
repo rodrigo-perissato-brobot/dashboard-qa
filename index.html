@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-15T11:56:32.717Z",
+  "gerado_em": "2026-09-15T12:26:53.685Z",
   "total": 11,
   "rows": [
     {
@@ -622,10 +622,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-15T11:57:41.028Z",
+  "gerado_em": "2026-09-15T12:28:11.562Z",
   "sprint_id": 68,
   "total": 61,
   "rows": [
+    {
+      "id": 83113,
+      "task": "autos_sefaz_ms_ipva - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_sefaz_ms_ipva (principal: PAGE_MALFUNCTION, 97.5%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-15T12:22:01Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Verifiquei que o portal passou por algumas mudanças. Uma delas foi a alteração do tipo de CAPTCHA: agora é utilizado um CAPTCHA por imagem, em vez do reCAPTCHA v2. Aparentemente, as URLs que a spider ",
+      "link": "https://redmine.platform.brobot.com.br/issues/83113"
+    },
     {
       "id": 76649,
       "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
@@ -653,20 +667,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 92 - Em conversa com @gabriella identificamos que o melhor cenário é manter os cards refletindo o total de empresas, independentemente do filtro aplicado",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 83113,
-      "task": "autos_sefaz_ms_ipva - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_sefaz_ms_ipva (principal: PAGE_MALFUNCTION, 97.5%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-14T19:55:03Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Processei as consultas na spider autos_sefaz_ms_ipva e retornou apenas erros. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Todas as consultas fora",
-      "link": "https://redmine.platform.brobot.com.br/issues/83113"
     },
     {
       "id": 81548,
