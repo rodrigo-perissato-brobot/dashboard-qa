@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-15T16:26:28.368Z",
+  "gerado_em": "2026-09-15T16:56:59.464Z",
   "total": 11,
   "rows": [
     {
@@ -561,7 +561,7 @@
       "category": "Spider - Erro na lógica de extração",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-09-14T13:21:10Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Realizei as alterações necessárias para corrigir o erro. @rodrigo, poderia testar, por gentileza?",
@@ -574,7 +574,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-09-14T13:58:55Z",
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Reativada a spider, foi necessário realizar alguns ajustes, como adicionar proxy residencial do DATA IMPULSE para funcionamento, adicionar um display virtual, pois o portal esta com um detecção de aut",
@@ -622,10 +622,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-15T16:27:37.280Z",
+  "gerado_em": "2026-09-15T16:58:20.810Z",
   "sprint_id": 68,
   "total": 59,
   "rows": [
+    {
+      "id": 83156,
+      "task": "autos_detran_sp - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_sp (principal: PAGE_MALFUNCTION, 100%)",
+      "category": "",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-15T16:55:13Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83156"
+    },
     {
       "id": 76649,
       "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
@@ -653,20 +667,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@gabriella Ambiente: Staging | Conta: Conta Default | Versão: Classic Para dar prosseguimento aos testes da Feature é necessário que o BUG 83567 (Carregamento Infinito ao Impersonar Usuário Membro | S",
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
-    },
-    {
-      "id": 83156,
-      "task": "autos_detran_sp - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_sp (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-15T13:01:23Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "@Thiago Xavier, verifiquei o mapeamento do que você implementou está de acordo. O debitos-milt resolve o caso do value_cents null para débito de multa estadual (que era o cenário do teste do Gustavo).",
-      "link": "https://redmine.platform.brobot.com.br/issues/83156"
     },
     {
       "id": 83113,
