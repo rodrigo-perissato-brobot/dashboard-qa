@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-15T13:56:29.212Z",
-  "total": 13,
+  "gerado_em": "2026-09-15T14:26:32.429Z",
+  "total": 11,
   "rows": [
     {
       "id": 57089,
@@ -514,19 +514,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
-    },
-    {
-      "id": 81067,
-      "task": "Grupos de permissão: catálogo em três níveis, recorte de dado por grupo e fim da permissão individual",
-      "descricao": "Substituir a permissão individual por usuário por grupos de permissão, e separar o que hoje está misturado...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-10T17:50:37Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gustavo subi para staging frontend antigo e novo e backend e maestro. Conta migrada apenas a Conta Default (ID 1).",
-      "link": "https://redmine.platform.brobot.com.br/issues/81067"
     },
     {
       "id": 82863,
@@ -607,32 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/80487"
     },
     {
-      "id": 76649,
-      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
-      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-15T12:33:45Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76649"
-    },
-    {
-      "id": 83546,
-      "task": "brobot-condutores: ambiente de homologação (hml) separado da produção + simulação de resposta no painel",
-      "descricao": "Criar um ambiente de homologação do brobot-condutores separado do deploy atual (que hoje atende a produção...",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-15T12:44:20Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Ambiente de homologação no ar Branch: homolog (ArgoCD brobot-condutores-hml, namespace brobot-condutores-hml, cluster staging). Imagem atual b238280. | O quê | Onde | |---|---| | API | | | Swagger | |",
-      "link": "https://redmine.platform.brobot.com.br/issues/83546"
-    },
-    {
       "id": 83547,
       "task": "maestro: URL do brobot-condutores por ambiente (staging → hml, produção inalterada)",
       "descricao": "k8s/maestro/templates/configmap.yaml tem a URL do brobot-condutores fixa no domínio de staging, para todos os ambientes.",
@@ -644,41 +605,54 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Em staging k8s/maestro/templates/configmap.yaml agora é condicional por appEnv: produção mantém a URL e a chave de hoje (render do helm idêntico), staging aponta para com a chave do ambiente de homolo",
       "link": "https://redmine.platform.brobot.com.br/issues/83547"
+    },
+    {
+      "id": 83510,
+      "task": "autos_detran_ce_taxas - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "Spider autos_detran_ce (principal: UNHANDLED_SPIDER_EXCEPTION, 71.43%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-15T14:16:04Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Foram realizadas as alterações necessárias para corrigir a spider. @rodrigo, poderia testar a spider, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/83510"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-15T13:57:51.461Z",
+  "gerado_em": "2026-09-15T14:27:42.179Z",
   "sprint_id": 68,
-  "total": 57,
+  "total": 59,
   "rows": [
     {
-      "id": 82883,
-      "task": "autos_detran_sc - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran SC para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "awaiting deploy",
+      "id": 76649,
+      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
+      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-15T13:52:46Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "Atualizado em produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82883"
+      "data_comentario": "2026-09-15T14:12:20Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Spider atualizada em produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
-      "id": 81548,
-      "task": "autos_detran_rn - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_rn",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-15T13:49:30Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "Atualizado em produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/81548"
+      "id": 81067,
+      "task": "Grupos de permissão: catálogo em três níveis, recorte de dado por grupo e fim da permissão individual",
+      "descricao": "Substituir a permissão individual por usuário por grupos de permissão, e separar o que hoje está misturado...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-15T14:00:55Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@gabriella Ambiente: Staging | Conta: Conta Default | Versão: Classic Para dar prosseguimento aos testes da Feature é necessário que o BUG 83567 (Carregamento Infinito ao Impersonar Usuário Membro | S",
+      "link": "https://redmine.platform.brobot.com.br/issues/81067"
     },
     {
       "id": 83156,
@@ -833,20 +807,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@renata @Roberta @thais @maria.rozolem @leonardo.paganotti @julya.tochio @felipe-godoy @gustavo-souza bom dia, Conforme alinhado na planning realizada em 10/09/2026 com os participantes @Rodrigo Peris",
       "link": "https://redmine.platform.brobot.com.br/issues/82561"
-    },
-    {
-      "id": 78623,
-      "task": "autos_sne_denatran_indicacao_condutor - Spider não consegue indicar quando o veículo é de um CPF",
-      "descricao": "Uma infração do cliente foi indicada porém, o parâmetro \"cnpj\" da spider foi com o CPF que está vinculado a...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-11T14:20:04Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/78623"
     },
     {
       "id": 75360,
@@ -1199,6 +1159,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/46135"
     },
     {
+      "id": 76680,
+      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
+      "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
+      "category": "Produtos - Customização fora do padrão",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-20T16:08:28Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella agora com as permissões, pude rodar os scripts de input dos dados em staging para a conta de demonstração (id 265). Poderia verificar se está tudo certo?",
+      "link": "https://redmine.platform.brobot.com.br/issues/76680"
+    },
+    {
       "id": 78406,
       "task": "Triplicidade de consultas nas spiders autos_detran_rs_taxas e autos_sefaz_rs_taxas",
       "descricao": "As consultas das spiders autos_detran_rs_taxas e autos_sefaz_rs_taxas estão sendo realizadas de forma tripl...",
@@ -1227,6 +1201,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/78550"
     },
     {
+      "id": 77600,
+      "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
+      "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
+      "category": "Spider - Outros",
+      "priority": "immediate",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-11T19:49:33Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "No momento não temos um cenário definido para realizar a validação desse novo ajuste. Vou aguardar o surgimento de um novo cenário para que eu possa prosseguir com os testes.",
+      "link": "https://redmine.platform.brobot.com.br/issues/77600"
+    },
+    {
       "id": 69272,
       "task": "Criação de serviço próprio para resolução do cookie TSPD no login Gov",
       "descricao": "Desenvolver um serviço interno responsável pela resolução e gerenciamento do cookie TSPD utilizado no fluxo de autenticação via Gov.",
@@ -1239,6 +1227,20 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "Foi substituido o hrequest no login com gov. Com isso, esta task perde sua funcionalidade",
       "link": "https://redmine.platform.brobot.com.br/issues/69272"
+    },
+    {
+      "id": 76717,
+      "task": "DF-e não captura NF-es disponíveis na SEFAZ mesmo com certificado válido e sem consumo indevido | Unico - Viasul (ID: 674)",
+      "descricao": "Foi identificado que três NF-es disponíveis na SEFAZ não foram capturadas pela plataforma para o cliente VIA SUL.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-31T19:28:30Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo a Confirmação da Operação foi executada e as 3 notas serão disponibilizadas em breve.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76717"
     },
     {
       "id": 43150,
