@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-16T18:55:56.893Z",
-  "total": 13,
+  "gerado_em": "2026-09-16T19:26:03.371Z",
+  "total": 12,
   "rows": [
     {
       "id": 57089,
@@ -607,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82396"
     },
     {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-15T19:55:35Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ajustado a resolução do CAPTCHA. @rodrigo, poderia testar novamente por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
-    },
-    {
       "id": 83020,
       "task": "Consultas do Embarcador estão com uma volumetria muito abaixo de processadas com sucesso",
       "descricao": "Verificando as consultas desde o fim de semana as consultas estão com uma volumetria de sucesso bem abaixo do que é esperado.",
@@ -648,10 +635,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-16T18:56:51.574Z",
+  "gerado_em": "2026-09-16T19:27:05.232Z",
   "sprint_id": 68,
-  "total": 59,
+  "total": 60,
   "rows": [
+    {
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-16T19:21:38Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e ainda estão ocorrendo os mesmos erros de captcha. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: As",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
+    },
     {
       "id": 43063,
       "task": "Novas Funcionalidades Cronotacógrafo",
