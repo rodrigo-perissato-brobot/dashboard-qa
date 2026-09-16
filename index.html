@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-16T17:56:12.492Z",
-  "total": 14,
+  "gerado_em": "2026-09-16T18:26:02.709Z",
+  "total": 13,
   "rows": [
     {
       "id": 57089,
@@ -542,32 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83146"
     },
     {
-      "id": 79466,
-      "task": "Tela Admin › Veículos: completar a tela para paridade com o front antigo (filtros, colunas e ações)",
-      "descricao": "A tela /admin/veiculos do front novo foi entregue incompleta: tem 3 dos 9 filtros, 7 das 15 colunas e nenhu...",
-      "category": "Frontend - Novo frontend",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-14T12:49:09Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo essa task não tem backend. @gabriella só subir o frontend novo.",
-      "link": "https://redmine.platform.brobot.com.br/issues/79466"
-    },
-    {
-      "id": 83136,
-      "task": "autos_sefaz_ce - XHR_ERROR",
-      "descricao": "Spider autos_sefaz_ce (principal: XHR_ERROR, 96.49%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-14T13:21:10Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Realizei as alterações necessárias para corrigir o erro. @rodrigo, poderia testar, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/83136"
-    },
-    {
       "id": 80487,
       "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
       "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
@@ -613,7 +587,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-09-15T19:43:12Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo Indicação de condutores — o que mudou nas telas Guia de navegação das mudanças de front da entrega 82757. Duas telas novas no painel administrativo, uma nova no painel do cliente e quatro tel",
@@ -657,14 +631,41 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Fiz o ajuste do login no autos_embarcador_der_sp. Pode fazer um teste em staging por favor? O autos_dnit também deve estar com login funcionando. Pode fazer nele também",
       "link": "https://redmine.platform.brobot.com.br/issues/83020"
+    },
+    {
+      "id": 82617,
+      "task": "Adicionar filtro \"Excluídos\" no status do veículo dos relatórios ",
+      "descricao": "Hoje, quando um veículo é excluído da conta, os registros históricos dele continuam existindo e continuam c...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-16T17:57:01Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo @gustavo atualizado em staging. Platform, maestro e os dois frontends.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82617"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-16T17:57:17.962Z",
+  "gerado_em": "2026-09-16T18:26:58.559Z",
   "sprint_id": 68,
   "total": 59,
   "rows": [
+    {
+      "id": 83136,
+      "task": "autos_sefaz_ce - XHR_ERROR",
+      "descricao": "Spider autos_sefaz_ce (principal: XHR_ERROR, 96.49%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-16T18:02:16Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83136"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
@@ -888,20 +889,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo correção aplicada. O card Média por Multa passa a considerar apenas as multas que possuem valor no campo selecionado no filtro de valor (Valor estimado, Valor da multa ou Valor do boleto). As",
       "link": "https://redmine.platform.brobot.com.br/issues/75360"
-    },
-    {
-      "id": 82617,
-      "task": "Adicionar filtro \"Excluídos\" no status do veículo dos relatórios ",
-      "descricao": "Hoje, quando um veículo é excluído da conta, os registros históricos dele continuam existindo e continuam c...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-10T18:34:36Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 10/09/2026 com os participantes @rodrigo @gabriella @felipe @miguel @thiago @delvin @gustavo foi alinhado que seguiremos com implementação na sprint 38 com a",
-      "link": "https://redmine.platform.brobot.com.br/issues/82617"
     },
     {
       "id": 82868,
