@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-17T17:57:06.504Z",
+  "gerado_em": "2026-09-17T18:26:21.577Z",
   "total": 11,
   "rows": [
     {
@@ -600,7 +600,7 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-09-17T14:30:10Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
@@ -613,7 +613,7 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-09-17T16:00:21Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging.",
@@ -622,10 +622,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-17T17:59:14.552Z",
+  "gerado_em": "2026-09-17T18:27:29.626Z",
   "sprint_id": 68,
-  "total": 57,
+  "total": 62,
   "rows": [
+    {
+      "id": 83921,
+      "task": "Links dos boletos não são apresentados no relatório de Piso Mínimo de Frete em geração com grande volume",
+      "descricao": "Ao gerar o relatório de Piso Mínimo de Frete com grande volume de registros, a coluna contendo os links dos boletos não é apresentada.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-17T18:26:25Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan Reprovado. Testei no New, na conta Testes Funcionais, selecionando todos os registros de AITs iniciados em FELTF (piso mínimo) — a extração foi estranhamente rápida e a coluna \"Link do boleto",
+      "link": "https://redmine.platform.brobot.com.br/issues/83921"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
@@ -639,6 +653,20 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 100 - Reprovado O Filtro de período do Dashboard do DFe sumiu Item 101 - Reprovado Sumiram os filtros de ordenação das colunas que não são datas. Item 102 - Aprovado O filtro de ordenação geral f",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 81067,
+      "task": "Grupos de permissão: catálogo em três níveis, recorte de dado por grupo e fim da permissão individual",
+      "descricao": "Substituir a permissão individual por usuário por grupos de permissão, e separar o que hoje está misturado...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-17T16:56:16Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan, Seguem Ajustes Ambiente: Staging | Conta: Conta Default | Versão: Classic Nos testes realizados, foram encontrados 2 pontos que necessitam de ajuste: 1. Impersonando um usuário que está num ",
+      "link": "https://redmine.platform.brobot.com.br/issues/81067"
     },
     {
       "id": 83004,
@@ -851,6 +879,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82390"
     },
     {
+      "id": 81372,
+      "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
+      "descricao": "Realizei uma análise e identifiquei que, atualmente, a spider autos_detran_es_taxas está retornando apenas...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-11T16:43:59Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Finalizada a tarefa 81374 e realizada PR.",
+      "link": "https://redmine.platform.brobot.com.br/issues/81372"
+    },
+    {
       "id": 82758,
       "task": "autos_detran_ba - Alteração do login gov.br",
       "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
@@ -1031,6 +1073,34 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Novo relatório",
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
+    },
+    {
+      "id": 81814,
+      "task": "Histórico de Ações | Ação específica com valor anterior e novo por campo, filtros e exportação do relatório",
+      "descricao": "Tornar o Histórico de Ações uma evidência utilizável: cada registro passa a dizer qual ação foi executada e...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-04T18:46:44Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado na planning realizada em 04/09/2026 com os participantes @rodrigo @gabriella @felipe @joathan @thiago @delvin @gustavo foi alinhado que seguiremos com implementação na sprint 37 com ",
+      "link": "https://redmine.platform.brobot.com.br/issues/81814"
+    },
+    {
+      "id": 81578,
+      "task": "Motoristas | Exclusão de motoristas com preservação dos registros vinculados (LGPD)",
+      "descricao": "O CRUD de motoristas está incompleto: hoje o cliente cadastra, edita e importa motoristas, mas não consegue...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-04T18:44:57Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado na planning realizada em 04/09/2026 com os participantes @rodrigo @gabriella @felipe @joathan @thiago @delvin @gustavo foi alinhado que seguiremos com implementação na sprint 37 com ",
+      "link": "https://redmine.platform.brobot.com.br/issues/81578"
     },
     {
       "id": 74637,
