@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-17T14:26:15.205Z",
+  "gerado_em": "2026-09-17T14:56:04.206Z",
   "total": 11,
   "rows": [
     {
@@ -607,25 +607,39 @@
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
     },
     {
+      "id": 78499,
+      "task": "A data de infração no relatório de PMF está divergente",
+      "descricao": "A data da infração em algumas infrações no relatório de PMF estão divergentes das apresentadas na plataforma.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-17T14:30:10Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/78499"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-09-17T14:56:59.545Z",
+  "sprint_id": 68,
+  "total": 61,
+  "rows": [
+    {
       "id": 83004,
       "task": "autos_sefaz_pr - Reativação da spider",
       "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-17T13:05:11Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@rodrigo poderia testar novamente. Identifiquei que aparentemente e de fato um problema de proxy, pois antes de abrir o browser nao era levantada a sessão, fazendo a consulta com ip americano.",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-17T14:34:16Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e ainda estão ocorrendo os mesmos erros de captcha. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: As",
       "link": "https://redmine.platform.brobot.com.br/issues/83004"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-17T14:27:14.744Z",
-  "sprint_id": 68,
-  "total": 60,
-  "rows": [
+    },
     {
       "id": 83567,
       "task": "Carregamento Infinito ao Impersonar Usuário Membro | Staging - Conta Default | Platform Classic",
