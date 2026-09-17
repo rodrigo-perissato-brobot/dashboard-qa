@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-17T11:26:07.376Z",
-  "total": 11,
+  "gerado_em": "2026-09-17T11:56:12.378Z",
+  "total": 9,
   "rows": [
     {
       "id": 57089,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83547"
     },
     {
-      "id": 83519,
-      "task": "autos_git_cidadao_pr - Ajuste de retorno",
-      "descricao": "Spider autos_git_cidadao_pr (principal: WRONG_CREDENTIALS, 99.1%)",
-      "category": "Credencial - Inválida ou bloqueada",
-      "priority": "high",
-      "status": "to do",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-15T18:48:30Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ajustado retorno, @rodrigo poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/83519"
-    },
-    {
       "id": 82757,
       "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
       "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
@@ -594,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82396"
     },
     {
-      "id": 83020,
-      "task": "Consultas do Embarcador estão com uma volumetria muito abaixo de processadas com sucesso",
-      "descricao": "Verificando as consultas desde o fim de semana as consultas estão com uma volumetria de sucesso bem abaixo do que é esperado.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-15T21:21:53Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo Fiz o ajuste do login no autos_embarcador_der_sp. Pode fazer um teste em staging por favor? O autos_dnit também deve estar com login funcionando. Pode fazer nele também",
-      "link": "https://redmine.platform.brobot.com.br/issues/83020"
-    },
-    {
       "id": 82617,
       "task": "Adicionar filtro \"Excluídos\" no status do veículo dos relatórios ",
       "descricao": "Hoje, quando um veículo é excluído da conta, os registros históricos dele continuam existindo e continuam c...",
@@ -622,10 +596,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-17T11:27:06.450Z",
+  "gerado_em": "2026-09-17T11:57:11.795Z",
   "sprint_id": 68,
-  "total": 60,
+  "total": 62,
   "rows": [
+    {
+      "id": 83519,
+      "task": "autos_git_cidadao_pr - Ajuste de retorno",
+      "descricao": "Spider autos_git_cidadao_pr (principal: WRONG_CREDENTIALS, 99.1%)",
+      "category": "Credencial - Inválida ou bloqueada",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "outro",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-17T11:41:29Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe, Segue ajuste. Processei as consultas na spider autos_git_cidadao_pr e a Spider capturou o campo \"valorPago\" porém não foi consumido corretamente o campo para o Platform. Ambiente: Staging | C",
+      "link": "https://redmine.platform.brobot.com.br/issues/83519"
+    },
+    {
+      "id": 83020,
+      "task": "Consultas do Embarcador estão com uma volumetria muito abaixo de processadas com sucesso",
+      "descricao": "Verificando as consultas desde o fim de semana as consultas estão com uma volumetria de sucesso bem abaixo do que é esperado.",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-17T11:32:49Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83020"
+    },
     {
       "id": 80487,
       "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
