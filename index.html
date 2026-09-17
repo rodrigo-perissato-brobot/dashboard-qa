@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-16T19:56:07.758Z",
-  "total": 12,
+  "gerado_em": "2026-09-17T10:56:10.444Z",
+  "total": 11,
   "rows": [
     {
       "id": 57089,
@@ -540,19 +540,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Os erros de PAGE_MALFUNCTION estavam relacionados ao login do Gov.br, mas isso já foi corrigido em outra atividade. Em relação ao UNHANDLED_SPIDER_EXCEPTION, fiz uma alteração na spider para corrigir ",
       "link": "https://redmine.platform.brobot.com.br/issues/83146"
-    },
-    {
-      "id": 80487,
-      "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
-      "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "immediate",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-14T19:18:22Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo, vi que, em alguns boletos, o portal retorna esse erro, enquanto em outros permite realizar o download normalmente. Alterei a spider para retornar file_unavailable caso esse erro ocorra duran",
-      "link": "https://redmine.platform.brobot.com.br/issues/80487"
     },
     {
       "id": 83547,
@@ -635,10 +622,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-16T19:57:05.517Z",
+  "gerado_em": "2026-09-17T10:57:15.764Z",
   "sprint_id": 68,
   "total": 60,
   "rows": [
+    {
+      "id": 80487,
+      "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
+      "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "immediate",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-16T20:02:57Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado. Efetuei algumas consultas porém ainda o volume de erros está alto em comparação aos sucessos. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Poderia verif",
+      "link": "https://redmine.platform.brobot.com.br/issues/80487"
+    },
     {
       "id": 39504,
       "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
@@ -680,20 +681,6 @@
       "comentario_autor": "Felipe Godoy",
       "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
       "link": "https://redmine.platform.brobot.com.br/issues/43063"
-    },
-    {
-      "id": 83136,
-      "task": "autos_sefaz_ce - XHR_ERROR",
-      "descricao": "Spider autos_sefaz_ce (principal: XHR_ERROR, 96.49%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-16T18:02:16Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83136"
     },
     {
       "id": 63612,
