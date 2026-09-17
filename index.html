@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-17T12:56:55.399Z",
+  "gerado_em": "2026-09-17T13:56:13.973Z",
   "total": 11,
   "rows": [
     {
@@ -594,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82617"
     },
     {
-      "id": 83567,
-      "task": "Carregamento Infinito ao Impersonar Usuário Membro | Staging - Conta Default | Platform Classic",
-      "descricao": "Corrigir o comportamento do Platform Classic (frontend antigo) no ambiente de Staging, onde a impersonação...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-17T12:04:39Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo atualizado em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83567"
-    },
-    {
       "id": 81067,
       "task": "Grupos de permissão: catálogo em três níveis, recorte de dado por grupo e fim da permissão individual",
       "descricao": "Substituir a permissão individual por usuário por grupos de permissão, e separar o que hoje está misturado...",
@@ -618,14 +605,41 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gustavo bug de impersonar corrigido em staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
+    },
+    {
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-17T13:05:11Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "@rodrigo poderia testar novamente. Identifiquei que aparentemente e de fato um problema de proxy, pois antes de abrir o browser nao era levantada a sessão, fazendo a consulta com ip americano.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-17T12:58:06.268Z",
+  "gerado_em": "2026-09-17T13:57:14.920Z",
   "sprint_id": 68,
   "total": 60,
   "rows": [
+    {
+      "id": 83567,
+      "task": "Carregamento Infinito ao Impersonar Usuário Membro | Staging - Conta Default | Platform Classic",
+      "descricao": "Corrigir o comportamento do Platform Classic (frontend antigo) no ambiente de Staging, onde a impersonação...",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-17T13:21:43Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83567"
+    },
     {
       "id": 83519,
       "task": "autos_git_cidadao_pr - Ajuste de retorno",
@@ -635,9 +649,9 @@
       "status": "to do",
       "tipo": "outro",
       "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-17T11:41:29Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe, Segue ajuste. Processei as consultas na spider autos_git_cidadao_pr e a Spider capturou o campo \"valorPago\" porém não foi consumido corretamente o campo para o Platform. Ambiente: Staging | C",
+      "data_comentario": "2026-09-17T13:01:03Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Finalizada a tarefa 83520 e realizada PR.",
       "link": "https://redmine.platform.brobot.com.br/issues/83519"
     },
     {
@@ -667,20 +681,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@felipe por gentileza, poderia prosseguir com análise do tema?",
       "link": "https://redmine.platform.brobot.com.br/issues/39504"
-    },
-    {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-16T19:21:38Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e ainda estão ocorrendo os mesmos erros de captcha. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: As",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
       "id": 43063,
