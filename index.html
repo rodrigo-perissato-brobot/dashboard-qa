@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-18T15:26:06.960Z",
-  "total": 11,
+  "gerado_em": "2026-09-18T15:56:09.959Z",
+  "total": 13,
   "rows": [
     {
       "id": 57089,
@@ -618,13 +618,39 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/83510"
+    },
+    {
+      "id": 76649,
+      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
+      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-18T15:27:35Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/76649"
+    },
+    {
+      "id": 83921,
+      "task": "Links dos boletos não são apresentados no relatório de Piso Mínimo de Frete em geração com grande volume",
+      "descricao": "Ao gerar o relatório de Piso Mínimo de Frete com grande volume de registros, a coluna contendo os links dos boletos não é apresentada.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-18T15:47:31Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo atualizando em staging agora. Tive que fazer algumas mudanças. Existiam dois caminhos para a geração desse relatório, um no backend e um no frontend. Daí as divergências. O mais correto nesse",
+      "link": "https://redmine.platform.brobot.com.br/issues/83921"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-18T15:27:05.254Z",
+  "gerado_em": "2026-09-18T15:57:08.321Z",
   "sprint_id": 68,
-  "total": 64,
+  "total": 62,
   "rows": [
     {
       "id": 84078,
@@ -681,20 +707,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/82863"
-    },
-    {
-      "id": 83921,
-      "task": "Links dos boletos não são apresentados no relatório de Piso Mínimo de Frete em geração com grande volume",
-      "descricao": "Ao gerar o relatório de Piso Mínimo de Frete com grande volume de registros, a coluna contendo os links dos boletos não é apresentada.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-17T18:26:25Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan Reprovado. Testei no New, na conta Testes Funcionais, selecionando todos os registros de AITs iniciados em FELTF (piso mínimo) — a extração foi estranhamente rápida e a coluna \"Link do boleto",
-      "link": "https://redmine.platform.brobot.com.br/issues/83921"
     },
     {
       "id": 63612,
@@ -807,20 +819,6 @@
       "comentario_autor": "Felipe Godoy",
       "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
       "link": "https://redmine.platform.brobot.com.br/issues/43063"
-    },
-    {
-      "id": 76649,
-      "task": "Implementar nova spider para captura de infrações no portal ANTT Processos",
-      "descricao": "Desenvolver uma nova spider para realizar a captura de infrações na tela ANTT Processos, complementando a c...",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-16T17:18:22Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@felipe efetuei novos testes e agora o inverso ocorreu. Processei mesma consulta da Unilever (CNPJ 61.068.276/0037-07) na spider da ANTT Processos (após processar a ANTT Relatório). Ambiente: Staging ",
-      "link": "https://redmine.platform.brobot.com.br/issues/76649"
     },
     {
       "id": 83113,
