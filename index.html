@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-21T16:56:15.701Z",
+  "gerado_em": "2026-09-21T17:26:25.986Z",
   "total": 14,
   "rows": [
     {
@@ -661,10 +661,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-21T16:57:17.745Z",
+  "gerado_em": "2026-09-21T17:28:13.790Z",
   "sprint_id": 69,
-  "total": 58,
+  "total": 51,
   "rows": [
+    {
+      "id": 82868,
+      "task": "Download de documentos em lote e duplicidade ",
+      "descricao": "Devolver ao cliente o controle sobre o volume de documentos que ele baixa, e impedir que o histórico da mul...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-21T17:25:23Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@felipe para Frotas vamos então começar a nomear diferente NA (notificação de autuação) e NP (notificação de Penalidade), mas quando baixar notificações baixará ambos.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82868"
+    },
     {
       "id": 71405,
       "task": "Criação de Orders no novo padrão para CNH e Toxicológico",
@@ -776,20 +790,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/78499"
-    },
-    {
-      "id": 82868,
-      "task": "Download de documentos em lote e duplicidade ",
-      "descricao": "Devolver ao cliente o controle sobre o volume de documentos que ele baixa, e impedir que o histórico da mul...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-18T12:19:20Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "Platform Back-end e Maestro atualizados em staging. --- Boleto passa a ser comparado por linha digitável, valor e vencimento. Front | Onde é usado | Endpoint | Situação | |---|---|---| | Modal de expo",
-      "link": "https://redmine.platform.brobot.com.br/issues/82868"
     },
     {
       "id": 82863,
@@ -904,20 +904,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/51186"
     },
     {
-      "id": 75193,
-      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
-      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-14T16:45:52Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo Correção aplicada. A consulta do DNIT passa a usar a credencial gov.br cadastrada na conta, sem precisar vincular a credencial ao veículo. Funciona também quando a empresa do veículo não tem ",
-      "link": "https://redmine.platform.brobot.com.br/issues/75193"
-    },
-    {
       "id": 83075,
       "task": "Alteração de UF com SNE habilitado ativa spiders de frotas da nova UF",
       "descricao": "Após a implementação da Feature 73680 de atualização automática dos serviços conforme a UF do veículo, iden...",
@@ -988,20 +974,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82561"
     },
     {
-      "id": 75360,
-      "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
-      "descricao": "Alterar a regra de cálculo do card \"Média por Multa\" presente no dashboard do produto Caçamultas Embarcador...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-10T20:13:45Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo correção aplicada. O card Média por Multa passa a considerar apenas as multas que possuem valor no campo selecionado no filtro de valor (Valor estimado, Valor da multa ou Valor do boleto). As",
-      "link": "https://redmine.platform.brobot.com.br/issues/75360"
-    },
-    {
       "id": 41092,
       "task": "Atividade quinzenal - quinta-feira- gerar arquivo ZMRC ID 1477 ENGEMIX S/A",
       "descricao": "Executar a automação existente para gerar o arquivo ZMRC conforme o padrão estabelecido.",
@@ -1042,20 +1014,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@joathan por gentileza, trocar incluir na mensagem do whatsapp as informações solicitadas",
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
-    },
-    {
-      "id": 76008,
-      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
-      "descricao": "Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter priorida...",
-      "category": "Operação - Origem",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-08T19:55:00Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@joathan solicito que assuma a atividade de desenvolvimento do tema",
-      "link": "https://redmine.platform.brobot.com.br/issues/76008"
     },
     {
       "id": 51852,
@@ -1168,20 +1126,6 @@
       "comentario_autor": "Roberta Espacachere",
       "comentario_trecho": "Boa tarde @gabriella Acrescento que o cliente Minerva Foods também reportou essa necessidade, identificando divergências entre a Situação da multa e o Status apresentado na plataforma. Foram apontados",
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
-    },
-    {
-      "id": 75985,
-      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_ms — 361 execuções, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 98.6%)",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-25T17:34:27Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Aprovado parcialmente Tentei encontrar mais cenários de clientes com acesso via certificado e com multas e taxas porém não encontrei nenhum. O cenário anterior realmente está inativo e o teste",
-      "link": "https://redmine.platform.brobot.com.br/issues/75985"
     },
     {
       "id": 46135,
@@ -1310,20 +1254,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/37739"
     },
     {
-      "id": 75786,
-      "task": "Permitir alteração de status em lote dos veículos (Ativar/Inativar)",
-      "descricao": "Atualmente, ao selecionar vários veículos utilizando a opção \"Selecionar todos\", não é possível alterar o status em lote.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-24T13:50:10Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf Efetuei os testes em ambas versões do Platform e separo os resultados. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Aprovado Todos os testes executados funcionaram conforme esp",
-      "link": "https://redmine.platform.brobot.com.br/issues/75786"
-    },
-    {
       "id": 49662,
       "task": "Platform está permitindo repetir cadastro de CNPJ se cadastrado como matriz e filial",
       "descricao": "Durante os testes automatizados, identifiquei uma falha no Platform, que está permitindo cadastrar um CNPJ...",
@@ -1380,20 +1310,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75755"
     },
     {
-      "id": 75084,
-      "task": "Consumo incorreto da plataforma do embarcador",
-      "descricao": "A plataforma não tem consumido corretamente todas as informações trazidas pelos robôs embarcador.",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-10T14:23:22Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf efetuei os testes conforme reunião que tivemos junto da Gabi e do José, com o CNPJ 08.693.795/0001-72 e AIT FRMEP00259292024 . Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evid",
-      "link": "https://redmine.platform.brobot.com.br/issues/75084"
-    },
-    {
       "id": 53155,
       "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
       "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
@@ -1448,20 +1364,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@Roberta bom dia, Informo que o projeto de desenvolvimento foi relizado, o tema será estimado pelos desenvolvedores e posteriormente planejado para desenvolvimento em uma sprint",
       "link": "https://redmine.platform.brobot.com.br/issues/44624"
-    },
-    {
-      "id": 30232,
-      "task": "Conta mestre Cervejaria Imperial",
-      "descricao": "O cliente Cervejaria Imperial (ID: 1807, 1574, 1573, 1572, 1568, 1513, 1512, 1511, 1510, 1509, 1416, 1414,...",
-      "category": "anterior",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-28T14:45:00Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
-      "link": "https://redmine.platform.brobot.com.br/issues/30232"
     },
     {
       "id": 60381,
