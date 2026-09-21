@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-21T17:56:49.614Z",
-  "total": 16,
+  "gerado_em": "2026-09-21T18:26:20.868Z",
+  "total": 15,
   "rows": [
     {
       "id": 57089,
@@ -594,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83749"
     },
     {
-      "id": 81349,
-      "task": "BUG | Divergência na quantidade de Taxas apresentada no Dashboard – TRANSUIÇA",
-      "descricao": "Corrigir a divergência na quantidade de Taxas apresentada no Dashboard da nova plataforma do cliente TRANSUIÇA.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-18T19:16:37Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gustavo atualizado em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/81349"
-    },
-    {
       "id": 82758,
       "task": "autos_detran_ba - Alteração do login gov.br",
       "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
@@ -618,19 +605,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@felipe desculpa pela demora! O Redmine não me notificou e só consegui ver a mensagem hoje. Fiz um teste local e deixei o resultado da spider em anexo abaixo. @gustavo, poderia validar se o retorno da",
       "link": "https://redmine.platform.brobot.com.br/issues/82758"
-    },
-    {
-      "id": 83519,
-      "task": "autos_git_cidadao_pr - Ajuste de retorno",
-      "descricao": "Spider autos_git_cidadao_pr (principal: WRONG_CREDENTIALS, 99.1%)",
-      "category": "Credencial - Inválida ou bloqueada",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-18T19:55:43Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83519"
     },
     {
       "id": 79845,
@@ -683,14 +657,55 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo @rodrigo por gentileza, prosseguir com testes",
       "link": "https://redmine.platform.brobot.com.br/issues/80678"
+    },
+    {
+      "id": 84398,
+      "task": "autos_git_cidadao_pr - SCRAPY_ERROR",
+      "descricao": "Spider autos_git_cidadao_pr, 100.0% de erro (principal: SCRAPY_ERROR, 51.56%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-21T18:15:18Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Foram realizadas alterações para corrigir os erros mencionados. @rodrigo, poderia testar a spider novamente, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/84398"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-21T17:58:21.916Z",
+  "gerado_em": "2026-09-21T18:27:30.645Z",
   "sprint_id": 69,
-  "total": 57,
+  "total": 59,
   "rows": [
+    {
+      "id": 83519,
+      "task": "autos_git_cidadao_pr - Ajuste de retorno",
+      "descricao": "Spider autos_git_cidadao_pr (principal: WRONG_CREDENTIALS, 99.1%)",
+      "category": "Credencial - Inválida ou bloqueada",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-21T18:19:59Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan @thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83519"
+    },
+    {
+      "id": 81349,
+      "task": "BUG | Divergência na quantidade de Taxas apresentada no Dashboard – TRANSUIÇA",
+      "descricao": "Corrigir a divergência na quantidade de Taxas apresentada no Dashboard da nova plataforma do cliente TRANSUIÇA.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-21T18:19:54Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/81349"
+    },
     {
       "id": 82868,
       "task": "Download de documentos em lote e duplicidade ",
