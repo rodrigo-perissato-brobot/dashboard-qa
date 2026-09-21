@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-21T13:56:14.130Z",
+  "gerado_em": "2026-09-21T14:26:45.518Z",
   "total": 13,
   "rows": [
     {
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82396"
     },
     {
-      "id": 82864,
-      "task": "Adição coluna nome da conta -> Exportação Relatório ",
-      "descricao": "Ao exportar um relatório pelo Admin - Maestro - Consultas, deve vir uma coluna com o nome da conta do cliente.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-17T19:46:14Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo @rodrigo implementado, em 30min estará em staging para prosseguir com testes",
-      "link": "https://redmine.platform.brobot.com.br/issues/82864"
-    },
-    {
       "id": 83921,
       "task": "Links dos boletos não são apresentados no relatório de Piso Mínimo de Frete em geração com grande volume",
       "descricao": "Ao gerar o relatório de Piso Mínimo de Frete com grande volume de registros, a coluna contendo os links dos boletos não é apresentada.",
@@ -644,14 +631,55 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/83519"
+    },
+    {
+      "id": 79845,
+      "task": "autos_detran_pe_taxas - Divergência na captura de parcelas de IPVA - MACHINE - ID: 2015",
+      "descricao": "Foi identificada uma divergência na captura das parcelas de IPVA do veículo SOD7C16.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-21T14:17:00Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/79845"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-21T13:57:15.078Z",
+  "gerado_em": "2026-09-21T14:27:55.618Z",
   "sprint_id": 69,
-  "total": 58,
+  "total": 59,
   "rows": [
+    {
+      "id": 81067,
+      "task": "Grupos de permissão: catálogo em três níveis, recorte de dado por grupo e fim da permissão individual",
+      "descricao": "Substituir a permissão individual por usuário por grupos de permissão, e separar o que hoje está misturado...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-21T14:24:55Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan, Seguem ajustes Ambiente: Staging | Conta: Conta Default | Versão: New 1. Quando seleciono a opção \"Baixar boleto\" dentro da sub-aba \"Documentos\" do CaçaMultas Frotas, a opção \"Ver listagem d",
+      "link": "https://redmine.platform.brobot.com.br/issues/81067"
+    },
+    {
+      "id": 82864,
+      "task": "Adição coluna nome da conta -> Exportação Relatório ",
+      "descricao": "Ao exportar um relatório pelo Admin - Maestro - Consultas, deve vir uma coluna com o nome da conta do cliente.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-21T14:13:34Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82864"
+    },
     {
       "id": 83907,
       "task": "autos_sefaz_ce - Ajuste no consumo do status",
@@ -763,20 +791,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 100 - Reprovado O Filtro de período do Dashboard do DFe sumiu Item 101 - Reprovado Sumiram os filtros de ordenação das colunas que não são datas. Item 102 - Aprovado O filtro de ordenação geral f",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 81067,
-      "task": "Grupos de permissão: catálogo em três níveis, recorte de dado por grupo e fim da permissão individual",
-      "descricao": "Substituir a permissão individual por usuário por grupos de permissão, e separar o que hoje está misturado...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-17T16:56:16Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan, Seguem Ajustes Ambiente: Staging | Conta: Conta Default | Versão: Classic Nos testes realizados, foram encontrados 2 pontos que necessitam de ajuste: 1. Impersonando um usuário que está num ",
-      "link": "https://redmine.platform.brobot.com.br/issues/81067"
     },
     {
       "id": 83004,
