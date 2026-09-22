@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-22T14:26:30.485Z",
-  "total": 19,
+  "gerado_em": "2026-09-22T14:56:27.721Z",
+  "total": 18,
   "rows": [
     {
       "id": 57089,
@@ -581,26 +581,13 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83749"
     },
     {
-      "id": 83113,
-      "task": "autos_sefaz_ms_ipva - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_sefaz_ms_ipva (principal: PAGE_MALFUNCTION, 97.5%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-21T16:48:41Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Spider atualizada em staging. @rodrigo, poderia testar novamente, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/83113"
-    },
-    {
       "id": 84401,
       "task": "autos_detran_pa_multas - PDF_FORMAT_ERROR",
       "descricao": "Spider autos_detran_pa_multas, 83.62% de erro (principal: PDF_FORMAT_ERROR, 84.54%)",
       "category": "Backend - Outros",
       "priority": "medium",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-09-21T17:45:27Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Spider alterada para corrigir os erros relacionados ao PDF. @rodrigo, poderia testar, por gentileza?",
@@ -726,10 +713,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-22T14:27:34.843Z",
+  "gerado_em": "2026-09-22T14:57:35.216Z",
   "sprint_id": 69,
-  "total": 54,
+  "total": 55,
   "rows": [
+    {
+      "id": 82868,
+      "task": "Download de documentos em lote e duplicidade ",
+      "descricao": "Devolver ao cliente o controle sobre o volume de documentos que ele baixa, e impedir que o histórico da mul...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-22T14:34:36Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "Atualizado, agora os nomes ficam iguais aos do Embarcador: - pasta por AIT: documentos/AA00050893/NA_2026-07-07.pdf - pasta única: documentos/AA00050893_autuacao_NA_2026-07-07.pdf Notificação sem indí",
+      "link": "https://redmine.platform.brobot.com.br/issues/82868"
+    },
+    {
+      "id": 83113,
+      "task": "autos_sefaz_ms_ipva - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_sefaz_ms_ipva (principal: PAGE_MALFUNCTION, 97.5%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-22T14:32:18Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83113"
+    },
     {
       "id": 79845,
       "task": "autos_detran_pe_taxas - Divergência na captura de parcelas de IPVA - MACHINE - ID: 2015",
@@ -799,20 +814,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan Reprovado. Tentei extrair o relatório de Piso Mínimo de Frete na conta Testes Funcionais, no New, e aguardei o dia todo — a extração não processou, nem gerou retorno de sucesso ou erro. Ambie",
       "link": "https://redmine.platform.brobot.com.br/issues/83921"
-    },
-    {
-      "id": 82868,
-      "task": "Download de documentos em lote e duplicidade ",
-      "descricao": "Devolver ao cliente o controle sobre o volume de documentos que ele baixa, e impedir que o histórico da mul...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-21T17:25:23Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@felipe para Frotas vamos então começar a nomear diferente NA (notificação de autuação) e NP (notificação de Penalidade), mas quando baixar notificações baixará ambos.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82868"
     },
     {
       "id": 71405,
