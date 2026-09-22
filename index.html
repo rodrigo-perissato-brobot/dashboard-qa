@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-22T16:26:33.091Z",
-  "total": 16,
+  "gerado_em": "2026-09-22T16:57:13.158Z",
+  "total": 15,
   "rows": [
     {
       "id": 57089,
@@ -483,7 +483,7 @@
       "category": "Produtos - Novo produto",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "gustavo",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-07-15T03:35:50Z",
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
@@ -501,19 +501,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
       "link": "https://redmine.platform.brobot.com.br/issues/73585"
-    },
-    {
-      "id": 64086,
-      "task": "Documentação de API Whitelabel",
-      "descricao": "Criar uma nova versão da documentação da API V2 sem referências às marcas internas da plataforma (Brobot e...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-07-23T19:15:59Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
-      "link": "https://redmine.platform.brobot.com.br/issues/64086"
     },
     {
       "id": 83146,
@@ -579,19 +566,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/83749"
-    },
-    {
-      "id": 76680,
-      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
-      "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
-      "category": "Produtos - Customização fora do padrão",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-21T18:36:47Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@joathan os dados constam na conta no produto frotas, por gentileza, popule a conta com os dados dos demais produtos @rodrigo @gustavo por gentileza, prosseguir com testes. Para caso de status, precis",
-      "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
       "id": 84351,
@@ -683,14 +657,55 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Acredito que o problema agora seja falta de recursos suficiente para execução do script feita pelo SELENIUM, pois estao ocorrendo erros de crash do SELENIUM. Aumentei os recursos disponiveis para test",
       "link": "https://redmine.platform.brobot.com.br/issues/83004"
+    },
+    {
+      "id": 83921,
+      "task": "Links dos boletos não são apresentados no relatório de Piso Mínimo de Frete em geração com grande volume",
+      "descricao": "Ao gerar o relatório de Piso Mínimo de Frete com grande volume de registros, a coluna contendo os links dos boletos não é apresentada.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-22T16:44:20Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo subindo ajuste para staging. Frontend ja ajustado, mas ainda está subindo o backend. Mais ou menos uns 30 min para terminar.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83921"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-22T16:27:37.426Z",
+  "gerado_em": "2026-09-22T16:59:30.313Z",
   "sprint_id": 69,
-  "total": 54,
+  "total": 49,
   "rows": [
+    {
+      "id": 76680,
+      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
+      "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
+      "category": "Produtos - Customização fora do padrão",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-22T16:49:22Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan, Seguem os pontos identificados durante os testes: Ambiente: Staging | Conta: [Teste] Conta demonstrativa comercial | Versão: New 1. Captura avulsa: não é possível demonstrar a captura avulsa",
+      "link": "https://redmine.platform.brobot.com.br/issues/76680"
+    },
+    {
+      "id": 80487,
+      "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
+      "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "immediate",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-22T16:46:34Z",
+      "comentario_autor": "Jose Ricardo",
+      "comentario_trecho": "Analisei o portal da PRF e confirmei: os dois links não retornam a mesma coisa. São dois backends diferentes domínio, endpoint, captcha e formato de resposta diferentes. O teste com a placa SPD7G02 mo",
+      "link": "https://redmine.platform.brobot.com.br/issues/80487"
+    },
     {
       "id": 84401,
       "task": "autos_detran_pa_multas - PDF_FORMAT_ERROR",
@@ -748,20 +763,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83270"
     },
     {
-      "id": 80678,
-      "task": "Histórico de Consultas do Frotas exibindo consultas dos produtos Taxas e Cronotacografo",
-      "descricao": "No novo frontend, ao acessar o produto Frotas e, em seguida, a tela Histórico de Consultas, a grade está ap...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T11:20:42Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/80678"
-    },
-    {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
       "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
@@ -774,48 +775,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 84 - Reprovado Solicitei um relatório da tela Admin Contas porém, mesmo após 2 horas de espera não foi enviado via email.",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 83921,
-      "task": "Links dos boletos não são apresentados no relatório de Piso Mínimo de Frete em geração com grande volume",
-      "descricao": "Ao gerar o relatório de Piso Mínimo de Frete com grande volume de registros, a coluna contendo os links dos boletos não é apresentada.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-21T19:13:11Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan Reprovado. Tentei extrair o relatório de Piso Mínimo de Frete na conta Testes Funcionais, no New, e aguardei o dia todo — a extração não processou, nem gerou retorno de sucesso ou erro. Ambie",
-      "link": "https://redmine.platform.brobot.com.br/issues/83921"
-    },
-    {
-      "id": 71405,
-      "task": "Criação de Orders no novo padrão para CNH e Toxicológico",
-      "descricao": "",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-21T16:44:50Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@rolf, Segue ajuste Ambiente: Staging | Conta: Testes Funcionais Realizei os testes e identifiquei que, no Platform Classic, as orders são exibidas corretamente nas respectivas telas. Porém, no Platfo",
-      "link": "https://redmine.platform.brobot.com.br/issues/71405"
-    },
-    {
-      "id": 81067,
-      "task": "Grupos de permissão: catálogo em três níveis, recorte de dado por grupo e fim da permissão individual",
-      "descricao": "Substituir a permissão individual por usuário por grupos de permissão, e separar o que hoje está misturado...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-21T14:24:55Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan, Seguem ajustes Ambiente: Staging | Conta: Conta Default | Versão: New 1. Quando seleciono a opção \"Baixar boleto\" dentro da sub-aba \"Documentos\" do CaçaMultas Frotas, a opção \"Ver listagem d",
-      "link": "https://redmine.platform.brobot.com.br/issues/81067"
     },
     {
       "id": 82617,
@@ -858,20 +817,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/83567"
-    },
-    {
-      "id": 80487,
-      "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
-      "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "immediate",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-16T20:02:57Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Efetuei algumas consultas porém ainda o volume de erros está alto em comparação aos sucessos. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Poderia verif",
-      "link": "https://redmine.platform.brobot.com.br/issues/80487"
     },
     {
       "id": 39504,
@@ -958,20 +903,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82390"
     },
     {
-      "id": 81372,
-      "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
-      "descricao": "Realizei uma análise e identifiquei que, atualmente, a spider autos_detran_es_taxas está retornando apenas...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-11T16:43:59Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Finalizada a tarefa 81374 e realizada PR.",
-      "link": "https://redmine.platform.brobot.com.br/issues/81372"
-    },
-    {
       "id": 82561,
       "task": "Ajustar regras de registro e download de documentos após implementação da #80498",
       "descricao": "Ajustar as regras de negócio relacionadas ao registro e download de documentos na plataforma, considerando...",
@@ -1026,20 +957,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@rolf Aprovado. Processei algumas consultas e o start/end date respeitaram os 90 dias ou a data da última infração. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Acompanhar",
       "link": "https://redmine.platform.brobot.com.br/issues/82577"
-    },
-    {
-      "id": 71526,
-      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
-      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-09T11:38:33Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@joathan por gentileza, trocar incluir na mensagem do whatsapp as informações solicitadas",
-      "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
       "id": 76008,
