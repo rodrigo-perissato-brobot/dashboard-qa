@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-22T17:26:22.216Z",
-  "total": 17,
+  "gerado_em": "2026-09-22T17:56:16.448Z",
+  "total": 14,
   "rows": [
     {
       "id": 57089,
@@ -607,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/80680"
     },
     {
-      "id": 78550,
-      "task": "Retirar HRequest das Spiders V3",
-      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest para as spiders da V3",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-21T19:09:52Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo Foram feitos ajustes na imagem da v3. Por favor, rode alguns testes só pra confirmar a consistencia. Pode apenas um teste em cada spider.",
-      "link": "https://redmine.platform.brobot.com.br/issues/78550"
-    },
-    {
       "id": 84393,
       "task": "Inclusão de veículos em lote apresenta resultados inconsistentes na validação",
       "descricao": "Ao realizar a inclusão de veículos em lote, foi utilizado um arquivo contendo 30 veículos.",
@@ -644,32 +631,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@gustavo, se olhar dentro da chave multas_a_pagar, vai encontrar a situação da multa: @jose-ricardo, poderia validar se esse é o retorno esperado da spider ou se deveria existir apenas uma chave? Acre",
       "link": "https://redmine.platform.brobot.com.br/issues/82758"
-    },
-    {
-      "id": 84395,
-      "task": "autos_detran_mg - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_mg, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 80.61%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-22T12:52:46Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Alterações realizadas. @rodrigo, poderia testar, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/84395"
-    },
-    {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-22T13:45:06Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Acredito que o problema agora seja falta de recursos suficiente para execução do script feita pelo SELENIUM, pois estao ocorrendo erros de crash do SELENIUM. Aumentei os recursos disponiveis para test",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
       "id": 83921,
@@ -700,10 +661,52 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-22T17:27:21.205Z",
+  "gerado_em": "2026-09-22T17:57:17.323Z",
   "sprint_id": 69,
-  "total": 54,
+  "total": 57,
   "rows": [
+    {
+      "id": 84395,
+      "task": "autos_detran_mg - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "Spider autos_detran_mg, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 80.61%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-22T17:50:57Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado. Processei as consultas na spider autos_detran_mg e retornou apenas erros. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Todas as consultas foram pr",
+      "link": "https://redmine.platform.brobot.com.br/issues/84395"
+    },
+    {
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-22T17:49:32Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e melhorou bastante, mas ainda há falhas. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Das 10 consu",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
+    },
+    {
+      "id": 78550,
+      "task": "Retirar HRequest das Spiders V3",
+      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest para as spiders da V3",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-22T17:47:34Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/78550"
+    },
     {
       "id": 76680,
       "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
