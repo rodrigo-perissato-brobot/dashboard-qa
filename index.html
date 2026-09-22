@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-22T13:26:33.429Z",
-  "total": 19,
+  "gerado_em": "2026-09-22T13:56:25.257Z",
+  "total": 20,
   "rows": [
     {
       "id": 57089,
@@ -722,14 +722,41 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Alterações realizadas. @rodrigo, poderia testar, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/84395"
+    },
+    {
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-22T13:45:06Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Acredito que o problema agora seja falta de recursos suficiente para execução do script feita pelo SELENIUM, pois estao ocorrendo erros de crash do SELENIUM. Aumentei os recursos disponiveis para test",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-22T13:27:52.715Z",
+  "gerado_em": "2026-09-22T13:57:29.549Z",
   "sprint_id": 69,
-  "total": 57,
+  "total": 53,
   "rows": [
+    {
+      "id": 83270,
+      "task": "Mensagens do BOT de indicação de condutores",
+      "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-22T13:31:51Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@joathan @felipe solicito que prossigam com correção do tema",
+      "link": "https://redmine.platform.brobot.com.br/issues/83270"
+    },
     {
       "id": 80678,
       "task": "Histórico de Consultas do Frotas exibindo consultas dos produtos Taxas e Cronotacografo",
@@ -771,20 +798,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan Reprovado. Tentei extrair o relatório de Piso Mínimo de Frete na conta Testes Funcionais, no New, e aguardei o dia todo — a extração não processou, nem gerou retorno de sucesso ou erro. Ambie",
       "link": "https://redmine.platform.brobot.com.br/issues/83921"
-    },
-    {
-      "id": 81349,
-      "task": "BUG | Divergência na quantidade de Taxas apresentada no Dashboard – TRANSUIÇA",
-      "descricao": "Corrigir a divergência na quantidade de Taxas apresentada no Dashboard da nova plataforma do cliente TRANSUIÇA.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-21T18:19:54Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/81349"
     },
     {
       "id": 82868,
@@ -843,20 +856,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82864"
     },
     {
-      "id": 83907,
-      "task": "autos_sefaz_ce - Ajuste no consumo do status",
-      "descricao": "Conforme exemplo abaixo, será necessário ajustar o status na captura, que gravou Em aberto para uma taxa que deveria ser Pago .",
-      "category": "Backend - Consumo",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-21T13:39:34Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83907"
-    },
-    {
       "id": 82617,
       "task": "Adicionar filtro \"Excluídos\" no status do veículo dos relatórios ",
       "descricao": "Hoje, quando um veículo é excluído da conta, os registros históricos dele continuam existindo e continuam c...",
@@ -883,34 +882,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/78499"
-    },
-    {
-      "id": 82863,
-      "task": "autos_sne_denatran_indicacao_condutor - Não está sendo utilizada a credencial preferencial se for govbr apenas se for SNE",
-      "descricao": "Essa tratativa foi realizada na tarefa 77125, porém, isso foi feito apenas se a credencial for SNE, se a cr...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-18T11:52:00Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82863"
-    },
-    {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-17T14:34:16Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e ainda estão ocorrendo os mesmos erros de captcha. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: As",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
       "id": 83567,
@@ -1009,20 +980,6 @@
       "comentario_autor": "Jose Ricardo",
       "comentario_trecho": "@gabriella Por gentileza seguir com priorizacao.",
       "link": "https://redmine.platform.brobot.com.br/issues/83075"
-    },
-    {
-      "id": 83270,
-      "task": "Mensagens do BOT de indicação de condutores",
-      "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
-      "category": "",
-      "priority": "low",
-      "status": "planning: to analyze",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-14T14:58:56Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "Realizei uma análise do fluxo seguido pela spider e identifiquei que o fluxo está sendo executado corretamente, conforme o mapeamento. Porém, foi identificada uma inconsistência no bot do WhatsApp, es",
-      "link": "https://redmine.platform.brobot.com.br/issues/83270"
     },
     {
       "id": 82390,
