@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-22T18:56:46.055Z",
-  "total": 13,
+  "gerado_em": "2026-09-22T19:26:29.402Z",
+  "total": 14,
   "rows": [
     {
       "id": 57089,
@@ -620,19 +620,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82758"
     },
     {
-      "id": 84993,
-      "task": "BUG – Validação prematura da data de aviso prévio ao editar pelo teclado",
-      "descricao": "Na tela Admin Contas, ao acessar uma conta e, na aba Contrato, alterar o status para “Em aviso prévio” e o...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-22T17:07:54Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/84993"
-    },
-    {
       "id": 85164,
       "task": "Refactor v3: Host e Port do BrightData via ambiente",
       "descricao": "Realizar refactor na versão v3 para que o host e a porta do BrightData sejam lidos das variáveis de ambient...",
@@ -644,14 +631,68 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "Mudança feitas. @rodrigo Pode, por favor, fazer um teste em qualquer spider. Apenas para garantir a consistencia do ambiente.",
       "link": "https://redmine.platform.brobot.com.br/issues/85164"
+    },
+    {
+      "id": 80487,
+      "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
+      "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "immediate",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-22T19:05:07Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Conforme alinhado no Discord com o @jose-ricardo, para não deixar a spider parada, vamos ativá-la somente para os primeiros links e manter os segundos links desativados. @rodrigo, poderia testar, por ",
+      "link": "https://redmine.platform.brobot.com.br/issues/80487"
+    },
+    {
+      "id": 80158,
+      "task": "autos_prefeitura_sp - Otimizar spider",
+      "descricao": "Trabalho de otimização da spider, tanto em velocidade, quanto em custo, para atender grandes volumes.",
+      "category": "Spider - Outros",
+      "priority": "low",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-22T19:08:21Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@rodrigo, poderia realizar alguns testes em staging e validar os resultados, por gentileza? Mas não precisa aprovar a spider ainda, pois ainda temos mais algumas mudanças para fazer.",
+      "link": "https://redmine.platform.brobot.com.br/issues/80158"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-22T18:57:52.377Z",
+  "gerado_em": "2026-09-22T19:27:40.238Z",
   "sprint_id": 69,
-  "total": 56,
+  "total": 55,
   "rows": [
+    {
+      "id": 84993,
+      "task": "BUG – Validação prematura da data de aviso prévio ao editar pelo teclado",
+      "descricao": "Na tela Admin Contas, ao acessar uma conta e, na aba Contrato, alterar o status para “Em aviso prévio” e o...",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-22T19:25:03Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/84993"
+    },
+    {
+      "id": 78550,
+      "task": "Retirar HRequest das Spiders V3",
+      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest para as spiders da V3",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-22T19:03:19Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Atualizado em produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/78550"
+    },
     {
       "id": 84351,
       "task": "API com limite de 50 infrações sendo buscadas",
@@ -665,20 +706,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@joathan por gentileza, prosseguir com a atividade",
       "link": "https://redmine.platform.brobot.com.br/issues/84351"
-    },
-    {
-      "id": 78550,
-      "task": "Retirar HRequest das Spiders V3",
-      "descricao": "Assim como foi feito para o SNE, verificar e retirar das spiders que utilizam o HRequest para as spiders da V3",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T18:20:24Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@thiago PR:",
-      "link": "https://redmine.platform.brobot.com.br/issues/78550"
     },
     {
       "id": 84395,
@@ -723,20 +750,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
-      "id": 80487,
-      "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
-      "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "immediate",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T16:46:34Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "Analisei o portal da PRF e confirmei: os dois links não retornam a mesma coisa. São dois backends diferentes domínio, endpoint, captcha e formato de resposta diferentes. O teste com a placa SPD7G02 mo",
-      "link": "https://redmine.platform.brobot.com.br/issues/80487"
-    },
-    {
       "id": 82868,
       "task": "Download de documentos em lote e duplicidade ",
       "descricao": "Devolver ao cliente o controle sobre o volume de documentos que ele baixa, e impedir que o histórico da mul...",
@@ -749,20 +762,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "Atualizado, agora os nomes ficam iguais aos do Embarcador: - pasta por AIT: documentos/AA00050893/NA_2026-07-07.pdf - pasta única: documentos/AA00050893_autuacao_NA_2026-07-07.pdf Notificação sem indí",
       "link": "https://redmine.platform.brobot.com.br/issues/82868"
-    },
-    {
-      "id": 83113,
-      "task": "autos_sefaz_ms_ipva - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_sefaz_ms_ipva (principal: PAGE_MALFUNCTION, 97.5%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-22T14:32:18Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83113"
     },
     {
       "id": 83270,
