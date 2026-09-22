@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-22T18:26:26.823Z",
-  "total": 12,
+  "gerado_em": "2026-09-22T18:56:46.055Z",
+  "total": 13,
   "rows": [
     {
       "id": 57089,
@@ -631,27 +631,40 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/84993"
+    },
+    {
+      "id": 85164,
+      "task": "Refactor v3: Host e Port do BrightData via ambiente",
+      "descricao": "Realizar refactor na versão v3 para que o host e a porta do BrightData sejam lidos das variáveis de ambient...",
+      "category": "",
+      "priority": "high",
+      "status": "to do",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-22T18:43:59Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "Mudança feitas. @rodrigo Pode, por favor, fazer um teste em qualquer spider. Apenas para garantir a consistencia do ambiente.",
+      "link": "https://redmine.platform.brobot.com.br/issues/85164"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-22T18:27:46.880Z",
+  "gerado_em": "2026-09-22T18:57:52.377Z",
   "sprint_id": 69,
-  "total": 59,
+  "total": 56,
   "rows": [
     {
-      "id": 78499,
-      "task": "A data de infração no relatório de PMF está divergente",
-      "descricao": "A data da infração em algumas infrações no relatório de PMF estão divergentes das apresentadas na plataforma.",
-      "category": "Frontend - Novo frontend",
+      "id": 84351,
+      "task": "API com limite de 50 infrações sendo buscadas",
+      "descricao": "O cliente EMTEL nos questionou indicando que na última atualização da API nossa plataforma entregou para eles apenas 50 infrações.",
+      "category": "",
       "priority": "high",
-      "status": "awaiting deploy",
+      "status": "staging",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T18:26:47Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "Atualizado em produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/78499"
+      "data_comentario": "2026-09-22T18:47:12Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@joathan por gentileza, prosseguir com a atividade",
+      "link": "https://redmine.platform.brobot.com.br/issues/84351"
     },
     {
       "id": 78550,
@@ -666,34 +679,6 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@thiago PR:",
       "link": "https://redmine.platform.brobot.com.br/issues/78550"
-    },
-    {
-      "id": 83921,
-      "task": "Links dos boletos não são apresentados no relatório de Piso Mínimo de Frete em geração com grande volume",
-      "descricao": "Ao gerar o relatório de Piso Mínimo de Frete com grande volume de registros, a coluna contendo os links dos boletos não é apresentada.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T18:15:10Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83921"
-    },
-    {
-      "id": 84351,
-      "task": "API com limite de 50 infrações sendo buscadas",
-      "descricao": "O cliente EMTEL nos questionou indicando que na última atualização da API nossa plataforma entregou para eles apenas 50 infrações.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T18:12:42Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "API Brobot — mudança no bloco meta Junto com a ampliação do limite de itens por página (de 50 para 1000), o bloco meta das respostas mudou de comportamento em um caso. O que mudou | requisição | antes",
-      "link": "https://redmine.platform.brobot.com.br/issues/84351"
     },
     {
       "id": 84395,
@@ -750,20 +735,6 @@
       "comentario_autor": "Jose Ricardo",
       "comentario_trecho": "Analisei o portal da PRF e confirmei: os dois links não retornam a mesma coisa. São dois backends diferentes domínio, endpoint, captcha e formato de resposta diferentes. O teste com a placa SPD7G02 mo",
       "link": "https://redmine.platform.brobot.com.br/issues/80487"
-    },
-    {
-      "id": 84401,
-      "task": "autos_detran_pa_multas - PDF_FORMAT_ERROR",
-      "descricao": "Spider autos_detran_pa_multas, 83.62% de erro (principal: PDF_FORMAT_ERROR, 84.54%)",
-      "category": "Backend - Outros",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-22T16:22:46Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/84401"
     },
     {
       "id": 82868,
@@ -1229,7 +1200,7 @@
     },
     {
       "id": 69272,
-      "task": "Criação de servi��o próprio para resolução do cookie TSPD no login Gov",
+      "task": "Criação de serviço próprio para resolução do cookie TSPD no login Gov",
       "descricao": "Desenvolver um serviço interno responsável pela resolução e gerenciamento do cookie TSPD utilizado no fluxo de autenticação via Gov.",
       "category": "Spider - Outros",
       "priority": "high",
