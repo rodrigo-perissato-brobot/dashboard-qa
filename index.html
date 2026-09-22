@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-22T12:26:26.904Z",
-  "total": 17,
+  "gerado_em": "2026-09-22T12:56:24.038Z",
+  "total": 19,
   "rows": [
     {
       "id": 57089,
@@ -581,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83749"
     },
     {
-      "id": 82758,
-      "task": "autos_detran_ba - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-18T19:19:10Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@felipe desculpa pela demora! O Redmine não me notificou e só consegui ver a mensagem hoje. Fiz um teste local e deixei o resultado da spider em anexo abaixo. @gustavo, poderia validar se o retorno da",
-      "link": "https://redmine.platform.brobot.com.br/issues/82758"
-    },
-    {
       "id": 79845,
       "task": "autos_detran_pe_taxas - Divergência na captura de parcelas de IPVA - MACHINE - ID: 2015",
       "descricao": "Foi identificada uma divergência na captura das parcelas de IPVA do veículo SOD7C16.",
@@ -696,11 +683,50 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo corrigido. Por que acontecia O processamento agiu corretamente nas duas tentativas. As diferenças vieram do modo de envio, definido pela opção \"Atualizar veículos existentes\" do modal de revi",
       "link": "https://redmine.platform.brobot.com.br/issues/84393"
+    },
+    {
+      "id": 84371,
+      "task": "Reativar o Harvester no SNE (solução paliativa)",
+      "descricao": "Reativar o Harvester no SNE para que ele volte a operar como mais uma opção de captura, em conjunto com as rotas já existentes.",
+      "category": "",
+      "priority": "high",
+      "status": "to do",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-22T12:28:11Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Reabilitei o captcha breaker, inicialmente quando executava o .bat da raiz ou da pasta /worker/hcaptcha_sne nao funcionava, pois a imagem nao havia sido buildada e enviada para a AWS. Apos rebuildar a",
+      "link": "https://redmine.platform.brobot.com.br/issues/84371"
+    },
+    {
+      "id": 82758,
+      "task": "autos_detran_ba - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-22T12:48:20Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@gustavo, se olhar dentro da chave multas_a_pagar, vai encontrar a situação da multa: @jose-ricardo, poderia validar se esse é o retorno esperado da spider ou se deveria existir apenas uma chave? Acre",
+      "link": "https://redmine.platform.brobot.com.br/issues/82758"
+    },
+    {
+      "id": 84395,
+      "task": "autos_detran_mg - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "Spider autos_detran_mg, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 80.61%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-22T12:52:46Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Alterações realizadas. @rodrigo, poderia testar, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/84395"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-22T12:27:35.805Z",
+  "gerado_em": "2026-09-22T12:57:28.626Z",
   "sprint_id": 69,
   "total": 57,
   "rows": [
