@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-23T12:26:17.106Z",
-  "total": 16,
+  "gerado_em": "2026-09-23T12:56:17.773Z",
+  "total": 17,
   "rows": [
     {
       "id": 57089,
@@ -683,13 +683,26 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gustavo subi para staging. Atualizei os dois frontends e o backend.",
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
+    },
+    {
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-23T12:53:02Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Adicionado um retry para abrir a sessao do SELENIUM e o VIRTUAL DISPLAY. @rodrigo poderia testar novamente por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-23T12:27:32.903Z",
+  "gerado_em": "2026-09-23T12:57:18.442Z",
   "sprint_id": 69,
-  "total": 55,
+  "total": 54,
   "rows": [
     {
       "id": 80680,
@@ -760,20 +773,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@joathan por gentileza, prosseguir com a atividade",
       "link": "https://redmine.platform.brobot.com.br/issues/84351"
-    },
-    {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T17:49:32Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e melhorou bastante, mas ainda há falhas. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Das 10 consu",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
       "id": 76680,
