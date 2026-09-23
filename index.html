@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-22T19:56:11.209Z",
-  "total": 14,
+  "gerado_em": "2026-09-23T11:26:16.910Z",
+  "total": 16,
   "rows": [
     {
       "id": 57089,
@@ -587,7 +587,7 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-09-21T18:59:11Z",
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Correção em staging, @rodrigo @gustavo por gentileza, seguir com testes",
@@ -605,19 +605,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo corrigido. Por que acontecia O processamento agiu corretamente nas duas tentativas. As diferenças vieram do modo de envio, definido pela opção \"Atualizar veículos existentes\" do modal de revi",
       "link": "https://redmine.platform.brobot.com.br/issues/84393"
-    },
-    {
-      "id": 82758,
-      "task": "autos_detran_ba - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-22T12:48:20Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@gustavo, se olhar dentro da chave multas_a_pagar, vai encontrar a situação da multa: @jose-ricardo, poderia validar se esse é o retorno esperado da spider ou se deveria existir apenas uma chave? Acre",
-      "link": "https://redmine.platform.brobot.com.br/issues/82758"
     },
     {
       "id": 85164,
@@ -657,14 +644,67 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@rodrigo, poderia realizar alguns testes em staging e validar os resultados, por gentileza? Mas não precisa aprovar a spider ainda, pois ainda temos mais algumas mudanças para fazer.",
       "link": "https://redmine.platform.brobot.com.br/issues/80158"
+    },
+    {
+      "id": 85151,
+      "task": "autos_detran_pe - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_pe (principal: PAGE_MALFUNCTION, 86.79%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "to do",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-22T20:37:31Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@jose-ricardo, encontramos e corrigimos o problema. O erro estava no login com o gov.br. O gov.br tem um WAF, que é um sistema de proteção contra robôs. Quando o login é feito, esse WAF fica associado",
+      "link": "https://redmine.platform.brobot.com.br/issues/85151"
+    },
+    {
+      "id": 84395,
+      "task": "autos_detran_mg - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "Spider autos_detran_mg, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 80.61%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-22T23:20:31Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@rodrigo aumentei os recursos e reprocessei as consultas: Poderia verificar e realizar os testes novamente, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/84395"
+    },
+    {
+      "id": 83860,
+      "task": "Análise e correção da funcionalidade de exportação de relatórios",
+      "descricao": "Realizar análise e, se necessário, ajuste na funcionalidade de exportação de relatórios da plataforma.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-23T11:05:15Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo corrigido. Agora deve gerar os relatórios do Maestro ou CaçaMultas normalmente.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83860"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-22T19:57:09.143Z",
+  "gerado_em": "2026-09-23T11:27:26.960Z",
   "sprint_id": 69,
   "total": 55,
   "rows": [
+    {
+      "id": 82758,
+      "task": "autos_detran_ba - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-23T11:00:13Z",
+      "comentario_autor": "Jose Ricardo",
+      "comentario_trecho": "@thiago Retorno aprovado, pode seguir",
+      "link": "https://redmine.platform.brobot.com.br/issues/82758"
+    },
     {
       "id": 84993,
       "task": "BUG – Validação prematura da data de aviso prévio ao editar pelo teclado",
@@ -706,20 +746,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@joathan por gentileza, prosseguir com a atividade",
       "link": "https://redmine.platform.brobot.com.br/issues/84351"
-    },
-    {
-      "id": 84395,
-      "task": "autos_detran_mg - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_mg, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 80.61%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-22T17:50:57Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Processei as consultas na spider autos_detran_mg e retornou apenas erros. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Todas as consultas foram pr",
-      "link": "https://redmine.platform.brobot.com.br/issues/84395"
     },
     {
       "id": 83004,
@@ -1063,7 +1089,7 @@
       "descricao": "Tornar o Histórico de Ações uma evidência utilizável: cada registro passa a dizer qual ação foi executada e...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "to do",
+      "status": "in progress",
       "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-09-04T18:46:44Z",
