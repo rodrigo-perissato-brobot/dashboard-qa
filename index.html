@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-23T19:26:42.681Z",
-  "total": 14,
+  "gerado_em": "2026-09-23T19:56:26.604Z",
+  "total": 15,
   "rows": [
     {
       "id": 57089,
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82396"
     },
     {
-      "id": 83749,
-      "task": "autos_prefeitura_campinas_sp - O campo \"code\" da infração veio como null em uma multa NIC",
-      "descricao": "O cliente ESL questionou uma infração que retornou com o \"code\" como \"null\", a infração em questão é uma in...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-18T18:34:45Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83749"
-    },
-    {
       "id": 84393,
       "task": "Inclusão de veículos em lote apresenta resultados inconsistentes na validação",
       "descricao": "Ao realizar a inclusão de veículos em lote, foi utilizado um arquivo contendo 30 veículos.",
@@ -657,14 +644,54 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido. O problema era outro. Existe uma rotina que abre os PDFs de vistas das multas de PMF. Ela estava rodando na mesma fila dos relatórios e, com arquivos maiores, consome todo o tempo ",
       "link": "https://redmine.platform.brobot.com.br/issues/83860"
+    },
+    {
+      "id": 84351,
+      "task": "API com limite de 50 infrações sendo buscadas",
+      "descricao": "O cliente EMTEL nos questionou indicando que na última atualização da API nossa plataforma entregou para eles apenas 50 infrações.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-23T19:26:29Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging. Pequena doc de explicação nos comentários.",
+      "link": "https://redmine.platform.brobot.com.br/issues/84351"
+    },
+    {
+      "id": 85213,
+      "task": "SNE: gestão entre os solvers de hCaptcha (ordem, fallback e visibilidade)",
+      "descricao": "Definir e implementar a regra de escolha e fallback entre os solvers de hCaptcha do SNE, com visibilidade d...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-23T19:50:20Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Realizado a implementação de fallback entre as solucoes de captcha hoje, ira funcionar da seguinte forma: - Seguiremos utilizando a priorizacao padrao sendo BREAKER - NONECAP - SMARTAPI. - Caso qualqu",
+      "link": "https://redmine.platform.brobot.com.br/issues/85213"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-23T19:27:49.953Z",
+  "gerado_em": "2026-09-23T19:57:35.185Z",
   "sprint_id": 69,
-  "total": 56,
+  "total": 57,
   "rows": [
+    {
+      "id": 83749,
+      "task": "autos_prefeitura_campinas_sp - O campo \"code\" da infração veio como null em uma multa NIC",
+      "descricao": "O cliente ESL questionou uma infração que retornou com o \"code\" como \"null\", a infração em questão é uma in...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-23T19:54:34Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo basta apenas atualizar a tabela de descrições do maestro.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83749"
+    },
     {
       "id": 80487,
       "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
