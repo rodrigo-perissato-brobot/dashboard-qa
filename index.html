@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-23T18:56:18.861Z",
+  "gerado_em": "2026-09-23T19:26:42.681Z",
   "total": 14,
   "rows": [
     {
@@ -646,25 +646,39 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
+      "id": 83860,
+      "task": "Análise e correção da funcionalidade de exportação de relatórios",
+      "descricao": "Realizar análise e, se necessário, ajuste na funcionalidade de exportação de relatórios da plataforma.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-23T19:07:49Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo corrigido. O problema era outro. Existe uma rotina que abre os PDFs de vistas das multas de PMF. Ela estava rodando na mesma fila dos relatórios e, com arquivos maiores, consome todo o tempo ",
+      "link": "https://redmine.platform.brobot.com.br/issues/83860"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-09-23T19:27:49.953Z",
+  "sprint_id": 69,
+  "total": 56,
+  "rows": [
+    {
       "id": 80487,
       "task": "autos_prf - CAPTCHA_INCORRECTLY_SOLVED",
       "descricao": "Spider autos_prf (principal: CAPTCHA_INCORRECTLY_SOLVED, 58.31%)",
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "immediate",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-23T15:32:52Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo, poderia realizar um novo teste, por favor? Fiz uma nova alteração e, nos testes locais, a spider também funcionou no segundo link.",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-23T19:19:13Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/80487"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-23T18:57:21.280Z",
-  "sprint_id": 69,
-  "total": 57,
-  "rows": [
+    },
     {
       "id": 82561,
       "task": "Ajustar regras de registro e download de documentos após implementação da #80498",
@@ -720,20 +734,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
-    },
-    {
-      "id": 83860,
-      "task": "Análise e correção da funcionalidade de exportação de relatórios",
-      "descricao": "Realizar análise e, se necessário, ajuste na funcionalidade de exportação de relatórios da plataforma.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-23T14:37:24Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@felipe suporte relatou que em produção: Administração Veículos; Definições Veículos parou de ser exportado os relatórios",
-      "link": "https://redmine.platform.brobot.com.br/issues/83860"
     },
     {
       "id": 81372,
@@ -804,20 +804,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Atualizado em produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/78550"
-    },
-    {
-      "id": 84351,
-      "task": "API com limite de 50 infrações sendo buscadas",
-      "descricao": "O cliente EMTEL nos questionou indicando que na última atualização da API nossa plataforma entregou para eles apenas 50 infrações.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T18:47:12Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@joathan por gentileza, prosseguir com a atividade",
-      "link": "https://redmine.platform.brobot.com.br/issues/84351"
     },
     {
       "id": 76680,
