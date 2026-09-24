@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-24T18:56:25.680Z",
+  "gerado_em": "2026-09-24T19:56:26.345Z",
   "total": 14,
   "rows": [
     {
@@ -633,19 +633,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85163"
     },
     {
-      "id": 82758,
-      "task": "autos_detran_ba - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-24T17:03:39Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo corrigido, agora deve capturar normalmente.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82758"
-    },
-    {
       "id": 82868,
       "task": "Download de documentos em lote e duplicidade ",
       "descricao": "Devolver ao cliente o controle sobre o volume de documentos que ele baixa, e impedir que o histórico da mul...",
@@ -657,14 +644,7 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/82868"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-24T18:57:48.303Z",
-  "sprint_id": 69,
-  "total": 54,
-  "rows": [
+    },
     {
       "id": 83004,
       "task": "autos_sefaz_pr - Reativação da spider",
@@ -672,12 +652,60 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-24T18:43:24Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e melhorou um pouco mais, mas ainda há falhas. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Das 10 ",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-24T19:34:35Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "@rodrigo ajustei novamente os recursos, mesmo com ajustes anteriores o SELENIUM ainda continua falhando em algumas vezes. poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/83004"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-09-24T19:57:40.029Z",
+  "sprint_id": 69,
+  "total": 54,
+  "rows": [
+    {
+      "id": 82758,
+      "task": "autos_detran_ba - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T19:50:57Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82758"
+    },
+    {
+      "id": 75985,
+      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "Spider autos_detran_ms — 361 execuções, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 98.6%)",
+      "category": "Portal - Mudança de layout",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T19:20:06Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan @thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/75985"
+    },
+    {
+      "id": 85353,
+      "task": "Remover o reCaptcha do login e aplicar as medidas de segurança",
+      "descricao": "",
+      "category": "Backend - Outros",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T19:16:58Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/85353"
     },
     {
       "id": 63612,
@@ -686,26 +714,12 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "tipo": "aprovado",
+      "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-24T17:45:22Z",
+      "data_comentario": "2026-09-24T19:05:37Z",
       "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "Item 84 - Aprovado O relatório da tela Admin Contas foi exportado corretamente agora e trouxe os dados corretos de todos os serviços para as contas selecionadas. Item 93: Concordo em tratar separadame",
+      "comentario_trecho": "Item 121 - No histórico de consultas do Cronotacógrafo a coluna serviço deveria trazer o nome da Spider",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 85353,
-      "task": "Remover o reCaptcha do login e aplicar as medidas de segurança",
-      "descricao": "",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-24T17:25:04Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo removi o recaptcha da aplicação. Nenhum lugar tem a proteção por recaptcha mais. Implementei um sistema de limite de tentativa de login.",
-      "link": "https://redmine.platform.brobot.com.br/issues/85353"
     },
     {
       "id": 84393,
@@ -1140,20 +1154,6 @@
       "comentario_autor": "Roberta Espacachere",
       "comentario_trecho": "Boa tarde @gabriella Acrescento que o cliente Minerva Foods também reportou essa necessidade, identificando divergências entre a Situação da multa e o Status apresentado na plataforma. Foram apontados",
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
-    },
-    {
-      "id": 75985,
-      "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_ms — 361 execuções, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 98.6%)",
-      "category": "Portal - Mudança de layout",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-25T17:34:27Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Aprovado parcialmente Tentei encontrar mais cenários de clientes com acesso via certificado e com multas e taxas porém não encontrei nenhum. O cenário anterior realmente está inativo e o teste",
-      "link": "https://redmine.platform.brobot.com.br/issues/75985"
     },
     {
       "id": 46135,
