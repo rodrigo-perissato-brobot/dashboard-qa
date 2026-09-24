@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-24T11:26:28.600Z",
-  "total": 15,
+  "gerado_em": "2026-09-24T11:56:36.706Z",
+  "total": 14,
   "rows": [
     {
       "id": 57089,
@@ -620,19 +620,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
-      "id": 83860,
-      "task": "Análise e correção da funcionalidade de exportação de relatórios",
-      "descricao": "Realizar análise e, se necessário, ajuste na funcionalidade de exportação de relatórios da plataforma.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-23T19:07:49Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo corrigido. O problema era outro. Existe uma rotina que abre os PDFs de vistas das multas de PMF. Ela estava rodando na mesma fila dos relatórios e, com arquivos maiores, consome todo o tempo ",
-      "link": "https://redmine.platform.brobot.com.br/issues/83860"
-    },
-    {
       "id": 84351,
       "task": "API com limite de 50 infrações sendo buscadas",
       "descricao": "O cliente EMTEL nos questionou indicando que na última atualização da API nossa plataforma entregou para eles apenas 50 infrações.",
@@ -674,10 +661,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-24T11:27:32.132Z",
+  "gerado_em": "2026-09-24T11:57:41.848Z",
   "sprint_id": 69,
-  "total": 56,
+  "total": 57,
   "rows": [
+    {
+      "id": 83749,
+      "task": "autos_prefeitura_campinas_sp - O campo \"code\" da infração veio como null em uma multa NIC",
+      "descricao": "O cliente ESL questionou uma infração que retornou com o \"code\" como \"null\", a infração em questão é uma in...",
+      "category": "Backend - Consumo",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T11:55:55Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo descrições criadas.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83749"
+    },
+    {
+      "id": 83860,
+      "task": "Análise e correção da funcionalidade de exportação de relatórios",
+      "descricao": "Realizar análise e, se necessário, ajuste na funcionalidade de exportação de relatórios da plataforma.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T11:30:50Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic A exportação de veículos pela tela Definições Veículos está ocorrendo o corretamente como esperado. Porém, ao tentar",
+      "link": "https://redmine.platform.brobot.com.br/issues/83860"
+    },
     {
       "id": 84395,
       "task": "autos_detran_mg - UNHANDLED_SPIDER_EXCEPTION",
@@ -691,20 +706,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/84395"
-    },
-    {
-      "id": 83749,
-      "task": "autos_prefeitura_campinas_sp - O campo \"code\" da infração veio como null em uma multa NIC",
-      "descricao": "O cliente ESL questionou uma infração que retornou com o \"code\" como \"null\", a infração em questão é uma in...",
-      "category": "Backend - Consumo",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-23T20:11:06Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@felipe favor subir em produção e em staging estes registros, todos para a spider da Pref Campinas : | descrição | código | |---|---| |Transitar em velocidade superior ? m?xima permitida em at? 20%|74",
-      "link": "https://redmine.platform.brobot.com.br/issues/83749"
     },
     {
       "id": 82561,
