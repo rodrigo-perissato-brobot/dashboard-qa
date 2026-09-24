@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-24T17:26:36.565Z",
-  "total": 15,
+  "gerado_em": "2026-09-24T17:56:27.891Z",
+  "total": 14,
   "rows": [
     {
       "id": 57089,
@@ -555,6 +555,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82757"
     },
     {
+      "id": 82396,
+      "task": "Alteração da mensagem enviada ao motorista",
+      "descricao": "O motorista mandou uma mensagem no WhatsApp após o bot respondê-lo de uma outra mensagem e a mensagem envia...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-15T19:44:51Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo subi para staging. Subiu junto com 82757",
+      "link": "https://redmine.platform.brobot.com.br/issues/82396"
+    },
+    {
       "id": 80158,
       "task": "autos_prefeitura_sp - Otimizar spider",
       "descricao": "Trabalho de otimização da spider, tanto em velocidade, quanto em custo, para atender grandes volumes.",
@@ -566,19 +579,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@rodrigo, poderia realizar alguns testes em staging e validar os resultados, por gentileza? Mas não precisa aprovar a spider ainda, pois ainda temos mais algumas mudanças para fazer.",
       "link": "https://redmine.platform.brobot.com.br/issues/80158"
-    },
-    {
-      "id": 85151,
-      "task": "autos_detran_pe - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_pe (principal: PAGE_MALFUNCTION, 86.79%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "to do",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-22T20:37:31Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@jose-ricardo, encontramos e corrigimos o problema. O erro estava no login com o gov.br. O gov.br tem um WAF, que é um sistema de proteção contra robôs. Quando o login é feito, esse WAF fica associado",
-      "link": "https://redmine.platform.brobot.com.br/issues/85151"
     },
     {
       "id": 83004,
@@ -633,19 +633,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83860"
     },
     {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-24T14:40:53Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo por gentileza, testar novamente o item 84 em staging. Solicitei o relatório de Admin Contas e o e-mail chegou normalmente. Pode confirmar se no seu teste o relatório também chega? --- @joatha",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
       "id": 85163,
       "task": "autos_sne_denatran - Não captura de infrações pela spider",
       "descricao": "A spider não capturou todas as infrações disponíveis no órgão.",
@@ -674,10 +661,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-24T17:27:42.662Z",
+  "gerado_em": "2026-09-24T17:57:31.095Z",
   "sprint_id": 69,
-  "total": 53,
+  "total": 55,
   "rows": [
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T17:45:22Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "Item 84 - Aprovado O relatório da tela Admin Contas foi exportado corretamente agora e trouxe os dados corretos de todos os serviços para as contas selecionadas. Item 93: Concordo em tratar separadame",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 85151,
+      "task": "autos_detran_pe - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_pe (principal: PAGE_MALFUNCTION, 86.79%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-24T17:45:06Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/85151"
+    },
     {
       "id": 85353,
       "task": "Remover o reCaptcha do login e aplicar as medidas de segurança",
