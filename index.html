@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-24T13:56:30.858Z",
+  "gerado_em": "2026-09-24T14:26:32.584Z",
   "total": 15,
   "rows": [
     {
@@ -646,19 +646,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85213"
     },
     {
-      "id": 82617,
-      "task": "Adicionar filtro \"Excluídos\" no status do veículo dos relatórios ",
-      "descricao": "Hoje, quando um veículo é excluído da conta, os registros históricos dele continuam existindo e continuam c...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-23T21:14:50Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo atualizado em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82617"
-    },
-    {
       "id": 83860,
       "task": "Análise e correção da funcionalidade de exportação de relatórios",
       "descricao": "Realizar análise e, se necessário, ajuste na funcionalidade de exportação de relatórios da plataforma.",
@@ -670,14 +657,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo poderia dar um refresh ou abrir uma aba nova e testar novamente? Consegui exportar sem problemas.",
       "link": "https://redmine.platform.brobot.com.br/issues/83860"
+    },
+    {
+      "id": 85216,
+      "task": "Corrigir exibição das notificações no sininho",
+      "descricao": "Na área de notificações do sininho, a mensagem da campanha está sendo exibida, porém a notificação correspo...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-24T14:04:32Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella @gustavo atualizado em staging o frontend antigo.",
+      "link": "https://redmine.platform.brobot.com.br/issues/85216"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-24T13:57:37.200Z",
+  "gerado_em": "2026-09-24T14:27:39.587Z",
   "sprint_id": 69,
-  "total": 56,
+  "total": 53,
   "rows": [
+    {
+      "id": 82617,
+      "task": "Adicionar filtro \"Excluídos\" no status do veículo dos relatórios ",
+      "descricao": "Hoje, quando um veículo é excluído da conta, os registros históricos dele continuam existindo e continuam c...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T14:21:21Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82617"
+    },
     {
       "id": 81372,
       "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
@@ -721,20 +735,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/83749"
     },
     {
-      "id": 84395,
-      "task": "autos_detran_mg - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_mg, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 80.61%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-23T20:33:40Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/84395"
-    },
-    {
       "id": 82561,
       "task": "Ajustar regras de registro e download de documentos após implementação da #80498",
       "descricao": "Ajustar as regras de negócio relacionadas ao registro e download de documentos na plataforma, considerando...",
@@ -747,20 +747,6 @@
       "comentario_autor": "Roberta Espacachere",
       "comentario_trecho": "Boa tarde Gabriella, Tudo bem/ Conforme falamos, segue o comentário da Renata, sobre o tema: Descrição Boa tarde @Gabriella Mendes Mendes gabriella.mendes@brobot.com.br tudo bem? Conforme alinhado ent",
       "link": "https://redmine.platform.brobot.com.br/issues/82561"
-    },
-    {
-      "id": 85216,
-      "task": "Corrigir exibição das notificações no sininho",
-      "descricao": "Na área de notificações do sininho, a mensagem da campanha está sendo exibida, porém a notificação correspo...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-23T18:26:22Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@gabriella, Segue ajuste Ambiente: Staging | Conta: Conta Default | Versão: Ambas Verifiquei que no Platform Classic ainda não foi corrigido e a mensagem continua apagada quando usamos o modo claro. A",
-      "link": "https://redmine.platform.brobot.com.br/issues/85216"
     },
     {
       "id": 41092,
@@ -789,20 +775,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
-    },
-    {
-      "id": 80680,
-      "task": "Histórico de Consultas do Taxas exibindo serviços dos produtos Frotas e Embarcador",
-      "descricao": "No novo frontend, ao acessar o produto Taxas e, em seguida, a tela Histórico de Consultas, são apresentados...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-23T11:46:29Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/80680"
     },
     {
       "id": 82758,
@@ -887,20 +859,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@joathan @felipe solicito que prossigam com correção do tema",
       "link": "https://redmine.platform.brobot.com.br/issues/83270"
-    },
-    {
-      "id": 80678,
-      "task": "Histórico de Consultas do Frotas exibindo consultas dos produtos Taxas e Cronotacografo",
-      "descricao": "No novo frontend, ao acessar o produto Frotas e, em seguida, a tela Histórico de Consultas, a grade está ap...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T11:20:42Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/80678"
     },
     {
       "id": 63612,
