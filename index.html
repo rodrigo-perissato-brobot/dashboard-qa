@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-24T18:26:24.868Z",
-  "total": 15,
+  "gerado_em": "2026-09-24T18:56:25.680Z",
+  "total": 14,
   "rows": [
     {
       "id": 57089,
@@ -581,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/80158"
     },
     {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-23T12:53:02Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Adicionado um retry para abrir a sessao do SELENIUM e o VIRTUAL DISPLAY. @rodrigo poderia testar novamente por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
-    },
-    {
       "id": 84351,
       "task": "API com limite de 50 infrações sendo buscadas",
       "descricao": "O cliente EMTEL nos questionou indicando que na última atualização da API nossa plataforma entregou para eles apenas 50 infrações.",
@@ -665,7 +652,7 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-09-24T17:59:16Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging.",
@@ -674,23 +661,23 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-24T18:27:28.378Z",
+  "gerado_em": "2026-09-24T18:57:48.303Z",
   "sprint_id": 69,
   "total": 54,
   "rows": [
     {
-      "id": 85151,
-      "task": "autos_detran_pe - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_pe (principal: PAGE_MALFUNCTION, 86.79%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
       "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-09-24T18:06:07Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@thiago PR:",
-      "link": "https://redmine.platform.brobot.com.br/issues/85151"
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T18:43:24Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e melhorou um pouco mais, mas ainda há falhas. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Das 10 ",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
       "id": 63612,
