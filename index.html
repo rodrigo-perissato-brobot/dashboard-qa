@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-24T16:56:27.056Z",
+  "gerado_em": "2026-09-24T17:26:36.565Z",
   "total": 15,
   "rows": [
     {
@@ -553,19 +553,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo Indicação de condutores — o que mudou nas telas Guia de navegação das mudanças de front da entrega 82757. Duas telas novas no painel administrativo, uma nova no painel do cliente e quatro tel",
       "link": "https://redmine.platform.brobot.com.br/issues/82757"
-    },
-    {
-      "id": 82396,
-      "task": "Alteração da mensagem enviada ao motorista",
-      "descricao": "O motorista mandou uma mensagem no WhatsApp após o bot respondê-lo de uma outra mensagem e a mensagem envia...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-15T19:44:51Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo subi para staging. Subiu junto com 82757",
-      "link": "https://redmine.platform.brobot.com.br/issues/82396"
     },
     {
       "id": 80158,
@@ -670,14 +657,41 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Reabilitada a chave get_todas_multas para captura de infracoes que no portal, por mais que o status do filtro seja, por exemplo, SUSPENSAS/CANCELADAS aparecem infracoes NAO PAGAS no filtro. Ajustei o ",
       "link": "https://redmine.platform.brobot.com.br/issues/85163"
+    },
+    {
+      "id": 82758,
+      "task": "autos_detran_ba - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-24T17:03:39Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo corrigido, agora deve capturar normalmente.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82758"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-24T16:57:35.530Z",
+  "gerado_em": "2026-09-24T17:27:42.662Z",
   "sprint_id": 69,
   "total": 53,
   "rows": [
+    {
+      "id": 85353,
+      "task": "Remover o reCaptcha do login e aplicar as medidas de segurança",
+      "descricao": "",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T17:25:04Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo removi o recaptcha da aplicação. Nenhum lugar tem a proteção por recaptcha mais. Implementei um sistema de limite de tentativa de login.",
+      "link": "https://redmine.platform.brobot.com.br/issues/85353"
+    },
     {
       "id": 84393,
       "task": "Inclusão de veículos em lote apresenta resultados inconsistentes na validação",
@@ -789,20 +803,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/81067"
-    },
-    {
-      "id": 82758,
-      "task": "autos_detran_ba - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-23T11:43:06Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@felipe @gustavo Acredito que seja uma mudança na forma de consumo, então.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82758"
     },
     {
       "id": 84993,
