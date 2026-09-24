@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-23T20:26:20.070Z",
+  "gerado_em": "2026-09-24T10:56:17.707Z",
   "total": 15,
   "rows": [
     {
@@ -607,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85151"
     },
     {
-      "id": 84395,
-      "task": "autos_detran_mg - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_mg, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 80.61%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-22T23:20:31Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo aumentei os recursos e reprocessei as consultas: Poderia verificar e realizar os testes novamente, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/84395"
-    },
-    {
       "id": 83004,
       "task": "autos_sefaz_pr - Reativação da spider",
       "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
@@ -670,14 +657,41 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Realizado a implementação de fallback entre as solucoes de captcha hoje, ira funcionar da seguinte forma: - Seguiremos utilizando a priorizacao padrao sendo BREAKER - NONECAP - SMARTAPI. - Caso qualqu",
       "link": "https://redmine.platform.brobot.com.br/issues/85213"
+    },
+    {
+      "id": 82617,
+      "task": "Adicionar filtro \"Excluídos\" no status do veículo dos relatórios ",
+      "descricao": "Hoje, quando um veículo é excluído da conta, os registros históricos dele continuam existindo e continuam c...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-23T21:14:50Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82617"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-23T20:27:23.700Z",
+  "gerado_em": "2026-09-24T10:57:23.756Z",
   "sprint_id": 69,
   "total": 56,
   "rows": [
+    {
+      "id": 84395,
+      "task": "autos_detran_mg - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "Spider autos_detran_mg, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 80.61%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-09-23T20:33:40Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/84395"
+    },
     {
       "id": 83749,
       "task": "autos_prefeitura_campinas_sp - O campo \"code\" da infração veio como null em uma multa NIC",
@@ -901,20 +915,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@rolf, Segue ajuste Ambiente: Staging | Conta: Testes Funcionais Realizei os testes e identifiquei que, no Platform Classic, as orders são exibidas corretamente nas respectivas telas. Porém, no Platfo",
       "link": "https://redmine.platform.brobot.com.br/issues/71405"
-    },
-    {
-      "id": 82617,
-      "task": "Adicionar filtro \"Excluídos\" no status do veículo dos relatórios ",
-      "descricao": "Hoje, quando um veículo é excluído da conta, os registros históricos dele continuam existindo e continuam c...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-18T19:13:06Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan, Segue ajuste: Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Ao filtrar por veículos excluídos no CaçaMultas Frotas e solicitar a exportação de todas as multas, ao clicar em ",
-      "link": "https://redmine.platform.brobot.com.br/issues/82617"
     },
     {
       "id": 83567,
