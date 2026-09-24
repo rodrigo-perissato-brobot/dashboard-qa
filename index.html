@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-24T16:26:24.230Z",
-  "total": 16,
+  "gerado_em": "2026-09-24T16:56:27.056Z",
+  "total": 15,
   "rows": [
     {
       "id": 57089,
@@ -561,24 +561,11 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-09-15T19:44:51Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi para staging. Subiu junto com 82757",
       "link": "https://redmine.platform.brobot.com.br/issues/82396"
-    },
-    {
-      "id": 84393,
-      "task": "Inclusão de veículos em lote apresenta resultados inconsistentes na validação",
-      "descricao": "Ao realizar a inclusão de veículos em lote, foi utilizado um arquivo contendo 30 veículos.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-09-22T12:19:28Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo corrigido. Por que acontecia O processamento agiu corretamente nas duas tentativas. As diferenças vieram do modo de envio, definido pela opção \"Atualizar veículos existentes\" do modal de revi",
-      "link": "https://redmine.platform.brobot.com.br/issues/84393"
     },
     {
       "id": 80158,
@@ -687,10 +674,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-24T16:27:28.790Z",
+  "gerado_em": "2026-09-24T16:57:35.530Z",
   "sprint_id": 69,
   "total": 53,
   "rows": [
+    {
+      "id": 84393,
+      "task": "Inclusão de veículos em lote apresenta resultados inconsistentes na validação",
+      "descricao": "Ao realizar a inclusão de veículos em lote, foi utilizado um arquivo contendo 30 veículos.",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-24T16:50:44Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/84393"
+    },
     {
       "id": 81372,
       "task": "autos_detran_es_taxas - ajuste na captura do boleto do licenciamento",
@@ -746,20 +747,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@felipe @joathan solicito que alguém assuma a atividade de análise e correção do tema",
       "link": "https://redmine.platform.brobot.com.br/issues/83075"
-    },
-    {
-      "id": 83749,
-      "task": "autos_prefeitura_campinas_sp - O campo \"code\" da infração veio como null em uma multa NIC",
-      "descricao": "O cliente ESL questionou uma infração que retornou com o \"code\" como \"null\", a infração em questão é uma in...",
-      "category": "Backend - Consumo",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-24T11:55:55Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo descrições criadas.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83749"
     },
     {
       "id": 82561,
