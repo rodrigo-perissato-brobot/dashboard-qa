@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-25T15:56:21.802Z",
-  "total": 12,
+  "gerado_em": "2026-09-25T16:26:25.478Z",
+  "total": 11,
   "rows": [
     {
       "id": 57089,
@@ -594,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85163"
     },
     {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-24T19:34:35Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@rodrigo ajustei novamente os recursos, mesmo com ajustes anteriores o SELENIUM ainda continua falhando em algumas vezes. poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
-    },
-    {
       "id": 75985,
       "task": "autos_detran_ms - UNHANDLED_SPIDER_EXCEPTION",
       "descricao": "Spider autos_detran_ms — 361 execuções, 100.0% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 98.6%)",
@@ -635,10 +622,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-25T15:57:26.102Z",
+  "gerado_em": "2026-09-25T16:27:29.764Z",
   "sprint_id": 69,
-  "total": 56,
+  "total": 57,
   "rows": [
+    {
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-25T16:23:37Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e dessa vez piorou em relação ao teste anterior. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Das 1",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
+    },
     {
       "id": 83146,
       "task": "autos_sne_denatran_indicacao_condutor - PAGE_MALFUNCTION",
