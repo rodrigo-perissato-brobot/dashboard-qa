@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-28T18:56:13.212Z",
-  "total": 10,
+  "gerado_em": "2026-09-28T19:26:41.636Z",
+  "total": 8,
   "rows": [
     {
       "id": 57089,
@@ -555,32 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82396"
     },
     {
-      "id": 80158,
-      "task": "autos_prefeitura_sp - Otimizar spider",
-      "descricao": "Trabalho de otimização da spider, tanto em velocidade, quanto em custo, para atender grandes volumes.",
-      "category": "Spider - Outros",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-28T12:25:39Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@Rodrigo poderia testar novamente por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/80158"
-    },
-    {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-28T17:06:05Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@rodrigo poderia testar novamente por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
-    },
-    {
       "id": 76008,
       "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
       "descricao": "Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter priorida...",
@@ -609,23 +583,37 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-28T18:57:12.237Z",
+  "gerado_em": "2026-09-28T19:27:51.590Z",
   "sprint_id": 70,
-  "total": 49,
+  "total": 50,
   "rows": [
     {
-      "id": 84351,
-      "task": "API com limite de 50 infrações sendo buscadas",
-      "descricao": "O cliente EMTEL nos questionou indicando que na última atualização da API nossa plataforma entregou para eles apenas 50 infrações.",
-      "category": "Backend - Outros",
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "",
       "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-28T19:13:28Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e o resultado se manteve no mesmo patamar do teste anterior, ainda com falhas de Selenium. Ambiente: Staging | Conta: Testes Funcionai",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
+    },
+    {
+      "id": 80158,
+      "task": "autos_prefeitura_sp - Otimizar spider",
+      "descricao": "Trabalho de otimização da spider, tanto em velocidade, quanto em custo, para atender grandes volumes.",
+      "category": "Spider - Outros",
+      "priority": "low",
       "status": "awaiting deploy",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-28T16:48:14Z",
+      "data_comentario": "2026-09-28T18:59:04Z",
       "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/84351"
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/80158"
     },
     {
       "id": 82868,
