@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-28T19:26:41.636Z",
+  "gerado_em": "2026-09-28T19:56:17.783Z",
   "total": 8,
   "rows": [
     {
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82396"
     },
     {
-      "id": 76008,
-      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
-      "descricao": "Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter priorida...",
-      "category": "Operação - Origem",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-28T18:04:41Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo atualizado em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76008"
-    },
-    {
       "id": 83075,
       "task": "Alteração de UF com SNE habilitado ativa spiders de frotas da nova UF",
       "descricao": "Após a implementação da Feature 73680 de atualização automática dos serviços conforme a UF do veículo, iden...",
@@ -579,14 +566,55 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo, não encontrei nada de errado no código, olhei o histórico dos veículos do seu teste. Em um momento o SNE chegou a ser desligado e só voltou alguns minutos depois. As trocas de UF em que as f",
       "link": "https://redmine.platform.brobot.com.br/issues/83075"
+    },
+    {
+      "id": 85762,
+      "task": "autos_detran_es - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 99.33%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-28T19:29:33Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@jose-ricardo Corrigido. Depois do login, o Acesso Cidadão passou a redirecionar para /Consentir (tela \"DetranNet precisa de sua autorização\"). A spider não reconhecia essa tela e dava PAGE_MALFUNCTIO",
+      "link": "https://redmine.platform.brobot.com.br/issues/85762"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-28T19:27:51.590Z",
+  "gerado_em": "2026-09-28T19:57:16.876Z",
   "sprint_id": 70,
-  "total": 50,
+  "total": 51,
   "rows": [
+    {
+      "id": 76008,
+      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
+      "descricao": "Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter priorida...",
+      "category": "Operação - Origem",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-28T19:35:08Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan, Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic/New No Platform Classic, a funcionalidade foi validada conforme os critérios de aceite e apresentou o comportament",
+      "link": "https://redmine.platform.brobot.com.br/issues/76008"
+    },
+    {
+      "id": 82758,
+      "task": "autos_detran_ba - Alteração do login gov.br",
+      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
+      "category": "Spider - Falha de sincronização ou timeout",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-28T19:27:59Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "Atualizado em produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82758"
+    },
     {
       "id": 83004,
       "task": "autos_sefaz_pr - Reativação da spider",
@@ -620,7 +648,7 @@
       "task": "Download de documentos em lote e duplicidade ",
       "descricao": "Devolver ao cliente o controle sobre o volume de documentos que ele baixa, e impedir que o histórico da mul...",
       "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
+      "priority": "immediate",
       "status": "in progress",
       "tipo": "outro",
       "responsavel_atual": "Product owner",
@@ -670,20 +698,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Agora a captura passa a funcionar assim: a rotina diária monta uma consulta por estabelecimento, uma para a matriz e uma para cada filial cadastrada com o mesmo começo de CNPJ, e cad",
       "link": "https://redmine.platform.brobot.com.br/issues/85286"
-    },
-    {
-      "id": 82758,
-      "task": "autos_detran_ba - Alteração do login gov.br",
-      "descricao": "Alterar a spider do Detran BA para a nova solução do login gov.br",
-      "category": "Spider - Falha de sincronização ou timeout",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-24T19:50:57Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82758"
     },
     {
       "id": 63612,
