@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-29T12:56:40.313Z",
+  "gerado_em": "2026-09-29T13:26:25.887Z",
   "total": 11,
   "rows": [
     {
@@ -622,24 +622,10 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-29T12:58:26.100Z",
+  "gerado_em": "2026-09-29T13:27:36.710Z",
   "sprint_id": 70,
-  "total": 39,
+  "total": 45,
   "rows": [
-    {
-      "id": 76008,
-      "task": "Checkbox \"Login GOV.BR\" no cadastro de credencial (ANTT / ANTT Processos)",
-      "descricao": "Permitir que o operador indique, no cadastro de credencial, que a autenticação via gov.br deve ter priorida...",
-      "category": "Operação - Origem",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-29T12:07:56Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/76008"
-    },
     {
       "id": 83075,
       "task": "Alteração de UF com SNE habilitado ativa spiders de frotas da nova UF",
@@ -907,6 +893,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
+      "id": 51852,
+      "task": "FICI Preenchida Automaticamente - Davi",
+      "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-08T19:32:19Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Novo relatório",
+      "link": "https://redmine.platform.brobot.com.br/issues/51852"
+    },
+    {
       "id": 81578,
       "task": "Motoristas | Exclusão de motoristas com preservação dos registros vinculados (LGPD)",
       "descricao": "O CRUD de motoristas está incompleto: hoje o cliente cadastra, edita e importa motoristas, mas não consegue...",
@@ -935,6 +935,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/74637"
     },
     {
+      "id": 80541,
+      "task": "Cruzamento por Locatário no CM-Frotas",
+      "descricao": "Permitir que o cliente que loca seus veículos para outro CNPJ atribua automaticamente as multas do período...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-27T18:20:14Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado na planning realizada em 27/08/2026 com os participantes @rodrigo @gabriella @felipe @joathan @miguel @delvin @gustavo @jose-ricardo foi alinhado que seguiremos com implementação na ",
+      "link": "https://redmine.platform.brobot.com.br/issues/80541"
+    },
+    {
       "id": 78408,
       "task": "autos_sne_denatran_indicacao_condutor - Encontrei um novo cenário em que é possível realizar a indicação com a infração paga",
       "descricao": "Encontramos um novo cenário em que é possível realizar a indicação de condutor de infrações pagas.",
@@ -961,6 +975,20 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella não criei o PR da branch protótipo.",
       "link": "https://redmine.platform.brobot.com.br/issues/79535"
+    },
+    {
+      "id": 51016,
+      "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
+      "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "planning: to plan",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-08-26T18:33:41Z",
+      "comentario_autor": "Roberta Espacachere",
+      "comentario_trecho": "Boa tarde @gabriella Acrescento que o cliente Minerva Foods também reportou essa necessidade, identificando divergências entre a Situação da multa e o Status apresentado na plataforma. Foram apontados",
+      "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
       "id": 46135,
@@ -1031,6 +1059,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@roberta @gustavo @felipe-godoy @leonardo.paganotti @julya.tochio @renata @maria.rozolem @Thais boa tarde, 71387 — Status Ativo/Inativo de Empresas em Definições Situação: entregue e disponível em pro",
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
+    },
+    {
+      "id": 61539,
+      "task": "Implementação do Módulo CaçaCondutores > Integração",
+      "descricao": "",
+      "category": "Produtos - Novo produto",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-28T15:04:30Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf Reprovado . Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o g",
+      "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
       "id": 37739,
@@ -1131,6 +1173,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75084"
     },
     {
+      "id": 53155,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
+      "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
+      "category": "anterior",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-23T17:52:13Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@renata boa tarde, Conforme alinhamento em reunião 09/03/2026 com os presentes Henrique, Emerson, Gabriella, Guilherme, Roberta, Renata, Davi, Jose: foi alinhado que somente seguiremos com o desenvolv",
+      "link": "https://redmine.platform.brobot.com.br/issues/53155"
+    },
+    {
       "id": 43159,
       "task": "Filtro por Centro de Custo - Supermix ",
       "descricao": "Adicionar a opção de filtrar multas, relatórios e dashboards por Centro de Custo, permitindo que o usuário...",
@@ -1159,6 +1215,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/16564"
     },
     {
+      "id": 44624,
+      "task": "GERAR INSIGHTS PÓS CONSULTA E ENVIAR VIA E-MAIL/WHATSAPP",
+      "descricao": "",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "planning: to plan",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-01T12:01:27Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@Roberta bom dia, Informo que o projeto de desenvolvimento foi relizado, o tema será estimado pelos desenvolvedores e posteriormente planejado para desenvolvimento em uma sprint",
+      "link": "https://redmine.platform.brobot.com.br/issues/44624"
+    },
+    {
       "id": 30232,
       "task": "Conta mestre Cervejaria Imperial",
       "descricao": "O cliente Cervejaria Imperial (ID: 1807, 1574, 1573, 1572, 1568, 1513, 1512, 1511, 1510, 1509, 1416, 1414,...",
@@ -1171,6 +1241,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
       "link": "https://redmine.platform.brobot.com.br/issues/30232"
+    },
+    {
+      "id": 60381,
+      "task": "Estruturação do processo e documentação do fluxo de Indicação de Condutor",
+      "descricao": "Realizar a estruturação macro do tema de Indicação de Condutor, contemplando tanto a documentação interna p...",
+      "category": "Produtos - Documentação",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-04-14T18:58:38Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
+      "link": "https://redmine.platform.brobot.com.br/issues/60381"
     }
   ]
 };
