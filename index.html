@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-30T19:26:33.552Z",
-  "total": 14,
+  "gerado_em": "2026-09-30T19:56:33.754Z",
+  "total": 17,
   "rows": [
     {
       "id": 57089,
@@ -581,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75786"
     },
     {
-      "id": 86134,
-      "task": " autos_dnit_embarcador - 100% das consultas falhando no estágio send_to_platform",
-      "descricao": "Desde pelo menos 26/09/2026, todas as consultas da spider dnit_embarcador (autos_dnit) estão terminando com...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-30T16:17:13Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@jose-ricardo, encontramos a causa: um refactor de configuração mudou a leitura das credenciais do proxy DataImpulse, e as spiders autos_dnit e autos_embarcador_der_sp passaram a enviar credencial inv",
-      "link": "https://redmine.platform.brobot.com.br/issues/86134"
-    },
-    {
       "id": 75084,
       "task": "Consumo incorreto da plataforma do embarcador",
       "descricao": "A plataforma não tem consumido corretamente todas as informações trazidas pelos robôs embarcador.",
@@ -657,14 +644,80 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@rodrigo @gustavo por gentileza prosseguir com testes",
       "link": "https://redmine.platform.brobot.com.br/issues/80541"
+    },
+    {
+      "id": 71405,
+      "task": "Criação de Orders no novo padrão para CNH e Toxicológico",
+      "descricao": "",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-30T19:30:46Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@gustavo @rodrigo — respondendo ao ajuste de 21/09 e à dúvida do painel (Discord de hoje). 1. Platform New sem orders em Admin Coleta de Dados de Motoristas — corrigido no dev Causa: a correção do kin",
+      "link": "https://redmine.platform.brobot.com.br/issues/71405"
+    },
+    {
+      "id": 79542,
+      "task": "Permitir múltiplos registros de FUP no card  da opção credenciais",
+      "descricao": "Evoluir a tela atual de acompanhamento de FUP para permitir o registro de múltiplos contatos FUP no mesmo t...",
+      "category": "Operação - Origem",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-30T19:33:00Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/79542"
+    },
+    {
+      "id": 79536,
+      "task": "Filtros da aba “Credenciais” não aplicam os critérios selecionados",
+      "descricao": "Na tela Admin Volumetria Credenciais, os filtros disponíveis não estão realizando a ação esperada.",
+      "category": "Frontend - Novo frontend",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-30T19:33:08Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/79536"
+    },
+    {
+      "id": 86121,
+      "task": "Gestão de Condutores – Permitir “Não quero indicar”",
+      "descricao": "Criar no módulo Gestão de Condutores a opção “Não quero indicar”, permitindo registrar que a indicação de d...",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-30T19:34:07Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Em staging — pronto para teste @rodrigo Tudo mergeado e implantado em staging (maestro, platform, front novo e front antigo). O que mudou - Nova ação \"Não quero indicar\" na Indicação de Condutores, di",
+      "link": "https://redmine.platform.brobot.com.br/issues/86121"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-30T19:27:42.499Z",
+  "gerado_em": "2026-09-30T19:57:41.744Z",
   "sprint_id": 70,
   "total": 41,
   "rows": [
+    {
+      "id": 86134,
+      "task": " autos_dnit_embarcador - 100% das consultas falhando no estágio send_to_platform",
+      "descricao": "Desde pelo menos 26/09/2026, todas as consultas da spider dnit_embarcador (autos_dnit) estão terminando com...",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-30T19:46:56Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@felipe Poderia por favor efetuar um ajuste no consumo de credencial? Neste caso que estou testando, está buscando uma credencial não preferencial ao invés do certificado cadastrado na empresa. Ambien",
+      "link": "https://redmine.platform.brobot.com.br/issues/86134"
+    },
     {
       "id": 85896,
       "task": "autos_divida_ativa_prefeitura_sp - Melhorias",
@@ -678,20 +731,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/85896"
-    },
-    {
-      "id": 71405,
-      "task": "Criação de Orders no novo padrão para CNH e Toxicológico",
-      "descricao": "",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-30T19:15:25Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Ajuste validado. Ambiente: Staging | Conta: Testes Funcionais Após alinhamento, foi confirmado que o processo de Coleta de Dados de Motoristas está funcionando corretamente, sendo necessária ape",
-      "link": "https://redmine.platform.brobot.com.br/issues/71405"
     },
     {
       "id": 81814,
