@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-30T17:26:26.621Z",
+  "gerado_em": "2026-09-30T17:56:18.720Z",
   "total": 12,
   "rows": [
     {
@@ -607,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86134"
     },
     {
-      "id": 86132,
-      "task": "autos_embarcador_der_sp -100% das consultas falhando no estágio send_to_platform ",
-      "descricao": "Desde pelo menos 26/09/2026, todas as consultas da spider der-sp-embarcador (autos_embarcador_der_sp) estão...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-09-30T16:17:14Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@jose-ricardo, encontramos a causa: um refactor de configuração mudou a leitura das credenciais do proxy DataImpulse, e as spiders autos_dnit e autos_embarcador_der_sp passaram a enviar credencial inv",
-      "link": "https://redmine.platform.brobot.com.br/issues/86132"
-    },
-    {
       "id": 81814,
       "task": "Histórico de Ações | Ação específica com valor anterior e novo por campo, filtros e exportação do relatório",
       "descricao": "Tornar o Histórico de Ações uma evidência utilizável: cada registro passa a dizer qual ação foi executada e...",
@@ -631,14 +618,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/81814"
+    },
+    {
+      "id": 80541,
+      "task": "Cruzamento por Locatário no CM-Frotas",
+      "descricao": "Permitir que o cliente que loca seus veículos para outro CNPJ atribua automaticamente as multas do período...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-30T17:53:39Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Em staging — pronto para teste @rodrigo Tudo mergeado e implantado em staging: maestro, platform, front novo (dev.plataformabrobot.com.br) e front antigo (platform-staging). A conta Testes Funcionais ",
+      "link": "https://redmine.platform.brobot.com.br/issues/80541"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-30T17:27:24.951Z",
+  "gerado_em": "2026-09-30T17:57:22.912Z",
   "sprint_id": 70,
   "total": 42,
   "rows": [
+    {
+      "id": 86132,
+      "task": "autos_embarcador_der_sp -100% das consultas falhando no estágio send_to_platform ",
+      "descricao": "Desde pelo menos 26/09/2026, todas as consultas da spider der-sp-embarcador (autos_embarcador_der_sp) estão...",
+      "category": "Proxy - Outros",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-30T17:38:34Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86132"
+    },
     {
       "id": 83004,
       "task": "autos_sefaz_pr - Reativação da spider",
@@ -652,20 +666,6 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Finalizada a tarefa 83005 e realizada PR.",
       "link": "https://redmine.platform.brobot.com.br/issues/83004"
-    },
-    {
-      "id": 80541,
-      "task": "Cruzamento por Locatário no CM-Frotas",
-      "descricao": "Permitir que o cliente que loca seus veículos para outro CNPJ atribua automaticamente as multas do período...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-30T15:14:11Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Planejamento fechado com o Rolf (30/09) - Períodos guardados: a planilha fica salva e é a verdade vigente. Um novo envio substitui a lista inteira e multas que saíram do período perdem o locatário. - ",
-      "link": "https://redmine.platform.brobot.com.br/issues/80541"
     },
     {
       "id": 79535,
