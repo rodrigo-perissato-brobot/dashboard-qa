@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-09-30T16:26:19.491Z",
-  "total": 11,
+  "gerado_em": "2026-09-30T16:56:55.439Z",
+  "total": 12,
   "rows": [
     {
       "id": 57089,
@@ -618,14 +618,41 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo, encontramos a causa: um refactor de configuração mudou a leitura das credenciais do proxy DataImpulse, e as spiders autos_dnit e autos_embarcador_der_sp passaram a enviar credencial inv",
       "link": "https://redmine.platform.brobot.com.br/issues/86132"
+    },
+    {
+      "id": 81814,
+      "task": "Histórico de Ações | Ação específica com valor anterior e novo por campo, filtros e exportação do relatório",
+      "descricao": "Tornar o Histórico de Ações uma evidência utilizável: cada registro passa a dizer qual ação foi executada e...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-30T16:54:34Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/81814"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-09-30T16:27:22.301Z",
+  "gerado_em": "2026-09-30T16:58:10.205Z",
   "sprint_id": 70,
-  "total": 44,
+  "total": 43,
   "rows": [
+    {
+      "id": 83004,
+      "task": "autos_sefaz_pr - Reativação da spider",
+      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-30T16:51:58Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83004"
+    },
     {
       "id": 80541,
       "task": "Cruzamento por Locatário no CM-Frotas",
@@ -655,20 +682,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/79535"
     },
     {
-      "id": 81814,
-      "task": "Histórico de Ações | Ação específica com valor anterior e novo por campo, filtros e exportação do relatório",
-      "descricao": "Tornar o Histórico de Ações uma evidência utilizável: cada registro passa a dizer qual ação foi executada e...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-30T12:52:55Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe Seguem ajustes 1 - Filtro por Registro Ao utilizar apenas o filtro de Ação = Exclusão, é possível visualizar registros de exclusões realizadas em diferentes tipos de registro. Porém, ao adicio",
-      "link": "https://redmine.platform.brobot.com.br/issues/81814"
-    },
-    {
       "id": 83075,
       "task": "Alteração de UF com SNE habilitado ativa spiders de frotas da nova UF",
       "descricao": "Após a implementação da Feature 73680 de atualização automática dos serviços conforme a UF do veículo, iden...",
@@ -681,20 +694,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/83075"
-    },
-    {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-28T19:13:28Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Testei novamente a spider autos_sefaz_pr_taxas e o resultado se manteve no mesmo patamar do teste anterior, ainda com falhas de Selenium. Ambiente: Staging | Conta: Testes Funcionai",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
       "id": 85667,
