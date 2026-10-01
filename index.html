@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-01T17:56:56.543Z",
-  "total": 17,
+  "gerado_em": "2026-10-01T18:26:43.701Z",
+  "total": 19,
   "rows": [
     {
       "id": 57089,
@@ -514,6 +514,32 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
       "link": "https://redmine.platform.brobot.com.br/issues/64086"
+    },
+    {
+      "id": 83547,
+      "task": "maestro: URL do brobot-condutores por ambiente (staging → hml, produção inalterada)",
+      "descricao": "k8s/maestro/templates/configmap.yaml tem a URL do brobot-condutores fixa no domínio de staging, para todos os ambientes.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-15T13:09:09Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Em staging k8s/maestro/templates/configmap.yaml agora é condicional por appEnv: produção mantém a URL e a chave de hoje (render do helm idêntico), staging aponta para com a chave do ambiente de homolo",
+      "link": "https://redmine.platform.brobot.com.br/issues/83547"
+    },
+    {
+      "id": 82757,
+      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
+      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-15T19:43:12Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo Indicação de condutores — o que mudou nas telas Guia de navegação das mudanças de front da entrega 82757. Duas telas novas no painel administrativo, uma nova no painel do cliente e quatro tel",
+      "link": "https://redmine.platform.brobot.com.br/issues/82757"
     },
     {
       "id": 82396,
@@ -700,23 +726,23 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-01T17:58:16.250Z",
+  "gerado_em": "2026-10-01T18:28:20.273Z",
   "sprint_id": 70,
-  "total": 37,
+  "total": 38,
   "rows": [
     {
-      "id": 80541,
-      "task": "Cruzamento por Locatário no CM-Frotas",
-      "descricao": "Permitir que o cliente que loca seus veículos para outro CNPJ atribua automaticamente as multas do período...",
-      "category": "Produtos - Melhoria de itens existentes",
+      "id": 86134,
+      "task": " autos_dnit_embarcador - 100% das consultas falhando no estágio send_to_platform",
+      "descricao": "Desde pelo menos 26/09/2026, todas as consultas da spider dnit_embarcador (autos_dnit) estão terminando com...",
+      "category": "Spider - Erro na lógica de extração",
       "priority": "high",
       "status": "awaiting deploy",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-01T17:40:57Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Em produção (01/10) - Maestro (PR 1695) e Platform (PR 1696) — imagens production-fa758c91 e production-9f300af6 no ar, migrations aplicadas. - Front novo — PR mergeada na main e publicada no Vercel (",
-      "link": "https://redmine.platform.brobot.com.br/issues/80541"
+      "data_comentario": "2026-10-01T18:24:39Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@thiago Esta mudança é a mesma que a task Portanto, já esta em produção",
+      "link": "https://redmine.platform.brobot.com.br/issues/86134"
     },
     {
       "id": 79535,
@@ -731,20 +757,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/79535"
-    },
-    {
-      "id": 86134,
-      "task": " autos_dnit_embarcador - 100% das consultas falhando no estágio send_to_platform",
-      "descricao": "Desde pelo menos 26/09/2026, todas as consultas da spider dnit_embarcador (autos_dnit) estão terminando com...",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-01T16:17:31Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan @thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86134"
     },
     {
       "id": 83004,
@@ -857,6 +869,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@felipe por gentileza, poderia prosseguir com análise do tema?",
       "link": "https://redmine.platform.brobot.com.br/issues/39504"
+    },
+    {
+      "id": 43063,
+      "task": "Novas Funcionalidades Cronotacógrafo",
+      "descricao": "Realizar um estudo de novas funcionalidades para tornar o módulo de cronotacógrafo mais completo, incluindo...",
+      "category": "anterior",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-16T18:47:29Z",
+      "comentario_autor": "Felipe Godoy",
+      "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
+      "link": "https://redmine.platform.brobot.com.br/issues/43063"
     },
     {
       "id": 51186,
@@ -1053,6 +1079,20 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo a Confirmação da Operação foi executada e as 3 notas serão disponibilizadas em breve.",
       "link": "https://redmine.platform.brobot.com.br/issues/76717"
+    },
+    {
+      "id": 43150,
+      "task": "Filtro por veículos ativos e inativos - IBOR (ID: 1296)",
+      "descricao": "CaçaMultas Frotas Criação de um filtro de veículos ativos e inativos dentro do CaçaMultas Frotas, permitind...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-31T18:26:11Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@roberta @gustavo @felipe-godoy @leonardo.paganotti @julya.tochio @renata @maria.rozolem @Thais boa tarde, 71387 — Status Ativo/Inativo de Empresas em Definições Situação: entregue e disponível em pro",
+      "link": "https://redmine.platform.brobot.com.br/issues/43150"
     },
     {
       "id": 61539,
