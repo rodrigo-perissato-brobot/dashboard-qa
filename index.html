@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-01T12:56:51.881Z",
-  "total": 16,
+  "gerado_em": "2026-10-01T13:26:53.333Z",
+  "total": 17,
   "rows": [
     {
       "id": 57089,
@@ -527,32 +527,6 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Em staging k8s/maestro/templates/configmap.yaml agora é condicional por appEnv: produção mantém a URL e a chave de hoje (render do helm idêntico), staging aponta para com a chave do ambiente de homolo",
       "link": "https://redmine.platform.brobot.com.br/issues/83547"
-    },
-    {
-      "id": 82757,
-      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
-      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-15T19:43:12Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo Indicação de condutores — o que mudou nas telas Guia de navegação das mudanças de front da entrega 82757. Duas telas novas no painel administrativo, uma nova no painel do cliente e quatro tel",
-      "link": "https://redmine.platform.brobot.com.br/issues/82757"
-    },
-    {
-      "id": 82396,
-      "task": "Alteração da mensagem enviada ao motorista",
-      "descricao": "O motorista mandou uma mensagem no WhatsApp após o bot respondê-lo de uma outra mensagem e a mensagem envia...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-15T19:44:51Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo subi para staging. Subiu junto com 82757",
-      "link": "https://redmine.platform.brobot.com.br/issues/82396"
     },
     {
       "id": 85035,
@@ -659,6 +633,32 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71405"
     },
     {
+      "id": 79542,
+      "task": "Permitir múltiplos registros de FUP no card  da opção credenciais",
+      "descricao": "Evoluir a tela atual de acompanhamento de FUP para permitir o registro de múltiplos contatos FUP no mesmo t...",
+      "category": "Operação - Origem",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-30T19:33:00Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/79542"
+    },
+    {
+      "id": 79536,
+      "task": "Filtros da aba “Credenciais” não aplicam os critérios selecionados",
+      "descricao": "Na tela Admin Volumetria Credenciais, os filtros disponíveis não estão realizando a ação esperada.",
+      "category": "Frontend - Novo frontend",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-30T19:33:08Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/79536"
+    },
+    {
       "id": 86121,
       "task": "Gestão de Condutores – Permitir “Não quero indicar”",
       "descricao": "Criar no módulo Gestão de Condutores a opção “Não quero indicar”, permitindo registrar que a indicação de d...",
@@ -670,6 +670,19 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Em staging — pronto para teste @rodrigo Tudo mergeado e implantado em staging (maestro, platform, front novo e front antigo). O que mudou - Nova ação \"Não quero indicar\" na Indicação de Condutores, di",
       "link": "https://redmine.platform.brobot.com.br/issues/86121"
+    },
+    {
+      "id": 79535,
+      "task": "Edição de serviços e produtos de veículos em lote pela área administrativa",
+      "descricao": "Permitir que o time de suporte altere os serviços (robôs) e os produtos de vários veículos de uma conta de...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-09-30T19:57:16Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo atualizado staging do novo frontend.",
+      "link": "https://redmine.platform.brobot.com.br/issues/79535"
     },
     {
       "id": 81814,
@@ -687,9 +700,9 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-01T12:58:13.003Z",
+  "gerado_em": "2026-10-01T13:28:00.587Z",
   "sprint_id": 70,
-  "total": 36,
+  "total": 37,
   "rows": [
     {
       "id": 86134,
@@ -928,6 +941,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Novo relatório",
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
+    },
+    {
+      "id": 81578,
+      "task": "Motoristas | Exclusão de motoristas com preservação dos registros vinculados (LGPD)",
+      "descricao": "O CRUD de motoristas está incompleto: hoje o cliente cadastra, edita e importa motoristas, mas não consegue...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-04T18:44:57Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado na planning realizada em 04/09/2026 com os participantes @rodrigo @gabriella @felipe @joathan @thiago @delvin @gustavo foi alinhado que seguiremos com implementação na sprint 37 com ",
+      "link": "https://redmine.platform.brobot.com.br/issues/81578"
     },
     {
       "id": 74637,
