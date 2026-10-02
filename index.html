@@ -473,9 +473,22 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-02T11:56:56.251Z",
-  "total": 13,
+  "gerado_em": "2026-10-02T12:26:31.512Z",
+  "total": 15,
   "rows": [
+    {
+      "id": 57089,
+      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
+      "descricao": "Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de vencimento de CNH,...",
+      "category": "Produtos - Novo produto",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-07-15T03:35:50Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
+      "link": "https://redmine.platform.brobot.com.br/issues/57089"
+    },
     {
       "id": 73585,
       "task": "Configurar domínio consultas-api.com.br para a API White Label",
@@ -644,13 +657,26 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo front antigo atualizado.",
       "link": "https://redmine.platform.brobot.com.br/issues/86276"
+    },
+    {
+      "id": 85756,
+      "task": "Ajuste do campo Cidade na API – KOTHE",
+      "descricao": "Ajustar o campo Cidade disponibilizado pela API na nova plataforma para retornar a informação correta de ci...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-02T11:55:07Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo corrigido no Platform New (frontend novo), em staging para testar. Campo Cidade (o problema da tarefa) A API sempre mandou a cidade como código do município (IBGE). O Platform Classic convert",
+      "link": "https://redmine.platform.brobot.com.br/issues/85756"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-02T11:57:58.502Z",
+  "gerado_em": "2026-10-02T12:27:39.080Z",
   "sprint_id": 70,
-  "total": 41,
+  "total": 39,
   "rows": [
     {
       "id": 75786,
@@ -665,20 +691,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@joathan backend dessa já está em produção, falta só o front novo.",
       "link": "https://redmine.platform.brobot.com.br/issues/75786"
-    },
-    {
-      "id": 86239,
-      "task": "autos_prefeitura_sp - Tratar erro de PDF",
-      "descricao": "Tratar erros de PDF ocorridos em produção:",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-02T11:30:58Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86239"
     },
     {
       "id": 81814,
@@ -721,20 +733,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/79535"
-    },
-    {
-      "id": 83004,
-      "task": "autos_sefaz_pr - Reativação da spider",
-      "descricao": "A spider autos_sefaz_pr foi desativada em produção, pois inicialmente estávamos realizando a captura de 100% das taxas pelo Detran PR.",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-30T17:02:57Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Finalizada a tarefa 83005 e realizada PR.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83004"
     },
     {
       "id": 85286,
