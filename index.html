@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-02T14:26:25.062Z",
-  "total": 15,
+  "gerado_em": "2026-10-02T14:56:25.076Z",
+  "total": 16,
   "rows": [
     {
       "id": 57089,
@@ -626,7 +626,7 @@
       "category": "Frontend - Outros",
       "priority": "medium",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-02T11:32:20Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido.",
@@ -663,34 +663,47 @@
       "task": "autos_detran_ms - Ajuste de Retorno",
       "descricao": "Spider autos_detran_ms (principal: PAGE_MALFUNCTION, 98.99%)",
       "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "low",
-      "status": "planning: to check",
+      "priority": "medium",
+      "status": "staging",
       "alocado_a": "sem_dono",
       "data_comentario": "2026-10-02T14:10:55Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@rodrigo, poderia testar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/86380"
+    },
+    {
+      "id": 86383,
+      "task": "Cruzamento de Locatário: RENAVAM opcional, permissões de ocultação e dados do locatário na API",
+      "descricao": "Facilitar a importação do Cruzamento de Locatário, que passa a aceitar placa ou RENAVAM.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-02T14:54:03Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Em staging — roteiro de teste @rodrigo Branch feat/86383-cruzamento-locatario-ajustes (a partir da main) no maestro, platform e front novo, mergeada na staging / dev. O trabalho que estava nas branche",
+      "link": "https://redmine.platform.brobot.com.br/issues/86383"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-02T14:28:01.887Z",
+  "gerado_em": "2026-10-02T14:57:58.424Z",
   "sprint_id": 70,
-  "total": 38,
+  "total": 41,
   "rows": [
     {
-      "id": 85756,
-      "task": "Ajuste do campo Cidade na API – KOTHE",
-      "descricao": "Ajustar o campo Cidade disponibilizado pela API na nova plataforma para retornar a informação correta de ci...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
+      "id": 83918,
+      "task": "Abas de serviços do Dashboard apresentam textos cortados em resoluções menores | Platform Classic",
+      "descricao": "Em resoluções menores, quando o cliente possui todos os serviços habilitados, os nomes dos serviços nas aba...",
+      "category": "Frontend - Outros",
+      "priority": "medium",
+      "status": "in progress",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-02T14:18:32Z",
+      "data_comentario": "2026-10-02T14:56:15Z",
       "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@gabriella favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/85756"
+      "comentario_trecho": "@felipe, Aprovado Ambiente: Staging | Conta: Teste permissão - classic | Versão: Classic Realizei os testes tanto em uma resolução menor quanto usando o zoom do navegador e em ambos os casos os textos",
+      "link": "https://redmine.platform.brobot.com.br/issues/83918"
     },
     {
       "id": 71526,
@@ -1085,6 +1098,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
     },
     {
+      "id": 61539,
+      "task": "Implementação do Módulo CaçaCondutores > Integração",
+      "descricao": "",
+      "category": "Produtos - Novo produto",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-28T15:04:30Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf Reprovado . Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o g",
+      "link": "https://redmine.platform.brobot.com.br/issues/61539"
+    },
+    {
       "id": 37739,
       "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
       "descricao": "Tivemos um caso do cliente Engemix que questionou multas dos anos de 2021, 2022 e 2023 com status em aberto em nossa plataforma.",
@@ -1155,6 +1182,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75755"
     },
     {
+      "id": 53155,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
+      "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
+      "category": "anterior",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-23T17:52:13Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@renata boa tarde, Conforme alinhamento em reunião 09/03/2026 com os presentes Henrique, Emerson, Gabriella, Guilherme, Roberta, Renata, Davi, Jose: foi alinhado que somente seguiremos com o desenvolv",
+      "link": "https://redmine.platform.brobot.com.br/issues/53155"
+    },
+    {
       "id": 43159,
       "task": "Filtro por Centro de Custo - Supermix ",
       "descricao": "Adicionar a opção de filtrar multas, relatórios e dashboards por Centro de Custo, permitindo que o usuário...",
@@ -1209,6 +1250,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
       "link": "https://redmine.platform.brobot.com.br/issues/30232"
+    },
+    {
+      "id": 60381,
+      "task": "Estruturação do processo e documentação do fluxo de Indicação de Condutor",
+      "descricao": "Realizar a estruturação macro do tema de Indicação de Condutor, contemplando tanto a documentação interna p...",
+      "category": "Produtos - Documentação",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-04-14T18:58:38Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
+      "link": "https://redmine.platform.brobot.com.br/issues/60381"
     }
   ]
 };
