@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-02T13:56:34.797Z",
+  "gerado_em": "2026-10-02T14:26:25.062Z",
   "total": 15,
   "rows": [
     {
@@ -646,38 +646,80 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86276"
     },
     {
+      "id": 81646,
+      "task": "Erro: \"Function.ResponseSizeTooLarge => Response payload size exceeded maximum allowed...\"",
+      "descricao": "",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-02T13:56:26Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging. Como se trata de um erro difícil de reproduzir, vou deixar um tempo em staging para acompanharmos e subiremos para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/81646"
+    },
+    {
+      "id": 86380,
+      "task": "autos_detran_ms - Ajuste de Retorno",
+      "descricao": "Spider autos_detran_ms (principal: PAGE_MALFUNCTION, 98.99%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "low",
+      "status": "planning: to check",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-02T14:10:55Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@rodrigo, poderia testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/86380"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-10-02T14:28:01.887Z",
+  "sprint_id": 70,
+  "total": 38,
+  "rows": [
+    {
       "id": 85756,
       "task": "Ajuste do campo Cidade na API – KOTHE",
       "descricao": "Ajustar o campo Cidade disponibilizado pela API na nova plataforma para retornar a informação correta de ci...",
       "category": "Frontend - Novo frontend",
       "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-02T11:55:07Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo corrigido no Platform New (frontend novo), em staging para testar. Campo Cidade (o problema da tarefa) A API sempre mandou a cidade como código do município (IBGE). O Platform Classic convert",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-02T14:18:32Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@gabriella favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/85756"
     },
     {
-      "id": 80541,
-      "task": "Cruzamento por Locatário no CM-Frotas",
-      "descricao": "Permitir que o cliente que loca seus veículos para outro CNPJ atribua automaticamente as multas do período...",
+      "id": 71526,
+      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
+      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-02T13:43:57Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Ajustes pedidos pela Maroni — em staging para teste @rodrigo O que mudou 1. Placa OU Renavam: a linha da planilha precisa de pelo menos um dos dois (antes o Renavam era obrigatório e a planilha da Mar",
-      "link": "https://redmine.platform.brobot.com.br/issues/80541"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-02T13:57:50.651Z",
-  "sprint_id": 70,
-  "total": 40,
-  "rows": [
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-02T14:15:36Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
+      "link": "https://redmine.platform.brobot.com.br/issues/71526"
+    },
+    {
+      "id": 83270,
+      "task": "Mensagens do BOT de indicação de condutores",
+      "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-02T14:13:09Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83270"
+    },
     {
       "id": 86185,
       "task": "Inconsistência na edição de permissões para os usuários",
@@ -819,20 +861,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
-      "id": 83270,
-      "task": "Mensagens do BOT de indicação de condutores",
-      "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-22T13:31:51Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@joathan @felipe solicito que prossigam com correção do tema",
-      "link": "https://redmine.platform.brobot.com.br/issues/83270"
-    },
-    {
       "id": 39504,
       "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
       "descricao": "O cliente Edgar da Kadan solicitou a seguinte verificação: Gostaríamos de confirmar se os documentos de Mic...",
@@ -929,20 +957,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@rolf Aprovado. Processei algumas consultas e o start/end date respeitaram os 90 dias ou a data da última infração. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Acompanhar",
       "link": "https://redmine.platform.brobot.com.br/issues/82577"
-    },
-    {
-      "id": 71526,
-      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
-      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-09T11:38:33Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@joathan por gentileza, trocar incluir na mensagem do whatsapp as informações solicitadas",
-      "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
       "id": 51852,
@@ -1071,20 +1085,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
     },
     {
-      "id": 61539,
-      "task": "Implementação do Módulo CaçaCondutores > Integração",
-      "descricao": "",
-      "category": "Produtos - Novo produto",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-28T15:04:30Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Reprovado . Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o g",
-      "link": "https://redmine.platform.brobot.com.br/issues/61539"
-    },
-    {
       "id": 37739,
       "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
       "descricao": "Tivemos um caso do cliente Engemix que questionou multas dos anos de 2021, 2022 e 2023 com status em aberto em nossa plataforma.",
@@ -1155,20 +1155,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75755"
     },
     {
-      "id": 53155,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
-      "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
-      "category": "anterior",
-      "priority": "high",
-      "status": "to do",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-06-23T17:52:13Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@renata boa tarde, Conforme alinhamento em reunião 09/03/2026 com os presentes Henrique, Emerson, Gabriella, Guilherme, Roberta, Renata, Davi, Jose: foi alinhado que somente seguiremos com o desenvolv",
-      "link": "https://redmine.platform.brobot.com.br/issues/53155"
-    },
-    {
       "id": 43159,
       "task": "Filtro por Centro de Custo - Supermix ",
       "descricao": "Adicionar a opção de filtrar multas, relatórios e dashboards por Centro de Custo, permitindo que o usuário...",
@@ -1223,20 +1209,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
       "link": "https://redmine.platform.brobot.com.br/issues/30232"
-    },
-    {
-      "id": 60381,
-      "task": "Estruturação do processo e documentação do fluxo de Indicação de Condutor",
-      "descricao": "Realizar a estruturação macro do tema de Indicação de Condutor, contemplando tanto a documentação interna p...",
-      "category": "Produtos - Documentação",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-14T18:58:38Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
-      "link": "https://redmine.platform.brobot.com.br/issues/60381"
     }
   ]
 };
