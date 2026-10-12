@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-12T00:07:24.288Z",
-  "total": 24,
+  "gerado_em": "2026-10-12T00:07:58.924Z",
+  "total": 20,
   "rows": [
     {
       "id": 57089,
@@ -581,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/81646"
     },
     {
-      "id": 84414,
-      "task": "AITs com mesmo número vinculados a placas distintas são tratados como um único registro - JPM - ID:1857",
-      "descricao": "Foi identificado um comportamento na plataforma em que dois AITs com o mesmo número, porém vinculados a pla...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-06T14:29:29Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo Alterações A multa passou a ser identificada pela combinação do número do AIT com a placa, e não mais só pelo número do AIT. Duas autuações com o mesmo número de AIT em placas difere",
-      "link": "https://redmine.platform.brobot.com.br/issues/84414"
-    },
-    {
       "id": 86465,
       "task": "autos_sefaz_to - SCRAPY_ERROR",
       "descricao": "Spider autos_sefaz_to (principal: SCRAPY_ERROR, 100%)",
@@ -672,39 +659,13 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86761"
     },
     {
-      "id": 85563,
-      "task": "Exibir status da Spider na tela de Scraping Services ",
-      "descricao": "Deixar explícita, na listagem de Administração → Maestro → Scraping Services, a situação de cada spider: no...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-08T12:09:39Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações A coluna Enable saiu da listagem de Scraping Services e deu lugar a Status da spider, com quatro valores: Ativa, Ativa com restrições, Em manutenção e Desuso. ",
-      "link": "https://redmine.platform.brobot.com.br/issues/85563"
-    },
-    {
-      "id": 84712,
-      "task": "Divergência de resultados entre Histórico de Consultas e Maestro >> Consultas - SANCETUR - SNE - ID: 2018",
-      "descricao": "Foi identificada uma divergência na listagem de rodadas ao consultar os mesmos parâmetros por dois caminhos...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-08T13:07:13Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações Consulta em erro passa a ser encerrada quando existe uma consulta mais recente já concluída para a mesma conta, placa e consulta, herdando o status e o resulta",
-      "link": "https://redmine.platform.brobot.com.br/issues/84712"
-    },
-    {
       "id": 59566,
       "task": "CM-Embarcador: Filtro e exibição de status da empresa no Dashboard e tela de consulta",
       "descricao": "Implementar o suporte ao status de empresa (Ativo/Inativo) no módulo CM-Embarcador, cobrindo dois contextos...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "low",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-08T13:54:05Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido.",
@@ -763,19 +724,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87003"
     },
     {
-      "id": 78505,
-      "task": "Conferência Caçacondutores: Indicação de conduores, CNH, Exame toxicológico",
-      "descricao": "Dar ao suporte uma tela única que mostre, em tempo real, quais automações do módulo de condutores pararam d...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-09T15:38:13Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "09/10 — QA da Indicação: itens fáceis corrigidos (em staging e dev) Dos 16 itens do QA da Gabi, 12 estão resolvidos: os itens 9, 10 e 11 no comentário anterior e os nove abaixo. Tudo já publicado em d",
-      "link": "https://redmine.platform.brobot.com.br/issues/78505"
-    },
-    {
       "id": 87057,
       "task": "Dashboard - Interatividade entre gráficos, filtros e componentes",
       "descricao": "Implementar melhorias de interatividade nos dashboards da plataforma, permitindo que o usuário interaja dir...",
@@ -791,7 +739,7 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-12T00:09:19.189Z",
+  "gerado_em": "2026-10-12T00:09:37.717Z",
   "sprint_id": 72,
   "total": 41,
   "rows": [
@@ -894,20 +842,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85020"
     },
     {
-      "id": 82390,
-      "task": "KOTHE - SNE - ID: 2328 - Divergência no valor pago do AIT J002523632",
-      "descricao": "Identificada divergência no valor de pagamento apresentado na grid para o AIT J002523632, vinculado à placa TQP9E53.",
-      "category": "Backend - Consumo",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-09T12:59:06Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82390"
-    },
-    {
       "id": 86470,
       "task": "autos_detran_es - PAGE_MALFUNCTION",
       "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
@@ -992,6 +926,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85035"
     },
     {
+      "id": 71405,
+      "task": "Criação de Orders no novo padrão para CNH e Toxicológico",
+      "descricao": "",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-06T12:23:16Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "06/10 — mais quatro correções encontradas ao documentar o fluxo (todas já nas PRs; staging e dev atualizados). Documento de referência de como a coleta de CNH e toxicológico funciona (fluxo, mensagens",
+      "link": "https://redmine.platform.brobot.com.br/issues/71405"
+    },
+    {
       "id": 41092,
       "task": "Atividade quinzenal - quinta-feira- gerar arquivo ZMRC ID 1477 ENGEMIX S/A",
       "descricao": "Executar a automação existente para gerar o arquivo ZMRC conforme o padrão estabelecido.",
@@ -1048,18 +996,18 @@
       "link": "https://redmine.platform.brobot.com.br/issues/39504"
     },
     {
-      "id": 83270,
-      "task": "Mensagens do BOT de indicação de condutores",
-      "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
-      "category": "",
+      "id": 71526,
+      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
+      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
+      "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "in progress",
-      "tipo": "sem_acao",
+      "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-02T14:13:09Z",
+      "data_comentario": "2026-10-02T14:15:36Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83270"
+      "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
       "id": 82332,
@@ -1116,20 +1064,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo correção aplicada. O card Média por Multa passa a considerar apenas as multas que possuem valor no campo selecionado no filtro de valor (Valor estimado, Valor da multa ou Valor do boleto). As",
       "link": "https://redmine.platform.brobot.com.br/issues/75360"
-    },
-    {
-      "id": 82577,
-      "task": "Implementar Start Date e End Date para SNE",
-      "descricao": "Implementar os campos Start Date e End Date para o módulo SNE, permitindo definir o período de início e fim...",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-09T13:23:04Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf Aprovado. Processei algumas consultas e o start/end date respeitaram os 90 dias ou a data da última infração. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Acompanhar",
-      "link": "https://redmine.platform.brobot.com.br/issues/82577"
     },
     {
       "id": 51852,
@@ -1256,6 +1190,20 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella segue uma análise do problema em questão. O que podemos fazer por ora? Análise: mesmo CNPJ cadastrado como Matriz e Filial O problema O Platform permite cadastrar o mesmo CNPJ (14 dígitos) ",
       "link": "https://redmine.platform.brobot.com.br/issues/49662"
+    },
+    {
+      "id": 69679,
+      "task": "Cadastro de CNPJs em lote",
+      "descricao": "É interessante abrir a possibilidade de subida de CNPJs em lote na plataforma.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-15T16:39:24Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Reprovado. Preparei os arquivos para testes em anexo, porém o arquivo de importação das matrizes retorna erro e não é possível prosseguir apenas com o das filiais.Processei as consultas na spide",
+      "link": "https://redmine.platform.brobot.com.br/issues/69679"
     },
     {
       "id": 59523,
