@@ -473,22 +473,9 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-13T19:26:21.874Z",
+  "gerado_em": "2026-10-13T19:56:29.324Z",
   "total": 21,
   "rows": [
-    {
-      "id": 57089,
-      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
-      "descricao": "Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de vencimento de CNH,...",
-      "category": "Produtos - Novo produto",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-07-15T03:35:50Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
-      "link": "https://redmine.platform.brobot.com.br/issues/57089"
-    },
     {
       "id": 73585,
       "task": "Configurar domínio consultas-api.com.br para a API White Label",
@@ -613,7 +600,7 @@
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-06T18:01:45Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Esta spider tinha o mesmo problema da issue 86462 ( porque o portal é o mesmo. Ela retornava CAPTCHA_NOT_SOLVED por dois motivos: - Metade dos servidores do portal devolve a página com a sitekey vazia",
@@ -626,7 +613,7 @@
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "low",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-07T17:44:12Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@gustavo , poderia testar a spider, por genitleza?",
@@ -711,19 +698,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87057"
     },
     {
-      "id": 78505,
-      "task": "Conferência Caçacondutores: Indicação de conduores, CNH, Exame toxicológico",
-      "descricao": "Dar ao suporte uma tela única que mostre, em tempo real, quais automações do módulo de condutores pararam d...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-13T12:26:58Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "13/10 — QA da Indicação: todos os itens resolvidos (em staging e dev) Os quatro itens que faltavam do QA de 09/10 (2, 6, 12 e 14) foram entregues, junto com dois defeitos encontrados na revisão e dois",
-      "link": "https://redmine.platform.brobot.com.br/issues/78505"
-    },
-    {
       "id": 87230,
       "task": "autos_detran_ce - Problema na captura de multas",
       "descricao": "Gerei duas consultas para uma placa no Detran CE, e em ambas retornou com erro de \"Não foi possível salvar o arquivo PDF neste momento.",
@@ -748,14 +722,68 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "So fazer uma pequena correcao do que eu havia comentado, o cenario continua valido, so que nao retornar o erro, retornar file_unavailable como deveria e foi solicitado. A afirmação acima foi equivocad",
       "link": "https://redmine.platform.brobot.com.br/issues/87055"
+    },
+    {
+      "id": 87671,
+      "task": "Retorno de spiders do Embarcador indevidos",
+      "descricao": "Consultas do Embarcador estão retornando com erro de usuário de não representação, porém, ao verificar manu...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-13T19:25:27Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Fiz as correções nas spiders do DNIT e do ANTT para os erros de \"não representado\" indevido. Durante os testes do DNIT, o portal retornou que a conta tinha atingido o limite diário de consultas. Esse ",
+      "link": "https://redmine.platform.brobot.com.br/issues/87671"
+    },
+    {
+      "id": 81578,
+      "task": "Motoristas | Exclusão de motoristas com preservação dos registros vinculados (LGPD)",
+      "descricao": "O CRUD de motoristas está incompleto: hoje o cliente cadastra, edita e importa motoristas, mas não consegue...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-13T19:30:35Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/81578"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-13T19:27:18.479Z",
+  "gerado_em": "2026-10-13T19:57:54.026Z",
   "sprint_id": 72,
-  "total": 44,
+  "total": 41,
   "rows": [
+    {
+      "id": 86983,
+      "task": "autos_detran_ms - UNDEFINED_ERROR",
+      "descricao": "Spider autos_detran_ms (principal: PAGE_MALFUNCTION, 66.67%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-13T19:50:09Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Finalizada a tarefa 86984 e realizada PR.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86983"
+    },
+    {
+      "id": 78505,
+      "task": "Conferência Caçacondutores: Indicação de conduores, CNH, Exame toxicológico",
+      "descricao": "Dar ao suporte uma tela única que mostre, em tempo real, quais automações do módulo de condutores pararam d...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-13T19:45:41Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf, seguem os resultados do reteste e novos apontamentos. 1. Ajuste no tooltip das faixas de prazo O tooltip com as regras de classificação das faixas de prazo está posicionado no título do gráfico",
+      "link": "https://redmine.platform.brobot.com.br/issues/78505"
+    },
     {
       "id": 59566,
       "task": "CM-Embarcador: Filtro e exibição de status da empresa no Dashboard e tela de consulta",
@@ -783,20 +811,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@miguel Segue Ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic O erro anterior foi corrigido, as multas foram capturadas, porém n ão estão sendo capturados os boletos das multas q",
       "link": "https://redmine.platform.brobot.com.br/issues/86470"
-    },
-    {
-      "id": 86983,
-      "task": "autos_detran_ms - UNDEFINED_ERROR",
-      "descricao": "Spider autos_detran_ms (principal: PAGE_MALFUNCTION, 66.67%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-13T17:00:58Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86983"
     },
     {
       "id": 87043,
@@ -1037,34 +1051,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
-      "id": 83270,
-      "task": "Mensagens do BOT de indicação de condutores",
-      "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-02T14:13:09Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83270"
-    },
-    {
-      "id": 82332,
-      "task": "Veículos | Cadastro automático de empresa por CNPJ no upload em lote",
-      "descricao": "Hoje, para subir a planilha de veículos, é preciso cadastrar antes, uma por uma na tela de Empresas, todas...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "to do",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-01T18:25:53Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 01/10/2026 com os participantes @rodrigo @gabriella @felipe @joathan @miguel @thiago @delvin @gustavo @jose-ricardo @rolf foi alinhado que seguiremos com imp",
-      "link": "https://redmine.platform.brobot.com.br/issues/82332"
-    },
-    {
       "id": 85286,
       "task": "Ajustar captura de NFSe para conseguir pegar notas das filiais",
       "descricao": "Não capturamos notas de serviço da filial, apenas da matriz cadastrada no sistema.",
@@ -1107,20 +1093,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75360"
     },
     {
-      "id": 82577,
-      "task": "Implementar Start Date e End Date para SNE",
-      "descricao": "Implementar os campos Start Date e End Date para o módulo SNE, permitindo definir o período de início e fim...",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-09T13:23:04Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf Aprovado. Processei algumas consultas e o start/end date respeitaram os 90 dias ou a data da última infração. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Acompanhar",
-      "link": "https://redmine.platform.brobot.com.br/issues/82577"
-    },
-    {
       "id": 51852,
       "task": "FICI Preenchida Automaticamente - Davi",
       "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
@@ -1133,20 +1105,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Novo relatório",
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
-    },
-    {
-      "id": 81578,
-      "task": "Motoristas | Exclusão de motoristas com preservação dos registros vinculados (LGPD)",
-      "descricao": "O CRUD de motoristas está incompleto: hoje o cliente cadastra, edita e importa motoristas, mas não consegue...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-04T18:44:57Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 04/09/2026 com os participantes @rodrigo @gabriella @felipe @joathan @thiago @delvin @gustavo foi alinhado que seguiremos com implementação na sprint 37 com ",
-      "link": "https://redmine.platform.brobot.com.br/issues/81578"
     },
     {
       "id": 78408,
