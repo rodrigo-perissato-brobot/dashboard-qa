@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-13T12:56:21.530Z",
-  "total": 25,
+  "gerado_em": "2026-10-13T13:27:06.987Z",
+  "total": 20,
   "rows": [
     {
       "id": 57089,
@@ -482,7 +482,7 @@
       "descricao": "Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de vencimento de CNH,...",
       "category": "Produtos - Novo produto",
       "priority": "high",
-      "status": "in progress",
+      "status": "staging",
       "alocado_a": "gustavo",
       "data_comentario": "2026-07-15T03:35:50Z",
       "comentario_autor": "Rolf Marquardt",
@@ -509,7 +509,7 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "rodrigo",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-07-23T19:15:59Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em staging. Precisamos testar com white label para ver se muda corretamente as informações. Relacionada com a task 73585",
@@ -581,43 +581,17 @@
       "link": "https://redmine.platform.brobot.com.br/issues/81646"
     },
     {
-      "id": 84414,
-      "task": "AITs com mesmo número vinculados a placas distintas são tratados como um único registro - JPM - ID:1857",
-      "descricao": "Foi identificado um comportamento na plataforma em que dois AITs com o mesmo número, porém vinculados a pla...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-06T14:29:29Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo Alterações A multa passou a ser identificada pela combinação do número do AIT com a placa, e não mais só pelo número do AIT. Duas autuações com o mesmo número de AIT em placas difere",
-      "link": "https://redmine.platform.brobot.com.br/issues/84414"
-    },
-    {
       "id": 86465,
       "task": "autos_sefaz_to - SCRAPY_ERROR",
       "descricao": "Spider autos_sefaz_to (principal: SCRAPY_ERROR, 100%)",
       "category": "Spider - Erro na lógica de extração",
       "priority": "low",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-06T14:58:22Z",
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo Análise Os casos de SCRAPY_ERROR não são bug da spider. São instabilidade do portal da SEFAZ-TO. Todas as falhas acontecem no mesmo ponto: a página de consulta do veículo (@hnetipwk47o@)",
       "link": "https://redmine.platform.brobot.com.br/issues/86465"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-06T14:58:58Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@joathan @gustavo os itens 84 a 93 desta branch foram para produção, exceto o ajuste de backend do item 88, que segue com o Joathan. Item 88 – Relatório de Usuários (Admin Usuários) No frontend o item",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 86587,
@@ -626,7 +600,7 @@
       "category": "Spider - Outros",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-06T15:08:21Z",
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@gustavo Pode fazer os teste por favor?",
@@ -670,45 +644,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Implementado o retorno USER_ACTION_REQUIRED conforme solicitado. @gustavo, poderia testar a spider, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/86761"
-    },
-    {
-      "id": 85563,
-      "task": "Exibir status da Spider na tela de Scraping Services ",
-      "descricao": "Deixar explícita, na listagem de Administração → Maestro → Scraping Services, a situação de cada spider: no...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-08T12:09:39Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações A coluna Enable saiu da listagem de Scraping Services e deu lugar a Status da spider, com quatro valores: Ativa, Ativa com restrições, Em manutenção e Desuso. ",
-      "link": "https://redmine.platform.brobot.com.br/issues/85563"
-    },
-    {
-      "id": 84712,
-      "task": "Divergência de resultados entre Histórico de Consultas e Maestro >> Consultas - SANCETUR - SNE - ID: 2018",
-      "descricao": "Foi identificada uma divergência na listagem de rodadas ao consultar os mesmos parâmetros por dois caminhos...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-08T13:07:13Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações Consulta em erro passa a ser encerrada quando existe uma consulta mais recente já concluída para a mesma conta, placa e consulta, herdando o status e o resulta",
-      "link": "https://redmine.platform.brobot.com.br/issues/84712"
-    },
-    {
-      "id": 59566,
-      "task": "CM-Embarcador: Filtro e exibição de status da empresa no Dashboard e tela de consulta",
-      "descricao": "Implementar o suporte ao status de empresa (Ativo/Inativo) no módulo CM-Embarcador, cobrindo dois contextos...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-08T13:54:05Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/59566"
     },
     {
       "id": 86990,
@@ -804,9 +739,9 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-13T12:57:23.014Z",
+  "gerado_em": "2026-10-13T13:28:50.736Z",
   "sprint_id": 72,
-  "total": 42,
+  "total": 38,
   "rows": [
     {
       "id": 87003,
@@ -905,20 +840,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/85020"
-    },
-    {
-      "id": 82390,
-      "task": "KOTHE - SNE - ID: 2328 - Divergência no valor pago do AIT J002523632",
-      "descricao": "Identificada divergência no valor de pagamento apresentado na grid para o AIT J002523632, vinculado à placa TQP9E53.",
-      "category": "Backend - Consumo",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-09T12:59:06Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82390"
     },
     {
       "id": 87066,
@@ -1061,34 +982,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
-      "id": 83270,
-      "task": "Mensagens do BOT de indicação de condutores",
-      "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-02T14:13:09Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83270"
-    },
-    {
-      "id": 82332,
-      "task": "Veículos | Cadastro automático de empresa por CNPJ no upload em lote",
-      "descricao": "Hoje, para subir a planilha de veículos, é preciso cadastrar antes, uma por uma na tela de Empresas, todas...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "to do",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-01T18:25:53Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 01/10/2026 com os participantes @rodrigo @gabriella @felipe @joathan @miguel @thiago @delvin @gustavo @jose-ricardo @rolf foi alinhado que seguiremos com imp",
-      "link": "https://redmine.platform.brobot.com.br/issues/82332"
-    },
-    {
       "id": 85286,
       "task": "Ajustar captura de NFSe para conseguir pegar notas das filiais",
       "descricao": "Não capturamos notas de serviço da filial, apenas da matriz cadastrada no sistema.",
@@ -1129,20 +1022,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo correção aplicada. O card Média por Multa passa a considerar apenas as multas que possuem valor no campo selecionado no filtro de valor (Valor estimado, Valor da multa ou Valor do boleto). As",
       "link": "https://redmine.platform.brobot.com.br/issues/75360"
-    },
-    {
-      "id": 82577,
-      "task": "Implementar Start Date e End Date para SNE",
-      "descricao": "Implementar os campos Start Date e End Date para o módulo SNE, permitindo definir o período de início e fim...",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-09T13:23:04Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf Aprovado. Processei algumas consultas e o start/end date respeitaram os 90 dias ou a data da última infração. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Acompanhar",
-      "link": "https://redmine.platform.brobot.com.br/issues/82577"
     },
     {
       "id": 51852,
