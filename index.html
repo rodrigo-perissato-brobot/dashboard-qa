@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-13T14:56:19.345Z",
+  "gerado_em": "2026-10-13T15:26:18.431Z",
   "total": 24,
   "rows": [
     {
@@ -724,19 +724,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86721"
     },
     {
-      "id": 87043,
-      "task": "Dashboard interativo: clique no gráfico abre a listagem filtrada pelo recorte e pelo período",
-      "descricao": "Permitir que o usuário clique em uma parte de um gráfico do dashboard (fatia, barra, ponto ou linha) e seja...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-08T18:49:40Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "@gustavo, atividade no ambiente de teste do front novo ( deploy concluído. Versão simples: clicar numa parte do gráfico do dashboard abre a listagem já filtrada pelo recorte, pelo tipo de data e perío",
-      "link": "https://redmine.platform.brobot.com.br/issues/87043"
-    },
-    {
       "id": 87057,
       "task": "Dashboard - Interatividade entre gráficos, filtros e componentes",
       "descricao": "Implementar melhorias de interatividade nos dashboards da plataforma, permitindo que o usuário interaja dir...",
@@ -787,14 +774,41 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "13/10 — QA da Indicação: todos os itens resolvidos (em staging e dev) Os quatro itens que faltavam do QA de 09/10 (2, 6, 12 e 14) foram entregues, junto com dois defeitos encontrados na revisão e dois",
       "link": "https://redmine.platform.brobot.com.br/issues/78505"
+    },
+    {
+      "id": 87230,
+      "task": "autos_detran_ce - Problema na captura de multas",
+      "descricao": "Gerei duas consultas para uma placa no Detran CE, e em ambas retornou com erro de \"Não foi possível salvar o arquivo PDF neste momento.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-13T15:03:13Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@jose-ricardo Correção feita e já está em staging. - Quando o portal recusa o boleto, a multa continua sendo retornada normalmente e a mensagem do portal vai na chave de boleto: \"_boleto_\": {\"file_una",
+      "link": "https://redmine.platform.brobot.com.br/issues/87230"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-13T14:57:23.012Z",
+  "gerado_em": "2026-10-13T15:27:16.594Z",
   "sprint_id": 72,
   "total": 42,
   "rows": [
+    {
+      "id": 87043,
+      "task": "Dashboard interativo: clique no gráfico abre a listagem filtrada pelo recorte e pelo período",
+      "descricao": "Permitir que o usuário clique em uma parte de um gráfico do dashboard (fatia, barra, ponto ou linha) e seja...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-13T14:58:02Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf Seguem ajustes Ambiente: Staging | Conta: Testes Funcionais | Versão: New 1. CM-Frotas — Gráficos personalizados Na divisão de filtro “Veículos”, não é possível clicar em uma placa para visualiz",
+      "link": "https://redmine.platform.brobot.com.br/issues/87043"
+    },
     {
       "id": 64086,
       "task": "Documentação de API Whitelabel",
@@ -892,20 +906,6 @@
       "comentario_autor": "Felipe Godoy",
       "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
-    },
-    {
-      "id": 82390,
-      "task": "KOTHE - SNE - ID: 2328 - Divergência no valor pago do AIT J002523632",
-      "descricao": "Identificada divergência no valor de pagamento apresentado na grid para o AIT J002523632, vinculado à placa TQP9E53.",
-      "category": "Backend - Consumo",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-09T12:59:06Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82390"
     },
     {
       "id": 87066,
