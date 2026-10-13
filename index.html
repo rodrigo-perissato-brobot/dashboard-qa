@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-13T17:56:16.435Z",
-  "total": 23,
+  "gerado_em": "2026-10-13T18:56:14.112Z",
+  "total": 22,
   "rows": [
     {
       "id": 57089,
@@ -724,19 +724,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87057"
     },
     {
-      "id": 86470,
-      "task": "autos_detran_es - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-13T12:15:49Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "A mensagem de uma das telas de termos nao estava sendo capturada corretamente, levando ao erro mencionado. @gustavo poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/86470"
-    },
-    {
       "id": 78505,
       "task": "Conferência Caçacondutores: Indicação de conduores, CNH, Exame toxicológico",
       "descricao": "Dar ao suporte uma tela única que mostre, em tempo real, quais automações do módulo de condutores pararam d...",
@@ -768,20 +755,34 @@
       "descricao": "Ao solicitar um boleto no Senatran, o órgão autuador (DNIT), não entrega um boleto atualizado.",
       "category": "",
       "priority": "immediate",
-      "status": "staging",
+      "status": "in progress",
       "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-13T16:31:40Z",
+      "data_comentario": "2026-10-13T18:41:21Z",
       "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Eu adicionei a correcao para retornar conforme solicitado, porem o cenario mencionado nao esta ocorrendo no momento. @jose-ricardo poderia verificar se no momento temos outra consulta com este cenario",
+      "comentario_trecho": "So fazer uma pequena correcao do que eu havia comentado, o cenario continua valido, so que nao retornar o erro, retornar file_unavailable como deveria e foi solicitado. A afirmação acima foi equivocad",
       "link": "https://redmine.platform.brobot.com.br/issues/87055"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-13T17:57:16.115Z",
+  "gerado_em": "2026-10-13T18:57:05.251Z",
   "sprint_id": 72,
   "total": 43,
   "rows": [
+    {
+      "id": 86470,
+      "task": "autos_detran_es - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-13T18:43:48Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@miguel Segue Ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic O erro anterior foi corrigido, as multas foram capturadas, porém n ão estão sendo capturados os boletos das multas q",
+      "link": "https://redmine.platform.brobot.com.br/issues/86470"
+    },
     {
       "id": 86983,
       "task": "autos_detran_ms - UNDEFINED_ERROR",
@@ -809,20 +810,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Rolf Seguem ajustes Ambiente: Staging | Conta: Testes Funcionais | Versão: New 1. CM-Frotas — Gráficos personalizados Na divisão de filtro “Veículos”, não é possível clicar em uma placa para visualiz",
       "link": "https://redmine.platform.brobot.com.br/issues/87043"
-    },
-    {
-      "id": 64086,
-      "task": "Documentação de API Whitelabel",
-      "descricao": "Criar uma nova versão da documentação da API V2 sem referências às marcas internas da plataforma (Brobot e...",
-      "category": "Backend - Outros",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-13T14:03:23Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/64086"
     },
     {
       "id": 87003,
