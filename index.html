@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-13T11:26:10.971Z",
-  "total": 24,
+  "gerado_em": "2026-10-13T12:26:52.601Z",
+  "total": 25,
   "rows": [
     {
       "id": 57089,
@@ -483,7 +483,7 @@
       "category": "Produtos - Novo produto",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "gustavo",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-07-15T03:35:50Z",
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
@@ -743,24 +743,11 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-08T18:49:40Z",
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "@gustavo, atividade no ambiente de teste do front novo ( deploy concluído. Versão simples: clicar numa parte do gráfico do dashboard abre a listagem já filtrada pelo recorte, pelo tipo de data e perío",
       "link": "https://redmine.platform.brobot.com.br/issues/87043"
-    },
-    {
-      "id": 87003,
-      "task": "Usuário com permissão de baixar boleto não está conseguindo baixar o boleto",
-      "descricao": "O usuário está em um grupo de permissão que pode baixar boletos, porém, o mesmo não está conseguindo baixar o boleto.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-09T14:39:29Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo atualizado em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/87003"
     },
     {
       "id": 78505,
@@ -782,32 +769,58 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-09T19:06:07Z",
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo @rodrigo por gentileza, prosseguir com testes",
       "link": "https://redmine.platform.brobot.com.br/issues/87057"
+    },
+    {
+      "id": 86983,
+      "task": "autos_detran_ms - UNDEFINED_ERROR",
+      "descricao": "Spider autos_detran_ms (principal: PAGE_MALFUNCTION, 66.67%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-13T11:42:14Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Ajustado conforme solicitado, @gustavo poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/86983"
+    },
+    {
+      "id": 86470,
+      "task": "autos_detran_es - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-13T12:15:49Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "A mensagem de uma das telas de termos nao estava sendo capturada corretamente, levando ao erro mencionado. @gustavo poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/86470"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-13T11:27:03.976Z",
+  "gerado_em": "2026-10-13T12:28:34.743Z",
   "sprint_id": 72,
-  "total": 44,
+  "total": 40,
   "rows": [
     {
-      "id": 87073,
-      "task": "AIT duplicado no Embarcador - MINERVA FOODS ID: 1745",
-      "descricao": "O AIT FELTF04250792026 foi capturado duas vezes na plataforma para a conta Minerva Foods, CNPJ 67.620.377/0...",
+      "id": 87003,
+      "task": "Usuário com permissão de baixar boleto não está conseguindo baixar o boleto",
+      "descricao": "O usuário está em um grupo de permissão que pode baixar boletos, porém, o mesmo não está conseguindo baixar o boleto.",
       "category": "",
       "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
+      "status": "staging",
+      "tipo": "outro",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-09T20:31:50Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo @jose-ricardo @gabriella correção em produção. Removi todos as multas duplicadas e as Sem status (essas existiam por causa de uma falha no backend). Serão capturadas novamente caso não tenham",
-      "link": "https://redmine.platform.brobot.com.br/issues/87073"
+      "data_comentario": "2026-10-13T12:21:37Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan Seguem ajustes Ambiente: Staging | Conta: Testes Funcionais | Plataforma: Classic | Usuário: membroteste@gmail.com | Grupo de permissão: testecnpj1 1. Documentos sem permissão continuam sendo",
+      "link": "https://redmine.platform.brobot.com.br/issues/87003"
     },
     {
       "id": 87022,
@@ -857,7 +870,7 @@
       "descricao": "Atualmente, a plataforma permite o upload de placas em lote por meio de arquivo CSV, sendo o campo CNPJ obrigatório.",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "to do",
+      "status": "in progress",
       "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-10-09T19:03:08Z",
@@ -908,34 +921,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82390"
     },
     {
-      "id": 86470,
-      "task": "autos_detran_es - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-09T12:36:54Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider e retornou erros de \"PAGE_MALFUNCTION\" . Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Todas as consultas foram processa",
-      "link": "https://redmine.platform.brobot.com.br/issues/86470"
-    },
-    {
-      "id": 86983,
-      "task": "autos_detran_ms - UNDEFINED_ERROR",
-      "descricao": "Spider autos_detran_ms (principal: PAGE_MALFUNCTION, 66.67%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-09T12:26:05Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@miguel Segue ajuste. Processei as consultas na spider e retornou o erro \"001 - PLACA E/OU RENAVAM NAO PERTENCEM AO MESMO VEICULO\" como \"PAGE_MALFUNCTION\" para a placa OOR5317. Em alinhamento com @jos",
-      "link": "https://redmine.platform.brobot.com.br/issues/86983"
-    },
-    {
       "id": 87066,
       "task": "Cronotacógrafo | Certificado em PDF e emissão de GRU em lote",
       "descricao": "Hoje o CaçaMultas Cronotacógrafo só avisa: a consulta traz a situação do certificado de cada veículo (ativo...",
@@ -955,7 +940,7 @@
       "descricao": "Atualmente, na listagem de documentos fiscais (NFe), a coluna \"Participantes\" exibe apenas 2 participantes...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
-      "status": "to do",
+      "status": "in progress",
       "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-10-08T18:43:48Z",
@@ -976,20 +961,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Testei um novo serviço de captcha, o EZ-Captcha, e a taxa de sucesso melhorou bastante: cerca de 55% a 60% dos tokens foram aceitos pelo portal, contra cerca de 10% no 2Captcha. Nos testes, quase toda",
       "link": "https://redmine.platform.brobot.com.br/issues/86462"
-    },
-    {
-      "id": 85035,
-      "task": "Bug no fluxo de mensagens da indicação",
-      "descricao": "O fluxo do bot do WhatsApp da indicação está incorreto, pois, quando o motorista realiza o aceite ou a recu...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-06T17:37:57Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo por gentileza, prosseguir com QA",
-      "link": "https://redmine.platform.brobot.com.br/issues/85035"
     },
     {
       "id": 71405,
@@ -1104,20 +1075,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82332"
     },
     {
-      "id": 85286,
-      "task": "Ajustar captura de NFSe para conseguir pegar notas das filiais",
-      "descricao": "Não capturamos notas de serviço da filial, apenas da matriz cadastrada no sistema.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-25T17:15:26Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo Agora a captura passa a funcionar assim: a rotina diária monta uma consulta por estabelecimento, uma para a matriz e uma para cada filial cadastrada com o mesmo começo de CNPJ, e cad",
-      "link": "https://redmine.platform.brobot.com.br/issues/85286"
-    },
-    {
       "id": 75193,
       "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
       "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
@@ -1179,7 +1136,7 @@
       "descricao": "O CRUD de motoristas está incompleto: hoje o cliente cadastra, edita e importa motoristas, mas não consegue...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "to do",
+      "status": "in progress",
       "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-09-04T18:44:57Z",
