@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-13T12:26:52.601Z",
+  "gerado_em": "2026-10-13T12:56:21.530Z",
   "total": 25,
   "rows": [
     {
@@ -483,7 +483,7 @@
       "category": "Produtos - Novo produto",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-07-15T03:35:50Z",
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
@@ -750,19 +750,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87043"
     },
     {
-      "id": 78505,
-      "task": "Conferência Caçacondutores: Indicação de conduores, CNH, Exame toxicológico",
-      "descricao": "Dar ao suporte uma tela única que mostre, em tempo real, quais automações do módulo de condutores pararam d...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-09T15:38:13Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "09/10 — QA da Indicação: itens fáceis corrigidos (em staging e dev) Dos 16 itens do QA da Gabi, 12 estão resolvidos: os itens 9, 10 e 11 no comentário anterior e os nove abaixo. Tudo já publicado em d",
-      "link": "https://redmine.platform.brobot.com.br/issues/78505"
-    },
-    {
       "id": 87057,
       "task": "Dashboard - Interatividade entre gráficos, filtros e componentes",
       "descricao": "Implementar melhorias de interatividade nos dashboards da plataforma, permitindo que o usuário interaja dir...",
@@ -800,13 +787,26 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "A mensagem de uma das telas de termos nao estava sendo capturada corretamente, levando ao erro mencionado. @gustavo poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/86470"
+    },
+    {
+      "id": 78505,
+      "task": "Conferência Caçacondutores: Indicação de conduores, CNH, Exame toxicológico",
+      "descricao": "Dar ao suporte uma tela única que mostre, em tempo real, quais automações do módulo de condutores pararam d...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-13T12:26:58Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "13/10 — QA da Indicação: todos os itens resolvidos (em staging e dev) Os quatro itens que faltavam do QA de 09/10 (2, 6, 12 e 14) foram entregues, junto com dois defeitos encontrados na revisão e dois",
+      "link": "https://redmine.platform.brobot.com.br/issues/78505"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-13T12:28:34.743Z",
+  "gerado_em": "2026-10-13T12:57:23.014Z",
   "sprint_id": 72,
-  "total": 40,
+  "total": 42,
   "rows": [
     {
       "id": 87003,
@@ -963,6 +963,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86462"
     },
     {
+      "id": 85035,
+      "task": "Bug no fluxo de mensagens da indicação",
+      "descricao": "O fluxo do bot do WhatsApp da indicação está incorreto, pois, quando o motorista realiza o aceite ou a recu...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-06T17:37:57Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo por gentileza, prosseguir com QA",
+      "link": "https://redmine.platform.brobot.com.br/issues/85035"
+    },
+    {
       "id": 71405,
       "task": "Criação de Orders no novo padrão para CNH e Toxicológico",
       "descricao": "",
@@ -1073,6 +1087,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Conforme alinhado na planning realizada em 01/10/2026 com os participantes @rodrigo @gabriella @felipe @joathan @miguel @thiago @delvin @gustavo @jose-ricardo @rolf foi alinhado que seguiremos com imp",
       "link": "https://redmine.platform.brobot.com.br/issues/82332"
+    },
+    {
+      "id": 85286,
+      "task": "Ajustar captura de NFSe para conseguir pegar notas das filiais",
+      "descricao": "Não capturamos notas de serviço da filial, apenas da matriz cadastrada no sistema.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-25T17:15:26Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo Agora a captura passa a funcionar assim: a rotina diária monta uma consulta por estabelecimento, uma para a matriz e uma para cada filial cadastrada com o mesmo começo de CNPJ, e cad",
+      "link": "https://redmine.platform.brobot.com.br/issues/85286"
     },
     {
       "id": 75193,
@@ -1192,7 +1220,7 @@
       "descricao": "CaçaMultas Frotas Criação de um filtro de veículos ativos e inativos dentro do CaçaMultas Frotas, permitind...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "in progress",
+      "status": "staging",
       "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-07-31T18:26:11Z",
