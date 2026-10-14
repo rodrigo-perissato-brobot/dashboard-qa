@@ -473,9 +473,22 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-13T19:56:29.324Z",
-  "total": 21,
+  "gerado_em": "2026-10-14T11:26:23.825Z",
+  "total": 23,
   "rows": [
+    {
+      "id": 57089,
+      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
+      "descricao": "Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de vencimento de CNH,...",
+      "category": "Produtos - Novo produto",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-07-15T03:35:50Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
+      "link": "https://redmine.platform.brobot.com.br/issues/57089"
+    },
     {
       "id": 73585,
       "task": "Configurar domínio consultas-api.com.br para a API White Label",
@@ -509,24 +522,11 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "gustavo",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-09-15T19:43:12Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo Indicação de condutores — o que mudou nas telas Guia de navegação das mudanças de front da entrega 82757. Duas telas novas no painel administrativo, uma nova no painel do cliente e quatro tel",
       "link": "https://redmine.platform.brobot.com.br/issues/82757"
-    },
-    {
-      "id": 82396,
-      "task": "Alteração da mensagem enviada ao motorista",
-      "descricao": "O motorista mandou uma mensagem no WhatsApp após o bot respondê-lo de uma outra mensagem e a mensagem envia...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-15T19:44:51Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo subi para staging. Subiu junto com 82757",
-      "link": "https://redmine.platform.brobot.com.br/issues/82396"
     },
     {
       "id": 79542,
@@ -748,27 +748,19 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo em staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/81578"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-13T19:57:54.026Z",
-  "sprint_id": 72,
-  "total": 41,
-  "rows": [
+    },
     {
-      "id": 86983,
-      "task": "autos_detran_ms - UNDEFINED_ERROR",
-      "descricao": "Spider autos_detran_ms (principal: PAGE_MALFUNCTION, 66.67%)",
+      "id": 86470,
+      "task": "autos_detran_es - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
       "category": "Portal - Instabilidade ou indisponibilidade",
       "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-13T19:50:09Z",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-13T20:35:08Z",
       "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Finalizada a tarefa 86984 e realizada PR.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86983"
+      "comentario_trecho": "Ajustado a captura de acordo com SERVICE_NAME e adicionado os valores das multas conforme solicitado. @gustavo gentileza testar novamente.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86470"
     },
     {
       "id": 78505,
@@ -777,13 +769,19 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-13T19:45:41Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf, seguem os resultados do reteste e novos apontamentos. 1. Ajuste no tooltip das faixas de prazo O tooltip com as regras de classificação das faixas de prazo está posicionado no título do gráfico",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-14T00:49:42Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "13/10 (noite) — reteste do Gustavo: os 3 apontamentos resolvidos (em staging e dev) @gustavo, os três pontos do seu comentário de hoje estão publicados em staging (Platform) e em dev.plataformabrobot.",
       "link": "https://redmine.platform.brobot.com.br/issues/78505"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-10-14T11:27:25.224Z",
+  "sprint_id": 72,
+  "total": 41,
+  "rows": [
     {
       "id": 59566,
       "task": "CM-Embarcador: Filtro e exibição de status da empresa no Dashboard e tela de consulta",
@@ -797,20 +795,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/59566"
-    },
-    {
-      "id": 86470,
-      "task": "autos_detran_es - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-13T18:43:48Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@miguel Segue Ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic O erro anterior foi corrigido, as multas foram capturadas, porém n ão estão sendo capturados os boletos das multas q",
-      "link": "https://redmine.platform.brobot.com.br/issues/86470"
     },
     {
       "id": 87043,
@@ -1051,6 +1035,34 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
+      "id": 83270,
+      "task": "Mensagens do BOT de indicação de condutores",
+      "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-02T14:13:09Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83270"
+    },
+    {
+      "id": 82332,
+      "task": "Veículos | Cadastro automático de empresa por CNPJ no upload em lote",
+      "descricao": "Hoje, para subir a planilha de veículos, é preciso cadastrar antes, uma por uma na tela de Empresas, todas...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-01T18:25:53Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado na planning realizada em 01/10/2026 com os participantes @rodrigo @gabriella @felipe @joathan @miguel @thiago @delvin @gustavo @jose-ricardo @rolf foi alinhado que seguiremos com imp",
+      "link": "https://redmine.platform.brobot.com.br/issues/82332"
+    },
+    {
       "id": 85286,
       "task": "Ajustar captura de NFSe para conseguir pegar notas das filiais",
       "descricao": "Não capturamos notas de serviço da filial, apenas da matriz cadastrada no sistema.",
@@ -1091,6 +1103,20 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo correção aplicada. O card Média por Multa passa a considerar apenas as multas que possuem valor no campo selecionado no filtro de valor (Valor estimado, Valor da multa ou Valor do boleto). As",
       "link": "https://redmine.platform.brobot.com.br/issues/75360"
+    },
+    {
+      "id": 82577,
+      "task": "Implementar Start Date e End Date para SNE",
+      "descricao": "Implementar os campos Start Date e End Date para o módulo SNE, permitindo definir o período de início e fim...",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-09T13:23:04Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf Aprovado. Processei algumas consultas e o start/end date respeitaram os 90 dias ou a data da última infração. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Acompanhar",
+      "link": "https://redmine.platform.brobot.com.br/issues/82577"
     },
     {
       "id": 51852,
