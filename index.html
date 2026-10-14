@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-14T16:26:46.967Z",
-  "total": 24,
+  "gerado_em": "2026-10-14T16:56:25.533Z",
+  "total": 26,
   "rows": [
     {
       "id": 57089,
@@ -592,6 +592,32 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Implementado o retorno USER_ACTION_REQUIRED conforme solicitado. @gustavo, poderia testar a spider, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/86761"
+    },
+    {
+      "id": 85563,
+      "task": "Exibir status da Spider na tela de Scraping Services ",
+      "descricao": "Deixar explícita, na listagem de Administração → Maestro → Scraping Services, a situação de cada spider: no...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-08T12:09:39Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações A coluna Enable saiu da listagem de Scraping Services e deu lugar a Status da spider, com quatro valores: Ativa, Ativa com restrições, Em manutenção e Desuso. ",
+      "link": "https://redmine.platform.brobot.com.br/issues/85563"
+    },
+    {
+      "id": 84712,
+      "task": "Divergência de resultados entre Histórico de Consultas e Maestro >> Consultas - SANCETUR - SNE - ID: 2018",
+      "descricao": "Foi identificada uma divergência na listagem de rodadas ao consultar os mesmos parâmetros por dois caminhos...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-08T13:07:13Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações Consulta em erro passa a ser encerrada quando existe uma consulta mais recente já concluída para a mesma conta, placa e consulta, herdando o status e o resulta",
+      "link": "https://redmine.platform.brobot.com.br/issues/84712"
     },
     {
       "id": 86990,
@@ -781,7 +807,7 @@
       "descricao": "Spider autos_detran_to, 100.0% de erro (principal: SCRAPY_ERROR, 75%)",
       "category": "Spider - Erro na lógica de extração",
       "priority": "medium",
-      "status": "on hold",
+      "status": "staging",
       "alocado_a": "rodrigo",
       "data_comentario": "2026-10-14T16:24:56Z",
       "comentario_autor": "Miguel Silva",
@@ -791,7 +817,7 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-14T16:27:50.435Z",
+  "gerado_em": "2026-10-14T16:57:23.325Z",
   "sprint_id": 72,
   "total": 38,
   "rows": [
