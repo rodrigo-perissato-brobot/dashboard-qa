@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-14T15:56:15.347Z",
-  "total": 23,
+  "gerado_em": "2026-10-14T16:26:46.967Z",
+  "total": 24,
   "rows": [
     {
       "id": 57089,
@@ -592,32 +592,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Implementado o retorno USER_ACTION_REQUIRED conforme solicitado. @gustavo, poderia testar a spider, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/86761"
-    },
-    {
-      "id": 85563,
-      "task": "Exibir status da Spider na tela de Scraping Services ",
-      "descricao": "Deixar explícita, na listagem de Administração → Maestro → Scraping Services, a situação de cada spider: no...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-08T12:09:39Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações A coluna Enable saiu da listagem de Scraping Services e deu lugar a Status da spider, com quatro valores: Ativa, Ativa com restrições, Em manutenção e Desuso. ",
-      "link": "https://redmine.platform.brobot.com.br/issues/85563"
-    },
-    {
-      "id": 84712,
-      "task": "Divergência de resultados entre Histórico de Consultas e Maestro >> Consultas - SANCETUR - SNE - ID: 2018",
-      "descricao": "Foi identificada uma divergência na listagem de rodadas ao consultar os mesmos parâmetros por dois caminhos...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-08T13:07:13Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações Consulta em erro passa a ser encerrada quando existe uma consulta mais recente já concluída para a mesma conta, placa e consulta, herdando o status e o resulta",
-      "link": "https://redmine.platform.brobot.com.br/issues/84712"
     },
     {
       "id": 86990,
@@ -774,13 +748,52 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Alteração realizada conforme solicitado, @rodrigo poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/86986"
+    },
+    {
+      "id": 87003,
+      "task": "Usuário com permissão de baixar boleto não está conseguindo baixar o boleto",
+      "descricao": "O usuário está em um grupo de permissão que pode baixar boletos, porém, o mesmo não está conseguindo baixar o boleto.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-14T16:04:55Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo atualizado em staging. Fiz ajustes nos dois frontends para padronizar.",
+      "link": "https://redmine.platform.brobot.com.br/issues/87003"
+    },
+    {
+      "id": 25161,
+      "task": "Melhorias na tela Maestro - Orders",
+      "descricao": "@ralph conforme falamos, favor verificar a possibilidade de melhoria na tela Maestro - Orders : - botão det...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-14T16:18:48Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging. Como essa task é um pouco antiga, algumas coisas mudaram, adaptei para a realidade de hoje.",
+      "link": "https://redmine.platform.brobot.com.br/issues/25161"
+    },
+    {
+      "id": 79471,
+      "task": "autos_detran_to - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_to, 100.0% de erro (principal: SCRAPY_ERROR, 75%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "on hold",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-14T16:24:56Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "@rodrigo poderia testar em staging, realizei alguns testes locais e apos o portal restabelecer pos manutencao, as consultas voltaram a processar normalmente. Caso for aprovado nao foi necessario nenhu",
+      "link": "https://redmine.platform.brobot.com.br/issues/79471"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-14T15:57:15.254Z",
+  "gerado_em": "2026-10-14T16:27:50.435Z",
   "sprint_id": 72,
-  "total": 39,
+  "total": 38,
   "rows": [
     {
       "id": 51016,
@@ -795,20 +808,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gabriella relatório em anexo.",
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
-    },
-    {
-      "id": 87003,
-      "task": "Usuário com permissão de baixar boleto não está conseguindo baixar o boleto",
-      "descricao": "O usuário está em um grupo de permissão que pode baixar boletos, porém, o mesmo não está conseguindo baixar o boleto.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-13T12:21:37Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan Seguem ajustes Ambiente: Staging | Conta: Testes Funcionais | Plataforma: Classic | Usuário: membroteste@gmail.com | Grupo de permissão: testecnpj1 1. Documentos sem permissão continuam sendo",
-      "link": "https://redmine.platform.brobot.com.br/issues/87003"
     },
     {
       "id": 87022,
