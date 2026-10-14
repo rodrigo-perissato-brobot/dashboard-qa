@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-14T16:56:25.533Z",
-  "total": 26,
+  "gerado_em": "2026-10-14T17:26:32.084Z",
+  "total": 23,
   "rows": [
     {
       "id": 57089,
@@ -620,32 +620,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/84712"
     },
     {
-      "id": 86990,
-      "task": "autos_detran_rn - INVALID_PARAMETERS",
-      "descricao": "Spider autos_detran_rn (principal: INVALID_PARAMETERS, 100%)",
-      "category": "Operação - Erro humano operacional",
-      "priority": "low",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-08T17:09:56Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo corrigido em staging. Agora o cpf_cnpj usa o campo cpf ou cpf_cnpj do veículo, nesta ordem.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86990"
-    },
-    {
-      "id": 86721,
-      "task": "autos_detran_rs_taxas - Consumo incorreto das informações retornadas pela spider pelo platform",
-      "descricao": "O retorno da spider foi correto, trouxe exatamente o que o portal apresentava, porém, a plataforma não cons...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-08T18:36:11Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86721"
-    },
-    {
       "id": 87057,
       "task": "Dashboard - Interatividade entre gráficos, filtros e componentes",
       "descricao": "Implementar melhorias de interatividade nos dashboards da plataforma, permitindo que o usuário interaja dir...",
@@ -657,19 +631,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo @rodrigo por gentileza, prosseguir com testes",
       "link": "https://redmine.platform.brobot.com.br/issues/87057"
-    },
-    {
-      "id": 87230,
-      "task": "autos_detran_ce - Problema na captura de multas",
-      "descricao": "Gerei duas consultas para uma placa no Detran CE, e em ambas retornou com erro de \"Não foi possível salvar o arquivo PDF neste momento.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-13T15:03:13Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@jose-ricardo Correção feita e já está em staging. - Quando o portal recusa o boleto, a multa continua sendo retornada normalmente e a mensagem do portal vai na chave de boleto: \"_boleto_\": {\"file_una",
-      "link": "https://redmine.platform.brobot.com.br/issues/87230"
     },
     {
       "id": 87055,
@@ -776,19 +737,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86986"
     },
     {
-      "id": 87003,
-      "task": "Usuário com permissão de baixar boleto não está conseguindo baixar o boleto",
-      "descricao": "O usuário está em um grupo de permissão que pode baixar boletos, porém, o mesmo não está conseguindo baixar o boleto.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-14T16:04:55Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo atualizado em staging. Fiz ajustes nos dois frontends para padronizar.",
-      "link": "https://redmine.platform.brobot.com.br/issues/87003"
-    },
-    {
       "id": 25161,
       "task": "Melhorias na tela Maestro - Orders",
       "descricao": "@ralph conforme falamos, favor verificar a possibilidade de melhoria na tela Maestro - Orders : - botão det...",
@@ -813,14 +761,69 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "@rodrigo poderia testar em staging, realizei alguns testes locais e apos o portal restabelecer pos manutencao, as consultas voltaram a processar normalmente. Caso for aprovado nao foi necessario nenhu",
       "link": "https://redmine.platform.brobot.com.br/issues/79471"
+    },
+    {
+      "id": 81046,
+      "task": "Erro: \"Validation failed: Value has invalid format (must be...)\"",
+      "descricao": "",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-14T17:18:15Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo corrigido em staging. Request:",
+      "link": "https://redmine.platform.brobot.com.br/issues/81046"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-14T16:57:23.325Z",
+  "gerado_em": "2026-10-14T17:27:46.440Z",
   "sprint_id": 72,
   "total": 38,
   "rows": [
+    {
+      "id": 87003,
+      "task": "Usuário com permissão de baixar boleto não está conseguindo baixar o boleto",
+      "descricao": "O usuário está em um grupo de permissão que pode baixar boletos, porém, o mesmo não está conseguindo baixar o boleto.",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-14T17:17:57Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/87003"
+    },
+    {
+      "id": 87230,
+      "task": "autos_detran_ce - Problema na captura de multas",
+      "descricao": "Gerei duas consultas para uma placa no Detran CE, e em ambas retornou com erro de \"Não foi possível salvar o arquivo PDF neste momento.",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-14T17:17:28Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/87230"
+    },
+    {
+      "id": 86990,
+      "task": "autos_detran_rn - INVALID_PARAMETERS",
+      "descricao": "Spider autos_detran_rn (principal: INVALID_PARAMETERS, 100%)",
+      "category": "Operação - Erro humano operacional",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-14T17:03:49Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86990"
+    },
     {
       "id": 51016,
       "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
@@ -904,20 +907,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Conforme alinhado na planning realizada em 08/10/2026 com os participantes @gabriella @felipe @joathan @miguel @delvin @gustavo foi alinhado que seguiremos com implementação na sprint 42 com a pontuaç",
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
-    },
-    {
-      "id": 74637,
-      "task": "DFe | Permitir personalização da prioridade dos participantes exibidos na coluna \"Participantes\" - HIGHSTIL (ID: 41)",
-      "descricao": "Atualmente, na listagem de documentos fiscais (NFe), a coluna \"Participantes\" exibe apenas 2 participantes...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-08T18:43:48Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 08/10/2026 com os participantes @gabriella @felipe @joathan @miguel @delvin @gustavo foi alinhado que seguiremos com implementação na sprint 42 com a pontuaç",
-      "link": "https://redmine.platform.brobot.com.br/issues/74637"
     },
     {
       "id": 86462,
@@ -1186,20 +1175,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
     },
     {
-      "id": 61539,
-      "task": "Implementação do Módulo CaçaCondutores > Integração",
-      "descricao": "",
-      "category": "Produtos - Novo produto",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-28T15:04:30Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Reprovado . Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o g",
-      "link": "https://redmine.platform.brobot.com.br/issues/61539"
-    },
-    {
       "id": 37739,
       "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
       "descricao": "Tivemos um caso do cliente Engemix que questionou multas dos anos de 2021, 2022 e 2023 com status em aberto em nossa plataforma.",
@@ -1338,20 +1313,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
       "link": "https://redmine.platform.brobot.com.br/issues/30232"
-    },
-    {
-      "id": 60381,
-      "task": "Estruturação do processo e documentação do fluxo de Indicação de Condutor",
-      "descricao": "Realizar a estruturação macro do tema de Indicação de Condutor, contemplando tanto a documentação interna p...",
-      "category": "Produtos - Documentação",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-14T18:58:38Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
-      "link": "https://redmine.platform.brobot.com.br/issues/60381"
     }
   ]
 };
