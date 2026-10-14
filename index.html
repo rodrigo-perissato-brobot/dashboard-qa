@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-14T18:56:15.319Z",
-  "total": 20,
+  "gerado_em": "2026-10-14T19:26:37.401Z",
+  "total": 18,
   "rows": [
     {
       "id": 57089,
@@ -483,7 +483,7 @@
       "category": "Produtos - Novo produto",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "gustavo",
+      "alocado_a": "sem_dono",
       "data_comentario": "2026-07-15T03:35:50Z",
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
@@ -620,19 +620,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/84712"
     },
     {
-      "id": 87057,
-      "task": "Dashboard - Interatividade entre gráficos, filtros e componentes",
-      "descricao": "Implementar melhorias de interatividade nos dashboards da plataforma, permitindo que o usuário interaja dir...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-09T19:06:07Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo @rodrigo por gentileza, prosseguir com testes",
-      "link": "https://redmine.platform.brobot.com.br/issues/87057"
-    },
-    {
       "id": 87055,
       "task": "autos_sne_denatran - Novo cenário SNE",
       "descricao": "Ao solicitar um boleto no Senatran, o órgão autuador (DNIT), não entrega um boleto atualizado.",
@@ -685,19 +672,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86470"
     },
     {
-      "id": 86751,
-      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
-      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-14T14:45:08Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo, os erros foram causados por uma variável de ambiente incorreta do serviço de captcha, configurada no Rancher. Já corrigi e reprocessei as consultas: Poderia verificar? Além disso, antes de s",
-      "link": "https://redmine.platform.brobot.com.br/issues/86751"
-    },
-    {
       "id": 25161,
       "task": "Melhorias na tela Maestro - Orders",
       "descricao": "@ralph conforme falamos, favor verificar a possibilidade de melhoria na tela Maestro - Orders : - botão det...",
@@ -739,10 +713,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-14T18:57:24.110Z",
+  "gerado_em": "2026-10-14T19:27:40.746Z",
   "sprint_id": 72,
-  "total": 37,
+  "total": 41,
   "rows": [
+    {
+      "id": 86751,
+      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-14T19:05:36Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86751"
+    },
     {
       "id": 87043,
       "task": "Dashboard interativo: clique no gráfico abre a listagem filtrada pelo recorte e pelo período",
@@ -772,20 +760,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/78505"
     },
     {
-      "id": 87003,
-      "task": "Usuário com permissão de baixar boleto não está conseguindo baixar o boleto",
-      "descricao": "O usuário está em um grupo de permissão que pode baixar boletos, porém, o mesmo não está conseguindo baixar o boleto.",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-14T17:17:57Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/87003"
-    },
-    {
       "id": 87230,
       "task": "autos_detran_ce - Problema na captura de multas",
       "descricao": "Gerei duas consultas para uma placa no Detran CE, e em ambas retornou com erro de \"Não foi possível salvar o arquivo PDF neste momento.",
@@ -800,32 +774,18 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87230"
     },
     {
-      "id": 86990,
-      "task": "autos_detran_rn - INVALID_PARAMETERS",
-      "descricao": "Spider autos_detran_rn (principal: INVALID_PARAMETERS, 100%)",
-      "category": "Operação - Erro humano operacional",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-14T17:03:49Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86990"
-    },
-    {
-      "id": 87022,
-      "task": "Erro na visualização de um membro com grupo de permissão",
-      "descricao": "Quando um membro tem visualização apenas de uma filial e não da matriz é gerado um erro dizendo que o mesmo não possui acesso ao produto.",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
+      "id": 51016,
+      "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
+      "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "planning: to plan",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-09T19:10:32Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/87022"
+      "data_comentario": "2026-10-14T12:13:06Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gabriella relatório em anexo.",
+      "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
       "id": 81558,
@@ -1094,6 +1054,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82577"
     },
     {
+      "id": 51852,
+      "task": "FICI Preenchida Automaticamente - Davi",
+      "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-08T19:32:19Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Novo relatório",
+      "link": "https://redmine.platform.brobot.com.br/issues/51852"
+    },
+    {
       "id": 78408,
       "task": "autos_sne_denatran_indicacao_condutor - Encontrei um novo cenário em que é possível realizar a indicação com a infração paga",
       "descricao": "Encontramos um novo cenário em que é possível realizar a indicação de condutor de infrações pagas.",
@@ -1148,6 +1122,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@roberta @gustavo @felipe-godoy @leonardo.paganotti @julya.tochio @renata @maria.rozolem @Thais boa tarde, 71387 — Status Ativo/Inativo de Empresas em Definições Situação: entregue e disponível em pro",
       "link": "https://redmine.platform.brobot.com.br/issues/43150"
+    },
+    {
+      "id": 61539,
+      "task": "Implementação do Módulo CaçaCondutores > Integração",
+      "descricao": "",
+      "category": "Produtos - Novo produto",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-07-28T15:04:30Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf Reprovado . Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o g",
+      "link": "https://redmine.platform.brobot.com.br/issues/61539"
     },
     {
       "id": 37739,
@@ -1220,6 +1208,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75755"
     },
     {
+      "id": 53155,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
+      "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
+      "category": "anterior",
+      "priority": "high",
+      "status": "to do",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-23T17:52:13Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@renata boa tarde, Conforme alinhamento em reunião 09/03/2026 com os presentes Henrique, Emerson, Gabriella, Guilherme, Roberta, Renata, Davi, Jose: foi alinhado que somente seguiremos com o desenvolv",
+      "link": "https://redmine.platform.brobot.com.br/issues/53155"
+    },
+    {
       "id": 43159,
       "task": "Filtro por Centro de Custo - Supermix ",
       "descricao": "Adicionar a opção de filtrar multas, relatórios e dashboards por Centro de Custo, permitindo que o usuário...",
@@ -1248,6 +1250,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/16564"
     },
     {
+      "id": 44624,
+      "task": "GERAR INSIGHTS PÓS CONSULTA E ENVIAR VIA E-MAIL/WHATSAPP",
+      "descricao": "",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "planning: to plan",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-06-01T12:01:27Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@Roberta bom dia, Informo que o projeto de desenvolvimento foi relizado, o tema será estimado pelos desenvolvedores e posteriormente planejado para desenvolvimento em uma sprint",
+      "link": "https://redmine.platform.brobot.com.br/issues/44624"
+    },
+    {
       "id": 30232,
       "task": "Conta mestre Cervejaria Imperial",
       "descricao": "O cliente Cervejaria Imperial (ID: 1807, 1574, 1573, 1572, 1568, 1513, 1512, 1511, 1510, 1509, 1416, 1414,...",
@@ -1260,6 +1276,20 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
       "link": "https://redmine.platform.brobot.com.br/issues/30232"
+    },
+    {
+      "id": 60381,
+      "task": "Estruturação do processo e documentação do fluxo de Indicação de Condutor",
+      "descricao": "Realizar a estruturação macro do tema de Indicação de Condutor, contemplando tanto a documentação interna p...",
+      "category": "Produtos - Documentação",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-04-14T18:58:38Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo por gentileza, dar sequencia na documentação da wiki o processo manual de envios de mensagens quando tiver sem automação de indicação de condutores. Utilize a estrutura padrão já existente na",
+      "link": "https://redmine.platform.brobot.com.br/issues/60381"
     }
   ]
 };
