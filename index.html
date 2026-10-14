@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-14T14:26:22.398Z",
-  "total": 21,
+  "gerado_em": "2026-10-14T15:26:22.889Z",
+  "total": 23,
   "rows": [
     {
       "id": 57089,
@@ -639,7 +639,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-08T18:36:11Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido.",
@@ -665,7 +665,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-13T15:03:13Z",
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo Correção feita e já está em staging. - Quando o portal recusa o boleto, a multa continua sendo retornada normalmente e a mensagem do portal vai na chave de boleto: \"_boleto_\": {\"file_una",
@@ -748,14 +748,20 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "@gustavo, ajustes do seu comentário no ambiente de teste do front novo ( deploy concluído. 1. CM-Frotas — tabela \"Veículos\" Clicar na linha ou na placa abre a listagem de multas filtrada pela placa (c",
       "link": "https://redmine.platform.brobot.com.br/issues/87043"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-14T14:27:25.631Z",
-  "sprint_id": 72,
-  "total": 42,
-  "rows": [
+    },
+    {
+      "id": 86751,
+      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-14T14:45:08Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@rodrigo, os erros foram causados por uma variável de ambiente incorreta do serviço de captcha, configurada no Rancher. Já corrigi e reprocessei as consultas: Poderia verificar? Além disso, antes de s",
+      "link": "https://redmine.platform.brobot.com.br/issues/86751"
+    },
     {
       "id": 86986,
       "task": "autos_sefaz_al - NO_SITEKEY",
@@ -763,13 +769,19 @@
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "low",
       "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-14T13:08:55Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. O teste realizado na spider autos_sefaz_al_taxas está retornando sucesso e gravando o IPVA corretamente. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidênc",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-14T14:49:23Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Alteração realizada conforme solicitado, @rodrigo poderia testar novamente?",
       "link": "https://redmine.platform.brobot.com.br/issues/86986"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-10-14T15:27:31.921Z",
+  "sprint_id": 72,
+  "total": 40,
+  "rows": [
     {
       "id": 84414,
       "task": "AITs com mesmo número vinculados a placas distintas são tratados como um único registro - JPM - ID:1857",
@@ -1315,20 +1327,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@Roberta bom dia, Informo que o projeto de desenvolvimento foi relizado, o tema será estimado pelos desenvolvedores e posteriormente planejado para desenvolvimento em uma sprint",
       "link": "https://redmine.platform.brobot.com.br/issues/44624"
-    },
-    {
-      "id": 30232,
-      "task": "Conta mestre Cervejaria Imperial",
-      "descricao": "O cliente Cervejaria Imperial (ID: 1807, 1574, 1573, 1572, 1568, 1513, 1512, 1511, 1510, 1509, 1416, 1414,...",
-      "category": "anterior",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-04-28T14:45:00Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo bom dia, Hoje, dia 28/04/2026, realizamos uma reunião com Guilherme, da Cervejaria Imperial, com a presença de Davi e Renata, para entender mais a fundo a solicitação e a real necessidade do ",
-      "link": "https://redmine.platform.brobot.com.br/issues/30232"
     },
     {
       "id": 60381,
