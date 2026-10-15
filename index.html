@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-15T18:56:20.552Z",
+  "gerado_em": "2026-10-15T19:26:23.259Z",
   "total": 17,
   "rows": [
     {
@@ -566,19 +566,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo em staging. Alterações A coluna Enable saiu da listagem de Scraping Services e deu lugar a Status da spider, com quatro valores: Ativa, Ativa com restrições, Em manutenção e Desuso. ",
       "link": "https://redmine.platform.brobot.com.br/issues/85563"
-    },
-    {
-      "id": 84712,
-      "task": "Divergência de resultados entre Histórico de Consultas e Maestro >> Consultas - SANCETUR - SNE - ID: 2018",
-      "descricao": "Foi identificada uma divergência na listagem de rodadas ao consultar os mesmos parâmetros por dois caminhos...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-08T13:07:13Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações Consulta em erro passa a ser encerrada quando existe uma consulta mais recente já concluída para a mesma conta, placa e consulta, herdando o status e o resulta",
-      "link": "https://redmine.platform.brobot.com.br/issues/84712"
     },
     {
       "id": 87055,
@@ -696,14 +683,7 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@Rodrigo, Você consegue criar uma subtarefa para testar as spiders autos_sefaz_mt e autos_sefaz_ms_ipva, por favor? Percebi que elas estavam usando recursos extras da AWS sem necessidade e já removi e",
       "link": "https://redmine.platform.brobot.com.br/issues/88059"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-15T18:57:22.540Z",
-  "sprint_id": 72,
-  "total": 41,
-  "rows": [
+    },
     {
       "id": 86587,
       "task": "autos_sefaz_pa - UNDEFINED_ERROR",
@@ -711,12 +691,60 @@
       "category": "Spider - Outros",
       "priority": "high",
       "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-15T14:56:19Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@delvin Reprovado. Processei as consultas na spider e toda consulta sem taxa pendente retorna sucesso, porém um veículo com taxa retorna erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Cl",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-15T19:06:28Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@rodrigo Foram feitas correções na spider e já estão em staging. Pode refazer os testes, por favor?",
       "link": "https://redmine.platform.brobot.com.br/issues/86587"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-10-15T19:27:27.689Z",
+  "sprint_id": 72,
+  "total": 42,
+  "rows": [
+    {
+      "id": 86331,
+      "task": "Desativação de usuário  UNICO  não é atualizada no Front Novo",
+      "descricao": "Na tela de Monitoramento do Front Novo, a ocorrência de desativação de usuário não está sendo apresentada/a...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-15T19:21:55Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo @gabriella subi para produção para testarmos com os dados reais.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86331"
+    },
+    {
+      "id": 84712,
+      "task": "Divergência de resultados entre Histórico de Consultas e Maestro >> Consultas - SANCETUR - SNE - ID: 2018",
+      "descricao": "Foi identificada uma divergência na listagem de rodadas ao consultar os mesmos parâmetros por dois caminhos...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-15T19:17:17Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe, Seguem Ajustes Ambiente: Staging | Conta: Testes Funcionais | Versão: New - Filtro por período: não localizado na aba Admin Volumetria Abandonadas. - Permissão de exportação: ao clicar no bot",
+      "link": "https://redmine.platform.brobot.com.br/issues/84712"
+    },
+    {
+      "id": 51016,
+      "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
+      "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "planning: projecting",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-15T19:14:26Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "reunião agendada com @renata e @jose-ricardo amanhã 16h para discutir",
+      "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
       "id": 86470,
@@ -815,20 +843,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@rolf favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/78505"
-    },
-    {
-      "id": 51016,
-      "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
-      "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "planning: projecting",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-14T12:13:06Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gabriella relatório em anexo.",
-      "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
       "id": 43063,
