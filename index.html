@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-15T13:56:17.300Z",
-  "total": 18,
+  "gerado_em": "2026-10-15T14:26:11.570Z",
+  "total": 16,
   "rows": [
     {
       "id": 57089,
@@ -620,19 +620,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87671"
     },
     {
-      "id": 86470,
-      "task": "autos_detran_es - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-13T20:35:08Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ajustado a captura de acordo com SERVICE_NAME e adicionado os valores das multas conforme solicitado. @gustavo gentileza testar novamente.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86470"
-    },
-    {
       "id": 25161,
       "task": "Melhorias na tela Maestro - Orders",
       "descricao": "@ralph conforme falamos, favor verificar a possibilidade de melhoria na tela Maestro - Orders : - botão det...",
@@ -672,19 +659,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82332"
     },
     {
-      "id": 87807,
-      "task": "Filtro “Motoristas” não localizado na nova plataforma com Frotas",
-      "descricao": "O filtro “Motoristas” não está sendo localizado na nova plataforma com Frotas, impedindo o cliente de acess...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-14T20:00:42Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo @rodrigo 87807 - Filtro \"Motoristas\" no Frotas Disponível em staging. O que foi corrigido O filtro \"Motoristas\" da tela Frotas agora segue a mesma regra do front antigo: ele aparece quando a ",
-      "link": "https://redmine.platform.brobot.com.br/issues/87807"
-    },
-    {
       "id": 86913,
       "task": "Credencial gov.br do Embarcador",
       "descricao": "Foi realizado a implementação de um novo tipo de credencial para o Embarcador, essa credencial está sendo c...",
@@ -713,23 +687,23 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-15T13:57:20.632Z",
+  "gerado_em": "2026-10-15T14:27:06.611Z",
   "sprint_id": 72,
-  "total": 41,
+  "total": 42,
   "rows": [
     {
-      "id": 87807,
-      "task": "Filtro “Motoristas” não localizado na nova plataforma com Frotas",
-      "descricao": "O filtro “Motoristas” não está sendo localizado na nova plataforma com Frotas, impedindo o cliente de acess...",
-      "category": "Frontend - Novo frontend",
+      "id": 86470,
+      "task": "autos_detran_es - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
       "priority": "high",
       "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-15T13:54:59Z",
+      "tipo": "outro",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-15T14:13:48Z",
       "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@gabriella Aprovado Ambiente: Staging | Conta: Teste Permissão | Versão: New Foram realizados testes funcionais em ambiente de Staging para validar a correção do filtro “Motoristas”, contemplando os c",
-      "link": "https://redmine.platform.brobot.com.br/issues/87807"
+      "comentario_trecho": "@miguel Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei uma nova consulta para a mesma placa (SFZ5G91) e ainda não foi disponibilizado na consulta os dados de \"Val",
+      "link": "https://redmine.platform.brobot.com.br/issues/86470"
     },
     {
       "id": 86411,
@@ -1024,6 +998,20 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Agora a captura passa a funcionar assim: a rotina diária monta uma consulta por estabelecimento, uma para a matriz e uma para cada filial cadastrada com o mesmo começo de CNPJ, e cad",
       "link": "https://redmine.platform.brobot.com.br/issues/85286"
+    },
+    {
+      "id": 75193,
+      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
+      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-09-14T16:45:52Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo Correção aplicada. A consulta do DNIT passa a usar a credencial gov.br cadastrada na conta, sem precisar vincular a credencial ao veículo. Funciona também quando a empresa do veículo não tem ",
+      "link": "https://redmine.platform.brobot.com.br/issues/75193"
     },
     {
       "id": 75360,
