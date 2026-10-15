@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-14T19:26:37.401Z",
-  "total": 18,
+  "gerado_em": "2026-10-15T10:56:07.135Z",
+  "total": 20,
   "rows": [
     {
       "id": 57089,
@@ -483,7 +483,7 @@
       "category": "Produtos - Novo produto",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-07-15T03:35:50Z",
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
@@ -685,19 +685,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/25161"
     },
     {
-      "id": 79471,
-      "task": "autos_detran_to - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_to, 100.0% de erro (principal: SCRAPY_ERROR, 75%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-14T16:24:56Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@rodrigo poderia testar em staging, realizei alguns testes locais e apos o portal restabelecer pos manutencao, as consultas voltaram a processar normalmente. Caso for aprovado nao foi necessario nenhu",
-      "link": "https://redmine.platform.brobot.com.br/issues/79471"
-    },
-    {
       "id": 81046,
       "task": "Erro: \"Validation failed: Value has invalid format (must be...)\"",
       "descricao": "",
@@ -709,14 +696,67 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido em staging. Request:",
       "link": "https://redmine.platform.brobot.com.br/issues/81046"
+    },
+    {
+      "id": 82332,
+      "task": "Veículos | Cadastro automático de empresa por CNPJ no upload em lote",
+      "descricao": "Hoje, para subir a planilha de veículos, é preciso cadastrar antes, uma por uma na tela de Empresas, todas...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-14T19:39:53Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82332"
+    },
+    {
+      "id": 87807,
+      "task": "Filtro “Motoristas” não localizado na nova plataforma com Frotas",
+      "descricao": "O filtro “Motoristas” não está sendo localizado na nova plataforma com Frotas, impedindo o cliente de acess...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-14T20:00:42Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo @rodrigo 87807 - Filtro \"Motoristas\" no Frotas Disponível em staging. O que foi corrigido O filtro \"Motoristas\" da tela Frotas agora segue a mesma regra do front antigo: ele aparece quando a ",
+      "link": "https://redmine.platform.brobot.com.br/issues/87807"
+    },
+    {
+      "id": 86913,
+      "task": "Credencial gov.br do Embarcador",
+      "descricao": "Foi realizado a implementação de um novo tipo de credencial para o Embarcador, essa credencial está sendo c...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-14T20:16:44Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@rodrigo Pode testar em staging o novo formato de credenciais do ANTT? Contexto: a credencial \"Login GOV.BR\" com CPF chegava na spider sem indicar que era gov.br. Por isso caía no login do portal do A",
+      "link": "https://redmine.platform.brobot.com.br/issues/86913"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-14T19:27:40.746Z",
+  "gerado_em": "2026-10-15T10:57:02.578Z",
   "sprint_id": 72,
-  "total": 41,
+  "total": 39,
   "rows": [
+    {
+      "id": 87676,
+      "task": "Inclusão de filtro por CNPJ na tela Admin >> Veículos",
+      "descricao": "Incluir, na tela Admin Veículos, um filtro por CNPJ que permita selecionar um ou mais CNPJs simultaneamente...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-14T20:00:49Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir backend para produção. Posteriormente @gabriella subir front do Platform New para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/87676"
+    },
     {
       "id": 86751,
       "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
@@ -732,24 +772,10 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86751"
     },
     {
-      "id": 87043,
-      "task": "Dashboard interativo: clique no gráfico abre a listagem filtrada pelo recorte e pelo período",
-      "descricao": "Permitir que o usuário clique em uma parte de um gráfico do dashboard (fatia, barra, ponto ou linha) e seja...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-14T18:40:40Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@rolf favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/87043"
-    },
-    {
       "id": 78505,
       "task": "Conferência Caçacondutores: Indicação de conduores, CNH, Exame toxicológico",
       "descricao": "Dar ao suporte uma tela única que mostre, em tempo real, quais automações do módulo de condutores pararam d...",
-      "category": "",
+      "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "awaiting deploy",
       "tipo": "aprovado",
@@ -758,20 +784,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@rolf favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/78505"
-    },
-    {
-      "id": 87230,
-      "task": "autos_detran_ce - Problema na captura de multas",
-      "descricao": "Gerei duas consultas para uma placa no Detran CE, e em ambas retornou com erro de \"Não foi possível salvar o arquivo PDF neste momento.",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-14T17:17:28Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/87230"
     },
     {
       "id": 51016,
@@ -793,7 +805,7 @@
       "descricao": "Hoje a coluna \"Participantes\" da listagem de DFe exibe sempre os mesmos dois primeiros participantes, numa...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
-      "status": "to do",
+      "status": "in progress",
       "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-10-09T19:05:14Z",
@@ -982,20 +994,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
       "link": "https://redmine.platform.brobot.com.br/issues/83270"
-    },
-    {
-      "id": 82332,
-      "task": "Veículos | Cadastro automático de empresa por CNPJ no upload em lote",
-      "descricao": "Hoje, para subir a planilha de veículos, é preciso cadastrar antes, uma por uma na tela de Empresas, todas...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-01T18:25:53Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 01/10/2026 com os participantes @rodrigo @gabriella @felipe @joathan @miguel @thiago @delvin @gustavo @jose-ricardo @rolf foi alinhado que seguiremos com imp",
-      "link": "https://redmine.platform.brobot.com.br/issues/82332"
     },
     {
       "id": 85286,
