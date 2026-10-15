@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-15T11:26:28.388Z",
-  "total": 20,
+  "gerado_em": "2026-10-15T11:56:27.688Z",
+  "total": 21,
   "rows": [
     {
       "id": 57089,
@@ -514,19 +514,6 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Em staging k8s/maestro/templates/configmap.yaml agora é condicional por appEnv: produção mantém a URL e a chave de hoje (render do helm idêntico), staging aponta para com a chave do ambiente de homolo",
       "link": "https://redmine.platform.brobot.com.br/issues/83547"
-    },
-    {
-      "id": 82757,
-      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
-      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-15T19:43:12Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo Indicação de condutores — o que mudou nas telas Guia de navegação das mudanças de front da entrega 82757. Duas telas novas no painel administrativo, uma nova no painel do cliente e quatro tel",
-      "link": "https://redmine.platform.brobot.com.br/issues/82757"
     },
     {
       "id": 82396,
@@ -625,7 +612,7 @@
       "descricao": "Ao solicitar um boleto no Senatran, o órgão autuador (DNIT), não entrega um boleto atualizado.",
       "category": "",
       "priority": "immediate",
-      "status": "in progress",
+      "status": "staging",
       "alocado_a": "sem_dono",
       "data_comentario": "2026-10-13T18:41:21Z",
       "comentario_autor": "Miguel Silva",
@@ -735,13 +722,39 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Pode testar em staging o novo formato de credenciais do ANTT? Contexto: a credencial \"Login GOV.BR\" com CPF chegava na spider sem indicar que era gov.br. Por isso caía no login do portal do A",
       "link": "https://redmine.platform.brobot.com.br/issues/86913"
+    },
+    {
+      "id": 82757,
+      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
+      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-15T11:38:01Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo @rodrigo solicito que prossigam com teste com prioridade para encerrarmos as lacunas",
+      "link": "https://redmine.platform.brobot.com.br/issues/82757"
+    },
+    {
+      "id": 86411,
+      "task": "Filtro por múltiplas placas não restringe corretamente os resultados da consulta - TRANSMARONI - SNE - ID: 2253",
+      "descricao": "Foi identificada uma inconsistência no filtro de pesquisa da conta do cliente Maroni, utilizado para consul...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-15T11:50:30Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo se puder testar novamente. Depois do seu teste eu ja atualizei as filas para maior rapidez na entrega dos relatórios.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86411"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-15T11:27:45.706Z",
+  "gerado_em": "2026-10-15T11:57:26.680Z",
   "sprint_id": 72,
-  "total": 39,
+  "total": 38,
   "rows": [
     {
       "id": 87676,
@@ -926,20 +939,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/41092"
     },
     {
-      "id": 86411,
-      "task": "Filtro por múltiplas placas não restringe corretamente os resultados da consulta - TRANSMARONI - SNE - ID: 2253",
-      "descricao": "Foi identificada uma inconsistência no filtro de pesquisa da conta do cliente Maroni, utilizado para consul...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-05T17:42:34Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan Segue Ajuste Ambiente: Produção | Conta: TRANSMARONI - SNE | Versão: New Realizei um teste na conta da Transmaroni (ID: 2253) em produção extraindo um relatório com 48 notificações às 11:36, ",
-      "link": "https://redmine.platform.brobot.com.br/issues/86411"
-    },
-    {
       "id": 76680,
       "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
       "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
@@ -987,7 +986,7 @@
       "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
       "category": "",
       "priority": "high",
-      "status": "in progress",
+      "status": "staging",
       "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-10-02T14:13:09Z",
