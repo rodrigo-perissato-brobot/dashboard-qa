@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-15T13:26:15.558Z",
-  "total": 19,
+  "gerado_em": "2026-10-15T13:56:17.300Z",
+  "total": 18,
   "rows": [
     {
       "id": 57089,
@@ -698,17 +698,38 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86913"
     },
     {
-      "id": 82757,
-      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
-      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
-      "category": "Produtos - Melhoria de itens existentes",
+      "id": 87838,
+      "task": "Remover status “Vencem em Breve” do dashboard Embarcador",
+      "descricao": "Remover o status “Vencem em Breve” da aba “Status das Multas” do dashboard do serviço Embarcador, para todos os clientes da plataforma.",
+      "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-15T11:38:01Z",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-15T13:39:28Z",
       "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo @rodrigo solicito que prossigam com teste com prioridade para encerrarmos as lacunas",
-      "link": "https://redmine.platform.brobot.com.br/issues/82757"
+      "comentario_trecho": "@gustavo @rodrigo em staging no Platform New O que foi alterado No dashboard do Embarcador, o quadro Status das Multas não mostra mais a linha \"Vencem em Breve\". Ela não é um status do Embarcador: era",
+      "link": "https://redmine.platform.brobot.com.br/issues/87838"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-10-15T13:57:20.632Z",
+  "sprint_id": 72,
+  "total": 41,
+  "rows": [
+    {
+      "id": 87807,
+      "task": "Filtro “Motoristas” não localizado na nova plataforma com Frotas",
+      "descricao": "O filtro “Motoristas” não está sendo localizado na nova plataforma com Frotas, impedindo o cliente de acess...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-15T13:54:59Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@gabriella Aprovado Ambiente: Staging | Conta: Teste Permissão | Versão: New Foram realizados testes funcionais em ambiente de Staging para validar a correção do filtro “Motoristas”, contemplando os c",
+      "link": "https://redmine.platform.brobot.com.br/issues/87807"
     },
     {
       "id": 86411,
@@ -716,20 +737,28 @@
       "descricao": "Foi identificada uma inconsistência no filtro de pesquisa da conta do cliente Maroni, utilizado para consul...",
       "category": "",
       "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-15T11:50:30Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo se puder testar novamente. Depois do seu teste eu ja atualizei as filas para maior rapidez na entrega dos relatórios.",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-15T13:36:09Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan Aprovado Ambiente: Produção | Conta: TRANSMARONI - SNE | Versão: New Realizei um novo teste com o mesmo filtro utilizado na resposta anterior e, dessa vez, foi disponibilizado para download e",
       "link": "https://redmine.platform.brobot.com.br/issues/86411"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-15T13:27:16.673Z",
-  "sprint_id": 72,
-  "total": 39,
-  "rows": [
+    },
+    {
+      "id": 82757,
+      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
+      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-15T13:29:15Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan Seguem ajustes Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic/New Foram realizados testes funcionais em ambiente de Staging para validar as alterações relacionadas ao fluxo de",
+      "link": "https://redmine.platform.brobot.com.br/issues/82757"
+    },
     {
       "id": 86465,
       "task": "autos_sefaz_to - SCRAPY_ERROR",
@@ -995,20 +1024,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Agora a captura passa a funcionar assim: a rotina diária monta uma consulta por estabelecimento, uma para a matriz e uma para cada filial cadastrada com o mesmo começo de CNPJ, e cad",
       "link": "https://redmine.platform.brobot.com.br/issues/85286"
-    },
-    {
-      "id": 75193,
-      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
-      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-14T16:45:52Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo Correção aplicada. A consulta do DNIT passa a usar a credencial gov.br cadastrada na conta, sem precisar vincular a credencial ao veículo. Funciona também quando a empresa do veículo não tem ",
-      "link": "https://redmine.platform.brobot.com.br/issues/75193"
     },
     {
       "id": 75360,
