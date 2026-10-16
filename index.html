@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-16T11:56:10.782Z",
-  "total": 18,
+  "gerado_em": "2026-10-16T12:26:07.419Z",
+  "total": 16,
   "rows": [
     {
       "id": 57089,
@@ -659,32 +659,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86199"
     },
     {
-      "id": 88059,
-      "task": "Análise de melhoria e redução de custos nas spiders",
-      "descricao": "Efetuar análise nas spiders e identificar e efetuar melhorias no código a fim de melhorar a velocidade e re...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "low",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-15T18:04:23Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@Rodrigo, Você consegue criar uma subtarefa para testar as spiders autos_sefaz_mt e autos_sefaz_ms_ipva, por favor? Percebi que elas estavam usando recursos extras da AWS sem necessidade e já removi e",
-      "link": "https://redmine.platform.brobot.com.br/issues/88059"
-    },
-    {
-      "id": 86587,
-      "task": "autos_sefaz_pa - UNDEFINED_ERROR",
-      "descricao": "Spider autos_sefaz_pa (principal: UNDEFINED_ERROR, 96.67%)",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-15T19:06:28Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo Foram feitas correções na spider e já estão em staging. Pode refazer os testes, por favor?",
-      "link": "https://redmine.platform.brobot.com.br/issues/86587"
-    },
-    {
       "id": 88070,
       "task": "autos_detran_mg - remover selenium e recursos",
       "descricao": "",
@@ -713,10 +687,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-16T11:57:09.516Z",
+  "gerado_em": "2026-10-16T12:27:10.400Z",
   "sprint_id": 72,
-  "total": 42,
+  "total": 44,
   "rows": [
+    {
+      "id": 88059,
+      "task": "Análise de melhoria e redução de custos nas spiders",
+      "descricao": "Efetuar análise nas spiders e identificar e efetuar melhorias no código a fim de melhorar a velocidade e re...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "low",
+      "status": "in progress",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-16T12:23:37Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Aprovado (autos_sefaz_ms_ipva). Testei a spider autos_sefaz_ms_ipva após a remoção dos recursos extras da AWS e as consultas finalizaram com sucesso. Ambiente: Staging | Conta: Testes Funciona",
+      "link": "https://redmine.platform.brobot.com.br/issues/88059"
+    },
+    {
+      "id": 86587,
+      "task": "autos_sefaz_pa - UNDEFINED_ERROR",
+      "descricao": "Spider autos_sefaz_pa (principal: UNDEFINED_ERROR, 96.67%)",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-16T12:22:36Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86587"
+    },
     {
       "id": 78699,
       "task": "Motorista com documentos anexados",
