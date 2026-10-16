@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-15T19:56:20.784Z",
-  "total": 17,
+  "gerado_em": "2026-10-16T10:56:06.961Z",
+  "total": 18,
   "rows": [
     {
       "id": 57089,
@@ -696,14 +696,41 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Foram feitas correções na spider e já estão em staging. Pode refazer os testes, por favor?",
       "link": "https://redmine.platform.brobot.com.br/issues/86587"
+    },
+    {
+      "id": 88070,
+      "task": "autos_detran_mg - remover selenium e recursos",
+      "descricao": "",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-15T20:24:04Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Fiz um estudo na spider do autos_detran_mg e, depois de alguns testes, consegui remover o Selenium. Agora a consulta é feita direto pelo scrapy, e a spider ficou 2x mais rápida no geral. Só a etapa de",
+      "link": "https://redmine.platform.brobot.com.br/issues/88070"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-15T19:57:20.611Z",
+  "gerado_em": "2026-10-16T10:57:04.775Z",
   "sprint_id": 72,
-  "total": 42,
+  "total": 43,
   "rows": [
+    {
+      "id": 78699,
+      "task": "Motorista com documentos anexados",
+      "descricao": "Quando cadastrado um motorista na plataforma automaticamente a CNH e o Termo de Responsabilidade constam co...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-15T20:28:04Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo @gabriella atualizado em staging. Decisões da correção - Removi o Termo de Responsabilidade da tela do cliente. Desde o 57089 o backend não guarda mais nenhum dado do Termo, então qu",
+      "link": "https://redmine.platform.brobot.com.br/issues/78699"
+    },
     {
       "id": 86331,
       "task": "Desativação de usuário  UNICO  não é atualizada no Front Novo",
