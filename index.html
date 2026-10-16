@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-16T14:56:33.932Z",
-  "total": 11,
+  "gerado_em": "2026-10-16T15:26:17.892Z",
+  "total": 13,
   "rows": [
     {
       "id": 57089,
@@ -555,6 +555,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86761"
     },
     {
+      "id": 85563,
+      "task": "Exibir status da Spider na tela de Scraping Services ",
+      "descricao": "Deixar explícita, na listagem de Administração → Maestro → Scraping Services, a situação de cada spider: no...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-08T12:09:39Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações A coluna Enable saiu da listagem de Scraping Services e deu lugar a Status da spider, com quatro valores: Ativa, Ativa com restrições, Em manutenção e Desuso. ",
+      "link": "https://redmine.platform.brobot.com.br/issues/85563"
+    },
+    {
       "id": 87055,
       "task": "autos_sne_denatran - Novo cenário SNE",
       "descricao": "Ao solicitar um boleto no Senatran, o órgão autuador (DNIT), não entrega um boleto atualizado.",
@@ -618,14 +631,41 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Pode testar em staging o novo formato de credenciais do ANTT? Contexto: a credencial \"Login GOV.BR\" com CPF chegava na spider sem indicar que era gov.br. Por isso caía no login do portal do A",
       "link": "https://redmine.platform.brobot.com.br/issues/86913"
+    },
+    {
+      "id": 84712,
+      "task": "Divergência de resultados entre Histórico de Consultas e Maestro >> Consultas - SANCETUR - SNE - ID: 2018",
+      "descricao": "Foi identificada uma divergência na listagem de rodadas ao consultar os mesmos parâmetros por dois caminhos...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-16T11:45:26Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/84712"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-16T14:57:36.877Z",
+  "gerado_em": "2026-10-16T15:27:23.339Z",
   "sprint_id": 72,
   "total": 47,
   "rows": [
+    {
+      "id": 78699,
+      "task": "Motorista com documentos anexados",
+      "descricao": "Quando cadastrado um motorista na plataforma automaticamente a CNH e o Termo de Responsabilidade constam co...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-16T15:14:11Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic/New Testes aprovados: - Cadastro, edição, consulta e download dos anexos de CNH. - Status de anexo atualizado corre",
+      "link": "https://redmine.platform.brobot.com.br/issues/78699"
+    },
     {
       "id": 82332,
       "task": "Veículos | Cadastro automático de empresa por CNPJ no upload em lote",
@@ -695,20 +735,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/86587"
-    },
-    {
-      "id": 78699,
-      "task": "Motorista com documentos anexados",
-      "descricao": "Quando cadastrado um motorista na plataforma automaticamente a CNH e o Termo de Responsabilidade constam co...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-15T20:28:04Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo @rodrigo @gabriella atualizado em staging. Decisões da correção - Removi o Termo de Responsabilidade da tela do cliente. Desde o 57089 o backend não guarda mais nenhum dado do Termo, então qu",
-      "link": "https://redmine.platform.brobot.com.br/issues/78699"
     },
     {
       "id": 86331,
