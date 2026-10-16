@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-16T14:27:09.627Z",
-  "total": 13,
+  "gerado_em": "2026-10-16T14:56:33.932Z",
+  "total": 11,
   "rows": [
     {
       "id": 57089,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86761"
     },
     {
-      "id": 85563,
-      "task": "Exibir status da Spider na tela de Scraping Services ",
-      "descricao": "Deixar explícita, na listagem de Administração → Maestro → Scraping Services, a situação de cada spider: no...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-08T12:09:39Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging. Alterações A coluna Enable saiu da listagem de Scraping Services e deu lugar a Status da spider, com quatro valores: Ativa, Ativa com restrições, Em manutenção e Desuso. ",
-      "link": "https://redmine.platform.brobot.com.br/issues/85563"
-    },
-    {
       "id": 87055,
       "task": "autos_sne_denatran - Novo cenário SNE",
       "descricao": "Ao solicitar um boleto no Senatran, o órgão autuador (DNIT), não entrega um boleto atualizado.",
@@ -587,7 +574,7 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-13T19:25:27Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Fiz as correções nas spiders do DNIT e do ANTT para os erros de \"não representado\" indevido. Durante os testes do DNIT, o portal retornou que a conta tinha atingido o limite diário de consultas. Esse ",
@@ -607,17 +594,17 @@
       "link": "https://redmine.platform.brobot.com.br/issues/25161"
     },
     {
-      "id": 82332,
-      "task": "Veículos | Cadastro automático de empresa por CNPJ no upload em lote",
-      "descricao": "Hoje, para subir a planilha de veículos, é preciso cadastrar antes, uma por uma na tela de Empresas, todas...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-14T19:39:53Z",
+      "id": 81046,
+      "task": "Erro: \"Validation failed: Value has invalid format (must be...)\"",
+      "descricao": "",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-14T17:18:15Z",
       "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82332"
+      "comentario_trecho": "@rodrigo @gustavo corrigido em staging. Request:",
+      "link": "https://redmine.platform.brobot.com.br/issues/81046"
     },
     {
       "id": 86913,
@@ -631,27 +618,28 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Pode testar em staging o novo formato de credenciais do ANTT? Contexto: a credencial \"Login GOV.BR\" com CPF chegava na spider sem indicar que era gov.br. Por isso caía no login do portal do A",
       "link": "https://redmine.platform.brobot.com.br/issues/86913"
-    },
-    {
-      "id": 84712,
-      "task": "Divergência de resultados entre Histórico de Consultas e Maestro >> Consultas - SANCETUR - SNE - ID: 2018",
-      "descricao": "Foi identificada uma divergência na listagem de rodadas ao consultar os mesmos parâmetros por dois caminhos...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-16T11:45:26Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/84712"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-16T14:28:17.270Z",
+  "gerado_em": "2026-10-16T14:57:36.877Z",
   "sprint_id": 72,
-  "total": 46,
+  "total": 47,
   "rows": [
+    {
+      "id": 82332,
+      "task": "Veículos | Cadastro automático de empresa por CNPJ no upload em lote",
+      "descricao": "Hoje, para subir a planilha de veículos, é preciso cadastrar antes, uma por uma na tela de Empresas, todas...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-16T14:40:08Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe, Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New Ao informar, durante o cadastro de veículos em lote, o CNPJ de uma empresa que já está cadastrada na conta, essa empres",
+      "link": "https://redmine.platform.brobot.com.br/issues/82332"
+    },
     {
       "id": 88070,
       "task": "autos_detran_mg - remover selenium e recursos",
