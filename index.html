@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-19T17:56:54.006Z",
-  "total": 13,
+  "gerado_em": "2026-10-19T18:26:58.631Z",
+  "total": 12,
   "rows": [
     {
       "id": 57089,
@@ -607,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86470"
     },
     {
-      "id": 88204,
-      "task": "autos_prefeitura_campinas_sp - Melhorar tempo de execução",
-      "descricao": "",
-      "category": "Spider - Outros",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-19T14:38:05Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "As consultas da Prefeitura de Campinas estavam levando em média ~10 minutos para terminar. Fiz algumas mudanças na spider: 1. Captcha: troquei o 2Captcha pelo NoneCap Boa parte da demora vinha do hCap",
-      "link": "https://redmine.platform.brobot.com.br/issues/88204"
-    },
-    {
       "id": 82332,
       "task": "Veículos | Cadastro automático de empresa por CNPJ no upload em lote",
       "descricao": "Hoje, para subir a planilha de veículos, é preciso cadastrar antes, uma por uma na tela de Empresas, todas...",
@@ -639,7 +626,7 @@
       "category": "Credencial - Sessão ou token expirado",
       "priority": "high",
       "status": "to do",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-19T16:46:42Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Alterações realizadas! @rodrigo, pode testar, por favor?",
@@ -648,10 +635,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-19T17:58:06.639Z",
+  "gerado_em": "2026-10-19T18:28:13.629Z",
   "sprint_id": 73,
-  "total": 45,
+  "total": 43,
   "rows": [
+    {
+      "id": 88204,
+      "task": "autos_prefeitura_campinas_sp - Melhorar tempo de execução",
+      "descricao": "",
+      "category": "Spider - Outros",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-19T18:16:44Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88204"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
@@ -723,34 +724,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/53155"
     },
     {
-      "id": 84712,
-      "task": "Divergência de resultados entre Histórico de Consultas e Maestro >> Consultas - SANCETUR - SNE - ID: 2018",
-      "descricao": "Foi identificada uma divergência na listagem de rodadas ao consultar os mesmos parâmetros por dois caminhos...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-16T17:32:40Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/84712"
-    },
-    {
-      "id": 81046,
-      "task": "Erro: \"Validation failed: Value has invalid format (must be...)\"",
-      "descricao": "",
-      "category": "Backend - Consumo",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-16T16:29:22Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@felipe Reprovado. Processei a mesma consulta e não finaliza o processamento, nem gera erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Poderia verificar?",
-      "link": "https://redmine.platform.brobot.com.br/issues/81046"
-    },
-    {
       "id": 88059,
       "task": "Análise de melhoria e redução de custos nas spiders",
       "descricao": "Efetuar análise nas spiders e identificar e efetuar melhorias no código a fim de melhorar a velocidade e re...",
@@ -763,20 +736,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Sefaz_mt e sefaz_ms_ipva atualizados em produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/88059"
-    },
-    {
-      "id": 86199,
-      "task": "Validar disponibilidade de exportação em XLSX no relatório personalizado da Nestlé",
-      "descricao": "O relatório personalizado da Nestlé no novo Front na opção de exportação em XLSX não está disponível, sendo apresentado apenas o formato...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-16T13:16:42Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86199"
     },
     {
       "id": 86331,
@@ -1176,7 +1135,7 @@
       "descricao": "É interessante abrir a possibilidade de subida de CNPJs em lote na plataforma.",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "staging",
+      "status": "in progress",
       "tipo": "reprovado",
       "responsavel_atual": "Product owner",
       "data_comentario": "2026-07-15T16:39:24Z",
