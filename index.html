@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-19T19:26:27.757Z",
-  "total": 12,
+  "gerado_em": "2026-10-19T19:56:47.990Z",
+  "total": 13,
   "rows": [
     {
       "id": 57089,
@@ -631,11 +631,24 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "@rodrigo ajustes da reprovação de 15/07 disponíveis em staging para reteste. O que foi corrigido - Upload de matrizes dava erro nos dois fronts: o backend lia a 1ª linha inteira do modelo de matrizes ",
       "link": "https://redmine.platform.brobot.com.br/issues/69679"
+    },
+    {
+      "id": 88068,
+      "task": "Alteração do tipo de erro retornado",
+      "descricao": "Há um erro que é retornado no Embarcador que não é um erro a ser passado ao cliente e nem que precise de al...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-19T19:32:34Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Estava retornando uma mensagem de WRONG_CREDENTIALS num ponto especifico, onde o erro correto deveria ser relacionado a resolucao do captcha. Ajustado o retorno para erro de captcha e os retries. @rod",
+      "link": "https://redmine.platform.brobot.com.br/issues/88068"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-19T19:27:44.897Z",
+  "gerado_em": "2026-10-19T19:57:59.891Z",
   "sprint_id": 73,
   "total": 43,
   "rows": [
