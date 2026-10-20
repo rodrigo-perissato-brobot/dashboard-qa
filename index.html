@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-20T13:56:23.640Z",
-  "total": 13,
+  "gerado_em": "2026-10-20T14:26:11.958Z",
+  "total": 14,
   "rows": [
     {
       "id": 57089,
@@ -639,19 +639,46 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-20T13:38:41Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo atualizado em dev/staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/82371"
+    },
+    {
+      "id": 86395,
+      "task": "Permissão de Membro vir com o \"Ver empresas e filiais\" checkados",
+      "descricao": "O Grupo de Permissão \"Membro\" criado automaticamente pelo sistema deve vir com o \"Ver empresas e filiais\" c...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-20T14:14:56Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo atualizado em staging. Dashboard permitida para o user membro também.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86395"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-20T13:57:26.378Z",
+  "gerado_em": "2026-10-20T14:27:12.551Z",
   "sprint_id": 73,
-  "total": 41,
+  "total": 40,
   "rows": [
+    {
+      "id": 85286,
+      "task": "Ajustar captura de NFSe para conseguir pegar notas das filiais",
+      "descricao": "Não capturamos notas de serviço da filial, apenas da matriz cadastrada no sistema.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-20T14:11:04Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção. Não foi possível realizar os testes desta tarefa em ambiente de staging, pois a validação depende da execução da rotina de captura das notas fiscais por estabelecim",
+      "link": "https://redmine.platform.brobot.com.br/issues/85286"
+    },
     {
       "id": 81046,
       "task": "Erro: \"Validation failed: Value has invalid format (must be...)\"",
@@ -707,20 +734,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "Item 95 - Aprovado Filtro Serviço: seleção múltipla de serviços, combinação de filtros e atualização correta dos resultados. Item 101 - Aprovado Ordenação por colunas: ordenação crescente e decrescent",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 86395,
-      "task": "Permissão de Membro vir com o \"Ver empresas e filiais\" checkados",
-      "descricao": "O Grupo de Permissão \"Membro\" criado automaticamente pelo sistema deve vir com o \"Ver empresas e filiais\" c...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-19T13:16:10Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic/New A opção Ver dashboard também precisa ser habilitada por padrão em todos os produtos que a conta tem habilitada ",
-      "link": "https://redmine.platform.brobot.com.br/issues/86395"
     },
     {
       "id": 53155,
@@ -1001,20 +1014,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
       "link": "https://redmine.platform.brobot.com.br/issues/83270"
-    },
-    {
-      "id": 85286,
-      "task": "Ajustar captura de NFSe para conseguir pegar notas das filiais",
-      "descricao": "Não capturamos notas de serviço da filial, apenas da matriz cadastrada no sistema.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-25T17:15:26Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo Agora a captura passa a funcionar assim: a rotina diária monta uma consulta por estabelecimento, uma para a matriz e uma para cada filial cadastrada com o mesmo começo de CNPJ, e cad",
-      "link": "https://redmine.platform.brobot.com.br/issues/85286"
     },
     {
       "id": 75193,
