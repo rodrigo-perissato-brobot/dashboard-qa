@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-21T19:26:09.568Z",
-  "total": 9,
+  "gerado_em": "2026-10-21T19:56:14.094Z",
+  "total": 7,
   "rows": [
     {
       "id": 57089,
@@ -542,32 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86761"
     },
     {
-      "id": 86913,
-      "task": "Credencial gov.br do Embarcador",
-      "descricao": "Foi realizado a implementação de um novo tipo de credencial para o Embarcador, essa credencial está sendo c...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-14T20:16:44Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo Pode testar em staging o novo formato de credenciais do ANTT? Contexto: a credencial \"Login GOV.BR\" com CPF chegava na spider sem indicar que era gov.br. Por isso caía no login do portal do A",
-      "link": "https://redmine.platform.brobot.com.br/issues/86913"
-    },
-    {
-      "id": 86470,
-      "task": "autos_detran_es - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-16T15:29:43Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Boleto e valores estao sendo entregues conforme esta disponibilizado no portal @gustavo, o que provavelmente sera necessario é ajuste no consumo dos campos. Sobre a multa citada e em relação a faltar ",
-      "link": "https://redmine.platform.brobot.com.br/issues/86470"
-    },
-    {
       "id": 51016,
       "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
       "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
@@ -587,7 +561,7 @@
       "category": "Spider - Outros",
       "priority": "low",
       "status": "planning: to check",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-21T15:13:46Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Cenários implementados conforme solicitado. @rodrigo, poderia testar, por gentileza?",
@@ -596,10 +570,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-21T19:27:05.140Z",
+  "gerado_em": "2026-10-21T19:57:11.891Z",
   "sprint_id": 73,
-  "total": 39,
+  "total": 41,
   "rows": [
+    {
+      "id": 86913,
+      "task": "Credencial gov.br do Embarcador",
+      "descricao": "Foi realizado a implementação de um novo tipo de credencial para o Embarcador, essa credencial está sendo c...",
+      "category": "Backend - Consumo",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-21T19:50:51Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@felipe Reprovado. Processei as consultas do mesmo CNPJ 08823426000157 conforme abaixo e está utilizando o certificado ao invés do login gov.br. Ambiente: Staging | Conta: Testes Funcionais | Versão: ",
+      "link": "https://redmine.platform.brobot.com.br/issues/86913"
+    },
+    {
+      "id": 86470,
+      "task": "autos_detran_es - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_detran_es (principal: PAGE_MALFUNCTION, 100%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-21T19:32:21Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe , precisamos ajustar o consumo dos campos na spider do DETRAN-ES. Conforme validado, o boleto está sendo retornado corretamente na captura, como é possível verificar na requisição 314894 do st",
+      "link": "https://redmine.platform.brobot.com.br/issues/86470"
+    },
     {
       "id": 88068,
       "task": "Alteração do tipo de erro retornado",
