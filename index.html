@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-21T14:56:11.970Z",
+  "gerado_em": "2026-10-21T15:26:17.937Z",
   "total": 11,
   "rows": [
     {
@@ -548,7 +548,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-14T20:16:44Z",
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Pode testar em staging o novo formato de credenciais do ANTT? Contexto: a credencial \"Login GOV.BR\" com CPF chegava na spider sem indicar que era gov.br. Por isso caía no login do portal do A",
@@ -600,12 +600,32 @@
       "category": "Spider - Erro na lógica de extração",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-20T20:12:23Z",
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Ajustado o DOWNLOAD_DELAY para 3s e as CONCURRENT_REQUEST_PER_IP/PER_DOMAIN foram ajustada para apenas 1. Após isso realizei alguns testes, numa consulta onde ocorria o bloqueio e retornava 429 e agor",
       "link": "https://redmine.platform.brobot.com.br/issues/88337"
     },
+    {
+      "id": 88503,
+      "task": "autos_sne_denatran - UNDEFINED_ERROR",
+      "descricao": "Spider autos_sne_denatran (principal: UNDEFINED_ERROR, 100%)",
+      "category": "Spider - Outros",
+      "priority": "low",
+      "status": "planning: to check",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-21T15:13:46Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Cenários implementados conforme solicitado. @rodrigo, poderia testar, por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/88503"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-10-21T15:27:15.509Z",
+  "sprint_id": 73,
+  "total": 39,
+  "rows": [
     {
       "id": 88059,
       "task": "Análise de melhoria e redução de custos nas spiders",
@@ -613,19 +633,13 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "low",
       "status": "awaiting deploy",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-21T14:18:22Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo, também removi o Selenium e os recursos adicionais da spider autos_sefaz_pr. Com essas mudanças, ela ficou mais rápida, apresentou menos erros e passou a consumir menos recursos. Poderia test",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-21T15:06:01Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/88059"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-21T14:57:19.495Z",
-  "sprint_id": 73,
-  "total": 38,
-  "rows": [
+    },
     {
       "id": 85563,
       "task": "Exibir status da Spider na tela de Scraping Services ",
