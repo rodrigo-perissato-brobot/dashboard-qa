@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-21T11:56:09.143Z",
-  "total": 14,
+  "gerado_em": "2026-10-21T12:26:08.076Z",
+  "total": 12,
   "rows": [
     {
       "id": 57089,
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86761"
     },
     {
-      "id": 87055,
-      "task": "autos_sne_denatran - Novo cenário SNE",
-      "descricao": "Ao solicitar um boleto no Senatran, o órgão autuador (DNIT), não entrega um boleto atualizado.",
-      "category": "",
-      "priority": "immediate",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-13T18:41:21Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "So fazer uma pequena correcao do que eu havia comentado, o cenario continua valido, so que nao retornar o erro, retornar file_unavailable como deveria e foi solicitado. A afirmação acima foi equivocad",
-      "link": "https://redmine.platform.brobot.com.br/issues/87055"
-    },
-    {
       "id": 86913,
       "task": "Credencial gov.br do Embarcador",
       "descricao": "Foi realizado a implementação de um novo tipo de credencial para o Embarcador, essa credencial está sendo c...",
@@ -620,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85286"
     },
     {
-      "id": 88433,
-      "task": "autos_detran_mg - utilizar proxy DataImpulse",
-      "descricao": "Favor migrar a utilização da spider do serviço BrightData para o DataImpulse a fim de economizar consumo.",
-      "category": "Spider - Outros",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-20T18:29:41Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Alteração realizada, @rodrigo poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/88433"
-    },
-    {
       "id": 85563,
       "task": "Exibir status da Spider na tela de Scraping Services ",
       "descricao": "Deixar explícita, na listagem de Administração → Maestro → Scraping Services, a situação de cada spider: no...",
@@ -661,10 +635,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-21T11:57:33.422Z",
+  "gerado_em": "2026-10-21T12:27:06.008Z",
   "sprint_id": 73,
-  "total": 39,
+  "total": 41,
   "rows": [
+    {
+      "id": 87055,
+      "task": "autos_sne_denatran - Novo cenário SNE",
+      "descricao": "Ao solicitar um boleto no Senatran, o órgão autuador (DNIT), não entrega um boleto atualizado.",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "immediate",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-21T12:16:46Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Teste em andamento. Efetuei o processamento na mesma placa em Staging. Já executou e capturou as multas. Agora preciso aguardar até sexta-feira e reprocessar, para que tenhamos a resposta do ó",
+      "link": "https://redmine.platform.brobot.com.br/issues/87055"
+    },
+    {
+      "id": 88433,
+      "task": "autos_detran_mg - utilizar proxy DataImpulse",
+      "descricao": "Favor migrar a utilização da spider do serviço BrightData para o DataImpulse a fim de economizar consumo.",
+      "category": "Spider - Outros",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-21T11:57:48Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88433"
+    },
     {
       "id": 86395,
       "task": "Permissão de Membro vir com o \"Ver empresas e filiais\" checkados",
