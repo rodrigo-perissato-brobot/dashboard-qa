@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-21T15:26:17.937Z",
-  "total": 11,
+  "gerado_em": "2026-10-21T16:25:56.733Z",
+  "total": 9,
   "rows": [
     {
       "id": 57089,
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86470"
     },
     {
-      "id": 88068,
-      "task": "Alteração do tipo de erro retornado",
-      "descricao": "Há um erro que é retornado no Embarcador que não é um erro a ser passado ao cliente e nem que precise de al...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-19T19:32:34Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Estava retornando uma mensagem de WRONG_CREDENTIALS num ponto especifico, onde o erro correto deveria ser relacionado a resolucao do captcha. Ajustado o retorno para erro de captcha e os retries. @rod",
-      "link": "https://redmine.platform.brobot.com.br/issues/88068"
-    },
-    {
       "id": 51016,
       "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
       "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
@@ -592,19 +579,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
-    },
-    {
-      "id": 88337,
-      "task": "autos_detran_rs - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_rs",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-20T20:12:23Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ajustado o DOWNLOAD_DELAY para 3s e as CONCURRENT_REQUEST_PER_IP/PER_DOMAIN foram ajustada para apenas 1. Após isso realizei alguns testes, numa consulta onde ocorria o bloqueio e retornava 429 e agor",
-      "link": "https://redmine.platform.brobot.com.br/issues/88337"
     },
     {
       "id": 88503,
@@ -622,23 +596,37 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-21T15:27:15.509Z",
+  "gerado_em": "2026-10-21T16:26:47.535Z",
   "sprint_id": 73,
-  "total": 39,
+  "total": 40,
   "rows": [
     {
-      "id": 88059,
-      "task": "Análise de melhoria e redução de custos nas spiders",
-      "descricao": "Efetuar análise nas spiders e identificar e efetuar melhorias no código a fim de melhorar a velocidade e re...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "low",
+      "id": 88337,
+      "task": "autos_detran_rs - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_rs",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-21T16:18:37Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88337"
+    },
+    {
+      "id": 88068,
+      "task": "Alteração do tipo de erro retornado",
+      "descricao": "Há um erro que é retornado no Embarcador que não é um erro a ser passado ao cliente e nem que precise de al...",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
       "status": "awaiting deploy",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-21T15:06:01Z",
+      "data_comentario": "2026-10-21T16:14:24Z",
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/88059"
+      "link": "https://redmine.platform.brobot.com.br/issues/88068"
     },
     {
       "id": 85563,
