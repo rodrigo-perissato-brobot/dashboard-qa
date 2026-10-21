@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-20T19:56:10.319Z",
+  "gerado_em": "2026-10-21T11:27:40.309Z",
   "total": 14,
   "rows": [
     {
@@ -607,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
-      "id": 86395,
-      "task": "Permissão de Membro vir com o \"Ver empresas e filiais\" checkados",
-      "descricao": "O Grupo de Permissão \"Membro\" criado automaticamente pelo sistema deve vir com o \"Ver empresas e filiais\" c...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-20T14:14:56Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo atualizado em staging. Dashboard permitida para o user membro também.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86395"
-    },
-    {
       "id": 85286,
       "task": "Ajustar captura de NFSe para conseguir pegar notas das filiais",
       "descricao": "Não capturamos notas de serviço da filial, apenas da matriz cadastrada no sistema.",
@@ -657,14 +644,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/85563"
+    },
+    {
+      "id": 88337,
+      "task": "autos_detran_rs - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_rs",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-20T20:12:23Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Ajustado o DOWNLOAD_DELAY para 3s e as CONCURRENT_REQUEST_PER_IP/PER_DOMAIN foram ajustada para apenas 1. Após isso realizei alguns testes, numa consulta onde ocorria o bloqueio e retornava 429 e agor",
+      "link": "https://redmine.platform.brobot.com.br/issues/88337"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-20T19:57:11.534Z",
+  "gerado_em": "2026-10-21T11:29:10.169Z",
   "sprint_id": 73,
-  "total": 39,
+  "total": 37,
   "rows": [
+    {
+      "id": 86395,
+      "task": "Permissão de Membro vir com o \"Ver empresas e filiais\" checkados",
+      "descricao": "O Grupo de Permissão \"Membro\" criado automaticamente pelo sistema deve vir com o \"Ver empresas e filiais\" c...",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-21T11:11:54Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86395"
+    },
     {
       "id": 82371,
       "task": "Paridade Platform Classic → React: colunas, filtros e ações faltantes em CM-Frotas, CM-Embarcador e Definições",
@@ -748,20 +762,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@renata @roberta Informo que foi realizada a criação do projeto para desenvolvimento, os desenvolvedores seguirão com análise de estimativa da atividade e posteriormente seguiremos com planejamento da",
       "link": "https://redmine.platform.brobot.com.br/issues/53155"
-    },
-    {
-      "id": 88059,
-      "task": "Análise de melhoria e redução de custos nas spiders",
-      "descricao": "Efetuar análise nas spiders e identificar e efetuar melhorias no código a fim de melhorar a velocidade e re...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-16T15:51:24Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Sefaz_mt e sefaz_ms_ipva atualizados em produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/88059"
     },
     {
       "id": 86331,
@@ -860,34 +860,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Conforme alinhado na planning realizada em 08/10/2026 com os participantes @Gabriella Mendes @Felipe Silva @Joathan Fontan @Miguel Silva @Delvin Williams Perez @Gustavo Vitor foi alinhado que seguirem",
       "link": "https://redmine.platform.brobot.com.br/issues/43063"
-    },
-    {
-      "id": 79881,
-      "task": "Permitir cadastro automático de CNPJ durante upload de placas via CSV",
-      "descricao": "Atualmente, a plataforma permite o upload de placas em lote por meio de arquivo CSV, sendo o campo CNPJ obrigatório.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-09T19:03:08Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 01/10/2026 com os participantes @Rodrigo Perissato @Gabriella Mendes @Felipe Silva @Joathan Fontan @Miguel Silva @Thiago Xavier @Delvin Williams Perez @Gusta",
-      "link": "https://redmine.platform.brobot.com.br/issues/79881"
-    },
-    {
-      "id": 87066,
-      "task": "Cronotacógrafo | Certificado em PDF e emissão de GRU em lote",
-      "descricao": "Hoje o CaçaMultas Cronotacógrafo só avisa: a consulta traz a situação do certificado de cada veículo (ativo...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "to do",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-08T18:45:44Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 08/10/2026 com os participantes @gabriella @felipe @joathan @miguel @delvin @gustavo foi alinhado que seguiremos com implementação na sprint 42 com a pontuaç",
-      "link": "https://redmine.platform.brobot.com.br/issues/87066"
     },
     {
       "id": 74637,
