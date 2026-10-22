@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-22T14:26:12.255Z",
-  "total": 8,
+  "gerado_em": "2026-10-22T14:38:19.123Z",
+  "total": 10,
   "rows": [
     {
       "id": 57089,
@@ -555,6 +555,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
+      "id": 87055,
+      "task": "autos_sne_denatran - Novo cenário SNE",
+      "descricao": "Ao solicitar um boleto no Senatran, o órgão autuador (DNIT), não entrega um boleto atualizado.",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "immediate",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-21T12:16:46Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Teste em andamento. Efetuei o processamento na mesma placa em Staging. Já executou e capturou as multas. Agora preciso aguardar até sexta-feira e reprocessar, para que tenhamos a resposta do ó",
+      "link": "https://redmine.platform.brobot.com.br/issues/87055"
+    },
+    {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
       "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
@@ -579,14 +592,41 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gustavo frontends atualizado em staging/dev.",
       "link": "https://redmine.platform.brobot.com.br/issues/82757"
+    },
+    {
+      "id": 88521,
+      "task": "Módulo de Monitoramento e Identificação de Placas com Erros Recorrentes no Admin Maestro ",
+      "descricao": "Dar ao Suporte e a Operações uma visão pronta das placas que foram consultadas com erro rodada após rodada...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-22T13:33:21Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf Segue ajuste Ambiente: Staging | Versão: New Descrição do problema: Ao extrair o relatório de Placas Recorrentes, na aba Registros, quando um grupo que possui um chamado previamente registrado é",
+      "link": "https://redmine.platform.brobot.com.br/issues/88521"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-22T14:27:41.712Z",
+  "gerado_em": "2026-10-22T14:39:34.731Z",
   "sprint_id": 73,
-  "total": 36,
+  "total": 34,
   "rows": [
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-22T14:37:47Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "- Item 96 - Aprovado validado que o card e as funcionalidades do produto exibem NFS-e corretamente, em vez de NFC-e. - Item 97 - Aprovado validado o fluxo de interesse, a mensagem de confirmação, o st",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
     {
       "id": 86470,
       "task": "autos_detran_es - PAGE_MALFUNCTION",
@@ -600,48 +640,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan @thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/86470"
-    },
-    {
-      "id": 88521,
-      "task": "Módulo de Monitoramento e Identificação de Placas com Erros Recorrentes no Admin Maestro ",
-      "descricao": "Dar ao Suporte e a Operações uma visão pronta das placas que foram consultadas com erro rodada após rodada...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-22T13:33:21Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Segue ajuste Ambiente: Staging | Versão: New Descrição do problema: Ao extrair o relatório de Placas Recorrentes, na aba Registros, quando um grupo que possui um chamado previamente registrado é",
-      "link": "https://redmine.platform.brobot.com.br/issues/88521"
-    },
-    {
-      "id": 81558,
-      "task": "DFe | Personalização da coluna Participantes na listagem (ordem e quantidade)",
-      "descricao": "Hoje a coluna \"Participantes\" da listagem de DFe exibe sempre os mesmos dois primeiros participantes, numa...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-21T17:58:29Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/81558"
-    },
-    {
-      "id": 87055,
-      "task": "autos_sne_denatran - Novo cenário SNE",
-      "descricao": "Ao solicitar um boleto no Senatran, o órgão autuador (DNIT), não entrega um boleto atualizado.",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "immediate",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-21T12:16:46Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Teste em andamento. Efetuei o processamento na mesma placa em Staging. Já executou e capturou as multas. Agora preciso aguardar até sexta-feira e reprocessar, para que tenhamos a resposta do ó",
-      "link": "https://redmine.platform.brobot.com.br/issues/87055"
     },
     {
       "id": 69679,
