@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-22T12:26:13.513Z",
-  "total": 7,
+  "gerado_em": "2026-10-22T12:56:10.636Z",
+  "total": 9,
   "rows": [
     {
       "id": 57089,
@@ -488,6 +488,19 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
       "link": "https://redmine.platform.brobot.com.br/issues/57089"
+    },
+    {
+      "id": 73585,
+      "task": "Configurar domínio consultas-api.com.br para a API White Label",
+      "descricao": "Realizar a configuração do domínio consultas-api.com.br para que ele seja utilizado como endereço oficial da API White Label da plataforma.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-07-23T19:14:43Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
+      "link": "https://redmine.platform.brobot.com.br/issues/73585"
     },
     {
       "id": 83547,
@@ -522,7 +535,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-07T18:51:40Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Implementado o retorno USER_ACTION_REQUIRED conforme solicitado. @gustavo, poderia testar a spider, por gentileza?",
@@ -542,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
-      "id": 88503,
-      "task": "autos_sne_denatran - UNDEFINED_ERROR",
-      "descricao": "Spider autos_sne_denatran (principal: UNDEFINED_ERROR, 100%)",
-      "category": "Spider - Outros",
-      "priority": "immediate",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-21T15:13:46Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Cenários implementados conforme solicitado. @rodrigo, poderia testar, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/88503"
-    },
-    {
       "id": 88521,
       "task": "Módulo de Monitoramento e Identificação de Placas com Erros Recorrentes no Admin Maestro ",
       "descricao": "Dar ao Suporte e a Operações uma visão pronta das placas que foram consultadas com erro rodada após rodada...",
@@ -566,14 +566,54 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "@rodrigo a 88521 está em staging, pronta para teste. Onde testar - Front: → aba Placas recorrentes - Backend: maestro e platform em staging (branch feat/88521/placas-recorrentes nos 3 repos) O que mud",
       "link": "https://redmine.platform.brobot.com.br/issues/88521"
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-22T12:27:04Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo bom dia, Os itens 96, 97 e 98 foram atualizados e estão em staging para novo teste. A regra de negócio do Marketplace mudou no backend, e o front foi ajustado para seguir a regra nova, igual ",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 82757,
+      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
+      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-22T12:31:53Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo frontends atualizado em staging/dev.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82757"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-22T12:27:32.298Z",
+  "gerado_em": "2026-10-22T12:57:15.395Z",
   "sprint_id": 73,
-  "total": 41,
+  "total": 40,
   "rows": [
+    {
+      "id": 88503,
+      "task": "autos_sne_denatran - UNDEFINED_ERROR",
+      "descricao": "Spider autos_sne_denatran (principal: UNDEFINED_ERROR, 100%)",
+      "category": "Spider - Outros",
+      "priority": "immediate",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-22T12:49:51Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88503"
+    },
     {
       "id": 86913,
       "task": "Credencial gov.br do Embarcador",
@@ -583,9 +623,9 @@
       "status": "awaiting deploy",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-22T12:14:30Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan @thiago favor subir para produção.",
+      "data_comentario": "2026-10-22T12:45:20Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@thiago PR: Como esta ativitade tem backend, seria bom sincronizar ambos deploys pra não ter uma janela de configurações conflitantes",
       "link": "https://redmine.platform.brobot.com.br/issues/86913"
     },
     {
@@ -701,20 +741,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
     },
     {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-19T17:44:45Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "Item 95 - Aprovado Filtro Serviço: seleção múltipla de serviços, combinação de filtros e atualização correta dos resultados. Item 101 - Aprovado Ordenação por colunas: ordenação crescente e decrescent",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
       "id": 53155,
       "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
       "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
@@ -755,20 +781,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan Aprovado Ambiente: Produção | Conta: TRANSMARONI - SNE | Versão: New Realizei um novo teste com o mesmo filtro utilizado na resposta anterior e, dessa vez, foi disponibilizado para download e",
       "link": "https://redmine.platform.brobot.com.br/issues/86411"
-    },
-    {
-      "id": 82757,
-      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
-      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-15T13:29:15Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan Seguem ajustes Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic/New Foram realizados testes funcionais em ambiente de Staging para validar as alterações relacionadas ao fluxo de",
-      "link": "https://redmine.platform.brobot.com.br/issues/82757"
     },
     {
       "id": 86751,
