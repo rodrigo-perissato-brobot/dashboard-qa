@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-27T16:26:01.710Z",
-  "total": 9,
+  "gerado_em": "2026-10-27T16:56:01.105Z",
+  "total": 8,
   "rows": [
     {
       "id": 57089,
@@ -542,26 +542,13 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
-      "id": 86375,
-      "task": "[Spiders v3] Melhorias no runner e padronização das validações (incluindo dados do Maestro)",
-      "descricao": "Implementar melhorias estruturais no projeto de spiders v3: - Runner (loop do processo principal): refatora...",
-      "category": "",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-26T18:21:49Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "Progresso da task Validação do payload padronizada: as 4 spiders v3 (DNIT, DER CND PR, Embarcador DER SP e ANTT) agora validam os dados do Maestro num parse único, com as mesmas mensagens de erro em t",
-      "link": "https://redmine.platform.brobot.com.br/issues/86375"
-    },
-    {
       "id": 88790,
       "task": "autos_detran_sp - Spider não consome credencial caso a mesma não estiver vinculada diretamente à placa",
       "descricao": "Ao cadastrar uma credencial do Detran SP para uma conta foi possível analisar que a plataforma não reconhec...",
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-27T12:14:27Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido.",
@@ -574,7 +561,7 @@
       "category": "Spider - Erro na lógica de extração",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-27T14:12:03Z",
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Ajustei o tratamento da mensagem \"Veículo não cadastrado\", que estava aparecendo com os códigos de acento (Ve&iacute;culo n&atilde;o cadastrado). Agora ela é tratada e sai com o texto correto como WRO",
@@ -596,10 +583,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-27T16:27:00.268Z",
+  "gerado_em": "2026-10-27T16:56:58.843Z",
   "sprint_id": 74,
-  "total": 38,
+  "total": 39,
   "rows": [
+    {
+      "id": 86375,
+      "task": "[Spiders v3] Melhorias no runner e padronização das validações (incluindo dados do Maestro)",
+      "descricao": "Implementar melhorias estruturais no projeto de spiders v3: - Runner (loop do processo principal): refatora...",
+      "category": "Spider - Outros",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-27T16:34:47Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86375"
+    },
     {
       "id": 51852,
       "task": "FICI Preenchida Automaticamente - Davi",
