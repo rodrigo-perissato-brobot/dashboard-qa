@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-27T18:26:48.593Z",
-  "total": 8,
+  "gerado_em": "2026-10-27T18:56:02.179Z",
+  "total": 5,
   "rows": [
     {
       "id": 57089,
@@ -535,37 +535,32 @@
       "category": "Produtos - Customização fora do padrão",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-22T19:39:35Z",
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Joathan , Segue ajuste Ambiente: Staging | Conta: [Teste] Conta demonstrativa comercial | Versão: New - Indicação de Condutores: os dados agora estão disponíveis na plataforma, permitindo acessar a l",
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-10-27T18:57:06.040Z",
+  "sprint_id": 74,
+  "total": 42,
+  "rows": [
     {
       "id": 88790,
       "task": "autos_detran_sp - Spider não consome credencial caso a mesma não estiver vinculada diretamente à placa",
       "descricao": "Ao cadastrar uma credencial do Detran SP para uma conta foi possível analisar que a plataforma não reconhec...",
-      "category": "",
+      "category": "Backend - Consumo",
       "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-27T12:14:27Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo corrigido.",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-27T18:32:23Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/88790"
-    },
-    {
-      "id": 88954,
-      "task": "autos_detran_am - Reduzir execuções excessivas por consulta (retries)",
-      "descricao": "Spider autos_detran_am (principal: UNHANDLED_SPIDER_EXCEPTION, 100%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-27T14:12:03Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Ajustei o tratamento da mensagem \"Veículo não cadastrado\", que estava aparecendo com os códigos de acento (Ve&iacute;culo n&atilde;o cadastrado). Agora ela é tratada e sai com o texto correto como WRO",
-      "link": "https://redmine.platform.brobot.com.br/issues/88954"
     },
     {
       "id": 63612,
@@ -574,19 +569,13 @@
       "category": "Frontend - Novo frontend",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-27T14:28:04Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "Tarefa 63612 — Itens 104 a 120 Branch: fix/63612/itens-104-a-120 (mergeada na dev em fe1aa89). Item 104 – Corrigido (em dev). UF e Cidade com asterisco e validação. A Cidade virou seleção filtrada pel",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-27T18:30:35Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan Itens 104 a 114 e 117 a 120 aprovados - Item 115 — Selecionar todos: reprovado. O botão fixo “Selecionar todos” continua sendo exibido e, após selecionar os registros da página, a mensagem “S",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-27T18:27:51.787Z",
-  "sprint_id": 74,
-  "total": 40,
-  "rows": [
+    },
     {
       "id": 88954,
       "task": "autos_detran_am - Reduzir execuções excessivas por consulta (retries)",
