@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-27T13:56:02.230Z",
-  "total": 8,
+  "gerado_em": "2026-10-27T14:56:08.280Z",
+  "total": 9,
   "rows": [
     {
       "id": 57089,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86375"
     },
     {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-27T12:12:20Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo @joathan os itens 94 a 103 desta branch foram para produção. Item 94 – Dropdown de colunas O dropdown de colunas não fecha mais a cada coluna marcada; fecha só ao clicar fora. Vale para Frota",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
       "id": 88790,
       "task": "autos_detran_sp - Spider não consome credencial caso a mesma não estiver vinculada diretamente à placa",
       "descricao": "Ao cadastrar uma credencial do Detran SP para uma conta foi possível analisar que a plataforma não reconhec...",
@@ -579,14 +566,54 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/88790"
+    },
+    {
+      "id": 88954,
+      "task": "autos_detran_am - Reduzir execuções excessivas por consulta (retries)",
+      "descricao": "Spider autos_detran_am (principal: UNHANDLED_SPIDER_EXCEPTION, 100%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-27T14:12:03Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Ajustei o tratamento da mensagem \"Veículo não cadastrado\", que estava aparecendo com os códigos de acento (Ve&iacute;culo n&atilde;o cadastrado). Agora ela é tratada e sai com o texto correto como WRO",
+      "link": "https://redmine.platform.brobot.com.br/issues/88954"
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-27T14:28:04Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "Tarefa 63612 — Itens 104 a 120 Branch: fix/63612/itens-104-a-120 (mergeada na dev em fe1aa89). Item 104 – Corrigido (em dev). UF e Cidade com asterisco e validação. A Cidade virou seleção filtrada pel",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-27T13:56:53.314Z",
+  "gerado_em": "2026-10-27T14:57:05.705Z",
   "sprint_id": 74,
   "total": 38,
   "rows": [
+    {
+      "id": 51852,
+      "task": "FICI Preenchida Automaticamente - Davi",
+      "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-27T14:33:14Z",
+      "comentario_autor": "Jose Ricardo",
+      "comentario_trecho": "Algum retorno ?",
+      "link": "https://redmine.platform.brobot.com.br/issues/51852"
+    },
     {
       "id": 88960,
       "task": "autos_antt - HTML_ERROR recorrente gerando retries (reincidência da #81529)",
@@ -740,20 +767,6 @@
       "comentario_autor": "Jose Ricardo",
       "comentario_trecho": "Segue arquivo ZRMC do dia 05/10/2026 attachment:ENGMIX_20-10-2026.csv",
       "link": "https://redmine.platform.brobot.com.br/issues/41092"
-    },
-    {
-      "id": 51852,
-      "task": "FICI Preenchida Automaticamente - Davi",
-      "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-19T18:48:39Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "Realizei um levantamento inicial das regras e dos procedimentos para indicação de condutor no portal da Prefeitura de São Paulo, por meio do DSV Digital. Identifiquei que o processo possui regras espe",
-      "link": "https://redmine.platform.brobot.com.br/issues/51852"
     },
     {
       "id": 86331,
