@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-28T17:56:00.017Z",
+  "gerado_em": "2026-10-28T18:26:09.287Z",
   "total": 12,
   "rows": [
     {
@@ -635,10 +635,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-28T17:56:57.020Z",
+  "gerado_em": "2026-10-28T18:27:17.978Z",
   "sprint_id": 74,
-  "total": 38,
+  "total": 35,
   "rows": [
+    {
+      "id": 89197,
+      "task": "CapSkip — Implementação do serviço e implantação nas spiders",
+      "descricao": "Implementar o serviço CapSkip na VPS da Brobot, garantindo a segurança do acesso, e implantá-lo nas spiders que hoje utilizam 2Captcha ou Ca",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-28T18:12:00Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Implementado em AUTOS_DETRAN_PA_LICENCIAMENTO.",
+      "link": "https://redmine.platform.brobot.com.br/issues/89197"
+    },
     {
       "id": 88954,
       "task": "autos_detran_am - Reduzir execuções excessivas por consulta (retries)",
@@ -652,20 +666,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel Aprovado. Reprocessei as consultas da spider autos_detran_am após o ajuste que corrigiu os falsos positivos apontados pelo @thiago na PR, e agora as multas estão sendo gravadas corretamente. A",
       "link": "https://redmine.platform.brobot.com.br/issues/88954"
-    },
-    {
-      "id": 89197,
-      "task": "CapSkip — Implementação do serviço e implantação nas spiders",
-      "descricao": "Implementar o serviço CapSkip na VPS da Brobot, garantindo a segurança do acesso, e implantá-lo nas spiders que hoje utilizam 2Captcha ou Ca",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-28T15:51:09Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "implementado em AUTOS_DETRAN_ES",
-      "link": "https://redmine.platform.brobot.com.br/issues/89197"
     },
     {
       "id": 83547,
@@ -878,20 +878,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86411"
     },
     {
-      "id": 78505,
-      "task": "Conferência Caçacondutores: Indicação de conduores, CNH, Exame toxicológico",
-      "descricao": "Dar ao suporte uma tela única que mostre, em tempo real, quais automações do módulo de condutores pararam d...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-14T17:54:34Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@rolf favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/78505"
-    },
-    {
       "id": 43063,
       "task": "Novas Funcionalidades Cronotacógrafo",
       "descricao": "Realizar um estudo de novas funcionalidades para tornar o módulo de cronotacógrafo mais completo, incluindo...",
@@ -1004,20 +990,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75360"
     },
     {
-      "id": 78408,
-      "task": "autos_sne_denatran_indicacao_condutor - Encontrei um novo cenário em que é possível realizar a indicação com a infração paga",
-      "descricao": "Encontramos um novo cenário em que é possível realizar a indicação de condutor de infrações pagas.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-27T13:19:25Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "No momento, não foi possível realizar os testes, pois os cenários dependem de consultas no SNE e o portal encontra-se instável, fazendo com que as consultas retornem erro. Assim que o SNE estiver está",
-      "link": "https://redmine.platform.brobot.com.br/issues/78408"
-    },
-    {
       "id": 46135,
       "task": "CERVEJARIA IMPERIAL -  NOVOS CAMPOS BUSCAR NO ANTT PROCESSOS (LER DOCUMENTO)",
       "descricao": "Realizar a leitura do documento do vistas dos processos para buscar as informações relevantes do AUTO DE IN...",
@@ -1030,20 +1002,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@rolf, Segue análise do teste de Excesso de Peso realizado: Ambiente: Produção | Conta: Minerva Foods | Versão: New Foi realizada a exportação do relatório de Excesso de Peso pelo caminho Ver Multas →",
       "link": "https://redmine.platform.brobot.com.br/issues/46135"
-    },
-    {
-      "id": 77600,
-      "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
-      "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
-      "category": "Spider - Outros",
-      "priority": "immediate",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-11T19:49:33Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "No momento não temos um cenário definido para realizar a validação desse novo ajuste. Vou aguardar o surgimento de um novo cenário para que eu possa prosseguir com os testes.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77600"
     },
     {
       "id": 61539,
