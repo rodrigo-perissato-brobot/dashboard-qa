@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-28T11:26:05.669Z",
-  "total": 6,
+  "gerado_em": "2026-10-28T11:55:58.818Z",
+  "total": 7,
   "rows": [
     {
       "id": 57089,
@@ -553,14 +553,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo em staging. Implementado conforme a descrição, com estas definições: - Os status finais podem ir para Sem informação na edição manual. - O código 0 aparece como \"Sem status\" em todas",
       "link": "https://redmine.platform.brobot.com.br/issues/63729"
+    },
+    {
+      "id": 89197,
+      "task": "CapSkip — Implementação do serviço e implantação nas spiders",
+      "descricao": "Implementar o serviço CapSkip na VPS da Brobot, garantindo a segurança do acesso, e implantá-lo nas spiders que hoje utilizam 2Captcha ou Ca",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-28T11:49:20Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Implementado o servico nas spiders AUTOS_SEFAZ_PR que utiliza RECAPTCHA_V3 ENTERPRISE e em AUTOS_PREFEITURA_SP que usa captcha de IMAGEM. @rodrigo poderia testar por gentileza?",
+      "link": "https://redmine.platform.brobot.com.br/issues/89197"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-28T11:27:04.343Z",
+  "gerado_em": "2026-10-28T11:56:57.020Z",
   "sprint_id": 74,
   "total": 41,
   "rows": [
+    {
+      "id": 88954,
+      "task": "autos_detran_am - Reduzir execuções excessivas por consulta (retries)",
+      "descricao": "Spider autos_detran_am (principal: UNHANDLED_SPIDER_EXCEPTION, 100%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-28T11:29:17Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Finalizada a tarefa 88955 e realizada PR.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88954"
+    },
     {
       "id": 88960,
       "task": "autos_antt - HTML_ERROR recorrente gerando retries (reincidência da #81529)",
@@ -602,20 +629,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan Itens 104 a 114 e 117 a 120 aprovados - Item 115 — Selecionar todos: reprovado. O botão fixo “Selecionar todos” continua sendo exibido e, após selecionar os registros da página, a mensagem “S",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 88954,
-      "task": "autos_detran_am - Reduzir execuções excessivas por consulta (retries)",
-      "descricao": "Spider autos_detran_am (principal: UNHANDLED_SPIDER_EXCEPTION, 100%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-27T18:25:33Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/88954"
     },
     {
       "id": 86375,
