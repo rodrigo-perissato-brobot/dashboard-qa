@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-28T16:25:56.050Z",
-  "total": 11,
+  "gerado_em": "2026-10-28T16:56:05.374Z",
+  "total": 10,
   "rows": [
     {
       "id": 57089,
@@ -529,19 +529,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
-      "id": 63729,
-      "task": "Implementação de Novos Status de Multas com Categorização Automática | CM - Embarcador",
-      "descricao": "Classificar as multas do CaçaMultas Embarcador em quatro status novos, Autuação, Em recurso, Inscrito na Se...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-27T19:12:44Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo em staging. Implementado conforme a descrição, com estas definições: - Os status finais podem ir para Sem informação na edição manual. - O código 0 aparece como \"Sem status\" em todas",
-      "link": "https://redmine.platform.brobot.com.br/issues/63729"
-    },
-    {
       "id": 89179,
       "task": "Volumetria | Credenciais: kanban de follow up de certificados e credenciais colaborativas",
       "descricao": "Hoje a aba Admin → Volumetria → Credenciais mostra só os certificados digitais em um quadro de sete colunas...",
@@ -555,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/89179"
     },
     {
-      "id": 88954,
-      "task": "autos_detran_am - Reduzir execuções excessivas por consulta (retries)",
-      "descricao": "Spider autos_detran_am (principal: UNHANDLED_SPIDER_EXCEPTION, 100%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-28T12:35:12Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "@rodrigo durante a PR o @thiago adicionou algumas observações que analisando de fato causaram falso positivos nos testes, trazendo debitos em vazio quando deveria trazer o WRONG_CREDENTIALS mencionado",
-      "link": "https://redmine.platform.brobot.com.br/issues/88954"
-    },
-    {
       "id": 88799,
       "task": "CaçaMultas Frotas | Filtro por locatário (nome ou CNPJ) com controle por Feature Flag - TRANSMARONI",
       "descricao": "Permitir filtrar as multas do CaçaMultas Frotas pelo locatário do veículo, a partir do CNPJ e do nome que o...",
@@ -579,19 +553,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/88799"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-28T14:35:05Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo Itens 115 e 116 atualizados em staging/dev.",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 89169,
@@ -618,14 +579,54 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo em staging. A autos_sefaz_sp deixou de ser padrão para os veículos de SP no Frotas. Ela só entra automaticamente em conta com credencial gov.br própria.",
       "link": "https://redmine.platform.brobot.com.br/issues/88969"
+    },
+    {
+      "id": 86751,
+      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-28T16:26:12Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@rodrigo poderia testar novamente? alterei a spider para resolver o captcha com o novo serviço(CAPSKIP)",
+      "link": "https://redmine.platform.brobot.com.br/issues/86751"
+    },
+    {
+      "id": 86462,
+      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-28T16:27:26Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@Rodrigo Perissato poderia testar novamente? alterei a spider para resolver o captcha com o novo serviço(CAPSKIP)",
+      "link": "https://redmine.platform.brobot.com.br/issues/86462"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-28T16:26:58.526Z",
+  "gerado_em": "2026-10-28T16:56:59.807Z",
   "sprint_id": 74,
   "total": 38,
   "rows": [
+    {
+      "id": 88954,
+      "task": "autos_detran_am - Reduzir execuções excessivas por consulta (retries)",
+      "descricao": "Spider autos_detran_am (principal: UNHANDLED_SPIDER_EXCEPTION, 100%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-28T16:48:43Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Aprovado. Reprocessei as consultas da spider autos_detran_am após o ajuste que corrigiu os falsos positivos apontados pelo @thiago na PR, e agora as multas estão sendo gravadas corretamente. A",
+      "link": "https://redmine.platform.brobot.com.br/issues/88954"
+    },
     {
       "id": 89197,
       "task": "CapSkip — Implementação do serviço e implantação nas spiders",
@@ -891,20 +892,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Conforme alinhado na planning realizada em 08/10/2026 com os participantes @gabriella @felipe @joathan @miguel @delvin @gustavo foi alinhado que seguiremos com implementação na sprint 42 com a pontuaç",
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
-    },
-    {
-      "id": 86462,
-      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-06T18:03:29Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Testei um novo serviço de captcha, o EZ-Captcha, e a taxa de sucesso melhorou bastante: cerca de 55% a 60% dos tokens foram aceitos pelo portal, contra cerca de 10% no 2Captcha. Nos testes, quase toda",
-      "link": "https://redmine.platform.brobot.com.br/issues/86462"
     },
     {
       "id": 85035,
