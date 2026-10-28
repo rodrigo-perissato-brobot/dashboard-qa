@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-28T12:26:02.017Z",
-  "total": 7,
+  "gerado_em": "2026-10-28T12:56:00.203Z",
+  "total": 9,
   "rows": [
     {
       "id": 57089,
@@ -561,19 +561,25 @@
       "category": "",
       "priority": "high",
       "status": "awaiting deploy",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-28T11:49:20Z",
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Implementado o servico nas spiders AUTOS_SEFAZ_PR que utiliza RECAPTCHA_V3 ENTERPRISE e em AUTOS_PREFEITURA_SP que usa captcha de IMAGEM. @rodrigo poderia testar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/89197"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-28T12:27:01.545Z",
-  "sprint_id": 74,
-  "total": 41,
-  "rows": [
+    },
+    {
+      "id": 89179,
+      "task": "Volumetria | Credenciais: kanban de follow up de certificados e credenciais colaborativas",
+      "descricao": "Hoje a aba Admin → Volumetria → Credenciais mostra só os certificados digitais em um quadro de sete colunas...",
+      "category": "",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-28T12:32:07Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Em staging para teste — @gustavo @rodrigo Tela: Admin → Volumetria → Credenciais (front novo, ambiente dev: dev.plataformabrobot.com.br, apontando para a API de staging). O que foi entregue - Kanban c",
+      "link": "https://redmine.platform.brobot.com.br/issues/89179"
+    },
     {
       "id": 88954,
       "task": "autos_detran_am - Reduzir execuções excessivas por consulta (retries)",
@@ -581,12 +587,32 @@
       "category": "Spider - Erro na lógica de extração",
       "priority": "high",
       "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-28T11:29:17Z",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-28T12:35:12Z",
       "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Finalizada a tarefa 88955 e realizada PR.",
+      "comentario_trecho": "@rodrigo durante a PR o @thiago adicionou algumas observações que analisando de fato causaram falso positivos nos testes, trazendo debitos em vazio quando deveria trazer o WRONG_CREDENTIALS mencionado",
       "link": "https://redmine.platform.brobot.com.br/issues/88954"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-10-28T12:56:58.587Z",
+  "sprint_id": 74,
+  "total": 40,
+  "rows": [
+    {
+      "id": 86375,
+      "task": "[Spiders v3] Melhorias no runner e padronização das validações (incluindo dados do Maestro)",
+      "descricao": "Implementar melhorias estruturais no projeto de spiders v3: - Runner (loop do processo principal): refatora...",
+      "category": "Spider - Outros",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-28T12:33:25Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@thiago PR:",
+      "link": "https://redmine.platform.brobot.com.br/issues/86375"
     },
     {
       "id": 88960,
@@ -629,20 +655,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan Itens 104 a 114 e 117 a 120 aprovados - Item 115 — Selecionar todos: reprovado. O botão fixo “Selecionar todos” continua sendo exibido e, após selecionar os registros da página, a mensagem “S",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
-      "id": 86375,
-      "task": "[Spiders v3] Melhorias no runner e padronização das validações (incluindo dados do Maestro)",
-      "descricao": "Implementar melhorias estruturais no projeto de spiders v3: - Runner (loop do processo principal): refatora...",
-      "category": "Spider - Outros",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-27T16:34:47Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86375"
     },
     {
       "id": 51852,
