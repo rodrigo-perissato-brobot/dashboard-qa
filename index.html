@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-28T12:56:00.203Z",
-  "total": 9,
+  "gerado_em": "2026-10-28T13:25:54.013Z",
+  "total": 8,
   "rows": [
     {
       "id": 57089,
@@ -501,19 +501,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
       "link": "https://redmine.platform.brobot.com.br/issues/73585"
-    },
-    {
-      "id": 83547,
-      "task": "maestro: URL do brobot-condutores por ambiente (staging → hml, produção inalterada)",
-      "descricao": "k8s/maestro/templates/configmap.yaml tem a URL do brobot-condutores fixa no domínio de staging, para todos os ambientes.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-09-15T13:09:09Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Em staging k8s/maestro/templates/configmap.yaml agora é condicional por appEnv: produção mantém a URL e a chave de hoje (render do helm idêntico), staging aponta para com a chave do ambiente de homolo",
-      "link": "https://redmine.platform.brobot.com.br/issues/83547"
     },
     {
       "id": 82396,
@@ -574,7 +561,7 @@
       "category": "",
       "priority": "medium",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-28T12:32:07Z",
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Em staging para teste — @gustavo @rodrigo Tela: Admin → Volumetria → Credenciais (front novo, ambiente dev: dev.plataformabrobot.com.br, apontando para a API de staging). O que foi entregue - Kanban c",
@@ -596,10 +583,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-28T12:56:58.587Z",
+  "gerado_em": "2026-10-28T13:26:51.719Z",
   "sprint_id": 74,
   "total": 40,
   "rows": [
+    {
+      "id": 83547,
+      "task": "maestro: URL do brobot-condutores por ambiente (staging → hml, produção inalterada)",
+      "descricao": "k8s/maestro/templates/configmap.yaml tem a URL do brobot-condutores fixa no domínio de staging, para todos os ambientes.",
+      "category": "",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-28T13:16:13Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf Aprovado Ambiente: Staging - URL do ambiente de homologação configurada corretamente no staging. - Chave correspondente ao ambiente de homologação validada. - Comunicação entre o Maestro de stag",
+      "link": "https://redmine.platform.brobot.com.br/issues/83547"
+    },
     {
       "id": 86375,
       "task": "[Spiders v3] Melhorias no runner e padronização das validações (incluindo dados do Maestro)",
@@ -907,20 +908,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo por gentileza, prosseguir com QA",
       "link": "https://redmine.platform.brobot.com.br/issues/85035"
-    },
-    {
-      "id": 71405,
-      "task": "Criação de Orders no novo padrão para CNH e Toxicológico",
-      "descricao": "",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-06T12:23:16Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "06/10 — mais quatro correções encontradas ao documentar o fluxo (todas já nas PRs; staging e dev atualizados). Documento de referência de como a coleta de CNH e toxicológico funciona (fluxo, mensagens",
-      "link": "https://redmine.platform.brobot.com.br/issues/71405"
     },
     {
       "id": 39504,
