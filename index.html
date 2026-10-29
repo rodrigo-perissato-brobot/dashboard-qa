@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-29T11:56:09.202Z",
-  "total": 14,
+  "gerado_em": "2026-10-29T12:26:11.442Z",
+  "total": 12,
   "rows": [
     {
       "id": 57089,
@@ -568,32 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/89169"
     },
     {
-      "id": 86751,
-      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
-      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-28T16:26:12Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo poderia testar novamente? alterei a spider para resolver o captcha com o novo serviço(CAPSKIP)",
-      "link": "https://redmine.platform.brobot.com.br/issues/86751"
-    },
-    {
-      "id": 86462,
-      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-28T16:27:26Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@Rodrigo Perissato poderia testar novamente? alterei a spider para resolver o captcha com o novo serviço(CAPSKIP)",
-      "link": "https://redmine.platform.brobot.com.br/issues/86462"
-    },
-    {
       "id": 89175,
       "task": "autos_prefeitura_sp - PDF_FORMAT_ERROR ",
       "descricao": "Spider autos_prefeitura_sp (principal: PAGE_MALFUNCTION, 72.73%)",
@@ -661,10 +635,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-29T11:57:09.396Z",
+  "gerado_em": "2026-10-29T12:27:25.701Z",
   "sprint_id": 74,
-  "total": 38,
+  "total": 40,
   "rows": [
+    {
+      "id": 86751,
+      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-29T12:22:10Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_bradesco_detran_rj_taxas após a troca pro CAPSKIP e, assim como na 86462 (mesmo portal), todas retornaram com erro, sem nenhuma conclusão de",
+      "link": "https://redmine.platform.brobot.com.br/issues/86751"
+    },
+    {
+      "id": 86462,
+      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-29T12:18:33Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_bradesco_detran_rj_multas após a troca pro CAPSKIP e todas retornaram com erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Class",
+      "link": "https://redmine.platform.brobot.com.br/issues/86462"
+    },
     {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
