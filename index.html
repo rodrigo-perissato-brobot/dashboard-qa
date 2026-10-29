@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-29T12:56:14.009Z",
+  "gerado_em": "2026-10-29T13:56:56.486Z",
   "total": 12,
   "rows": [
     {
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/63729"
     },
     {
-      "id": 88799,
-      "task": "CaçaMultas Frotas | Filtro por locatário (nome ou CNPJ) com controle por Feature Flag - TRANSMARONI",
-      "descricao": "Permitir filtrar as multas do CaçaMultas Frotas pelo locatário do veículo, a partir do CNPJ e do nome que o...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-28T14:17:40Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/88799"
-    },
-    {
       "id": 89169,
       "task": "Admin › Sistema > Registros Impersonar — auditoria de todas as contas",
       "descricao": "Criar uma nova tela em Admin › Sistema, réplica do Histórico de Ações de Definições, que liste as ações de todas as contas e mostre quando u",
@@ -574,7 +561,7 @@
       "category": "Portal - Instabilidade ou indisponibilidade",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-10-28T18:27:44Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@jose-ricardo implementado, @rodrigo poderia testar por gentileza?",
@@ -613,7 +600,7 @@
       "category": "",
       "priority": "low",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-28T23:35:06Z",
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Corrigido e publicado em staging Causa: o filtro e a coluna \"Conta\" da Conferência buscavam os nomes em /admin/accounts com per_page=1000, ordenado do id maior para o menor. Só as 1000 contas mais nov",
@@ -626,19 +613,60 @@
       "category": "",
       "priority": "low",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-10-28T23:35:08Z",
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Corrigido e publicado em staging Causas: 1. Bot: \"Reenviar mensagem\" e \"Reabrir com template\" só funcionavam com a conversa ainda pendente. Quando a conversa expira por falta de resposta (TIMEOUT), o ",
       "link": "https://redmine.platform.brobot.com.br/issues/89232"
+    },
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-29T13:42:03Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @gabriella itens 104 a 120 atualizados em produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-29T12:57:16.954Z",
+  "gerado_em": "2026-10-29T13:58:21.695Z",
   "sprint_id": 74,
-  "total": 40,
+  "total": 41,
   "rows": [
+    {
+      "id": 88799,
+      "task": "CaçaMultas Frotas | Filtro por locatário (nome ou CNPJ) com controle por Feature Flag - TRANSMARONI",
+      "descricao": "Permitir filtrar as multas do CaçaMultas Frotas pelo locatário do veículo, a partir do CNPJ e do nome que o...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-29T13:46:11Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88799"
+    },
+    {
+      "id": 88939,
+      "task": "Erro intermitente ao acessar Definições > Veículos e Serviços no novo front",
+      "descricao": "Ao acessar Definições Veículos e Serviços no novo front, a tela apresenta uma mensagem de erro antes de carregar o conteúdo.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-29T13:33:00Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "Não foi encontrada a causa só lendo o código. O erro acontece de forma intermitente e passa ao clicar em \"Tentar novamente\". Isso indica uma falha passageira no navegador, e o backend não parece envol",
+      "link": "https://redmine.platform.brobot.com.br/issues/88939"
+    },
     {
       "id": 86751,
       "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
@@ -666,20 +694,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_bradesco_detran_rj_multas após a troca pro CAPSKIP e todas retornaram com erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Class",
       "link": "https://redmine.platform.brobot.com.br/issues/86462"
-    },
-    {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-29T11:54:03Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "Item 115 - Aprovado O botão \"Selecionar todos\" foi excluído e a função de, ao selecionar a página, aparecer a opção de \"Selecionar todos os X registros\" foi adicionada e funciona corretamente Item 116",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
       "id": 89197,
