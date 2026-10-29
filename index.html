@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-29T16:56:01.690Z",
-  "total": 11,
+  "gerado_em": "2026-10-29T17:26:22.387Z",
+  "total": 10,
   "rows": [
     {
       "id": 57089,
@@ -540,19 +540,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo em staging. Implementado conforme a descrição, com estas definições: - Os status finais podem ir para Sem informação na edição manual. - O código 0 aparece como \"Sem status\" em todas",
       "link": "https://redmine.platform.brobot.com.br/issues/63729"
-    },
-    {
-      "id": 89175,
-      "task": "autos_prefeitura_sp - PDF_FORMAT_ERROR ",
-      "descricao": "Spider autos_prefeitura_sp (principal: PAGE_MALFUNCTION, 72.73%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-28T18:27:44Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@jose-ricardo implementado, @rodrigo poderia testar por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/89175"
     },
     {
       "id": 88798,
@@ -622,10 +609,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-29T16:57:01.747Z",
+  "gerado_em": "2026-10-29T17:27:30.279Z",
   "sprint_id": 74,
   "total": 43,
   "rows": [
+    {
+      "id": 86462,
+      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-29T17:15:33Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Essa tarefa está apresentando o mesmo problema da 86751.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86462"
+    },
+    {
+      "id": 86751,
+      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-10-29T17:14:35Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@Rodrigo O portal adicionou uma nova camada de proteção anti-bot (Akamai), que estava causando os erros retornados pela spider. Fiz uma alteração para contornar essa proteção e consegui fazê-la funcio",
+      "link": "https://redmine.platform.brobot.com.br/issues/86751"
+    },
     {
       "id": 83142,
       "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
@@ -681,34 +696,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "Não foi encontrada a causa só lendo o código. O erro acontece de forma intermitente e passa ao clicar em \"Tentar novamente\". Isso indica uma falha passageira no navegador, e o backend não parece envol",
       "link": "https://redmine.platform.brobot.com.br/issues/88939"
-    },
-    {
-      "id": 86751,
-      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
-      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-29T12:22:10Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_bradesco_detran_rj_taxas após a troca pro CAPSKIP e, assim como na 86462 (mesmo portal), todas retornaram com erro, sem nenhuma conclusão de",
-      "link": "https://redmine.platform.brobot.com.br/issues/86751"
-    },
-    {
-      "id": 86462,
-      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-29T12:18:33Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_bradesco_detran_rj_multas após a troca pro CAPSKIP e todas retornaram com erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Class",
-      "link": "https://redmine.platform.brobot.com.br/issues/86462"
     },
     {
       "id": 89197,
