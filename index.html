@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-29T13:56:56.486Z",
+  "gerado_em": "2026-10-29T14:56:16.121Z",
   "total": 12,
   "rows": [
     {
@@ -540,19 +540,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo em staging. Implementado conforme a descrição, com estas definições: - Os status finais podem ir para Sem informação na edição manual. - O código 0 aparece como \"Sem status\" em todas",
       "link": "https://redmine.platform.brobot.com.br/issues/63729"
-    },
-    {
-      "id": 89169,
-      "task": "Admin › Sistema > Registros Impersonar — auditoria de todas as contas",
-      "descricao": "Criar uma nova tela em Admin › Sistema, réplica do Histórico de Ações de Definições, que liste as ações de todas as contas e mostre quando u",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-28T14:57:32Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo em staging. A tela Admin › Sistema › Histórico de Ações (Impersonação) foi feita só no front novo. Alguns pontos ficaram diferentes da descrição ou não estavam nela: - Planilha exportada: alé",
-      "link": "https://redmine.platform.brobot.com.br/issues/89169"
     },
     {
       "id": 89175,
@@ -631,14 +618,41 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gustavo @gabriella itens 104 a 120 atualizados em produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
+    {
+      "id": 89168,
+      "task": "Permitir seleção múltipla de CNPJs no filtro de veículos  - Novo front",
+      "descricao": "Ajustar o filtro de CNPJ na tela Definições Veículos Filtros, permitindo selecionar múltiplos CNPJs simulta...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-29T14:54:25Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em dev/staging. O que mudou: o filtro de CPF/CNPJ já aceitava vários valores. Agora cada CNPJ escolhido aparece como um badge separado, com seu próprio X. Antes, com 3 ou ",
+      "link": "https://redmine.platform.brobot.com.br/issues/89168"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-29T13:58:21.695Z",
+  "gerado_em": "2026-10-29T14:57:19.619Z",
   "sprint_id": 74,
-  "total": 41,
+  "total": 42,
   "rows": [
+    {
+      "id": 89169,
+      "task": "Admin › Sistema > Registros Impersonar — auditoria de todas as contas",
+      "descricao": "Criar uma nova tela em Admin › Sistema, réplica do Histórico de Ações de Definições, que liste as ações de todas as contas e mostre quando u",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-29T14:32:22Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/89169"
+    },
     {
       "id": 88799,
       "task": "CaçaMultas Frotas | Filtro por locatário (nome ou CNPJ) com controle por Feature Flag - TRANSMARONI",
