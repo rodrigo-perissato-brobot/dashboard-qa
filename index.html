@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-28T19:55:54.190Z",
-  "total": 13,
+  "gerado_em": "2026-10-29T11:56:09.202Z",
+  "total": 14,
   "rows": [
     {
       "id": 57089,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/88799"
     },
     {
-      "id": 63612,
-      "task": "Validação completa do novo frontend da Plataforma Brobot",
-      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-28T14:35:05Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo Itens 115 e 116 atualizados em staging/dev.",
-      "link": "https://redmine.platform.brobot.com.br/issues/63612"
-    },
-    {
       "id": 89169,
       "task": "Admin › Sistema > Registros Impersonar — auditoria de todas as contas",
       "descricao": "Criar uma nova tela em Admin › Sistema, réplica do Histórico de Ações de Definições, que liste as ações de todas as contas e mostre quando u",
@@ -644,14 +631,54 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging/dev.",
       "link": "https://redmine.platform.brobot.com.br/issues/88798"
+    },
+    {
+      "id": 89234,
+      "task": "BUG visual da tela de Indicação de Condutores, não aparece o nome da conta",
+      "descricao": "O filtro de contas que possuem indicações tem contas com o nome e o ID e outras apenas com o ID.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-28T23:35:06Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Corrigido e publicado em staging Causa: o filtro e a coluna \"Conta\" da Conferência buscavam os nomes em /admin/accounts com per_page=1000, ordenado do id maior para o menor. Só as 1000 contas mais nov",
+      "link": "https://redmine.platform.brobot.com.br/issues/89234"
+    },
+    {
+      "id": 89232,
+      "task": "BUG ao tentar reenviar a mensagem para o motorista na tela de Admin",
+      "descricao": "Ao tentar realizar o reenvio de uma mensagem que não chegou ao motorista, é retornado o erro: \"Reenviar men...",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-28T23:35:08Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Corrigido e publicado em staging Causas: 1. Bot: \"Reenviar mensagem\" e \"Reabrir com template\" só funcionavam com a conversa ainda pendente. Quando a conversa expira por falta de resposta (TIMEOUT), o ",
+      "link": "https://redmine.platform.brobot.com.br/issues/89232"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-28T19:56:42.310Z",
+  "gerado_em": "2026-10-29T11:57:09.396Z",
   "sprint_id": 74,
-  "total": 37,
+  "total": 38,
   "rows": [
+    {
+      "id": 63612,
+      "task": "Validação completa do novo frontend da Plataforma Brobot",
+      "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-29T11:54:03Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "Item 115 - Aprovado O botão \"Selecionar todos\" foi excluído e a função de, ao selecionar a página, aparecer a opção de \"Selecionar todos os X registros\" foi adicionada e funciona corretamente Item 116",
+      "link": "https://redmine.platform.brobot.com.br/issues/63612"
+    },
     {
       "id": 89197,
       "task": "CapSkip — Implementação do serviço e implantação nas spiders",
@@ -661,9 +688,9 @@
       "status": "awaiting deploy",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-28T19:09:01Z",
+      "data_comentario": "2026-10-28T20:08:18Z",
       "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Implementado em AUTOS_DETRAN_PA_MULTAS",
+      "comentario_trecho": "Implementado em AUTOS_DETRAN_SC",
       "link": "https://redmine.platform.brobot.com.br/issues/89197"
     },
     {
