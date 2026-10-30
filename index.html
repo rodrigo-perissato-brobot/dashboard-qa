@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-30T16:25:29.273Z",
-  "total": 15,
+  "gerado_em": "2026-10-30T16:55:17.744Z",
+  "total": 14,
   "rows": [
     {
       "id": 73585,
@@ -594,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
-      "id": 89197,
-      "task": "CapSkip — Implementação do serviço e implantação nas spiders",
-      "descricao": "Implementar o serviço CapSkip na VPS da Brobot, garantindo a segurança do acesso, e implantá-lo nas spiders que hoje utilizam 2Captcha ou Ca",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-29T17:36:22Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Implementado em AUTOS_DETRAN_RR (este em especifico possui RECAPTCHA_V2 invisivel, entao foi necessario passar a flag para solucionar corretamente.)",
-      "link": "https://redmine.platform.brobot.com.br/issues/89197"
-    },
-    {
       "id": 57089,
       "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
       "descricao": "Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de vencimento de CNH,...",
@@ -674,10 +661,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-30T16:26:08.239Z",
+  "gerado_em": "2026-10-30T16:55:59.163Z",
   "sprint_id": 74,
-  "total": 28,
+  "total": 27,
   "rows": [
+    {
+      "id": 89197,
+      "task": "CapSkip — Implementação do serviço e implantação nas spiders",
+      "descricao": "Implementar o serviço CapSkip na VPS da Brobot, garantindo a segurança do acesso, e implantá-lo nas spiders que hoje utilizam 2Captcha ou Ca",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-30T16:32:08Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/89197"
+    },
     {
       "id": 89168,
       "task": "Permitir seleção múltipla de CNPJs no filtro de veículos  - Novo front",
@@ -777,20 +778,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/88939"
     },
     {
-      "id": 89179,
-      "task": "Volumetria | Credenciais: kanban de follow up de certificados e credenciais colaborativas",
-      "descricao": "Hoje a aba Admin → Volumetria → Credenciais mostra só os certificados digitais em um quadro de sete colunas...",
-      "category": "",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-28T18:49:28Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/89179"
-    },
-    {
       "id": 83547,
       "task": "maestro: URL do brobot-condutores por ambiente (staging → hml, produção inalterada)",
       "descricao": "k8s/maestro/templates/configmap.yaml tem a URL do brobot-condutores fixa no domínio de staging, para todos os ambientes.",
@@ -887,20 +874,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@roberta @leonardo.paganotti @felipe-godoy @julya.tochio @gustavo-souza boa tarde, Conforme alinhado na planning realizada em 22/10/2026 com os participantes @rodrigo @gabriella @felipe @joathan @migu",
       "link": "https://redmine.platform.brobot.com.br/issues/53155"
-    },
-    {
-      "id": 69679,
-      "task": "Cadastro de CNPJs em lote",
-      "descricao": "É interessante abrir a possibilidade de subida de CNPJs em lote na plataforma.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-20T18:23:13Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@rolf favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/69679"
     },
     {
       "id": 86331,
