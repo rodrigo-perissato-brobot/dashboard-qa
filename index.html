@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-30T14:26:12.529Z",
-  "total": 10,
+  "gerado_em": "2026-10-30T14:59:18.742Z",
+  "total": 11,
   "rows": [
     {
       "id": 73585,
@@ -488,6 +488,19 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
       "link": "https://redmine.platform.brobot.com.br/issues/73585"
+    },
+    {
+      "id": 75193,
+      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
+      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-09-14T16:45:52Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo Correção aplicada. A consulta do DNIT passa a usar a credencial gov.br cadastrada na conta, sem precisar vincular a credencial ao veículo. Funciona também quando a empresa do veículo não tem ",
+      "link": "https://redmine.platform.brobot.com.br/issues/75193"
     },
     {
       "id": 83546,
@@ -609,9 +622,9 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-30T14:27:32.572Z",
+  "gerado_em": "2026-10-30T15:00:45.845Z",
   "sprint_id": 74,
-  "total": 32,
+  "total": 27,
   "rows": [
     {
       "id": 88798,
@@ -796,20 +809,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/59523"
     },
     {
-      "id": 51016,
-      "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
-      "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "to do",
-      "tipo": "outro",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-23T13:02:15Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "@gustavo, muito obrigado pela informação! Verifiquei o portal e identifiquei que ele apresenta instabilidade durante a geração desse relatório. Pode seguir com as consultas até que o portal consiga di",
-      "link": "https://redmine.platform.brobot.com.br/issues/51016"
-    },
-    {
       "id": 76680,
       "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
       "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
@@ -822,20 +821,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Joathan , Segue ajuste Ambiente: Staging | Conta: [Teste] Conta demonstrativa comercial | Versão: New - Indicação de Condutores: os dados agora estão disponíveis na plataforma, permitindo acessar a l",
       "link": "https://redmine.platform.brobot.com.br/issues/76680"
-    },
-    {
-      "id": 53155,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF - Uiramutã (ID: 1883)",
-      "descricao": "Necessidade de possibilitar o cadastro de Certificados Digitais e-CPF na aba de Credenciais.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "to do",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-22T18:45:59Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@roberta @leonardo.paganotti @felipe-godoy @julya.tochio @gustavo-souza boa tarde, Conforme alinhado na planning realizada em 22/10/2026 com os participantes @rodrigo @gabriella @felipe @joathan @migu",
-      "link": "https://redmine.platform.brobot.com.br/issues/53155"
     },
     {
       "id": 88060,
@@ -908,20 +893,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/86411"
     },
     {
-      "id": 43063,
-      "task": "Novas Funcionalidades Cronotacógrafo",
-      "descricao": "Realizar um estudo de novas funcionalidades para tornar o módulo de cronotacógrafo mais completo, incluindo...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-09T19:04:17Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "Conforme alinhado na planning realizada em 08/10/2026 com os participantes @Gabriella Mendes @Felipe Silva @Joathan Fontan @Miguel Silva @Delvin Williams Perez @Gustavo Vitor foi alinhado que seguirem",
-      "link": "https://redmine.platform.brobot.com.br/issues/43063"
-    },
-    {
       "id": 87066,
       "task": "Cronotacógrafo | Certificado em PDF e emissão de GRU em lote",
       "descricao": "Hoje o CaçaMultas Cronotacógrafo só avisa: a consulta traz a situação do certificado de cada veículo (ativo...",
@@ -962,20 +933,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
       "link": "https://redmine.platform.brobot.com.br/issues/83270"
-    },
-    {
-      "id": 75193,
-      "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
-      "descricao": "A spider do DNIT não tem usado a credencial GOVBR que está como preferencial para realizar consultas.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-14T16:45:52Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo Correção aplicada. A consulta do DNIT passa a usar a credencial gov.br cadastrada na conta, sem precisar vincular a credencial ao veículo. Funciona também quando a empresa do veículo não tem ",
-      "link": "https://redmine.platform.brobot.com.br/issues/75193"
     },
     {
       "id": 75360,
@@ -1032,20 +989,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "No momento não temos um cenário definido para realizar a validação desse novo ajuste. Vou aguardar o surgimento de um novo cenário para que eu possa prosseguir com os testes.",
       "link": "https://redmine.platform.brobot.com.br/issues/77600"
-    },
-    {
-      "id": 37739,
-      "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
-      "descricao": "Tivemos um caso do cliente Engemix que questionou multas dos anos de 2021, 2022 e 2023 com status em aberto em nossa plataforma.",
-      "category": "Spider - Outros",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-27T19:26:40Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
-      "link": "https://redmine.platform.brobot.com.br/issues/37739"
     },
     {
       "id": 49662,
