@@ -473,35 +473,9 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-30T13:26:33.101Z",
-  "total": 10,
+  "gerado_em": "2026-10-30T13:56:17.487Z",
+  "total": 8,
   "rows": [
-    {
-      "id": 57089,
-      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
-      "descricao": "Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de vencimento de CNH,...",
-      "category": "Produtos - Novo produto",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-07-15T03:35:50Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Teste definitivo do zero (15/07, 00h) — aprovado pelo product owner Ciclo completo executado pelo motorista de teste real com o sistema estabilizado: cadência de adiamento respondida, PDF real extraíd",
-      "link": "https://redmine.platform.brobot.com.br/issues/57089"
-    },
-    {
-      "id": 73585,
-      "task": "Configurar domínio consultas-api.com.br para a API White Label",
-      "descricao": "Realizar a configuração do domínio consultas-api.com.br para que ele seja utilizado como endereço oficial da API White Label da plataforma.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-07-23T19:14:43Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
-      "link": "https://redmine.platform.brobot.com.br/issues/73585"
-    },
     {
       "id": 83546,
       "task": "brobot-condutores: ambiente de homologação (hml) separado da produção + simulação de resposta no painel",
@@ -527,19 +501,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi para staging. Subiu junto com 82757",
       "link": "https://redmine.platform.brobot.com.br/issues/82396"
-    },
-    {
-      "id": 71526,
-      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
-      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-02T14:15:36Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
-      "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
       "id": 85035,
@@ -605,13 +566,26 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Implementado em AUTOS_DETRAN_RR (este em especifico possui RECAPTCHA_V2 invisivel, entao foi necessario passar a flag para solucionar corretamente.)",
       "link": "https://redmine.platform.brobot.com.br/issues/89197"
+    },
+    {
+      "id": 57089,
+      "task": "Implementação do Módulo CaçaCondutores com Controle de CNH e Exame toxicológico",
+      "descricao": "Criar um módulo completo de gestão de condutores com dashboard centralizado, controle de vencimento de CNH,...",
+      "category": "Produtos - Novo produto",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-30T13:42:40Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Tema já está em produção conforme alinhado com @rolf",
+      "link": "https://redmine.platform.brobot.com.br/issues/57089"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-30T13:29:00.210Z",
+  "gerado_em": "2026-10-30T13:57:41.696Z",
   "sprint_id": 74,
-  "total": 31,
+  "total": 32,
   "rows": [
     {
       "id": 88798,
@@ -782,20 +756,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/88451"
     },
     {
-      "id": 88521,
-      "task": "Módulo de Monitoramento e Identificação de Placas com Erros Recorrentes no Admin Maestro ",
-      "descricao": "Dar ao Suporte e a Operações uma visão pronta das placas que foram consultadas com erro rodada após rodada...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-23T16:50:01Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Aprovado Ambiente: Staging | Versão: New Reteste realizado em Staging, com aprovação da correção. Foi validado que, na aba Registros do relatório, a linha Resolvido apresenta corretamente o núme",
-      "link": "https://redmine.platform.brobot.com.br/issues/88521"
-    },
-    {
       "id": 59523,
       "task": "Criação do Dashboard",
       "descricao": "",
@@ -880,6 +840,20 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82757"
     },
     {
+      "id": 69679,
+      "task": "Cadastro de CNPJs em lote",
+      "descricao": "É interessante abrir a possibilidade de subida de CNPJs em lote na plataforma.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-20T18:23:13Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@rolf favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/69679"
+    },
+    {
       "id": 86331,
       "task": "Desativação de usuário  UNICO  não é atualizada no Front Novo",
       "descricao": "Na tela de Monitoramento do Front Novo, a ocorrência de desativação de usuário não está sendo apresentada/a...",
@@ -906,6 +880,20 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan Aprovado Ambiente: Produção | Conta: TRANSMARONI - SNE | Versão: New Realizei um novo teste com o mesmo filtro utilizado na resposta anterior e, dessa vez, foi disponibilizado para download e",
       "link": "https://redmine.platform.brobot.com.br/issues/86411"
+    },
+    {
+      "id": 43063,
+      "task": "Novas Funcionalidades Cronotacógrafo",
+      "descricao": "Realizar um estudo de novas funcionalidades para tornar o módulo de cronotacógrafo mais completo, incluindo...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "sem_acao",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-09T19:04:17Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "Conforme alinhado na planning realizada em 08/10/2026 com os participantes @Gabriella Mendes @Felipe Silva @Joathan Fontan @Miguel Silva @Delvin Williams Perez @Gustavo Vitor foi alinhado que seguirem",
+      "link": "https://redmine.platform.brobot.com.br/issues/43063"
     },
     {
       "id": 87066,
@@ -1020,18 +1008,18 @@
       "link": "https://redmine.platform.brobot.com.br/issues/77600"
     },
     {
-      "id": 61539,
-      "task": "Implementação do Módulo CaçaCondutores > Integração",
-      "descricao": "",
-      "category": "Produtos - Novo produto",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "reprovado",
+      "id": 37739,
+      "task": "Solicitação de ajuste na captura de multas antigas (Prefeitura de SP) - CLIENTE Engemix - ID: 1477",
+      "descricao": "Tivemos um caso do cliente Engemix que questionou multas dos anos de 2021, 2022 e 2023 com status em aberto em nossa plataforma.",
+      "category": "Spider - Outros",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "sem_acao",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-28T15:04:30Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Reprovado . Efetuei os testes do Toxicológico e CNH, e relato ajustes no fluxo do whatsapp. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Realizei o teste do fluxo simulando o g",
-      "link": "https://redmine.platform.brobot.com.br/issues/61539"
+      "data_comentario": "2026-07-27T19:26:40Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "No aguardo do retorno do time de CS referente ao cliente Engemix",
+      "link": "https://redmine.platform.brobot.com.br/issues/37739"
     },
     {
       "id": 49662,
