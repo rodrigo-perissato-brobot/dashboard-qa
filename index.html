@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-30T12:26:37.349Z",
-  "total": 13,
+  "gerado_em": "2026-10-30T12:48:43.961Z",
+  "total": 10,
   "rows": [
     {
       "id": 57089,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85035"
     },
     {
-      "id": 76680,
-      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
-      "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
-      "category": "Produtos - Customização fora do padrão",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-22T19:39:35Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Joathan , Segue ajuste Ambiente: Staging | Conta: [Teste] Conta demonstrativa comercial | Versão: New - Indicação de Condutores: os dados agora estão disponíveis na plataforma, permitindo acessar a l",
-      "link": "https://redmine.platform.brobot.com.br/issues/76680"
-    },
-    {
       "id": 63729,
       "task": "Implementação de Novos Status de Multas com Categorização Automática | CM - Embarcador",
       "descricao": "Classificar as multas do CaçaMultas Embarcador em quatro status novos, Autuação, Em recurso, Inscrito na Se...",
@@ -618,20 +605,14 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Implementado em AUTOS_DETRAN_RR (este em especifico possui RECAPTCHA_V2 invisivel, entao foi necessario passar a flag para solucionar corretamente.)",
       "link": "https://redmine.platform.brobot.com.br/issues/89197"
-    },
-    {
-      "id": 89234,
-      "task": "BUG visual da tela de Indicação de Condutores, não aparece o nome da conta",
-      "descricao": "O filtro de contas que possuem indicações tem contas com o nome e o ID e outras apenas com o ID.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-29T17:55:22Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Segue ajuste Ambiente: Staging | Versão: New - Na aba Conferir, o filtro Conta não possui barra de busca em nenhum dos três serviços (Indicação de condutores, CNH e Exame toxicológico). A funcio",
-      "link": "https://redmine.platform.brobot.com.br/issues/89234"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-10-30T12:49:43.120Z",
+  "sprint_id": 74,
+  "total": 43,
+  "rows": [
     {
       "id": 88798,
       "task": "Disponibilizar opção de inverter seleção de locatários nos Grupos de Permissões - TRANSMARONI ",
@@ -639,19 +620,13 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "gustavo",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
       "data_comentario": "2026-10-30T12:07:31Z",
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New Durante a navegação pela tela de edição de Grupo de Permissões, foi identificado um problema de limite de rolagem: 1. A",
       "link": "https://redmine.platform.brobot.com.br/issues/88798"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-30T12:27:40.360Z",
-  "sprint_id": 74,
-  "total": 40,
-  "rows": [
+    },
     {
       "id": 88960,
       "task": "autos_antt - HTML_ERROR recorrente gerando retries (reincidência da #81529)",
@@ -679,6 +654,20 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/89168"
+    },
+    {
+      "id": 89234,
+      "task": "BUG visual da tela de Indicação de Condutores, não aparece o nome da conta",
+      "descricao": "O filtro de contas que possuem indicações tem contas com o nome e o ID e outras apenas com o ID.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-29T17:55:22Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Rolf Segue ajuste Ambiente: Staging | Versão: New - Na aba Conferir, o filtro Conta não possui barra de busca em nenhum dos três serviços (Indicação de condutores, CNH e Exame toxicológico). A funcio",
+      "link": "https://redmine.platform.brobot.com.br/issues/89234"
     },
     {
       "id": 86462,
@@ -861,6 +850,20 @@
       "comentario_autor": "Jose Ricardo",
       "comentario_trecho": "@gustavo, muito obrigado pela informação! Verifiquei o portal e identifiquei que ele apresenta instabilidade durante a geração desse relatório. Pode seguir com as consultas até que o portal consiga di",
       "link": "https://redmine.platform.brobot.com.br/issues/51016"
+    },
+    {
+      "id": 76680,
+      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
+      "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
+      "category": "Produtos - Customização fora do padrão",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-10-22T19:39:35Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Joathan , Segue ajuste Ambiente: Staging | Conta: [Teste] Conta demonstrativa comercial | Versão: New - Indicação de Condutores: os dados agora estão disponíveis na plataforma, permitindo acessar a l",
+      "link": "https://redmine.platform.brobot.com.br/issues/76680"
     },
     {
       "id": 53155,
