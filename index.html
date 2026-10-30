@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-10-30T11:56:06.129Z",
-  "total": 9,
+  "gerado_em": "2026-10-30T12:18:14.179Z",
+  "total": 13,
   "rows": [
     {
       "id": 57089,
@@ -503,6 +503,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/73585"
     },
     {
+      "id": 83546,
+      "task": "brobot-condutores: ambiente de homologação (hml) separado da produção + simulação de resposta no painel",
+      "descricao": "Criar um ambiente de homologação do brobot-condutores separado do deploy atual (que hoje atende a produção...",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-09-15T14:41:52Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Deploy automático por pipeline (15/09, 11h40) Criadas no CodePipeline, no padrão do maestro e sem aprovação manual: - brobot-condutores-staging: push em staging → testes (205, dentro da imagem) → buil",
+      "link": "https://redmine.platform.brobot.com.br/issues/83546"
+    },
+    {
       "id": 82396,
       "task": "Alteração da mensagem enviada ao motorista",
       "descricao": "O motorista mandou uma mensagem no WhatsApp após o bot respondê-lo de uma outra mensagem e a mensagem envia...",
@@ -514,6 +527,32 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo subi para staging. Subiu junto com 82757",
       "link": "https://redmine.platform.brobot.com.br/issues/82396"
+    },
+    {
+      "id": 71526,
+      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
+      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-02T14:15:36Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
+      "link": "https://redmine.platform.brobot.com.br/issues/71526"
+    },
+    {
+      "id": 85035,
+      "task": "Bug no fluxo de mensagens da indicação",
+      "descricao": "O fluxo do bot do WhatsApp da indicação está incorreto, pois, quando o motorista realiza o aceite ou a recu...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-10-06T17:37:57Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo por gentileza, prosseguir com QA",
+      "link": "https://redmine.platform.brobot.com.br/issues/85035"
     },
     {
       "id": 76680,
@@ -542,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/63729"
     },
     {
-      "id": 88798,
-      "task": "Disponibilizar opção de inverter seleção de locatários nos Grupos de Permissões - TRANSMARONI ",
-      "descricao": "Facilitar a montagem dos recortes de dado em Definições → Grupos de Permissão.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-28T19:33:29Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gustavo atualizado em staging/dev.",
-      "link": "https://redmine.platform.brobot.com.br/issues/88798"
-    },
-    {
       "id": 89232,
       "task": "BUG ao tentar reenviar a mensagem para o motorista na tela de Admin",
       "descricao": "Ao tentar realizar o reenvio de uma mensagem que não chegou ao motorista, é retornado o erro: \"Reenviar men...",
@@ -581,6 +607,19 @@
       "link": "https://redmine.platform.brobot.com.br/issues/63612"
     },
     {
+      "id": 89197,
+      "task": "CapSkip — Implementação do serviço e implantação nas spiders",
+      "descricao": "Implementar o serviço CapSkip na VPS da Brobot, garantindo a segurança do acesso, e implantá-lo nas spiders que hoje utilizam 2Captcha ou Ca",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-10-29T17:36:22Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Implementado em AUTOS_DETRAN_RR (este em especifico possui RECAPTCHA_V2 invisivel, entao foi necessario passar a flag para solucionar corretamente.)",
+      "link": "https://redmine.platform.brobot.com.br/issues/89197"
+    },
+    {
       "id": 89234,
       "task": "BUG visual da tela de Indicação de Condutores, não aparece o nome da conta",
       "descricao": "O filtro de contas que possuem indicações tem contas com o nome e o ID e outras apenas com o ID.",
@@ -592,13 +631,26 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Rolf Segue ajuste Ambiente: Staging | Versão: New - Na aba Conferir, o filtro Conta não possui barra de busca em nenhum dos três serviços (Indicação de condutores, CNH e Exame toxicológico). A funcio",
       "link": "https://redmine.platform.brobot.com.br/issues/89234"
+    },
+    {
+      "id": 88798,
+      "task": "Disponibilizar opção de inverter seleção de locatários nos Grupos de Permissões - TRANSMARONI ",
+      "descricao": "Facilitar a montagem dos recortes de dado em Definições → Grupos de Permissão.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-10-30T12:07:31Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New Durante a navegação pela tela de edição de Grupo de Permissões, foi identificado um problema de limite de rolagem: 1. A",
+      "link": "https://redmine.platform.brobot.com.br/issues/88798"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-10-30T11:57:04.826Z",
+  "gerado_em": "2026-10-30T12:19:20.149Z",
   "sprint_id": 74,
-  "total": 43,
+  "total": 40,
   "rows": [
     {
       "id": 88960,
@@ -627,20 +679,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/89168"
-    },
-    {
-      "id": 89197,
-      "task": "CapSkip — Implementação do serviço e implantação nas spiders",
-      "descricao": "Implementar o serviço CapSkip na VPS da Brobot, garantindo a segurança do acesso, e implantá-lo nas spiders que hoje utilizam 2Captcha ou Ca",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-29T17:36:22Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "Implementado em AUTOS_DETRAN_RR (este em especifico possui RECAPTCHA_V2 invisivel, entao foi necessario passar a flag para solucionar corretamente.)",
-      "link": "https://redmine.platform.brobot.com.br/issues/89197"
     },
     {
       "id": 86462,
@@ -951,20 +989,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
     },
     {
-      "id": 85035,
-      "task": "Bug no fluxo de mensagens da indicação",
-      "descricao": "O fluxo do bot do WhatsApp da indicação está incorreto, pois, quando o motorista realiza o aceite ou a recu...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-06T17:37:57Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo por gentileza, prosseguir com QA",
-      "link": "https://redmine.platform.brobot.com.br/issues/85035"
-    },
-    {
       "id": 39504,
       "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
       "descricao": "O cliente Edgar da Kadan solicitou a seguinte verificação: Gostaríamos de confirmar se os documentos de Mic...",
@@ -977,20 +1001,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo Confirmado: rastreamos as notas emitidas no Emissor Nacional. A consulta é diária, direta ao ambiente nacional, autenticada pelo certificado digital da empresa, e traz as notas em que o CNPJ ",
       "link": "https://redmine.platform.brobot.com.br/issues/39504"
-    },
-    {
-      "id": 71526,
-      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
-      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-02T14:15:36Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
-      "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
       "id": 83270,
