@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-03T17:25:16.468Z",
+  "gerado_em": "2026-11-03T17:55:23.944Z",
   "total": 10,
   "rows": [
     {
@@ -581,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/57089"
     },
     {
-      "id": 88651,
-      "task": "autos_detran_rj - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_rj, 100.0% de erro (principal: SCRAPY_ERROR, 100%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-10-30T14:38:45Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "As alterações na spider foram realizadas. @Rodrigo, poderia testá-la, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/88651"
-    },
-    {
       "id": 88060,
       "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
       "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
@@ -605,14 +592,55 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Quais serviços aceitam e-CPF é definido no próprio serviço, pelo switch \"Aceita e-CPF\" na edição em Admin › Maestro › Scraping Services. Todos os serviços começam desligados, então a",
       "link": "https://redmine.platform.brobot.com.br/issues/88060"
+    },
+    {
+      "id": 82757,
+      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
+      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-03T17:36:01Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo atualizado em dev/staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82757"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-03T17:25:53.115Z",
+  "gerado_em": "2026-11-03T17:56:01.285Z",
   "sprint_id": 75,
-  "total": 26,
+  "total": 25,
   "rows": [
+    {
+      "id": 89289,
+      "task": "[Spiders v3] Limpeza do projeto e otimização da imagem Docker",
+      "descricao": "Melhorar a base técnica do projeto de spiders v3: - Imagem Docker: deixar a imagem de produção menor e mais enxuta.",
+      "category": "Spider - Outros",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-03T17:54:25Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@thiago PR:",
+      "link": "https://redmine.platform.brobot.com.br/issues/89289"
+    },
+    {
+      "id": 88651,
+      "task": "autos_detran_rj - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_rj, 100.0% de erro (principal: SCRAPY_ERROR, 100%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-03T17:31:48Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88651"
+    },
     {
       "id": 75193,
       "task": "autos_dnit - Não consumo da credencial GOVBR pela spider",
@@ -628,34 +656,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/75193"
     },
     {
-      "id": 86331,
-      "task": "Desativação de usuário  UNICO  não é atualizada no Front Novo",
-      "descricao": "Na tela de Monitoramento do Front Novo, a ocorrência de desativação de usuário não está sendo apresentada/a...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-03T16:48:05Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan Aprovado. Ambiente: Produção | Versão: New Realizada a validação em produção após os ajustes disponibilizados pelo desenvolvimento. Foram testados os seguintes pontos: - Coluna Conta: os regi",
-      "link": "https://redmine.platform.brobot.com.br/issues/86331"
-    },
-    {
-      "id": 89289,
-      "task": "[Spiders v3] Limpeza do projeto e otimização da imagem Docker",
-      "descricao": "Melhorar a base técnica do projeto de spiders v3: - Imagem Docker: deixar a imagem de produção menor e mais enxuta.",
-      "category": "Spider - Outros",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-03T16:03:13Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/89289"
-    },
-    {
       "id": 83546,
       "task": "brobot-condutores: ambiente de homologação (hml) separado da produção + simulação de resposta no painel",
       "descricao": "Criar um ambiente de homologação do brobot-condutores separado do deploy atual (que hoje atende a produção...",
@@ -668,20 +668,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Rolf Aprovado. O ambiente de homologação do Brobot Condutores foi validado por meio de utilização prática e recorrente do painel painel-indicacao-hml. Durante o período de utilização, o ambiente apre",
       "link": "https://redmine.platform.brobot.com.br/issues/83546"
-    },
-    {
-      "id": 82757,
-      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
-      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-03T11:08:34Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New Foi identificada a mesma limitação nos filtros de conta das telas Admin Maestro Pendências de Indicação e Admin Maestro",
-      "link": "https://redmine.platform.brobot.com.br/issues/82757"
     },
     {
       "id": 89234,
