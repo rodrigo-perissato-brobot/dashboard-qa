@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-03T19:55:15.568Z",
-  "total": 11,
+  "gerado_em": "2026-11-04T11:25:16.811Z",
+  "total": 12,
   "rows": [
     {
       "id": 73585,
@@ -594,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/88060"
     },
     {
-      "id": 82757,
-      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
-      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-03T17:36:01Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo atualizado em dev/staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82757"
-    },
-    {
       "id": 88583,
       "task": "Migração da tela de Agendamentos para o novo front",
       "descricao": "Migrar a tela de Agendamentos do front antigo para o novo front da plataforma.",
@@ -618,41 +605,53 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gustavo @rodrigo atualizado em staging/dev.",
       "link": "https://redmine.platform.brobot.com.br/issues/88583"
+    },
+    {
+      "id": 86751,
+      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-03T22:13:31Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@Rodrigo Perissato poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/86751"
+    },
+    {
+      "id": 86462,
+      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-03T22:14:13Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@Rodrigo Perissato poderia testar novamente?",
+      "link": "https://redmine.platform.brobot.com.br/issues/86462"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-03T19:55:50.820Z",
+  "gerado_em": "2026-11-04T11:25:54.112Z",
   "sprint_id": 75,
-  "total": 25,
+  "total": 22,
   "rows": [
     {
-      "id": 89289,
-      "task": "[Spiders v3] Limpeza do projeto e otimização da imagem Docker",
-      "descricao": "Melhorar a base técnica do projeto de spiders v3: - Imagem Docker: deixar a imagem de produção menor e mais enxuta.",
-      "category": "Spider - Outros",
-      "priority": "medium",
+      "id": 82757,
+      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
+      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
       "status": "awaiting deploy",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-03T17:54:25Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@thiago PR:",
-      "link": "https://redmine.platform.brobot.com.br/issues/89289"
-    },
-    {
-      "id": 88651,
-      "task": "autos_detran_rj - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_rj, 100.0% de erro (principal: SCRAPY_ERROR, 100%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-03T17:31:48Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/88651"
+      "data_comentario": "2026-11-04T11:18:43Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/82757"
     },
     {
       "id": 75193,
@@ -695,34 +694,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@Rolf Segue ajuste Ambiente: Staging | Versão: New - Na aba Conferir, o filtro Conta não possui barra de busca em nenhum dos três serviços (Indicação de condutores, CNH e Exame toxicológico). A funcio",
       "link": "https://redmine.platform.brobot.com.br/issues/89234"
-    },
-    {
-      "id": 86462,
-      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-29T17:15:33Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Essa tarefa está apresentando o mesmo problema da 86751.",
-      "link": "https://redmine.platform.brobot.com.br/issues/86462"
-    },
-    {
-      "id": 86751,
-      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
-      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-29T17:14:35Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@Rodrigo O portal adicionou uma nova camada de proteção anti-bot (Akamai), que estava causando os erros retornados pela spider. Fiz uma alteração para contornar essa proteção e consegui fazê-la funcio",
-      "link": "https://redmine.platform.brobot.com.br/issues/86751"
     },
     {
       "id": 83142,
