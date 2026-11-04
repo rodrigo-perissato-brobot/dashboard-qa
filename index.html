@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-04T16:25:20.938Z",
-  "total": 13,
+  "gerado_em": "2026-11-04T16:55:16.864Z",
+  "total": 11,
   "rows": [
     {
       "id": 73585,
@@ -581,32 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/88060"
     },
     {
-      "id": 86751,
-      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
-      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-03T22:13:31Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@Rodrigo Perissato poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/86751"
-    },
-    {
-      "id": 86462,
-      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
-      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-03T22:14:13Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@Rodrigo Perissato poderia testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/86462"
-    },
-    {
       "id": 71526,
       "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
       "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
@@ -648,10 +622,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-04T16:26:00.891Z",
+  "gerado_em": "2026-11-04T16:55:51.471Z",
   "sprint_id": 75,
-  "total": 23,
+  "total": 25,
   "rows": [
+    {
+      "id": 86751,
+      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-04T16:50:22Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_bradesco_detran_rj_taxas e 7 das 10 retornaram com erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: 7 d",
+      "link": "https://redmine.platform.brobot.com.br/issues/86751"
+    },
+    {
+      "id": 86462,
+      "task": "autos_bradesco_detran_rj_multas - PAGE_MALFUNCTION",
+      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: PAGE_MALFUNCTION, 80.74%)",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-04T16:43:57Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/86462"
+    },
     {
       "id": 88583,
       "task": "Migração da tela de Agendamentos para o novo front",
