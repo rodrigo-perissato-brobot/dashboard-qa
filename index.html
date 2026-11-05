@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-05T12:55:19.674Z",
-  "total": 10,
+  "gerado_em": "2026-11-05T13:25:17.224Z",
+  "total": 11,
   "rows": [
     {
       "id": 73585,
@@ -605,14 +605,7 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gustavo @rodrigo vou subir pra produção. Não será possível testar em staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/89936"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-05T12:56:00.380Z",
-  "sprint_id": 75,
-  "total": 22,
-  "rows": [
+    },
     {
       "id": 86751,
       "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
@@ -620,13 +613,19 @@
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "high",
       "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-04T16:50:22Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_bradesco_detran_rj_taxas e 7 das 10 retornaram com erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: 7 d",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-05T13:09:17Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@rodrigo, poderia testar novamente? Alterei a spider para dar preferência ao Capskip. Se o CAPTCHA não for resolvido corretamente após duas tentativas, ela tentará usar o Capsolver. Conversei com o su",
       "link": "https://redmine.platform.brobot.com.br/issues/86751"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-11-05T13:25:53.680Z",
+  "sprint_id": 75,
+  "total": 21,
+  "rows": [
     {
       "id": 82757,
       "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
