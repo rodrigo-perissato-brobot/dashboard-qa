@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-05T19:55:20.903Z",
-  "total": 10,
+  "gerado_em": "2026-11-08T20:55:13.925Z",
+  "total": 9,
   "rows": [
     {
       "id": 73585,
@@ -503,19 +503,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/63729"
     },
     {
-      "id": 89232,
-      "task": "BUG ao tentar reenviar a mensagem para o motorista na tela de Admin",
-      "descricao": "Ao tentar realizar o reenvio de uma mensagem que não chegou ao motorista, é retornado o erro: \"Reenviar men...",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-10-28T23:35:08Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Corrigido e publicado em staging Causas: 1. Bot: \"Reenviar mensagem\" e \"Reabrir com template\" só funcionavam com a conversa ainda pendente. Quando a conversa expira por falta de resposta (TIMEOUT), o ",
-      "link": "https://redmine.platform.brobot.com.br/issues/89232"
-    },
-    {
       "id": 63612,
       "task": "Validação completa do novo frontend da Plataforma Brobot",
       "descricao": "Realizar testes completos no novo frontend disponível em: Plataforma Brobot, garantindo que a nova interfac...",
@@ -542,19 +529,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/57089"
     },
     {
-      "id": 88060,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
-      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-30T15:19:07Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo Quais serviços aceitam e-CPF é definido no próprio serviço, pelo switch \"Aceita e-CPF\" na edição em Admin › Maestro › Scraping Services. Todos os serviços começam desligados, então a",
-      "link": "https://redmine.platform.brobot.com.br/issues/88060"
-    },
-    {
       "id": 71526,
       "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
       "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
@@ -566,19 +540,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@joathan por gentileza, seguir com implementação também dos campos: Local da infração Valor da multa",
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
-    },
-    {
-      "id": 89936,
-      "task": "Erro: \"Erro na execução do USE CASE [private method `select' called for \"[object Object]\":String...\"",
-      "descricao": "",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-05T11:31:53Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo @rodrigo vou subir pra produção. Não será possível testar em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/89936"
     },
     {
       "id": 86751,
@@ -605,11 +566,37 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@Gustavo, só consigo subir isso depois que o Miguel voltar de férias e fizer a PR.",
       "link": "https://redmine.platform.brobot.com.br/issues/85035"
+    },
+    {
+      "id": 90860,
+      "task": "Erro: \"Erro na leitura do input_payload [undefined method `start_with?' for nil]\"",
+      "descricao": "",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-06T12:11:12Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo corrigido em staging. Request do erro:",
+      "link": "https://redmine.platform.brobot.com.br/issues/90860"
+    },
+    {
+      "id": 90887,
+      "task": "Sobrescrita indevida da Data da Infração em AITs da ANTT - Minerva Foods - ID 1745",
+      "descricao": "Identificada uma inconsistência na gravação das datas de infração dos AITs da ANTT.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-06T18:53:29Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo Corrigido. A Data da Infração dos AITs da ANTT agora fica com a data de ocorrência informada pelo autos_antt. O autos_antt_processos não sobrescreve mais a data de uma multa que já t",
+      "link": "https://redmine.platform.brobot.com.br/issues/90887"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-05T19:55:24.819Z",
+  "gerado_em": "2026-11-08T20:55:18.170Z",
   "sprint_id": 75,
   "total": 0,
   "rows": []
