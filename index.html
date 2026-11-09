@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-09T13:57:56.044Z",
-  "total": 8,
+  "gerado_em": "2026-11-09T14:27:37.288Z",
+  "total": 11,
   "rows": [
     {
       "id": 73585,
@@ -579,13 +579,52 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Corrigido. A Data da Infração dos AITs da ANTT agora fica com a data de ocorrência informada pelo autos_antt. O autos_antt_processos não sobrescreve mais a data de uma multa que já t",
       "link": "https://redmine.platform.brobot.com.br/issues/90887"
+    },
+    {
+      "id": 90871,
+      "task": "CaçaMultas Embarcador | Maestro: tela Multas Embarcador e rotina de até 3 novas consultas para vistas não capturado",
+      "descricao": "O portal da ANTT muitas vezes responde com uma página HTML no lugar do PDF do vistas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-09T13:58:44Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/90871"
+    },
+    {
+      "id": 89234,
+      "task": "BUG visual da tela de Indicação de Condutores, não aparece o nome da conta",
+      "descricao": "O filtro de contas que possuem indicações tem contas com o nome e o ID e outras apenas com o ID.",
+      "category": "",
+      "priority": "low",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-09T14:15:23Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Ajuste feito: filtro Conta com busca @gustavo o filtro Conta da aba Conferir agora tem campo de busca nos três serviços (Indicação de condutores, CNH e Exame toxicológico). Dá para digitar parte do no",
+      "link": "https://redmine.platform.brobot.com.br/issues/89234"
+    },
+    {
+      "id": 46135,
+      "task": "CERVEJARIA IMPERIAL -  NOVOS CAMPOS BUSCAR NO ANTT PROCESSOS (LER DOCUMENTO)",
+      "descricao": "Realizar a leitura do documento do vistas dos processos para buscar as informações relevantes do AUTO DE IN...",
+      "category": "anterior",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-09T14:16:56Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Reverificado: nada a ajustar nesta atividade A exportação de Excesso de Peso está em produção e foi aprovada pelo @gustavo em 20/08 (conta Minerva Foods). Sobre o caso de staging (AIT EPSMA00426542019",
+      "link": "https://redmine.platform.brobot.com.br/issues/46135"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-09T13:59:24.846Z",
+  "gerado_em": "2026-11-09T14:30:13.316Z",
   "sprint_id": 76,
-  "total": 24,
+  "total": 20,
   "rows": [
     {
       "id": 90860,
@@ -672,34 +711,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82757"
     },
     {
-      "id": 83546,
-      "task": "brobot-condutores: ambiente de homologação (hml) separado da produção + simulação de resposta no painel",
-      "descricao": "Criar um ambiente de homologação do brobot-condutores separado do deploy atual (que hoje atende a produção...",
-      "category": "",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-03T13:54:51Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Aprovado. O ambiente de homologação do Brobot Condutores foi validado por meio de utilização prática e recorrente do painel painel-indicacao-hml. Durante o período de utilização, o ambiente apre",
-      "link": "https://redmine.platform.brobot.com.br/issues/83546"
-    },
-    {
-      "id": 89234,
-      "task": "BUG visual da tela de Indicação de Condutores, não aparece o nome da conta",
-      "descricao": "O filtro de contas que possuem indicações tem contas com o nome e o ID e outras apenas com o ID.",
-      "category": "",
-      "priority": "low",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-29T17:55:22Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Segue ajuste Ambiente: Staging | Versão: New - Na aba Conferir, o filtro Conta não possui barra de busca em nenhum dos três serviços (Indicação de condutores, CNH e Exame toxicológico). A funcio",
-      "link": "https://redmine.platform.brobot.com.br/issues/89234"
-    },
-    {
       "id": 83142,
       "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
       "descricao": "Spider autos_pge_rn (principal: NO_CAPTCHA_IMAGE, 100%)",
@@ -726,20 +737,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "Não foi encontrada a causa só lendo o código. O erro acontece de forma intermitente e passa ao clicar em \"Tentar novamente\". Isso indica uma falha passageira no navegador, e o backend não parece envol",
       "link": "https://redmine.platform.brobot.com.br/issues/88939"
-    },
-    {
-      "id": 83547,
-      "task": "maestro: URL do brobot-condutores por ambiente (staging → hml, produção inalterada)",
-      "descricao": "k8s/maestro/templates/configmap.yaml tem a URL do brobot-condutores fixa no domínio de staging, para todos os ambientes.",
-      "category": "",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-28T13:16:13Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Rolf Aprovado Ambiente: Staging - URL do ambiente de homologação configurada corretamente no staging. - Chave correspondente ao ambiente de homologação validada. - Comunicação entre o Maestro de stag",
-      "link": "https://redmine.platform.brobot.com.br/issues/83547"
     },
     {
       "id": 51016,
@@ -866,20 +863,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "No momento, não foi possível realizar os testes, pois os cenários dependem de consultas no SNE e o portal encontra-se instável, fazendo com que as consultas retornem erro. Assim que o SNE estiver está",
       "link": "https://redmine.platform.brobot.com.br/issues/78408"
-    },
-    {
-      "id": 46135,
-      "task": "CERVEJARIA IMPERIAL -  NOVOS CAMPOS BUSCAR NO ANTT PROCESSOS (LER DOCUMENTO)",
-      "descricao": "Realizar a leitura do documento do vistas dos processos para buscar as informações relevantes do AUTO DE IN...",
-      "category": "anterior",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-20T19:29:42Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@rolf, Segue análise do teste de Excesso de Peso realizado: Ambiente: Produção | Conta: Minerva Foods | Versão: New Foi realizada a exportação do relatório de Excesso de Peso pelo caminho Ver Multas →",
-      "link": "https://redmine.platform.brobot.com.br/issues/46135"
     },
     {
       "id": 77600,
