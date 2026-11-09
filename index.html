@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-09T19:25:22.852Z",
-  "total": 11,
+  "gerado_em": "2026-11-09T19:55:19.107Z",
+  "total": 10,
   "rows": [
     {
       "id": 73585,
@@ -527,19 +527,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@joathan por gentileza, seguir com implementação também dos campos: Local da infração Valor da multa",
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
-    },
-    {
-      "id": 86751,
-      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
-      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-05T13:09:17Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo, poderia testar novamente? Alterei a spider para dar preferência ao Capskip. Se o CAPTCHA não for resolvido corretamente após duas tentativas, ela tentará usar o Capsolver. Conversei com o su",
-      "link": "https://redmine.platform.brobot.com.br/issues/86751"
     },
     {
       "id": 85035,
@@ -622,10 +609,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-09T19:26:13.074Z",
+  "gerado_em": "2026-11-09T19:55:57.642Z",
   "sprint_id": 76,
-  "total": 19,
+  "total": 20,
   "rows": [
+    {
+      "id": 86751,
+      "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_bradesco_detran_rj_taxas (principal: CAPTCHA_NOT_SOLVED, 48.19%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-09T19:33:44Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_bradesco_detran_rj_taxas e todas retornaram com erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Todas ",
+      "link": "https://redmine.platform.brobot.com.br/issues/86751"
+    },
     {
       "id": 51016,
       "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
