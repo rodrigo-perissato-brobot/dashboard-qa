@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-09T18:25:18.158Z",
-  "total": 9,
+  "gerado_em": "2026-11-09T18:55:17.658Z",
+  "total": 11,
   "rows": [
     {
       "id": 73585,
@@ -592,13 +592,39 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging/dev.",
       "link": "https://redmine.platform.brobot.com.br/issues/90919"
+    },
+    {
+      "id": 88060,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
+      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-09T18:43:04Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88060"
+    },
+    {
+      "id": 91320,
+      "task": "autos_bradesco_detran_rj_multas - UNSOLVED_ERROR",
+      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: UNSOLVED_ERROR, 70.81%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-09T18:53:01Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Conforme informei na task anterior(86462), esta spider estava usando apenas o CapSkip para resolver o captcha. Como agora a solução não está conseguindo resolvê-lo e está retornando erro, precisamos a",
+      "link": "https://redmine.platform.brobot.com.br/issues/91320"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-09T18:25:56.172Z",
+  "gerado_em": "2026-11-09T18:55:55.702Z",
   "sprint_id": 76,
-  "total": 21,
+  "total": 20,
   "rows": [
     {
       "id": 63729,
@@ -606,13 +632,27 @@
       "descricao": "Classificar as multas do CaçaMultas Embarcador em quatro status novos, Autuação, Em recurso, Inscrito na Se...",
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "high",
-      "status": "staging",
+      "status": "in progress",
       "tipo": "reprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-09T16:42:56Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@felipe Reprovado. Processei algumas consultas nas spiders e identifiquei um cenário falho. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: As situações Notificação de autuaç",
+      "data_comentario": "2026-11-09T18:54:28Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "conforme alinhado com @rodrigo o prazo de implementação informado ao cliente é 13/11/2026",
       "link": "https://redmine.platform.brobot.com.br/issues/63729"
+    },
+    {
+      "id": 51016,
+      "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
+      "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "staging",
+      "tipo": "outro",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-09T18:53:48Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@renata @leonardo.paganotti @gustavo-souza @julya.tochio @felipe-godoy boa tarde, Conforme alinhado com QA o prazo de implementação da atividade 63729 é 13/11/2026.",
+      "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
       "id": 90860,
@@ -655,20 +695,6 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo @gabriella divergências, no escopo da spider, entre o mapeamento da wiki, o que o backend espera receber (nota 73) e a spider atual. Por que resolver: a spider segue o mapeamento, e o ba",
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
-    },
-    {
-      "id": 88060,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
-      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-06T13:37:35Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New 1. Erro ao gerar consulta avulsa com e-CPF Habilitei a opção “Aceita e-CPF” nos serviços Detran PR e Detran PR Taxas, ca",
-      "link": "https://redmine.platform.brobot.com.br/issues/88060"
     },
     {
       "id": 82396,
@@ -725,20 +751,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "Não foi encontrada a causa só lendo o código. O erro acontece de forma intermitente e passa ao clicar em \"Tentar novamente\". Isso indica uma falha passageira no navegador, e o backend não parece envol",
       "link": "https://redmine.platform.brobot.com.br/issues/88939"
-    },
-    {
-      "id": 51016,
-      "task": "Filtrar pela coluna Situação - SLC Agrícola (ID: 2041)",
-      "descricao": "Disponibilizar, nas opções de filtro do módulo CaçaMultas Embarcador, a possibilidade de filtrar registros pela coluna “Situação”.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-23T13:02:15Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "@gustavo, muito obrigado pela informação! Verifiquei o portal e identifiquei que ele apresenta instabilidade durante a geração desse relatório. Pode seguir com as consultas até que o portal consiga di",
-      "link": "https://redmine.platform.brobot.com.br/issues/51016"
     },
     {
       "id": 76680,
