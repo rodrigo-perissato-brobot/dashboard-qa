@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-10T16:55:13.453Z",
+  "gerado_em": "2026-11-10T17:25:19.825Z",
   "total": 14,
   "rows": [
     {
@@ -620,19 +620,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/91316"
     },
     {
-      "id": 88060,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
-      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-10T13:23:23Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@felipe, a spider autos_detran_pr precisa do CPF e da senha, além do e-CPF e da respectiva senha. No portal, é necessário fazer primeiro o login com CPF e senha e, em seguida, realizar outro login usa",
-      "link": "https://redmine.platform.brobot.com.br/issues/88060"
-    },
-    {
       "id": 91354,
       "task": "autos_detran_pb - PDF não salvo (FILE_NOT_SAVED) e data/órgão incorretos",
       "descricao": "Spider autos_detran_pb",
@@ -657,11 +644,24 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Tentei reproduzir os SCRAPY_ERROR mas aparentemente foi só uma instabilidade, testei a spider localmente e está funcionando normalmente. Sobre os XHR_ERROR, vi que em algumas requests o portal retorno",
       "link": "https://redmine.platform.brobot.com.br/issues/91328"
+    },
+    {
+      "id": 88060,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
+      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-10T17:19:24Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo a consulta do Detran PR com e-CPF falhava porque o portal pede dois logins seguidos: primeiro o CPF e a senha do portal, depois o certificado. O que mudou: o cadastro do e-CPF ganhou o campo ",
+      "link": "https://redmine.platform.brobot.com.br/issues/88060"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-10T16:55:49.391Z",
+  "gerado_em": "2026-11-10T17:25:55.544Z",
   "sprint_id": 76,
   "total": 18,
   "rows": [
@@ -674,9 +674,9 @@
       "status": "awaiting deploy",
       "tipo": "aprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-10T14:37:54Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan favor subir para produção.",
+      "data_comentario": "2026-11-10T17:24:53Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@joathan PR no front antigo também.",
       "link": "https://redmine.platform.brobot.com.br/issues/63729"
     },
     {
