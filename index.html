@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-09T19:55:19.107Z",
+  "gerado_em": "2026-11-10T11:25:16.619Z",
   "total": 10,
   "rows": [
     {
@@ -514,19 +514,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "Tema já está em produção conforme alinhado com @rolf",
       "link": "https://redmine.platform.brobot.com.br/issues/57089"
-    },
-    {
-      "id": 71526,
-      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
-      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-04T11:48:02Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@joathan por gentileza, seguir com implementação também dos campos: Local da infração Valor da multa",
-      "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
       "id": 85035,
@@ -581,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/88060"
     },
     {
-      "id": 91320,
-      "task": "autos_bradesco_detran_rj_multas - UNSOLVED_ERROR",
-      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: UNSOLVED_ERROR, 70.81%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-09T18:53:01Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Conforme informei na task anterior(86462), esta spider estava usando apenas o CapSkip para resolver o captcha. Como agora a solução não está conseguindo resolvê-lo e está retornando erro, precisamos a",
-      "link": "https://redmine.platform.brobot.com.br/issues/91320"
-    },
-    {
       "id": 63729,
       "task": "Implementação de Novos Status de Multas com Categorização Automática | CM - Embarcador",
       "descricao": "Classificar as multas do CaçaMultas Embarcador em quatro status novos, Autuação, Em recurso, Inscrito na Se...",
@@ -605,13 +579,39 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/63729"
+    },
+    {
+      "id": 71526,
+      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
+      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-09T20:51:20Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo atualizado em produção. Seguir com testes.",
+      "link": "https://redmine.platform.brobot.com.br/issues/71526"
+    },
+    {
+      "id": 91320,
+      "task": "autos_bradesco_detran_rj_multas - UNSOLVED_ERROR",
+      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: UNSOLVED_ERROR, 70.81%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-09T21:41:19Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Sobre o UNSOLVED_ERROR: são mensagens que expiraram na fila. Como a spider estava retornando erros e as consultas demoravam devido às tentativas de retry, algumas mensagens foram descartadas por já te",
+      "link": "https://redmine.platform.brobot.com.br/issues/91320"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-09T19:55:57.642Z",
+  "gerado_em": "2026-11-10T11:25:52.392Z",
   "sprint_id": 76,
-  "total": 20,
+  "total": 18,
   "rows": [
     {
       "id": 86751,
@@ -622,9 +622,9 @@
       "status": "staging",
       "tipo": "reprovado",
       "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-09T19:33:44Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_bradesco_detran_rj_taxas e todas retornaram com erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Todas ",
+      "data_comentario": "2026-11-09T21:39:43Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Conforme informei nessa outra task: O capskip não está conseguindo resolver esse captcha, alterei a spider para resolver o captcha com o capsolver e reprocessei as consultas, poderia verificar @rodrig",
       "link": "https://redmine.platform.brobot.com.br/issues/86751"
     },
     {
@@ -682,34 +682,6 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo @gabriella divergências, no escopo da spider, entre o mapeamento da wiki, o que o backend espera receber (nota 73) e a spider atual. Por que resolver: a spider segue o mapeamento, e o ba",
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
-    },
-    {
-      "id": 82396,
-      "task": "Alteração da mensagem enviada ao motorista",
-      "descricao": "O motorista mandou uma mensagem no WhatsApp após o bot respondê-lo de uma outra mensagem e a mensagem envia...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-05T19:07:42Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan Aprovado Ambiente: Staging | Conta: Testes Funcionais | Versão: New Realizei o teste no painel de homologação e validei o comportamento do bot após a resposta do motorista. Conforme evidência",
-      "link": "https://redmine.platform.brobot.com.br/issues/82396"
-    },
-    {
-      "id": 82757,
-      "task": "Indicação de Condutores: fechar as lacunas G1–G8, criar os status que faltam e trazer o e-mail ao gestor para dentro da Platform",
-      "descricao": "Hoje o fluxo de Indicação de Condutores funciona de ponta a ponta apenas quando tudo dá certo (cenários 1 e 2 do board).",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-04T11:18:43Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/82757"
     },
     {
       "id": 83142,
