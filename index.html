@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-10T17:55:17.970Z",
+  "gerado_em": "2026-11-10T18:25:16.850Z",
   "total": 14,
   "rows": [
     {
@@ -540,19 +540,6 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo, a spider do ANTT Processos com as mudanças desta task está em staging (merge da branch bug/89246_autos_antt_vistas_pdf). Pode testar o fluxo junto com o backend/tela que o @felipe subiu? O q",
       "link": "https://redmine.platform.brobot.com.br/issues/90871"
-    },
-    {
-      "id": 90919,
-      "task": "Caçacondutores | Conferência CaçaCondutores: Status do alerta, Mensagem fora do fluxo, todas as indicações, paginação, filtros múltiplos, ações em lote e relatório",
-      "descricao": "A Conferência CaçaCondutores concentra o trabalho do suporte sobre Indicação, CNH e Exame toxicológico, mas hoje deixa lacunas.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-09T17:48:51Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gustavo atualizado em staging/dev.",
-      "link": "https://redmine.platform.brobot.com.br/issues/90919"
     },
     {
       "id": 71526,
@@ -657,14 +644,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo a consulta do Detran PR com e-CPF falhava porque o portal pede dois logins seguidos: primeiro o CPF e a senha do portal, depois o certificado. O que mudou: o cadastro do e-CPF ganhou o campo ",
       "link": "https://redmine.platform.brobot.com.br/issues/88060"
+    },
+    {
+      "id": 91325,
+      "task": "autos_detran_rn - UNSOLVED_ERROR",
+      "descricao": "Spider autos_detran_rn (principal: UNSOLVED_ERROR, 59.67%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "low",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-10T18:16:47Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@jose-ricardo @rodrigo Análise dos erros (Loki, 7 dias, 3.364 execuções): Corrigido (branch bug/91325_autos_detran_rn_expired_token, em staging: da1cf585c): UNSOLVED_ERROR \"Invalid input of type: 'Non",
+      "link": "https://redmine.platform.brobot.com.br/issues/91325"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-10T17:55:55.880Z",
+  "gerado_em": "2026-11-10T18:25:55.120Z",
   "sprint_id": 76,
-  "total": 18,
+  "total": 19,
   "rows": [
+    {
+      "id": 90919,
+      "task": "Caçacondutores | Conferência CaçaCondutores: Status do alerta, Mensagem fora do fluxo, todas as indicações, paginação, filtros múltiplos, ações em lote e relatório",
+      "descricao": "A Conferência CaçaCondutores concentra o trabalho do suporte sobre Indicação, CNH e Exame toxicológico, mas hoje deixa lacunas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-10T18:09:01Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan Segue ajuste Ambiente: Staging | Versão: New Durante os testes da tarefa, foram identificados alguns pontos: 1. Identificação da conta: na listagem da Conferência CaçaCondutores Indicação de ",
+      "link": "https://redmine.platform.brobot.com.br/issues/90919"
+    },
     {
       "id": 63729,
       "task": "Implementação de Novos Status de Multas com Categorização Automática | CM - Embarcador",
