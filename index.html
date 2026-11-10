@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-10T11:25:16.619Z",
-  "total": 10,
+  "gerado_em": "2026-11-10T11:55:15.960Z",
+  "total": 9,
   "rows": [
     {
       "id": 73585,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/90919"
     },
     {
-      "id": 88060,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
-      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-09T18:43:04Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/88060"
-    },
-    {
       "id": 63729,
       "task": "Implementação de Novos Status de Multas com Categorização Automática | CM - Embarcador",
       "descricao": "Classificar as multas do CaçaMultas Embarcador em quatro status novos, Autuação, Em recurso, Inscrito na Se...",
@@ -609,10 +596,38 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-10T11:25:52.392Z",
+  "gerado_em": "2026-11-10T11:55:50.126Z",
   "sprint_id": 76,
-  "total": 18,
+  "total": 19,
   "rows": [
+    {
+      "id": 88060,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
+      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-10T11:52:25Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New Durante o teste em Staging, identifiquei um problema na execução da spider autos_detran_pr. Evidência: Erro ao executar ",
+      "link": "https://redmine.platform.brobot.com.br/issues/88060"
+    },
+    {
+      "id": 75360,
+      "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
+      "descricao": "Alterar a regra de cálculo do card \"Média por Multa\" presente no dashboard do produto Caçamultas Embarcador...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-10T11:29:33Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo apenas relembrando da task.",
+      "link": "https://redmine.platform.brobot.com.br/issues/75360"
+    },
     {
       "id": 86751,
       "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
@@ -794,20 +809,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
       "link": "https://redmine.platform.brobot.com.br/issues/83270"
-    },
-    {
-      "id": 75360,
-      "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
-      "descricao": "Alterar a regra de cálculo do card \"Média por Multa\" presente no dashboard do produto Caçamultas Embarcador...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-09-10T20:13:45Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo correção aplicada. O card Média por Multa passa a considerar apenas as multas que possuem valor no campo selecionado no filtro de valor (Valor estimado, Valor da multa ou Valor do boleto). As",
-      "link": "https://redmine.platform.brobot.com.br/issues/75360"
     },
     {
       "id": 78408,
