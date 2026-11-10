@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-10T12:55:14.151Z",
-  "total": 10,
+  "gerado_em": "2026-11-10T13:25:16.663Z",
+  "total": 13,
   "rows": [
     {
       "id": 73585,
@@ -605,14 +605,33 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo apenas relembrando da task.",
       "link": "https://redmine.platform.brobot.com.br/issues/75360"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-10T12:55:49.497Z",
-  "sprint_id": 76,
-  "total": 18,
-  "rows": [
+    },
+    {
+      "id": 91042,
+      "task": "Admin | Contas: identificação de conta VIP com checkbox, coluna opcional, filtro e relatório",
+      "descricao": "Com o novo alinhamento operacional, o atendimento dos clientes passa a ser dividido entre duas equipes: o C...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-10T12:55:53Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91042"
+    },
+    {
+      "id": 91316,
+      "task": "autos_sefaz_pr_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_sefaz_pr_taxas (principal: CAPTCHA_NOT_SOLVED, 100%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-10T13:13:33Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Os erros de CAPTCHA ocorreram porque a spider estava usando apenas o CapSkip, que não está conseguindo resolvê-los no momento. Atualizei a spider para usar o CapSolver. @rodrigo, poderia testar, por g",
+      "link": "https://redmine.platform.brobot.com.br/issues/91316"
+    },
     {
       "id": 88060,
       "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
@@ -620,13 +639,19 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-10T11:52:25Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New Durante o teste em Staging, identifiquei um problema na execução da spider autos_detran_pr. Evidência: Erro ao executar ",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-10T13:23:23Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@felipe, a spider autos_detran_pr precisa do CPF e da senha, além do e-CPF e da respectiva senha. No portal, é necessário fazer primeiro o login com CPF e senha e, em seguida, realizar outro login usa",
       "link": "https://redmine.platform.brobot.com.br/issues/88060"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-11-10T13:25:53.839Z",
+  "sprint_id": 76,
+  "total": 17,
+  "rows": [
     {
       "id": 86751,
       "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
