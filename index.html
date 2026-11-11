@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-11T17:55:24.562Z",
-  "total": 12,
+  "gerado_em": "2026-11-11T18:25:16.892Z",
+  "total": 13,
   "rows": [
     {
       "id": 73585,
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/91328"
     },
     {
-      "id": 88060,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
-      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-10T17:19:24Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo a consulta do Detran PR com e-CPF falhava porque o portal pede dois logins seguidos: primeiro o CPF e a senha do portal, depois o certificado. O que mudou: o cadastro do e-CPF ganhou o campo ",
-      "link": "https://redmine.platform.brobot.com.br/issues/88060"
-    },
-    {
       "id": 91325,
       "task": "autos_detran_rn - UNSOLVED_ERROR",
       "descricao": "Spider autos_detran_rn (principal: UNSOLVED_ERROR, 59.67%)",
@@ -631,14 +618,54 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@rolf, por gentileza, poderia criar as novas variáveis solicitadas pelo @joathan?",
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
+    },
+    {
+      "id": 91415,
+      "task": "Possibilidade de alteração de status da indicação",
+      "descricao": "Atualmente não é possível realizar a alteração de status da indicação para os status necessários que precisamos.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-11T18:01:32Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91415"
+    },
+    {
+      "id": 91410,
+      "task": "Não alteração de status da indicação após retorno da spider",
+      "descricao": "A spider realizou a indicação e não alterou o status da indicação na plataforma, mesmo tendo retornado com as informações da indicação.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-11T18:23:58Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo Corrigido. Quando a indicação era iniciada dentro dos 3 dias finais do prazo, a verificação a 3 dias do vencimento rodava no lugar de registrar a resposta da spider. Isso gerava a co",
+      "link": "https://redmine.platform.brobot.com.br/issues/91410"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-11T17:56:04.912Z",
+  "gerado_em": "2026-11-11T18:25:52.980Z",
   "sprint_id": 76,
-  "total": 17,
+  "total": 18,
   "rows": [
+    {
+      "id": 88060,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
+      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-11T18:19:16Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New As consultas processaram com sucesso, utilizando a senha do portal corretamente e o certificado também, porém no JSON, o",
+      "link": "https://redmine.platform.brobot.com.br/issues/88060"
+    },
     {
       "id": 90919,
       "task": "Caçacondutores | Conferência CaçaCondutores: Status do alerta, Mensagem fora do fluxo, todas as indicações, paginação, filtros múltiplos, ações em lote e relatório",
