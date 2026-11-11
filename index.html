@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-11T13:25:24.113Z",
+  "gerado_em": "2026-11-11T13:55:21.383Z",
   "total": 13,
   "rows": [
     {
@@ -581,26 +581,13 @@
       "link": "https://redmine.platform.brobot.com.br/issues/91042"
     },
     {
-      "id": 91316,
-      "task": "autos_sefaz_pr_taxas - CAPTCHA_NOT_SOLVED",
-      "descricao": "Spider autos_sefaz_pr_taxas (principal: CAPTCHA_NOT_SOLVED, 100%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-10T13:13:33Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Os erros de CAPTCHA ocorreram porque a spider estava usando apenas o CapSkip, que não está conseguindo resolvê-los no momento. Atualizei a spider para usar o CapSolver. @rodrigo, poderia testar, por g",
-      "link": "https://redmine.platform.brobot.com.br/issues/91316"
-    },
-    {
       "id": 91328,
       "task": "autos_sefaz_ce_taxas - SCRAPY_ERROR",
       "descricao": "Spider autos_sefaz_ce_taxas (principal: SCRAPY_ERROR, 59.75%)",
       "category": "Spider - Erro na lógica de extração",
       "priority": "medium",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-10T15:58:44Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Tentei reproduzir os SCRAPY_ERROR mas aparentemente foi só uma instabilidade, testei a spider localmente e está funcionando normalmente. Sobre os XHR_ERROR, vi que em algumas requests o portal retorno",
@@ -626,7 +613,7 @@
       "category": "Spider - Erro na lógica de extração",
       "priority": "low",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-10T18:50:15Z",
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Por gentileza, testar a correção do autos_detran_rn em staging",
@@ -644,14 +631,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido. A consulta do Detran ES Taxas não era gerada porque as empresas das placas têm certificado digital válido. Quando existe certificado, a plataforma envia o certificado no l",
       "link": "https://redmine.platform.brobot.com.br/issues/91378"
+    },
+    {
+      "id": 90919,
+      "task": "Caçacondutores | Conferência CaçaCondutores: Status do alerta, Mensagem fora do fluxo, todas as indicações, paginação, filtros múltiplos, ações em lote e relatório",
+      "descricao": "A Conferência CaçaCondutores concentra o trabalho do suporte sobre Indicação, CNH e Exame toxicológico, mas hoje deixa lacunas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-11T13:52:09Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/90919"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-11T13:26:08.226Z",
+  "gerado_em": "2026-11-11T13:55:57.506Z",
   "sprint_id": 76,
   "total": 18,
   "rows": [
+    {
+      "id": 91316,
+      "task": "autos_sefaz_pr_taxas - CAPTCHA_NOT_SOLVED",
+      "descricao": "Spider autos_sefaz_pr_taxas (principal: CAPTCHA_NOT_SOLVED, 100%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-11T13:38:07Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91316"
+    },
     {
       "id": 86751,
       "task": "autos_bradesco_detran_rj_taxas - CAPTCHA_NOT_SOLVED",
@@ -679,20 +693,6 @@
       "comentario_autor": "Jose Ricardo",
       "comentario_trecho": "Mapeamento completo e disponível em:",
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
-    },
-    {
-      "id": 90919,
-      "task": "Caçacondutores | Conferência CaçaCondutores: Status do alerta, Mensagem fora do fluxo, todas as indicações, paginação, filtros múltiplos, ações em lote e relatório",
-      "descricao": "A Conferência CaçaCondutores concentra o trabalho do suporte sobre Indicação, CNH e Exame toxicológico, mas hoje deixa lacunas.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-10T18:09:01Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan Segue ajuste Ambiente: Staging | Versão: New Durante os testes da tarefa, foram identificados alguns pontos: 1. Identificação da conta: na listagem da Conferência CaçaCondutores Indicação de ",
-      "link": "https://redmine.platform.brobot.com.br/issues/90919"
     },
     {
       "id": 51016,
