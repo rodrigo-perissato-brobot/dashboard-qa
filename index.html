@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-11T11:55:14.675Z",
+  "gerado_em": "2026-11-11T12:25:17.444Z",
   "total": 13,
   "rows": [
     {
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
-      "id": 91320,
-      "task": "autos_bradesco_detran_rj_multas - UNSOLVED_ERROR",
-      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: UNSOLVED_ERROR, 70.81%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-09T21:41:19Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Sobre o UNSOLVED_ERROR: são mensagens que expiraram na fila. Como a spider estava retornando erros e as consultas demoravam devido às tentativas de retry, algumas mensagens foram descartadas por já te",
-      "link": "https://redmine.platform.brobot.com.br/issues/91320"
-    },
-    {
       "id": 75360,
       "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
       "descricao": "Alterar a regra de cálculo do card \"Média por Multa\" presente no dashboard do produto Caçamultas Embarcador...",
@@ -644,14 +631,41 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo Por gentileza, testar a correção do autos_detran_rn em staging",
       "link": "https://redmine.platform.brobot.com.br/issues/91325"
+    },
+    {
+      "id": 91378,
+      "task": "autos_detran_es_taxas - Spider não consome credencial",
+      "descricao": "Ao cadastrar uma credencial do Detran ES Taxas para uma conta foi possível analisar que a plataforma não re...",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-11T11:57:53Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo corrigido. A consulta do Detran ES Taxas não era gerada porque as empresas das placas têm certificado digital válido. Quando existe certificado, a plataforma envia o certificado no l",
+      "link": "https://redmine.platform.brobot.com.br/issues/91378"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-11T11:55:47.684Z",
+  "gerado_em": "2026-11-11T12:25:51.795Z",
   "sprint_id": 76,
-  "total": 19,
+  "total": 20,
   "rows": [
+    {
+      "id": 91320,
+      "task": "autos_bradesco_detran_rj_multas - UNSOLVED_ERROR",
+      "descricao": "Spider autos_bradesco_detran_rj_multas (principal: UNSOLVED_ERROR, 70.81%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-11T11:59:41Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91320"
+    },
     {
       "id": 91354,
       "task": "autos_detran_pb - PDF não salvo (FILE_NOT_SAVED) e data/órgão incorretos",
