@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-12T11:55:19.960Z",
-  "total": 12,
+  "gerado_em": "2026-11-12T12:25:14.091Z",
+  "total": 9,
   "rows": [
     {
       "id": 73585,
@@ -542,39 +542,13 @@
       "link": "https://redmine.platform.brobot.com.br/issues/90871"
     },
     {
-      "id": 91328,
-      "task": "autos_sefaz_ce_taxas - SCRAPY_ERROR",
-      "descricao": "Spider autos_sefaz_ce_taxas (principal: SCRAPY_ERROR, 59.75%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-10T15:58:44Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Tentei reproduzir os SCRAPY_ERROR mas aparentemente foi só uma instabilidade, testei a spider localmente e está funcionando normalmente. Sobre os XHR_ERROR, vi que em algumas requests o portal retorno",
-      "link": "https://redmine.platform.brobot.com.br/issues/91328"
-    },
-    {
-      "id": 91325,
-      "task": "autos_detran_rn - UNSOLVED_ERROR",
-      "descricao": "Spider autos_detran_rn (principal: UNSOLVED_ERROR, 59.67%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "low",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-10T18:50:15Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo Por gentileza, testar a correção do autos_detran_rn em staging",
-      "link": "https://redmine.platform.brobot.com.br/issues/91325"
-    },
-    {
       "id": 91378,
       "task": "autos_detran_es_taxas - Spider não consome credencial",
       "descricao": "Ao cadastrar uma credencial do Detran ES Taxas para uma conta foi possível analisar que a plataforma não re...",
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-11T11:57:53Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido. A consulta do Detran ES Taxas não era gerada porque as empresas das placas têm certificado digital válido. Quando existe certificado, a plataforma envia o certificado no l",
@@ -592,19 +566,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Implementado. Nas Configurações de Frotas, Taxas, Embarcador e Crono, dá para escolher entre agendar por dias da semana ou por dias do mês. Por dias do mês, o usuário marca os dias d",
       "link": "https://redmine.platform.brobot.com.br/issues/91303"
-    },
-    {
-      "id": 91415,
-      "task": "Possibilidade de alteração de status da indicação",
-      "descricao": "Atualmente não é possível realizar a alteração de status da indicação para os status necessários que precisamos.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-11T18:01:32Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo @rodrigo atualizado em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/91415"
     },
     {
       "id": 91410,
@@ -635,10 +596,52 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-12T11:55:57.918Z",
+  "gerado_em": "2026-11-12T12:25:50.083Z",
   "sprint_id": 76,
-  "total": 19,
+  "total": 22,
   "rows": [
+    {
+      "id": 91325,
+      "task": "autos_detran_rn - UNSOLVED_ERROR",
+      "descricao": "Spider autos_detran_rn (principal: UNSOLVED_ERROR, 59.67%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-12T12:21:04Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@thiago PR para a main:",
+      "link": "https://redmine.platform.brobot.com.br/issues/91325"
+    },
+    {
+      "id": 91415,
+      "task": "Possibilidade de alteração de status da indicação",
+      "descricao": "Atualmente não é possível realizar a alteração de status da indicação para os status necessários que precisamos.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-12T12:10:52Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91415"
+    },
+    {
+      "id": 91328,
+      "task": "autos_sefaz_ce_taxas - SCRAPY_ERROR",
+      "descricao": "Spider autos_sefaz_ce_taxas (principal: SCRAPY_ERROR, 59.75%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-12T11:56:57Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91328"
+    },
     {
       "id": 75360,
       "task": "Ajuste no cálculo do card \"Média por Multa\" – Desconsiderar multas sem valor",
