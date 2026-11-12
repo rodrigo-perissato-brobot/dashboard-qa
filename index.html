@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-12T17:25:16.858Z",
+  "gerado_em": "2026-11-12T17:55:14.131Z",
   "total": 8,
   "rows": [
     {
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/90871"
     },
     {
-      "id": 91378,
-      "task": "autos_detran_es_taxas - Spider não consome credencial",
-      "descricao": "Ao cadastrar uma credencial do Detran ES Taxas para uma conta foi possível analisar que a plataforma não re...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-11T11:57:53Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo corrigido. A consulta do Detran ES Taxas não era gerada porque as empresas das placas têm certificado digital válido. Quando existe certificado, a plataforma envia o certificado no l",
-      "link": "https://redmine.platform.brobot.com.br/issues/91378"
-    },
-    {
       "id": 91410,
       "task": "Não alteração de status da indicação após retorno da spider",
       "descricao": "A spider realizou a indicação e não alterou o status da indicação na plataforma, mesmo tendo retornado com as informações da indicação.",
@@ -579,14 +566,41 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "@gabriella @joathan template dados_indicacao_condutor_v3 APROVADO pela Meta (conferido 11/11 às 16:02). Liberado para subir o bot para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/71526"
+    },
+    {
+      "id": 90912,
+      "task": "Avaliar exibição completa da coluna \"Situação\" nos serviços de Frotas e Embarcador",
+      "descricao": "Solicito a avaliação da possibilidade de melhoria na exibição da coluna \"Situação\", tanto nos serviços de Frotas quanto de Embarcador.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-12T17:42:12Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo @gustavo atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/90912"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-12T17:25:50.512Z",
+  "gerado_em": "2026-11-12T17:55:48.910Z",
   "sprint_id": 76,
-  "total": 21,
+  "total": 22,
   "rows": [
+    {
+      "id": 91378,
+      "task": "autos_detran_es_taxas - Spider não consome credencial",
+      "descricao": "Ao cadastrar uma credencial do Detran ES Taxas para uma conta foi possível analisar que a plataforma não re...",
+      "category": "Backend - Consumo",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-12T17:50:58Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91378"
+    },
     {
       "id": 91619,
       "task": "Platform novo realizando filtro incorreto no alerta de infrações que irão vencer",
