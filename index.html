@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-13T18:25:13.731Z",
+  "gerado_em": "2026-11-13T18:55:16.525Z",
   "total": 11,
   "rows": [
     {
@@ -581,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/91460"
     },
     {
-      "id": 76680,
-      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
-      "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
-      "category": "Produtos - Customização fora do padrão",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-13T13:53:44Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo ajustado em staging. Os motoristas da conta demo agora têm CPF fictício com formato válido (ex.: 000.000.001-91), porque o sistema valida o CPF ao salvar o telefone. A indicação de condutor p",
-      "link": "https://redmine.platform.brobot.com.br/issues/76680"
-    },
-    {
       "id": 89978,
       "task": "BUG de Alerta na tela de Conferência de Indicação",
       "descricao": "O Alerta da indicação está com a mensagem \"Telefone do motorista ausente ou inválido\" e o bot está com a me...",
@@ -618,14 +605,41 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Em staging — pronto para teste (13/11) O que foi entregue Congelamento de entregas por conta, exclusivo da Transmaroni e atrás de uma chave desligada por padrão. Nenhuma outra conta muda de comportame",
       "link": "https://redmine.platform.brobot.com.br/issues/91868"
+    },
+    {
+      "id": 88616,
+      "task": "Correções de segurança e integridade: chave fixa, TLS, certificados, ambientes, seleção em massa e NSU",
+      "descricao": "Corrigir as vulnerabilidades e falhas de integridade levantadas no DFe: 1.",
+      "category": "Infraestrutura - Outros",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-13T18:48:36Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo @gustavo atualizado em staging (D). É pra tudo funcionar como antes. O que fiz foi remover uma chave fixa no código, por questão de segurança, e recifrar todos os certificados com outra chave",
+      "link": "https://redmine.platform.brobot.com.br/issues/88616"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-13T18:25:52.235Z",
+  "gerado_em": "2026-11-13T18:55:52.725Z",
   "sprint_id": 76,
-  "total": 17,
+  "total": 18,
   "rows": [
+    {
+      "id": 76680,
+      "task": "Conta de demonstração: dados fictícios, documentos anônimos e ações simuladas",
+      "descricao": "Preparar a conta de demonstração comercial para que o time comercial navegue e clique em tudo com segurança...",
+      "category": "Produtos - Customização fora do padrão",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-13T18:42:50Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan Aprovado Ambiente: Staging | Conta: [Teste]Conta demonstrativa Comercial | Versão: New Foi validada a correção dos CPFs fictícios dos motoristas, permitindo atualizar o telefone e prosseguir ",
+      "link": "https://redmine.platform.brobot.com.br/issues/76680"
+    },
     {
       "id": 71526,
       "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
