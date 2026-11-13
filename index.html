@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-13T11:55:19.177Z",
-  "total": 12,
+  "gerado_em": "2026-11-13T12:25:46.440Z",
+  "total": 11,
   "rows": [
     {
       "id": 73585,
@@ -488,19 +488,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gabriella @rodrigo subi para staging com domínio consultas-api.com.br sendo exibido em caso de white label. Pra funcionar corretamente, esse domínio precisa estar apontando para a atual url da api (n",
       "link": "https://redmine.platform.brobot.com.br/issues/73585"
-    },
-    {
-      "id": 39504,
-      "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
-      "descricao": "O cliente Edgar da Kadan solicitou a seguinte verificação: Gostaríamos de confirmar se os documentos de Mic...",
-      "category": "anterior",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-10-05T17:31:52Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo Confirmado: rastreamos as notas emitidas no Emissor Nacional. A consulta é diária, direta ao ambiente nacional, autenticada pelo certificado digital da empresa, e traz as notas em que o CNPJ ",
-      "link": "https://redmine.platform.brobot.com.br/issues/39504"
     },
     {
       "id": 63612,
@@ -587,7 +574,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-12T15:08:23Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo A SEFAZ/BA traz a cota única do IPVA 2026 com boleto (vencimento 12/11). O DETRAN/BA traz as 5 cotas, sem boleto, e uma linha de total de R$ 6.630,99 com vencimento 27/11. Antes grav",
@@ -626,7 +613,7 @@
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-12T19:03:22Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo corrigido. A placa enviada pela spider (veiculoPlaca) não era lida, por isso a coluna ficava vazia. O vencimento só era lido de npDataVencimentoAtual, que vem vazio enquanto a multa ",
@@ -635,10 +622,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-13T11:55:55.513Z",
+  "gerado_em": "2026-11-13T12:26:45.455Z",
   "sprint_id": 76,
   "total": 18,
   "rows": [
+    {
+      "id": 39504,
+      "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
+      "descricao": "O cliente Edgar da Kadan solicitou a seguinte verificação: Gostaríamos de confirmar se os documentos de Mic...",
+      "category": "Operação - Origem",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-13T12:20:53Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@gabriella @leonardo.paganotti este tema foi originado a 1 ano atrás e o Felipe comentou sobre. Poderiam por gentileza analisar (e responder o cliente se ainda aguarda resposta), e finalizar a task? V",
+      "link": "https://redmine.platform.brobot.com.br/issues/39504"
+    },
     {
       "id": 90928,
       "task": "Padronizar a exibição de nomes de empresas e CNPJs nos filtros das telas da plataforma",
@@ -652,20 +653,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/90928"
-    },
-    {
-      "id": 91378,
-      "task": "autos_detran_es_taxas - Spider não consome credencial",
-      "descricao": "Ao cadastrar uma credencial do Detran ES Taxas para uma conta foi possível analisar que a plataforma não re...",
-      "category": "Backend - Consumo",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-12T17:50:58Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/91378"
     },
     {
       "id": 51852,
