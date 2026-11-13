@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-13T14:55:14.957Z",
-  "total": 10,
+  "gerado_em": "2026-11-13T15:25:15.340Z",
+  "total": 9,
   "rows": [
     {
       "id": 73585,
@@ -544,7 +544,7 @@
     {
       "id": 91410,
       "task": "Não alteração de status da indicação após retorno da spider",
-      "descricao": "A spider realizou a indicação e não alterou o status da indicação na plataforma, mesmo tendo retornado com as informações da indicação.",
+      "descricao": "A spider realizou a indicação e não alterou o status da indicação na plataforma, mesmo tendo retornado com as informa��ões da indicação.",
       "category": "",
       "priority": "high",
       "status": "in progress",
@@ -553,19 +553,6 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Corrigido. Quando a indicação era iniciada dentro dos 3 dias finais do prazo, a verificação a 3 dias do vencimento rodava no lugar de registrar a resposta da spider. Isso gerava a co",
       "link": "https://redmine.platform.brobot.com.br/issues/91410"
-    },
-    {
-      "id": 71526,
-      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
-      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-11T19:10:18Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "@gabriella @joathan template dados_indicacao_condutor_v3 APROVADO pela Meta (conferido 11/11 às 16:02). Liberado para subir o bot para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/71526"
     },
     {
       "id": 91769,
@@ -609,10 +596,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-13T14:55:49.049Z",
+  "gerado_em": "2026-11-13T15:25:50.176Z",
   "sprint_id": 76,
-  "total": 16,
+  "total": 17,
   "rows": [
+    {
+      "id": 71526,
+      "task": "Inclusão de informações complementares na mensagem enviada ao condutor  - Suzantur",
+      "descricao": "Adequar o conteúdo da mensagem enviada aos condutores para incluir informações adicionais da infração.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-13T15:13:59Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/71526"
+    },
     {
       "id": 39504,
       "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
