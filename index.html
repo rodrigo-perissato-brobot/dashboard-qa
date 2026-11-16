@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-16T12:25:14.750Z",
-  "total": 11,
+  "gerado_em": "2026-11-16T12:55:21.809Z",
+  "total": 10,
   "rows": [
     {
       "id": 73585,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/91410"
     },
     {
-      "id": 91769,
-      "task": "BUG de consumo de Boleto na plataforma",
-      "descricao": "TMP5G59 consultou corretamente, trouxe as taxas e o boleto, porém, não foi consumido pela plataforma e mostrado para o cliente.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-12T15:08:23Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo A SEFAZ/BA traz a cota única do IPVA 2026 com boleto (vencimento 12/11). O DETRAN/BA traz as 5 cotas, sem boleto, e uma linha de total de R$ 6.630,99 com vencimento 27/11. Antes grav",
-      "link": "https://redmine.platform.brobot.com.br/issues/91769"
-    },
-    {
       "id": 91460,
       "task": "Ajuste de consumo do platform, consultas do DNIT Embarcador não estão colocando a placa",
       "descricao": "As infrações do DNIT do Embarcador não listou a placa do veículo infrator na plataforma, na consulta da spi...",
@@ -622,10 +609,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-16T12:25:49.210Z",
+  "gerado_em": "2026-11-16T12:55:59.529Z",
   "sprint_id": 77,
-  "total": 19,
+  "total": 20,
   "rows": [
+    {
+      "id": 91769,
+      "task": "BUG de consumo de Boleto na plataforma",
+      "descricao": "TMP5G59 consultou corretamente, trouxe as taxas e o boleto, porém, não foi consumido pela plataforma e mostrado para o cliente.",
+      "category": "Backend - Consumo",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-16T12:32:39Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91769"
+    },
     {
       "id": 91880,
       "task": "Problema ao extrair relatórios de notas - HIGHSTIL",
