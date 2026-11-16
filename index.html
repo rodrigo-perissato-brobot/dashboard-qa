@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-16T18:25:17.626Z",
-  "total": 9,
+  "gerado_em": "2026-11-16T18:55:14.863Z",
+  "total": 12,
   "rows": [
     {
       "id": 73585,
@@ -592,13 +592,52 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo em staging. Edição de status implementada no detalhe da multa e em lote pela listagem do CaçaMultas Frotas. À mão só dá para escolher Pago, Cancelado ou Encerrado, ou Sem informação ",
       "link": "https://redmine.platform.brobot.com.br/issues/89456"
+    },
+    {
+      "id": 88060,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
+      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-16T18:31:06Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo ajustado. O cpf_certificate_base64 agora sai com quebra de linha a cada 60 caracteres, no mesmo formato do certificado da empresa, e não passa mais da largura da tela no JSON da request. Para",
+      "link": "https://redmine.platform.brobot.com.br/issues/88060"
+    },
+    {
+      "id": 92100,
+      "task": "Indicação com histórico errado no front novo",
+      "descricao": "Houve uma infração que nunca foi indicada, porém, no histórico da consulta a mesma aparece com vários statu...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-16T18:37:32Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo @gustavo atualizado em staging. O histórico da indicação passa a mostrar só os eventos dela, sem misturar as outras indicações da conta.",
+      "link": "https://redmine.platform.brobot.com.br/issues/92100"
+    },
+    {
+      "id": 92216,
+      "task": "Migração do WhiteLabel",
+      "descricao": "Atualmente todos os clientes WhiteLabel utilizam o Platform Classic.",
+      "category": "Frontend - Novo frontend",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-16T18:49:13Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo whitelabel migrado para o front novo e no ar em staging para teste. O que mudou - agora abre o front novo (antes abria o Classic). - Login, \"Esqueci minha senha\" e \"Criar senha\" com a marca d",
+      "link": "https://redmine.platform.brobot.com.br/issues/92216"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-16T18:25:54.990Z",
+  "gerado_em": "2026-11-16T18:55:47.961Z",
   "sprint_id": 77,
-  "total": 16,
+  "total": 15,
   "rows": [
     {
       "id": 91410,
@@ -655,20 +694,6 @@
       "comentario_autor": "Jose Ricardo",
       "comentario_trecho": "mapeamento completo e disponível em:",
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
-    },
-    {
-      "id": 88060,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
-      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-11T18:19:16Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New As consultas processaram com sucesso, utilizando a senha do portal corretamente e o certificado também, porém no JSON, o",
-      "link": "https://redmine.platform.brobot.com.br/issues/88060"
     },
     {
       "id": 87066,
