@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-16T13:55:18.003Z",
+  "gerado_em": "2026-11-16T14:25:16.609Z",
   "total": 9,
   "rows": [
     {
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/91410"
     },
     {
-      "id": 91460,
-      "task": "Ajuste de consumo do platform, consultas do DNIT Embarcador não estão colocando a placa",
-      "descricao": "As infrações do DNIT do Embarcador não listou a placa do veículo infrator na plataforma, na consulta da spi...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-12T19:03:22Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo corrigido. A placa enviada pela spider (veiculoPlaca) não era lida, por isso a coluna ficava vazia. O vencimento só era lido de npDataVencimentoAtual, que vem vazio enquanto a multa ",
-      "link": "https://redmine.platform.brobot.com.br/issues/91460"
-    },
-    {
       "id": 89978,
       "task": "BUG de Alerta na tela de Conferência de Indicação",
       "descricao": "O Alerta da indicação está com a mensagem \"Telefone do motorista ausente ou inválido\" e o bot está com a me...",
@@ -592,14 +579,41 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging (D). É pra tudo funcionar como antes. O que fiz foi remover uma chave fixa no código, por questão de segurança, e recifrar todos os certificados com outra chave",
       "link": "https://redmine.platform.brobot.com.br/issues/88616"
+    },
+    {
+      "id": 90907,
+      "task": "autos_detran_ro_taxas - UNSOLVED_ERROR",
+      "descricao": "Spider autos_detran_ro_taxas (principal: UNSOLVED_ERROR, 100%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "to do",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-16T14:01:29Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@rodrigo a correção do 90907 está em staging (1 retry antes de retornar WRONG_CREDENTIALS na autos_detran_ro). Por gentileza seguir com os testes em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/90907"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-16T13:55:57.830Z",
+  "gerado_em": "2026-11-16T14:25:51.608Z",
   "sprint_id": 77,
   "total": 20,
   "rows": [
+    {
+      "id": 91460,
+      "task": "Ajuste de consumo do platform, consultas do DNIT Embarcador não estão colocando a placa",
+      "descricao": "As infrações do DNIT do Embarcador não listou a placa do veículo infrator na plataforma, na consulta da spi...",
+      "category": "Backend - Consumo",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-16T13:56:57Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91460"
+    },
     {
       "id": 91866,
       "task": "Spider Exclusiva com Congelamento de Atualizações nas Datas de Entrega - TRANSMARONI - 2253",
@@ -683,20 +697,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New As consultas processaram com sucesso, utilizando a senha do portal corretamente e o certificado também, porém no JSON, o",
       "link": "https://redmine.platform.brobot.com.br/issues/88060"
-    },
-    {
-      "id": 90919,
-      "task": "Caçacondutores | Conferência CaçaCondutores: Status do alerta, Mensagem fora do fluxo, todas as indicações, paginação, filtros múltiplos, ações em lote e relatório",
-      "descricao": "A Conferência CaçaCondutores concentra o trabalho do suporte sobre Indicação, CNH e Exame toxicológico, mas hoje deixa lacunas.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-11T15:38:55Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/90919"
     },
     {
       "id": 87066,
