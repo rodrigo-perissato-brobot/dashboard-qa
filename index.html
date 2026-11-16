@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-16T17:25:15.891Z",
-  "total": 10,
+  "gerado_em": "2026-11-16T17:55:15.565Z",
+  "total": 9,
   "rows": [
     {
       "id": 73585,
@@ -527,19 +527,6 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo, a spider do ANTT Processos com as mudanças desta task está em staging (merge da branch bug/89246_autos_antt_vistas_pdf). Pode testar o fluxo junto com o backend/tela que o @felipe subiu? O q",
       "link": "https://redmine.platform.brobot.com.br/issues/90871"
-    },
-    {
-      "id": 91410,
-      "task": "Não alteração de status da indicação após retorno da spider",
-      "descricao": "A spider realizou a indicação e não alterou o status da indicação na plataforma, mesmo tendo retornado com as informações da indicação.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-11T18:23:58Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo Corrigido. Quando a indicação era iniciada dentro dos 3 dias finais do prazo, a verificação a 3 dias do vencimento rodava no lugar de registrar a resposta da spider. Isso gerava a co",
-      "link": "https://redmine.platform.brobot.com.br/issues/91410"
     },
     {
       "id": 89978,
@@ -609,10 +596,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-16T17:25:51.894Z",
+  "gerado_em": "2026-11-16T17:55:50.751Z",
   "sprint_id": 77,
   "total": 16,
   "rows": [
+    {
+      "id": 91410,
+      "task": "Não alteração de status da indicação após retorno da spider",
+      "descricao": "A spider realizou a indicação e não alterou o status da indicação na plataforma, mesmo tendo retornado com as informações da indicação.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-16T17:25:53Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais Validações: - Atualização do status: validada. Após o retorno da spider, a indicação apresenta o status correto, sem retornar indevida",
+      "link": "https://redmine.platform.brobot.com.br/issues/91410"
+    },
     {
       "id": 43063,
       "task": "Novas Funcionalidades Cronotacógrafo",
@@ -626,20 +627,6 @@
       "comentario_autor": "Felipe Godoy",
       "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
       "link": "https://redmine.platform.brobot.com.br/issues/43063"
-    },
-    {
-      "id": 91866,
-      "task": "Spider Exclusiva com Congelamento de Atualizações nas Datas de Entrega - TRANSMARONI - 2253",
-      "descricao": "E CENÁRIO ATUAL Atualmente, a Maroni possui uma operação de grande volume, com aproximadamente 15.000 placas cadastradas na plataforma.",
-      "category": "Produtos - Customização fora do padrão",
-      "priority": "immediate",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-16T13:00:44Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "✅ Entregue em produção — feito EXATAMENTE como o cliente pediu (com prova) Conta: TRANSMARONI - SNE (2253) — exclusivo dela, nenhuma outra conta é afetada. Regra do cliente (Willian, 13/11 16:32): \"as",
-      "link": "https://redmine.platform.brobot.com.br/issues/91866"
     },
     {
       "id": 39504,
