@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-17T13:25:17.250Z",
+  "gerado_em": "2026-11-17T13:55:25.172Z",
   "total": 13,
   "rows": [
     {
@@ -581,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/89456"
     },
     {
-      "id": 88060,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
-      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-16T18:31:06Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo ajustado. O cpf_certificate_base64 agora sai com quebra de linha a cada 60 caracteres, no mesmo formato do certificado da empresa, e não passa mais da largura da tela no JSON da request. Para",
-      "link": "https://redmine.platform.brobot.com.br/issues/88060"
-    },
-    {
       "id": 92100,
       "task": "Indicação com histórico errado no front novo",
       "descricao": "Houve uma infração que nunca foi indicada, porém, no histórico da consulta a mesma aparece com vários statu...",
@@ -644,27 +631,40 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging. O que mudou - A chave que protege a senha dos certificados digitais saiu do código e agora vem do ambiente. As senhas já cadastradas em staging foram recifrada",
       "link": "https://redmine.platform.brobot.com.br/issues/88616"
+    },
+    {
+      "id": 83142,
+      "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
+      "descricao": "Spider autos_pge_rn (principal: NO_CAPTCHA_IMAGE, 100%)",
+      "category": "Spider - Outros",
+      "priority": "medium",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-17T13:31:15Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo a credencial gov.br padrão agora é aceita no autos_pge_rn. Atualizado em staging.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83142"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-17T13:25:51.322Z",
+  "gerado_em": "2026-11-17T13:56:05.488Z",
   "sprint_id": 77,
-  "total": 15,
+  "total": 14,
   "rows": [
     {
-      "id": 92301,
-      "task": "Erro: \"SqsSimplifyError => undefined method 'new' for an instance of Array\"",
-      "descricao": "",
-      "category": "Backend - Outros",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
+      "id": 88060,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
+      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "reprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-17T13:19:19Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@joathan de acordo, pode subir por favor.",
-      "link": "https://redmine.platform.brobot.com.br/issues/92301"
+      "data_comentario": "2026-11-17T13:54:19Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New Ao tentar realizar uma nova consulta avulsa para o DETRAN PR, está sendo apresentado o erro abaixo, o que impede a valid",
+      "link": "https://redmine.platform.brobot.com.br/issues/88060"
     },
     {
       "id": 51852,
@@ -735,20 +735,6 @@
       "comentario_autor": "Gabriella Mendes",
       "comentario_trecho": "@gustavo boa tarde, A atividade será tratada via tarefa 90919",
       "link": "https://redmine.platform.brobot.com.br/issues/89252"
-    },
-    {
-      "id": 83142,
-      "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
-      "descricao": "Spider autos_pge_rn (principal: NO_CAPTCHA_IMAGE, 100%)",
-      "category": "Spider - Outros",
-      "priority": "medium",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-10-29T16:49:47Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@delvin tentei efetuar os testes mas não está aceitando a credencial no consumer. @joathan como esta spider não utilizava gov.br e passou a utilizar, precisamos efetuar o mesmo tratamento das outras, ",
-      "link": "https://redmine.platform.brobot.com.br/issues/83142"
     },
     {
       "id": 88939,
