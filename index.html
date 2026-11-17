@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-17T14:55:15.554Z",
-  "total": 14,
+  "gerado_em": "2026-11-17T15:25:14.781Z",
+  "total": 16,
   "rows": [
     {
       "id": 73585,
@@ -657,14 +657,7 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo o erro não vem desta task. Ele começou com a troca da chave de criptografia da 88616, que entrou na staging em 13/11. O e-CPF guarda o certificado, a senha do certificado e a senha do portal ",
       "link": "https://redmine.platform.brobot.com.br/issues/88060"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-17T14:55:49.466Z",
-  "sprint_id": 77,
-  "total": 14,
-  "rows": [
+    },
     {
       "id": 89978,
       "task": "BUG de Alerta na tela de Conferência de Indicação",
@@ -672,13 +665,32 @@
       "category": "",
       "priority": "high",
       "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-17T14:10:07Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@Joathan, favor subir para produção. Realizei os testes em Staging, porém não consegui reproduzir o cenário relatado para validar a correção. Após a publicação, continuarei acompanhando o processo em ",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-17T14:57:15Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo atualizado em produção. Poderia testar e finalizar a macro? Qualquer problema, só me avisar.",
       "link": "https://redmine.platform.brobot.com.br/issues/89978"
     },
+    {
+      "id": 92320,
+      "task": "autos_detran_sc - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_sc (principal: SCRAPY_ERROR, 99.91%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-17T15:00:32Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "O portal alterou a homepage, conforme o screenshot abaixo, antes do login do gov. Essa mudança também afetou o backend, incluindo a forma como o login do gov é redirecionado. Precisei ajustar a spider",
+      "link": "https://redmine.platform.brobot.com.br/issues/92320"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-11-17T15:25:51.828Z",
+  "sprint_id": 77,
+  "total": 13,
+  "rows": [
     {
       "id": 51852,
       "task": "FICI Preenchida Automaticamente - Davi",
