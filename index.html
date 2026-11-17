@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-17T18:55:16.644Z",
+  "gerado_em": "2026-11-17T19:25:16.908Z",
   "total": 17,
   "rows": [
     {
@@ -594,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/92216"
     },
     {
-      "id": 91410,
-      "task": "Não alteração de status da indicação após retorno da spider",
-      "descricao": "A spider realizou a indicação e não alterou o status da indicação na plataforma, mesmo tendo retornado com as informações da indicação.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-16T19:36:57Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo corrigido.",
-      "link": "https://redmine.platform.brobot.com.br/issues/91410"
-    },
-    {
       "id": 88616,
       "task": "Correções de segurança e integridade: chave fixa, TLS, certificados, ambientes, seleção em massa e NSU",
       "descricao": "Corrigir as vulnerabilidades e falhas de integridade levantadas no DFe: 1.",
@@ -696,14 +683,41 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging. O que aconteceu: uma usuária colou a mensagem inteira de WhatsApp da notificação de multa no campo de busca das indicações de condutor. O texto tinha \"20%\" e a",
       "link": "https://redmine.platform.brobot.com.br/issues/92470"
+    },
+    {
+      "id": 92308,
+      "task": "autos_bradesco_detran_rj_ipva - XHR_ERROR",
+      "descricao": "📈 DISTRIBUICAO DE ERROS - XHR_ERROR: 160 casos (100.0%) - Prioridade: CRITICA 🔍 CASOS CONCRETOS COM DETALHES COMPLETOS 1.",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "to do",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-17T19:24:25Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@jose-ricardo A correção está em staging. Causa: o portal da Sefaz-RJ (darj-ipva-api) bloqueia o IP do nosso cluster. Ele responde com uma página HTML no lugar do JSON do captcha, por isso todas as co",
+      "link": "https://redmine.platform.brobot.com.br/issues/92308"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-17T18:55:50.668Z",
+  "gerado_em": "2026-11-17T19:25:53.496Z",
   "sprint_id": 77,
-  "total": 13,
+  "total": 14,
   "rows": [
+    {
+      "id": 91410,
+      "task": "Não alteração de status da indicação após retorno da spider",
+      "descricao": "A spider realizou a indicação e não alterou o status da indicação na plataforma, mesmo tendo retornado com as informações da indicação.",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-17T19:00:54Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91410"
+    },
     {
       "id": 51852,
       "task": "FICI Preenchida Automaticamente - Davi",
