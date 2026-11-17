@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-17T13:55:25.172Z",
-  "total": 13,
+  "gerado_em": "2026-11-17T14:25:14.658Z",
+  "total": 14,
   "rows": [
     {
       "id": 73585,
@@ -527,19 +527,6 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@rodrigo, a spider do ANTT Processos com as mudanças desta task está em staging (merge da branch bug/89246_autos_antt_vistas_pdf). Pode testar o fluxo junto com o backend/tela que o @felipe subiu? O q",
       "link": "https://redmine.platform.brobot.com.br/issues/90871"
-    },
-    {
-      "id": 89978,
-      "task": "BUG de Alerta na tela de Conferência de Indicação",
-      "descricao": "O Alerta da indicação está com a mensagem \"Telefone do motorista ausente ou inválido\" e o bot está com a me...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-13T17:42:15Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gustavo @rodrigo atualizado em staging. Quando o número do motorista não tem WhatsApp, a Conferência passa a mostrar só o alerta \"Telefone ausente ou inválido\", sem o \"Motorista não está respondendo\"",
-      "link": "https://redmine.platform.brobot.com.br/issues/89978"
     },
     {
       "id": 90907,
@@ -644,14 +631,20 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo a credencial gov.br padrão agora é aceita no autos_pge_rn. Atualizado em staging.",
       "link": "https://redmine.platform.brobot.com.br/issues/83142"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-17T13:56:05.488Z",
-  "sprint_id": 77,
-  "total": 14,
-  "rows": [
+    },
+    {
+      "id": 91864,
+      "task": "Placa do cliente Better Beef não processa devido à volumetria de infrações no Senatran",
+      "descricao": "Há uma placa do cliente Bettere Beef que não processa desde o mês 09 e a mesma possui uma volumetria muito alta de infrações.",
+      "category": "",
+      "priority": "high",
+      "status": "to do",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-17T14:00:50Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Acredito que o problema ocorra porque o Platform reinicia os contêineres após 2 horas de execução, e essas consultas estão levando mais tempo para concluir. Aumentei o limite de execução dos pods que ",
+      "link": "https://redmine.platform.brobot.com.br/issues/91864"
+    },
     {
       "id": 88060,
       "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
@@ -659,12 +652,32 @@
       "category": "Produtos - Melhoria de itens existentes",
       "priority": "medium",
       "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-17T13:54:19Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Testes Funcionais | Versão: New Ao tentar realizar uma nova consulta avulsa para o DETRAN PR, está sendo apresentado o erro abaixo, o que impede a valid",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-17T14:06:11Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo o erro não vem desta task. Ele começou com a troca da chave de criptografia da 88616, que entrou na staging em 13/11. O e-CPF guarda o certificado, a senha do certificado e a senha do portal ",
       "link": "https://redmine.platform.brobot.com.br/issues/88060"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-11-17T14:25:49.020Z",
+  "sprint_id": 77,
+  "total": 14,
+  "rows": [
+    {
+      "id": 89978,
+      "task": "BUG de Alerta na tela de Conferência de Indicação",
+      "descricao": "O Alerta da indicação está com a mensagem \"Telefone do motorista ausente ou inválido\" e o bot está com a me...",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-17T14:10:07Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@Joathan, favor subir para produção. Realizei os testes em Staging, porém não consegui reproduzir o cenário relatado para validar a correção. Após a publicação, continuarei acompanhando o processo em ",
+      "link": "https://redmine.platform.brobot.com.br/issues/89978"
     },
     {
       "id": 51852,
