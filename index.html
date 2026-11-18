@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-18T10:55:15.033Z",
-  "total": 17,
+  "gerado_em": "2026-11-18T11:25:28.925Z",
+  "total": 14,
   "rows": [
     {
       "id": 73585,
@@ -574,7 +574,7 @@
       "category": "",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-11-16T18:37:32Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging. O histórico da indicação passa a mostrar só os eventos dela, sem misturar as outras indicações da conta.",
@@ -607,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/88616"
     },
     {
-      "id": 83142,
-      "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
-      "descricao": "Spider autos_pge_rn (principal: NO_CAPTCHA_IMAGE, 100%)",
-      "category": "Spider - Outros",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-17T13:31:15Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo a credencial gov.br padrão agora é aceita no autos_pge_rn. Atualizado em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83142"
-    },
-    {
       "id": 91864,
       "task": "Placa do cliente Better Beef não processa devido à volumetria de infrações no Senatran",
       "descricao": "Há uma placa do cliente Bettere Beef que não processa desde o mês 09 e a mesma possui uma volumetria muito alta de infrações.",
@@ -631,19 +618,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Acredito que o problema ocorra porque o Platform reinicia os contêineres após 2 horas de execução, e essas consultas estão levando mais tempo para concluir. Aumentei o limite de execução dos pods que ",
       "link": "https://redmine.platform.brobot.com.br/issues/91864"
-    },
-    {
-      "id": 88060,
-      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
-      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-17T14:06:11Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo o erro não vem desta task. Ele começou com a troca da chave de criptografia da 88616, que entrou na staging em 13/11. O e-CPF guarda o certificado, a senha do certificado e a senha do portal ",
-      "link": "https://redmine.platform.brobot.com.br/issues/88060"
     },
     {
       "id": 89978,
@@ -683,27 +657,56 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo A correção está em staging. Causa: o portal da Sefaz-RJ (darj-ipva-api) bloqueia o IP do nosso cluster. Ele responde com uma página HTML no lugar do JSON do captcha, por isso todas as co",
       "link": "https://redmine.platform.brobot.com.br/issues/92308"
-    },
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-11-18T11:26:25.545Z",
+  "sprint_id": 77,
+  "total": 17,
+  "rows": [
     {
       "id": 92320,
       "task": "autos_detran_sc - SCRAPY_ERROR",
       "descricao": "Spider autos_detran_sc (principal: SCRAPY_ERROR, 99.91%)",
       "category": "Spider - Erro na lógica de extração",
       "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-17T22:48:24Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@jose-ricardo. Também percebi que a spider não registrou nenhuma consulta bem-sucedida nos últimos três dias. No mesmo período, o gasto com proxy dela aumentou de forma considerável, chegando a fazer ",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-18T11:24:17Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/92320"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-18T10:55:47.909Z",
-  "sprint_id": 77,
-  "total": 14,
-  "rows": [
+    },
+    {
+      "id": 88060,
+      "task": "Cadastro de Credencial para Certificado Digital e-CPF ",
+      "descricao": "Hoje o certificado digital só pode ser cadastrado em Empresas e Filiais, preso a um CNPJ.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-18T11:18:24Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88060"
+    },
+    {
+      "id": 83142,
+      "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
+      "descricao": "Spider autos_pge_rn (principal: NO_CAPTCHA_IMAGE, 100%)",
+      "category": "Spider - Outros",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-18T11:08:23Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@joathan @thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/83142"
+    },
     {
       "id": 91410,
       "task": "Não alteração de status da indicação após retorno da spider",
