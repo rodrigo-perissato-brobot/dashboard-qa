@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-18T11:25:28.925Z",
-  "total": 14,
+  "gerado_em": "2026-11-18T11:55:15.630Z",
+  "total": 13,
   "rows": [
     {
       "id": 73585,
@@ -607,19 +607,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/88616"
     },
     {
-      "id": 91864,
-      "task": "Placa do cliente Better Beef não processa devido à volumetria de infrações no Senatran",
-      "descricao": "Há uma placa do cliente Bettere Beef que não processa desde o mês 09 e a mesma possui uma volumetria muito alta de infrações.",
-      "category": "",
-      "priority": "high",
-      "status": "to do",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-17T14:00:50Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Acredito que o problema ocorra porque o Platform reinicia os contêineres após 2 horas de execução, e essas consultas estão levando mais tempo para concluir. Aumentei o limite de execução dos pods que ",
-      "link": "https://redmine.platform.brobot.com.br/issues/91864"
-    },
-    {
       "id": 89978,
       "task": "BUG de Alerta na tela de Conferência de Indicação",
       "descricao": "O Alerta da indicação está com a mensagem \"Telefone do motorista ausente ou inválido\" e o bot está com a me...",
@@ -661,23 +648,23 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-18T11:26:25.545Z",
+  "gerado_em": "2026-11-18T11:55:52.539Z",
   "sprint_id": 77,
   "total": 17,
   "rows": [
     {
-      "id": 92320,
-      "task": "autos_detran_sc - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_sc (principal: SCRAPY_ERROR, 99.91%)",
-      "category": "Spider - Erro na lógica de extração",
+      "id": 91864,
+      "task": "Placa do cliente Better Beef não processa devido à volumetria de infrações no Senatran",
+      "descricao": "Há uma placa do cliente Bettere Beef que não processa desde o mês 09 e a mesma possui uma volumetria muito alta de infrações.",
+      "category": "Spider - Outros",
       "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-18T11:24:17Z",
+      "status": "in progress",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-18T11:45:27Z",
       "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/92320"
+      "comentario_trecho": "@thiago Reprovado. Processei algumas consultas da placa TLW5I05 no SNE mas ainda não processou com sucesso. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Poderia verificar?",
+      "link": "https://redmine.platform.brobot.com.br/issues/91864"
     },
     {
       "id": 88060,
