@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-17T19:55:18.105Z",
+  "gerado_em": "2026-11-18T10:25:24.182Z",
   "total": 17,
   "rows": [
     {
@@ -659,19 +659,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/89978"
     },
     {
-      "id": 92320,
-      "task": "autos_detran_sc - SCRAPY_ERROR",
-      "descricao": "Spider autos_detran_sc (principal: SCRAPY_ERROR, 99.91%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-17T15:00:32Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "O portal alterou a homepage, conforme o screenshot abaixo, antes do login do gov. Essa mudança também afetou o backend, incluindo a forma como o login do gov é redirecionado. Precisei ajustar a spider",
-      "link": "https://redmine.platform.brobot.com.br/issues/92320"
-    },
-    {
       "id": 92470,
       "task": "Busca com \"%\" solto gera erro 400 e e-mail de erro quebrado (driver_indications)",
       "descricao": "",
@@ -696,11 +683,24 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo A correção está em staging. Causa: o portal da Sefaz-RJ (darj-ipva-api) bloqueia o IP do nosso cluster. Ele responde com uma página HTML no lugar do JSON do captcha, por isso todas as co",
       "link": "https://redmine.platform.brobot.com.br/issues/92308"
+    },
+    {
+      "id": 92320,
+      "task": "autos_detran_sc - SCRAPY_ERROR",
+      "descricao": "Spider autos_detran_sc (principal: SCRAPY_ERROR, 99.91%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-17T22:48:24Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@jose-ricardo. Também percebi que a spider não registrou nenhuma consulta bem-sucedida nos últimos três dias. No mesmo período, o gasto com proxy dela aumentou de forma considerável, chegando a fazer ",
+      "link": "https://redmine.platform.brobot.com.br/issues/92320"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-17T19:55:51.723Z",
+  "gerado_em": "2026-11-18T10:25:57.020Z",
   "sprint_id": 77,
   "total": 14,
   "rows": [
