@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-18T12:55:21.740Z",
+  "gerado_em": "2026-11-18T13:25:17.769Z",
   "total": 12,
   "rows": [
     {
@@ -622,7 +622,7 @@
     {
       "id": 92308,
       "task": "autos_bradesco_detran_rj_ipva - XHR_ERROR",
-      "descricao": "📈 DISTRIBUICAO DE ERROS - XHR_ERROR: 160 casos (100.0%) - Prioridade: CRITICA 🔍 CASOS CONCRETOS COM DETALHES COMPLETOS 1.",
+      "descricao": "📈 DISTRIBUICAO DE ERROS ��� - XHR_ERROR: 160 casos (100.0%) - Prioridade: CRITICA 🔍 CASOS CONCRETOS COM DETALHES COMPLETOS 1.",
       "category": "Spider - Erro na lógica de extração",
       "priority": "medium",
       "status": "to do",
@@ -635,24 +635,10 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-18T12:55:57.965Z",
+  "gerado_em": "2026-11-18T13:25:51.536Z",
   "sprint_id": 77,
   "total": 18,
   "rows": [
-    {
-      "id": 89456,
-      "task": "CaçaMultas Frotas | Multas: edição de status individual e em lote, com trava do desfecho manual e Histórico de Versões",
-      "descricao": "Hoje o cliente do CaçaMultas Frotas não consegue alterar o status de uma multa.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-18T12:54:13Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe Aprovado Ambiente: Staging | Conta: Testes Funcionais | Versão: New Foi validada a funcionalidade de edição manual de status das multas no CaçaMultas Frotas, contemplando: - Edição individual:",
-      "link": "https://redmine.platform.brobot.com.br/issues/89456"
-    },
     {
       "id": 83142,
       "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
@@ -662,10 +648,24 @@
       "status": "awaiting deploy",
       "tipo": "aprovado",
       "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-18T12:53:44Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "Atualizado em produção.",
+      "data_comentario": "2026-11-18T12:59:34Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@delvin, vi que a spider agora está usando o Data Impulse, mas não encontrei a zona configurada para ela no site, nem as referências de variáveis no k8s/chart/values.yaml. Você pode verificar, por fav",
       "link": "https://redmine.platform.brobot.com.br/issues/83142"
+    },
+    {
+      "id": 89456,
+      "task": "CaçaMultas Frotas | Multas: edição de status individual e em lote, com trava do desfecho manual e Histórico de Versões",
+      "descricao": "Hoje o cliente do CaçaMultas Frotas não consegue alterar o status de uma multa.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-18T12:56:15Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/89456"
     },
     {
       "id": 91864,
