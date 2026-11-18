@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-18T17:55:16.118Z",
-  "total": 10,
+  "gerado_em": "2026-11-18T18:25:18.704Z",
+  "total": 12,
   "rows": [
     {
       "id": 73585,
@@ -587,7 +587,7 @@
       "category": "",
       "priority": "medium",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "gustavo",
       "data_comentario": "2026-11-17T18:07:16Z",
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo @gustavo atualizado em staging. O que aconteceu: uma usuária colou a mensagem inteira de WhatsApp da notificação de multa no campo de busca das indicações de condutor. O texto tinha \"20%\" e a",
@@ -605,11 +605,37 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Atualizado em produção. @gabriella pode encerrar a tarefa? por gentileza.",
       "link": "https://redmine.platform.brobot.com.br/issues/85035"
+    },
+    {
+      "id": 92443,
+      "task": "autos_sne_denatran_indicacao_condutor - CAPTCHA_INCORRECTLY_SOLVED",
+      "descricao": "Spider autos_sne_denatran_indicacao_condutor, 29.23% de erro (principal: PAGE_MALFUNCTION, 73.68%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "immediate",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-18T18:07:03Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Os erros CAPTCHA_INCORRECTLY_SOLVED aconteciam porque a spider autos_sne_denatran_indicacao_condutor usava só a Power Sistemas (SmartAPI) para resolver o hCaptcha do SNE. Quando o portal recusava o to",
+      "link": "https://redmine.platform.brobot.com.br/issues/92443"
+    },
+    {
+      "id": 92616,
+      "task": "Indicações aguardando a indicação estão aparecendo na tela de conferência do CaçaCondutores",
+      "descricao": "As indicações que não tiveram nenhum motorista indicado estão aparecendo com erro por falha de envio de ema...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-18T18:21:58Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@gustavo @rodrigo atualizado em staging. Indicações em \"Aguardando Indicação\" (e as que o cliente optou por não indicar) deixam de gerar alerta de e-mail na Conferência. Os cerca de 3.150 alertas de \"",
+      "link": "https://redmine.platform.brobot.com.br/issues/92616"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-18T17:55:49.953Z",
+  "gerado_em": "2026-11-18T18:25:54.465Z",
   "sprint_id": 77,
   "total": 21,
   "rows": [
