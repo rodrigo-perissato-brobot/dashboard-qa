@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-18T13:25:17.769Z",
+  "gerado_em": "2026-11-18T13:55:17.231Z",
   "total": 12,
   "rows": [
     {
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85035"
     },
     {
-      "id": 92100,
-      "task": "Indicação com histórico errado no front novo",
-      "descricao": "Houve uma infração que nunca foi indicada, porém, no histórico da consulta a mesma aparece com vários statu...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-16T18:37:32Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gustavo atualizado em staging. O histórico da indicação passa a mostrar só os eventos dela, sem misturar as outras indicações da conta.",
-      "link": "https://redmine.platform.brobot.com.br/issues/92100"
-    },
-    {
       "id": 92216,
       "task": "Migração do WhiteLabel",
       "descricao": "Atualmente todos os clientes WhiteLabel utilizam o Platform Classic.",
@@ -622,7 +609,7 @@
     {
       "id": 92308,
       "task": "autos_bradesco_detran_rj_ipva - XHR_ERROR",
-      "descricao": "📈 DISTRIBUICAO DE ERROS ��� - XHR_ERROR: 160 casos (100.0%) - Prioridade: CRITICA 🔍 CASOS CONCRETOS COM DETALHES COMPLETOS 1.",
+      "descricao": "📈 DISTRIBUICAO DE ERROS - XHR_ERROR: 160 casos (100.0%) - Prioridade: CRITICA 🔍 CASOS CONCRETOS COM DETALHES COMPLETOS 1.",
       "category": "Spider - Erro na lógica de extração",
       "priority": "medium",
       "status": "to do",
@@ -631,14 +618,41 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo A correção está em staging. Causa: o portal da Sefaz-RJ (darj-ipva-api) bloqueia o IP do nosso cluster. Ele responde com uma página HTML no lugar do JSON do captcha, por isso todas as co",
       "link": "https://redmine.platform.brobot.com.br/issues/92308"
+    },
+    {
+      "id": 92501,
+      "task": "Permitir vinculação de placas aos Grupos de Permissões, com seleção individual e importação em lote.",
+      "descricao": "Implementar no cadastro de Grupos de Permissões uma funcionalidade que permita vincular placas específicas...",
+      "category": "",
+      "priority": "immediate",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-18T13:32:14Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "@rodrigo @gustavo — pronto para teste em staging. PRIORIDADE TOTAL: o teste do cenário da Maroni deve ser feito com urgência, antes de qualquer outra atividade. O que foi entregue Restrição por placa ",
+      "link": "https://redmine.platform.brobot.com.br/issues/92501"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-18T13:25:51.536Z",
+  "gerado_em": "2026-11-18T13:55:51.910Z",
   "sprint_id": 77,
-  "total": 18,
+  "total": 19,
   "rows": [
+    {
+      "id": 92100,
+      "task": "Indicação com histórico errado no front novo",
+      "descricao": "Houve uma infração que nunca foi indicada, porém, no histórico da consulta a mesma aparece com vários statu...",
+      "category": "",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-18T13:40:35Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/92100"
+    },
     {
       "id": 83142,
       "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
