@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-19T13:25:24.830Z",
-  "total": 14,
+  "gerado_em": "2026-11-19T13:55:36.688Z",
+  "total": 12,
   "rows": [
     {
       "id": 73585,
@@ -529,19 +529,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/90871"
     },
     {
-      "id": 90907,
-      "task": "autos_detran_ro_taxas - UNSOLVED_ERROR",
-      "descricao": "Spider autos_detran_ro_taxas (principal: UNSOLVED_ERROR, 100%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "medium",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-16T14:01:29Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@rodrigo a correção do 90907 está em staging (1 retry antes de retornar WRONG_CREDENTIALS na autos_detran_ro). Por gentileza seguir com os testes em staging.",
-      "link": "https://redmine.platform.brobot.com.br/issues/90907"
-    },
-    {
       "id": 92216,
       "task": "Migração do WhiteLabel",
       "descricao": "Atualmente todos os clientes WhiteLabel utilizam o Platform Classic.",
@@ -579,19 +566,6 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@gustavo atualizado em produção. Poderia testar e finalizar a macro? Qualquer problema, só me avisar.",
       "link": "https://redmine.platform.brobot.com.br/issues/89978"
-    },
-    {
-      "id": 92470,
-      "task": "Busca com \"%\" solto gera erro 400 e e-mail de erro quebrado (driver_indications)",
-      "descricao": "",
-      "category": "",
-      "priority": "medium",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-17T18:07:16Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gustavo atualizado em staging. O que aconteceu: uma usuária colou a mensagem inteira de WhatsApp da notificação de multa no campo de busca das indicações de condutor. O texto tinha \"20%\" e a",
-      "link": "https://redmine.platform.brobot.com.br/issues/92470"
     },
     {
       "id": 85035,
@@ -661,10 +635,52 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-19T13:26:02.220Z",
+  "gerado_em": "2026-11-19T13:56:13.558Z",
   "sprint_id": 77,
-  "total": 18,
+  "total": 20,
   "rows": [
+    {
+      "id": 83142,
+      "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
+      "descricao": "Spider autos_pge_rn (principal: NO_CAPTCHA_IMAGE, 100%)",
+      "category": "Spider - Outros",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-19T13:54:35Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@thiago Alterei pra usar BrightData a pedido do Rodrigo, por ser mais facil de configurar e a spider ter um volume de consultas baixo. Foi criada a zona e incluida no arquivo values.yaml",
+      "link": "https://redmine.platform.brobot.com.br/issues/83142"
+    },
+    {
+      "id": 92470,
+      "task": "Busca com \"%\" solto gera erro 400 e e-mail de erro quebrado (driver_indications)",
+      "descricao": "",
+      "category": "",
+      "priority": "medium",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-19T13:47:58Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@joathan favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/92470"
+    },
+    {
+      "id": 90907,
+      "task": "autos_detran_ro_taxas - UNSOLVED_ERROR",
+      "descricao": "Spider autos_detran_ro_taxas (principal: UNSOLVED_ERROR, 100%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "medium",
+      "status": "in progress",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-19T13:42:38Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@delvin com relação à spider, está Aprovado. Processei as consultas na spider autos_detran_ro_taxas e os WRONG_CREDENTIALS/UNSOLVED_ERROR não aconteceram mais. Ambiente: Staging | Conta: Testes Funcio",
+      "link": "https://redmine.platform.brobot.com.br/issues/90907"
+    },
     {
       "id": 92501,
       "task": "Permitir vinculação de placas aos Grupos de Permissões, com seleção individual e importação em lote.",
@@ -678,20 +694,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@rolf favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/92501"
-    },
-    {
-      "id": 83142,
-      "task": "autos_pge_rn - NO_CAPTCHA_IMAGE",
-      "descricao": "Spider autos_pge_rn (principal: NO_CAPTCHA_IMAGE, 100%)",
-      "category": "Spider - Outros",
-      "priority": "medium",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-18T12:59:34Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@delvin, vi que a spider agora está usando o Data Impulse, mas não encontrei a zona configurada para ela no site, nem as referências de variáveis no k8s/chart/values.yaml. Você pode verificar, por fav",
-      "link": "https://redmine.platform.brobot.com.br/issues/83142"
     },
     {
       "id": 89456,
