@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-24T11:55:12.261Z",
+  "gerado_em": "2026-11-24T12:25:08.205Z",
   "total": 8,
   "rows": [
     {
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/92652"
     },
     {
-      "id": 93023,
-      "task": "Admin > Eventos: filtros Tipo e Módulo não funcionam",
-      "descricao": "Na tela Admin Eventos do front novo, os filtros Tipo e Módulo não alteram a listagem.",
-      "category": "",
-      "priority": "low",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-23T18:04:23Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo Corrigidos os filtros Tipo e Módulo da tela Admin Eventos do front novo, que não alteravam a listagem. O filtro Tipo agora aceita mais de um tipo selecionado, o filtro Módulo tem as ",
-      "link": "https://redmine.platform.brobot.com.br/issues/93023"
-    },
-    {
       "id": 92624,
       "task": "autos_antt - HTML_ERROR",
       "descricao": "Spider autos_antt",
@@ -579,14 +566,7 @@
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo Análise e correção (92625) Há dois erros do portal da ANTT que geram este problema: 1) \"Transaction Scope failure on begin\" Instabilidade passageira do portal, concentrada de madrugada (",
       "link": "https://redmine.platform.brobot.com.br/issues/92624"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-24T11:55:45.112Z",
-  "sprint_id": 78,
-  "total": 17,
-  "rows": [
+    },
     {
       "id": 91864,
       "task": "Placa do cliente Better Beef não processa devido à volumetria de infrações no Senatran",
@@ -594,12 +574,32 @@
       "category": "Spider - Outros",
       "priority": "high",
       "status": "in progress",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-24T12:16:51Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "@Rodrigo, peço também que você teste com placas e cenários diferentes, porque fiz várias mudanças nessa branch. Uma delas tira as requests desnecessárias da busca de suspensas e canceladas: essa busca",
+      "link": "https://redmine.platform.brobot.com.br/issues/91864"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-11-24T12:25:38.229Z",
+  "sprint_id": 78,
+  "total": 16,
+  "rows": [
+    {
+      "id": 93023,
+      "task": "Admin > Eventos: filtros Tipo e Módulo não funcionam",
+      "descricao": "Na tela Admin Eventos do front novo, os filtros Tipo e Módulo não alteram a listagem.",
+      "category": "",
+      "priority": "low",
+      "status": "in progress",
       "tipo": "reprovado",
       "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-23T21:11:54Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Sigo trabalhando nesta tarefa. Adicionei cache no Redis para os retries: quando a consulta é refeita, a spider aproveita o que já coletou em vez de começar do zero. Também identifiquei buscas desneces",
-      "link": "https://redmine.platform.brobot.com.br/issues/91864"
+      "data_comentario": "2026-11-24T12:14:08Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe Segue Ajuste Ambiente: Staging | Versão: New Durante os testes exploratórios na tela Admin Eventos do front novo, identifiquei alguns ajustes que podem melhorar a cobertura e a usabilidade dos",
+      "link": "https://redmine.platform.brobot.com.br/issues/93023"
     },
     {
       "id": 88939,
@@ -656,20 +656,6 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Spider atualizada em produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/90907"
-    },
-    {
-      "id": 92628,
-      "task": "Esqueci minha senha - Funcionalidade não funciona no novo front",
-      "descricao": "A funcionalidade \"Esqueci minha senha\" não está funcionando no novo front da plataforma.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-19T17:48:54Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/92628"
     },
     {
       "id": 51852,
