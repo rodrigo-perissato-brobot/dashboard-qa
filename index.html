@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-23T19:25:50.700Z",
-  "total": 7,
+  "gerado_em": "2026-11-24T11:25:12.795Z",
+  "total": 8,
   "rows": [
     {
       "id": 73585,
@@ -566,14 +566,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Corrigidos os filtros Tipo e Módulo da tela Admin Eventos do front novo, que não alteravam a listagem. O filtro Tipo agora aceita mais de um tipo selecionado, o filtro Módulo tem as ",
       "link": "https://redmine.platform.brobot.com.br/issues/93023"
+    },
+    {
+      "id": 92624,
+      "task": "autos_antt - HTML_ERROR",
+      "descricao": "Spider autos_antt",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "to do",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-23T23:52:39Z",
+      "comentario_autor": "Delvin Williams Perez",
+      "comentario_trecho": "@jose-ricardo Análise e correção (92625) Há dois erros do portal da ANTT que geram este problema: 1) \"Transaction Scope failure on begin\" Instabilidade passageira do portal, concentrada de madrugada (",
+      "link": "https://redmine.platform.brobot.com.br/issues/92624"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-23T19:26:25.256Z",
+  "gerado_em": "2026-11-24T11:25:44.528Z",
   "sprint_id": 78,
   "total": 17,
   "rows": [
+    {
+      "id": 91864,
+      "task": "Placa do cliente Better Beef não processa devido à volumetria de infrações no Senatran",
+      "descricao": "Há uma placa do cliente Bettere Beef que não processa desde o mês 09 e a mesma possui uma volumetria muito alta de infrações.",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-23T21:11:54Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Sigo trabalhando nesta tarefa. Adicionei cache no Redis para os retries: quando a consulta é refeita, a spider aproveita o que já coletou em vez de começar do zero. Também identifiquei buscas desneces",
+      "link": "https://redmine.platform.brobot.com.br/issues/91864"
+    },
     {
       "id": 88939,
       "task": "Erro intermitente ao acessar Definições > Veículos e Serviços no novo front",
@@ -643,20 +670,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@joathan favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/92628"
-    },
-    {
-      "id": 91864,
-      "task": "Placa do cliente Better Beef não processa devido à volumetria de infrações no Senatran",
-      "descricao": "Há uma placa do cliente Bettere Beef que não processa desde o mês 09 e a mesma possui uma volumetria muito alta de infrações.",
-      "category": "Spider - Outros",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-18T11:45:27Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago Reprovado. Processei algumas consultas da placa TLW5I05 no SNE mas ainda não processou com sucesso. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Poderia verificar?",
-      "link": "https://redmine.platform.brobot.com.br/issues/91864"
     },
     {
       "id": 51852,
