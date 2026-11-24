@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-24T16:55:09.796Z",
-  "total": 7,
+  "gerado_em": "2026-11-24T17:25:09.877Z",
+  "total": 8,
   "rows": [
     {
       "id": 73585,
@@ -548,7 +548,7 @@
       "category": "Portal - Instabilidade ou indisponibilidade",
       "priority": "high",
       "status": "to do",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-23T23:52:39Z",
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo Análise e correção (92625) Há dois erros do portal da ANTT que geram este problema: 1) \"Transaction Scope failure on begin\" Instabilidade passageira do portal, concentrada de madrugada (",
@@ -566,13 +566,26 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "@Rodrigo, peço também que você teste com placas e cenários diferentes, porque fiz várias mudanças nessa branch. Uma delas tira as requests desnecessárias da busca de suspensas e canceladas: essa busca",
       "link": "https://redmine.platform.brobot.com.br/issues/91864"
+    },
+    {
+      "id": 93023,
+      "task": "Admin > Eventos: filtros Tipo e Módulo não funcionam",
+      "descricao": "Na tela Admin Eventos do front novo, os filtros Tipo e Módulo não alteram a listagem.",
+      "category": "",
+      "priority": "low",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-24T16:57:39Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo corrigido. O filtro Ação agora tem create, any e os demais valores que aparecem na coluna, e o filtro Tipo ganhou a opção \"Sem tipo\", que traz os eventos com o Tipo vazio.",
+      "link": "https://redmine.platform.brobot.com.br/issues/93023"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-24T16:55:40.337Z",
+  "gerado_em": "2026-11-24T17:25:40.863Z",
   "sprint_id": 78,
-  "total": 14,
+  "total": 13,
   "rows": [
     {
       "id": 39504,
@@ -587,20 +600,6 @@
       "comentario_autor": "Leonardo Paganotti",
       "comentario_trecho": "Boa tarde! Por favor, alguma evolução do tema? Podemos encerrar?",
       "link": "https://redmine.platform.brobot.com.br/issues/39504"
-    },
-    {
-      "id": 93023,
-      "task": "Admin > Eventos: filtros Tipo e Módulo não funcionam",
-      "descricao": "Na tela Admin Eventos do front novo, os filtros Tipo e Módulo não alteram a listagem.",
-      "category": "",
-      "priority": "low",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-24T12:14:08Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe Segue Ajuste Ambiente: Staging | Versão: New Durante os testes exploratórios na tela Admin Eventos do front novo, identifiquei alguns ajustes que podem melhorar a cobertura e a usabilidade dos",
-      "link": "https://redmine.platform.brobot.com.br/issues/93023"
     },
     {
       "id": 88939,
