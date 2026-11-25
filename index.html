@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-25T17:55:10.664Z",
+  "gerado_em": "2026-11-25T18:25:13.108Z",
   "total": 7,
   "rows": [
     {
@@ -535,7 +535,7 @@
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "high",
       "status": "to do",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-24T20:53:51Z",
       "comentario_autor": "Delvin Williams Perez",
       "comentario_trecho": "@jose-ricardo autos_embarcador_der_sp: correções em staging (93009) CAPTCHA_INCORRECTLY_SOLVED: jobs do mesmo CPF rodando ao mesmo tempo usavam a mesma sessão do portal, e um sobrescrevia o captcha do",
@@ -555,25 +555,39 @@
       "link": "https://redmine.platform.brobot.com.br/issues/92756"
     },
     {
+      "id": 93195,
+      "task": "Divergência no status de pagamento de multa – STN EMPREENDIMENTOS (2501)",
+      "descricao": "O cliente STN EMPREENDIMENTOS identificou uma divergência no status de uma multa consultada pela Brobot.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-25T18:03:16Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo @rodrigo Corrigido. Desde a 70760 (junho), a indicação de multa paga do SNE tinha prioridade sobre a data de vencimento, e a multa com situação \"Infração está suspensa ou cancelada\" ficava co",
+      "link": "https://redmine.platform.brobot.com.br/issues/93195"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-11-25T18:25:44.009Z",
+  "sprint_id": 78,
+  "total": 12,
+  "rows": [
+    {
       "id": 83149,
       "task": "autos_sefaz_sp - KNOWN_WEBSITE_BUG",
       "descricao": "Spider autos_sefaz_sp (principal: KNOWN_WEBSITE_BUG, 89.8%)",
       "category": "Portal - Mudança de fluxo",
       "priority": "high",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-25T15:38:30Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo pode testar a spider, por gentileza?",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-25T18:13:11Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/83149"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-25T17:55:40.016Z",
-  "sprint_id": 78,
-  "total": 11,
-  "rows": [
+    },
     {
       "id": 90871,
       "task": "CaçaMultas Embarcador | Maestro: tela Multas Embarcador e rotina de até 3 novas consultas para vistas não capturado",
