@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-25T13:55:10.495Z",
-  "total": 10,
+  "gerado_em": "2026-11-25T14:25:11.295Z",
+  "total": 8,
   "rows": [
     {
       "id": 73585,
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
     },
     {
-      "id": 92624,
-      "task": "autos_antt - HTML_ERROR",
-      "descricao": "Spider autos_antt",
-      "category": "Portal - Instabilidade ou indisponibilidade",
-      "priority": "high",
-      "status": "to do",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-23T23:52:39Z",
-      "comentario_autor": "Delvin Williams Perez",
-      "comentario_trecho": "@jose-ricardo Análise e correção (92625) Há dois erros do portal da ANTT que geram este problema: 1) \"Transaction Scope failure on begin\" Instabilidade passageira do portal, concentrada de madrugada (",
-      "link": "https://redmine.platform.brobot.com.br/issues/92624"
-    },
-    {
       "id": 91864,
       "task": "Placa do cliente Better Beef não processa devido à volumetria de infrações no Senatran",
       "descricao": "Há uma placa do cliente Bettere Beef que não processa desde o mês 09 e a mesma possui uma volumetria muito alta de infrações.",
@@ -592,27 +579,42 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo IBS e CBS entraram nos relatórios detalhado e customizado de NF-e e CT-e. - Detalhado: colunas novas no fim do arquivo, na ordem da task. Na GTV-e saem vazias. - Customizado: os 70 c",
       "link": "https://redmine.platform.brobot.com.br/issues/92756"
-    },
-    {
-      "id": 92216,
-      "task": "Migração do WhiteLabel",
-      "descricao": "Atualmente todos os clientes WhiteLabel utilizam o Platform Classic.",
-      "category": "Frontend - Novo frontend",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-25T13:22:41Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "@gustavo em produção desde 25/11. - PR: (mergeada; deploy do front novo concluído). - Conferido em produção: plataformabrobot.com.br continua com a marca Brobot e o link antigo de convite (/register_p",
-      "link": "https://redmine.platform.brobot.com.br/issues/92216"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-25T13:55:39.991Z",
+  "gerado_em": "2026-11-25T14:25:42.097Z",
   "sprint_id": 78,
-  "total": 12,
+  "total": 14,
   "rows": [
+    {
+      "id": 91864,
+      "task": "Placa do cliente Better Beef não processa devido à volumetria de infrações no Senatran",
+      "descricao": "Há uma placa do cliente Bettere Beef que não processa desde o mês 09 e a mesma possui uma volumetria muito alta de infrações.",
+      "category": "Spider - Outros",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-25T14:25:18Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/91864"
+    },
+    {
+      "id": 92624,
+      "task": "autos_antt - HTML_ERROR",
+      "descricao": "Spider autos_antt",
+      "category": "Portal - Instabilidade ou indisponibilidade",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-25T14:21:00Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "Correção: a nota do passo 3 segue o mapeamento fixo de domínio, não o dev real. @thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/92624"
+    },
     {
       "id": 83149,
       "task": "autos_sefaz_sp - KNOWN_WEBSITE_BUG",
