@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-26T18:55:14.384Z",
-  "total": 12,
+  "gerado_em": "2026-11-26T19:25:14.720Z",
+  "total": 11,
   "rows": [
     {
       "id": 73585,
@@ -555,26 +555,13 @@
       "link": "https://redmine.platform.brobot.com.br/issues/90871"
     },
     {
-      "id": 93016,
-      "task": "Status da Taxa \"not available\" aparecendo para o cliente",
-      "descricao": "As taxas estão aparecendo como \"not available\" para o cliente no novo front, no antigo não aparece nada, o status da taxa ficam em brando.",
-      "category": "",
-      "priority": "immediate",
-      "status": "in progress",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-26T15:21:10Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo O problema era só no front novo: a tela de CM Taxas não tinha o texto do status \"Saiu do site\" (taxa que deixou de constar no órgão) e mostrava o valor interno \"not available\". O bac",
-      "link": "https://redmine.platform.brobot.com.br/issues/93016"
-    },
-    {
       "id": 88654,
       "task": "autos_detran_pe - UNHANDLED_SPIDER_EXCEPTION",
       "descricao": "Spider autos_detran_pe, 81.09% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 97.93%)",
       "category": "Spider - Erro na lógica de extração",
       "priority": "high",
       "status": "staging",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-26T17:17:09Z",
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Fiz novas alterações para corrigir os erros reportados. Aparentemente, o portal alterou o redirecionamento do gov. @Rodrigo, você pode testar a spider, por favor?",
@@ -627,18 +614,32 @@
       "priority": "immediate",
       "status": "staging",
       "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-26T18:48:12Z",
+      "data_comentario": "2026-11-26T19:13:57Z",
       "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Parte 3 — validação completa em staging (resumo com todos os prints) Cenário: staging, conta 90 (Testes Funcionais), com o cruzamento por locatário ligado. O grupo \"Teste 92501 - Cliente Evidência\" fo",
+      "comentario_trecho": "Bateria ampliada de testes em staging + campo \"Modalidade e/ou Vínculo\" A) Campo \"Categoria\" do motorista renomeado para Modalidade e/ou Vínculo O campo era confundido com a categoria da CNH. Ele serv",
       "link": "https://redmine.platform.brobot.com.br/issues/93289"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-26T18:55:48.273Z",
+  "gerado_em": "2026-11-26T19:25:45.847Z",
   "sprint_id": 78,
-  "total": 10,
+  "total": 11,
   "rows": [
+    {
+      "id": 93016,
+      "task": "Status da Taxa \"not available\" aparecendo para o cliente",
+      "descricao": "As taxas estão aparecendo como \"not available\" para o cliente no novo front, no antigo não aparece nada, o status da taxa ficam em brando.",
+      "category": "Backend - Consumo",
+      "priority": "immediate",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-26T19:00:21Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@felipe como não tenho estes cenários em Staging, só será possível testar em produção, por isso, pode subir por favor que eu confiro a solução em produção. @joathan favor subir para produção, mas pode",
+      "link": "https://redmine.platform.brobot.com.br/issues/93016"
+    },
     {
       "id": 87066,
       "task": "Cronotacógrafo | Certificado em PDF e emissão de GRU em lote",
