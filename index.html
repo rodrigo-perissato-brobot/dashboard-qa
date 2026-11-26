@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-26T12:55:15.776Z",
-  "total": 7,
+  "gerado_em": "2026-11-26T13:25:17.069Z",
+  "total": 6,
   "rows": [
     {
       "id": 73585,
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/93195"
     },
     {
-      "id": 93290,
-      "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
-      "descricao": "Spider autos_detran_divida_ativa_pr (principal: CAPTCHA_NOT_LOADED, 99.87%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "to do",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-25T19:00:37Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "O portal do DETRAN-PR passou a exigir JavaScript para mostrar a página de Extrato de Dívida Ativa. Ele agora fica atrás de um bloqueio anti-robô que só libera o acesso depois que o navegador executa u",
-      "link": "https://redmine.platform.brobot.com.br/issues/93290"
-    },
-    {
       "id": 90871,
       "task": "CaçaMultas Embarcador | Maestro: tela Multas Embarcador e rotina de até 3 novas consultas para vistas não capturado",
       "descricao": "O portal da ANTT muitas vezes responde com uma página HTML no lugar do PDF do vistas.",
@@ -570,10 +557,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-26T12:55:49.877Z",
+  "gerado_em": "2026-11-26T13:25:53.317Z",
   "sprint_id": 78,
   "total": 13,
   "rows": [
+    {
+      "id": 93290,
+      "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
+      "descricao": "Spider autos_detran_divida_ativa_pr (principal: CAPTCHA_NOT_LOADED, 99.87%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-26T13:03:15Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider autos_detran_divida_ativa_pr e retornou apenas erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Todas as consul",
+      "link": "https://redmine.platform.brobot.com.br/issues/93290"
+    },
     {
       "id": 93009,
       "task": "autos_embarcador_der_sp - CAPTCHA_INCORRECTLY_SOLVED",
@@ -629,20 +630,6 @@
       "comentario_autor": "Jose Ricardo",
       "comentario_trecho": "FUP Feito novamente, solicitando cenário para Renata",
       "link": "https://redmine.platform.brobot.com.br/issues/51852"
-    },
-    {
-      "id": 93023,
-      "task": "Admin > Eventos: filtros Tipo e Módulo não funcionam",
-      "descricao": "Na tela Admin Eventos do front novo, os filtros Tipo e Módulo não alteram a listagem.",
-      "category": "",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-24T19:01:54Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/93023"
     },
     {
       "id": 39504,
