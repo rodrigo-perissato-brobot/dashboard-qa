@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-25T19:25:12.582Z",
+  "gerado_em": "2026-11-26T00:55:09.376Z",
   "total": 8,
   "rows": [
     {
@@ -555,38 +555,52 @@
       "link": "https://redmine.platform.brobot.com.br/issues/93195"
     },
     {
-      "id": 93302,
-      "task": "Nomenclatura: trocar \"CaçaCondutores\" por \"CaçaMultas Condutores\"",
-      "descricao": "Corrigir a nomenclatura \"CaçaCondutores\" para \"CaçaMultas Condutores\" em todos os pontos da Plataforma Brobot em que o nome aparece para o u",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-25T18:57:00Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@gustavo a 93303 (frontend) já está na dev. Segue o roteiro de teste. Ambiente: dev, front novo: Os endereços platform-dev e platform-staging abrem o front antigo (Vue) e não servem para este teste. U",
-      "link": "https://redmine.platform.brobot.com.br/issues/93302"
-    },
-    {
       "id": 93290,
       "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
       "descricao": "Spider autos_detran_divida_ativa_pr (principal: CAPTCHA_NOT_LOADED, 99.87%)",
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "high",
       "status": "to do",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-25T19:00:37Z",
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "O portal do DETRAN-PR passou a exigir JavaScript para mostrar a página de Extrato de Dívida Ativa. Ele agora fica atrás de um bloqueio anti-robô que só libera o acesso depois que o navegador executa u",
       "link": "https://redmine.platform.brobot.com.br/issues/93290"
+    },
+    {
+      "id": 90871,
+      "task": "CaçaMultas Embarcador | Maestro: tela Multas Embarcador e rotina de até 3 novas consultas para vistas não capturado",
+      "descricao": "O portal da ANTT muitas vezes responde com uma página HTML no lugar do PDF do vistas.",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-25T19:27:46Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo corrigido. - Status: a tela e o relatório em Excel mostram Autuação, Em recurso, Inscrito na Serasa e Inscrito em Dívida Ativa no lugar do código. Os quatro também entraram no filtro Status. ",
+      "link": "https://redmine.platform.brobot.com.br/issues/90871"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-25T19:25:42.385Z",
+  "gerado_em": "2026-11-26T00:55:39.424Z",
   "sprint_id": 78,
   "total": 13,
   "rows": [
+    {
+      "id": 93302,
+      "task": "Nomenclatura: trocar \"CaçaCondutores\" por \"CaçaMultas Condutores\"",
+      "descricao": "Corrigir a nomenclatura \"CaçaCondutores\" para \"CaçaMultas Condutores\" em todos os pontos da Plataforma Brobot em que o nome aparece para o u",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-25T20:13:38Z",
+      "comentario_autor": "Gabriella Mendes",
+      "comentario_trecho": "@gustavo a 93303 (frontend) está em produção desde hoje, 25/11, depois da aprovação do QA. O que mudou O nome \"CaçaCondutores\" passou a ser \"CaçaMultas Condutores\" em todo o front novo: Telas do produ",
+      "link": "https://redmine.platform.brobot.com.br/issues/93302"
+    },
     {
       "id": 93228,
       "task": "Retorno da consulta de alto volume não abre",
@@ -614,20 +628,6 @@
       "comentario_autor": "Gustavo Vitor",
       "comentario_trecho": "@delvin Reprovado. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Durante os testes da spider autos_inmetro_cronotacografo em Staging, identifiquei uma divergência na consulta do veícu",
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
-    },
-    {
-      "id": 90871,
-      "task": "CaçaMultas Embarcador | Maestro: tela Multas Embarcador e rotina de até 3 novas consultas para vistas não capturado",
-      "descricao": "O portal da ANTT muitas vezes responde com uma página HTML no lugar do PDF do vistas.",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-25T17:50:53Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@felipe Processei algumas consultas e venho acompanhando os resultados, a grande maioria dos processos da nova tela está aprovado. Relato alguns ajustes na tela que podem auxiliar o trabalho de anális",
-      "link": "https://redmine.platform.brobot.com.br/issues/90871"
     },
     {
       "id": 51852,
