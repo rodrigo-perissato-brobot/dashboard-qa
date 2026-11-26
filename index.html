@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-26T18:25:16.300Z",
-  "total": 10,
+  "gerado_em": "2026-11-26T18:55:14.384Z",
+  "total": 12,
   "rows": [
     {
       "id": 73585,
@@ -605,14 +605,7 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo A consulta do Detran/PB estava sobrescrevendo a data da infração de todas as multas da placa com a data de emissão do extrato. Isso também afetava multas que já possuíam a data corre",
       "link": "https://redmine.platform.brobot.com.br/issues/93190"
-    }
-  ]
-};
-  const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-26T18:25:48.341Z",
-  "sprint_id": 78,
-  "total": 11,
-  "rows": [
+    },
     {
       "id": 93290,
       "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
@@ -620,13 +613,32 @@
       "category": "Portal - Bloqueio de automação ou captcha",
       "priority": "high",
       "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-26T13:03:15Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Processei as consultas na spider autos_detran_divida_ativa_pr e retornou apenas erro. Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic e New Evidência: Todas as consul",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-26T18:35:34Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "Os erros ocorreram porque o container da spider e splash sao distintos, alem de que a spider nao utilizava proxy, desta forma foi necessário a adição de proxy residencial, pois o estático o portal não",
       "link": "https://redmine.platform.brobot.com.br/issues/93290"
     },
+    {
+      "id": 93289,
+      "task": "Inconsistência dos grupos de permissões entre os módulos da plataforma | Transmaroni ID: 2253",
+      "descricao": "Foi identificada uma inconsistência na aplicação dos grupos de permissões entre os módulos da plataforma.",
+      "category": "",
+      "priority": "immediate",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-26T18:48:12Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "Parte 3 — validação completa em staging (resumo com todos os prints) Cenário: staging, conta 90 (Testes Funcionais), com o cruzamento por locatário ligado. O grupo \"Teste 92501 - Cliente Evidência\" fo",
+      "link": "https://redmine.platform.brobot.com.br/issues/93289"
+    }
+  ]
+};
+  const FOLLOWUP_DATA = {
+  "gerado_em": "2026-11-26T18:55:48.273Z",
+  "sprint_id": 78,
+  "total": 10,
+  "rows": [
     {
       "id": 87066,
       "task": "Cronotacógrafo | Certificado em PDF e emissão de GRU em lote",
