@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-27T16:55:18.369Z",
-  "total": 11,
+  "gerado_em": "2026-11-27T17:25:11.355Z",
+  "total": 10,
   "rows": [
     {
       "id": 73585,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82051"
     },
     {
-      "id": 93006,
-      "task": "autos_divida_ativa_prefeitura_sp - UNSOLVED_ERROR",
-      "descricao": "Spider autos_divida_ativa_prefeitura_sp (principal: UNSOLVED_ERROR, 57.94%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "low",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-27T14:13:31Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Retorno alinhado com o @jose-ricardo e implementado. @rodrigo poderia testar a spider, por gentileza?",
-      "link": "https://redmine.platform.brobot.com.br/issues/93006"
-    },
-    {
       "id": 93195,
       "task": "Divergência no status de pagamento de multa – STN EMPREENDIMENTOS (2501)",
       "descricao": "O cliente STN EMPREENDIMENTOS identificou uma divergência no status de uma multa consultada pela Brobot.",
@@ -594,19 +581,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/93290"
     },
     {
-      "id": 88654,
-      "task": "autos_detran_pe - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_pe, 81.09% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 97.93%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-27T16:32:49Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "@rodrigo pode testar novamente?",
-      "link": "https://redmine.platform.brobot.com.br/issues/88654"
-    },
-    {
       "id": 93340,
       "task": "autos_detran_pr - INVALID_REQUEST_PARAMS",
       "descricao": "Spider autos_detran_pr (principal: INVALID_REQUEST_PARAMS, 85.64%)",
@@ -618,14 +592,55 @@
       "comentario_autor": "Miguel Silva",
       "comentario_trecho": "Alterado o erro para USER_ACTION_REQUIRED conforme solicitado. @rodrigo poderia validar por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/93340"
+    },
+    {
+      "id": 92756,
+      "task": "DF-e | Relatórios: IBS e CBS nos relatórios detalhado e customizado de NF-e e CT-e",
+      "descricao": "A LATAM pediu, pelo ticket 83724, para gerar os relatórios do DF-e com as informações de IBS e CBS: \"Precis...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-27T17:12:43Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo corrigido.",
+      "link": "https://redmine.platform.brobot.com.br/issues/92756"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-27T16:55:54.869Z",
+  "gerado_em": "2026-11-27T17:25:43.001Z",
   "sprint_id": 78,
-  "total": 11,
+  "total": 12,
   "rows": [
+    {
+      "id": 93006,
+      "task": "autos_divida_ativa_prefeitura_sp - UNSOLVED_ERROR",
+      "descricao": "Spider autos_divida_ativa_prefeitura_sp (principal: UNSOLVED_ERROR, 57.94%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "low",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-27T17:10:07Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/93006"
+    },
+    {
+      "id": 88654,
+      "task": "autos_detran_pe - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "Spider autos_detran_pe, 81.09% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 97.93%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-27T17:01:49Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/88654"
+    },
     {
       "id": 93190,
       "task": "autos_detran_pb | Dados da multa continuam não sendo capturados após correção | RÁPIDO FIGUEIREDO - TRACKSAT (ID 2473)",
@@ -639,20 +654,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@felipe Tentei executar a consulta em Staging, porém está retornando um erro de HTML vazio. Este erro é consumo ou spider? Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Fav",
       "link": "https://redmine.platform.brobot.com.br/issues/93190"
-    },
-    {
-      "id": 92756,
-      "task": "DF-e | Relatórios: IBS e CBS nos relatórios detalhado e customizado de NF-e e CT-e",
-      "descricao": "A LATAM pediu, pelo ticket 83724, para gerar os relatórios do DF-e com as informações de IBS e CBS: \"Precis...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "reprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-27T14:58:30Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Conta Default | Versão: New Durante os testes no Platform New, foi identificado que, ao acessar a tela de edição dos relatórios customizados de NF-e e C",
-      "link": "https://redmine.platform.brobot.com.br/issues/92756"
     },
     {
       "id": 51852,
