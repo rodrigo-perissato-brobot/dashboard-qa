@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-27T12:55:13.007Z",
+  "gerado_em": "2026-11-27T13:25:12.358Z",
   "total": 12,
   "rows": [
     {
@@ -594,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
     },
     {
-      "id": 93289,
-      "task": "Inconsistência dos grupos de permissões entre os módulos da plataforma | Transmaroni ID: 2253",
-      "descricao": "Foi identificada uma inconsistência na aplicação dos grupos de permissões entre os módulos da plataforma.",
-      "category": "",
-      "priority": "immediate",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-26T21:23:32Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Motoristas existentes preenchidos em produção (26/11) Os 243 motoristas identificados automaticamente receberam o locatário conforme a lista anexada anteriormente. Nenhum deles tinha locatário antes, ",
-      "link": "https://redmine.platform.brobot.com.br/issues/93289"
-    },
-    {
       "id": 93195,
       "task": "Divergência no status de pagamento de multa – STN EMPREENDIMENTOS (2501)",
       "descricao": "O cliente STN EMPREENDIMENTOS identificou uma divergência no status de uma multa consultada pela Brobot.",
@@ -631,13 +618,26 @@
       "comentario_autor": "Rolf Marquardt",
       "comentario_trecho": "Registro dos testes executados em staging (até 27/11 09:40) Tudo abaixo foi executado de verdade em staging, conta Testes Funcionais (id 90), com dados reais da Cervejaria Imperial (CNPJ 01.708.217/00",
       "link": "https://redmine.platform.brobot.com.br/issues/82051"
+    },
+    {
+      "id": 93016,
+      "task": "Status da Taxa \"not available\" aparecendo para o cliente",
+      "descricao": "As taxas estão aparecendo como \"not available\" para o cliente no novo front, no antigo não aparece nada, o status da taxa ficam em brando.",
+      "category": "Backend - Consumo",
+      "priority": "immediate",
+      "status": "awaiting deploy",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-27T13:14:09Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo atualizado em produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/93016"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-27T12:55:44.101Z",
+  "gerado_em": "2026-11-27T13:25:42.924Z",
   "sprint_id": 78,
-  "total": 11,
+  "total": 10,
   "rows": [
     {
       "id": 93290,
@@ -652,20 +652,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@miguel Reprovado. Reprocessei as consultas na spider autos_detran_divida_ativa_pr e a maioria processou com sucesso, porém a placa BDP6D72 retornou SPIDER_INTERCEPTED. Ambiente: Staging | Conta: Test",
       "link": "https://redmine.platform.brobot.com.br/issues/93290"
-    },
-    {
-      "id": 93016,
-      "task": "Status da Taxa \"not available\" aparecendo para o cliente",
-      "descricao": "As taxas estão aparecendo como \"not available\" para o cliente no novo front, no antigo não aparece nada, o status da taxa ficam em brando.",
-      "category": "Backend - Consumo",
-      "priority": "immediate",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-26T19:00:21Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@felipe como não tenho estes cenários em Staging, só será possível testar em produção, por isso, pode subir por favor que eu confiro a solução em produção. @joathan favor subir para produção, mas pode",
-      "link": "https://redmine.platform.brobot.com.br/issues/93016"
     },
     {
       "id": 51852,
