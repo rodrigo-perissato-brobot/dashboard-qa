@@ -473,7 +473,7 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-27T17:25:11.355Z",
+  "gerado_em": "2026-11-27T17:55:20.634Z",
   "total": 10,
   "rows": [
     {
@@ -568,19 +568,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/93195"
     },
     {
-      "id": 93290,
-      "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
-      "descricao": "Spider autos_detran_divida_ativa_pr (principal: CAPTCHA_NOT_LOADED, 99.87%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-27T15:47:02Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "O portal do DETRAN-PR passou a ligar e desligar o desafio JavaScript do F5. Com o desafio desligado, o cookie TSPD_101 não é emitido, e a spider encerrava como interceptada consultas que dariam certo.",
-      "link": "https://redmine.platform.brobot.com.br/issues/93290"
-    },
-    {
       "id": 93340,
       "task": "autos_detran_pr - INVALID_REQUEST_PARAMS",
       "descricao": "Spider autos_detran_pr (principal: INVALID_REQUEST_PARAMS, 85.64%)",
@@ -605,14 +592,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo corrigido.",
       "link": "https://redmine.platform.brobot.com.br/issues/92756"
+    },
+    {
+      "id": 93467,
+      "task": "Relatório apresenta veículos inativos mesmo quando aplicado filtro para exibir apenas veículos ativos",
+      "descricao": "Ao gerar um relatório na plataforma, filtrando os veículos pelo status Ativo, o arquivo exportado apresenta...",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-27T17:36:18Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@rodrigo @gustavo Já corrigido. Na tela de Veículos, a exportação com todos os registros selecionados não levava os filtros de status e de CRLV, por isso o arquivo saía com todos os veículos da conta.",
+      "link": "https://redmine.platform.brobot.com.br/issues/93467"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-27T17:25:43.001Z",
+  "gerado_em": "2026-11-27T17:55:57.372Z",
   "sprint_id": 78,
-  "total": 12,
+  "total": 13,
   "rows": [
+    {
+      "id": 93290,
+      "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
+      "descricao": "Spider autos_detran_divida_ativa_pr (principal: CAPTCHA_NOT_LOADED, 99.87%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-27T17:53:00Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago favor subir para produção.",
+      "link": "https://redmine.platform.brobot.com.br/issues/93290"
+    },
     {
       "id": 93006,
       "task": "autos_divida_ativa_prefeitura_sp - UNSOLVED_ERROR",
