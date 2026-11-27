@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-27T14:55:14.071Z",
-  "total": 10,
+  "gerado_em": "2026-11-27T15:25:11.861Z",
+  "total": 9,
   "rows": [
     {
       "id": 73585,
@@ -516,19 +516,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/85035"
     },
     {
-      "id": 92756,
-      "task": "DF-e | Relatórios: IBS e CBS nos relatórios detalhado e customizado de NF-e e CT-e",
-      "descricao": "A LATAM pediu, pelo ticket 83724, para gerar os relatórios do DF-e com as informações de IBS e CBS: \"Precis...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-25T12:01:44Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@rodrigo @gustavo IBS e CBS entraram nos relatórios detalhado e customizado de NF-e e CT-e. - Detalhado: colunas novas no fim do arquivo, na ordem da task. Na GTV-e saem vazias. - Customizado: os 70 c",
-      "link": "https://redmine.platform.brobot.com.br/issues/92756"
-    },
-    {
       "id": 90871,
       "task": "CaçaMultas Embarcador | Maestro: tela Multas Embarcador e rotina de até 3 novas consultas para vistas não capturado",
       "descricao": "O portal da ANTT muitas vezes responde com uma página HTML no lugar do PDF do vistas.",
@@ -568,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/87066"
     },
     {
-      "id": 93195,
-      "task": "Divergência no status de pagamento de multa – STN EMPREENDIMENTOS (2501)",
-      "descricao": "O cliente STN EMPREENDIMENTOS identificou uma divergência no status de uma multa consultada pela Brobot.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-27T12:05:45Z",
-      "comentario_autor": "Gabriella Mendes",
-      "comentario_trecho": "@felipe, alinhei com @renata de multas como tratar a situação \"Infração está suspensa ou cancelada\" do SNE. Por que Em recurso O SNE usa essa mesma frase para dois casos diferentes, então por ela não ",
-      "link": "https://redmine.platform.brobot.com.br/issues/93195"
-    },
-    {
       "id": 82051,
       "task": "ESTUDO SOBRE PEDÁGIO ELETRONICO - FREE FLOW - CERVEJARIA IMPERIAL",
       "descricao": "Realizar um estudo sobre a nova opção disponibilizada pela Senatran para consulta de infrações relacionadas...",
@@ -605,14 +579,41 @@
       "comentario_autor": "Thiago Xavier",
       "comentario_trecho": "Retorno alinhado com o @jose-ricardo e implementado. @rodrigo poderia testar a spider, por gentileza?",
       "link": "https://redmine.platform.brobot.com.br/issues/93006"
+    },
+    {
+      "id": 93195,
+      "task": "Divergência no status de pagamento de multa – STN EMPREENDIMENTOS (2501)",
+      "descricao": "O cliente STN EMPREENDIMENTOS identificou uma divergência no status de uma multa consultada pela Brobot.",
+      "category": "",
+      "priority": "high",
+      "status": "in progress",
+      "alocado_a": "gustavo",
+      "data_comentario": "2026-11-27T15:11:40Z",
+      "comentario_autor": "Felipe Silva",
+      "comentario_trecho": "@gustavo Ajustado conforme o alinhamento. A multa com situação \"Infração está suspensa ou cancelada\" agora fica como Em recurso, com o vencimento já passado ou não. Ela continua sem virar Pago pela in",
+      "link": "https://redmine.platform.brobot.com.br/issues/93195"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-27T14:55:49.364Z",
+  "gerado_em": "2026-11-27T15:25:42.779Z",
   "sprint_id": 78,
-  "total": 12,
+  "total": 13,
   "rows": [
+    {
+      "id": 92756,
+      "task": "DF-e | Relatórios: IBS e CBS nos relatórios detalhado e customizado de NF-e e CT-e",
+      "descricao": "A LATAM pediu, pelo ticket 83724, para gerar os relatórios do DF-e com as informações de IBS e CBS: \"Precis...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "reprovado",
+      "responsavel_atual": "Product owner",
+      "data_comentario": "2026-11-27T14:58:30Z",
+      "comentario_autor": "Gustavo Vitor",
+      "comentario_trecho": "@felipe Segue ajuste Ambiente: Staging | Conta: Conta Default | Versão: New Durante os testes no Platform New, foi identificado que, ao acessar a tela de edição dos relatórios customizados de NF-e e C",
+      "link": "https://redmine.platform.brobot.com.br/issues/92756"
+    },
     {
       "id": 93340,
       "task": "autos_detran_pr - INVALID_REQUEST_PARAMS",
