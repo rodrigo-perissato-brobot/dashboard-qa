@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-27T13:25:12.358Z",
-  "total": 12,
+  "gerado_em": "2026-11-27T13:55:11.660Z",
+  "total": 11,
   "rows": [
     {
       "id": 73585,
@@ -542,19 +542,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/90871"
     },
     {
-      "id": 88654,
-      "task": "autos_detran_pe - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_pe, 81.09% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 97.93%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "rodrigo",
-      "data_comentario": "2026-11-26T17:17:09Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Fiz novas alterações para corrigir os erros reportados. Aparentemente, o portal alterou o redirecionamento do gov. @Rodrigo, você pode testar a spider, por favor?",
-      "link": "https://redmine.platform.brobot.com.br/issues/88654"
-    },
-    {
       "id": 93340,
       "task": "autos_detran_pr - INVALID_REQUEST_PARAMS",
       "descricao": "Spider autos_detran_pr (principal: INVALID_REQUEST_PARAMS, 85.64%)",
@@ -607,19 +594,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/93195"
     },
     {
-      "id": 82051,
-      "task": "ESTUDO SOBRE PEDÁGIO ELETRONICO - FREE FLOW - CERVEJARIA IMPERIAL",
-      "descricao": "Realizar um estudo sobre a nova opção disponibilizada pela Senatran para consulta de infrações relacionadas...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-27T12:39:58Z",
-      "comentario_autor": "Rolf Marquardt",
-      "comentario_trecho": "Registro dos testes executados em staging (até 27/11 09:40) Tudo abaixo foi executado de verdade em staging, conta Testes Funcionais (id 90), com dados reais da Cervejaria Imperial (CNPJ 01.708.217/00",
-      "link": "https://redmine.platform.brobot.com.br/issues/82051"
-    },
-    {
       "id": 93016,
       "task": "Status da Taxa \"not available\" aparecendo para o cliente",
       "descricao": "As taxas estão aparecendo como \"not available\" para o cliente no novo front, no antigo não aparece nada, o status da taxa ficam em brando.",
@@ -631,14 +605,41 @@
       "comentario_autor": "Joathan Fontan",
       "comentario_trecho": "@rodrigo atualizado em produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/93016"
+    },
+    {
+      "id": 82051,
+      "task": "ESTUDO SOBRE PEDÁGIO ELETRONICO - FREE FLOW - CERVEJARIA IMPERIAL",
+      "descricao": "Realizar um estudo sobre a nova opção disponibilizada pela Senatran para consulta de infrações relacionadas...",
+      "category": "Produtos - Melhoria de itens existentes",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-27T13:41:23Z",
+      "comentario_autor": "Rolf Marquardt",
+      "comentario_trecho": "✅ Carga completa do histórico concluída (27/11 10:38) - Todos os 46 meses (jan/2023 → out/2026) carregados + nov/2026 (mês corrente). A Platform marcou o CNPJ da Imperial como histórico completo; a pa",
+      "link": "https://redmine.platform.brobot.com.br/issues/82051"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-27T13:25:42.924Z",
+  "gerado_em": "2026-11-27T13:55:45.113Z",
   "sprint_id": 78,
-  "total": 10,
+  "total": 11,
   "rows": [
+    {
+      "id": 88654,
+      "task": "autos_detran_pe - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "Spider autos_detran_pe, 81.09% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 97.93%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "staging",
+      "tipo": "reprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-27T13:51:51Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_detran_pe e a maioria processou com sucesso, porém a placa QYL8J17 não processa e também não retorna nenhum erro, ficando parada. Ambiente: ",
+      "link": "https://redmine.platform.brobot.com.br/issues/88654"
+    },
     {
       "id": 93290,
       "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
