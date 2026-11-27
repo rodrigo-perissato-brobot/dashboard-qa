@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-27T14:25:11.326Z",
-  "total": 11,
+  "gerado_em": "2026-11-27T14:55:14.071Z",
+  "total": 10,
   "rows": [
     {
       "id": 73585,
@@ -542,26 +542,13 @@
       "link": "https://redmine.platform.brobot.com.br/issues/90871"
     },
     {
-      "id": 93340,
-      "task": "autos_detran_pr - INVALID_REQUEST_PARAMS",
-      "descricao": "Spider autos_detran_pr (principal: INVALID_REQUEST_PARAMS, 85.64%)",
-      "category": "Operação - Erro humano operacional",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-26T17:32:23Z",
-      "comentario_autor": "Miguel Silva",
-      "comentario_trecho": "A respeito das rodadas que ocorreram INVALID_PARAMETERS esta relacionado a falta das credenciais de certificado e senha, que esse portal exige o login do portal e ainda é necessário entrar com certifi",
-      "link": "https://redmine.platform.brobot.com.br/issues/93340"
-    },
-    {
       "id": 93190,
       "task": "autos_detran_pb | Dados da multa continuam não sendo capturados após correção | RÁPIDO FIGUEIREDO - TRACKSAT (ID 2473)",
       "descricao": "A spider autos_detran_pb continua sem capturar as informações das multas do DETRAN/PB, mesmo após a correção realizada por meio do Bug 91...",
       "category": "",
       "priority": "high",
       "status": "in progress",
-      "alocado_a": "sem_dono",
+      "alocado_a": "rodrigo",
       "data_comentario": "2026-11-26T18:15:48Z",
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo A consulta do Detran/PB estava sobrescrevendo a data da infração de todas as multas da placa com a data de emissão do extrato. Isso também afetava multas que já possuíam a data corre",
@@ -622,10 +609,24 @@
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-27T14:25:42.373Z",
+  "gerado_em": "2026-11-27T14:55:49.364Z",
   "sprint_id": 78,
-  "total": 11,
+  "total": 12,
   "rows": [
+    {
+      "id": 93340,
+      "task": "autos_detran_pr - INVALID_REQUEST_PARAMS",
+      "descricao": "Spider autos_detran_pr (principal: INVALID_REQUEST_PARAMS, 85.64%)",
+      "category": "Operação - Erro humano operacional",
+      "priority": "high",
+      "status": "in progress",
+      "tipo": "outro",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-27T14:45:48Z",
+      "comentario_autor": "Rodrigo Perissato",
+      "comentario_trecho": "@miguel neste caso, favor efetuar um tratamento na spider para que seja retornado erro de usuário , com uma mensagem explicativa e não manter o erro de sistema.",
+      "link": "https://redmine.platform.brobot.com.br/issues/93340"
+    },
     {
       "id": 88654,
       "task": "autos_detran_pe - UNHANDLED_SPIDER_EXCEPTION",
