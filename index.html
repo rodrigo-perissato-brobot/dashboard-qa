@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-27T17:55:20.634Z",
-  "total": 10,
+  "gerado_em": "2026-11-27T18:25:15.630Z",
+  "total": 11,
   "rows": [
     {
       "id": 73585,
@@ -605,14 +605,41 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Já corrigido. Na tela de Veículos, a exportação com todos os registros selecionados não levava os filtros de status e de CRLV, por isso o arquivo saía com todos os veículos da conta.",
       "link": "https://redmine.platform.brobot.com.br/issues/93467"
+    },
+    {
+      "id": 93471,
+      "task": "Cliente identificou um campo ICMS ST em um PDF exportado e essa informação não aparece na Sefaz",
+      "descricao": "Preciso que seja avaliado o que é o campo ICMS ST que está sendo retornado em um PDF exportado na plataforma.",
+      "category": "",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "sem_dono",
+      "data_comentario": "2026-11-27T17:55:02Z",
+      "comentario_autor": "Joathan Fontan",
+      "comentario_trecho": "@rodrigo @gustavo atualizado em staging. O ICMS não aparece mais repetido no campo \"ICMS ST\" do DACTE; o campo só é preenchido nos CT-e com CST 60. Se não der para testar em staging, subimos para prod",
+      "link": "https://redmine.platform.brobot.com.br/issues/93471"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-27T17:55:57.372Z",
+  "gerado_em": "2026-11-27T18:25:49.143Z",
   "sprint_id": 78,
-  "total": 13,
+  "total": 12,
   "rows": [
+    {
+      "id": 88654,
+      "task": "autos_detran_pe - UNHANDLED_SPIDER_EXCEPTION",
+      "descricao": "Spider autos_detran_pe, 81.09% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 97.93%)",
+      "category": "Spider - Erro na lógica de extração",
+      "priority": "high",
+      "status": "awaiting deploy",
+      "tipo": "aprovado",
+      "responsavel_atual": "(sem responsável)",
+      "data_comentario": "2026-11-27T17:57:28Z",
+      "comentario_autor": "Thiago Xavier",
+      "comentario_trecho": "Spider atualizada em produção, @jose-ricardo pode encerrar a sua tarefa e essa?",
+      "link": "https://redmine.platform.brobot.com.br/issues/88654"
+    },
     {
       "id": 93290,
       "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
@@ -626,34 +653,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago favor subir para produção.",
       "link": "https://redmine.platform.brobot.com.br/issues/93290"
-    },
-    {
-      "id": 93006,
-      "task": "autos_divida_ativa_prefeitura_sp - UNSOLVED_ERROR",
-      "descricao": "Spider autos_divida_ativa_prefeitura_sp (principal: UNSOLVED_ERROR, 57.94%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "low",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-27T17:10:07Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/93006"
-    },
-    {
-      "id": 88654,
-      "task": "autos_detran_pe - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_pe, 81.09% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 97.93%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-27T17:01:49Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/88654"
     },
     {
       "id": 93190,
