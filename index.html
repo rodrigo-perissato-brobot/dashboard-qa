@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-27T15:25:11.861Z",
-  "total": 9,
+  "gerado_em": "2026-11-27T15:55:14.835Z",
+  "total": 10,
   "rows": [
     {
       "id": 73585,
@@ -592,13 +592,26 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@gustavo Ajustado conforme o alinhamento. A multa com situação \"Infração está suspensa ou cancelada\" agora fica como Em recurso, com o vencimento já passado ou não. Ela continua sem virar Pago pela in",
       "link": "https://redmine.platform.brobot.com.br/issues/93195"
+    },
+    {
+      "id": 93290,
+      "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
+      "descricao": "Spider autos_detran_divida_ativa_pr (principal: CAPTCHA_NOT_LOADED, 99.87%)",
+      "category": "Portal - Bloqueio de automação ou captcha",
+      "priority": "high",
+      "status": "staging",
+      "alocado_a": "rodrigo",
+      "data_comentario": "2026-11-27T15:47:02Z",
+      "comentario_autor": "Miguel Silva",
+      "comentario_trecho": "O portal do DETRAN-PR passou a ligar e desligar o desafio JavaScript do F5. Com o desafio desligado, o cookie TSPD_101 não é emitido, e a spider encerrava como interceptada consultas que dariam certo.",
+      "link": "https://redmine.platform.brobot.com.br/issues/93290"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-27T15:25:42.779Z",
+  "gerado_em": "2026-11-27T15:55:45.025Z",
   "sprint_id": 78,
-  "total": 13,
+  "total": 12,
   "rows": [
     {
       "id": 92756,
@@ -641,20 +654,6 @@
       "comentario_autor": "Rodrigo Perissato",
       "comentario_trecho": "@thiago Reprovado. Reprocessei as consultas na spider autos_detran_pe e a maioria processou com sucesso, porém a placa QYL8J17 não processa e também não retorna nenhum erro, ficando parada. Ambiente: ",
       "link": "https://redmine.platform.brobot.com.br/issues/88654"
-    },
-    {
-      "id": 93290,
-      "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
-      "descricao": "Spider autos_detran_divida_ativa_pr (principal: CAPTCHA_NOT_LOADED, 99.87%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "reprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-27T12:22:22Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@miguel Reprovado. Reprocessei as consultas na spider autos_detran_divida_ativa_pr e a maioria processou com sucesso, porém a placa BDP6D72 retornou SPIDER_INTERCEPTED. Ambiente: Staging | Conta: Test",
-      "link": "https://redmine.platform.brobot.com.br/issues/93290"
     },
     {
       "id": 51852,
