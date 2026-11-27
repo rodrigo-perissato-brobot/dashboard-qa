@@ -473,8 +473,8 @@
 
 <script>
   const DATA = {
-  "gerado_em": "2026-11-27T18:25:15.630Z",
-  "total": 11,
+  "gerado_em": "2026-11-27T18:55:11.438Z",
+  "total": 9,
   "rows": [
     {
       "id": 73585,
@@ -555,19 +555,6 @@
       "link": "https://redmine.platform.brobot.com.br/issues/82051"
     },
     {
-      "id": 93195,
-      "task": "Divergência no status de pagamento de multa – STN EMPREENDIMENTOS (2501)",
-      "descricao": "O cliente STN EMPREENDIMENTOS identificou uma divergência no status de uma multa consultada pela Brobot.",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "alocado_a": "gustavo",
-      "data_comentario": "2026-11-27T15:11:40Z",
-      "comentario_autor": "Felipe Silva",
-      "comentario_trecho": "@gustavo Ajustado conforme o alinhamento. A multa com situação \"Infração está suspensa ou cancelada\" agora fica como Em recurso, com o vencimento já passado ou não. Ela continua sem virar Pago pela in",
-      "link": "https://redmine.platform.brobot.com.br/issues/93195"
-    },
-    {
       "id": 93340,
       "task": "autos_detran_pr - INVALID_REQUEST_PARAMS",
       "descricao": "Spider autos_detran_pr (principal: INVALID_REQUEST_PARAMS, 85.64%)",
@@ -605,196 +592,14 @@
       "comentario_autor": "Felipe Silva",
       "comentario_trecho": "@rodrigo @gustavo Já corrigido. Na tela de Veículos, a exportação com todos os registros selecionados não levava os filtros de status e de CRLV, por isso o arquivo saía com todos os veículos da conta.",
       "link": "https://redmine.platform.brobot.com.br/issues/93467"
-    },
-    {
-      "id": 93471,
-      "task": "Cliente identificou um campo ICMS ST em um PDF exportado e essa informação não aparece na Sefaz",
-      "descricao": "Preciso que seja avaliado o que é o campo ICMS ST que está sendo retornado em um PDF exportado na plataforma.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "alocado_a": "sem_dono",
-      "data_comentario": "2026-11-27T17:55:02Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@rodrigo @gustavo atualizado em staging. O ICMS não aparece mais repetido no campo \"ICMS ST\" do DACTE; o campo só é preenchido nos CT-e com CST 60. Se não der para testar em staging, subimos para prod",
-      "link": "https://redmine.platform.brobot.com.br/issues/93471"
     }
   ]
 };
   const FOLLOWUP_DATA = {
-  "gerado_em": "2026-11-27T18:25:49.143Z",
+  "gerado_em": "2026-11-27T18:55:15.555Z",
   "sprint_id": 78,
-  "total": 12,
-  "rows": [
-    {
-      "id": 88654,
-      "task": "autos_detran_pe - UNHANDLED_SPIDER_EXCEPTION",
-      "descricao": "Spider autos_detran_pe, 81.09% de erro (principal: UNHANDLED_SPIDER_EXCEPTION, 97.93%)",
-      "category": "Spider - Erro na lógica de extração",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-27T17:57:28Z",
-      "comentario_autor": "Thiago Xavier",
-      "comentario_trecho": "Spider atualizada em produção, @jose-ricardo pode encerrar a sua tarefa e essa?",
-      "link": "https://redmine.platform.brobot.com.br/issues/88654"
-    },
-    {
-      "id": 93290,
-      "task": "autos_detran_divida_ativa_pr - CAPTCHA_NOT_LOADED",
-      "descricao": "Spider autos_detran_divida_ativa_pr (principal: CAPTCHA_NOT_LOADED, 99.87%)",
-      "category": "Portal - Bloqueio de automação ou captcha",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "(sem responsável)",
-      "data_comentario": "2026-11-27T17:53:00Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@thiago favor subir para produção.",
-      "link": "https://redmine.platform.brobot.com.br/issues/93290"
-    },
-    {
-      "id": 93190,
-      "task": "autos_detran_pb | Dados da multa continuam não sendo capturados após correção | RÁPIDO FIGUEIREDO - TRACKSAT (ID 2473)",
-      "descricao": "A spider autos_detran_pb continua sem capturar as informações das multas do DETRAN/PB, mesmo após a correção realizada por meio do Bug 91...",
-      "category": "Backend - Consumo",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-27T16:29:19Z",
-      "comentario_autor": "Rodrigo Perissato",
-      "comentario_trecho": "@felipe Tentei executar a consulta em Staging, porém está retornando um erro de HTML vazio. Este erro é consumo ou spider? Ambiente: Staging | Conta: Testes Funcionais | Versão: Classic Evidência: Fav",
-      "link": "https://redmine.platform.brobot.com.br/issues/93190"
-    },
-    {
-      "id": 51852,
-      "task": "FICI Preenchida Automaticamente - Davi",
-      "descricao": "Disponibilizar a guia de identificação do condutor preenchida automaticamente (FICI preenchida) nos casos e...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-25T14:48:47Z",
-      "comentario_autor": "Jose Ricardo",
-      "comentario_trecho": "FUP Feito novamente, solicitando cenário para Renata",
-      "link": "https://redmine.platform.brobot.com.br/issues/51852"
-    },
-    {
-      "id": 39504,
-      "task": "Solicitação de estudo sobre recebimento de notas fiscais de MEIs no Platform DF-e",
-      "descricao": "O cliente Edgar da Kadan solicitou a seguinte verificação: Gostaríamos de confirmar se os documentos de Mic...",
-      "category": "Operação - Origem",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-24T16:46:38Z",
-      "comentario_autor": "Leonardo Paganotti",
-      "comentario_trecho": "Boa tarde! Por favor, alguma evolução do tema? Podemos encerrar?",
-      "link": "https://redmine.platform.brobot.com.br/issues/39504"
-    },
-    {
-      "id": 88939,
-      "task": "Erro intermitente ao acessar Definições > Veículos e Serviços no novo front",
-      "descricao": "Ao acessar Definições Veículos e Serviços no novo front, a tela apresenta uma mensagem de erro antes de carregar o conteúdo.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-23T19:10:47Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@leonardo.paganotti Boa tarde A tela de ERRO agora tem um link \"Detalhes técnicos\" com o texto exato do erro. Quando acontecer, pode colocar o erro aqui na tarefa? Como se trata de um erro intermitent",
-      "link": "https://redmine.platform.brobot.com.br/issues/88939"
-    },
-    {
-      "id": 43063,
-      "task": "Novas Funcionalidades Cronotacógrafo",
-      "descricao": "Realizar um estudo de novas funcionalidades para tornar o módulo de cronotacógrafo mais completo, incluindo...",
-      "category": "Produtos - Melhoria de itens existentes",
-      "priority": "medium",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-11-16T14:46:45Z",
-      "comentario_autor": "Felipe Godoy",
-      "comentario_trecho": "Olá pessoal, tudo bem? Há algum retorno?",
-      "link": "https://redmine.platform.brobot.com.br/issues/43063"
-    },
-    {
-      "id": 86411,
-      "task": "Filtro por múltiplas placas não restringe corretamente os resultados da consulta - TRANSMARONI - SNE - ID: 2253",
-      "descricao": "Foi identificada uma inconsistência no filtro de pesquisa da conta do cliente Maroni, utilizado para consul...",
-      "category": "",
-      "priority": "high",
-      "status": "awaiting deploy",
-      "tipo": "aprovado",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-15T13:36:09Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "@joathan Aprovado Ambiente: Produção | Conta: TRANSMARONI - SNE | Versão: New Realizei um novo teste com o mesmo filtro utilizado na resposta anterior e, dessa vez, foi disponibilizado para download e",
-      "link": "https://redmine.platform.brobot.com.br/issues/86411"
-    },
-    {
-      "id": 83270,
-      "task": "Mensagens do BOT de indicação de condutores",
-      "descricao": "O motorista respondeu ao BOT que havia realizado a recusa da infração, no SENATRAN a indicação está recusad...",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-10-02T14:13:09Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella ja foram feitos alguns ajustes no bot, maestro e platform com relação as mensagens da indicação e as lacunas atuais. Se encontram em staging para testes. Tarefas 82757 e 82396.",
-      "link": "https://redmine.platform.brobot.com.br/issues/83270"
-    },
-    {
-      "id": 78408,
-      "task": "autos_sne_denatran_indicacao_condutor - Encontrei um novo cenário em que é possível realizar a indicação com a infração paga",
-      "descricao": "Encontramos um novo cenário em que é possível realizar a indicação de condutor de infrações pagas.",
-      "category": "",
-      "priority": "high",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-27T13:19:25Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "No momento, não foi possível realizar os testes, pois os cenários dependem de consultas no SNE e o portal encontra-se instável, fazendo com que as consultas retornem erro. Assim que o SNE estiver está",
-      "link": "https://redmine.platform.brobot.com.br/issues/78408"
-    },
-    {
-      "id": 77600,
-      "task": "autos_sne_denatran_indicacao_condutor - Encontramos um novo cenário em que a infração não é passível de indicação",
-      "descricao": "Encontramos uma infração em que o veículo alterou de proprietário e a infração é do proprietário antigo, de...",
-      "category": "Spider - Outros",
-      "priority": "immediate",
-      "status": "staging",
-      "tipo": "outro",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-08-11T19:49:33Z",
-      "comentario_autor": "Gustavo Vitor",
-      "comentario_trecho": "No momento não temos um cenário definido para realizar a validação desse novo ajuste. Vou aguardar o surgimento de um novo cenário para que eu possa prosseguir com os testes.",
-      "link": "https://redmine.platform.brobot.com.br/issues/77600"
-    },
-    {
-      "id": 49662,
-      "task": "Platform está permitindo repetir cadastro de CNPJ se cadastrado como matriz e filial",
-      "descricao": "Durante os testes automatizados, identifiquei uma falha no Platform, que está permitindo cadastrar um CNPJ...",
-      "category": "",
-      "priority": "high",
-      "status": "in progress",
-      "tipo": "sem_acao",
-      "responsavel_atual": "Product owner",
-      "data_comentario": "2026-07-22T18:20:22Z",
-      "comentario_autor": "Joathan Fontan",
-      "comentario_trecho": "@gabriella segue uma análise do problema em questão. O que podemos fazer por ora? Análise: mesmo CNPJ cadastrado como Matriz e Filial O problema O Platform permite cadastrar o mesmo CNPJ (14 dígitos) ",
-      "link": "https://redmine.platform.brobot.com.br/issues/49662"
-    }
-  ]
+  "total": 0,
+  "rows": []
 };
 
   const OWNER_LABEL = { rodrigo: "Rodrigo", gustavo: "Gustavo", sem_dono: "QA Owner" };
